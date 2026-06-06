@@ -12,6 +12,25 @@ restored artifact files. Frontend changes should not alter the underlying
 statistics; metric changes belong in analyzer/builder code plus an explicit
 artifact refresh.
 
+For ordinary GitHub collaboration, these artifacts are sufficient. Collaborators
+do not need to run Qwen or any semantic analysis stage unless the team is
+intentionally creating a new artifact release.
+
+The committed shared manifest is:
+
+```text
+artifacts/google_drive_manifest.public.json
+```
+
+The current public artifact files are:
+
+- `baseline_runs_full`: `https://drive.google.com/file/d/15MDTKPfBofg_BNpyJ0RlAL6__HwunCZJ/view?usp=sharing`
+- `dodomen_case_study_outputs`: `https://drive.google.com/file/d/1gTPF_jqE441W7CuGsDmYZ1OdtDUfIhQN/view?usp=sharing`
+
+By default, `scripts/download_drive_artifacts.py` uses this public manifest and
+verifies SHA-256 checksums before extraction. Use
+`artifacts/google_drive_manifest.json` only as a private local override.
+
 ## Recommended Bundles
 
 For collaborators who need to rebuild baselines or inspect completed runs:

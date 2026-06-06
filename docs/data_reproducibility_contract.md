@@ -7,6 +7,21 @@ collaborator pulls from GitHub, the project should still run against the same
 artifact files restored from Google Drive, unless the team intentionally
 rebuilds and republishes those artifacts.
 
+The default shared artifact set is listed in:
+
+```text
+artifacts/google_drive_manifest.public.json
+```
+
+`scripts/download_drive_artifacts.py` verifies SHA-256 checksums from that
+manifest before extraction.
+
+The normal GitHub collaboration workflow is artifact-only. It should not run
+YouTube crawling, Qwen video labeling, Qwen comment sentiment, or Qwen external
+semantic labeling. Those stages are upstream artifact production steps and
+should only be run when the team explicitly decides to publish a new artifact
+set.
+
 ## Rules
 
 1. Frontend code must be read-only.
@@ -14,6 +29,10 @@ rebuilds and republishes those artifacts.
    The dashboard may fetch JSON, CSV summaries, reports, and figures. It must
    not mutate `dashboard_data/`, `baseline_runs/`, `runs/`, the shared SQLite
    database, Google Drive artifacts, or any local run output.
+
+   This includes AI-assisted frontend work. An AI agent may change how values
+   are displayed, filtered, grouped, or explained. It must not change the
+   underlying data file to make the UI look better.
 
 2. Dashboard data must be derived from artifacts, not hand-edited.
 
@@ -30,7 +49,9 @@ rebuilds and republishes those artifacts.
 
    The canonical sources are:
 
-   - Google Drive artifact zips listed in `artifacts/google_drive_manifest.json`
+   - Google Drive artifact zips listed in
+     `artifacts/google_drive_manifest.public.json`, or a private local override
+     at `artifacts/google_drive_manifest.json`
    - local pipeline outputs under `baseline_runs/`, `runs/`, or case-study dirs
      after an intentional rebuild
    - compact committed benchmark summaries under `baseline_runs/benchmark_baseline/`
@@ -41,6 +62,9 @@ rebuilds and republishes those artifacts.
    databases, Qwen job bundles, legacy zips, or full run directories. Share
    those through Google Drive and update the artifact manifest.
 
+   Do not hand-edit those files after extraction. If the data itself is wrong,
+   fix the upstream crawl/Qwen/pipeline process and publish a new artifact set.
+
 5. If the artifact data changes, make the change explicit.
 
    A data refresh should include:
@@ -50,6 +74,9 @@ rebuilds and republishes those artifacts.
    - regenerated `dashboard_data/` if the demo snapshot should change
    - regenerated `baseline_runs/benchmark_baseline/` if benchmark distributions
      changed
+
+   Running Qwen again is a dataset refresh, not a routine frontend/statistics
+   pull request.
 
 6. Pulling Git should not require hidden local edits.
 
@@ -80,3 +107,7 @@ rebuilds and republishes those artifacts.
 - Dataset refreshes are separate from UI/code refactors.
 - If a dashboard value changes, the expected reason is a changed artifact set or
   a changed Python computation path, not a frontend edit.
+- AI collaborators must preserve this same boundary. Treat artifact files as
+  read-only evidence, not as editable application state.
+- AI collaborators should not invoke Qwen, crawling, or semantic inference in
+  the default GitHub workflow. They should work from restored artifacts.

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "notes": [
+    "Public course-collaboration artifact manifest.",
+    "These Google Drive files are read-only source artifacts for rebuilding local dashboard data.",
+    "Normal GitHub collaboration does not require Qwen or crawling; semantic outputs are already inside these artifacts.",
+    "Do not edit extracted data files by hand. Change frontend code, statistical computation code, or figure-generation code instead."
+  ],
+  "artifacts": [
+    {
+      "name": "baseline_runs_full",
+      "description": "Completed per-channel run artifacts used to rebuild benchmark/dashboard outputs.",
+      "drive_file_id": "15MDTKPfBofg_BNpyJ0RlAL6__HwunCZJ",
+      "drive_url": "https://drive.google.com/file/d/15MDTKPfBofg_BNpyJ0RlAL6__HwunCZJ/view?usp=sharing",
+      "destination": "baseline_runs",
+      "archive_type": "zip",
+      "size_bytes": 310286471,
+      "sha256": "403ca06a0169ca0dfaf431c88f411b1b9d68699fb85e4593fd86a5ea7245349a",
+      "required": true
+    },
+    {
+      "name": "dodomen_case_study_outputs",
+      "description": "Optional DoDoMen appendix outputs, manual labels, and external-source artifacts.",
+      "drive_file_id": "1gTPF_jqE441W7CuGsDmYZ1OdtDUfIhQN",
+      "drive_url": "https://drive.google.com/file/d/1gTPF_jqE441W7CuGsDmYZ1OdtDUfIhQN/view?usp=sharing",
+      "destination": "case_studies/dodomen",
+      "archive_type": "zip",
+      "size_bytes": 30059540,
+      "sha256": "1d42d0cf7fc320845216c6aa99390275bd097e4a9117f196d60171b35a1ec777",
+      "required": false
+    }
+  ]
+}

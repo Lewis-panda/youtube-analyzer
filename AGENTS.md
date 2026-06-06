@@ -85,6 +85,12 @@ For a fresh context reset, read in this order:
   outputs, large artifacts are restored from Google Drive, and cloned repos
   should run through localhost. Public IP/router-forwarding settings are
   machine-local and must not be hard-coded into frontend assets or shared data.
+  Do not hand-edit downloaded or generated data artifacts to change results.
+  Collaboration should change frontend presentation, statistical computation
+  code, figure/report generation code, or docs. If data changes are needed,
+  regenerate upstream artifacts and update the Drive manifest explicitly.
+  In the normal GitHub collaboration workflow, do not run crawler or Qwen
+  semantic stages; use the restored Google Drive artifacts as inputs.
 - `prompt.md`: required prompt/reference when using statistical outputs,
   benchmark tables, report JSON, or CSV tables to write conclusion/detailed
   channel-owner reports. Do not generate owner-facing analysis from metric

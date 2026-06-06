@@ -42,6 +42,32 @@ videos.
 
 ## Quick Start
 
+For dashboard/UI/statistics collaboration after cloning:
+
+```bash
+git clone git@github.com:Lewis-panda/youtube-analyzer.git
+cd youtube-analyzer
+python3 scripts/download_drive_artifacts.py
+python3 scripts/build_dashboard_index.py
+python3 dashboard/server.py --host 127.0.0.1 --port 8765
+```
+
+Open:
+
+```text
+http://127.0.0.1:8765/
+```
+
+`scripts/download_drive_artifacts.py` uses the committed public Google Drive
+manifest at `artifacts/google_drive_manifest.public.json` if no private
+`artifacts/google_drive_manifest.json` exists. The downloaded zips are verified
+with SHA-256 before extraction.
+
+This collaboration workflow does **not** run crawling or Qwen inference. It
+uses already-produced artifacts from Google Drive. Most pull requests should
+only change frontend presentation, statistics computation, figure/report
+generation, or documentation.
+
 Copy and edit the config:
 
 ```bash
@@ -64,11 +90,24 @@ artifacts are intentionally ignored.
 Use Google Drive for large shared artifacts:
 
 ```bash
-cp artifacts/google_drive_manifest.example.json artifacts/google_drive_manifest.json
 python3 scripts/download_drive_artifacts.py
 ```
 
-See `docs/google_drive_artifacts.md` for packaging, upload, and restore
+The default public artifact manifest is:
+
+```text
+artifacts/google_drive_manifest.public.json
+```
+
+Use a private local override only when intentionally testing a different
+artifact set:
+
+```bash
+cp artifacts/google_drive_manifest.example.json artifacts/google_drive_manifest.json
+```
+
+`artifacts/google_drive_manifest.json` is ignored by Git. See
+`docs/google_drive_artifacts.md` for packaging, upload, and restore
 instructions.
 
 ## Reproducibility Contract
@@ -80,12 +119,21 @@ Google Drive.
 
 Important rules:
 
+- The GitHub collaboration path is artifact-only. Do not run Qwen or semantic
+  inference just to work on the dashboard or benchmark statistics.
+- Treat downloaded and generated data files as immutable inputs during normal
+  collaboration. Do not hand-edit files under `baseline_runs/*-full/`,
+  `runs/*`, `case_studies/dodomen/dodomen-generic-demo/`, or
+  `dashboard_data/`.
 - Dashboard frontend code is read-only. It must not mutate `dashboard_data/`,
   `baseline_runs/`, `runs/`, the shared SQLite database, or Google Drive
   artifacts.
 - Frontend code must not hand-compute replacement metric values to make a chart
   look better. If a metric is needed, add it to the Python analyzer/builder and
   regenerate the artifact from the same source files.
+- Collaboration changes should normally be one of: frontend presentation,
+  statistical computation logic, figure-generation logic, report-generation
+  logic, or documentation.
 - Collaborators should run the dashboard on localhost after clone. Public IP
   or router-forwarding settings are machine-local deployment details and should
   not be hard-coded into the repo.
@@ -93,6 +141,25 @@ Important rules:
   and rebuild generated summaries explicitly.
 
 See `docs/data_reproducibility_contract.md` for the full contract.
+
+## AI Collaboration Rules
+
+If you are an AI agent working in this repository, follow this order:
+
+1. Read `AGENTS.md`.
+2. Read `docs/data_reproducibility_contract.md`.
+3. Run `git status --short --ignored` before editing.
+4. Do not edit downloaded artifact data by hand.
+5. If changing what a metric means, edit Python analyzer/builder code and
+   regenerate outputs from the same artifact files.
+6. If changing how a metric is shown, edit dashboard frontend/figure code
+   without changing source data.
+7. Do not run Qwen/crawler stages unless the human explicitly asks to create a
+   new artifact set.
+8. Keep public deployment IPs out of source code; use localhost by default.
+
+For data-dependent claims, state whether the claim comes from committed compact
+summaries, restored Google Drive artifacts, or a freshly regenerated output.
 
 Estimate runtime without running stages:
 

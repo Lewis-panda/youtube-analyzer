@@ -33,6 +33,8 @@ dashboard_data/channels/<slug>.json
 
 ## Run Locally
 
+No pip install is required to serve the committed dashboard snapshot.
+
 ```bash
 python3 dashboard/server.py --host 127.0.0.1 --port 8765
 ```
@@ -44,6 +46,9 @@ http://127.0.0.1:8765/
 ```
 
 This is the default path after cloning the repository.
+
+If you need to regenerate `dashboard_data/` from restored artifacts, use a local
+virtual environment and install only `requirements-dashboard.txt`.
 
 ## Run On LAN
 

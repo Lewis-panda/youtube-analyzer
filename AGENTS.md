@@ -91,6 +91,9 @@ For a fresh context reset, read in this order:
   regenerate upstream artifacts and update the Drive manifest explicitly.
   In the normal GitHub collaboration workflow, do not run crawler or Qwen
   semantic stages; use the restored Google Drive artifacts as inputs.
+  Do not install broad dependencies for collaboration tasks: frontend-only work
+  needs no pip install, dashboard-data rebuilds use `requirements-dashboard.txt`,
+  and full `requirements.txt` is only for analyzer/statistics code.
 - `prompt.md`: required prompt/reference when using statistical outputs,
   benchmark tables, report JSON, or CSV tables to write conclusion/detailed
   channel-owner reports. Do not generate owner-facing analysis from metric
@@ -683,6 +686,15 @@ Network-method extensions:
 
 Network dependency notes:
 
+- For GitHub collaboration, default to minimal local setup. Do not ask
+  teammates or AI agents to install Homebrew packages, Qwen/vLLM/CUDA stacks,
+  Playwright/Camoufox, crawler dependencies, or optional graph/ML libraries
+  unless the specific task requires that layer.
+- `dashboard/server.py` uses only the Python standard library. It can serve the
+  committed `dashboard_data/` snapshot without any pip install.
+- `scripts/build_dashboard_index.py` currently needs only `pandas`; use
+  `requirements-dashboard.txt` in a local virtual environment for dashboard
+  artifact rebuilds.
 - Required graph stack lives in `requirements.txt`: `scipy`, `networkx`, and
   `python-louvain` for the current sparse projections and Louvain community
   detection path.

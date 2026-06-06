@@ -42,11 +42,30 @@ videos.
 
 ## Quick Start
 
+Use the smallest setup that matches the work.
+
+No Homebrew install is required by this repo. Do not install Qwen, vLLM, CUDA,
+Playwright/Camoufox, crawler dependencies, or other heavy packages for normal
+frontend/statistics collaboration.
+
+Frontend-only work needs no Python packages:
+
+```bash
+git clone git@github.com:Lewis-panda/youtube-analyzer.git
+cd youtube-analyzer
+python3 dashboard/server.py --host 127.0.0.1 --port 8765
+```
+
+That uses the committed lightweight `dashboard_data/` snapshot.
+
 For dashboard/UI/statistics collaboration after cloning:
 
 ```bash
 git clone git@github.com:Lewis-panda/youtube-analyzer.git
 cd youtube-analyzer
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements-dashboard.txt
 python3 scripts/download_drive_artifacts.py
 python3 scripts/build_dashboard_index.py
 python3 dashboard/server.py --host 127.0.0.1 --port 8765
@@ -67,6 +86,11 @@ This collaboration workflow does **not** run crawling or Qwen inference. It
 uses already-produced artifacts from Google Drive. Most pull requests should
 only change frontend presentation, statistics computation, figure/report
 generation, or documentation.
+
+Only install the broader `requirements.txt` when intentionally changing
+analyzer or benchmark computation code outside the dashboard builder. Keep all
+Python packages inside a local virtual environment; do not use global `pip`
+installs for this project.
 
 Copy and edit the config:
 
@@ -157,6 +181,9 @@ If you are an AI agent working in this repository, follow this order:
 7. Do not run Qwen/crawler stages unless the human explicitly asks to create a
    new artifact set.
 8. Keep public deployment IPs out of source code; use localhost by default.
+9. Do not install new system packages or broad Python dependency sets. Use no
+   dependencies for frontend-only work, `requirements-dashboard.txt` for
+   dashboard rebuilds, and `requirements.txt` only for analyzer/statistics code.
 
 For data-dependent claims, state whether the claim comes from committed compact
 summaries, restored Google Drive artifacts, or a freshly regenerated output.

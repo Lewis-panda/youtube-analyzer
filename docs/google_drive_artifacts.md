@@ -16,6 +16,11 @@ For ordinary GitHub collaboration, these artifacts are sufficient. Collaborators
 do not need to run Qwen or any semantic analysis stage unless the team is
 intentionally creating a new artifact release.
 
+Minimal dependency rule: downloading artifacts uses Python standard library
+only. Rebuilding `dashboard_data/` currently needs `pandas`, available through
+`requirements-dashboard.txt`. Do not install full analyzer, crawler, browser,
+or Qwen dependencies just to restore artifacts.
+
 The committed shared manifest is:
 
 ```text

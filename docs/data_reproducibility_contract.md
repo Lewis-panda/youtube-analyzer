@@ -80,16 +80,32 @@ set.
 
 6. Pulling Git should not require hidden local edits.
 
-   A collaborator should be able to:
+   A frontend-only collaborator should be able to:
 
    ```bash
    git pull
+   python3 dashboard/server.py --host 127.0.0.1 --port 8765
+   ```
+
+   without installing Python packages.
+
+   A dashboard-data collaborator should be able to:
+
+   ```bash
+   git pull
+   python3 -m venv .venv
+   . .venv/bin/activate
+   python -m pip install -r requirements-dashboard.txt
    python3 scripts/download_drive_artifacts.py
    python3 scripts/build_dashboard_index.py
    python3 dashboard/server.py --host 127.0.0.1 --port 8765
    ```
 
    and get a working dashboard with the agreed artifact set.
+
+   Do not install Homebrew packages, Qwen/vLLM/CUDA stacks, crawler
+   dependencies, or browser automation packages for normal dashboard/statistics
+   collaboration.
 
 7. Localhost is the default deployment target.
 
@@ -111,3 +127,7 @@ set.
   read-only evidence, not as editable application state.
 - AI collaborators should not invoke Qwen, crawling, or semantic inference in
   the default GitHub workflow. They should work from restored artifacts.
+- AI collaborators should not install broad dependencies. Use no pip packages
+  for frontend-only work, `requirements-dashboard.txt` for dashboard rebuilds,
+  and `requirements.txt` only when editing analyzer/statistical computation
+  code that actually imports those packages.

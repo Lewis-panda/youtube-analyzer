@@ -15,9 +15,9 @@
     },
     {
       "name": "dodomen_case_study_outputs",
-      "description": "Optional DoDoMen appendix raw outputs and external-event artifacts.",
+      "description": "Optional DoDoMen appendix outputs, manual labels, and external-source artifacts.",
       "drive_file_id": "REPLACE_WITH_GOOGLE_DRIVE_FILE_ID",
-      "destination": "case_studies/dodomen/dodomen-generic-demo",
+      "destination": "case_studies/dodomen",
       "archive_type": "zip",
       "required": false
     }

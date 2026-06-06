@@ -17,16 +17,23 @@ artifact refresh.
 For collaborators who need to rebuild baselines or inspect completed runs:
 
 ```bash
-zip -r baseline_runs_full.zip baseline_runs \
-  -x 'baseline_runs/benchmark_baseline/*'
+(cd baseline_runs && zip -r ../artifacts/drive_uploads/baseline_runs_full_clean_20260606.zip . \
+  -x '*/__pycache__/*' '*/.matplotlib/*' '.matplotlib/*')
 ```
 
 For optional DoDoMen appendix work:
 
 ```bash
-zip -r dodomen_case_study_outputs.zip \
-  case_studies/dodomen/dodomen-generic-demo
+(cd case_studies/dodomen && zip -r ../../artifacts/drive_uploads/dodomen_case_study_outputs_clean_20260606.zip . \
+  -x '*/__pycache__/*' '*/.matplotlib/*' '.matplotlib/*')
 ```
+
+When building the Drive zips used by `scripts/download_drive_artifacts.py`,
+create the archive from inside the destination directory. For example,
+`baseline_runs_full` should contain the contents of `baseline_runs/`, not a
+nested top-level `baseline_runs/` directory. `dodomen_case_study_outputs`
+should contain the contents of `case_studies/dodomen/`, including
+`dodomen-generic-demo/` and `external_criticism_v1/`.
 
 Upload each zip to Google Drive, set the file permission to anyone-with-link
 reader, and copy the file ID from the URL.

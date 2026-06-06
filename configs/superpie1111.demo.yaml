@@ -1,0 +1,31 @@
+project_name: "Superpie Channel Community Analyzer Demo"
+
+channel_id: "UCR_352pCZIWGrqq8Zt6ap8g"
+channel_url: "https://youtube.com/@superpie1111"
+channel_handle: "@superpie1111"
+
+date_start: null
+date_end: null
+
+include_replies: false
+exclude_shorts: true
+short_threshold_seconds: 180
+
+analysis:
+  # Lower thresholds are useful only for tiny smoke tests. For the full
+  # channel report, use configs/superpie1111.full.yaml instead.
+  min_actor_videos: 1
+  min_co_videos: 1
+  high_activity_min_videos: 5
+  mid_activity_min_videos: 2
+  continuity_windows: 4
+  continuity_window_options: "3,4,6,8"
+  rolling_window_videos: 25
+  rolling_horizon_videos: 25
+  rolling_step_videos: 10
+  top_bridge_actors: 30
+  min_video_commenters: 5
+  min_shared_video_commenters: 2
+
+outputs:
+  run_slug: "superpie1111-demo"

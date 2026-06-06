@@ -1,0 +1,55 @@
+# Channel Community Analyzer example config.
+
+project_name: "Channel Community Analyzer Demo"
+
+# Prefer channel_id when known. If omitted, channel_handle or channel_url is
+# matched against the channels table when possible.
+channel_id: "UCfq75-6J5seC82CmtLSFxXw"
+channel_url: "https://www.youtube.com/@TheDoDoMen"
+channel_handle: "@TheDoDoMen"
+
+date_start: "2020-01-01"
+date_end: null
+
+include_replies: false
+exclude_shorts: true
+short_threshold_seconds: 180
+
+analysis:
+  min_actor_videos: 2
+  min_co_videos: 3
+  high_activity_min_videos: 16
+  mid_activity_min_videos: 6
+  continuity_windows: 4
+  continuity_window_options: "3,4,6,8"
+  rolling_window_videos: 50
+  rolling_horizon_videos: 50
+  rolling_step_videos: 25
+  top_bridge_actors: 50
+  top_network_actors: 200
+  betweenness_sample_size: 128
+  community_algorithm: "auto"
+  min_video_commenters: 10
+  min_shared_video_commenters: 5
+  top_video_link_opportunities: 100
+  max_video_link_candidate_pairs: 200000
+
+outputs:
+  run_slug: "dodomen_generic_demo"
+
+# Optional external PTT/Dcard event analysis. The generic pipeline can scrape
+# per-channel external posts into runs/<slug>/external_sources when
+# --external-crawl auto/on is used. This demo points to the DoDoMen case-study
+# appendix scrape only because it is a checked-in DoDoMen demo source.
+external_analysis:
+  enabled: true
+  sources_dir: "case_studies/dodomen/external_criticism_v1"
+  sources: "ptt,dcard"
+  channel_aliases: "DoDoMen, The DoDo Men, 嘟嘟人, dodomen"
+  require_alias_match: false
+  min_daily_posts: 2
+  min_external_engagement: 10
+  merge_gap_days: 3
+  baseline_days: 90
+  pre_days: 28
+  post_days: 28

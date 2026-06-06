@@ -1,0 +1,71 @@
+# Python / local caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.matplotlib/
+*/.matplotlib/
+
+# Local editor / agent state
+.claude/
+.codex/
+.agents/
+.DS_Store
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.token
+secrets.*
+
+# Runtime logs / transient exports
+logs/*
+!logs/README.md
+exports/*
+!exports/README.md
+qwen_jobs/*
+!qwen_jobs/README.md
+notebooks/*
+!notebooks/README.md
+.artifact_downloads/
+artifacts/google_drive_manifest.json
+
+# Generated run outputs. Keep only small public summaries/snapshots.
+runs/*
+!runs/README.md
+baseline_runs/*
+!baseline_runs/README.md
+!baseline_runs/baseline_completion_inventory.csv
+!baseline_runs/benchmark_baseline/
+!baseline_runs/benchmark_baseline/**
+
+# Large archived outputs and old experiments.
+legacy/**
+!legacy/README.md
+
+# DoDoMen case-study artifacts: keep docs/scripts/manual labels, not raw outputs.
+case_studies/dodomen/dodomen-generic-demo/**
+!case_studies/dodomen/dodomen-generic-demo/
+!case_studies/dodomen/dodomen-generic-demo/custom_labels/
+!case_studies/dodomen/dodomen-generic-demo/custom_labels/**
+case_studies/dodomen/external_criticism_v1/**
+case_studies/dodomen/scripts/__pycache__/
+
+# SQLite / local DBs
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# Archives and model/job bundles
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z

@@ -1,0 +1,1367 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "slug": "superpie1111-full",
+  "title": "超派人生Superpie",
+  "channel_id": "UCR_352pCZIWGrqq8Zt6ap8g",
+  "run_dir": "baseline_runs/superpie1111-full",
+  "source_type": "baseline_completed_run",
+  "channel": {
+    "channel_id": "UCR_352pCZIWGrqq8Zt6ap8g",
+    "title": "超派人生Superpie",
+    "custom_url": "@superpie1111",
+    "country": "TW",
+    "subscriber_count": 410000,
+    "video_count_api": 1159,
+    "view_count_api": 134087692,
+    "crawl_time": "2026-05-08T05:28:54+00:00",
+    "date_min": "2021-03-29 11:00:03+00:00",
+    "date_max": "2026-05-06 11:00:06+00:00",
+    "n_videos_in_scope": 602,
+    "n_comments_in_scope": 73117,
+    "n_commenters_in_scope": 35045,
+    "total_views_in_scope": 91822561
+  },
+  "overview": {
+    "channel_id": "UCR_352pCZIWGrqq8Zt6ap8g",
+    "channel_title": "超派人生Superpie",
+    "subscriber_count": 410000,
+    "channel_video_count_api": 1159,
+    "channel_view_count_api": 134087692,
+    "n_videos_in_scope": 602,
+    "n_comments_in_scope": 73117,
+    "n_commenters_in_scope": 35045,
+    "date_min": "2021-03-29 11:00:03+00:00",
+    "date_max": "2026-05-06 11:00:06+00:00",
+    "total_views_in_scope": 91822561,
+    "total_video_comment_count_api": 100207.0
+  },
+  "run_summary": {
+    "started_at": "2026-06-03T18:21:37+08:00",
+    "finished_at": "2026-06-03T18:22:00+08:00",
+    "total_seconds": 22.931,
+    "qwen_mode": "existing",
+    "n_stages": 3,
+    "stages": [
+      {
+        "stage": "base analyzer",
+        "status": "completed",
+        "elapsed_seconds": 12.39
+      },
+      {
+        "stage": "commenter deeper supplement",
+        "status": "completed",
+        "elapsed_seconds": 3.562
+      },
+      {
+        "stage": "external event analysis",
+        "status": "completed",
+        "elapsed_seconds": 4.177
+      }
+    ]
+  },
+  "config": {
+    "project_name": "Superpie Channel Community Analyzer",
+    "channel_url": "https://youtube.com/@superpie1111",
+    "channel_handle": "@superpie1111",
+    "date_start": null,
+    "date_end": null,
+    "exclude_shorts": true,
+    "short_threshold_seconds": 180,
+    "outputs": {
+      "run_slug": "superpie1111-full"
+    },
+    "external_analysis": {
+      "enabled": false,
+      "sources_dir": null,
+      "channel_aliases": [
+        "超派人生Superpie",
+        "超派人生",
+        "Superpie",
+        "superpie1111",
+        "超哥",
+        "黃柏超",
+        "超派炸雞"
+      ],
+      "require_alias_match": true,
+      "semantic_labels_path": null,
+      "min_daily_posts": 1,
+      "min_external_engagement": 1,
+      "merge_gap_days": 3,
+      "baseline_days": 90,
+      "pre_days": 28,
+      "post_days": 28,
+      "min_event_posts": 1
+    }
+  },
+  "reports": {
+    "report_md": "baseline_runs/superpie1111-full/report.md",
+    "report_en_md": "baseline_runs/superpie1111-full/report_en.md",
+    "report_zh_md": "baseline_runs/superpie1111-full/report_zh.md",
+    "report_json": "baseline_runs/superpie1111-full/report.json",
+    "report_supplement_json": "baseline_runs/superpie1111-full/report_supplement.json"
+  },
+  "artifacts": {
+    "tables": [
+      {
+        "name": "actor_communities",
+        "path": "baseline_runs/superpie1111-full/tables/actor_communities.csv",
+        "bytes": 427911
+      },
+      {
+        "name": "bridge_actors",
+        "path": "baseline_runs/superpie1111-full/tables/bridge_actors.csv",
+        "bytes": 11410
+      },
+      {
+        "name": "channel_overview",
+        "path": "baseline_runs/superpie1111-full/tables/channel_overview.csv",
+        "bytes": 372
+      },
+      {
+        "name": "commenter_activity",
+        "path": "baseline_runs/superpie1111-full/tables/commenter_activity.csv",
+        "bytes": 5112521
+      },
+      {
+        "name": "commenter_tiers",
+        "path": "baseline_runs/superpie1111-full/tables/commenter_tiers.csv",
+        "bytes": 291
+      },
+      {
+        "name": "community_profiles",
+        "path": "baseline_runs/superpie1111-full/tables/community_profiles.csv",
+        "bytes": 4870
+      },
+      {
+        "name": "community_sentiment_summary",
+        "path": "baseline_runs/superpie1111-full/tables/community_sentiment_summary.csv",
+        "bytes": 1858
+      },
+      {
+        "name": "community_summary",
+        "path": "baseline_runs/superpie1111-full/tables/community_summary.csv",
+        "bytes": 801
+      },
+      {
+        "name": "community_theme_affinity",
+        "path": "baseline_runs/superpie1111-full/tables/community_theme_affinity.csv",
+        "bytes": 7358
+      },
+      {
+        "name": "community_theme_sentiment",
+        "path": "baseline_runs/superpie1111-full/tables/community_theme_sentiment.csv",
+        "bytes": 10855
+      },
+      {
+        "name": "continuity_sensitivity",
+        "path": "baseline_runs/superpie1111-full/tables/continuity_sensitivity.csv",
+        "bytes": 592
+      },
+      {
+        "name": "continuity_summary",
+        "path": "baseline_runs/superpie1111-full/tables/continuity_summary.csv",
+        "bytes": 641
+      },
+      {
+        "name": "diagnostics",
+        "path": "baseline_runs/superpie1111-full/tables/diagnostics.csv",
+        "bytes": 1532
+      },
+      {
+        "name": "network_actor_metrics",
+        "path": "baseline_runs/superpie1111-full/tables/network_actor_metrics.csv",
+        "bytes": 44554
+      },
+      {
+        "name": "network_summary",
+        "path": "baseline_runs/superpie1111-full/tables/network_summary.csv",
+        "bytes": 635
+      },
+      {
+        "name": "qwen_comment_sentiment",
+        "path": "baseline_runs/superpie1111-full/tables/qwen_comment_sentiment.csv",
+        "bytes": 27785225
+      },
+      {
+        "name": "qwen_external_post_labels",
+        "path": "baseline_runs/superpie1111-full/tables/qwen_external_post_labels.csv",
+        "bytes": 113748
+      },
+      {
+        "name": "qwen_video_themes",
+        "path": "baseline_runs/superpie1111-full/tables/qwen_video_themes.csv",
+        "bytes": 1059152
+      },
+      {
+        "name": "reply_conflict_theme_summary",
+        "path": "baseline_runs/superpie1111-full/tables/reply_conflict_theme_summary.csv",
+        "bytes": 1597
+      },
+      {
+        "name": "reply_conflict_video_summary",
+        "path": "baseline_runs/superpie1111-full/tables/reply_conflict_video_summary.csv",
+        "bytes": 210666
+      },
+      {
+        "name": "reply_sentiment_summary",
+        "path": "baseline_runs/superpie1111-full/tables/reply_sentiment_summary.csv",
+        "bytes": 760
+      },
+      {
+        "name": "reply_thread_metrics",
+        "path": "baseline_runs/superpie1111-full/tables/reply_thread_metrics.csv",
+        "bytes": 21576469
+      },
+      {
+        "name": "reply_thread_overview",
+        "path": "baseline_runs/superpie1111-full/tables/reply_thread_overview.csv",
+        "bytes": 368
+      },
+      {
+        "name": "rolling_retention",
+        "path": "baseline_runs/superpie1111-full/tables/rolling_retention.csv",
+        "bytes": 3540
+      },
+      {
+        "name": "sentiment_hotspots",
+        "path": "baseline_runs/superpie1111-full/tables/sentiment_hotspots.csv",
+        "bytes": 246414
+      },
+      {
+        "name": "sentiment_source_summary",
+        "path": "baseline_runs/superpie1111-full/tables/sentiment_source_summary.csv",
+        "bytes": 255
+      },
+      {
+        "name": "sentiment_summary",
+        "path": "baseline_runs/superpie1111-full/tables/sentiment_summary.csv",
+        "bytes": 642
+      },
+      {
+        "name": "sentiment_theme_summary",
+        "path": "baseline_runs/superpie1111-full/tables/sentiment_theme_summary.csv",
+        "bytes": 2818
+      },
+      {
+        "name": "theme_source_summary",
+        "path": "baseline_runs/superpie1111-full/tables/theme_source_summary.csv",
+        "bytes": 31
+      },
+      {
+        "name": "theme_summary",
+        "path": "baseline_runs/superpie1111-full/tables/theme_summary.csv",
+        "bytes": 342
+      },
+      {
+        "name": "theme_video_labels",
+        "path": "baseline_runs/superpie1111-full/tables/theme_video_labels.csv",
+        "bytes": 303707
+      },
+      {
+        "name": "theme_video_labels_long",
+        "path": "baseline_runs/superpie1111-full/tables/theme_video_labels_long.csv",
+        "bytes": 275459
+      },
+      {
+        "name": "video_cluster_sentiment_summary",
+        "path": "baseline_runs/superpie1111-full/tables/video_cluster_sentiment_summary.csv",
+        "bytes": 1053
+      },
+      {
+        "name": "video_cluster_summary",
+        "path": "baseline_runs/superpie1111-full/tables/video_cluster_summary.csv",
+        "bytes": 3069
+      },
+      {
+        "name": "video_cluster_theme_affinity",
+        "path": "baseline_runs/superpie1111-full/tables/video_cluster_theme_affinity.csv",
+        "bytes": 3443
+      },
+      {
+        "name": "video_clusters",
+        "path": "baseline_runs/superpie1111-full/tables/video_clusters.csv",
+        "bytes": 138087
+      },
+      {
+        "name": "video_link_opportunities",
+        "path": "baseline_runs/superpie1111-full/tables/video_link_opportunities.csv",
+        "bytes": 128955
+      },
+      {
+        "name": "video_metrics",
+        "path": "baseline_runs/superpie1111-full/tables/video_metrics.csv",
+        "bytes": 133452
+      },
+      {
+        "name": "video_network_metrics",
+        "path": "baseline_runs/superpie1111-full/tables/video_network_metrics.csv",
+        "bytes": 153028
+      },
+      {
+        "name": "video_network_summary",
+        "path": "baseline_runs/superpie1111-full/tables/video_network_summary.csv",
+        "bytes": 619
+      }
+    ],
+    "figures": [
+      {
+        "name": "channel_activity",
+        "path": "baseline_runs/superpie1111-full/figures/channel_activity.png",
+        "bytes": 96205
+      },
+      {
+        "name": "commenter_tiers",
+        "path": "baseline_runs/superpie1111-full/figures/commenter_tiers.png",
+        "bytes": 26388
+      },
+      {
+        "name": "community_sizes",
+        "path": "baseline_runs/superpie1111-full/figures/community_sizes.png",
+        "bytes": 27041
+      },
+      {
+        "name": "rolling_retention",
+        "path": "baseline_runs/superpie1111-full/figures/rolling_retention.png",
+        "bytes": 53017
+      },
+      {
+        "name": "video_cluster_sizes",
+        "path": "baseline_runs/superpie1111-full/figures/video_cluster_sizes.png",
+        "bytes": 27542
+      }
+    ]
+  },
+  "tabs": [
+    {
+      "id": "overview",
+      "title": "總覽",
+      "available": true,
+      "tables": [
+        "channel_overview",
+        "diagnostics",
+        "video_metrics"
+      ],
+      "figures": [
+        "channel_activity"
+      ]
+    },
+    {
+      "id": "videos",
+      "title": "影片與時間序列",
+      "available": true,
+      "tables": [
+        "continuity_sensitivity",
+        "continuity_summary",
+        "rolling_retention",
+        "video_metrics"
+      ],
+      "figures": [
+        "channel_activity",
+        "rolling_retention"
+      ]
+    },
+    {
+      "id": "themes",
+      "title": "主題與情緒",
+      "available": true,
+      "tables": [
+        "sentiment_hotspots",
+        "sentiment_summary",
+        "sentiment_theme_summary",
+        "theme_summary",
+        "theme_video_labels"
+      ],
+      "figures": []
+    },
+    {
+      "id": "community",
+      "title": "社群與網路",
+      "available": true,
+      "tables": [
+        "actor_communities",
+        "bridge_actors",
+        "commenter_tiers",
+        "community_profiles",
+        "community_summary",
+        "network_summary"
+      ],
+      "figures": [
+        "commenter_tiers",
+        "community_sizes"
+      ]
+    },
+    {
+      "id": "video_network",
+      "title": "影片共享觀眾網路",
+      "available": true,
+      "tables": [
+        "video_cluster_summary",
+        "video_clusters",
+        "video_link_opportunities",
+        "video_network_metrics",
+        "video_network_summary"
+      ],
+      "figures": [
+        "video_cluster_sizes"
+      ]
+    },
+    {
+      "id": "reply_conflict",
+      "title": "回覆區衝突",
+      "available": true,
+      "tables": [
+        "reply_conflict_theme_summary",
+        "reply_conflict_video_summary",
+        "reply_sentiment_summary",
+        "reply_thread_overview"
+      ],
+      "figures": []
+    },
+    {
+      "id": "baseline",
+      "title": "基準比較",
+      "available": false,
+      "tables": [],
+      "figures": []
+    },
+    {
+      "id": "external_events",
+      "title": "外部事件",
+      "available": true,
+      "tables": [],
+      "figures": []
+    },
+    {
+      "id": "cold_report",
+      "title": "冷冰冰統計報告",
+      "available": true,
+      "tables": [],
+      "figures": []
+    },
+    {
+      "id": "owner_report",
+      "title": "頻道主可讀報告",
+      "available": false,
+      "tables": [],
+      "figures": []
+    }
+  ],
+  "dashboard_summary": {
+    "top_themes": [
+      {
+        "primary_theme": "controversy_response",
+        "n_comments": 20141,
+        "n_commenters": 14985,
+        "n_videos": 60
+      },
+      {
+        "primary_theme": "food_culture",
+        "n_comments": 17444,
+        "n_commenters": 11006,
+        "n_videos": 183
+      },
+      {
+        "primary_theme": "automotive_luxury",
+        "n_comments": 18067,
+        "n_commenters": 10307,
+        "n_videos": 189
+      },
+      {
+        "primary_theme": "personal_team_life",
+        "n_comments": 8998,
+        "n_commenters": 6511,
+        "n_videos": 56
+      },
+      {
+        "primary_theme": "travel_exploration",
+        "n_comments": 3940,
+        "n_commenters": 3042,
+        "n_videos": 56
+      },
+      {
+        "primary_theme": "business_brand",
+        "n_comments": 2696,
+        "n_commenters": 2332,
+        "n_videos": 29
+      },
+      {
+        "primary_theme": "other",
+        "n_comments": 1036,
+        "n_commenters": 926,
+        "n_videos": 15
+      },
+      {
+        "primary_theme": "workplace_tech_career",
+        "n_comments": 426,
+        "n_commenters": 371,
+        "n_videos": 6
+      }
+    ],
+    "sentiment_summary": [
+      {
+        "sentiment_label": "negative",
+        "n_comments": 14109,
+        "pct_comments": 0.14084914795699355,
+        "like_w": 110171.0,
+        "like_weighted_share": 0.22028913060865393,
+        "avg_score_neg": 0.9400141753490678,
+        "avg_score_neu": 0.05712523920901553,
+        "avg_score_pos": 0.002860585441916507,
+        "avg_confidence": 0.701910128286909,
+        "n_replies": 3917,
+        "reply_share": 0.2776242114962081
+      },
+      {
+        "sentiment_label": "neutral",
+        "n_comments": 52013,
+        "pct_comments": 0.519242096015813,
+        "like_w": 233496.0,
+        "like_weighted_share": 0.46687994881228506,
+        "avg_score_neg": 0.09828504412358449,
+        "avg_score_neu": 0.8026599119450908,
+        "avg_score_pos": 0.09905504393132489,
+        "avg_confidence": 0.7039749677965123,
+        "n_replies": 16633,
+        "reply_share": 0.3197854382558207
+      },
+      {
+        "sentiment_label": "positive",
+        "n_comments": 34049,
+        "pct_comments": 0.3399087560271935,
+        "like_w": 156453.0,
+        "like_weighted_share": 0.31283092057906103,
+        "avg_score_neg": 0.02068665746424271,
+        "avg_score_neu": 0.06186378454580164,
+        "avg_score_pos": 0.9174495579899558,
+        "avg_confidence": 0.7156069194396311,
+        "n_replies": 6504,
+        "reply_share": 0.19101882580986226
+      }
+    ],
+    "negative_rate": 0.14084914795699355,
+    "positive_rate": 0.3399087560271935,
+    "like_weighted_negative_rate": 0.22028913060865393,
+    "commenter_tiers": [
+      {
+        "activity_tier": "high",
+        "n_commenters": 346,
+        "avg_videos": 29.251445086705203,
+        "median_videos": 22.0,
+        "total_comments": 10643,
+        "total_likes_received": 48722,
+        "pct_commenters": 0.9873020402339848
+      },
+      {
+        "activity_tier": "mid",
+        "n_commenters": 1497,
+        "avg_videos": 8.462257849031396,
+        "median_videos": 8.0,
+        "total_comments": 13153,
+        "total_likes_received": 55287,
+        "pct_commenters": 4.271650734769581
+      },
+      {
+        "activity_tier": "low",
+        "n_commenters": 33202,
+        "avg_videos": 1.439792783567255,
+        "median_videos": 1.0,
+        "total_comments": 49321,
+        "total_likes_received": 248208,
+        "pct_commenters": 94.74104722499644
+      }
+    ],
+    "network_summary": {
+      "n_nodes": 4550,
+      "n_edges": 89903,
+      "density": 0.00868714051391563,
+      "avg_degree": 39.5178021978022,
+      "weighted_avg_degree": 158.5331868131868,
+      "n_communities": 7,
+      "modularity": 0.31177992227633883,
+      "community_method": "networkx_louvain",
+      "community_concentration_hhi": 0.26421881415288007,
+      "effective_communities": 3.7847418368223713,
+      "largest_community_share": 0.2947252747252747,
+      "top3_community_share": 0.854065934065934,
+      "max_core_number": 90,
+      "max_core_node_share": 0.03120879120879121,
+      "avg_core_number": 20.914065934065935,
+      "degree_assortativity": -0.30352063714146,
+      "community_assortativity": 0.4513650329525055,
+      "min_actor_videos": 2,
+      "min_co_videos": 3,
+      "betweenness_sample_size": 128,
+      "top_network_actors": 200
+    },
+    "community_summary": [
+      {
+        "community": 1,
+        "n_nodes": 1341,
+        "pct_nodes": 29.47252747252747,
+        "internal_edges": 11605,
+        "external_edges": 8094,
+        "internal_edge_weight": 39073.0,
+        "external_edge_weight": 29915.0,
+        "total_weighted_degree": 108061.0,
+        "internal_weighted_degree": 78146.0,
+        "conductance": 0.2768343805813383,
+        "avg_core_number": 13.020879940343027,
+        "max_core_number": 90
+      },
+      {
+        "community": 5,
+        "n_nodes": 1283,
+        "pct_nodes": 28.197802197802197,
+        "internal_edges": 9535,
+        "external_edges": 19897,
+        "internal_edge_weight": 35901.0,
+        "external_edge_weight": 78892.0,
+        "total_weighted_degree": 150694.0,
+        "internal_weighted_degree": 71802.0,
+        "conductance": 0.5235244933441279,
+        "avg_core_number": 15.968043647700702,
+        "max_core_number": 90
+      },
+      {
+        "community": 2,
+        "n_nodes": 1262,
+        "pct_nodes": 27.736263736263737,
+        "internal_edges": 20005,
+        "external_edges": 25709,
+        "internal_edge_weight": 84194.0,
+        "external_edge_weight": 107973.0,
+        "total_weighted_degree": 276361.0,
+        "internal_weighted_degree": 168388.0,
+        "conductance": 0.39069550334526215,
+        "avg_core_number": 27.411251980982566,
+        "max_core_number": 90
+      },
+      {
+        "community": 6,
+        "n_nodes": 658,
+        "pct_nodes": 14.461538461538462,
+        "internal_edges": 12760,
+        "external_edges": 18290,
+        "internal_edge_weight": 54077.0,
+        "external_edge_weight": 78038.0,
+        "total_weighted_degree": 186192.0,
+        "internal_weighted_degree": 108154.0,
+        "conductance": 0.41912649308240957,
+        "avg_core_number": 34.36474164133739,
+        "max_core_number": 90
+      },
+      {
+        "community": 0,
+        "n_nodes": 2,
+        "pct_nodes": 0.04395604395604395,
+        "internal_edges": 1,
+        "external_edges": 0,
+        "internal_edge_weight": 3.0,
+        "external_edge_weight": 0.0,
+        "total_weighted_degree": 6.0,
+        "internal_weighted_degree": 6.0,
+        "conductance": 0.0,
+        "avg_core_number": 1.0,
+        "max_core_number": 1
+      },
+      {
+        "community": 4,
+        "n_nodes": 2,
+        "pct_nodes": 0.04395604395604395,
+        "internal_edges": 1,
+        "external_edges": 0,
+        "internal_edge_weight": 3.0,
+        "external_edge_weight": 0.0,
+        "total_weighted_degree": 6.0,
+        "internal_weighted_degree": 6.0,
+        "conductance": 0.0,
+        "avg_core_number": 1.0,
+        "max_core_number": 1
+      },
+      {
+        "community": 3,
+        "n_nodes": 2,
+        "pct_nodes": 0.04395604395604395,
+        "internal_edges": 1,
+        "external_edges": 0,
+        "internal_edge_weight": 3.0,
+        "external_edge_weight": 0.0,
+        "total_weighted_degree": 6.0,
+        "internal_weighted_degree": 6.0,
+        "conductance": 0.0,
+        "avg_core_number": 1.0,
+        "max_core_number": 1
+      }
+    ],
+    "video_network_summary": {
+      "n_nodes": 524,
+      "n_edges": 15980,
+      "density": 0.11662020346503583,
+      "avg_degree": 60.99236641221374,
+      "weighted_avg_degree": 585.1564885496183,
+      "n_video_clusters": 3,
+      "modularity": 0.2577629868426793,
+      "community_method": "networkx_louvain",
+      "community_concentration_hhi": 0.4606302080298351,
+      "effective_communities": 2.1709388193994212,
+      "largest_community_share": 0.5992366412213741,
+      "top3_community_share": 1.0,
+      "max_core_number": 88,
+      "max_core_node_share": 0.22519083969465647,
+      "avg_core_number": 38.2442748091603,
+      "degree_assortativity": -0.20322367385277793,
+      "community_assortativity": 0.3567507251715249,
+      "min_video_commenters": 10,
+      "min_shared_video_commenters": 5,
+      "betweenness_sample_size": 128
+    },
+    "video_clusters": [
+      {
+        "video_cluster": 2,
+        "n_videos": 314,
+        "date_min": "2022-02-09 16:40:40+00:00",
+        "date_max": "2026-04-03 11:00:06+00:00",
+        "total_observed_comments": 42713,
+        "unique_commenters": 24908,
+        "median_observed_commenters": 67.0,
+        "total_views": 51601134,
+        "top_theme_labels": "food_culture (155); business_brand (110); travel_exploration (95); automotive_luxury (79); controversy_response (66)",
+        "top_videos": "回應超派炸雞倒油風波【超派人生】 (4304); 怒揭黑卡背後的真相！額度無上限僅是行銷手法？直球對決美國運通！決定直接剪卡了？【超派人生】 (1652); 耗資千萬只為延續記憶中的味道？耗時一年，新淘淘鐵板燒終於準備好了！【超派人生】 (1191); 超派炸雞開業半年 ！回應所有的批評指教！【超派人生】 (1045); 富二代？靠爸？前科？全部公開！【超派人生】 (775)",
+        "n_graph_videos": 314,
+        "pct_graph_videos": 59.92366412213741,
+        "internal_edges": 3559,
+        "external_edges": 3140,
+        "internal_edge_weight": 31081.0,
+        "external_edge_weight": 24169.0,
+        "total_weighted_degree": 86331.0,
+        "internal_weighted_degree": 62162.0,
+        "conductance": 0.2799573733653033,
+        "avg_core_number": 20.20063694267516,
+        "max_core_number": 88
+      },
+      {
+        "video_cluster": 1,
+        "n_videos": 159,
+        "date_min": "2021-07-23 11:00:11+00:00",
+        "date_max": "2023-02-13 11:00:09+00:00",
+        "total_observed_comments": 21883,
+        "unique_commenters": 11244,
+        "median_observed_commenters": 91.0,
+        "total_views": 24027573,
+        "top_theme_labels": "automotive_luxury (77); personal_team_life (58); food_culture (56); business_brand (41); travel_exploration (27)",
+        "top_videos": "本該在保養廠的大牛竟出車禍！相關人士出來面對！還原事故發生的過程！心疼愛車受損落下男兒淚？！【超 (1382); 做Youtuber 竟然被恐嚇！女兒人身安全受威脅？正式向網路惡勢力宣戰！超派人生絕不姑息！【超 (1348); 正面回應鏡週刊摩鐵風波！完整還原事件始末！對話紀錄全公開！做真實的自己絕不閃躲！【超派人生】 (645); 把妹一定要靠錢多嗎？憤慨少年的失戀經歷！越級打怪重新投胎比較快？超老師戀愛診療室上線！【超派人生 (587); 勞力士兄弟品牌帝舵！近年來熱門程度飆升超定價？周杰倫貝克漢御用款！腦波弱不小心就買單？！ft.  (447)",
+        "n_graph_videos": 159,
+        "pct_graph_videos": 30.343511450381676,
+        "internal_edges": 5321,
+        "external_edges": 5752,
+        "internal_edge_weight": 55403.0,
+        "external_edge_weight": 50120.0,
+        "total_weighted_degree": 160926.0,
+        "internal_weighted_degree": 110806.0,
+        "conductance": 0.3440039534372941,
+        "avg_core_number": 63.308176100628934,
+        "max_core_number": 88
+      },
+      {
+        "video_cluster": 0,
+        "n_videos": 51,
+        "date_min": "2021-03-29 11:00:03+00:00",
+        "date_max": "2021-12-16 11:00:09+00:00",
+        "total_observed_comments": 7303,
+        "unique_commenters": 4023,
+        "median_observed_commenters": 112.0,
+        "total_views": 7480034,
+        "top_theme_labels": "automotive_luxury (27); food_culture (18); personal_team_life (14); product_review (13); business_brand (8)",
+        "top_videos": "全台最有錢的YTR？企業家為何踏入Youtube圈？破萬QA一次解答！【超派人生】 (928); 台灣Youtuber史上自有物品最高價開箱！價值突破140000000！企業家究竟在想什麼？【超 (458); 雪茄女神駕到！教你如何品嚐各國種類特色雪茄！煙霧繚繞的迷幻享受！新手入門必看攻略指南【超派人生】 (300); 黑卡真的無所不能嗎？美國運通客戶關係經理來揭秘？！Amex Centurion Card = M (284); 開箱千萬英倫西裝紳士！優雅與暴力的衝突美學！007御用座駕之最實用日常代步GT超跑？ Aston (218)",
+        "n_graph_videos": 51,
+        "pct_graph_videos": 9.732824427480915,
+        "internal_edges": 868,
+        "external_edges": 3572,
+        "internal_edge_weight": 13164.0,
+        "external_edge_weight": 33037.0,
+        "total_weighted_degree": 59365.0,
+        "internal_weighted_degree": 26328.0,
+        "conductance": 0.5565063589657205,
+        "avg_core_number": 71.19607843137256,
+        "max_core_number": 88
+      }
+    ],
+    "negative_hotspots": [
+      {
+        "video_id": "Wjowk1RYDWg",
+        "n_comments": 13,
+        "n_negative": 4,
+        "n_neutral": 7,
+        "n_positive": 2,
+        "negative_rate": 0.3076923076923077,
+        "neutral_rate": 0.5384615384615384,
+        "positive_rate": 0.15384615384615385,
+        "total_like_w": 103.0,
+        "negative_like_w": 77.0,
+        "positive_like_w": 3.0,
+        "like_weighted_negative_rate": 0.7475728155339806,
+        "like_weighted_positive_rate": 0.02912621359223301,
+        "avg_score_neg": 0.3538461538461538,
+        "avg_score_neu": 0.43076923076923074,
+        "avg_score_pos": 0.2153846153846154,
+        "avg_confidence": 0.7,
+        "n_replies": 3,
+        "reply_share": 0.23076923076923078,
+        "title": "開箱胡志明奢華天王洗頭！超高顏質美女貼身服務？！【超派人生】",
+        "published_at": "2026-02-02 11:00:06+00:00",
+        "view_count": 17697,
+        "primary_theme": "travel_exploration",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "dc2jNZxsPyw",
+        "n_comments": 147,
+        "n_negative": 43,
+        "n_neutral": 83,
+        "n_positive": 21,
+        "negative_rate": 0.2925170068027211,
+        "neutral_rate": 0.564625850340136,
+        "positive_rate": 0.14285714285714285,
+        "total_like_w": 780.0,
+        "negative_like_w": 444.0,
+        "positive_like_w": 117.0,
+        "like_weighted_negative_rate": 0.5692307692307692,
+        "like_weighted_positive_rate": 0.15,
+        "avg_score_neg": 0.3414965986394558,
+        "avg_score_neu": 0.4806122448979591,
+        "avg_score_pos": 0.17789115646258508,
+        "avg_confidence": 0.7000000000000002,
+        "n_replies": 50,
+        "reply_share": 0.3401360544217687,
+        "title": "五萬創業拚出破億月收？！為了流量搏命演出？直播天后的奮鬥史！亂入丟丟妹的直播現場？！【超派人生】",
+        "published_at": "2022-07-19 11:00:13+00:00",
+        "view_count": 166614,
+        "primary_theme": "business_brand",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "qRGXUptGBZo",
+        "n_comments": 6468,
+        "n_negative": 2162,
+        "n_neutral": 3388,
+        "n_positive": 918,
+        "negative_rate": 0.33426097711812,
+        "neutral_rate": 0.5238095238095238,
+        "positive_rate": 0.14192949907235622,
+        "total_like_w": 48157.0,
+        "negative_like_w": 27135.0,
+        "positive_like_w": 5741.0,
+        "like_weighted_negative_rate": 0.5634694852254085,
+        "like_weighted_positive_rate": 0.11921423676724048,
+        "avg_score_neg": 0.3801051329622758,
+        "avg_score_neu": 0.43456091527520097,
+        "avg_score_pos": 0.18533395176252324,
+        "avg_confidence": 0.7000000000000001,
+        "n_replies": 1711,
+        "reply_share": 0.26453308596165737,
+        "title": "回應超派炸雞倒油風波【超派人生】",
+        "published_at": "2023-10-11 10:00:11+00:00",
+        "view_count": 601653,
+        "primary_theme": "controversy_response",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "DL5yPGRlH8E",
+        "n_comments": 30,
+        "n_negative": 17,
+        "n_neutral": 10,
+        "n_positive": 3,
+        "negative_rate": 0.5666666666666667,
+        "neutral_rate": 0.3333333333333333,
+        "positive_rate": 0.1,
+        "total_like_w": 76.0,
+        "negative_like_w": 42.0,
+        "positive_like_w": 15.0,
+        "like_weighted_negative_rate": 0.5526315789473685,
+        "like_weighted_positive_rate": 0.19736842105263158,
+        "avg_score_neg": 0.5999999999999999,
+        "avg_score_neu": 0.26666666666666666,
+        "avg_score_pos": 0.13333333333333333,
+        "avg_confidence": 0.6999999999999997,
+        "n_replies": 2,
+        "reply_share": 0.06666666666666667,
+        "title": "孕婦染疫通報慘遭詐財！集團假藉疫調騙取個資？！山寨衛福部網頁超逼真？！詐騙訊息你也收到了嗎？【超派人生】",
+        "published_at": "2022-09-13 11:00:11+00:00",
+        "view_count": 19485,
+        "primary_theme": "controversy_response",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "xq1v0veY4t0",
+        "n_comments": 57,
+        "n_negative": 26,
+        "n_neutral": 17,
+        "n_positive": 14,
+        "negative_rate": 0.45614035087719296,
+        "neutral_rate": 0.2982456140350877,
+        "positive_rate": 0.24561403508771928,
+        "total_like_w": 241.0,
+        "negative_like_w": 130.0,
+        "positive_like_w": 52.0,
+        "like_weighted_negative_rate": 0.5394190871369294,
+        "like_weighted_positive_rate": 0.2157676348547718,
+        "avg_score_neg": 0.47894736842105257,
+        "avg_score_neu": 0.25701754385964914,
+        "avg_score_pos": 0.26403508771929823,
+        "avg_confidence": 0.7000000000000001,
+        "n_replies": 4,
+        "reply_share": 0.07017543859649122,
+        "title": "就業安定基金變相幫助非法移工？薪資掛勾問題由雇主承擔後果？大律師點出法令問題！【超派人生】",
+        "published_at": "2023-03-01 11:00:11+00:00",
+        "view_count": 24076,
+        "primary_theme": "controversy_response",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "9RApavTtKuc",
+        "n_comments": 53,
+        "n_negative": 17,
+        "n_neutral": 25,
+        "n_positive": 11,
+        "negative_rate": 0.32075471698113206,
+        "neutral_rate": 0.4716981132075472,
+        "positive_rate": 0.20754716981132076,
+        "total_like_w": 220.0,
+        "negative_like_w": 118.0,
+        "positive_like_w": 32.0,
+        "like_weighted_negative_rate": 0.5363636363636364,
+        "like_weighted_positive_rate": 0.14545454545454545,
+        "avg_score_neg": 0.3603773584905662,
+        "avg_score_neu": 0.40301886792452835,
+        "avg_score_pos": 0.23660377358490564,
+        "avg_confidence": 0.7000000000000003,
+        "n_replies": 6,
+        "reply_share": 0.11320754716981132,
+        "title": "AV達人一劍浣春秋的超色人生！高材生毅然踏入成人產業？！最喜歡的女優竟然是？ft. @Iken_69 【超派人生】",
+        "published_at": "2023-12-29 11:00:11+00:00",
+        "view_count": 52184,
+        "primary_theme": "other",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "tB_HdUvg5tw",
+        "n_comments": 174,
+        "n_negative": 57,
+        "n_neutral": 103,
+        "n_positive": 14,
+        "negative_rate": 0.3275862068965517,
+        "neutral_rate": 0.5919540229885057,
+        "positive_rate": 0.08045977011494253,
+        "total_like_w": 936.0,
+        "negative_like_w": 490.0,
+        "positive_like_w": 45.0,
+        "like_weighted_negative_rate": 0.5235042735042735,
+        "like_weighted_positive_rate": 0.04807692307692308,
+        "avg_score_neg": 0.3847701149425288,
+        "avg_score_neu": 0.47126436781609177,
+        "avg_score_pos": 0.14396551724137932,
+        "avg_confidence": 0.7000000000000002,
+        "n_replies": 77,
+        "reply_share": 0.4425287356321839,
+        "title": "年後錶市大幅度跌價？！疫情封城導致買氣下降？受烏俄戰爭影響行情？勞力士熱門錶款的入手好時機？！【超派人生】",
+        "published_at": "2022-07-12 11:00:13+00:00",
+        "view_count": 126309,
+        "primary_theme": "automotive_luxury",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "iKps9XdFMcM",
+        "n_comments": 72,
+        "n_negative": 29,
+        "n_neutral": 29,
+        "n_positive": 14,
+        "negative_rate": 0.4027777777777778,
+        "neutral_rate": 0.4027777777777778,
+        "positive_rate": 0.19444444444444445,
+        "total_like_w": 518.0,
+        "negative_like_w": 264.0,
+        "positive_like_w": 76.0,
+        "like_weighted_negative_rate": 0.5096525096525096,
+        "like_weighted_positive_rate": 0.14671814671814673,
+        "avg_score_neg": 0.42916666666666664,
+        "avg_score_neu": 0.3451388888888889,
+        "avg_score_pos": 0.22569444444444445,
+        "avg_confidence": 0.7000000000000001,
+        "n_replies": 3,
+        "reply_share": 0.041666666666666664,
+        "title": "企業主必看！如何幫自家業務提升業績？！超哥經營企業多年的體悟！【超派人生】",
+        "published_at": "2023-09-22 11:00:10+00:00",
+        "view_count": 49554,
+        "primary_theme": "business_brand",
+        "sentiment_source": "qwen"
+      }
+    ],
+    "reply_overview": {
+      "sentiment_source": "qwen",
+      "n_all_comments": 100171,
+      "n_top_level_comments": 73117,
+      "n_replies": 27054,
+      "reply_share_all_comments": 0.2700781663355662,
+      "n_threads": 73117,
+      "n_threads_with_replies": 12136,
+      "pct_threads_with_replies": 0.16598055171847861,
+      "n_commenters_all": 39455,
+      "n_reply_commenters": 9939,
+      "n_scored_comments": 100171,
+      "n_scored_replies": 27054,
+      "sentiment_coverage": 1.0,
+      "reply_sentiment_coverage": 1.0
+    },
+    "reply_conflict_hotspots": [
+      {
+        "video_id": "VUFgSkX5g4k",
+        "n_threads": 402,
+        "n_threads_with_replies": 46,
+        "n_replies": 64,
+        "n_conflict_threads": 18,
+        "conflict_thread_rate_all": 0.04477611940298507,
+        "conflict_thread_rate_replied": 0.391304347826087,
+        "n_strict_reply_conflict_threads": 3,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 18,
+        "avg_thread_bipolarity": 0.04101406547509367,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.017977053140096618,
+        "max_reply_bipolarity": 0.4444444444444444,
+        "n_scored_replies": 64.0,
+        "reply_negative_rate": 0.40625,
+        "reply_positive_rate": 0.125,
+        "reply_like_weighted_negative_rate": 0.23015873015873015,
+        "reply_like_weighted_positive_rate": 0.18253968253968253,
+        "conflict_score": 7.043478260869565,
+        "opposition_score": 7.043478260869565,
+        "primary_theme": "controversy_response",
+        "title": "一男戰四女？！當一日AV男優是什麼體驗？百大女優揭開成人產業秘辛！ft.森澤佳奈、楪可憐、日向真凜、榮川乃亞【超派人生】",
+        "published_at": "2023-05-11 11:00:08+00:00",
+        "view_count": 1808401,
+        "comment_count": 466.0
+      },
+      {
+        "video_id": "Q4kgygOYOiI",
+        "n_threads": 1123,
+        "n_threads_with_replies": 168,
+        "n_replies": 865,
+        "n_conflict_threads": 32,
+        "conflict_thread_rate_all": 0.028495102404274265,
+        "conflict_thread_rate_replied": 0.19047619047619047,
+        "n_strict_reply_conflict_threads": 33,
+        "n_pile_on_threads": 5,
+        "n_parent_opposition_threads": 30,
+        "avg_thread_bipolarity": 0.013094121477523464,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.0518324821377774,
+        "max_reply_bipolarity": 0.8888888888888888,
+        "n_scored_replies": 865.0,
+        "reply_negative_rate": 0.2161849710982659,
+        "reply_positive_rate": 0.15838150289017341,
+        "reply_like_weighted_negative_rate": 0.16509974776427425,
+        "reply_like_weighted_positive_rate": 0.10960788809905984,
+        "conflict_score": 6.095238095238095,
+        "opposition_score": 5.7142857142857135,
+        "primary_theme": "controversy_response",
+        "title": "超派炸雞開業半年 ！回應所有的批評指教！【超派人生】",
+        "published_at": "2023-09-26 11:00:10+00:00",
+        "view_count": 273757,
+        "comment_count": 1988.0
+      },
+      {
+        "video_id": "XphDSCzJ_98",
+        "n_threads": 344,
+        "n_threads_with_replies": 83,
+        "n_replies": 302,
+        "n_conflict_threads": 22,
+        "conflict_thread_rate_all": 0.06395348837209303,
+        "conflict_thread_rate_replied": 0.26506024096385544,
+        "n_strict_reply_conflict_threads": 15,
+        "n_pile_on_threads": 2,
+        "n_parent_opposition_threads": 20,
+        "avg_thread_bipolarity": 0.03074296918966784,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.07145208314000366,
+        "max_reply_bipolarity": 1.0,
+        "n_scored_replies": 302.0,
+        "reply_negative_rate": 0.2119205298013245,
+        "reply_positive_rate": 0.15562913907284767,
+        "reply_like_weighted_negative_rate": 0.2465804066543438,
+        "reply_like_weighted_positive_rate": 0.16635859519408502,
+        "conflict_score": 5.83132530120482,
+        "opposition_score": 5.301204819277109,
+        "primary_theme": "personal_team_life",
+        "title": "在美國工作的妹妹回家了！密西根大學博士學歷超驚人！疫情後首次全家團聚！家庭聚會竟成爆料大會？！【超派人生】",
+        "published_at": "2023-05-17 11:00:09+00:00",
+        "view_count": 304461,
+        "comment_count": 646.0
+      },
+      {
+        "video_id": "qRGXUptGBZo",
+        "n_threads": 4757,
+        "n_threads_with_replies": 430,
+        "n_replies": 1711,
+        "n_conflict_threads": 37,
+        "conflict_thread_rate_all": 0.007778011351692243,
+        "conflict_thread_rate_replied": 0.08604651162790698,
+        "n_strict_reply_conflict_threads": 37,
+        "n_pile_on_threads": 12,
+        "n_parent_opposition_threads": 34,
+        "avg_thread_bipolarity": 0.004268759781313324,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.022892634419028484,
+        "max_reply_bipolarity": 1.0,
+        "n_scored_replies": 1711.0,
+        "reply_negative_rate": 0.24079485680888368,
+        "reply_positive_rate": 0.13208649912331968,
+        "reply_like_weighted_negative_rate": 0.31685944619698564,
+        "reply_like_weighted_positive_rate": 0.1563266736768314,
+        "conflict_score": 3.183720930232558,
+        "opposition_score": 2.9255813953488374,
+        "primary_theme": "controversy_response",
+        "title": "回應超派炸雞倒油風波【超派人生】",
+        "published_at": "2023-10-11 10:00:11+00:00",
+        "view_count": 601653,
+        "comment_count": 6468.0
+      },
+      {
+        "video_id": "_pV45TfRu5A",
+        "n_threads": 240,
+        "n_threads_with_replies": 38,
+        "n_replies": 120,
+        "n_conflict_threads": 10,
+        "conflict_thread_rate_all": 0.041666666666666664,
+        "conflict_thread_rate_replied": 0.2631578947368421,
+        "n_strict_reply_conflict_threads": 6,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 10,
+        "avg_thread_bipolarity": 0.027813877819372324,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.06449088972705706,
+        "max_reply_bipolarity": 1.0,
+        "n_scored_replies": 120.0,
+        "reply_negative_rate": 0.19166666666666668,
+        "reply_positive_rate": 0.19166666666666668,
+        "reply_like_weighted_negative_rate": 0.2622478386167147,
+        "reply_like_weighted_positive_rate": 0.12103746397694524,
+        "conflict_score": 2.631578947368421,
+        "opposition_score": 2.631578947368421,
+        "primary_theme": "food_culture",
+        "title": "史上最大反派來踢館？！秦楊蒞臨新淘淘鐵板燒！【超派人生】",
+        "published_at": "2024-10-25 11:00:06+00:00",
+        "view_count": 84373,
+        "comment_count": 360.0
+      },
+      {
+        "video_id": "TR0sDO1Sl0U",
+        "n_threads": 868,
+        "n_threads_with_replies": 99,
+        "n_replies": 337,
+        "n_conflict_threads": 16,
+        "conflict_thread_rate_all": 0.018433179723502304,
+        "conflict_thread_rate_replied": 0.16161616161616163,
+        "n_strict_reply_conflict_threads": 12,
+        "n_pile_on_threads": 3,
+        "n_parent_opposition_threads": 16,
+        "avg_thread_bipolarity": 0.00955777343084342,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.03552732890013642,
+        "max_reply_bipolarity": 1.0,
+        "n_scored_replies": 337.0,
+        "reply_negative_rate": 0.27002967359050445,
+        "reply_positive_rate": 0.10089020771513353,
+        "reply_like_weighted_negative_rate": 0.241399416909621,
+        "reply_like_weighted_positive_rate": 0.10029154518950437,
+        "conflict_score": 2.585858585858586,
+        "opposition_score": 2.585858585858586,
+        "primary_theme": "personal_team_life",
+        "title": "富二代？靠爸？前科？全部公開！【超派人生】",
+        "published_at": "2024-05-03 11:00:21+00:00",
+        "view_count": 140382,
+        "comment_count": 1205.0
+      },
+      {
+        "video_id": "5cg5MdyqB1I",
+        "n_threads": 1348,
+        "n_threads_with_replies": 137,
+        "n_replies": 614,
+        "n_conflict_threads": 18,
+        "conflict_thread_rate_all": 0.013353115727002967,
+        "conflict_thread_rate_replied": 0.13138686131386862,
+        "n_strict_reply_conflict_threads": 20,
+        "n_pile_on_threads": 2,
+        "n_parent_opposition_threads": 19,
+        "avg_thread_bipolarity": 0.008063226896597858,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.045678804573088046,
+        "max_reply_bipolarity": 1.0,
+        "n_scored_replies": 614.0,
+        "reply_negative_rate": 0.2980456026058632,
+        "reply_positive_rate": 0.11563517915309446,
+        "reply_like_weighted_negative_rate": 0.42348661990127306,
+        "reply_like_weighted_positive_rate": 0.10496232787737074,
+        "conflict_score": 2.3649635036496353,
+        "opposition_score": 2.496350364963504,
+        "primary_theme": "food_culture",
+        "title": "耗資千萬只為延續記憶中的味道？耗時一年，新淘淘鐵板燒終於準備好了！【超派人生】",
+        "published_at": "2024-08-28 11:00:22+00:00",
+        "view_count": 148375,
+        "comment_count": 1962.0
+      },
+      {
+        "video_id": "99JjV0iERqM",
+        "n_threads": 418,
+        "n_threads_with_replies": 100,
+        "n_replies": 251,
+        "n_conflict_threads": 15,
+        "conflict_thread_rate_all": 0.03588516746411483,
+        "conflict_thread_rate_replied": 0.15,
+        "n_strict_reply_conflict_threads": 9,
+        "n_pile_on_threads": 1,
+        "n_parent_opposition_threads": 16,
+        "avg_thread_bipolarity": 0.028613935411838466,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.02461031943989359,
+        "max_reply_bipolarity": 0.5555555555555556,
+        "n_scored_replies": 251.0,
+        "reply_negative_rate": 0.3386454183266932,
+        "reply_positive_rate": 0.2151394422310757,
+        "reply_like_weighted_negative_rate": 0.46875,
+        "reply_like_weighted_positive_rate": 0.14638157894736842,
+        "conflict_score": 2.25,
+        "opposition_score": 2.4,
+        "primary_theme": "controversy_response",
+        "title": "邀黑粉來節目中對質？！奇葩粉絲超犀利提問直球對決！跨越階層的辯論大會！超哥該如何應對？【超派人生】",
+        "published_at": "2021-09-09 11:00:10+00:00",
+        "view_count": 167871,
+        "comment_count": 669.0
+      }
+    ]
+  },
+  "baseline": {
+    "is_baseline_member": false,
+    "membership": {},
+    "key_metrics": [],
+    "all_metrics": [],
+    "n_metrics": 0,
+    "percentile_takeaways": [],
+    "risk_opportunity_summary": {
+      "risk_flags": [],
+      "opportunity_flags": [],
+      "watch_flags": [],
+      "context_flags": [],
+      "principle_zh": "這些標籤只表示相對 benchmark 的統計位置，不能單獨推論因果或頻道品質。"
+    }
+  },
+  "analysis": {
+    "interface_version": 2,
+    "purpose_zh": "把完成的頻道 artifact 轉成頻道主能快速理解的社群健康、內容策略與風險判讀。",
+    "archetype": {
+      "label_zh": "低參與待啟動型",
+      "summary_zh": "留言互動與回訪都偏弱；應先檢查內容系列、社群互動節奏與觀眾加入門檻。",
+      "scores": {
+        "engagement_conversion": 0.0,
+        "audience_stickiness": 0.0,
+        "conversation_quality": 0.0,
+        "risk_pressure": 0.0,
+        "community_concentration": 0.0,
+        "content_portfolio_linkage": 0.0
+      }
+    },
+    "indices": [],
+    "lenses": [
+      {
+        "id": "executive",
+        "label": "決策摘要",
+        "question_zh": "這個頻道最值得先處理的社群問題是什麼？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      },
+      {
+        "id": "audience",
+        "label": "觀眾與回訪",
+        "question_zh": "留言者是廣泛加入，還是靠少數核心觀眾支撐？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      },
+      {
+        "id": "content",
+        "label": "內容策略",
+        "question_zh": "哪些題材與影片群可以形成下一波選題或跨題材連結？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      },
+      {
+        "id": "risk",
+        "label": "情緒與衝突",
+        "question_zh": "負面、按讚放大與回覆衝突是否需要介入？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      }
+    ],
+    "story_cards": [
+      {
+        "id": "top_negative_hotspot",
+        "kind": "risk",
+        "priority": 72,
+        "title_zh": "最負面影片需要單獨檢查",
+        "body_zh": "整體平均會稀釋單支影片的風險；最高負面影片常是事件、題材或敘事轉折的線索。",
+        "evidence_zh": "開箱胡志明奢華天王洗頭！超高顏質美女貼身服務？！【超派人生】，負面率 30.8%",
+        "metrics": [
+          "negative_rate",
+          "max_video_negative_rate"
+        ],
+        "next_step_zh": "在情緒與衝突頁檢查該影片是否同時有按讚加權負面或高回覆衝突。"
+      }
+    ],
+    "decision_queue": [
+      {
+        "rank": 1,
+        "kind": "risk",
+        "title_zh": "最負面影片需要單獨檢查",
+        "why_zh": "整體平均會稀釋單支影片的風險；最高負面影片常是事件、題材或敘事轉折的線索。",
+        "evidence_zh": "開箱胡志明奢華天王洗頭！超高顏質美女貼身服務？！【超派人生】，負面率 30.8%",
+        "next_step_zh": "在情緒與衝突頁檢查該影片是否同時有按讚加權負面或高回覆衝突。"
+      }
+    ],
+    "benchmark_maps": {
+      "engagement_vs_risk": {
+        "x": "engagement_conversion",
+        "y": "risk_pressure",
+        "x_label_zh": "互動轉換力",
+        "y_label_zh": "情緒風險壓力",
+        "selected": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "quadrant_hints_zh": {
+          "high_x_high_y": "高互動但高風險：先做留言與主題風險控管。",
+          "high_x_low_y": "高互動且低風險：可擴大成功題材。",
+          "low_x_high_y": "低互動但高風險：少數負面可能主導觀感。",
+          "low_x_low_y": "低互動低風險：先提高討論入口。"
+        }
+      },
+      "stickiness_vs_concentration": {
+        "x": "audience_stickiness",
+        "y": "community_concentration",
+        "x_label_zh": "核心黏著度",
+        "y_label_zh": "社群集中度",
+        "selected": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "method_notes_zh": [
+      "Composite index 使用 component metrics 的 benchmark percentile 平均；沒有新增未觀測資料。",
+      "risk 類 index 越高代表壓力越大；quality 類 index 已把負面/衝突 component 反向後再合成。",
+      "所有判讀都是相對目前 48 個 ready benchmark channel，不是因果推論。"
+    ]
+  }
+}

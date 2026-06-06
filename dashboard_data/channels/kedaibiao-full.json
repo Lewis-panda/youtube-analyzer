@@ -1,0 +1,1301 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "slug": "kedaibiao-full",
+  "title": "课代表立正",
+  "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
+  "run_dir": "baseline_runs/kedaibiao-full",
+  "source_type": "baseline_completed_run",
+  "channel": {
+    "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
+    "title": "课代表立正",
+    "custom_url": "@kedaibiao",
+    "country": "US",
+    "subscriber_count": 106000,
+    "video_count_api": 780,
+    "view_count_api": 8552142,
+    "crawl_time": "2026-05-09T05:01:05+00:00",
+    "date_min": "2020-02-01 00:03:53+00:00",
+    "date_max": "2026-05-02 20:06:36+00:00",
+    "n_videos_in_scope": 526,
+    "n_comments_in_scope": 14062,
+    "n_commenters_in_scope": 7687,
+    "total_views_in_scope": 7692871
+  },
+  "overview": {
+    "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
+    "channel_title": "课代表立正",
+    "subscriber_count": 106000,
+    "channel_video_count_api": 780,
+    "channel_view_count_api": 8552142,
+    "n_videos_in_scope": 526,
+    "n_comments_in_scope": 14062,
+    "n_commenters_in_scope": 7687,
+    "date_min": "2020-02-01 00:03:53+00:00",
+    "date_max": "2026-05-02 20:06:36+00:00",
+    "total_views_in_scope": 7692871,
+    "total_video_comment_count_api": 22119.0
+  },
+  "run_summary": {
+    "started_at": "2026-05-13T02:49:04+08:00",
+    "finished_at": "2026-05-13T03:04:42+08:00",
+    "total_seconds": 937.752,
+    "qwen_mode": "all",
+    "n_stages": 6,
+    "stages": [
+      {
+        "stage": "Qwen video themes",
+        "status": "skipped_complete",
+        "elapsed_seconds": 0
+      },
+      {
+        "stage": "Qwen comment sentiment",
+        "status": "completed",
+        "elapsed_seconds": 911.011
+      },
+      {
+        "stage": "repair Qwen comment sentiment",
+        "status": "completed",
+        "elapsed_seconds": 2.919
+      },
+      {
+        "stage": "retry Qwen sentiment parse errors",
+        "status": "completed",
+        "elapsed_seconds": 0.525
+      },
+      {
+        "stage": "base analyzer",
+        "status": "completed",
+        "elapsed_seconds": 20.049
+      },
+      {
+        "stage": "commenter deeper supplement",
+        "status": "completed",
+        "elapsed_seconds": 1.396
+      }
+    ]
+  },
+  "config": {
+    "project_name": "Kedaibiao Channel Community Analyzer",
+    "channel_url": "https://youtube.com/@kedaibiao",
+    "channel_handle": "@kedaibiao",
+    "date_start": null,
+    "date_end": null,
+    "exclude_shorts": true,
+    "short_threshold_seconds": 180,
+    "outputs": {
+      "run_slug": "kedaibiao-full"
+    },
+    "external_analysis": {}
+  },
+  "reports": {
+    "report_md": "baseline_runs/kedaibiao-full/report.md",
+    "report_en_md": "baseline_runs/kedaibiao-full/report_en.md",
+    "report_zh_md": "baseline_runs/kedaibiao-full/report_zh.md",
+    "report_json": "baseline_runs/kedaibiao-full/report.json",
+    "report_supplement_json": "baseline_runs/kedaibiao-full/report_supplement.json"
+  },
+  "artifacts": {
+    "tables": [
+      {
+        "name": "actor_communities",
+        "path": "baseline_runs/kedaibiao-full/tables/actor_communities.csv",
+        "bytes": 35920
+      },
+      {
+        "name": "bridge_actors",
+        "path": "baseline_runs/kedaibiao-full/tables/bridge_actors.csv",
+        "bytes": 6684
+      },
+      {
+        "name": "channel_overview",
+        "path": "baseline_runs/kedaibiao-full/tables/channel_overview.csv",
+        "bytes": 361
+      },
+      {
+        "name": "commenter_activity",
+        "path": "baseline_runs/kedaibiao-full/tables/commenter_activity.csv",
+        "bytes": 1085034
+      },
+      {
+        "name": "commenter_tiers",
+        "path": "baseline_runs/kedaibiao-full/tables/commenter_tiers.csv",
+        "bytes": 283
+      },
+      {
+        "name": "community_profiles",
+        "path": "baseline_runs/kedaibiao-full/tables/community_profiles.csv",
+        "bytes": 7730
+      },
+      {
+        "name": "community_sentiment_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/community_sentiment_summary.csv",
+        "bytes": 3926
+      },
+      {
+        "name": "community_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/community_summary.csv",
+        "bytes": 607
+      },
+      {
+        "name": "community_theme_affinity",
+        "path": "baseline_runs/kedaibiao-full/tables/community_theme_affinity.csv",
+        "bytes": 12019
+      },
+      {
+        "name": "community_theme_sentiment",
+        "path": "baseline_runs/kedaibiao-full/tables/community_theme_sentiment.csv",
+        "bytes": 19014
+      },
+      {
+        "name": "continuity_sensitivity",
+        "path": "baseline_runs/kedaibiao-full/tables/continuity_sensitivity.csv",
+        "bytes": 590
+      },
+      {
+        "name": "continuity_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/continuity_summary.csv",
+        "bytes": 636
+      },
+      {
+        "name": "diagnostics",
+        "path": "baseline_runs/kedaibiao-full/tables/diagnostics.csv",
+        "bytes": 1241
+      },
+      {
+        "name": "network_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/network_summary.csv",
+        "bytes": 199
+      },
+      {
+        "name": "qwen_comment_sentiment",
+        "path": "baseline_runs/kedaibiao-full/tables/qwen_comment_sentiment.csv",
+        "bytes": 5975688
+      },
+      {
+        "name": "qwen_video_themes",
+        "path": "baseline_runs/kedaibiao-full/tables/qwen_video_themes.csv",
+        "bytes": 956979
+      },
+      {
+        "name": "reply_conflict_theme_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/reply_conflict_theme_summary.csv",
+        "bytes": 1501
+      },
+      {
+        "name": "reply_conflict_video_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/reply_conflict_video_summary.csv",
+        "bytes": 120490
+      },
+      {
+        "name": "reply_sentiment_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/reply_sentiment_summary.csv",
+        "bytes": 734
+      },
+      {
+        "name": "reply_thread_metrics",
+        "path": "baseline_runs/kedaibiao-full/tables/reply_thread_metrics.csv",
+        "bytes": 4221607
+      },
+      {
+        "name": "reply_thread_overview",
+        "path": "baseline_runs/kedaibiao-full/tables/reply_thread_overview.csv",
+        "bytes": 362
+      },
+      {
+        "name": "rolling_retention",
+        "path": "baseline_runs/kedaibiao-full/tables/rolling_retention.csv",
+        "bytes": 3036
+      },
+      {
+        "name": "sentiment_hotspots",
+        "path": "baseline_runs/kedaibiao-full/tables/sentiment_hotspots.csv",
+        "bytes": 156047
+      },
+      {
+        "name": "sentiment_source_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/sentiment_source_summary.csv",
+        "bytes": 252
+      },
+      {
+        "name": "sentiment_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/sentiment_summary.csv",
+        "bytes": 605
+      },
+      {
+        "name": "sentiment_theme_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/sentiment_theme_summary.csv",
+        "bytes": 2666
+      },
+      {
+        "name": "theme_source_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/theme_source_summary.csv",
+        "bytes": 31
+      },
+      {
+        "name": "theme_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/theme_summary.csv",
+        "bytes": 349
+      },
+      {
+        "name": "theme_video_labels",
+        "path": "baseline_runs/kedaibiao-full/tables/theme_video_labels.csv",
+        "bytes": 215220
+      },
+      {
+        "name": "theme_video_labels_long",
+        "path": "baseline_runs/kedaibiao-full/tables/theme_video_labels_long.csv",
+        "bytes": 138996
+      },
+      {
+        "name": "video_cluster_sentiment_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/video_cluster_sentiment_summary.csv",
+        "bytes": 2207
+      },
+      {
+        "name": "video_cluster_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/video_cluster_summary.csv",
+        "bytes": 4254
+      },
+      {
+        "name": "video_cluster_theme_affinity",
+        "path": "baseline_runs/kedaibiao-full/tables/video_cluster_theme_affinity.csv",
+        "bytes": 3495
+      },
+      {
+        "name": "video_clusters",
+        "path": "baseline_runs/kedaibiao-full/tables/video_clusters.csv",
+        "bytes": 19459
+      },
+      {
+        "name": "video_metrics",
+        "path": "baseline_runs/kedaibiao-full/tables/video_metrics.csv",
+        "bytes": 68670
+      },
+      {
+        "name": "video_network_summary",
+        "path": "baseline_runs/kedaibiao-full/tables/video_network_summary.csv",
+        "bytes": 218
+      }
+    ],
+    "figures": [
+      {
+        "name": "channel_activity",
+        "path": "baseline_runs/kedaibiao-full/figures/channel_activity.png",
+        "bytes": 117278
+      },
+      {
+        "name": "commenter_tiers",
+        "path": "baseline_runs/kedaibiao-full/figures/commenter_tiers.png",
+        "bytes": 26624
+      },
+      {
+        "name": "community_sizes",
+        "path": "baseline_runs/kedaibiao-full/figures/community_sizes.png",
+        "bytes": 25651
+      },
+      {
+        "name": "rolling_retention",
+        "path": "baseline_runs/kedaibiao-full/figures/rolling_retention.png",
+        "bytes": 49053
+      },
+      {
+        "name": "video_cluster_sizes",
+        "path": "baseline_runs/kedaibiao-full/figures/video_cluster_sizes.png",
+        "bytes": 30342
+      }
+    ]
+  },
+  "tabs": [
+    {
+      "id": "overview",
+      "title": "總覽",
+      "available": true,
+      "tables": [
+        "channel_overview",
+        "diagnostics",
+        "video_metrics"
+      ],
+      "figures": [
+        "channel_activity"
+      ]
+    },
+    {
+      "id": "videos",
+      "title": "影片與時間序列",
+      "available": true,
+      "tables": [
+        "continuity_sensitivity",
+        "continuity_summary",
+        "rolling_retention",
+        "video_metrics"
+      ],
+      "figures": [
+        "channel_activity",
+        "rolling_retention"
+      ]
+    },
+    {
+      "id": "themes",
+      "title": "主題與情緒",
+      "available": true,
+      "tables": [
+        "sentiment_hotspots",
+        "sentiment_summary",
+        "sentiment_theme_summary",
+        "theme_summary",
+        "theme_video_labels"
+      ],
+      "figures": []
+    },
+    {
+      "id": "community",
+      "title": "社群與網路",
+      "available": true,
+      "tables": [
+        "actor_communities",
+        "bridge_actors",
+        "commenter_tiers",
+        "community_profiles",
+        "community_summary",
+        "network_summary"
+      ],
+      "figures": [
+        "commenter_tiers",
+        "community_sizes"
+      ]
+    },
+    {
+      "id": "video_network",
+      "title": "影片共享觀眾網路",
+      "available": true,
+      "tables": [
+        "video_cluster_summary",
+        "video_clusters",
+        "video_network_summary"
+      ],
+      "figures": [
+        "video_cluster_sizes"
+      ]
+    },
+    {
+      "id": "reply_conflict",
+      "title": "回覆區衝突",
+      "available": true,
+      "tables": [
+        "reply_conflict_theme_summary",
+        "reply_conflict_video_summary",
+        "reply_sentiment_summary",
+        "reply_thread_overview"
+      ],
+      "figures": []
+    },
+    {
+      "id": "baseline",
+      "title": "基準比較",
+      "available": false,
+      "tables": [],
+      "figures": []
+    },
+    {
+      "id": "external_events",
+      "title": "外部事件",
+      "available": false,
+      "tables": [],
+      "figures": []
+    },
+    {
+      "id": "cold_report",
+      "title": "冷冰冰統計報告",
+      "available": true,
+      "tables": [],
+      "figures": []
+    },
+    {
+      "id": "owner_report",
+      "title": "頻道主可讀報告",
+      "available": false,
+      "tables": [],
+      "figures": []
+    }
+  ],
+  "dashboard_summary": {
+    "top_themes": [
+      {
+        "primary_theme": "personal_team_life",
+        "n_comments": 6048,
+        "n_commenters": 3928,
+        "n_videos": 207
+      },
+      {
+        "primary_theme": "workplace_tech_career",
+        "n_comments": 2764,
+        "n_commenters": 2104,
+        "n_videos": 104
+      },
+      {
+        "primary_theme": "controversy_response",
+        "n_comments": 2060,
+        "n_commenters": 1674,
+        "n_videos": 52
+      },
+      {
+        "primary_theme": "education_advice",
+        "n_comments": 1797,
+        "n_commenters": 1465,
+        "n_videos": 70
+      },
+      {
+        "primary_theme": "business_brand",
+        "n_comments": 802,
+        "n_commenters": 705,
+        "n_videos": 40
+      },
+      {
+        "primary_theme": "other",
+        "n_comments": 407,
+        "n_commenters": 364,
+        "n_videos": 28
+      },
+      {
+        "primary_theme": "food_culture",
+        "n_comments": 86,
+        "n_commenters": 80,
+        "n_videos": 11
+      },
+      {
+        "primary_theme": "physical_challenge",
+        "n_comments": 40,
+        "n_commenters": 38,
+        "n_videos": 2
+      }
+    ],
+    "sentiment_summary": [
+      {
+        "sentiment_label": "negative",
+        "n_comments": 2313,
+        "pct_comments": 0.10457545890225156,
+        "like_w": 10801.0,
+        "like_weighted_share": 0.13158151207270424,
+        "avg_score_neg": 0.932533506268915,
+        "avg_score_neu": 0.062083873757025516,
+        "avg_score_pos": 0.005382619974059664,
+        "avg_confidence": 0.7000000000000001,
+        "n_replies": 944,
+        "reply_share": 0.40812797233030695
+      },
+      {
+        "sentiment_label": "neutral",
+        "n_comments": 14580,
+        "pct_comments": 0.659191608644543,
+        "like_w": 49519.0,
+        "like_weighted_share": 0.6032575591452867,
+        "avg_score_neg": 0.10921810699588479,
+        "avg_score_neu": 0.7816975308641976,
+        "avg_score_pos": 0.10908436213991772,
+        "avg_confidence": 0.7,
+        "n_replies": 6266,
+        "reply_share": 0.4297668038408779
+      },
+      {
+        "sentiment_label": "positive",
+        "n_comments": 5225,
+        "pct_comments": 0.23623293245320554,
+        "like_w": 21766.0,
+        "like_weighted_share": 0.2651609287820091,
+        "avg_score_neg": 0.03264114832535885,
+        "avg_score_neu": 0.09215311004784689,
+        "avg_score_pos": 0.8752057416267944,
+        "avg_confidence": 0.7,
+        "n_replies": 846,
+        "reply_share": 0.16191387559808612
+      }
+    ],
+    "negative_rate": 0.10457545890225156,
+    "positive_rate": 0.23623293245320554,
+    "like_weighted_negative_rate": 0.13158151207270424,
+    "commenter_tiers": [
+      {
+        "activity_tier": "high",
+        "n_commenters": 31,
+        "avg_videos": 25.741935483870968,
+        "median_videos": 22.0,
+        "total_comments": 873,
+        "total_likes_received": 3812,
+        "pct_commenters": 0.4032782620007805
+      },
+      {
+        "activity_tier": "mid",
+        "n_commenters": 267,
+        "avg_videos": 8.243445692883896,
+        "median_videos": 8.0,
+        "total_comments": 2305,
+        "total_likes_received": 8512,
+        "pct_commenters": 3.473396643684142
+      },
+      {
+        "activity_tier": "low",
+        "n_commenters": 7389,
+        "avg_videos": 1.4238733252131548,
+        "median_videos": 1.0,
+        "total_comments": 10884,
+        "total_likes_received": 36027,
+        "pct_commenters": 96.12332509431508
+      }
+    ],
+    "network_summary": {
+      "n_nodes": 404,
+      "n_edges": 1061,
+      "density": 0.013033437338771098,
+      "avg_degree": 5.252475247524752,
+      "n_communities": 17,
+      "modularity": 0.4242979093987144,
+      "community_method": "networkx_louvain",
+      "min_actor_videos": 2,
+      "min_co_videos": 3
+    },
+    "community_summary": [
+      {
+        "community": 9,
+        "n_nodes": 100,
+        "pct_nodes": 24.752475247524753,
+        "internal_edges": 147,
+        "internal_weighted_degree": 1074.0
+      },
+      {
+        "community": 6,
+        "n_nodes": 50,
+        "pct_nodes": 12.376237623762377,
+        "internal_edges": 74,
+        "internal_weighted_degree": 526.0
+      },
+      {
+        "community": 4,
+        "n_nodes": 43,
+        "pct_nodes": 10.643564356435643,
+        "internal_edges": 74,
+        "internal_weighted_degree": 464.0
+      },
+      {
+        "community": 2,
+        "n_nodes": 41,
+        "pct_nodes": 10.14851485148515,
+        "internal_edges": 50,
+        "internal_weighted_degree": 330.0
+      },
+      {
+        "community": 5,
+        "n_nodes": 41,
+        "pct_nodes": 10.14851485148515,
+        "internal_edges": 78,
+        "internal_weighted_degree": 514.0
+      },
+      {
+        "community": 15,
+        "n_nodes": 40,
+        "pct_nodes": 9.900990099009901,
+        "internal_edges": 68,
+        "internal_weighted_degree": 446.0
+      },
+      {
+        "community": 10,
+        "n_nodes": 33,
+        "pct_nodes": 8.16831683168317,
+        "internal_edges": 60,
+        "internal_weighted_degree": 384.0
+      },
+      {
+        "community": 1,
+        "n_nodes": 27,
+        "pct_nodes": 6.683168316831684,
+        "internal_edges": 31,
+        "internal_weighted_degree": 194.0
+      }
+    ],
+    "video_network_summary": {
+      "n_nodes": 111,
+      "n_edges": 250,
+      "density": 0.04095004095004095,
+      "avg_degree": 4.504504504504505,
+      "n_video_clusters": 8,
+      "modularity": 0.3503876496959371,
+      "community_method": "networkx_louvain",
+      "min_video_commenters": 10,
+      "min_shared_video_commenters": 5
+    },
+    "video_clusters": [
+      {
+        "video_cluster": 7,
+        "n_videos": 14,
+        "date_min": "2023-08-21 02:00:00+00:00",
+        "date_max": "2025-03-12 22:52:33+00:00",
+        "total_observed_comments": 1632,
+        "unique_commenters": 1381,
+        "median_observed_commenters": 91.5,
+        "total_views": 993636,
+        "top_theme_labels": "business_brand (10); personal_team_life (10); education_advice (5); workplace_tech_career (5); controversy_response (2)",
+        "top_videos": "中国经济怎么了？ (343); 看懂OpenAI的“指数级领先”｜原标题：我为什么没有加入一家AI公司？ (171); 26岁财富自由的程序员郭宇：很多人起点虽然高，但生活得一团糟 (162); 十年创业，阿里收购，辛酸艰苦坦白局｜《ToB的本质》作者尚书 (139); 如何积累第一桶金？｜摆脱韭菜思维的最后一次努力｜Leon访谈_上 (134)"
+      },
+      {
+        "video_cluster": 1,
+        "n_videos": 21,
+        "date_min": "2020-11-12 07:39:25+00:00",
+        "date_max": "2023-10-15 01:00:05+00:00",
+        "total_observed_comments": 1696,
+        "unique_commenters": 1318,
+        "median_observed_commenters": 58.0,
+        "total_views": 1025713,
+        "top_theme_labels": "personal_team_life (16); workplace_tech_career (10); education_advice (6); business_brand (6); controversy_response (2)",
+        "top_videos": "华人在硅谷怎么做(不)到VP？ (233); Influence Without Authority ｜ 人生元能力 (194); 没有996？同事竟很nice？回国工作时间和生活成本大揭秘！ (141); 打工人如何获得财富自由？｜什么才是真正的财富和真正的自由？（中文字幕）｜Multiple-Fir (134); 留美14年，为何在升职前夕决定回国？｜游戏行业有多厉害？ (131)"
+      },
+      {
+        "video_cluster": 6,
+        "n_videos": 15,
+        "date_min": "2024-03-22 15:06:42+00:00",
+        "date_max": "2026-05-02 20:06:36+00:00",
+        "total_observed_comments": 1224,
+        "unique_commenters": 992,
+        "median_observed_commenters": 61.0,
+        "total_views": 486125,
+        "top_theme_labels": "workplace_tech_career (11); education_advice (9); controversy_response (6); personal_team_life (5); business_brand (4)",
+        "top_videos": "清华教授：应试教育在AI面前全军覆没，我们应该如何重新学习？ (241); 为什么年薪百万的你，却觉得工作毫无价值？ (133); 樊登：讲完几百本书，提升最大的是这三次认知迭代 (104); 替公司裁过4个下属，分享背后原因和心里话 (81); 烧完数千亿，Meta放弃元宇宙，伪需求为何如此难识别？ (76)"
+      },
+      {
+        "video_cluster": 4,
+        "n_videos": 20,
+        "date_min": "2021-09-18 01:14:06+00:00",
+        "date_max": "2024-11-19 23:00:16+00:00",
+        "total_observed_comments": 1209,
+        "unique_commenters": 953,
+        "median_observed_commenters": 32.5,
+        "total_views": 416992,
+        "top_theme_labels": "business_brand (8); education_advice (8); workplace_tech_career (7); personal_team_life (7); controversy_response (5)",
+        "top_videos": "我对防疫的感受和看法 (394); 我们如何利用好这轮衰退？｜生成式AI神预言 (103); ChatGPT的理解、思考、与合理推演 (66); 十年估值三千亿，创始人首次揭秘，如何识别并抓住机会？｜Databricks Cofounder  (65); 注意这个隐藏属性，让你识别出身边的大佬 (61)"
+      },
+      {
+        "video_cluster": 3,
+        "n_videos": 18,
+        "date_min": "2021-10-07 10:48:06+00:00",
+        "date_max": "2025-02-19 22:39:42+00:00",
+        "total_observed_comments": 1016,
+        "unique_commenters": 818,
+        "median_observed_commenters": 40.5,
+        "total_views": 330496,
+        "top_theme_labels": "personal_team_life (15); workplace_tech_career (4); business_brand (4); education_advice (2); controversy_response (1)",
+        "top_videos": "婚礼视频！ (207); 和老婆一起采访完Onlyfans博主，我自惭形秽了…… (151); 「优秀」的陷阱｜用当下驱散臆想，进入自洽和内驱之境界 (68); 十万粉感恩特辑：分享惊喜与领悟！｜学习的危险，商业化的冲击，养生餐？ (63); 有钱有颜学习好，怎么反而抑郁了？｜穆潼的留学经历—上 (61)"
+      },
+      {
+        "video_cluster": 0,
+        "n_videos": 17,
+        "date_min": "2022-06-23 05:13:54+00:00",
+        "date_max": "2025-01-17 03:54:22+00:00",
+        "total_observed_comments": 849,
+        "unique_commenters": 687,
+        "median_observed_commenters": 27.0,
+        "total_views": 431302,
+        "top_theme_labels": "personal_team_life (8); controversy_response (5); workplace_tech_career (4); education_advice (4); business_brand (3)",
+        "top_videos": "回美国了！为什么离开大厂？ (241); 如何摆脱无意义的工作？｜Multiple-Fire系列 (183); 如何渡过历史的垃圾时间？ (49); 想清楚这些，才能成为财富的主人｜Multiple-Fire系列 (35); 屁股决定脑袋，还是脑袋决定屁股？ (35)"
+      },
+      {
+        "video_cluster": 2,
+        "n_videos": 4,
+        "date_min": "2024-04-13 02:53:56+00:00",
+        "date_max": "2026-04-13 17:36:32+00:00",
+        "total_observed_comments": 208,
+        "unique_commenters": 176,
+        "median_observed_commenters": 41.0,
+        "total_views": 102080,
+        "top_theme_labels": "business_brand (2); education_advice (2); personal_team_life (2); workplace_tech_career (1)",
+        "top_videos": "前高管解密升职加薪的游戏规则 -- 情绪价值｜Vivian 访谈 1/2 (76); 三条反直觉公式讲透复利｜Superlinear (41); 卖课两月收入60万，知无不言！ (41); AI时代，打工人的出路到底是什么？ (36)"
+      },
+      {
+        "video_cluster": 5,
+        "n_videos": 2,
+        "date_min": "2025-11-05 01:04:44+00:00",
+        "date_max": "2025-11-06 16:43:39+00:00",
+        "total_observed_comments": 62,
+        "unique_commenters": 55,
+        "median_observed_commenters": 30.0,
+        "total_views": 36697,
+        "top_theme_labels": "business_brand (2); workplace_tech_career (2); personal_team_life (1)",
+        "top_videos": "深度对话00后CEO，重新定义AI时代的成长方式｜AI时代的顶级人才画像｜Kay访谈_上 (35); 死磕一年热门AI赛道，发现并不卷？｜Aha创始人Kay访谈_下 (25)"
+      }
+    ],
+    "negative_hotspots": [
+      {
+        "video_id": "kIidrMgU_kY",
+        "n_comments": 1,
+        "n_negative": 1,
+        "n_neutral": 0,
+        "n_positive": 0,
+        "negative_rate": 1.0,
+        "neutral_rate": 0.0,
+        "positive_rate": 0.0,
+        "total_like_w": 1.0,
+        "negative_like_w": 1.0,
+        "positive_like_w": 0.0,
+        "like_weighted_negative_rate": 1.0,
+        "like_weighted_positive_rate": 0.0,
+        "avg_score_neg": 0.95,
+        "avg_score_neu": 0.05,
+        "avg_score_pos": 0.0,
+        "avg_confidence": 0.7,
+        "n_replies": 0,
+        "reply_share": 0.0,
+        "title": "AI的2024：ChatGPT的停滞不前，与Agent的日新月异",
+        "published_at": "2024-12-21 03:04:00+00:00",
+        "view_count": 652,
+        "primary_theme": "workplace_tech_career",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "Mjcbb4wP49g",
+        "n_comments": 3,
+        "n_negative": 2,
+        "n_neutral": 1,
+        "n_positive": 0,
+        "negative_rate": 0.6666666666666666,
+        "neutral_rate": 0.3333333333333333,
+        "positive_rate": 0.0,
+        "total_like_w": 8.0,
+        "negative_like_w": 7.0,
+        "positive_like_w": 0.0,
+        "like_weighted_negative_rate": 0.875,
+        "like_weighted_positive_rate": 0.0,
+        "avg_score_neg": 0.6166666666666667,
+        "avg_score_neu": 0.3333333333333333,
+        "avg_score_pos": 0.05000000000000001,
+        "avg_confidence": 0.6999999999999998,
+        "n_replies": 1,
+        "reply_share": 0.3333333333333333,
+        "title": "威士忌入门",
+        "published_at": "2023-12-16 09:37:13+00:00",
+        "view_count": 1574,
+        "primary_theme": "education_advice",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "5mlMmv_Lubs",
+        "n_comments": 2,
+        "n_negative": 1,
+        "n_neutral": 1,
+        "n_positive": 0,
+        "negative_rate": 0.5,
+        "neutral_rate": 0.5,
+        "positive_rate": 0.0,
+        "total_like_w": 3.0,
+        "negative_like_w": 2.0,
+        "positive_like_w": 0.0,
+        "like_weighted_negative_rate": 0.6666666666666666,
+        "like_weighted_positive_rate": 0.0,
+        "avg_score_neg": 0.575,
+        "avg_score_neu": 0.325,
+        "avg_score_pos": 0.1,
+        "avg_confidence": 0.7,
+        "n_replies": 0,
+        "reply_share": 0.0,
+        "title": "脑科学权威：当前的机器人，都没有真正的智能？",
+        "published_at": "2026-04-22 14:04:21+00:00",
+        "view_count": 1646,
+        "primary_theme": "controversy_response",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "QB3GEnduxk4",
+        "n_comments": 5,
+        "n_negative": 2,
+        "n_neutral": 2,
+        "n_positive": 1,
+        "negative_rate": 0.4,
+        "neutral_rate": 0.4,
+        "positive_rate": 0.2,
+        "total_like_w": 17.0,
+        "negative_like_w": 11.0,
+        "positive_like_w": 2.0,
+        "like_weighted_negative_rate": 0.6470588235294118,
+        "like_weighted_positive_rate": 0.11764705882352941,
+        "avg_score_neg": 0.44000000000000006,
+        "avg_score_neu": 0.4,
+        "avg_score_pos": 0.15999999999999998,
+        "avg_confidence": 0.7,
+        "n_replies": 2,
+        "reply_share": 0.4,
+        "title": "How does Facebook run AB testing? | Statsig product demo by Vijaye",
+        "published_at": "2021-07-14 13:17:12+00:00",
+        "view_count": 5557,
+        "primary_theme": "business_brand",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "A7I0h91Jy-A",
+        "n_comments": 30,
+        "n_negative": 11,
+        "n_neutral": 16,
+        "n_positive": 3,
+        "negative_rate": 0.36666666666666664,
+        "neutral_rate": 0.5333333333333333,
+        "positive_rate": 0.1,
+        "total_like_w": 161.0,
+        "negative_like_w": 104.0,
+        "positive_like_w": 10.0,
+        "like_weighted_negative_rate": 0.6459627329192547,
+        "like_weighted_positive_rate": 0.062111801242236024,
+        "avg_score_neg": 0.4033333333333332,
+        "avg_score_neu": 0.4416666666666668,
+        "avg_score_pos": 0.15499999999999997,
+        "avg_confidence": 0.6999999999999997,
+        "n_replies": 7,
+        "reply_share": 0.23333333333333334,
+        "title": "职场新人常见误区？｜资深HR对职业发展的真诚建议｜HRBP采访 3/3",
+        "published_at": "2022-03-15 16:24:44+00:00",
+        "view_count": 6798,
+        "primary_theme": "workplace_tech_career",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "ZJzguLBcTos",
+        "n_comments": 8,
+        "n_negative": 1,
+        "n_neutral": 5,
+        "n_positive": 2,
+        "negative_rate": 0.125,
+        "neutral_rate": 0.625,
+        "positive_rate": 0.25,
+        "total_like_w": 38.0,
+        "negative_like_w": 24.0,
+        "positive_like_w": 2.0,
+        "like_weighted_negative_rate": 0.631578947368421,
+        "like_weighted_positive_rate": 0.05263157894736842,
+        "avg_score_neg": 0.23124999999999998,
+        "avg_score_neu": 0.41875000000000007,
+        "avg_score_pos": 0.35,
+        "avg_confidence": 0.7,
+        "n_replies": 5,
+        "reply_share": 0.625,
+        "title": "大厂总监对职业意义的思考（他觉得工作很有意义）｜朱一丰_上",
+        "published_at": "2026-01-24 05:45:33+00:00",
+        "view_count": 3323,
+        "primary_theme": "personal_team_life",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "W4gA5AdB1_w",
+        "n_comments": 25,
+        "n_negative": 6,
+        "n_neutral": 17,
+        "n_positive": 2,
+        "negative_rate": 0.24,
+        "neutral_rate": 0.68,
+        "positive_rate": 0.08,
+        "total_like_w": 99.0,
+        "negative_like_w": 57.0,
+        "positive_like_w": 5.0,
+        "like_weighted_negative_rate": 0.5757575757575758,
+        "like_weighted_positive_rate": 0.050505050505050504,
+        "avg_score_neg": 0.286,
+        "avg_score_neu": 0.5820000000000001,
+        "avg_score_pos": 0.132,
+        "avg_confidence": 0.6999999999999998,
+        "n_replies": 8,
+        "reply_share": 0.32,
+        "title": "如何选老板和团队？｜找工作口碑最重要？｜IPO前加入Databricks需要注意什么？ ｜Databricks招聘经理访谈_下",
+        "published_at": "2024-11-12 15:00:37+00:00",
+        "view_count": 9345,
+        "primary_theme": "personal_team_life",
+        "sentiment_source": "qwen"
+      },
+      {
+        "video_id": "zsPixiIa0Ew",
+        "n_comments": 7,
+        "n_negative": 1,
+        "n_neutral": 4,
+        "n_positive": 2,
+        "negative_rate": 0.14285714285714285,
+        "neutral_rate": 0.5714285714285714,
+        "positive_rate": 0.2857142857142857,
+        "total_like_w": 18.0,
+        "negative_like_w": 10.0,
+        "positive_like_w": 2.0,
+        "like_weighted_negative_rate": 0.5555555555555556,
+        "like_weighted_positive_rate": 0.1111111111111111,
+        "avg_score_neg": 0.19285714285714287,
+        "avg_score_neu": 0.4642857142857143,
+        "avg_score_pos": 0.3428571428571429,
+        "avg_confidence": 0.7000000000000001,
+        "n_replies": 2,
+        "reply_share": 0.2857142857142857,
+        "title": "做事想长久，「上心」是必备的态度",
+        "published_at": "2023-10-12 06:30:52+00:00",
+        "view_count": 2929,
+        "primary_theme": "personal_team_life",
+        "sentiment_source": "qwen"
+      }
+    ],
+    "reply_overview": {
+      "sentiment_source": "qwen",
+      "n_all_comments": 22118,
+      "n_top_level_comments": 14062,
+      "n_replies": 8056,
+      "reply_share_all_comments": 0.3642282304005787,
+      "n_threads": 14062,
+      "n_threads_with_replies": 3562,
+      "pct_threads_with_replies": 0.25330678424121744,
+      "n_commenters_all": 9200,
+      "n_reply_commenters": 3269,
+      "n_scored_comments": 22118,
+      "n_scored_replies": 8056,
+      "sentiment_coverage": 1.0,
+      "reply_sentiment_coverage": 1.0
+    },
+    "reply_conflict_hotspots": [
+      {
+        "video_id": "_e-ddEj08Ls",
+        "n_threads": 424,
+        "n_threads_with_replies": 63,
+        "n_replies": 249,
+        "n_conflict_threads": 9,
+        "conflict_thread_rate_all": 0.02122641509433962,
+        "conflict_thread_rate_replied": 0.14285714285714285,
+        "n_strict_reply_conflict_threads": 4,
+        "n_pile_on_threads": 5,
+        "n_parent_opposition_threads": 9,
+        "avg_thread_bipolarity": 0.012285066464342376,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.005619975783286938,
+        "max_reply_bipolarity": 0.16326530612244897,
+        "n_scored_replies": 249.0,
+        "reply_negative_rate": 0.37751004016064255,
+        "reply_positive_rate": 0.028112449799196786,
+        "reply_like_weighted_negative_rate": 0.376978417266187,
+        "reply_like_weighted_positive_rate": 0.031654676258992806,
+        "conflict_score": 1.2857142857142856,
+        "opposition_score": 1.2857142857142856,
+        "primary_theme": "controversy_response",
+        "title": "我对防疫的感受和看法",
+        "published_at": "2022-11-27 17:18:16+00:00",
+        "view_count": 33921,
+        "comment_count": 673.0
+      },
+      {
+        "video_id": "ZJzguLBcTos",
+        "n_threads": 3,
+        "n_threads_with_replies": 1,
+        "n_replies": 5,
+        "n_conflict_threads": 1,
+        "conflict_thread_rate_all": 0.3333333333333333,
+        "conflict_thread_rate_replied": 1.0,
+        "n_strict_reply_conflict_threads": 0,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 1,
+        "avg_thread_bipolarity": 0.07407407407407407,
+        "max_thread_bipolarity": 0.2222222222222222,
+        "avg_reply_bipolarity": 0.0,
+        "max_reply_bipolarity": 0.0,
+        "n_scored_replies": 5.0,
+        "reply_negative_rate": 0.0,
+        "reply_positive_rate": 0.4,
+        "reply_like_weighted_negative_rate": 0.0,
+        "reply_like_weighted_positive_rate": 0.16666666666666666,
+        "conflict_score": 1.0,
+        "opposition_score": 1.0,
+        "primary_theme": "personal_team_life",
+        "title": "大厂总监对职业意义的思考（他觉得工作很有意义）｜朱一丰_上",
+        "published_at": "2026-01-24 05:45:33+00:00",
+        "view_count": 3323,
+        "comment_count": 8.0
+      },
+      {
+        "video_id": "mf13n8Fl7FM",
+        "n_threads": 172,
+        "n_threads_with_replies": 29,
+        "n_replies": 114,
+        "n_conflict_threads": 5,
+        "conflict_thread_rate_all": 0.029069767441860465,
+        "conflict_thread_rate_replied": 0.1724137931034483,
+        "n_strict_reply_conflict_threads": 4,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 3,
+        "avg_thread_bipolarity": 0.012203176853879092,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.038499361430395916,
+        "max_reply_bipolarity": 0.5,
+        "n_scored_replies": 114.0,
+        "reply_negative_rate": 0.17543859649122806,
+        "reply_positive_rate": 0.21052631578947367,
+        "reply_like_weighted_negative_rate": 0.22820037105751392,
+        "reply_like_weighted_positive_rate": 0.2987012987012987,
+        "conflict_score": 0.8620689655172414,
+        "opposition_score": 0.5172413793103449,
+        "primary_theme": "personal_team_life",
+        "title": "26岁财富自由的程序员郭宇：很多人起点虽然高，但生活得一团糟",
+        "published_at": "2025-03-12 22:52:33+00:00",
+        "view_count": 100446,
+        "comment_count": 286.0
+      },
+      {
+        "video_id": "Tec54wr1vCc",
+        "n_threads": 19,
+        "n_threads_with_replies": 5,
+        "n_replies": 18,
+        "n_conflict_threads": 2,
+        "conflict_thread_rate_all": 0.10526315789473684,
+        "conflict_thread_rate_replied": 0.4,
+        "n_strict_reply_conflict_threads": 2,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 2,
+        "avg_thread_bipolarity": 0.02113856068743287,
+        "max_thread_bipolarity": 0.32000000000000006,
+        "avg_reply_bipolarity": 0.07222222222222222,
+        "max_reply_bipolarity": 0.25,
+        "n_scored_replies": 18.0,
+        "reply_negative_rate": 0.1111111111111111,
+        "reply_positive_rate": 0.2222222222222222,
+        "reply_like_weighted_negative_rate": 0.05,
+        "reply_like_weighted_positive_rate": 0.2,
+        "conflict_score": 0.8,
+        "opposition_score": 0.8,
+        "primary_theme": "education_advice",
+        "title": "看遍世界教育体系，领悟的教育的真谛｜LuluLeon聊教育-下",
+        "published_at": "2024-12-11 02:44:20+00:00",
+        "view_count": 12389,
+        "comment_count": 37.0
+      },
+      {
+        "video_id": "cyZeAw8DLew",
+        "n_threads": 35,
+        "n_threads_with_replies": 13,
+        "n_replies": 34,
+        "n_conflict_threads": 3,
+        "conflict_thread_rate_all": 0.08571428571428572,
+        "conflict_thread_rate_replied": 0.23076923076923078,
+        "n_strict_reply_conflict_threads": 1,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 3,
+        "avg_thread_bipolarity": 0.06171428571428572,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.019230769230769232,
+        "max_reply_bipolarity": 0.25,
+        "n_scored_replies": 34.0,
+        "reply_negative_rate": 0.11764705882352941,
+        "reply_positive_rate": 0.08823529411764706,
+        "reply_like_weighted_negative_rate": 0.057971014492753624,
+        "reply_like_weighted_positive_rate": 0.08695652173913043,
+        "conflict_score": 0.6923076923076923,
+        "opposition_score": 0.6923076923076923,
+        "primary_theme": "personal_team_life",
+        "title": "深度对话00后CEO，重新定义AI时代的成长方式｜AI时代的顶级人才画像｜Kay访谈_上",
+        "published_at": "2025-11-05 01:04:44+00:00",
+        "view_count": 24659,
+        "comment_count": 69.0
+      },
+      {
+        "video_id": "OZj6eLT6hNE",
+        "n_threads": 20,
+        "n_threads_with_replies": 6,
+        "n_replies": 7,
+        "n_conflict_threads": 2,
+        "conflict_thread_rate_all": 0.1,
+        "conflict_thread_rate_replied": 0.3333333333333333,
+        "n_strict_reply_conflict_threads": 0,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 2,
+        "avg_thread_bipolarity": 0.07222222222222222,
+        "max_thread_bipolarity": 1.0,
+        "avg_reply_bipolarity": 0.0,
+        "max_reply_bipolarity": 0.0,
+        "n_scored_replies": 7.0,
+        "reply_negative_rate": 0.14285714285714285,
+        "reply_positive_rate": 0.42857142857142855,
+        "reply_like_weighted_negative_rate": 0.1111111111111111,
+        "reply_like_weighted_positive_rate": 0.3333333333333333,
+        "conflict_score": 0.6666666666666666,
+        "opposition_score": 0.6666666666666666,
+        "primary_theme": "personal_team_life",
+        "title": "为什么我不想看到下属太忙？",
+        "published_at": "2023-06-20 00:47:27+00:00",
+        "view_count": 9221,
+        "comment_count": 27.0
+      },
+      {
+        "video_id": "KhV4cItOqYw",
+        "n_threads": 30,
+        "n_threads_with_replies": 8,
+        "n_replies": 33,
+        "n_conflict_threads": 2,
+        "conflict_thread_rate_all": 0.06666666666666667,
+        "conflict_thread_rate_replied": 0.25,
+        "n_strict_reply_conflict_threads": 2,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 2,
+        "avg_thread_bipolarity": 0.010775510204081632,
+        "max_thread_bipolarity": 0.16326530612244897,
+        "avg_reply_bipolarity": 0.059027777777777776,
+        "max_reply_bipolarity": 0.25,
+        "n_scored_replies": 33.0,
+        "reply_negative_rate": 0.09090909090909091,
+        "reply_positive_rate": 0.3333333333333333,
+        "reply_like_weighted_negative_rate": 0.24719101123595505,
+        "reply_like_weighted_positive_rate": 0.24719101123595505,
+        "conflict_score": 0.5,
+        "opposition_score": 0.5,
+        "primary_theme": "workplace_tech_career",
+        "title": "刷题+海投已失效，好工作需要这三件事｜Databricks招聘经理访谈 - 上",
+        "published_at": "2024-11-06 00:00:06+00:00",
+        "view_count": 20523,
+        "comment_count": 63.0
+      },
+      {
+        "video_id": "gBj0JY7LDpE",
+        "n_threads": 17,
+        "n_threads_with_replies": 2,
+        "n_replies": 4,
+        "n_conflict_threads": 1,
+        "conflict_thread_rate_all": 0.058823529411764705,
+        "conflict_thread_rate_replied": 0.5,
+        "n_strict_reply_conflict_threads": 1,
+        "n_pile_on_threads": 0,
+        "n_parent_opposition_threads": 1,
+        "avg_thread_bipolarity": 0.029411764705882353,
+        "max_thread_bipolarity": 0.5,
+        "avg_reply_bipolarity": 0.2222222222222222,
+        "max_reply_bipolarity": 0.4444444444444444,
+        "n_scored_replies": 4.0,
+        "reply_negative_rate": 0.25,
+        "reply_positive_rate": 0.25,
+        "reply_like_weighted_negative_rate": 0.2727272727272727,
+        "reply_like_weighted_positive_rate": 0.18181818181818182,
+        "conflict_score": 0.5,
+        "opposition_score": 0.5,
+        "primary_theme": "business_brand",
+        "title": "应届生三年为公司赚五十亿，靠的是｜直播话术的本质",
+        "published_at": "2023-05-17 15:29:45+00:00",
+        "view_count": 9291,
+        "comment_count": 21.0
+      }
+    ]
+  },
+  "baseline": {
+    "is_baseline_member": false,
+    "membership": {},
+    "key_metrics": [],
+    "all_metrics": [],
+    "n_metrics": 0,
+    "percentile_takeaways": [],
+    "risk_opportunity_summary": {
+      "risk_flags": [],
+      "opportunity_flags": [],
+      "watch_flags": [],
+      "context_flags": [],
+      "principle_zh": "這些標籤只表示相對 benchmark 的統計位置，不能單獨推論因果或頻道品質。"
+    }
+  },
+  "analysis": {
+    "interface_version": 2,
+    "purpose_zh": "把完成的頻道 artifact 轉成頻道主能快速理解的社群健康、內容策略與風險判讀。",
+    "archetype": {
+      "label_zh": "低參與待啟動型",
+      "summary_zh": "留言互動與回訪都偏弱；應先檢查內容系列、社群互動節奏與觀眾加入門檻。",
+      "scores": {
+        "engagement_conversion": 0.0,
+        "audience_stickiness": 0.0,
+        "conversation_quality": 0.0,
+        "risk_pressure": 0.0,
+        "community_concentration": 0.0,
+        "content_portfolio_linkage": 0.0
+      }
+    },
+    "indices": [],
+    "lenses": [
+      {
+        "id": "executive",
+        "label": "決策摘要",
+        "question_zh": "這個頻道最值得先處理的社群問題是什麼？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      },
+      {
+        "id": "audience",
+        "label": "觀眾與回訪",
+        "question_zh": "留言者是廣泛加入，還是靠少數核心觀眾支撐？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      },
+      {
+        "id": "content",
+        "label": "內容策略",
+        "question_zh": "哪些題材與影片群可以形成下一波選題或跨題材連結？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      },
+      {
+        "id": "risk",
+        "label": "情緒與衝突",
+        "question_zh": "負面、按讚放大與回覆衝突是否需要介入？",
+        "indices": [],
+        "metrics": [],
+        "read_order_zh": "先看 composite score，再看 component percentile，最後鑽到影片/主題表。"
+      }
+    ],
+    "story_cards": [
+      {
+        "id": "top_negative_hotspot",
+        "kind": "risk",
+        "priority": 72,
+        "title_zh": "最負面影片需要單獨檢查",
+        "body_zh": "整體平均會稀釋單支影片的風險；最高負面影片常是事件、題材或敘事轉折的線索。",
+        "evidence_zh": "AI的2024：ChatGPT的停滞不前，与Agent的日新月异，負面率 100.0%",
+        "metrics": [
+          "negative_rate",
+          "max_video_negative_rate"
+        ],
+        "next_step_zh": "在情緒與衝突頁檢查該影片是否同時有按讚加權負面或高回覆衝突。"
+      }
+    ],
+    "decision_queue": [
+      {
+        "rank": 1,
+        "kind": "risk",
+        "title_zh": "最負面影片需要單獨檢查",
+        "why_zh": "整體平均會稀釋單支影片的風險；最高負面影片常是事件、題材或敘事轉折的線索。",
+        "evidence_zh": "AI的2024：ChatGPT的停滞不前，与Agent的日新月异，負面率 100.0%",
+        "next_step_zh": "在情緒與衝突頁檢查該影片是否同時有按讚加權負面或高回覆衝突。"
+      }
+    ],
+    "benchmark_maps": {
+      "engagement_vs_risk": {
+        "x": "engagement_conversion",
+        "y": "risk_pressure",
+        "x_label_zh": "互動轉換力",
+        "y_label_zh": "情緒風險壓力",
+        "selected": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "quadrant_hints_zh": {
+          "high_x_high_y": "高互動但高風險：先做留言與主題風險控管。",
+          "high_x_low_y": "高互動且低風險：可擴大成功題材。",
+          "low_x_high_y": "低互動但高風險：少數負面可能主導觀感。",
+          "low_x_low_y": "低互動低風險：先提高討論入口。"
+        }
+      },
+      "stickiness_vs_concentration": {
+        "x": "audience_stickiness",
+        "y": "community_concentration",
+        "x_label_zh": "核心黏著度",
+        "y_label_zh": "社群集中度",
+        "selected": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "method_notes_zh": [
+      "Composite index 使用 component metrics 的 benchmark percentile 平均；沒有新增未觀測資料。",
+      "risk 類 index 越高代表壓力越大；quality 類 index 已把負面/衝突 component 反向後再合成。",
+      "所有判讀都是相對目前 48 個 ready benchmark channel，不是因果推論。"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+project_name: "Superpie Channel Community Analyzer"
+
+channel_id: "UCR_352pCZIWGrqq8Zt6ap8g"
+channel_url: "https://youtube.com/@superpie1111"
+channel_handle: "@superpie1111"
+
+date_start: null
+date_end: null
+
+include_replies: false
+exclude_shorts: true
+short_threshold_seconds: 180
+
+analysis:
+  min_actor_videos: 2
+  min_co_videos: 3
+  high_activity_min_videos: 16
+  mid_activity_min_videos: 6
+  continuity_windows: 4
+  continuity_window_options: "3,4,6,8"
+  rolling_window_videos: 50
+  rolling_horizon_videos: 50
+  rolling_step_videos: 25
+  top_bridge_actors: 50
+  min_video_commenters: 10
+  min_shared_video_commenters: 5
+
+outputs:
+  run_slug: "superpie1111-full"
+
+external_analysis:
+  enabled: false
+  sources: "ptt"
+  channel_aliases: "超派人生Superpie, 超派人生, Superpie, superpie1111, 超哥, 黃柏超, 超派炸雞"
+  require_alias_match: true
+  min_daily_posts: 1
+  min_external_engagement: 1
+  merge_gap_days: 3
+  baseline_days: 90
+  pre_days: 28
+  post_days: 28

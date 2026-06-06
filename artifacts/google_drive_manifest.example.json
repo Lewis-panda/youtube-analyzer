@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "notes": [
+    "Copy this file to artifacts/google_drive_manifest.json after uploading artifact zips to Google Drive.",
+    "Use public reader links or file IDs. Keep large zips out of Git."
+  ],
+  "artifacts": [
+    {
+      "name": "baseline_runs_full",
+      "description": "Completed per-channel run artifacts used to rebuild benchmark/dashboard outputs.",
+      "drive_file_id": "REPLACE_WITH_GOOGLE_DRIVE_FILE_ID",
+      "destination": "baseline_runs",
+      "archive_type": "zip",
+      "required": false
+    },
+    {
+      "name": "dodomen_case_study_outputs",
+      "description": "Optional DoDoMen appendix raw outputs and external-event artifacts.",
+      "drive_file_id": "REPLACE_WITH_GOOGLE_DRIVE_FILE_ID",
+      "destination": "case_studies/dodomen/dodomen-generic-demo",
+      "archive_type": "zip",
+      "required": false
+    }
+  ]
+}

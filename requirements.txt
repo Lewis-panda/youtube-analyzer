@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+networkx
+matplotlib
+python-louvain
+PyYAML
+requests
+beautifulsoup4

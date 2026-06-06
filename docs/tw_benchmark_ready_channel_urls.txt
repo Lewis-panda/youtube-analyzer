@@ -1,0 +1,98 @@
+# Verified Taiwan benchmark channel URLs for crawler seeding.
+# Generated from docs/tw_under_1_5m_Update.csv. Rows marked X are excluded.
+# TW051 錫蘭Ceylan
+https://www.youtube.com/@xilanceylan
+# TW001 Onion Man
+https://www.youtube.com/@onion_man
+# TW002 喪屍老爸
+https://www.youtube.com/@walkerdad
+# TW003 見習網美小吳
+https://www.youtube.com/@beautywu
+# TW004 阿翰po影片
+https://www.youtube.com/@hanhanpovideo
+# TW005 反正我很閒
+https://www.youtube.com/channel/UCzjNxGvrqfxL9KGkObbzrmg
+# TW006 哈哈台
+https://www.youtube.com/@Hahatai
+# TW007 上班不要看 NSFW
+https://www.youtube.com/@nsfwstudio
+# TW008 滴妹
+https://www.youtube.com/@crowndu
+# TW009 愛莉莎莎 Alisasa
+https://www.youtube.com/@alisasa_official
+# TW010 菜喳
+https://www.youtube.com/channel/UCSckEwXBJmJEUzIo6NplQ5g
+# TW011 魚乾
+https://www.youtube.com/@annie72127
+# TW012 安啾咪
+https://www.youtube.com/@anjouclever103
+# TW013 老皮
+https://www.youtube.com/@tolocat
+# TW014 放火 Louis
+https://www.youtube.com/@louislee0602
+# TW015 sandy mandy
+https://www.youtube.com/@sandymandy_official
+# TW016 This is Catie
+https://www.youtube.com/@HelloCatie
+# TW017 劉芒
+https://www.youtube.com/@lioumonn
+# TW018 黃小米Mii
+https://www.youtube.com/@miihuang711
+# TW019 古娃娃WawaKu
+https://www.youtube.com/@WawaKu
+# TW020 詹姆士姆士流官方專屬頻道
+https://www.youtube.com/@chef_james_tw
+# TW021 阿慶師
+https://www.youtube.com/@achingchef
+# TW022 夢幻廚房在我家
+https://www.youtube.com/@dreamchefhome
+# TW024 欸你這週要幹嘛
+https://www.youtube.com/@happyariel
+# TW025 金魚腦
+https://www.youtube.com/@goldfishbrain
+# TW026 吳鳳 Rifat
+https://www.youtube.com/@Rifat
+# TW027 Blaire Chen
+https://www.youtube.com/@blairechen_
+# TW028 小象愛出門
+https://www.youtube.com/@elephantgogo
+# TW029 Taiwan Bar
+https://www.youtube.com/@TaiwanBar
+# TW030 理科太太
+https://www.youtube.com/@liketaitai
+# TW031 PanSci 泛科學
+https://www.youtube.com/@PanScitw
+# TW032 報導者 The Reporter
+https://www.youtube.com/@TwreporterOrg
+# TW033 百靈果News
+https://www.youtube.com/@bailingguo
+# TW034 敏迪選讀
+https://www.youtube.com/@mindiworldnews
+# TW035 法律白話文運動
+https://www.youtube.com/@plainlaw_me
+# TW036 股癌 Gooaye
+https://www.youtube.com/@Gooaye
+# TW037 柴鼠兄弟
+https://www.youtube.com/@zrbro
+# TW039 電獺少女
+https://www.youtube.com/@aottergirls
+# TW040 科技狗 3C Dog
+https://www.youtube.com/@3cdogs
+# TW041 3cTim哥生活的日常
+https://www.youtube.com/@3ctim
+# TW042 小施汽車生活頻道
+https://www.youtube.com/@sscarlife
+# TW043 SiCAR 愛車酷
+https://www.youtube.com/channel/UCD76jE_-uOSeyC2q8jX7pVQ
+# TW044 小老婆汽機車資訊網
+https://www.youtube.com/@JorsindoMotorClub
+# TW046 蒼藍鴿的醫學天地
+https://www.youtube.com/@bluepigeon0810
+# TW047 營養師 Ricky's Time
+https://www.youtube.com/@RickysTime
+# TW048 營養師品瑄
+https://www.youtube.com/@dietitian_pink
+# TW049 好味小姐 Lady Flavor
+https://www.youtube.com/@LadyFlavor
+# TW050 好味小姐腦波弱
+https://www.youtube.com/@ladyflavor_brain

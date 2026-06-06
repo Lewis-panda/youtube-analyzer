@@ -1,0 +1,29 @@
+project_name: "Onion Man Channel Community Analyzer"
+
+channel_id: "UCzxN4G3s9uR9ao5_O5DoXmA"
+channel_url: "https://youtube.com/@onion_man"
+channel_handle: "@onion_man"
+
+date_start: null
+date_end: null
+
+include_replies: false
+exclude_shorts: true
+short_threshold_seconds: 180
+
+analysis:
+  min_actor_videos: 2
+  min_co_videos: 3
+  high_activity_min_videos: 16
+  mid_activity_min_videos: 6
+  continuity_windows: 4
+  continuity_window_options: "3,4,6,8"
+  rolling_window_videos: 50
+  rolling_horizon_videos: 50
+  rolling_step_videos: 25
+  top_bridge_actors: 50
+  min_video_commenters: 10
+  min_shared_video_commenters: 5
+
+outputs:
+  run_slug: "onion-man-full"

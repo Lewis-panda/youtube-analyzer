@@ -68,6 +68,13 @@ button {
 .brand-kicker,
 .stage-eyebrow,
 .kicker,
+.rail-title {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+
 .brand h1 {
   margin: 6px 0 6px;
   font-size: 24px;
@@ -445,9 +452,15 @@ select:focus {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.audience-summary,
 .framework-card,
 .metric-tile,
+.artifact-hint {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
 .framework-card span,
 .metric-tile span,
 .artifact-hint span {
@@ -719,6 +732,11 @@ select:focus {
 .tier-comparison-list,
 .comparison-bars,
 .sentiment-detail,
+.artifact-list {
+  display: grid;
+  gap: 9px;
+}
+
 .artifact-hint strong {
   font-size: 14px;
 }
@@ -986,6 +1004,13 @@ select:focus {
 }
 
 .dot.selected,
+.selected-dot {
+  fill: var(--coral);
+  opacity: 1;
+  stroke: white;
+  stroke-width: 1.5;
+}
+
 .axis-label {
   position: absolute;
   color: var(--muted);
@@ -1001,10 +1026,6 @@ select:focus {
 .axis-label.y {
   left: 8px;
   top: 8px;
-}
-
-.bullet-row:last-child {
-  border-bottom: 0;
 }
 
 .bullet-label strong {
@@ -1117,10 +1138,14 @@ select:focus {
   font-style: normal;
 }
 
-.theme-row,
 .theme-row > div:first-child,
-.theme-bar,
-.tier-bar,
+.tier-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+
 .theme-bar i,
 .tier-bar i,
 .community-bar i {
@@ -1319,6 +1344,17 @@ select:focus {
 }
 
 .compact-card,
+.cluster-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
 .compact-card > div,
 .cluster-card > div {
   min-width: 0;
@@ -2387,10 +2423,6 @@ select:focus {
   height: 100%;
   border-radius: inherit;
   background: var(--teal);
-}
-
-.cluster-row:last-child {
-  border-bottom: 0;
 }
 
 .cluster-row strong {

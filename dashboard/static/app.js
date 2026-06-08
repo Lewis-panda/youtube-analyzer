@@ -2059,7 +2059,17 @@ function audienceStructureCards(network) {
       中等: "活躍留言者分布在數個共同留言群，集中度中等；可同時經營主力群與次要群。",
       偏低: "活躍留言者分散在較多群、沒有明顯主導群，社群相對分散。",
     }[band];
-    cards.push(structureCard("觀眾集中度", band, `HHI ${hhi.toFixed(2)}`, pr, text, band === "偏高" ? "warn" : ""));
+    cards.push(
+      structureCard(
+        "觀眾集中度",
+        band,
+        `HHI ${hhi.toFixed(2)}`,
+        pr,
+        text,
+        band === "偏高" ? "warn" : "",
+        "觀眾集中度＝community HHI＝各社群占比的平方和（Σ share²）。算法：把每個社群占活躍留言者的比例平方後加總，越接近 1＝越集中在少數大群、越接近 0＝越分散在多群。對照 cohort 百分位定偏高/中等/偏低。",
+      ),
+    );
   }
   const mod = Number(network.modularity);
   if (Number.isFinite(mod)) {
@@ -2070,7 +2080,18 @@ function audienceStructureCards(network) {
       中: "留言者的分群結構中等清楚，群與群之間仍有不少交集。",
       低: "留言者之間交集很多、分群界線不明顯，比較難切出清楚的觀眾群。",
     }[band];
-    cards.push(structureCard("分群清晰度", band, `modularity ${mod.toFixed(2)} · ${fmtNumber(network.n_communities)} 群`, pr, text));
+    cards.push(
+      structureCard(
+        "分群清晰度",
+        band,
+        `modularity ${mod.toFixed(2)} · ${fmtNumber(network.n_communities)} 群`,
+        pr,
+        text,
+        "",
+        "分群清晰度＝modularity（Q）。算法：把『留言者-留言者』網路（邊＝兩人在同一支影片共同留言、權重＝共享影片數）用 Louvain 自動分群，Q＝Σ各群（實際落在群內的邊比例 − 隨機重連、但保留每人連結度數時的期望比例）。比的是隨機重連的圖、不是 random walk。Q 介於 0~1，慣例 0.3–0.7 才算有明顯結構；單一頻道的觀眾天生重疊，本 cohort 中位數僅約 0.22，所以這裡的高/中/低是『相對同行』，不是絕對乾淨的分割。",
+        "⚠ 這是「軟性偏好傾向」，不是硬性分群：成員大量重疊（同一人會看多種題材、跨群留言），別把每個群當成互不相干的鐵票或派系。",
+      ),
+    );
   }
   if (!cards.length) return "";
   return `<div class="structure-card-grid">${cards.join("")}</div>`;
@@ -2083,15 +2104,16 @@ function prBand(pr, labels) {
   return labels[0];
 }
 
-function structureCard(title, band, valueText, pr, text, tone = "") {
+function structureCard(title, band, valueText, pr, text, tone = "", tip = "", note = "") {
   return `
     <article class="structure-card ${tone}">
       <div class="structure-card-head">
-        <strong>${escapeHtml(title)}</strong>
+        <strong>${escapeHtml(title)}${tip ? " " + infoTip(tip) : ""}</strong>
         <span class="structure-band">${escapeHtml(band)}</span>
       </div>
       <div class="structure-card-meta">${escapeHtml(valueText)}${Number.isFinite(pr) ? ` · PR ${Math.round(pr)}` : ""}</div>
       <p>${escapeHtml(text)}</p>
+      ${note ? `<p class="structure-note">${escapeHtml(note)}</p>` : ""}
     </article>`;
 }
 

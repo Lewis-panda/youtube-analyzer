@@ -263,6 +263,20 @@ async function renderAudience(root) {
   const s = currentChannel.dashboard_summary || {};
   const themeSent = await fetchTableRows("sentiment_theme_summary", 20);
   const channelThemeNeg = Object.fromEntries((themeSent || []).map((row) => [row.primary_theme, Number(row.negative_rate)]));
+  const commAspect = await fetchTableRows("community_aspect_summary", 200);
+  const aspectSummaryRows = await fetchTableRows("comment_aspect_summary", 20);
+  const aspectLabels = Object.fromEntries(
+    (aspectSummaryRows || []).filter((row) => row.aspect).map((row) => [row.aspect, row.aspect_label_zh || row.aspect]),
+  );
+  const communityAspectMap = {};
+  (commAspect || []).forEach((row) => {
+    (communityAspectMap[String(row.community)] ||= []).push({
+      aspect: row.aspect,
+      share: Number(row.aspect_share),
+      count: Number(row.count),
+    });
+  });
+  Object.values(communityAspectMap).forEach((list) => list.sort((a, b) => b.count - a.count));
   root.innerHTML = `
     ${sectionIntro("觀眾")}
     <section class="split-layout">
@@ -278,7 +292,7 @@ async function renderAudience(root) {
     <section class="panel">
       <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類(用『則數』算、純歸屬作者群)。每張卡片＝一個社群。注意：YouTube 只給留言的讚數、不給『誰按的』，所以任何按讚加權指標反映的是廣大觀眾(可能跨群、甚至純看客)的放大，不等於該社群自己的認同。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
       ${audienceStructureCards(s.network_summary || {})}
-      ${communityPersonaCards(s.community_profiles || [], channelThemeNeg)}
+      ${communityPersonaCards(s.community_profiles || [], channelThemeNeg, communityAspectMap, aspectLabels)}
     </section>
   `;
 }
@@ -380,7 +394,10 @@ async function renderSentiment(root) {
         </div>
       </div>
     </section>
-    <section class="section-intro compact"><h3>回覆衝突 ${infoTip("和『情緒』不同：情緒看每則留言的語氣（正/負），衝突看『回覆串的對立結構』——有人被圍剿、母串下吵成兩派。負面率低不代表沒衝突，反之亦然。")}</h3></section>
+    <section class="section-intro compact">
+      <h3>回覆衝突 ${infoTip("和『情緒』不同：情緒看每則留言的語氣（正/負），衝突看『回覆串的對立結構』——有人被圍剿、母串下吵成兩派。負面率低不代表沒衝突，反之亦然。")}</h3>
+      <p class="section-why">為什麼看這個：① <b>版務</b>——高衝突影片留言區易變戰場，可考慮置頂澄清、限制回覆、加強管理；② <b>品牌風險</b>——圍剿/對立串容易被截圖、釀公關，是早期預警；③ <b>議題極化</b>——看哪些題材會讓你的觀眾分裂成兩派（而非單純不喜歡）。</p>
+    </section>
     <section class="split-layout">
       <article class="panel">
         <div class="panel-head"><div><h3>回覆與衝突基準 ${infoTip("回覆占全部留言的比例、衝突分數等對照 benchmark cohort（顯示 cohort 平均）。衝突來自回覆串結構，與單純負面情緒是不同概念。")}</h3></div></div>
@@ -2007,7 +2024,29 @@ function structureCard(title, band, valueText, pr, text, tone = "") {
     </article>`;
 }
 
-function communityPersonaCards(rows, channelThemeNeg = {}) {
+function personaAspectChart(label, items, aspectLabels = {}) {
+  const rows = (items || []).filter((item) => item.aspect && !NON_IMPACT_ASPECTS.has(item.aspect)).slice(0, 4);
+  if (!rows.length) return "";
+  const max = Math.max(...rows.map((row) => row.share || 0), 0.01);
+  return `
+    <div class="persona-chart">
+      <span class="persona-chart-label">${escapeHtml(label)}</span>
+      <div class="persona-chart-rows">
+        ${rows
+          .map(
+            (row) => `
+          <div class="persona-chart-row">
+            <span class="persona-chart-name" title="${escapeHtml(aspectLabels[row.aspect] || row.aspect)}">${escapeHtml(aspectLabels[row.aspect] || row.aspect)}</span>
+            <div class="persona-bar"><i class="neg" style="width:${Math.max(3, (row.share / max) * 100).toFixed(0)}%"></i></div>
+            <span class="persona-chart-val">${formatValue(row.share, "rate")}</span>
+          </div>`,
+          )
+          .join("")}
+      </div>
+    </div>`;
+}
+
+function communityPersonaCards(rows, channelThemeNeg = {}, communityAspectMap = {}, aspectLabels = {}) {
   const fallbackRows = currentChannel.dashboard_summary?.audience_segment_profiles || [];
   const usable = (rows?.length ? rows : fallbackRows).filter(
     (row) =>
@@ -2055,6 +2094,7 @@ function communityPersonaCards(rows, channelThemeNeg = {}) {
           tone: "neg",
           format: (it) => `${it.lift.toFixed(2)}× · ${formatValue(it.negative_rate, "rate")}`,
         }),
+        personaAspectChart("被罵的面向（ABSA·該群負面留言）", communityAspectMap[String(row.community)], aspectLabels),
         personaVideoList("代表影片", row.preferred_videos),
         personaKeywordChips(row.common_keywords),
         personaLine("策略用途", personaBusinessAdvice(row)),

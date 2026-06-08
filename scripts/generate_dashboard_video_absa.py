@@ -40,20 +40,38 @@ def main():
         video_aspect_summary.to_csv(tables_dir / "video_aspect_summary.csv", index=False)
         print("Generated video_aspect_summary.csv")
         
-    # Top Negative comments per video
+    # Top Negative comments per video (also pull author for community join below)
     conn = sqlite3.connect("../SharedData/state/yt_graph.sqlite3")
-    comments_df = pd.read_sql_query("SELECT comment_id, text_plain FROM comments", conn)
+    comments_df = pd.read_sql_query("SELECT comment_id, author_actor_id, text_plain FROM comments", conn)
     conn.close()
-    
+
     sentiment_with_text = neg_comments.merge(comments_df, on="comment_id", how="inner")
-    
+
     # Sort by video and like_count desc, then take top 3
     sentiment_with_text = sentiment_with_text.sort_values(["video_id", "like_count"], ascending=[True, False])
     top_comments = sentiment_with_text.groupby("video_id").head(3)
-    
+
     keep_cols = ["video_id", "comment_id", "text_plain", "like_count", "aspect"]
     top_comments[keep_cols].to_csv(tables_dir / "video_top_negative_comments.csv", index=False)
     print("Generated video_top_negative_comments.csv")
+
+    # --- Community x ABSA aspect: what each audience community's NEGATIVE comments are about ---
+    actor_comm_path = tables_dir / "actor_communities.csv"
+    if actor_comm_path.exists():
+        ac = pd.read_csv(actor_comm_path)[["author_actor_id", "community"]].drop_duplicates("author_actor_id")
+        neg_auth = (
+            neg_comments[["comment_id", "aspect"]]
+            .merge(comments_df[["comment_id", "author_actor_id"]], on="comment_id", how="inner")
+            .merge(ac, on="author_actor_id", how="inner")
+        )
+        if not neg_auth.empty:
+            cas = neg_auth.groupby(["community", "aspect"]).size().reset_index(name="count")
+            ctot = neg_auth.groupby("community").size().reset_index(name="total_negative")
+            cas = cas.merge(ctot, on="community")
+            cas["aspect_share"] = cas["count"] / cas["total_negative"]
+            cas = cas.sort_values(["community", "count"], ascending=[True, False])
+            cas.to_csv(tables_dir / "community_aspect_summary.csv", index=False)
+            print("Generated community_aspect_summary.csv")
 
     # --- Positive ABSA: per-video aspect summary (aspects only, no raw text) ---
     absa_pos_path = tables_dir / "qwen_comment_absa_positive.csv"

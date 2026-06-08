@@ -12,16 +12,6 @@ const pages = [
   { id: "strategy", label: "策略輸出" },
 ];
 
-const selectedMetrics = [
-  "comments_per_1k_views",
-  "high_mid_tier_commenter_share",
-  "continuity_return_rate_w4",
-  "one_time_tier_commenter_share",
-  "negative_rate",
-  "like_weighted_negative_rate",
-  "reply_share_all_comments",
-  "max_video_like_weighted_conflict_score",
-];
 
 const $ = (id) => document.getElementById(id);
 
@@ -65,10 +55,6 @@ function filteredExamples() {
     return (!query || text.includes(query)) && Number(item.subscriber_count || 0) >= minSubs;
   });
   return orderExamples(rows);
-}
-
-function demoTargetSlug() {
-  return indexData?.demo_target_slug || "dodomen-generic-demo";
 }
 
 function orderExamples(rows) {
@@ -195,32 +181,6 @@ async function renderOverview(root) {
   `;
 }
 
-function renderBenchmark(root) {
-  const metrics = currentChannel.baseline?.all_metrics || [];
-  const metricMap = Object.fromEntries(metrics.map((item) => [item.metric, item]));
-  const caution = currentChannel.baseline?.comparison_caution_zh || indexData.demo_focus?.comparison_caution_zh || "";
-  root.innerHTML = `
-    <section class="benchmark-warning">
-      <div>
-        <h3>比較基準範圍</h3>
-        <p>${escapeHtml(caution || "目前使用完成案例建立參考分布，尚未限制為同題材頻道。")}</p>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="panel-head">
-        <div>
-          <h3>關鍵指標分布 ${infoTip("把本頻道的關鍵指標放進 48 個 benchmark 頻道的分布。算法：橫條為 cohort 的常見範圍（IQR，中間 50% 落點），中線＝cohort 平均，標記＝本頻道目前值。cohort 僅 48 個頻道故以平均為基準；百分位只代表相對位置，不代表好壞。")}</h3>
-        </div>
-        <small>顯示平均 / 常見範圍 / 目前頻道</small>
-      </div>
-      <div class="bullet-list">
-        ${selectedMetrics.map((metric) => bulletMetric(metricMap[metric])).join("")}
-      </div>
-    </section>
-  `;
-}
-
 async function renderContent(root) {
   const s = currentChannel.dashboard_summary || {};
   const videos = await getVideoRows();
@@ -341,40 +301,6 @@ function communityThemeContrast(ctRows, communityName) {
             .join("")}
         </div>`;
     })
-    .join("")}</div>`;
-}
-
-function communityThemeRisk(ctRows, affRows, communityName) {
-  const aff = {};
-  (affRows || []).forEach((row) => {
-    aff[`${row.community}|${row.theme_label}`] = Number(row.lift);
-  });
-  const rows = (ctRows || [])
-    .filter((row) => Number(row.n_comments) >= 200 && row.primary_theme && row.primary_theme !== "other")
-    .map((row) => ({
-      community: String(row.community),
-      theme: row.primary_theme,
-      neg: Number(row.negative_rate || 0),
-      likeNeg: Number(row.like_weighted_negative_rate || 0),
-      n: Number(row.n_comments) || 0,
-      lift: Number(aff[`${row.community}|${row.primary_theme}`]),
-    }))
-    .sort((a, b) => b.neg - a.neg)
-    .slice(0, 8);
-  if (!rows.length) return `<div class="empty-state">資料不足以判斷社群×題材風險。</div>`;
-  const max = Math.max(...rows.map((row) => row.neg), 0.01);
-  return `<div class="insight-list">${rows
-    .map(
-      (row) => `
-      <div class="insight-row">
-        <div class="insight-label">
-          <strong>${escapeHtml(communityName[row.community] || `社群 ${row.community}`)} · ${escapeHtml(themeLabel(row.theme))}</strong>
-          <span>${fmtCompact(row.n)} 留言${Number.isFinite(row.lift) ? ` · 投入 ${row.lift.toFixed(2)}×` : ""} · 按讚加權 ${formatValue(row.likeNeg, "rate")}（放大·讚來源不明）</span>
-        </div>
-        <div class="risk-track"><i style="width:${Math.max(3, (row.neg / max) * 100).toFixed(0)}%"></i></div>
-        <div class="insight-value">${formatValue(row.neg, "rate")}</div>
-      </div>`,
-    )
     .join("")}</div>`;
 }
 
@@ -756,17 +682,6 @@ function strategyField(label, value) {
     </div>`;
 }
 
-function frameworkCard(kicker, title, metric, question) {
-  return `
-    <article class="framework-card">
-      <span>${escapeHtml(kicker)}</span>
-      <strong>${escapeHtml(title)}</strong>
-      <p>${escapeHtml(metric)}</p>
-      <em>${escapeHtml(question)}</em>
-    </article>
-  `;
-}
-
 function sectionIntro(kicker) {
   return `
     <section class="section-intro compact">
@@ -836,46 +751,6 @@ function initials(value) {
   if (!text) return "YT";
   const letters = Array.from(text.replace(/[^\p{L}\p{N}]/gu, "")).slice(0, 2).join("");
   return letters || "YT";
-}
-
-function overviewSnapshotRow(channel, overview) {
-  return {
-    custom_url: channel.custom_url || channel.channel_id || overview.channel_id,
-    country: channel.country || "-",
-    crawl_time: channel.crawl_time || "-",
-    date_min: channel.date_min || overview.date_min,
-    date_max: channel.date_max || overview.date_max,
-  };
-}
-
-function overviewMetricRows(channel, overview, summary) {
-  return [
-    ["訂閱數", channel.subscriber_count ?? overview.subscriber_count, "YouTube 頻道公開資料"],
-    ["頻道總觀看", channel.view_count_api ?? overview.channel_view_count_api, "YouTube 頻道公開資料"],
-    ["頻道總影片", channel.video_count_api ?? overview.channel_video_count_api, "YouTube 頻道公開資料"],
-    ["分析範圍影片", channel.n_videos_in_scope ?? overview.n_videos_in_scope, "本次分析資料"],
-    ["分析範圍觀看", channel.total_views_in_scope ?? overview.total_views_in_scope, "本次分析資料"],
-    ["主留言數（不含回覆）", channel.n_comments_in_scope ?? overview.n_comments_in_scope, "本次分析資料"],
-    ["主留言者數（不重複）", channel.n_commenters_in_scope ?? overview.n_commenters_in_scope, "本次分析資料"],
-    ["YouTube 顯示留言數", overview.total_video_comment_count_api, "YouTube 影片公開資料"],
-    ["負面留言率", formatValue(summary.negative_rate, "rate"), "模型情緒標註"],
-    ["正面留言率", formatValue(summary.positive_rate, "rate"), "模型情緒標註"],
-    ["按讚加權負面", formatValue(summary.like_weighted_negative_rate, "rate"), "留言按讚 + 模型情緒標註"],
-    ["回覆占比", formatValue(summary.reply_overview?.reply_share_all_comments, "rate"), "留言回覆串"],
-  ].map(([metric, value, source]) => ({
-    metric,
-    value: typeof value === "number" ? formatValue(value, "n") : value,
-    source,
-  }));
-}
-
-function overviewEngagementRows(summary) {
-  return [
-    ["負面留言率", formatValue(summary.negative_rate, "rate"), "模型情緒標註"],
-    ["正面留言率", formatValue(summary.positive_rate, "rate"), "模型情緒標註"],
-    ["按讚加權負面", formatValue(summary.like_weighted_negative_rate, "rate"), "留言按讚 + 模型情緒標註"],
-    ["回覆占比", formatValue(summary.reply_overview?.reply_share_all_comments, "rate"), "留言回覆串"],
-  ].map(([metric, value, source]) => ({ metric, value, source }));
 }
 
 function overviewEngagementBars(summary) {
@@ -971,32 +846,6 @@ function comparisonScaleMax(...values) {
   return max * 1.15;
 }
 
-function indexTile(item) {
-  if (!item) return "";
-  const score = Number(item.score || 0);
-  const tone = item.polarity === "risk_high" ? "risk" : item.polarity === "benefit_high" ? "good" : "watch";
-  return `
-    <article class="score-card ${tone}">
-      <div class="score-main">
-        <span>${escapeHtml(item.short_label || item.label)} ${infoTip(`${item.question_zh || ""}\n\n${item.interpretation_zh || ""}`)}</span>
-        <strong>${fmtScore(score)}</strong>
-      </div>
-      <div class="score-bar"><i style="width:${scorePct(score)}%"></i></div>
-      <small>${escapeHtml(item.band || "")}</small>
-    </article>
-  `;
-}
-
-function storyCard(card) {
-  return `
-    <article class="story-card ${escapeHtml(card.kind || "context")}">
-      <span>${kindLabel(card.kind)} ${infoTip(localizeDisplayText(`${card.body_zh || ""}\n\n${card.next_step_zh || ""}`))}</span>
-      <h4>${escapeHtml(card.title_zh || "")}</h4>
-      <small>${escapeHtml(localizeDisplayText(card.evidence_zh || ""))}</small>
-    </article>
-  `;
-}
-
 function decisionRow(row) {
   return `
     <div class="decision-row ${escapeHtml(row.kind || "context")}">
@@ -1005,70 +854,6 @@ function decisionRow(row) {
         <strong>${escapeHtml(row.title_zh || "")} ${infoTip(localizeDisplayText(`${row.why_zh || ""}\n\n下一步：${row.next_step_zh || ""}`))}</strong>
       </div>
       <em>${escapeHtml(localizeDisplayText(row.evidence_zh || ""))}</em>
-    </div>
-  `;
-}
-
-function scatterPlot(mapId) {
-  const mapMeta = indexData.dashboard_statistics?.cohort_position_maps?.maps?.find((item) => item.id === mapId);
-  const points = indexData.dashboard_statistics?.cohort_position_maps?.points || [];
-  const channelScores = currentChannel.analysis?.archetype?.scores || {};
-  const xKey = mapMeta?.x || "engagement_conversion";
-  const yKey = mapMeta?.y || "risk_pressure";
-  const selected = {
-    x: Number(channelScores[xKey] || 0),
-    y: Number(channelScores[yKey] || 0),
-  };
-  const dots = points
-    .filter((point) => Number.isFinite(Number(point.scores?.[xKey])) && Number.isFinite(Number(point.scores?.[yKey])))
-    .map((point) => {
-      const x = scalePlot(point.scores[xKey]);
-      const y = 100 - scalePlot(point.scores[yKey]);
-      const active = point.slug === currentChannel.slug ? " selected" : "";
-      return `<circle class="dot${active}" cx="${x}" cy="${y}" r="${active ? 4.8 : 2.8}"><title>${escapeHtml(point.channel)} · ${fmtScore(point.scores[xKey])}, ${fmtScore(point.scores[yKey])}</title></circle>`;
-    })
-    .join("");
-  const sx = scalePlot(selected.x);
-  const sy = 100 - scalePlot(selected.y);
-  return `
-    <div class="scatter-wrap">
-      <svg viewBox="0 0 100 100" role="img" aria-label="${escapeHtml(mapMeta?.title_zh || "benchmark map")}">
-        <rect x="0" y="0" width="100" height="100" class="plot-bg"></rect>
-        <line x1="50" y1="0" x2="50" y2="100" class="plot-axis"></line>
-        <line x1="0" y1="50" x2="100" y2="50" class="plot-axis"></line>
-        ${dots}
-        <circle class="selected-dot" cx="${sx}" cy="${sy}" r="6"></circle>
-      </svg>
-      <div class="axis-label x">${escapeHtml(mapMeta?.x_label_zh || "")}</div>
-      <div class="axis-label y">${escapeHtml(mapMeta?.y_label_zh || "")}</div>
-    </div>
-  `;
-}
-
-function bulletMetric(metric) {
-  if (!metric) return "";
-  const dist = metric.distribution || {};
-  const min = Number(dist.min);
-  const max = Number(dist.max);
-  const p25 = pos(dist.p25, min, max);
-  const p75 = pos(dist.p75, min, max);
-  const median = pos(dist.mean, min, max);
-  const value = pos(metric.value, min, max);
-  return `
-    <div class="bullet-row">
-      <div class="bullet-label">
-        <strong>${escapeHtml(metric.label || metricLabel(metric.metric))} ${infoTip(`${metric.comparison?.summary_zh || ""}\n\n${metric.interpretation_hint_zh || ""}\n\n${metric.statistical_caution_zh || ""}`)}</strong>
-        <span>${escapeHtml(metric.percentile_band || "")}</span>
-      </div>
-      <div class="bullet">
-        <i class="iqr" style="left:${p25}%;width:${Math.max(2, p75 - p25)}%"></i>
-        <i class="median" style="left:${median}%"></i>
-        <i class="value" style="left:${value}%"></i>
-      </div>
-      <div class="bullet-value">
-        <strong>${formatValue(metric.value, metric.metric)}</strong>
-        <span>百分位 ${fmtScore(metric.percentile)}</span>
-      </div>
     </div>
   `;
 }
@@ -1107,23 +892,6 @@ function themeOverview(themeRows, sentRows, conflictRows, themeViews = {}) {
         })
         .join("")}
     </div>`;
-}
-
-function themeMix(rows) {
-  if (!rows.length) return `<div class="empty-state">沒有主題資料</div>`;
-  const total = rows.reduce((sum, row) => sum + Number(row.n_comments || 0), 0) || 1;
-  return `<div class="theme-mix">${rows
-    .slice(0, 8)
-    .map((row) => {
-      const width = Math.max(4, (Number(row.n_comments || 0) / total) * 100);
-      return `
-        <div class="theme-row">
-          <div><strong>${escapeHtml(themeLabel(row.primary_theme))}</strong><span>${fmtCompact(row.n_comments)} 留言 · ${fmtNumber(row.n_videos)} 片</span></div>
-          <div class="theme-bar"><i style="width:${width}%"></i></div>
-        </div>
-      `;
-    })
-    .join("")}</div>`;
 }
 
 function videoTimeline(rows, negMap = {}, events = []) {
@@ -1817,90 +1585,6 @@ function replySentimentBars(rows) {
     .join("")}</div>`;
 }
 
-function videoClusterCards(rows) {
-  const usable = (rows || []).slice(0, 5);
-  if (!usable.length) return `<div class="empty-state">沒有內容系列資料</div>`;
-  return `<div class="cluster-card-list">${usable
-    .map((row, idx) => {
-      const size = row.size || row;
-      const metadata = row.metadata || row;
-      const topic = row.topic_from_title_description_tags || {};
-      const topThemes = topic.top_themes || parseLabelCountText(row.top_theme_labels);
-      const topVideos = topic.top_videos || labelCountObjects(row.top_videos);
-      return `
-        <article class="cluster-card">
-          <div class="cluster-card-head">
-            <strong>${escapeHtml(videoClusterLabel(row.video_cluster, idx, row))}</strong>
-            <span>${fmtNumber(size.n_videos)} 支影片 · ${fmtCompact(metadata.total_observed_comments)} 留言</span>
-          </div>
-          <div class="pill-row">${topThemes.slice(0, 4).map((item) => `<span>${escapeHtml(themeLabel(item.label || item.theme))}</span>`).join("")}</div>
-          <p>${topVideos.slice(0, 2).map((item) => item.label).filter(Boolean).join(" / ")}</p>
-        </article>`;
-    })
-    .join("")}</div>`;
-}
-
-function affinityBars(rows) {
-  const usable = (rows || [])
-    .filter((row) => row.theme_label || row.primary_theme)
-    .sort((a, b) => Number(b.lift || 0) - Number(a.lift || 0))
-    .slice(0, 8);
-  if (!usable.length) return `<div class="empty-state">沒有系列題材集中度資料</div>`;
-  const max = Math.max(...usable.map((row) => Number(row.lift || 0)), 1);
-  return `<div class="insight-list">${usable
-    .map((row) => `
-      <div class="insight-row">
-        <div class="insight-label">
-          <strong>${escapeHtml(videoClusterLabel(row.video_cluster))} · ${escapeHtml(themeLabel(row.theme_label || row.primary_theme))}</strong>
-          <span>系列占比 ${formatValue(row.cluster_share, "share")} · 全頻道 ${formatValue(row.overall_share, "share")}</span>
-        </div>
-        <div class="comparison-track"><i class="value" style="width:${Math.max(3, (Number(row.lift || 0) / max) * 100)}%"></i></div>
-        <div class="insight-value">${formatValue(row.lift, "lift")}</div>
-      </div>`)
-    .join("")}</div>`;
-}
-
-function opportunityCards(rows) {
-  const usable = (rows || []).slice(0, 6);
-  if (!usable.length) return `<div class="empty-state">沒有跨題材企劃資料</div>`;
-  return `<div class="compact-card-list">${usable
-    .map((row) => `
-      <article class="compact-card opportunity-card">
-        <div>
-          <strong>${escapeHtml(opportunityTitle(row))}</strong>
-          <span>${escapeHtml(opportunityTypeLabel(row.opportunity_type))} · 分數 ${formatValue(row.opportunity_score, "score")}</span>
-        </div>
-        <p>${escapeHtml(opportunityDescription(row))}</p>
-      </article>`)
-    .join("")}</div>`;
-}
-
-function opportunityTitle(row) {
-  const sourceTheme = themeLabel(row.source_primary_theme);
-  const targetTheme = themeLabel(row.target_primary_theme);
-  const source = conciseTitle(row.source_title, 14);
-  if (sourceTheme && targetTheme && sourceTheme !== targetTheme) {
-    return `${sourceTheme} × ${targetTheme}｜${source || "企劃橋接"}`;
-  }
-  return `${sourceTheme || targetTheme || "相似觀眾"}｜${source || opportunityTypeLabel(row.opportunity_type)}`;
-}
-
-function opportunityDescription(row) {
-  const source = conciseTitle(row.source_title, 34);
-  const target = conciseTitle(row.target_title, 34);
-  if (source && target) return `可把「${source}」的觀眾導向「${target}」`;
-  return `${themeLabel(row.source_primary_theme)} → ${themeLabel(row.target_primary_theme)}`;
-}
-
-function conciseTitle(value, limit = 24) {
-  const text = String(value || "")
-    .replace(/｜?The DoDo Men.*$/i, "")
-    .replace(/\s+/g, " ")
-    .trim();
-  if (!text) return "";
-  return Array.from(text).slice(0, limit).join("") + (Array.from(text).length > limit ? "…" : "");
-}
-
 function sourceLabelList(value) {
   return String(value || "")
     .split(",")
@@ -1938,50 +1622,6 @@ function parseLabelCountText(value) {
     .filter((item) => item.label);
 }
 
-function labelCountObjects(value) {
-  if (Array.isArray(value)) return value;
-  return parseLabelCountText(value);
-}
-
-function clusterList(rows) {
-  if (!rows.length) return `<div class="empty-state">沒有內容系列資料</div>`;
-  return `<div class="cluster-list">${rows
-    .slice(0, 5)
-    .map((row, idx) => {
-      const titles = topVideoTitles(row.top_videos);
-      return `
-      <div class="cluster-row">
-        <strong>${escapeHtml(videoClusterLabel(row.video_cluster, idx, row))}</strong>
-        <span>${fmtNumber(row.n_videos)} 支影片 · ${fmtCompact(row.total_views)} 觀看 · ${fmtCompact(row.total_observed_comments)} 留言 · ${fmtCompact(row.unique_commenters)} 留言者</span>
-        <p>代表影片：${escapeHtml(titles.length ? titles.join("、") : "沒有代表影片資料")}</p>
-      </div>`;
-    })
-    .join("")}</div>`;
-}
-
-function topVideoTitles(value, limit = 3) {
-  return String(value || "")
-    .split(";")
-    .map((item) => item.trim().replace(/\s*\([^()]*\)\s*$/, ""))
-    .filter(Boolean)
-    .slice(0, limit);
-}
-
-function tierBars(rows) {
-  if (!rows.length) return `<div class="empty-state">沒有觀眾活躍度資料</div>`;
-  return `<div class="tier-list">${rows
-    .map((row) => {
-      const pct = Number(row.pct_commenters || 0);
-      return `
-        <div class="tier-row">
-          <strong>${escapeHtml(tierLabel(row.activity_tier))}</strong>
-          <div class="tier-bar"><i style="width:${Math.max(2, Math.min(100, pct))}%"></i></div>
-          <span>${fmtNumber(row.n_commenters)} 人 · ${formatValue(row.pct_commenters, "pct")}</span>
-        </div>`;
-    })
-    .join("")}</div>`;
-}
-
 function tierComparisonBars(rows) {
   if (!rows.length) return `<div class="empty-state">沒有觀眾活躍度資料</div>`;
   return `<div class="tier-comparison-list">${rows
@@ -2011,43 +1651,6 @@ function tierComparisonBars(rows) {
         </div>`;
     })
     .join("")}</div>`;
-}
-
-function audienceRepeatSummary(network, communities) {
-  const repeatCommenters = Number(network.n_nodes || 0);
-  const groupCount = Number(network.n_communities || communities.length || 0);
-  const largestShare = Number(communities[0]?.pct_nodes || 0);
-  const top3Share = communities
-    .slice(0, 3)
-    .reduce((sum, row) => sum + Number(row.pct_nodes || 0), 0);
-  return `
-    <div class="metric-strip audience-summary">
-      ${metricTile("跨影片回來留言者", repeatCommenters, "n")}
-      ${metricTile("可辨識內容偏好群", groupCount, "n")}
-      ${metricTile("最大偏好群占比", largestShare, "pct")}
-      ${metricTile("前三偏好群占比", top3Share, "pct")}
-    </div>
-  `;
-}
-
-function videoPortfolioSummary(network, clusters) {
-  const analyzedVideos = Number(network.n_nodes || 0) || clusters.reduce((sum, row) => sum + Number(row.n_videos || 0), 0);
-  const seriesCount = Number(network.n_video_clusters || clusters.length || 0);
-  const totalVideos = clusters.reduce((sum, row) => sum + Number(row.n_videos || 0), 0) || analyzedVideos;
-  const largestSeriesVideos = clusters.length ? Math.max(...clusters.map((row) => Number(row.n_videos || 0))) : 0;
-  const largestSeriesShare = totalVideos ? (largestSeriesVideos / totalVideos) * 100 : 0;
-  const totalComments = clusters.reduce((sum, row) => sum + Number(row.total_observed_comments || 0), 0);
-  const top3CommentShare = totalComments
-    ? (clusters.slice(0, 3).reduce((sum, row) => sum + Number(row.total_observed_comments || 0), 0) / totalComments) * 100
-    : 0;
-  return `
-    <div class="metric-strip video-summary">
-      ${metricTile("納入分析影片", analyzedVideos, "n")}
-      ${metricTile("內容系列數", seriesCount, "n")}
-      ${metricTile("最大系列影片占比", largestSeriesShare, "pct")}
-      ${metricTile("前三系列留言占比", top3CommentShare, "pct")}
-    </div>
-  `;
 }
 
 function audienceStructureCards(network) {
@@ -2117,28 +1720,6 @@ function structureCard(title, band, valueText, pr, text, tone = "", tip = "", no
       <p>${escapeHtml(text)}</p>
       ${note ? `<p class="structure-note">${escapeHtml(note)}</p>` : ""}
     </article>`;
-}
-
-function personaAspectChart(label, items, aspectLabels = {}) {
-  const rows = (items || []).filter((item) => item.aspect && !NON_IMPACT_ASPECTS.has(item.aspect)).slice(0, 4);
-  if (!rows.length) return "";
-  const max = Math.max(...rows.map((row) => row.share || 0), 0.01);
-  return `
-    <div class="persona-chart">
-      <span class="persona-chart-label">${escapeHtml(label)}</span>
-      <div class="persona-chart-rows">
-        ${rows
-          .map(
-            (row) => `
-          <div class="persona-chart-row">
-            <span class="persona-chart-name" title="${escapeHtml(aspectLabels[row.aspect] || row.aspect)}">${escapeHtml(aspectLabels[row.aspect] || row.aspect)}</span>
-            <div class="persona-bar"><i class="neg" style="width:${Math.max(3, (row.share / max) * 100).toFixed(0)}%"></i></div>
-            <span class="persona-chart-val">${formatValue(row.share, "rate")}</span>
-          </div>`,
-          )
-          .join("")}
-      </div>
-    </div>`;
 }
 
 function communityPersonaCards(rows, channelThemeNeg = {}, communityAspectMap = {}, aspectLabels = {}) {
@@ -2353,14 +1934,6 @@ function personaThemeKeys(row) {
   return Array.from(new Set(values.filter((value) => value.includes("_"))));
 }
 
-function overIndexedThemeText(value, limit = 3) {
-  if (!Array.isArray(value) || !value.length) return "";
-  return value
-    .slice(0, limit)
-    .map((item) => `${themeLabel(item.theme)} ${formatValue(item.lift, "lift")}`)
-    .join("、");
-}
-
 function personaBusinessAdvice(row) {
   const themes = personaThemeKeys(row);
   const negatives = Array.isArray(row.negative_sources) ? row.negative_sources.slice(0, 2).map((item) => themeLabel(item.theme)).filter(Boolean) : [];
@@ -2437,50 +2010,11 @@ function labelCountList(value, limit = 5) {
   return value || "";
 }
 
-function valueList(value, limit = 8) {
-  if (Array.isArray(value)) return value.slice(0, limit).join("、");
-  if (value?.values) return value.values.slice(0, limit).join("、");
-  return value || "";
-}
-
-function negativeSourceText(value, limit = 3) {
-  if (Array.isArray(value)) {
-    return value
-      .slice(0, limit)
-      .map((item) => {
-        const theme = themeLabel(item.theme || item.label || "");
-        const neg = formatValue(item.negative_rate, "rate");
-        const likeNeg = formatValue(item.like_weighted_negative_rate, "rate");
-        return `${theme}：負面 ${neg}，按讚加權負面 ${likeNeg}`;
-      })
-      .filter(Boolean)
-      .join("；");
-  }
-  return value || "";
-}
-
 function representativeText(value) {
   if (Array.isArray(value)) return value.slice(0, 2).join(" / ");
   if (value?.values?.length) return value.values.slice(0, 2).join(" / ");
   if (value?.status === "missing_current_artifact") return "";
   return value || "";
-}
-
-function communityBars(rows) {
-  if (!rows.length) return `<div class="empty-state">沒有內容偏好群資料</div>`;
-  return `<div class="community-grid">${rows
-    .slice(0, 8)
-    .map((row, idx) => {
-      const pct = Number(row.pct_nodes || 0);
-      return `
-      <div class="community-cell">
-        <strong>內容偏好群 ${idx + 1}</strong>
-        <span>${fmtNumber(row.n_nodes)} 位跨影片留言者</span>
-        <div class="community-bar"><i style="width:${Math.max(4, Math.min(100, pct))}%"></i></div>
-        <em>占 ${formatValue(pct, "pct_nodes")}</em>
-      </div>`;
-    })
-    .join("")}</div>`;
 }
 
 function sentimentStack(rows) {
@@ -2506,14 +2040,6 @@ function sentimentStack(rows) {
   `;
 }
 
-function keyValueGrid(obj) {
-  const keys = Object.keys(obj || {}).filter((key) => obj[key] !== null && obj[key] !== undefined).slice(0, 10);
-  if (!keys.length) return `<div class="empty-state">沒有摘要資料</div>`;
-  return `<div class="kv-grid">${keys
-    .map((key) => `<div><span>${escapeHtml(readableKey(key))}</span><strong>${escapeHtml(formatValue(obj[key], key))}</strong></div>`)
-    .join("")}</div>`;
-}
-
 function leaderboard(board) {
   return `
     <div class="leaderboard">
@@ -2530,46 +2056,6 @@ function leaderboard(board) {
         )
         .join("")}
     </div>`;
-}
-
-function artifactList() {
-  const tables = currentChannel.artifacts?.tables || [];
-  return `<div class="artifact-list">${tables
-    .filter((table) => !["qwen_comment_sentiment", "commenter_activity", "actor_communities"].includes(table.name))
-    .slice(0, 18)
-    .map((table) => `<div><strong>${escapeHtml(table.name)}</strong><span>${fmtCompact(table.bytes)} bytes</span></div>`)
-    .join("")}</div>`;
-}
-
-async function tableFromArtifactOrSummary(tableName, columns) {
-  const summary = currentChannel.dashboard_summary || {};
-  const summaryMap = {
-    sentiment_theme_summary: summary.top_themes,
-    community_sentiment_summary: summary.community_summary,
-    reply_conflict_video_summary: summary.reply_conflict_hotspots,
-    video_cluster_summary: summary.video_clusters,
-  };
-  if (summaryMap[tableName]?.length) {
-    return tableFromRows(summaryMap[tableName], columns);
-  }
-  const artifact = (currentChannel.artifacts?.tables || []).find((table) => table.name === tableName);
-  if (!artifact) {
-    return `<div class="empty-state">目前沒有 ${escapeHtml(tableName)} 資料</div>`;
-  }
-  try {
-    const data = await fetchJson(`/api/table/${encodeURIComponent(currentChannel.slug)}/${encodeURIComponent(tableName)}?limit=12`);
-    if (data.rows?.length) {
-      return tableFromRows(data.rows, columns);
-    }
-  } catch {
-    // Fall through to the artifact hint below.
-  }
-  return `
-    <div class="artifact-hint">
-      <strong>${escapeHtml(tableName)}</strong>
-      <span>這張完整資料表目前不在本機輕量版資料夾裡；補回完整分析輸出後，這裡會直接顯示表格。</span>
-    </div>
-  `;
 }
 
 function tabAvailable(tabId) {
@@ -2596,49 +2082,6 @@ async function fetchTableRows(tableName, limit = 12) {
   } catch {
     return [];
   }
-}
-
-async function safeFetchReport() {
-  try {
-    const data = await fetchJson(`/api/report/${encodeURIComponent(currentChannel.slug)}?lang=zh`);
-    return data.text || "";
-  } catch {
-    return "";
-  }
-}
-
-function tableFromRows(rows, columns) {
-  if (!rows?.length) return `<div class="empty-state">沒有資料</div>`;
-  return `<div class="table-wrap"><table><thead><tr>${columns
-    .map((col) => `<th>${escapeHtml(readableKey(col))}</th>`)
-    .join("")}</tr></thead><tbody>${rows
-    .slice(0, 12)
-    .map((row) => `<tr>${columns.map((col) => `<td>${escapeHtml(formatValue(row[col], col))}</td>`).join("")}</tr>`)
-    .join("")}</tbody></table></div>`;
-}
-
-function lensById(id) {
-  return (currentChannel.analysis?.lenses || []).find((lens) => lens.id === id);
-}
-
-function metricLabel(metric) {
-  const labels = {
-    top_level_comments: "主留言數（不含回覆）",
-    top_level_commenters: "主留言者數（不重複）",
-  };
-  return labels[metric] || indexData.dashboard_statistics?.metric_labels?.[metric] || metric;
-}
-
-function sortRows(rows, key) {
-  return rows.slice().sort((a, b) => Number(b[key] || 0) - Number(a[key] || 0));
-}
-
-function scalePlot(value) {
-  return Math.max(5, Math.min(95, Number(value || 0)));
-}
-
-function scorePct(value) {
-  return Math.max(0, Math.min(100, Number(value || 0)));
 }
 
 function pos(value, min, max) {
@@ -2749,64 +2192,6 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
-}
-
-function readableKey(key) {
-  const map = {
-    title: "影片標題",
-    published_at: "發布日",
-    view_count: "觀看",
-    comment_count: "留言",
-    observed_comments: "觀測留言",
-    observed_commenters: "留言者",
-    subscriber_count: "訂閱數",
-    channel_view_count_api: "頻道總觀看",
-    channel_video_count_api: "頻道總影片",
-    total_views_in_scope: "分析範圍觀看",
-    total_video_comment_count_api: "YouTube 顯示留言數",
-    custom_url: "頻道",
-    country: "地區",
-    crawl_time: "資料擷取時間",
-    date_min: "分析起始",
-    date_max: "分析結束",
-    like_count: "按讚",
-    negative_rate: "負面率",
-    like_weighted_negative_rate: "按讚加權負面",
-    primary_theme: "主題",
-    conflict_score: "衝突分數",
-    reply_count_weighted_conflict_score: "回覆量加權",
-    like_weighted_conflict_score: "按讚加權",
-    metric: "指標",
-    value: "數值",
-    source: "資料來源",
-    community: "內容偏好群",
-    theme_label: "題材",
-    community_share: "偏好群內占比",
-    video_cluster: "內容系列",
-    cluster_share: "系列內占比",
-    overall_share: "全頻道占比",
-    lift: "高於平均倍數",
-    opportunity_type: "機會類型",
-    opportunity_score: "機會分數",
-    source_primary_theme: "來源題材",
-    target_primary_theme: "目標題材",
-    source_title: "來源影片",
-    target_title: "目標影片",
-    persona_name: "觀眾類型",
-    persona_summary: "類型摘要",
-    pct_active_commenters: "群體大小",
-    avg_comments_per_commenter: "平均留言次數",
-    top_preferred_themes: "偏好題材",
-    top_comment_videos: "偏好影片",
-    distinctive_keywords: "常見關鍵字",
-    sentiment_profile: "主要情緒",
-    negative_drivers: "負面來源",
-    representative_comments: "代表留言",
-    business_recommendation: "商業建議",
-    n_comments: "留言數",
-    positive_rate: "正面率",
-  };
-  return map[key] || String(key || "").replaceAll("_", " ");
 }
 
 function videoClusterLabel(value, fallbackIndex = null, row = null) {
@@ -2935,13 +2320,6 @@ function infoTip(text) {
   // Use the global cursor-following tooltip (setupChartTooltip), which clamps to
   // the viewport, so tooltips near the left/right edge never get cut off.
   return `<span class="info-tip" tabindex="0" data-chart-tooltip="${tooltipAttr(body)}" aria-label="${escapeHtml(body)}">?</span>`;
-}
-
-function scoreline(indices) {
-  return indices
-    .slice(0, 6)
-    .map((item) => `<span>${escapeHtml(item.short_label || item.label)} <strong>${fmtScore(item.score)}</strong></span>`)
-    .join("");
 }
 
 init().catch((err) => {

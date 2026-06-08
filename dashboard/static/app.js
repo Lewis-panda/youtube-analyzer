@@ -175,7 +175,7 @@ async function renderOverview(root) {
     ${channelReportCard(ch, overview, s)}
 
     <section class="panel">
-      <div class="panel-head"><div><h3>互動概況 ${infoTip("分析範圍影片的互動比率。這裡的『留言』全是『主留言(top-level，不含回覆)』——本分析 include_replies=false。算法：每千次觀看主留言數＝主留言總數 ÷ 總觀看數 ×1000；讚/觀看＝總按讚數 ÷ 總觀看數；每主留言獲讚＝主留言總讚數 ÷ 主留言數。各條對照 cohort（基準線＝平均、PR＝相對位置）。只反映留言/按讚行為，留言者僅是觀看者的一小部分，不能視為全體觀眾。")}</h3></div></div>
+      <div class="panel-head"><div><h3>互動概況 ${infoTip("一眼看頻道的互動、情緒、回覆三類指標，並對照 48 個 benchmark 頻道。五條 bar：留言/千次觀看、正面率、負面率、按讚加權負面、回覆占比——『每條的算法請把游標停在該條標題的 (?) 上看』。每條的『基準平均』＝cohort 平均、右側『百分位』＝本頻道在 cohort 的相對位置(非好壞)。口徑：留言/千觀看用主留言；情緒率含回覆；回覆占比=回覆÷全部。留言者僅是觀看者的一小部分，不能視為全體觀眾。")}</h3></div></div>
       ${overviewEngagementBars(s)}
     </section>
   `;
@@ -711,24 +711,24 @@ function channelReportCard(channel, overview, summary) {
         </div>
       </div>
       <div class="grade-block">
-        <span>社群等級</span>
+        <span>社群等級 ${infoTip("由『留言區風險壓力』粗估的 A–D 等級。算法：扣分＝負面留言率×100 ＋ min(30, 單片最高按讚加權衝突分數)；<9＝A 低風險/穩定、<16＝B 可控/需觀察、<25＝C 壓力偏高、≥25＝D 高風險。只反映負面與衝突壓力，不代表頻道整體好壞或內容品質。")}</span>
         <strong>${escapeHtml(grade.grade)}</strong>
         <em>${escapeHtml(grade.label)}</em>
       </div>
       <div class="report-stat-grid">
-        ${reportStat("訂閱", channel.subscriber_count ?? overview.subscriber_count, "n")}
-        ${reportStat("總觀看", channel.view_count_api ?? overview.channel_view_count_api, "n")}
-        ${reportStat("總影片", channel.video_count_api ?? overview.channel_video_count_api, "n")}
-        ${reportStat("分析主留言", channel.n_comments_in_scope ?? overview.n_comments_in_scope, "n")}
+        ${reportStat("訂閱", channel.subscriber_count ?? overview.subscriber_count, "n", "YouTube API 提供的頻道訂閱數（全頻道現況，非分析範圍）。")}
+        ${reportStat("總觀看", channel.view_count_api ?? overview.channel_view_count_api, "n", "YouTube API 提供的頻道累計總觀看數（全頻道歷來，非只分析範圍影片）。")}
+        ${reportStat("總影片", channel.video_count_api ?? overview.channel_video_count_api, "n", "YouTube API 提供的頻道公開影片總數（可能多於本次分析納入的影片）。")}
+        ${reportStat("分析主留言", channel.n_comments_in_scope ?? overview.n_comments_in_scope, "n", "本次分析實際納入的『主留言(top-level，不含回覆)』則數——因 include_replies=false 只取 is_top_level=1。少於 YouTube 顯示的留言總數（那個含回覆＋已刪/審核中抓不到的）。")}
       </div>
     </section>
   `;
 }
 
-function reportStat(label, value, key) {
+function reportStat(label, value, key, tip = "") {
   return `
     <div class="report-stat">
-      <span>${escapeHtml(label)}</span>
+      <span>${escapeHtml(label)}${tip ? " " + infoTip(tip) : ""}</span>
       <strong>${formatValue(value, key)}</strong>
     </div>
   `;
@@ -755,15 +755,36 @@ function initials(value) {
 
 function overviewEngagementBars(summary) {
   const rows = [
-    { label: "留言 / 千次觀看", metric: "comments_per_1k_views", key: "comments_per_1k_views", tone: "good" },
-    { label: "正面留言率", metric: "positive_rate", key: "positive_rate", tone: "good", value: summary.positive_rate },
-    { label: "負面留言率", metric: "negative_rate", key: "negative_rate", tone: "risk", value: summary.negative_rate },
+    {
+      label: "留言 / 千次觀看",
+      metric: "comments_per_1k_views",
+      key: "comments_per_1k_views",
+      tone: "good",
+      tip: "算法＝該頻道分析範圍的『主留言』總數 ÷ 總觀看數 ×1000（主留言=top-level，不含回覆）。衡量每千次觀看引發多少留言＝互動意願。",
+    },
+    {
+      label: "正面留言率",
+      metric: "positive_rate",
+      key: "positive_rate",
+      tone: "good",
+      value: summary.positive_rate,
+      tip: "算法＝正面留言則數 ÷ 全部留言則數。情緒由 Qwen 逐則分類，分母『含回覆』(305k=主留言247k＋回覆58k)。",
+    },
+    {
+      label: "負面留言率",
+      metric: "negative_rate",
+      key: "negative_rate",
+      tone: "risk",
+      value: summary.negative_rate,
+      tip: "算法＝負面留言則數 ÷ 全部留言則數（含回覆）。情緒為模型標註、非人工真值，負面留言不代表多數觀眾立場。",
+    },
     {
       label: "按讚加權負面",
       metric: "like_weighted_negative_rate",
       key: "like_weighted_negative_rate",
       tone: "risk",
       value: summary.like_weighted_negative_rate,
+      tip: "算法＝Σ(負面留言×(讚+1)) ÷ Σ(全部留言×(讚+1))。被按讚越多的負面留言權重越高；若高於『負面留言率』代表負面被按讚放大。",
     },
     {
       label: "回覆占比",
@@ -771,6 +792,7 @@ function overviewEngagementBars(summary) {
       key: "reply_share_all_comments",
       tone: "watch",
       value: summary.reply_overview?.reply_share_all_comments,
+      tip: "算法＝回覆數 ÷ 全部留言數（全部留言＝主留言＋回覆）。本頻道 ≈19%（58k 回覆 ÷ 305k 全部）。占比高代表留言區互相討論/對話多，而非只對影片各自留言。",
     },
   ];
   return `<div class="comparison-bars">${rows.map(comparisonMetricBar).join("")}</div>`;
@@ -820,7 +842,7 @@ function comparisonMetricBar(row) {
   return `
     <div class="comparison-row ${escapeHtml(row.tone || "neutral")}">
       <div class="comparison-label">
-        <strong>${escapeHtml(row.label)}</strong>
+        <strong>${escapeHtml(row.label)}${row.tip ? " " + infoTip(row.tip) : ""}</strong>
         <span>基準平均 ${formatValue(mean, row.key)}</span>
       </div>
       <div class="comparison-track ${hasPercentile ? "percentile-track" : ""}">

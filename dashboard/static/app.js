@@ -1871,9 +1871,13 @@ function externalTopicLabel(value) {
     recommendation_or_general_mentions: "一般提及 / 推薦",
     mixed_external_discussion: "外部混合討論",
     controversy_or_criticism: "外部爭議 / 批評",
+    controversy_or_apology: "爭議 / 道歉聲明",
+    political_or_social_controversy: "政治 / 社會爭議",
     content_quality_criticism: "內容品質批評",
+    content_authenticity_question: "內容真實性質疑",
     authenticity_or_fabrication: "真實性 / 造假質疑",
     staff_or_host_change: "主持人 / 團隊變動",
+    survey_or_spam: "問卷 / 灌水",
     general: "一般討論",
     politics_or_culture: "政治 / 文化價值討論",
   };

@@ -268,20 +268,6 @@ async function renderAudience(root) {
   const s = currentChannel.dashboard_summary || {};
   const themeSent = await fetchTableRows("sentiment_theme_summary", 20);
   const channelThemeNeg = Object.fromEntries((themeSent || []).map((row) => [row.primary_theme, Number(row.negative_rate)]));
-  const commAspect = await fetchTableRows("community_aspect_summary", 200);
-  const aspectSummaryRows = await fetchTableRows("comment_aspect_summary", 20);
-  const aspectLabels = Object.fromEntries(
-    (aspectSummaryRows || []).filter((row) => row.aspect).map((row) => [row.aspect, row.aspect_label_zh || row.aspect]),
-  );
-  const communityAspectMap = {};
-  (commAspect || []).forEach((row) => {
-    (communityAspectMap[String(row.community)] ||= []).push({
-      aspect: row.aspect,
-      share: Number(row.aspect_share),
-      count: Number(row.count),
-    });
-  });
-  Object.values(communityAspectMap).forEach((list) => list.sort((a, b) => b.count - a.count));
   root.innerHTML = `
     ${sectionIntro("觀眾")}
     <section class="split-layout">
@@ -297,7 +283,7 @@ async function renderAudience(root) {
     <section class="panel">
       <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類(用『則數』算、純歸屬作者群)。每張卡片＝一個社群。注意：YouTube 只給留言的讚數、不給『誰按的』，所以任何按讚加權指標反映的是廣大觀眾(可能跨群、甚至純看客)的放大，不等於該社群自己的認同。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
       ${audienceStructureCards(s.network_summary || {})}
-      ${communityPersonaCards(s.community_profiles || [], channelThemeNeg, communityAspectMap, aspectLabels)}
+      ${communityPersonaCards(s.community_profiles || [], channelThemeNeg)}
     </section>
   `;
 }
@@ -2123,7 +2109,6 @@ function communityPersonaCards(rows, channelThemeNeg = {}, communityAspectMap = 
           tone: "neg",
           format: (it) => `${it.lift.toFixed(2)}× · ${formatValue(it.negative_rate, "rate")}`,
         }),
-        personaAspectChart("被罵的面向（ABSA·該群負面留言）", communityAspectMap[String(row.community)], aspectLabels),
         personaVideoList("代表影片", row.preferred_videos),
         personaKeywordChips(row.common_keywords),
         personaLine("策略用途", personaBusinessAdvice(row)),

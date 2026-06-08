@@ -2200,6 +2200,53 @@ select:focus {
   font-size: 11px;
 }
 
+.vt-bar.neg-mid {
+  fill: var(--gold);
+}
+
+.vt-bar.neg-high {
+  fill: var(--coral);
+}
+
+.vt-event {
+  stroke: var(--coral);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  opacity: 0.5;
+}
+
+.vt-event-mark {
+  fill: var(--coral);
+}
+
+.external-chart-legend .vt-lg-bar,
+.external-chart-legend .vt-lg-negmid,
+.external-chart-legend .vt-lg-neghigh,
+.external-chart-legend .vt-lg-event {
+  width: 12px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.external-chart-legend .vt-lg-bar {
+  background: var(--teal);
+}
+
+.external-chart-legend .vt-lg-negmid {
+  background: var(--gold);
+}
+
+.external-chart-legend .vt-lg-neghigh {
+  background: var(--coral);
+}
+
+.external-chart-legend .vt-lg-event {
+  width: 2px;
+  height: 12px;
+  background: var(--coral);
+}
+
 .external-chart-wrap {
   display: grid;
   gap: 10px;

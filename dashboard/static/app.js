@@ -226,6 +226,12 @@ function renderBenchmark(root) {
 async function renderContent(root) {
   const s = currentChannel.dashboard_summary || {};
   const videos = await getVideoRows();
+  const hotspots = await fetchTableRows("sentiment_hotspots", 400);
+  const negMap = Object.fromEntries((hotspots || []).map((row) => [row.video_id, Number(row.negative_rate)]));
+  const extWindows = tabAvailable("external_events") ? await fetchTableRows("external_event_audience_windows", 80) : [];
+  const eventTimes = (extWindows || [])
+    .map((row) => Date.parse(row.event_date || row.event_start || ""))
+    .filter((t) => Number.isFinite(t));
   root.innerHTML = `
     ${sectionIntro("內容")}
     <section class="panel">
@@ -233,8 +239,8 @@ async function renderContent(root) {
       ${themeMix(s.top_themes || [])}
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>近期影片留言量 ${infoTip("依發布時間排列的每支影片留言數（左軸長條）與累積觀看數（右軸折線·對數）。算法：以影片發布日為 X 軸，留言數＝爬取到的該片留言數。用來看內容節奏與互動量起伏；數值為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
-      ${videoTimeline(videos)}
+      <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的留言數（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；留言數＝爬取到的該片留言數；負面率＝該片負面留言÷留言數；外部事件取自外部討論分析。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
+      ${videoTimeline(videos, negMap, eventTimes)}
     </section>
     <section class="panel">
       <div class="panel-head"><div><h3>留言率最高的影片 ${infoTip("以每千次觀看留言數（留言數 ÷ 觀看次數 × 1000）排序，找出最能引發討論的影片。高留言率可能來自高互動或高爭議，需搭配情緒頁判讀。")}</h3></div></div>
@@ -931,12 +937,13 @@ function themeMix(rows) {
     .join("")}</div>`;
 }
 
-function videoTimeline(rows) {
+function videoTimeline(rows, negMap = {}, eventTimes = []) {
   const sample = (rows || [])
     .map((row) => ({
       t: Date.parse(row.published_at || row.published_month || ""),
       comments: Number(row.observed_comments || row.comment_count || 0),
       views: Number(row.view_count || 0),
+      neg: Number(negMap[row.video_id]),
       title: row.title || "未命名影片",
       published_at: row.published_at,
     }))
@@ -960,13 +967,22 @@ function videoTimeline(rows) {
   const yV = (v) =>
     margin.top + plotH - ((Math.log10(Math.max(1, v)) - minLogV) / Math.max(0.001, maxLogV - minLogV)) * plotH;
   const barW = Math.max(2, Math.min(18, (plotW / sample.length) * 0.62));
+  const negTone = (neg) => (!Number.isFinite(neg) ? "" : neg >= 0.15 ? " neg-high" : neg >= 0.08 ? " neg-mid" : "");
   const bars = sample
     .map((row) => {
       const bx = x(row.t) - barW / 2;
       const by = yC(row.comments);
-      const tip = `${row.title} · ${compactDate(row.published_at)} · 留言 ${fmtNumber(row.comments)} · 觀看 ${fmtNumber(row.views)}`;
-      return `<rect class="vt-bar" x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${barW.toFixed(1)}" height="${(margin.top + plotH - by).toFixed(1)}" data-chart-tooltip="${tooltipAttr(tip)}"></rect>`;
+      const negTxt = Number.isFinite(row.neg) ? ` · 負面率 ${formatValue(row.neg, "rate")}` : "";
+      const tip = `${row.title} · ${compactDate(row.published_at)} · 留言 ${fmtNumber(row.comments)} · 觀看 ${fmtNumber(row.views)}${negTxt}`;
+      return `<rect class="vt-bar${negTone(row.neg)}" x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${barW.toFixed(1)}" height="${(margin.top + plotH - by).toFixed(1)}" data-chart-tooltip="${tooltipAttr(tip)}"></rect>`;
     })
+    .join("");
+  const eventMarks = (eventTimes || [])
+    .filter((t) => Number.isFinite(t) && t >= tMin && t <= tMax)
+    .map(
+      (t) =>
+        `<line class="vt-event" x1="${x(t).toFixed(1)}" x2="${x(t).toFixed(1)}" y1="${margin.top}" y2="${margin.top + plotH}"></line><polygon class="vt-event-mark" points="${x(t).toFixed(1)},${margin.top} ${(x(t) - 4).toFixed(1)},${margin.top - 6} ${(x(t) + 4).toFixed(1)},${margin.top - 6}"></polygon>`,
+    )
     .join("");
   const linePts = sample.map((row) => `${x(row.t).toFixed(1)},${yV(row.views).toFixed(1)}`).join(" ");
   const dots = sample
@@ -981,8 +997,9 @@ function videoTimeline(rows) {
   return `
     <div class="external-chart-wrap">
       <svg class="external-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="近期影片留言量與觀看數">
-        <text class="chart-title" x="${margin.left}" y="18">近期影片：留言量（長條）與觀看數（折線）</text>
+        <text class="chart-title" x="${margin.left}" y="18">近期影片時間軸：留言量 × 觀看數 × 負面率 × 外部事件</text>
         <rect class="chart-bg" x="${margin.left}" y="${margin.top}" width="${plotW}" height="${plotH}"></rect>
+        ${eventMarks}
         ${cTicks
           .map(
             (c) =>
@@ -1009,8 +1026,11 @@ function videoTimeline(rows) {
         ${dots}
       </svg>
       <div class="external-chart-legend">
-        <span><i class="video"></i>留言數（左軸·線性）</span>
+        <span><i class="vt-lg-bar"></i>留言數（左軸）</span>
+        <span><i class="vt-lg-negmid"></i>負面率 8–15%</span>
+        <span><i class="vt-lg-neghigh"></i>負面率 ≥15%</span>
         <span><i class="event watch"></i>觀看數（右軸·對數）</span>
+        <span><i class="vt-lg-event"></i>外部事件</span>
       </div>
     </div>`;
 }

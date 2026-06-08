@@ -260,15 +260,13 @@ async function renderContent(root) {
   const videos = await getVideoRows();
   root.innerHTML = `
     ${sectionIntro("內容")}
-    <section class="split-layout">
-      <article class="panel">
-        <div class="panel-head"><div><h3>題材留言量 ${infoTip("影片主題由 Qwen 依標題、描述、標籤自動分類（如美食、旅遊、爭議回應等），這裡顯示各主題的影片數與留言量占比。主題是內容分類，不是情緒。")}</h3></div></div>
-        ${themeMix(s.top_themes || [])}
-      </article>
-      <article class="panel">
-        <div class="panel-head"><div><h3>近期影片留言量 ${infoTip("依發布時間排列的每支影片留言數，用來看內容節奏與互動量起伏。數值為累積留言數，不能解讀成流量上升或下降。")}</h3></div></div>
-        ${videoTimeline(videos)}
-      </article>
+    <section class="panel">
+      <div class="panel-head"><div><h3>題材留言量 ${infoTip("影片主題由 Qwen 依標題、描述、標籤自動分類（如美食、旅遊、爭議回應等），這裡顯示各主題的影片數與留言量占比。主題是內容分類，不是情緒。")}</h3></div></div>
+      ${themeMix(s.top_themes || [])}
+    </section>
+    <section class="panel">
+      <div class="panel-head"><div><h3>近期影片留言量 ${infoTip("依發布時間排列的每支影片留言數（左軸長條）與累積觀看數（右軸折線·對數）。算法：以影片發布日為 X 軸，留言數＝爬取到的該片留言數。用來看內容節奏與互動量起伏；數值為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
+      ${videoTimeline(videos)}
     </section>
     <section class="panel">
       <div class="panel-head"><div><h3>留言率最高的影片 ${infoTip("以每千次觀看留言數（留言數 ÷ 觀看次數 × 1000）排序，找出最能引發討論的影片。高留言率可能來自高互動或高爭議，需搭配情緒頁判讀。")}</h3></div></div>
@@ -1396,7 +1394,7 @@ function positiveVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
         </div>
         <div class="dual-metric sentiment-card-metrics">
           ${metricPill("正面", row.positive_rate, "rate")}
-          ${metricPill("按讚加權", row.like_weighted_positive_rate, "rate")}
+          ${metricPill("按讚加權正面", row.like_weighted_positive_rate, "rate", "正面留言被『讚數』加權後的比例：被越多人按讚的正面留言權重越高，比單純算則數更能反映多數人也認同的正面。算法 ≈ Σ(正面留言×讚) ÷ Σ(全部留言×讚)。")}
           ${metricPill("負面", row.negative_rate, "rate")}
           ${metricPill("回覆占比", row.reply_share, "rate")}
         </div>
@@ -1495,16 +1493,17 @@ function riskVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
         </div>
         <div class="dual-metric sentiment-card-metrics">
           ${metricPill("負面", row.negative_rate, "rate")}
-          ${metricPill("按讚加權", row.like_weighted_negative_rate, "rate")}
-          ${row._impactShare === null ? "" : metricPill("實質負面占比", row._impactShare, "rate")}
+          ${metricPill("按讚加權負面", row.like_weighted_negative_rate, "rate", "負面留言被『讚數』加權後的比例：被越多人按讚的負面留言權重越高，反映多數人也有同感的負面。算法 ≈ Σ(負面留言×讚) ÷ Σ(全部留言×讚)。")}
+          ${row._impactShare === null ? "" : metricPill("實質負面占比", row._impactShare, "rate", "該片負面留言中屬於『可行動面向』的比例：ABSA 把每則負面留言分到面向（步調剪輯／業配／真實性…），扣掉 other／unclear 這類雖負面但對頻道無實質影響的部分。本卡排名用的『實質負面』＝按讚加權負面率 × 此占比，避免被無意義負面灌水。")}
         </div>
         ${videoAspectReasons(row.video_id, aspectMap, aspectLabels)}
       </article>`)
     .join("")}</div>`;
 }
 
-function metricPill(label, value, key) {
-  return `<span class="metric-pill"><b>${escapeHtml(label)}</b><em>${escapeHtml(formatValue(value, key))}</em></span>`;
+function metricPill(label, value, key, tip) {
+  const tipAttr = tip ? ` data-chart-tooltip="${tooltipAttr(tip)}"` : "";
+  return `<span class="metric-pill"${tipAttr}><b>${escapeHtml(label)}</b><em>${escapeHtml(formatValue(value, key))}</em></span>`;
 }
 
 function conflictVideoCards(rows) {
@@ -1865,7 +1864,6 @@ function communityPersonaCards(rows) {
   const shown = usable.slice(0, 6);
   const pctOf = (row) =>
     Number(row.pct_active_commenters ?? row.group_size?.pct_active_commenters ?? row.segment_share) || 0;
-  const maxPct = Math.max(...shown.map(pctOf), 0);
   const usedNames = new Map();
   return `<div class="persona-grid">${shown
     .map((row, idx) => {
@@ -1875,7 +1873,9 @@ function communityPersonaCards(rows) {
       const avgComments = row.avg_comments_per_commenter ?? row.activity?.avg_comments_per_commenter;
       const nVideosTouched = row.activity?.n_videos_touched;
       const nComments = row.activity?.n_comments;
-      const barWidth = maxPct > 0 ? Math.max(4, (pctOf(row) / maxPct) * 100) : 0;
+      // Absolute group share (% of active commenters), so the bar length = the
+      // actual percentage — a 44.7% group fills ~44.7%, not "full because it is the biggest".
+      const barWidth = Math.max(2, Math.min(100, pctOf(row)));
       const details = [
         personaThemeChart("特別活躍題材（lift＞1＝相對全頻道更投入）", row.over_indexed_themes, {
           valueKey: "lift",
@@ -2648,7 +2648,9 @@ function kindLabel(value) {
 function infoTip(text) {
   const body = String(text || "").trim();
   if (!body) return "";
-  return `<span class="info-tip" tabindex="0" aria-label="${escapeHtml(body)}">?<span class="tip-box">${escapeHtml(body).replaceAll("\n", "<br>")}</span></span>`;
+  // Use the global cursor-following tooltip (setupChartTooltip), which clamps to
+  // the viewport, so tooltips near the left/right edge never get cut off.
+  return `<span class="info-tip" tabindex="0" data-chart-tooltip="${tooltipAttr(body)}" aria-label="${escapeHtml(body)}">?</span>`;
 }
 
 function scoreline(indices) {

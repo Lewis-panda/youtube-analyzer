@@ -268,6 +268,12 @@ async function renderAudience(root) {
   const s = currentChannel.dashboard_summary || {};
   const themeSent = await fetchTableRows("sentiment_theme_summary", 20);
   const channelThemeNeg = Object.fromEntries((themeSent || []).map((row) => [row.primary_theme, Number(row.negative_rate)]));
+  const profiles = s.audience_segment_profiles || s.community_profiles || [];
+  const communityName = {};
+  profiles.forEach((profile, idx) => {
+    communityName[String(profile.community)] = personaDisplayName(profile, idx);
+  });
+  const ctSentiment = await fetchTableRows("community_theme_sentiment", 60);
   root.innerHTML = `
     ${sectionIntro("觀眾")}
     <section class="split-layout">
@@ -285,7 +291,59 @@ async function renderAudience(root) {
       ${audienceStructureCards(s.network_summary || {})}
       ${communityPersonaCards(s.community_profiles || [], channelThemeNeg)}
     </section>
+    <section class="panel">
+      <div class="panel-head"><div><h3>同題材、不同社群：誰對哪類內容特別容易負面 ${infoTip("回答初衷『不同觀眾群在意的點是否不同』，但用『控制題材』的正確做法：不是看各群整體的面向（那會被各群看不同題材決定、是循環），而是『同一個題材內、比較不同社群的負面率』——三群可能都看某題材，但只有某群特別罵它。算法：取三群都有 ≥150 留言的題材，比各群在該題材的負面率（負面則數÷留言則數，純歸屬作者群），只列各群差距 ≥3pp（真的有差）的題材，依差距大小排序。差距小的題材代表大家反應一致、不顯示。")}</h3></div></div>
+      ${communityThemeContrast(ctSentiment, communityName)}
+    </section>
   `;
+}
+
+function communityThemeContrast(ctRows, communityName) {
+  const MIN_N = 150;
+  const MIN_SPREAD = 0.03;
+  const byTheme = {};
+  (ctRows || []).forEach((row) => {
+    const n = Number(row.n_comments) || 0;
+    if (n < MIN_N || !row.primary_theme || row.primary_theme === "other") return;
+    (byTheme[row.primary_theme] ||= []).push({
+      community: String(row.community),
+      neg: Number(row.negative_rate) || 0,
+      n,
+    });
+  });
+  const themes = Object.entries(byTheme)
+    .filter(([, arr]) => arr.length >= 2)
+    .map(([theme, arr]) => {
+      const sorted = arr.sort((a, b) => b.neg - a.neg);
+      return { theme, arr: sorted, spread: sorted[0].neg - sorted[sorted.length - 1].neg };
+    })
+    .filter((item) => item.spread >= MIN_SPREAD)
+    .sort((a, b) => b.spread - a.spread)
+    .slice(0, 6);
+  if (!themes.length) return `<div class="empty-state">各社群對相同題材的負面反應沒有明顯差異（代表大家反應一致）。</div>`;
+  const maxNeg = Math.max(...themes.flatMap((item) => item.arr.map((row) => row.neg)), 0.01);
+  return `<div class="ctc-list">${themes
+    .map((item) => {
+      const top = item.arr[0];
+      return `
+        <div class="ctc-row">
+          <div class="ctc-head">
+            <strong>${escapeHtml(themeLabel(item.theme))}</strong>
+            <span>最易負面：${escapeHtml(communityName[top.community] || `社群 ${top.community}`)}（群間差距 ${(item.spread * 100).toFixed(0)}pp）</span>
+          </div>
+          ${item.arr
+            .map(
+              (row) => `
+            <div class="ctc-bar-row">
+              <span class="ctc-name">${escapeHtml(communityName[row.community] || `社群 ${row.community}`)}</span>
+              <div class="ctc-track"><i class="${row === top ? "hi" : ""}" style="width:${Math.max(3, (row.neg / maxNeg) * 100).toFixed(0)}%"></i></div>
+              <span class="ctc-val">${formatValue(row.neg, "rate")} · ${fmtCompact(row.n)}</span>
+            </div>`,
+            )
+            .join("")}
+        </div>`;
+    })
+    .join("")}</div>`;
 }
 
 function communityThemeRisk(ctRows, affRows, communityName) {

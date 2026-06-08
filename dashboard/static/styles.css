@@ -2226,6 +2226,71 @@ select:focus {
   line-height: 1.55;
 }
 
+.ctc-list {
+  display: grid;
+  gap: 14px;
+}
+
+.ctc-row {
+  display: grid;
+  gap: 4px;
+}
+
+.ctc-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.ctc-head strong {
+  font-size: 14px;
+}
+
+.ctc-head span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.ctc-bar-row {
+  display: grid;
+  grid-template-columns: 84px 1fr auto;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.ctc-name {
+  color: var(--ink-soft);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ctc-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.ctc-track i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--line-strong);
+}
+
+.ctc-track i.hi {
+  background: var(--coral);
+}
+
+.ctc-val {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 .theme-table {
   display: grid;
   gap: 2px;

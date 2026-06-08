@@ -189,7 +189,7 @@ async function renderOverview(root) {
     ${channelReportCard(ch, overview, s)}
 
     <section class="panel">
-      <div class="panel-head"><div><h3>互動概況 ${infoTip("分析範圍影片的互動比率。算法：每千次觀看留言數＝總留言數 ÷ 總觀看數 ×1000；讚/觀看＝總按讚數 ÷ 總觀看數；每留言獲讚＝總留言讚數 ÷ 留言數。各條都對照 cohort（基準線＝平均、PR＝相對位置）。只反映留言/按讚行為，留言者僅是觀看者的一小部分，不能視為全體觀眾。")}</h3></div></div>
+      <div class="panel-head"><div><h3>互動概況 ${infoTip("分析範圍影片的互動比率。這裡的『留言』全是『主留言(top-level，不含回覆)』——本分析 include_replies=false。算法：每千次觀看主留言數＝主留言總數 ÷ 總觀看數 ×1000；讚/觀看＝總按讚數 ÷ 總觀看數；每主留言獲讚＝主留言總讚數 ÷ 主留言數。各條對照 cohort（基準線＝平均、PR＝相對位置）。只反映留言/按讚行為，留言者僅是觀看者的一小部分，不能視為全體觀眾。")}</h3></div></div>
       ${overviewEngagementBars(s)}
     </section>
   `;
@@ -246,7 +246,7 @@ async function renderContent(root) {
   root.innerHTML = `
     ${sectionIntro("內容")}
     <section class="panel">
-      <div class="panel-head"><div><h3>題材一覽 ${infoTip("一張表把每個題材的『互動密度、情緒、衝突』一次看完，不用跨頁。題材由 Qwen 依影片標題/描述/標籤分類。算法：留言/千觀看＝該題材所有影片的留言則數 ÷ 觀看數 ×1000（已對觀看正規化，比『留言量』更能看出哪種題材真的引發互動，不會只因為片多/觀看高就大）；正/負面率＝該題材該情緒則數÷留言則數；衝突分數＝衝突討論串數 × 回覆衝突串比例（回覆結構，與負面率不同）。游標停在數字可看原始留言/觀看。")}</h3></div></div>
+      <div class="panel-head"><div><h3>題材一覽 ${infoTip("一張表把每個題材的『互動密度、情緒、衝突』一次看完，不用跨頁。題材由 Qwen 依影片標題/描述/標籤分類。注意各欄留言口徑不同：留言/千觀看＝該題材所有影片的『主留言(不含回覆)』數 ÷ 觀看數 ×1000（對觀看正規化，比原始量更能看出哪種題材真的引發互動）；正/負面率＝該情緒則數÷留言則數，這欄是『含回覆』(Qwen 情緒有跑回覆)；衝突分數＝衝突討論串數 × 回覆衝突串比例（回覆結構，與負面率不同）。游標停在數字可看原始留言/觀看。")}</h3></div></div>
       ${themeOverview(themeSummary, sentTheme, conflictTheme, themeViews)}
     </section>
     <section class="panel">
@@ -254,7 +254,7 @@ async function renderContent(root) {
       ${videoTimeline(videos, negMap, timelineEvents)}
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>留言率最高的影片 ${infoTip("以每千次觀看留言數（留言數 ÷ 觀看次數 × 1000）排序，找出最能引發討論的影片。高留言率可能來自高互動或高爭議，需搭配情緒頁判讀。")}</h3></div></div>
+      <div class="panel-head"><div><h3>留言率最高的影片 ${infoTip("以每千次觀看主留言數（主留言數 ÷ 觀看次數 × 1000）排序，找出最能引發討論的影片。留言為『主留言(top-level，不含回覆)』。高留言率可能來自高互動或高爭議，需搭配情緒頁判讀。")}</h3></div></div>
       ${videoEngagementTable(videos)}
     </section>
     <section class="panel">
@@ -804,7 +804,7 @@ function channelReportCard(channel, overview, summary) {
         ${reportStat("訂閱", channel.subscriber_count ?? overview.subscriber_count, "n")}
         ${reportStat("總觀看", channel.view_count_api ?? overview.channel_view_count_api, "n")}
         ${reportStat("總影片", channel.video_count_api ?? overview.channel_video_count_api, "n")}
-        ${reportStat("分析留言", channel.n_comments_in_scope ?? overview.n_comments_in_scope, "n")}
+        ${reportStat("分析主留言", channel.n_comments_in_scope ?? overview.n_comments_in_scope, "n")}
       </div>
     </section>
   `;

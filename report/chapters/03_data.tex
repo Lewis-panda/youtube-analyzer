@@ -41,27 +41,25 @@ network」等結構分析僅採用主留言（top-level comments，共 247{,}068
 主留言與回覆（共 305{,}011 則，其中回覆 57{,}943 則），以利後續 reply-thread conflict 分析能納入回覆串
 結構。兩種口徑在後續結果呈現時皆會標明。
 
-\subsection{Qwen 標註資料}
+\subsection{語意標註：雙模型投票與人工審核}
+\label{sec:data-label}
 
-本研究除 YouTube raw data 外，也使用 Qwen 產生的文字標註資料作為後續分析欄位。Qwen 標註包含三類：
+本研究除 YouTube raw data 外，也使用語意標註資料作為後續分析欄位，標註包含三類：(1) \textbf{影片主題標註}
+（根據 title、description 與 tags，將影片分類為旅遊探索、團隊日常、來賓關係、職場科技、荒野求生、爭議回應等
+主題）；(2) \textbf{留言情緒標註}（將每則留言分為 positive、neutral、negative）；(3) \textbf{ABSA 語意主體／
+面向標註}（辨識情緒所指向的主體，如創作者本人 host persona、內容品質、真實性／造假、剪輯節奏、合作對象、業配
+與價值觀／政治等）。
 
-\begin{enumerate}
-  \item \textbf{影片主題標註}：根據影片 title、description 與 tags，將影片分類為不同內容主題（如旅遊探索、
-        團隊日常、來賓關係、職場科技、荒野求生、爭議回應等）。
-  \item \textbf{留言情緒標註}：將每則留言分為 positive、neutral 與 negative。
-  \item \textbf{ABSA 語意主體／面向標註}：辨識留言情緒所指向的主體或面向，例如創作者本人（host persona）、
-        內容品質（content quality）、真實性／造假（authenticity）、剪輯節奏（pacing／editing）、合作對象
-        （guest／collab）、業配（commercial／sponsorship）與價值觀／政治（cultural values／politics）等。
-\end{enumerate}
+為提升標註可靠度，本研究採用\textbf{雙模型投票（dual-model voting）加人工審核}的流程，而非單一模型輸出。具體
+而言，每則待標註資料同時由 \textbf{Qwen} 與 \textbf{OpenAI API} 兩個模型獨立標註，再依其結果處理：
 
-若部分資料缺少標註，則於後續分析中記錄 coverage，並視情況排除或使用 fallback 方法處理。
+\begin{itemize}
+  \item \textbf{兩模型不一致} $\to$ 交由\textbf{人工標註}，以人工判斷作為最終標籤；
+  \item \textbf{兩模型一致} $\to$ 採用一致結果，並對此部分進行\textbf{抽樣人工審核}，以監測一致標籤的品質。
+\end{itemize}
 
-\subsection{外部輿論資料}
-
-外部輿論資料來自台灣社群平台 \textbf{PTT} 與 \textbf{Dcard}。本研究依關鍵字與頻道別名蒐集與 The DoDo Men
-相關的外部貼文，記錄每則貼文的日期、來源平台、主題與互動量（推文、回覆等），再依時間聚合為外部事件叢集
-（external event clusters）。每個事件叢集包含事件日期、來源平台、事件主題、外部貼文量與互動量，作為後續
-外部事件反映分析的時間軸基礎（詳見第~\ref{sec:method-external} 節與第~\ref{sec:case-external} 節）。
+此設計可在大規模標註的效率與標註品質之間取得平衡：模型分歧之處由人工把關以降低錯誤，模型一致之處則以抽樣審核
+確認可靠度。若部分資料仍缺少有效標註，則於後續分析中記錄 coverage，並視情況排除或使用 fallback 方法處理。
 
 \subsection{資料限制}
 \label{sec:data-limit}

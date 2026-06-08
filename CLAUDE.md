@@ -37,6 +37,14 @@ run out of tokens mid-task — this file lets any session resume cleanly.
   `load_optional_strategy_brief` merges it into `analysis.strategy_brief`).
 - External page focused on "does external discussion bring new audience" vs baseline.
 
+## 創作者視角審查 — 2026-06-09 (主要項目 DONE)
+
+- **DONE** AI 健檢(archetype+6指數)放策略頁(AI 內容集中該頁,總覽維持客觀)。
+- **DONE** 減法:相對定位移除散布圖+其他頻道排行榜(只留關鍵指標 scorecard);策略頁移除 raw 統計文字 dump。
+- **DONE** 統整:情緒+回覆討論合併成「情緒/衝突」一頁(8→7 tab);題材一覽表(內容頁,量+情緒+衝突一行)。
+- **DONE** 時間軸重疊:內容頁「近期影片時間軸」疊 留言量×觀看×負面率(長條色)×外部事件(垂直線)。
+- 剩(較小/未做):外部資料不足時收起;非核心頁減少百分位露出;總覽仍偏薄(因 AI 內容移去策略頁,刻意保持客觀);**死碼待清**:scatterPlot/leaderboard/safeFetchReport/videoClusterCards/videoPortfolioSummary/affinityBars/opportunityCards。
+
 ## TODO QUEUE 2 — 2026-06-09 (ALL 4 DONE)
 
 1. **[DONE]** 總覽 KPI 重複：訂閱/總觀看/總影片/分析留言 與 `channelReportCard` 重複 → 移除 KPI strip。

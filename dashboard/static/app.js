@@ -263,6 +263,13 @@ async function renderContent(root) {
 
 async function renderAudience(root) {
   const s = currentChannel.dashboard_summary || {};
+  const profiles = s.audience_segment_profiles || s.community_profiles || [];
+  const communityName = {};
+  profiles.forEach((profile, idx) => {
+    communityName[String(profile.community)] = personaDisplayName(profile, idx);
+  });
+  const ctSentiment = await fetchTableRows("community_theme_sentiment", 60);
+  const ctAffinity = await fetchTableRows("community_theme_affinity", 60);
   root.innerHTML = `
     ${sectionIntro("觀眾")}
     <section class="split-layout">
@@ -280,7 +287,45 @@ async function renderAudience(root) {
       ${audienceStructureCards(s.network_summary || {})}
       ${communityPersonaCards(s.community_profiles || [])}
     </section>
+    <section class="panel">
+      <div class="panel-head"><div><h3>社群 × 題材：誰對什麼內容特別容易負面 ${infoTip("回答『不同觀眾社群對不同題材是否有不同敏感度／互動風險』。把每個社群 × 每個題材的留言拆開，依『按讚加權負面率』(負面被按讚放大＝更多人認同的負面，互動風險較高)排序。括號的『投入 X×』＝該社群在此題材的 affinity lift(>1＝特別投入)，投入高又負面高＝該群在這題材最容易出事。只取留言量足夠的組合。")}</h3></div></div>
+      ${communityThemeRisk(ctSentiment, ctAffinity, communityName)}
+    </section>
   `;
+}
+
+function communityThemeRisk(ctRows, affRows, communityName) {
+  const aff = {};
+  (affRows || []).forEach((row) => {
+    aff[`${row.community}|${row.theme_label}`] = Number(row.lift);
+  });
+  const rows = (ctRows || [])
+    .filter((row) => Number(row.n_comments) >= 200 && row.primary_theme && row.primary_theme !== "other")
+    .map((row) => ({
+      community: String(row.community),
+      theme: row.primary_theme,
+      neg: Number(row.like_weighted_negative_rate || row.negative_rate || 0),
+      rawNeg: Number(row.negative_rate || 0),
+      n: Number(row.n_comments) || 0,
+      lift: Number(aff[`${row.community}|${row.primary_theme}`]),
+    }))
+    .sort((a, b) => b.neg - a.neg)
+    .slice(0, 8);
+  if (!rows.length) return `<div class="empty-state">資料不足以判斷社群×題材風險。</div>`;
+  const max = Math.max(...rows.map((row) => row.neg), 0.01);
+  return `<div class="insight-list">${rows
+    .map(
+      (row) => `
+      <div class="insight-row">
+        <div class="insight-label">
+          <strong>${escapeHtml(communityName[row.community] || `社群 ${row.community}`)} · ${escapeHtml(themeLabel(row.theme))}</strong>
+          <span>${fmtCompact(row.n)} 留言${Number.isFinite(row.lift) ? ` · 投入 ${row.lift.toFixed(2)}×` : ""} · 原始負面 ${formatValue(row.rawNeg, "rate")}</span>
+        </div>
+        <div class="risk-track"><i style="width:${Math.max(3, (row.neg / max) * 100).toFixed(0)}%"></i></div>
+        <div class="insight-value">${formatValue(row.neg, "rate")}</div>
+      </div>`,
+    )
+    .join("")}</div>`;
 }
 
 async function renderSentiment(root) {

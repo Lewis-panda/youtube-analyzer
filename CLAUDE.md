@@ -37,6 +37,10 @@ run out of tokens mid-task — this file lets any session resume cleanly.
   `load_optional_strategy_brief` merges it into `analysis.strategy_brief`).
 - External page focused on "does external discussion bring new audience" vs baseline.
 
+## 注意事項
+- **先不要清死碼**(使用者還有改動要做,可能會用到 scatterPlot/leaderboard/safeFetchReport/videoCluster* 等)。
+- 比率排名小樣本門檻:`withMinSample`(題材≥30、影片≥50 留言,有 fallback)。要更嚴謹可改貝氏收縮。
+
 ## 創作者視角審查 — 2026-06-09 (主要項目 DONE)
 
 - **DONE** AI 健檢(archetype+6指數)放策略頁(AI 內容集中該頁,總覽維持客觀)。

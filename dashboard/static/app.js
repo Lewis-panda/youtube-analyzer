@@ -7,8 +7,7 @@ const pages = [
   { id: "overview", label: "總覽" },
   { id: "content", label: "內容" },
   { id: "audience", label: "觀眾" },
-  { id: "sentiment", label: "情緒" },
-  { id: "reply_conflict", label: "回覆討論" },
+  { id: "sentiment", label: "情緒/衝突" },
   { id: "external_events", label: "外部討論" },
   { id: "benchmark", label: "相對定位" },
   { id: "strategy", label: "策略輸出" },
@@ -178,7 +177,6 @@ async function renderPage() {
   else if (currentPage === "content") await renderContent(root);
   else if (currentPage === "audience") await renderAudience(root);
   else if (currentPage === "sentiment") await renderSentiment(root);
-  else if (currentPage === "reply_conflict") await renderReplyConflict(root);
   else if (currentPage === "external_events") await renderExternalEvents(root);
   else if (currentPage === "benchmark") renderBenchmark(root);
   else if (currentPage === "strategy") await renderStrategy(root);
@@ -283,6 +281,8 @@ async function renderSentiment(root) {
     (aspectSummary || []).filter((row) => row.aspect).map((row) => [row.aspect, row.aspect_label_zh || row.aspect]),
   );
   const videoAspectMap = buildVideoAspectMap(videoAspects);
+  const replySentiment = await fetchTableRows("reply_sentiment_summary", 12);
+  const themeConflict = await fetchTableRows("reply_conflict_theme_summary", 12);
   root.innerHTML = `
     ${sectionIntro("情緒風險")}
     <section class="split-layout">
@@ -321,28 +321,20 @@ async function renderSentiment(root) {
         </div>
       </div>
     </section>
-  `;
-}
-
-async function renderReplyConflict(root) {
-  const s = currentChannel.dashboard_summary || {};
-  const replySentiment = await fetchTableRows("reply_sentiment_summary", 12);
-  const themeConflict = await fetchTableRows("reply_conflict_theme_summary", 12);
-  root.innerHTML = `
-    ${sectionIntro("回覆互動")}
+    <section class="section-intro compact"><h3>回覆衝突 ${infoTip("和『情緒』不同：情緒看每則留言的語氣（正/負），衝突看『回覆串的對立結構』——有人被圍剿、母串下吵成兩派。負面率低不代表沒衝突，反之亦然。")}</h3></section>
     <section class="split-layout">
       <article class="panel">
-        <div class="panel-head"><div><h3>回覆與衝突基準 ${infoTip("回覆占全部留言的比例、衝突分數等對照比較基準 cohort。衝突來自回覆串結構，與單純負面情緒是不同的概念。")}</h3></div></div>
+        <div class="panel-head"><div><h3>回覆與衝突基準 ${infoTip("回覆占全部留言的比例、衝突分數等對照 benchmark cohort（顯示 cohort 平均）。衝突來自回覆串結構，與單純負面情緒是不同概念。")}</h3></div></div>
         ${replyBaselineBars(s.reply_overview || {})}
       </article>
       <article class="panel">
-        <div class="panel-head"><div><h3>主留言 vs 回覆 ${infoTip("比較主留言與回覆區的情緒差異，看回覆是否比主留言更對立或更負面。")}</h3></div></div>
+        <div class="panel-head"><div><h3>主留言 vs 回覆 ${infoTip("比較主留言區與回覆區的負面率，看回覆是否比主留言更對立或更負面。算法：各區負面則數 ÷ 各區留言則數。")}</h3></div></div>
         ${replySentimentBars(replySentiment)}
       </article>
     </section>
     <section class="split-layout">
       <article class="panel">
-        <div class="panel-head"><div><h3>高衝突影片 ${infoTip("衝突分數 = 衝突討論串數 × 回覆中衝突串比例，另看『圍剿』與『對立母串』的串數。衝突來自回覆結構，不是單純負面率。")}</h3></div></div>
+        <div class="panel-head"><div><h3>高衝突影片 ${infoTip("衝突分數＝衝突討論串數 × 回覆中衝突串比例，另看『圍剿』與『對立母串』串數。算法以回覆串結構計，不是單純負面率。")}</h3></div></div>
         ${conflictVideoCards(s.reply_conflict_hotspots || [])}
       </article>
       <article class="panel">

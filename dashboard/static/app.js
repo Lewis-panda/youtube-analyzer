@@ -386,7 +386,9 @@ async function renderReplyConflict(root) {
 async function renderExternalEvents(root) {
   const hasTab = tabAvailable("external_events");
   const audienceWindows = hasTab ? await fetchTableRows("external_event_audience_windows", 80) : [];
-  const events = newAudienceRows(audienceWindows);
+  const diagnostics = hasTab ? await fetchTableRows("external_event_impact_diagnostics", 80) : [];
+  const diagMap = Object.fromEntries((diagnostics || []).map((row) => [row.event_cluster_id, row]));
+  const events = newAudienceRows(audienceWindows, diagMap);
   root.innerHTML = `
     ${sectionIntro("外部討論")}
     ${
@@ -397,7 +399,7 @@ async function renderExternalEvents(root) {
             ${newAudienceSummary(events)}
           </section>
           <section class="panel">
-            <div class="panel-head"><div><h3>各外部事件：事件後 vs 平常基準 ${infoTip("每個事件比較『平常基準』（事件前 90 天平均新留言者占比）與『事件後』占比，標出差距（百分點）與是否顯著。另附對比事件前 28 天的差距（較不受頻道成熟趨勢影響）、新留言者留言貢獻與回訪率作為輔助。")}</h3></div></div>
+            <div class="panel-head"><div><h3>各外部事件：前後多指標是否同步變化 ${infoTip("每個事件除了新留言者占比（vs 平常基準），同時看事件後相對基準的：YouTube 留言量倍率、負面率變化（百分點＋顯著性）、回覆衝突倍率。多項一起往同方向動＝該外部討論期間 YouTube 端確實有同步反應；ABSA 負面主體的事件窗變化為後續工作。皆為時間窗關聯、非因果。")}</h3></div></div>
             ${newAudienceEventList(events)}
           </section>
           <p class="external-caveat">時間窗關聯非因果；「新留言者」是首次在本頻道留言者，不等於新觀看者。判讀重點是事件後是否『顯著高於平常基準』，不是絕對新留言者數。注意頻道早期長期基準偏高（當時多數留言者本來就是新的），早期事件即使有外部討論，對比基準也常呈現下降；「對比事件前 28 天」可降低此成熟趨勢的影響。</p>
@@ -407,23 +409,30 @@ async function renderExternalEvents(root) {
   `;
 }
 
-function newAudienceRows(rows) {
+function newAudienceRows(rows, diagMap = {}) {
   return (rows || [])
-    .map((row) => ({
-      topic: externalTopicLabel(row.event_topic || "外部討論"),
-      date: compactDate(row.event_date || row.event_start),
-      sources: sourceLabelList(row.sources),
-      posts: Number(row.external_posts) || 0,
-      baselineShare: Number(row.baseline_new_commenter_share),
-      postShare: Number(row.post_new_commenter_share),
-      deltaPp: Number(row.delta_post_vs_baseline_new_commenter_share_pp),
-      pValue: Number(row.post_vs_baseline_new_commenter_share_p),
-      preDeltaPp: Number(row.delta_post_vs_pre_new_commenter_share_pp),
-      prePValue: Number(row.post_vs_pre_new_commenter_share_p),
-      commentShare: Number(row.post_new_commenter_comment_share),
-      returnRate: Number(row.post_new_commenter_next_window_return_rate),
-      newCommenters: Number(row.post_new_commenters) || 0,
-    }))
+    .map((row) => {
+      const diag = diagMap[row.event_cluster_id] || {};
+      return {
+        topic: externalTopicLabel(row.event_topic || "外部討論"),
+        date: compactDate(row.event_date || row.event_start),
+        sources: sourceLabelList(row.sources),
+        posts: Number(row.external_posts) || 0,
+        baselineShare: Number(row.baseline_new_commenter_share),
+        postShare: Number(row.post_new_commenter_share),
+        deltaPp: Number(row.delta_post_vs_baseline_new_commenter_share_pp),
+        pValue: Number(row.post_vs_baseline_new_commenter_share_p),
+        preDeltaPp: Number(row.delta_post_vs_pre_new_commenter_share_pp),
+        prePValue: Number(row.post_vs_pre_new_commenter_share_p),
+        commentShare: Number(row.post_new_commenter_comment_share),
+        returnRate: Number(row.post_new_commenter_next_window_return_rate),
+        newCommenters: Number(row.post_new_commenters) || 0,
+        volumeLift: Number(diag.comment_volume_lift_vs_baseline),
+        negDeltaPp: Number(diag.delta_post_vs_baseline_negative_rate_pp),
+        negP: Number(diag.post_vs_baseline_negative_rate_p),
+        conflictLift: Number(diag.conflict_score_lift_vs_baseline),
+      };
+    })
     .filter((event) => Number.isFinite(event.postShare) && Number.isFinite(event.baselineShare))
     .sort((a, b) => (Number.isFinite(b.deltaPp) ? b.deltaPp : -Infinity) - (Number.isFinite(a.deltaPp) ? a.deltaPp : -Infinity));
 }
@@ -476,10 +485,34 @@ function newAudienceEventList(events) {
             <span>${escapeHtml(event.date)} · ${escapeHtml(event.sources || "-")} · ${fmtCompact(event.posts)} 篇貼文</span>
           </div>
           ${naCompareBlock(event.baselineShare, event.postShare)}
+          ${naSyncBlock(event)}
           ${extras.length ? `<div class="na-extra">${extras.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>` : ""}
         </article>`;
     })
     .join("")}</div>`;
+}
+
+function naSyncBlock(event) {
+  const items = [];
+  if (Number.isFinite(event.volumeLift)) items.push(naSyncMetric("留言量", event.volumeLift, "lift", false));
+  if (Number.isFinite(event.negDeltaPp)) {
+    items.push(naSyncMetric("負面率", event.negDeltaPp, "pp", true, Number.isFinite(event.negP) && event.negP < 0.05));
+  }
+  if (Number.isFinite(event.conflictLift)) items.push(naSyncMetric("回覆衝突", event.conflictLift, "lift", true));
+  if (Number.isFinite(event.deltaPp)) items.push(naSyncMetric("新留言者占比", event.deltaPp, "pp", false));
+  if (!items.length) return "";
+  return `<div class="na-sync"><span class="na-sync-label">事件前後變化</span><div class="na-sync-metrics">${items.join("")}</div></div>`;
+}
+
+function naSyncMetric(label, value, kind, riskOnUp, sig) {
+  const isLift = kind === "lift";
+  const up = isLift ? value > 1.15 : value > 2;
+  const down = isLift ? value < 0.85 : value < -2;
+  const arrow = up ? "▲" : down ? "▼" : "—";
+  const text = isLift ? `${value.toFixed(2)}×` : formatValue(value, "pp");
+  let cls = "flat";
+  if (up || down) cls = riskOnUp ? (up ? "risk" : "calm") : up ? "up" : "down";
+  return `<span class="na-sync-metric ${cls}">${escapeHtml(label)} ${arrow} ${escapeHtml(text)}${sig ? " 顯著" : ""}</span>`;
 }
 
 function naDeltaBadge(deltaPp, sig) {

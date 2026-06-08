@@ -285,16 +285,16 @@ async function renderAudience(root) {
     ${sectionIntro("觀眾")}
     <section class="split-layout">
       <article class="panel">
-        <div class="panel-head"><div><h3>觀眾活躍度 ${infoTip("依每位留言者的『涵蓋率』＝留言過的影片數 ÷ 頻道影片數分層（跨頻道可比、對頻道大小正規化）：一次性/路過＝只留言 1 支；回訪＝多支但涵蓋率低；常客＝涵蓋率≥2%；核心＝涵蓋率≥5% 且至少 3 支。門檻用 benchmark cohort 分布校準（≈p90/p97）。僅統計有留言者、只用主留言。")}</h3></div></div>
+        <div class="panel-head"><div><h3>觀眾活躍度 ${infoTip("依每位留言者的『涵蓋率』＝留言過的不重複影片數 ÷ 頻道影片數分層（跨頻道可比、對頻道大小正規化）：一次性/路過＝只留言 1 支；回訪＝≥2 支但涵蓋率<2%；常客＝涵蓋率 2–5%；核心＝涵蓋率≥5% 且至少 3 支。門檻用 48 個 benchmark 頻道分布校準（5%≈p97、2%≈p90）。各層『占比』＝該層人數 ÷ 全部留言者；『活躍 X 次/人』＝該層平均留言則數；綠條長度＝該層占全部留言者的絕對比例。僅統計有留言者、只用主留言。")}</h3></div></div>
         ${tierComparisonBars(s.commenter_tiers || [])}
       </article>
       <article class="panel">
-        <div class="panel-head"><div><h3>回訪與核心觀眾 ${infoTip("跨影片回訪率＝在連續 4 支影片的窗格內再次留言的比例（是影片窗、不是 4 週）；近期回訪率為最近一段窗格的回訪。與核心觀眾占比一起對照 benchmark cohort（顯示 cohort 平均）。百分位只代表相對位置，不代表好壞。")}</h3></div></div>
+        <div class="panel-head"><div><h3>回訪與核心觀眾 ${infoTip("跨影片回訪率：把影片依時間切成每 4 支一個窗格，算法＝在某窗格留言、且在下一窗格仍留言的人數 ÷ 前一窗格留言人數（是影片窗、不是 4 週）。近期回訪率＝最近一段窗格的同一算法。核心觀眾占比＝(核心+常客層人數) ÷ 全部留言者。三者一起對照 benchmark cohort，基準線顯示 cohort 平均。百分位只代表相對位置，不代表好壞。")}</h3></div></div>
         ${audienceBaselineBars()}
       </article>
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路，再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。上方為整體分群結構判讀（集中度／清晰度），下方每張卡片是一個社群：規模、社群情緒（正/中/負，Qwen 三元分類）、偏好題材與經營建議。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
+      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類。每張卡片＝一個社群。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
       ${audienceStructureCards(s.network_summary || {})}
       ${communityPersonaCards(s.community_profiles || [])}
     </section>
@@ -317,36 +317,36 @@ async function renderSentiment(root) {
     ${sectionIntro("情緒風險")}
     <section class="split-layout">
       <article class="panel">
-        <div class="panel-head"><div><h3>正面、中性、負面留言比例 ${infoTip("全頻道留言的三元情緒占比，由 Qwen 逐則分類為正/中/負。包含回覆，反映留言者語氣，不代表所有觀看者。")}</h3></div></div>
+        <div class="panel-head"><div><h3>正面、中性、負面留言比例 ${infoTip("全頻道留言的三元情緒占比，由 Qwen 逐則分類為正/中/負。算法：各情緒占比＝該情緒則數 ÷ 全部留言則數；按讚加權版＝Σ(該情緒留言×(讚+1)) ÷ Σ(全部留言×(讚+1))，被按讚多的留言權重更高。包含回覆，反映留言者語氣，不代表所有觀看者。")}</h3></div></div>
         ${sentimentStack(s.sentiment_summary || [])}
       </article>
       <article class="panel">
-        <div class="panel-head"><div><h3>相對基準 ${infoTip("本頻道的情緒率對照比較基準 cohort 的分布位置。百分位僅代表相對定位，不直接等於好或壞。")}</h3></div></div>
+        <div class="panel-head"><div><h3>相對基準 ${infoTip("把本頻道的情緒率放進 48 個 benchmark 頻道的分布。算法：百分位＝本頻道值在 cohort 由小到大的排名位置(0–100)；基準線顯示的是 cohort『平均』(因只有 48 個頻道)。百分位僅代表相對定位，不直接等於好或壞。")}</h3></div></div>
         ${sentimentBaselineBars()}
       </article>
     </section>
     <section class="panel sentiment-band sentiment-band-positive">
-      <div class="panel-head"><div><h3>正面亮點 ${infoTip("以正面留言率排序的影片與題材；影片/題材情緒使用全部留言（含回覆）。")}</h3></div></div>
+      <div class="panel-head"><div><h3>正面亮點 ${infoTip("以正面留言率排序的影片與題材。算法：正面留言率＝該片(或該主題)正面則數 ÷ 其留言則數；影片/題材情緒使用全部留言（含回覆）。")}</h3></div></div>
       <div class="sentiment-band-grid">
         <div class="sentiment-subpanel">
           <h4>高正面影片 ${infoTip("正面留言率最高的影片（正面留言數 ÷ 該片留言數），並列出該片『被稱讚的點』（ABSA 對正面留言抽取面向，占該片正面留言比例，扣除 other／unclear）。為模型標註，非人工真值。")}</h4>
           ${positiveVideoCards(videoSentiment, videoPosAspectMap, aspectLabels)}
         </div>
         <div class="sentiment-subpanel">
-          <h4>高正面題材 ${infoTip("各 Qwen 主題的正面留言率排序。")}</h4>
+          <h4>高正面題材 ${infoTip("各 Qwen 主題的正面留言率排序。算法：該主題正面則數 ÷ 該主題留言則數（含回覆）；按讚加權版以(讚+1)加權。主題由 Qwen 對影片標題/描述/標籤分類。")}</h4>
           ${positiveThemeBars(themeSentiment)}
         </div>
       </div>
     </section>
     <section class="panel sentiment-band sentiment-band-negative">
-      <div class="panel-head"><div><h3>負面風險 ${infoTip("以負面率與按讚加權負面率的放大程度找出風險點。情緒為模型標註，非人工真值。")}</h3></div></div>
+      <div class="panel-head"><div><h3>負面風險 ${infoTip("以負面率與按讚加權負面率的放大程度找出風險點。算法：負面率＝負面則數÷留言則數；按讚加權負面＝Σ(負面×(讚+1))÷Σ(全部×(讚+1))，若大於負面率代表負面被按讚放大。情緒為模型標註，非人工真值。")}</h3></div></div>
       <div class="sentiment-band-grid">
         <div class="sentiment-subpanel">
           <h4>高負面影片與負面原因 ${infoTip("排序依『實質負面』＝按讚加權負面率 × 實質負面占比（ABSA 面向中扣除 other／unclear 這類雖負面但對頻道無實質影響的部分），所以排前面的是真的被罵到痛點、不是雜訊。每片並列出主要負面面向（占該片負面留言比例）。為模型標註，非人工真值。")}</h4>
           ${riskVideoCards(s.negative_hotspots || [], videoAspectMap, aspectLabels)}
         </div>
         <div class="sentiment-subpanel">
-          <h4>高負面題材 ${infoTip("各 Qwen 主題的負面留言率排序。")}</h4>
+          <h4>高負面題材 ${infoTip("各 Qwen 主題的負面留言率排序。算法：該主題負面則數 ÷ 該主題留言則數（含回覆）；按讚加權版以(讚+1)加權。主題由 Qwen 對影片標題/描述/標籤分類。")}</h4>
           ${themeRiskBars(themeSentiment)}
         </div>
       </div>

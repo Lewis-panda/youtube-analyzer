@@ -1,0 +1,131 @@
+\section{研究方法與分析框架}
+\label{sec:method}
+
+\subsection{整體 Pipeline}
+
+本研究的分析架構如圖~\ref{fig:pipeline} 所示，由資料層、Qwen 標註層、分析層與策略輸出層構成。YouTube
+公開留言與外部輿論資料經清理與分析範圍設定後，先由 Qwen 進行影片主題、留言情緒與 ABSA 語意主體標註；接著
+進入四個分析模組：頻道健康與留言者分層／回訪、觀眾社群與內容敏感度、情緒／ABSA／reply-thread conflict 風險，
+以及外部事件反映；最後將各模組結果整合為內容策略、分眾溝通策略與炎上監測策略。
+
+\input{figures/fig_pipeline}
+
+\subsection{分析模組與指標總覽}
+
+本研究的分析層可分為四個模組。第一，\textbf{頻道社群健康與 Benchmark}（第~\ref{sec:method-health} 節）
+從互動密度、留言者穩定性與回訪留存三面向診斷頻道，並以 48 頻道 cohort 提供相對基準。第二，\textbf{觀眾社群
+與內容敏感度}（第~\ref{sec:method-community} 節）以 co-commenter network 偵測觀眾社群，並結合主題偏好與
+情緒，分析「哪一群觀眾對哪一類內容有何反應」。第三，\textbf{情緒風險、語意主體與留言互動衝突}（第~
+\ref{sec:method-risk} 節）整合 Qwen 情緒、ABSA 與 reply-thread conflict，區分不同層級的互動風險。第四，
+\textbf{外部事件反映}（第~\ref{sec:method-external} 節）建立外部事件時間軸，觀察事件前後 YouTube 留言
+變化是否出現時間上的關聯跡象。
+
+\subsection{頻道社群健康與 Benchmark 方法}
+\label{sec:method-health}
+
+本研究首先進行 \eng{Channel-Level Diagnosis}，用以判斷 The DoDo Men 的留言社群整體是否健康。本節從三個
+面向衡量頻道社群健康：互動密度、留言者穩定性，以及回訪與留存，並進一步透過 broad benchmark 提供相對解讀基準。
+
+\textbf{第一，互動密度} 用於衡量頻道在分析範圍內的基本互動規模，包含影片數、主留言數、不重複留言者數、
+每支影片平均留言數、每支影片平均留言者數，以及每千觀看留言數（comments per 1k views）等指標。需要注意的是，
+高留言數不必然代表頻道健康成長，因為留言增加可能來自核心粉絲支持，也可能來自一次性事件流量、爭議討論或外部
+批評者湧入。因此，互動密度僅作為頻道社群健康診斷的第一層基礎。
+
+\textbf{第二，留言者穩定性} 用於判斷頻道留言是否主要來自可長期經營的核心觀眾。本研究依據每位留言者的
+\textbf{涵蓋率}（catalog coverage）進行分層，定義為「該留言者留言過的不重複影片數 $\div$ 頻道分析範圍影片數」。
+相較於以固定影片數（如「留言過 16 支以上」）為門檻，涵蓋率對頻道規模正規化，因此可跨頻道公平比較。據此將留言者
+分為四層：\eng{one-time}（僅留言 1 支影片）、\eng{returning}（$\ge 2$ 支但涵蓋率 $< 2\%$）、\eng{regular}
+（涵蓋率 $2$–$5\%$）與 \eng{core}（涵蓋率 $\ge 5\%$ 且至少 $3$ 支影片）。其中涵蓋率門檻以 48 頻道 cohort
+分布校準（$5\% \approx \text{p97}$、$2\% \approx \text{p90}$），core 另設 $3$ 支影片之絕對下限，以避免
+小型頻道將「6 支影片中留言 2 支」誤判為核心。若 core 與 regular（涵蓋率 $\ge 2\%$ 之穩定層）占比較高，代表
+頻道具備較穩定的 active commenting audience；若 one-time 占比過高，則代表留言互動可能更依賴單支影片或外部流量。
+
+\textbf{第三，回訪與留存} 用於衡量留言者是否會持續回到頻道互動。本研究的回訪率不以固定日曆週期計算，而是依各
+頻道分析範圍內的影片發布順序，將影片切成固定數量的「影片窗」。主要 benchmark 指標採用 4-window setting，
+也就是將每個頻道的影片依發布時間切成四個數量大致相等的區段，再計算前一影片窗的留言者是否在下一影片窗再次留言，
+形成 return rate、weighted return rate 與 median return rate 等指標。此方法可降低不同頻道發布頻率差異造成的
+比較偏誤。為避免單一切窗設定影響解讀，本研究另以 $3$、$4$、$6$、$8$ 個影片窗計算 \eng{continuity
+sensitivity}：若各設定下 weighted return rate 的最大與最小值差距 $\le 0.08$，則標記為回訪率對切窗設定相對
+穩定。此外，本研究也使用 \eng{rolling retention}，以「前 50 支影片的留言者」為基準，觀察其是否在「後 50 支
+影片」再次留言，並每 25 支影片滑動一次，以觀察近期留言者回訪是否穩定。
+
+\textbf{Benchmark comparison.} 由於單一頻道的留言數、回訪率、社群集中度、負面率或衝突分數本身不具絕對好壞
+意義，本研究將 The DoDo Men 的各項指標與 48 個台灣 creator／media 頻道比較，以百分位數（percentile）呈現
+相對位置。此 benchmark 僅作為 broad benchmark，不應被解讀為同類型頻道排名。
+
+\subsection{觀眾社群與內容敏感度方法}
+\label{sec:method-community}
+
+本研究使用 co-commenter network 分析 YouTube 頻道中的觀眾社群結構。由於本研究無法取得 YouTube Studio
+後台的觀看序列、推薦來源或完整觀眾人口統計資料，因此將「共同留言行為」視為觀眾內容偏好的間接訊號：若一群留言者
+經常共同出現在相同影片下方，代表他們可能被相似內容吸引，或對相似主題具有較高參與意願。
+
+在 co-commenter network 中，留言者為 node。為降低一次性留言者與偶然共現造成的雜訊，本研究僅納入至少曾在
+$2$ 支以上影片留言的留言者；同時，兩位留言者必須至少共同出現在 $3$ 支影片以上，才會建立連線。換言之，edge
+代表兩位留言者在多支影片中重複共同參與，而非單次同片留言所造成的偶然連結；edge weight 則代表兩位留言者共同
+留言過的影片數。接著使用 \citet{blondel2008} 的 Louvain community detection 對網路進行社群偵測，並以
+modularity（\citealp{newman2006}）衡量分群清晰度。需特別說明，此類「單一頻道共同留言網路」因觀眾天生重疊，
+modularity 數值普遍偏低，故其高低應以相對 cohort 而非絕對乾淨分割來解讀；偵測到的社群應理解為「軟性偏好傾向」
+而非壁壘分明的派系。
+
+由於 community detection 本身只能得到結構上的分群，本研究進一步建立 \eng{audience segment profile}，將
+每個社群與其群體大小、留言量、活躍程度、觸及影片數、偏好影片主題、theme affinity lift、情緒分布、高負面主題與
+代表影片連結，使分群結果可被轉譯為具策略意義的觀眾 persona。其中 \textbf{theme affinity lift} 定義為
+「該社群在某主題的留言占比 $\div$ 全頻道該主題占比」（$>1$ 代表該社群對此主題相對更投入）。
+
+本研究進一步分析「哪一群觀眾對哪一類內容有何反應」。為避免循環論證（社群本身即由共同留言行為分群，若直接看各群
+整體面向，結果會被各群所看主題決定），本研究採用\textbf{控制題材}的比較：在「同一個主題」之內，比較不同社群的
+\eng{community-theme negative rate}，藉此辨識「多個社群都看某主題，但其中某一群特別容易負面」的內容敏感度
+差異，而非僅呈現被主題基準決定的整體負面分布。
+
+\subsection{情緒風險、語意主體與留言互動衝突方法}
+\label{sec:method-risk}
+
+本研究將 Qwen 留言情緒標註、Qwen ABSA 標註與 reply-thread conflict 整合為情緒與互動風險分析，回答三個層次的
+問題：哪些單位出現較高負面、負面針對什麼，以及負面是否升級為留言區摩擦。
+
+\textbf{Sentiment Risk.} 本研究以 Qwen 情緒標註計算 positive／neutral／negative rate。除原始負面率外，
+另以 $(\text{like\_count}+1)$ 為權重計算 \eng{like-weighted negative rate}，用以判斷負面留言是否獲得其他
+觀眾認同。若某影片 raw negative rate 不高，但 like-weighted negative rate 較高，代表少數負面留言可能獲得
+較多按讚，具有較高的擴散風險。
+
+\textbf{ABSA 語意主體.} 本研究以 Qwen 進行 Aspect-Based Sentiment Analysis，辨識正負面留言主要針對的主體
+或面向（如創作者本人、內容品質、真實性、剪輯節奏、合作對象、業配、價值觀／政治等）。在指標上計算各 aspect 的
+mention rate、aspect negative rate、like-weighted aspect negative rate 與 severity，藉此區分負面來源是
+內容改善問題、社群溝通問題、合作風險，或較高層級的聲譽風險。本研究於排序負面影響時，排除 \texttt{other} 與
+\texttt{unclear} 等無行動性面向，以避免雜訊干擾。
+
+\textbf{Reply-thread Conflict.} 本研究分析 YouTube 留言串（一則主留言及其回覆）中的 replies 與 thread
+structure，判斷負面是否升級為觀眾間互動衝突。三種型態之操作型定義如下（表~\ref{tab:conflict-def}）：
+
+\begin{table}[H]
+\centering
+\caption{Reply-thread conflict 三種型態之操作型定義}
+\label{tab:conflict-def}
+\small
+\begin{tabularx}{\linewidth}{l Y}
+\toprule
+\textbf{型態} & \textbf{定義}\\
+\midrule
+\eng{conflict thread}（衝突串） & 有回覆，且整串或回覆區的正面率與負面率\textbf{皆} $\ge 15\%$（兩派並存、極化）。\\
+\eng{pile-on thread}（圍剿） & 回覆 $\ge 3$ 則，且回覆負面率 $\ge 60\%$、正面率 $< 15\%$（一面倒負面圍攻母留言）。\\
+\eng{parent opposition}（對立母串） & 回覆與母留言情緒方向相反（母正則回覆 $\ge 25\%$ 負；母負則回覆 $\ge 25\%$ 正；母中性則正負皆 $\ge 15\%$）。\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+並以 \eng{conflict score}$=$（衝突串數 $\times$ 回覆中衝突串比例）綜合衡量衝突的數量與密度，另計算 reply-count
+加權與 like 加權版本。需強調，圍剿與對立母串雖會重疊，但測量不同概念：圍剿著重「一面倒負面的強度」，對立母串
+著重「回覆與母留言立場相反的方向」（後者甚至包含「正面回覆護航被罵的母留言」這種非圍剿狀況）。
+
+\subsection{外部事件反映方法}
+\label{sec:method-external}
+
+本研究建立外部事件時間軸，並為每個事件設定 \eng{baseline}、\eng{pre} 與 \eng{post} window（本研究以事件後
+28 天為 post window，事件前 90 天為長期 baseline）。針對每個外部事件，比較事件前後 YouTube 留言變化，包括
+留言量變化、comment volume lift、negative rate shift、like-weighted negative rate 變化、reply conflict
+score 變化、pile-on 與 parent opposition 變化，以及\textbf{新留言者比例}及其顯著性。
+
+特別說明，判斷「外部討論是否帶來新觀眾」時，重點並非事件後是否出現新留言者（事件後永遠會有新留言者），而是
+事件後的新留言者占比是否\textbf{顯著高於頻道平常水準}。因此本研究以事件後 28 天的新留言者占比，對照事件前 90 天
+的長期基準並進行顯著性檢定。本分析僅解讀為外部事件與 YouTube 留言變化之間的\textbf{關聯跡象}，不宣稱因果。

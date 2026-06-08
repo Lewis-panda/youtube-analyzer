@@ -1,0 +1,69 @@
+% System architecture / analysis pipeline (TikZ)
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+    font=\small\sffamily,
+    node distance=6mm and 6mm,
+    box/.style={rounded corners=2pt,draw=ink!55,line width=0.5pt,align=center,
+                inner sep=4pt,minimum height=8mm,fill=white},
+    data/.style={box,fill=soft,minimum width=42mm},
+    prep/.style={box,fill=teal!10,draw=teal!60,minimum width=92mm},
+    qwen/.style={box,fill=gold!12,draw=gold!65,minimum width=42mm,text width=38mm},
+    mod/.style={box,fill=teal!8,draw=teal!55,text width=33mm,minimum height=15mm},
+    outbox/.style={box,fill=coral!10,draw=coral!60,minimum width=120mm},
+    lbl/.style={font=\scriptsize\sffamily,text=ink!70},
+    flow/.style={-{Latex[length=2mm]},draw=ink!55,line width=0.6pt},
+  ]
+
+  % Layer 1: data sources
+  \node[data] (yt) {YouTube 公開資料\\\scriptsize{影片 metadata $+$ 留言}};
+  \node[data,right=14mm of yt] (ext) {外部輿論資料\\\scriptsize{PTT / Dcard / 新聞}};
+
+  % Layer 2: preprocessing
+  \node[prep,below=7mm of $(yt)!0.5!(ext)$] (clean)
+        {資料清理與分析範圍設定\ \ \scriptsize{(351 影片 / 247k 主留言 / 112k 留言者)}};
+
+  % Layer 3: Qwen labelling
+  \node[qwen,below=9mm of clean,xshift=-46mm] (theme) {Qwen 影片主題標註};
+  \node[qwen,below=9mm of clean]               (senti) {Qwen 留言情緒標註\\\scriptsize{pos / neu / neg}};
+  \node[qwen,below=9mm of clean,xshift=46mm]   (absa)  {Qwen ABSA\\\scriptsize{語意主體 / aspect}};
+  \node[lbl,left=1mm of theme] {標註層};
+
+  % Layer 4: analysis modules
+  \node[mod,below=10mm of theme,xshift=-2mm] (m1)
+        {\textbf{頻道健康}\\\scriptsize 活躍分層 $\cdot$ 回訪率\\\scriptsize benchmark 百分位};
+  \node[mod,right=5mm of m1] (m2)
+        {\textbf{觀眾社群}\\\scriptsize co-commenter network\\\scriptsize community $\times$ theme};
+  \node[mod,right=5mm of m2] (m3)
+        {\textbf{情緒/衝突風險}\\\scriptsize sentiment $\cdot$ ABSA\\\scriptsize reply-thread conflict};
+  \node[mod,right=5mm of m3] (m4)
+        {\textbf{外部事件反映}\\\scriptsize event timeline\\\scriptsize baseline/pre/post};
+  \node[lbl,left=1mm of m1] {分析層};
+
+  % Layer 5: output
+  \node[outbox,below=10mm of m2,xshift=20mm] (strat)
+        {\textbf{策略輸出}\ \ 內容策略\ $\cdot$\ 分眾溝通策略\ $\cdot$\ 炎上與風險監測};
+
+  % flows
+  \draw[flow] (yt) -- (clean);
+  \draw[flow] (ext) -- (clean);
+  \draw[flow] (clean) -- (theme);
+  \draw[flow] (clean) -- (senti);
+  \draw[flow] (clean) -- (absa);
+  \foreach \s in {theme,senti,absa}{
+    \draw[flow,draw=ink!35] (\s) -- (m1.north);
+    \draw[flow,draw=ink!35] (\s) -- (m2.north);
+    \draw[flow,draw=ink!35] (\s) -- (m3.north);
+  }
+  \draw[flow,draw=ink!35] (absa) -- (m4.north);
+  \draw[flow] (m1) -- (strat);
+  \draw[flow] (m2) -- (strat);
+  \draw[flow] (m3) -- (strat);
+  \draw[flow] (m4) -- (strat);
+
+\end{tikzpicture}
+\caption{研究分析架構與資料流。資料層整合 YouTube 公開留言與外部輿論資料，
+經清理後由 Qwen 進行影片主題、留言情緒與 ABSA 語意主體標註；分析層包含頻道健康、
+觀眾社群、情緒／衝突風險與外部事件反映四個模組，最終轉化為內容、分眾溝通與風險監測策略。}
+\label{fig:pipeline}
+\end{figure}

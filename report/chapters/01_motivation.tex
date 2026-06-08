@@ -1,0 +1,75 @@
+\section{研究動機}
+
+\subsection{研究背景}
+
+YouTube 已成為台灣內容創作者與觀眾互動的重要平台。對 YouTube 經營者而言，觀看數、訂閱數、按讚數、
+留言數與觀看時間等指標，雖然能反映影片或頻道的表面表現，但這些指標多半只能回答「影片有沒有被看見」或
+「頻道是否成長」，卻難以進一步判斷這些互動對頻道而言究竟是長期資產還是潛在風險。換言之，高觀看數與高留言數
+不一定代表頻道健康成長；這些互動可能來自值得長期經營的核心觀眾與潛在客群，也可能只是一次性事件流量、
+爭議討論、負面留言，甚至是外部炎上所帶來的短期熱度。
+
+尤其對以人格魅力、生活內容、旅遊企劃或議題討論為核心的 YouTube 頻道而言，留言區不只是觀眾回饋的集合，
+也是一種社群互動場域。不同觀眾可能因為不同影片主題而形成不同互動群體；同樣是留言增加，有可能代表核心粉絲的
+支持，也可能代表外部批評者湧入；同樣是影片表現亮眼，也可能伴隨高度負面情緒、觀眾間爭論或社群摩擦。因此，
+若只依賴觀看數、留言數或整體互動量，頻道經營者將難以判斷哪些內容值得長期發展、哪些觀眾群值得經營，以及哪些
+影片或主題可能帶來聲譽與社群風險。
+
+此外，單純知道留言是正面或負面仍不足以支援策略判斷，因為情緒所指向的主體不同，代表的經營意義也不同。例如，
+若負面留言主要針對影片節奏或剪輯品質，可能屬於內容優化問題；若負面留言主要針對創作者態度、事件回應、可信度
+或價值觀立場，則可能代表更高層級的聲譽與社群風險。因此，本研究進一步加入 \eng{Aspect-Based Sentiment
+Analysis}（ABSA），透過 Qwen 辨識留言正負面情緒所針對的主體或面向，以判斷負面來源究竟是內容問題、影片
+呈現問題、合作對象問題，或是外部事件所帶來的聲譽風險。
+
+基於上述背景，本研究希望從 YouTube 留言與影片 \eng{metadata} 出發，建立一套以「留言社群洞察」為核心的
+分析框架。相較於傳統 YouTube analytics 主要關注頻道表現，本研究更重視 \eng{active commenting audience}
+的組成、回訪行為、社群結構、情緒反應、語意主體與互動風險，並進一步觀察外部輿論事件是否反映到 YouTube
+留言生態。透過留言語意分析、ABSA、觀眾網路分析與 \eng{reply-thread conflict analysis}，本研究希望協助
+YouTube 經營者判斷頻道互動的品質與長期價值，並提供更具體的內容策略、社群溝通策略與風險監測方向。
+
+\subsection{現有 YouTube／Social Analytics 工具與缺口}
+
+現有 YouTube／social analytics 平台大致可分為三類。
+
+\textbf{第一類是 performance analytics}，例如 YouTube Studio 與 Social Blade。這類工具主要追蹤 views、
+subscribers、watch time、growth trend、影片觀看表現與頻道成長狀況。其強項在於頻道表現追蹤，能讓創作者
+快速掌握哪些影片觀看數高、訂閱成長如何、頻道整體是否持續成長。然而，這類工具的缺口在於，它們多半不解釋
+「哪些粉絲群」在互動，也不分析留言者之間是否形成社群結構。
+
+\textbf{第二類是 creator optimization tools}，例如 vidIQ 與 TubeBuddy。這類工具主要協助創作者進行 SEO、
+title、tags、description、thumbnail、keyword research 與 A／B testing。其強項在於提升曝光、搜尋與點擊，
+適合用於影片上架前或上架時的優化。然而，這類工具較少處理影片發布後的深層社群反應，例如不同觀眾群對不同主題的
+情緒差異、留言區是否形成衝突，或負面討論是否被其他觀眾放大。
+
+\textbf{第三類是 enterprise social listening tools}，例如 Sprout Social、Brandwatch、Talkwalker 與
+Meltwater。這類工具主要用於品牌聲量、情緒分析、競品比較、跨平台監測與輿論管理。其強項在於品牌健康與輿論監控。
+然而，這類工具通常以品牌、關鍵字或跨平台議題為中心，不一定能細緻分析單一 YouTube 頻道內部的留言者社群、
+不同粉絲群對內容的敏感度、留言情緒所指向的具體主體，以及 reply-thread conflict 等留言互動風險。
+
+因此，現有工具大多能回答「影片表現如何」與「頻道是否成長」，但較少回答「誰在互動」、「這些互動對頻道是資產
+還是風險」、「正負面留言究竟針對什麼」、「哪些觀眾群對哪些內容特別敏感」，以及「外部事件是否反映到 YouTube
+留言生態」。這正是本研究希望透過留言語意分析、ABSA、觀眾網路與 reply-thread conflict analysis 補足的缺口。
+
+\subsection{研究目的與研究問題}
+
+本研究以台灣 YouTube 頻道 The DoDo Men－嘟嘟人為例，將 YouTube 留言視為一種社群互動資料，而不是單純的
+影片附屬回饋。本研究並非試圖取代 YouTube Studio、vidIQ 或 Brandwatch，而是補足現有工具較少處理的
+\eng{YouTube-native audience intelligence}：也就是從留言者社群、留言語意、情緒主體、互動衝突與外部事件
+反映等角度，判斷頻道互動的品質與長期價值。
+
+具體而言，本研究結合影片 metadata、Qwen 情緒標註、ABSA、co-commenter network、reply-thread conflict
+analysis 與外部輿論事件時間軸，建立一套 YouTube 頻道分析框架，主要回答以下五個研究問題：
+
+\begin{description}[leftmargin=3.4em,style=nextline,itemsep=3pt]
+  \item[\textbf{RQ1}] The DoDo Men 的頻道留言社群整體是否健康？其互動是來自穩定核心留言者，還是較多
+        一次性留言者？
+  \item[\textbf{RQ2}] 頻道是否存在不同觀眾社群？各社群偏好哪些影片主題，情緒反應與負面主體是否不同？
+  \item[\textbf{RQ3}] 正面或負面留言主要針對哪些主體或面向？這些情緒是指向影片內容、創作者本人、事件回應、
+        合作對象、價值觀立場，還是外部事件？
+  \item[\textbf{RQ4}] 哪些影片或主題不只是負面留言多，而是引發 \eng{reply conflict}、\eng{pile-on} 或
+        \eng{parent opposition} 等互動衝突？
+  \item[\textbf{RQ5}] 外部輿論事件是否與 YouTube 留言量、負面率、ABSA 負面主體、reply conflict 或新留言者
+        變化出現時間上的關聯跡象？
+\end{description}
+
+透過上述問題，本研究希望將 YouTube 留言分析轉化為內容策略、社群溝通策略與炎上監測策略，協助 YouTube
+經營者判斷哪些互動值得長期經營，哪些互動則可能代表短期流量或潛在風險。

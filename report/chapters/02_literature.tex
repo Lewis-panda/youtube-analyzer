@@ -1,0 +1,77 @@
+\section{文獻回顧}
+
+\subsection{從表面指標到互動品質}
+
+傳統 YouTube 頻道分析多以觀看數、訂閱數、按讚數、留言數與觀看時間等 \eng{performance metrics} 為主，
+這些指標能衡量影片是否被看見、頻道是否成長，卻較難判斷互動本身的品質與長期價值。\citet{rogers2018}
+以「\eng{vanity metrics}」批判社群平台上過度依賴 likes、views、followers 等表面數字的分析方式，指出
+這些數字容易成為展示成效的指標，卻不一定能揭示更深層的互動意義。其提出的 \eng{critical analytics} 觀點
+主張，社群媒體分析應重新脈絡化平台資料，從單純的表面數字轉向更能理解使用者投入、立場、關注議題與社群關係的
+分析。
+
+此觀點與本研究的核心動機相呼應。對 YouTube 經營者而言，高觀看數與高留言數不必然代表頻道健康成長，因為這些
+互動可能來自核心粉絲支持，也可能來自一次性事件流量、爭議討論或外部炎上。因此，本研究不只分析留言數，而是
+進一步從留言者回訪、觀眾社群、情緒主體、負面認同程度與 reply-thread conflict 等面向，判斷頻道互動究竟是
+長期社群資產，還是潛在聲譽與社群風險。
+
+\subsection{YouTube 留言與 ABSA：從情緒方向到負面主體}
+
+YouTube 留言不只是影片底下的文字回饋，也是一種 active commenting audience 的互動資料。
+\citet{siersdorfer2010} 針對大規模 YouTube comments 與 comment ratings 進行研究，指出 YouTube 留言
+不只包含觀眾對影片的意見，也包含其他觀眾對留言本身的評價。這說明 YouTube 留言區具有雙層互動特性：觀眾一方面
+對影片表達意見，另一方面也會透過按讚、回覆或反駁來評價其他觀眾的意見。因此，若只看留言數，容易忽略留言背後的
+互動品質。
+
+一般 sentiment analysis 可判斷留言為 positive、neutral 或 negative，但對 YouTube 經營者而言，知道
+負面率偏高並不等於知道問題所在。負面留言可能針對影片節奏、剪輯品質、企劃內容、合作對象、創作者態度、事件回應
+或外部爭議，不同負面主體代表不同經營意義。因此，本研究使用 Qwen 進行 ABSA，辨識正負面留言主要針對的主體或
+面向，以區分內容改善問題、合作風險、社群溝通問題與聲譽風險。
+
+ABSA 的理論基礎來自 \eng{aspect-level opinion mining}。\citet{hu2004} 指出，評論分析不應只知道整體
+評價，而應進一步抽取使用者稱讚或抱怨的具體特徵；\citet{zhang2023} 也將 ABSA 定義為更細緻的 sentiment
+analysis 任務，重點在於分析使用者對特定 aspect、target 或 opinion object 的情緒。延伸到 YouTube 留言
+情境，本研究關注的不是「留言是否負面」而已，而是「負面究竟指向誰或什麼」。
+
+\subsection{Co-commenter Network 與觀眾社群分析}
+
+除了文字內容與情緒外，社群媒體資料的另一個重要價值在於互動結構。\eng{Network analysis} 可將使用者、內容
+或互動行為轉化為 node 與 edge，藉此分析群體結構、中心節點、橋接角色與社群分群。\citet{newman2006} 指出，
+許多真實世界網路會自然形成 \eng{community structure}，也就是群內連結密集、群外連結較稀疏的節點群。
+\citet{blondel2008} 提出的 \eng{Louvain method} 則是常用的大型網路 community detection 方法，可透過
+\eng{modularity optimization} 偵測大型網路中的社群結構。
+
+本研究將此觀點應用於 YouTube 留言分析，建立 co-commenter network。留言者為 node，若兩位留言者曾在同一支
+影片下留言，則建立 edge；edge weight 則代表兩人共同留言過的影片數。此關係並不代表留言者之間存在真實社交關係，
+而是代表兩者共同參與相同內容，可能具有相似內容偏好或受到相似主題吸引。透過 community detection，本研究可
+辨識頻道內部是否存在不同 audience communities。
+
+然而，community detection 本身只能得到結構上的分群，無法自動提供商業意義。因此，本研究進一步將每個社群與
+影片主題偏好、情緒分布、ABSA 負面主體與代表影片連結，建立 \eng{audience segment profile}。如此一來，觀眾
+社群不只是 Community~1 或 Community~2，而能被解釋為具有不同內容偏好、情緒風險與經營價值的 audience personas。
+
+\subsection{負面擴散、留言衝突與外部事件}
+
+YouTube 留言區不只是單向評論空間，也包含觀眾之間的回覆、反駁、爭論與圍攻。單純 negative rate 無法判斷負面
+是否已經升級為社群摩擦；若負面留言獲得大量按讚、引發大量 replies，或形成 parent opposition 與 pile-on，
+則代表負面意見可能已被放大並進入互動衝突階段。
+
+\eng{Online firestorm} 與 social media crisis 文獻可支撐此觀點。\citet{pfeffer2014} 將 online
+firestorm 描述為社群網路中大量負面 \eng{word-of-mouth} 的動態現象，並指出社群平台可能使負面訊息快速擴散。
+\citet{heydari2019} 研究 political and misinformative YouTube videos，發現高度極化或錯誤資訊相關頻道
+可能產生更高的 \eng{comments per view} 與 \eng{replies per view}，顯示爭議內容可能帶來更高的留言互動密度。
+
+因此，本研究將 reply-thread conflict 與 \eng{external event reflection} 納入分析框架。前者透過 conflict
+thread、pile-on、parent opposition 與 conflict score 判斷 YouTube 留言區是否出現觀眾間摩擦；後者則將
+PTT、Dcard、Threads 或新聞事件建立為外部事件時間軸，觀察事件前後 YouTube 留言量、負面率、ABSA 負面主體、
+reply conflict 與新留言者比例是否出現同步變化。本研究不宣稱外部事件造成 YouTube 留言變化，而是將其視為可能
+反映外部輿論進入頻道留言區的關聯跡象。
+
+\subsection{小結}
+
+綜合上述文獻，本研究將既有概念應用於 YouTube 創作者頻道的互動品質診斷。Vanity metrics 與 critical
+analytics 文獻支持本研究超越 views、likes、comments 等表面指標；YouTube comments 與 ABSA 文獻支持本研究
+分析留言情緒與負面主體；network analysis 與 community detection 文獻支持本研究使用 co-commenter network
+分析觀眾社群；online firestorm 與 YouTube conflict 文獻則支持本研究將 reply conflict 與外部事件納入風險
+分析。因此，本研究以 The DoDo Men 為例，整合留言者分層、回訪率、co-commenter network、Qwen sentiment、
+Qwen ABSA、reply-thread conflict、external event timeline 與 broad benchmark，嘗試從「互動數量」進一步
+分析「互動品質」，判斷哪些互動代表長期社群資產，哪些互動可能來自短期爭議、負面情緒或外部事件風險。

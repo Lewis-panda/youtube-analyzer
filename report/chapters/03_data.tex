@@ -1,0 +1,71 @@
+\section{資料取得}
+
+\subsection{研究對象}
+
+本研究的主要分析個案為台灣 YouTube 頻道 \textbf{The DoDo Men－嘟嘟人}（頻道訂閱數約 166 萬、累計觀看數
+約 3.73 億、公開影片約 719 支）。該頻道以雙主持人、旅遊企劃、生活內容與來賓互動為核心，留言互動量大且主題
+多元，適合用於示範本研究的留言社群洞察框架。
+
+除個案頻道外，本研究另蒐集 48 個台灣 \eng{creator／media} YouTube 頻道，作為相對解讀的 \eng{broad
+benchmark} 樣本。需要注意的是，此 cohort 為廣義樣本，尚未依頻道主題、受眾組成或內容格式建立 \eng{matched
+peer group}，因此其百分位數僅作為相對位置與異常程度的參考，而非同類型頻道排名（詳見第~\ref{sec:limit} 節）。
+
+\subsection{YouTube 資料來源與分析範圍}
+
+本研究透過 YouTube 公開資料蒐集影片 metadata（標題、描述、標籤、發布時間、觀看數、按讚數、留言數）與留言
+資料（留言文字、按讚數、發布時間、回覆結構）。在分析範圍設定上，本研究排除 Shorts（片長 $\le 180$ 秒之短片），
+僅保留正片，並以實際抓取到的留言為分析母體。表~\ref{tab:scope} 整理 The DoDo Men 的分析範圍。
+
+\begin{table}[H]
+\centering
+\caption{The DoDo Men 分析範圍概覽}
+\label{tab:scope}
+\small
+\begin{tabular}{lr}
+\toprule
+\textbf{項目} & \textbf{數值}\\
+\midrule
+分析範圍影片數（排除 Shorts） & 351 \\
+影片發布時間範圍 & 2020-02 $\sim$ 2026-05 \\
+主留言數（top-level，結構/網路/分層口徑） & 247{,}068 \\
+情緒標註留言數（含回覆，Qwen 口徑） & 305{,}011 \\
+\quad（其中回覆） & 57{,}943 \\
+不重複留言者數 & 112{,}108 \\
+Benchmark cohort 頻道數 & 48 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+需特別說明留言口徑的差異。為降低偶然共現造成的網路雜訊，本研究的「留言者活躍分層、回訪率與 co-commenter
+network」等結構分析僅採用主留言（top-level comments，共 247{,}068 則）；而 Qwen 情緒與 ABSA 標註則涵蓋
+主留言與回覆（共 305{,}011 則，其中回覆 57{,}943 則），以利後續 reply-thread conflict 分析能納入回覆串
+結構。兩種口徑在後續結果呈現時皆會標明。
+
+\subsection{Qwen 標註資料}
+
+本研究除 YouTube raw data 外，也使用 Qwen 產生的文字標註資料作為後續分析欄位。Qwen 標註包含三類：
+
+\begin{enumerate}
+  \item \textbf{影片主題標註}：根據影片 title、description 與 tags，將影片分類為不同內容主題（如旅遊探索、
+        團隊日常、來賓關係、職場科技、荒野求生、爭議回應等）。
+  \item \textbf{留言情緒標註}：將每則留言分為 positive、neutral 與 negative。
+  \item \textbf{ABSA 語意主體／面向標註}：辨識留言情緒所指向的主體或面向，例如創作者本人（host persona）、
+        內容品質（content quality）、真實性／造假（authenticity）、剪輯節奏（pacing／editing）、合作對象
+        （guest／collab）、業配（commercial／sponsorship）與價值觀／政治（cultural values／politics）等。
+\end{enumerate}
+
+若部分資料缺少標註，則於後續分析中記錄 coverage，並視情況排除或使用 fallback 方法處理。
+
+\subsection{外部輿論資料}
+
+外部輿論資料來自台灣社群平台 \textbf{PTT} 與 \textbf{Dcard}。本研究依關鍵字與頻道別名蒐集與 The DoDo Men
+相關的外部貼文，記錄每則貼文的日期、來源平台、主題與互動量（推文、回覆等），再依時間聚合為外部事件叢集
+（external event clusters）。每個事件叢集包含事件日期、來源平台、事件主題、外部貼文量與互動量，作為後續
+外部事件反映分析的時間軸基礎（詳見第~\ref{sec:method-external} 節與第~\ref{sec:case-external} 節）。
+
+\subsection{資料限制}
+\label{sec:data-limit}
+
+本研究資料主要代表可取得的公開留言與影片 metadata。資料不包含未留言觀眾、觀看序列、觀眾留存曲線、推薦來源、
+完整人口統計資料、刪除留言或無法取得的歷史留言。因此，本研究分析對象應界定為 \eng{active commenting
+audience}，而非頻道全部觀眾。更完整的研究限制討論詳見第~\ref{sec:limit} 節。

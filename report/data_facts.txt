@@ -1,0 +1,78 @@
+===== CHANNEL OVERVIEW =====
+  subscriber_count: 1660000
+  view_count_api: 372943003
+  video_count_api: 719
+  n_comments_in_scope: 247068
+  n_videos_in_scope: 351
+  n_commenters_in_scope: 112108
+
+===== ENGAGEMENT =====
+  comments_per_1k_views: val=0.8003191610672242, PR=39.6, mean=1.1343
+
+===== COMMENTER TIERS =====
+  core: n=990, pct_commenters=0.9%
+  regular: n=3265, pct_commenters=2.9%
+  returning: n=31536, pct_commenters=28.1%
+  one_time: n=76317, pct_commenters=68.1%
+  one_time_tier_commenter_share: val=0.680745352696, PR=14.6, mean=0.7847
+  high_mid_tier_commenter_share: val=0.037954472473, PR=37.5, mean=0.0783
+  high_mid_tier_comment_share: val=0.2925105638933411, PR=56.2, mean=0.2914
+
+===== RETURN / RETENTION =====
+  continuity_return_rate_w4: val=0.2486657583921492, PR=81.2, mean=0.1665
+  rolling_return_rate_latest: val=0.3046249890090565, PR=91.2, mean=0.1762
+
+===== SENTIMENT =====
+  sentiment_summary: {'sentiment_label': 'negative', 'n_comments': 22899, 'pct_comments': 0.07507598086626384, 'like_w': 213463.0, 'like_weighted_share': 0.051628877130030094, 'avg_score_neg': 0.9038953666098958, 'avg_score_neu': 0.05521856849644083, 'avg_score_pos': 0.04088606489366341, 'avg_confidence': 0.6999999999999998, 'n_replies': 5253, 'reply_share': 0.22939866369710468}
+  sentiment_summary: {'sentiment_label': 'neutral', 'n_comments': 137608, 'pct_comments': 0.4511574992377324, 'like_w': 1411763.0, 'like_weighted_share': 0.34145373420088104, 'avg_score_neg': 0.06846495116562983, 'avg_score_neu': 0.8628404598569853, 'avg_score_pos': 0.06869458897738498, 'avg_confidence': 0.6999999999999998, 'n_replies': 35740, 'reply_share': 0.25972327190279637}
+  sentiment_summary: {'sentiment_label': 'positive', 'n_comments': 144504, 'pct_comments': 0.47376651989600377, 'like_w': 2509340.0, 'like_weighted_share': 0.6069173886690888, 'avg_score_neg': 0.045479779106460644, 'avg_score_neu': 0.05329305763162258, 'avg_score_pos': 0.9012275092731, 'avg_confidence': 0.6999999999999998, 'n_replies': 16950, 'reply_share': 0.11729779106460721}
+  positive_rate: val=0.4737665198960037, PR=72.9, mean=0.357
+  negative_rate: val=0.0750759808662638, PR=37.5, mean=0.1181
+  like_weighted_negative_rate: val=0.05162887713003, PR=35.4, mean=0.1133
+
+===== NETWORK / COMMUNITY =====
+  n_communities: 3
+  modularity: 0.31084975814723154
+  community_concentration_hhi: 0.37138049790765537
+  community_hhi: None
+  largest_community_share: 0.47746669442131556
+  effective_communities: 2.6926561993264717
+  n_nodes: 19216
+  n_edges: 1796606
+
+===== ARCHETYPE + INDICES =====
+  archetype: 穩定討論引擎型 - 互動與回訪都強，且風險壓力未明顯偏高；適合擴大系列內容與核心觀眾經營。
+  互動轉換力: 70.1 (偏高)
+  核心黏著度: 66.5 (偏高)
+  討論品質: 64.1 (中段)
+  情緒風險壓力: 47.9 (中段)
+  社群集中度: 86.5 (非常高)
+  內容組合連通性: 50.8 (中段)
+
+===== AUDIENCE SEGMENT PROFILES =====
+  community 2: size={'n_commenters': 9175, 'pct_active_commenters': 47.746669442131555, 'summary_zh': '47.7% of active commenters'} (0%)
+     over-indexed: [('教育建議', 1.68), ('職場科技', 1.45), ('other', 1.35)]
+     sentiment pos/neu/neg: 0.507 0.442 0.051
+     business_advice: 適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。
+  community 1: size={'n_commenters': 6148, 'pct_active_commenters': 31.994171523730223, 'summary_zh': '32.0% of active commenters'} (0%)
+     over-indexed: [('荒野求生', 2.43), ('爭議回應', 2.14), ('品牌合作', 1.67)]
+     sentiment pos/neu/neg: 0.472 0.447 0.081
+     business_advice: 適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。
+  community 0: size={'n_commenters': 3893, 'pct_active_commenters': 20.259159034138218, 'summary_zh': '20.3% of active commenters'} (0%)
+     over-indexed: []
+     sentiment pos/neu/neg: 0.507 0.426 0.066
+     business_advice: 適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。
+
+===== CHANNEL ASPECTS =====
+  POSITIVE: [('host_persona', 35), ('content_quality_information', 28), ('cultural_values_politics', 6), ('authenticity_fabrication', 6)]
+  NEGATIVE: [('cultural_values_politics', 28), ('authenticity_fabrication', 28), ('content_quality_information', 19), ('host_persona', 16)]
+
+===== CONFLICT HOTSPOT VIDEOS =====
+  衝突9 圍剿0 對立8 score=6.59 | 巴拉圭人超愛台灣！開箱邦交國的外交生活！
+  衝突16 圍剿0 對立17 score=6.53 | 【荒島求生】Day1：自己DIY蓋避難所！第一晚就快受不了超崩潰！
+  衝突16 圍剿1 對立14 score=6.43 | 跟倉儲職業級高手的開箱合作！從天堂到地獄的超猛倉儲競標！
+  衝突17 圍剿8 對立16 score=5.17 | 到台灣高中第一志願教課！發現建中學生根本不唸書！？
+  衝突20 圍剿3 對立15 score=4.84 | 從荷蘭帶超年輕小帥哥回台灣！初次到亞洲旅遊結果水土不服！？
+
+===== EXTERNAL EVENTS =====
+  total events=8, with>=1 signal=2

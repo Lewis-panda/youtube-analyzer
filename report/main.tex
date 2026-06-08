@@ -1,0 +1,100 @@
+% =====================================================================
+%  從頻道表現到留言社群洞察：台灣 YouTube 頻道的 Audience Intelligence 分析
+%  以 The DoDo Men－嘟嘟人為例
+%
+%  Compile with XeLaTeX (Traditional Chinese, Noto CJK TC fonts):
+%      latexmk -xelatex main.tex        (see build.sh)
+% =====================================================================
+\documentclass[12pt,a4paper]{article}
+
+% ---------- XeLaTeX + Traditional Chinese ----------
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Serif CJK TC}
+\setCJKsansfont{Noto Sans CJK TC}
+\setCJKmonofont{Noto Sans CJK TC}
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{Liberation Mono}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+% ---------- math ----------
+\usepackage{amsmath}
+
+% ---------- page layout ----------
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing                 % 1.5 line spacing (course requirement)
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{2em}
+
+% ---------- typography & structure ----------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\sffamily}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\sffamily}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\sffamily}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+\usepackage{enumitem}
+\setlist{itemsep=1pt,topsep=2pt,parsep=0pt}
+
+% ---------- tables & figures ----------
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\definecolor{ink}{HTML}{1F252C}
+\definecolor{teal}{HTML}{0F766E}
+\definecolor{coral}{HTML}{BE4B49}
+\definecolor{gold}{HTML}{B7791F}
+\definecolor{soft}{HTML}{EDF2F6}
+\usepackage{caption}
+\captionsetup{font=small,labelfont={bf,sf},skip=4pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% ---------- diagrams ----------
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc,fit,backgrounds,decorations.pathreplacing}
+
+% ---------- citations ----------
+\usepackage[round,authoryear]{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+% ---------- header / footer ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\lhead{\small\sffamily YouTube 留言社群洞察}
+\rhead{\small\sffamily The DoDo Men 個案}
+\cfoot{\small\thepage}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={YouTube 留言社群洞察：The DoDo Men 個案},
+            pdfauthor={SMA Group}}
+
+% ---------- helper macros ----------
+\newcommand{\TODO}[1]{{\color{coral}\textbf{[TODO: #1]}}}
+\newcommand{\eng}[1]{\textit{#1}}   % inline English term
+
+% =====================================================================
+\begin{document}
+
+\input{chapters/00_titlepage}
+
+\input{chapters/01_motivation}
+\input{chapters/02_literature}
+\input{chapters/03_data}
+\input{chapters/04_methodology}
+\input{chapters/05_case_study}
+\input{chapters/06_conclusion}
+\input{chapters/07_references}
+\input{chapters/08_contribution}
+
+\end{document}

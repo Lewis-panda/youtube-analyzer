@@ -1451,8 +1451,10 @@ function replyBaselineBars(replyOverview) {
 }
 
 function themeRiskBars(rows) {
-  const usable = (rows || [])
-    .filter((row) => row.primary_theme || row.theme_label)
+  const usable = withMinSample(
+    (rows || []).filter((row) => row.primary_theme || row.theme_label),
+    MIN_THEME_COMMENTS,
+  )
     .map((row) => ({
       theme: row.primary_theme || row.theme_label,
       n_comments: row.n_comments,
@@ -1498,9 +1500,10 @@ function videoPositiveReasons(videoId, aspectMap, aspectLabels) {
 }
 
 function positiveVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
-  const usable = (rows || [])
-    .map((row) => ({ ...row, n_comments_num: Number(row.n_comments || 0) }))
-    .filter((row) => row.n_comments_num >= 50)
+  const usable = withMinSample(
+    (rows || []).map((row) => ({ ...row, n_comments_num: Number(row.n_comments || 0) })),
+    MIN_VIDEO_COMMENTS,
+  )
     .sort((a, b) => Number(b.like_weighted_positive_rate || b.positive_rate || 0) - Number(a.like_weighted_positive_rate || a.positive_rate || 0))
     .slice(0, 6);
   if (!usable.length) return `<div class="empty-state">沒有高正面影片資料</div>`;
@@ -1522,9 +1525,22 @@ function positiveVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
     .join("")}</div>`;
 }
 
+const MIN_THEME_COMMENTS = 30;
+const MIN_VIDEO_COMMENTS = 50;
+
+function withMinSample(rows, min) {
+  // Drop low-sample rows so a theme/video with a handful of comments cannot top a
+  // rate ranking (e.g. 1 comment = 100% positive). Fall back to all rows when the
+  // filter would leave nothing (small channels), so panels never go empty.
+  const ok = (rows || []).filter((row) => Number(row.n_comments ?? row.n_comments_num ?? 0) >= min);
+  return ok.length ? ok : rows || [];
+}
+
 function positiveThemeBars(rows) {
-  const usable = (rows || [])
-    .filter((row) => row.primary_theme || row.theme_label)
+  const usable = withMinSample(
+    (rows || []).filter((row) => row.primary_theme || row.theme_label),
+    MIN_THEME_COMMENTS,
+  )
     .sort((a, b) => Number(b.like_weighted_positive_rate || b.positive_rate || 0) - Number(a.like_weighted_positive_rate || a.positive_rate || 0))
     .slice(0, 8);
   if (!usable.length) return `<div class="empty-state">沒有題材正面資料</div>`;
@@ -1591,7 +1607,7 @@ function videoAspectReasons(videoId, aspectMap, aspectLabels) {
 }
 
 function riskVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
-  const usable = (rows || [])
+  const usable = withMinSample(rows || [], MIN_VIDEO_COMMENTS)
     .map((row) => {
       const rawNeg = Number(row.like_weighted_negative_rate || row.negative_rate || 0);
       const impactShare = videoImpactfulNegativeShare(row.video_id, aspectMap);

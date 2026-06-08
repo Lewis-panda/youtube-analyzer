@@ -957,6 +957,94 @@ select:focus {
   font-style: normal;
 }
 
+.health-archetype {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--teal-soft);
+  border: 1px solid var(--line);
+}
+
+.health-archetype strong {
+  font-size: 16px;
+  color: var(--teal);
+}
+
+.health-archetype p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.health-index-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+}
+
+.health-index {
+  display: grid;
+  gap: 5px;
+  cursor: help;
+}
+
+.health-index-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.health-index-top strong {
+  font-size: 14px;
+}
+
+.health-index-top span {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.health-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  overflow: hidden;
+}
+
+.health-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--line-strong);
+}
+
+.health-index.good .health-bar i {
+  background: var(--green);
+}
+
+.health-index.warn .health-bar i {
+  background: var(--gold);
+}
+
+.health-index.risk .health-bar i {
+  background: var(--coral);
+}
+
+.health-index.mid .health-bar i {
+  background: var(--teal);
+}
+
+.health-index p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
 .strategy-headline {
   margin: 0;
   font-size: 15px;

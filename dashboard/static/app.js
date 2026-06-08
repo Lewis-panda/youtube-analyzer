@@ -202,7 +202,6 @@ async function renderOverview(root) {
 function renderBenchmark(root) {
   const metrics = currentChannel.baseline?.all_metrics || [];
   const metricMap = Object.fromEntries(metrics.map((item) => [item.metric, item]));
-  const maps = currentChannel.analysis?.benchmark_maps || {};
   const caution = currentChannel.baseline?.comparison_caution_zh || indexData.demo_focus?.comparison_caution_zh || "";
   root.innerHTML = `
     <section class="benchmark-warning">
@@ -212,44 +211,15 @@ function renderBenchmark(root) {
       </div>
     </section>
 
-    <section class="split-layout">
-      <article class="panel">
-        <div class="panel-head">
-          <div>
-            <h3>同儕位置圖 ${infoTip("以互動 vs 情緒風險把本頻道放進 cohort 散布的象限位置。參考分布來自完成案例，尚非同題材 matched cohort。社群集中度/分群清晰度等社群網路指標已移到『觀眾』分頁的分群結果。")}</h3>
-          </div>
-        </div>
-        ${scatterPlot("engagement_vs_risk")}
-        <div class="compact-note">
-          <span>象限判讀</span>
-          ${infoTip(Object.values(maps.engagement_vs_risk?.quadrant_hints_zh || {}).join("\n"))}
-        </div>
-      </article>
-      <article class="panel">
-        <div class="panel-head">
-          <div>
-            <h3>關鍵指標分布 ${infoTip("顯示 cohort 的平均與常見範圍（IQR，中間 50% 落點），以及本頻道目前值的相對位置。cohort 僅 48 個頻道，故以平均為基準參考；百分位只代表相對位置，不代表好壞。")}</h3>
-          </div>
-          <small>顯示平均 / 常見範圍 / 目前頻道</small>
-        </div>
-        <div class="bullet-list">
-          ${selectedMetrics.map((metric) => bulletMetric(metricMap[metric])).join("")}
-        </div>
-      </article>
-    </section>
-
     <section class="panel">
       <div class="panel-head">
         <div>
-          <h3>比較基準頻道 ${infoTip("cohort 各指標的排行榜，純粹提供脈絡參考，不是頻道好壞的評分。")}</h3>
+          <h3>關鍵指標分布 ${infoTip("把本頻道的關鍵指標放進 48 個 benchmark 頻道的分布。算法：橫條為 cohort 的常見範圍（IQR，中間 50% 落點），中線＝cohort 平均，標記＝本頻道目前值。cohort 僅 48 個頻道故以平均為基準；百分位只代表相對位置，不代表好壞。")}</h3>
         </div>
+        <small>顯示平均 / 常見範圍 / 目前頻道</small>
       </div>
-      <div class="leaderboard-grid">
-        ${(indexData.dashboard_statistics?.leaderboards || [])
-          .filter((lb) => !/community|modular|network/i.test(String(lb.metric || "")))
-          .slice(0, 8)
-          .map(leaderboard)
-          .join("")}
+      <div class="bullet-list">
+        ${selectedMetrics.map((metric) => bulletMetric(metricMap[metric])).join("")}
       </div>
     </section>
   `;
@@ -544,10 +514,10 @@ function naCompareBlock(baselineShare, postShare) {
 }
 
 async function renderStrategy(root) {
-  const report = await safeFetchReport();
   const brief = currentChannel.analysis?.strategy_brief;
   root.innerHTML = `
     ${sectionIntro("策略輸出")}
+    ${aiHealthCheckSection(currentChannel.analysis)}
     ${
       brief?.items?.length
         ? strategyBriefSection(brief)
@@ -556,11 +526,44 @@ async function renderStrategy(root) {
             <div class="decision-list">${(currentChannel.analysis?.decision_queue || []).map(decisionRow).join("") || `<div class="empty-state">沒有策略清單資料</div>`}</div>
           </section>`
     }
-    <details class="report-details">
-      <summary>完整統計文字</summary>
-      <pre class="report-box">${escapeHtml(report || "目前沒有統計報告。")}</pre>
-    </details>
   `;
+}
+
+function aiHealthCheckSection(analysis) {
+  const arche = analysis?.archetype;
+  const indices = analysis?.indices || [];
+  if (!arche && !indices.length) return "";
+  return `
+    <section class="panel">
+      <div class="panel-head"><div><h3>AI 社群健檢 ${infoTip("由分析指標自動彙整的整體判讀（規則式，非逐字 LLM）。算法：archetype 依 6 大指數的高低組合分類；每個指數＝其組成指標的 benchmark 百分位平均(0–100)，risk 類已把負面/衝突 component 反向後再合成。僅相對 48 個 cohort 頻道，不是絕對好壞。游標停在每條看該指數要回答的問題與判讀。")}</h3></div></div>
+      ${
+        arche
+          ? `<div class="health-archetype"><strong>${escapeHtml(arche.label_zh)}</strong><p>${escapeHtml(arche.summary_zh)}</p></div>`
+          : ""
+      }
+      <div class="health-index-list">${indices.map(healthIndexRow).join("")}</div>
+    </section>`;
+}
+
+function healthIndexRow(idx) {
+  const score = Number(idx.score) || 0;
+  const risk = idx.polarity === "risk_high";
+  const high = score >= 66.7;
+  const low = score < 33.3;
+  let tone = "mid";
+  if (idx.polarity === "mixed_high") tone = "mid";
+  else if (risk) tone = high ? "risk" : low ? "good" : "mid";
+  else tone = high ? "good" : low ? "warn" : "mid";
+  const tip = `${idx.question_zh || ""}\n\n${idx.interpretation_zh || ""}`;
+  return `
+    <div class="health-index ${tone}" data-chart-tooltip="${tooltipAttr(tip)}">
+      <div class="health-index-top">
+        <strong>${escapeHtml(idx.label)}</strong>
+        <span>${escapeHtml(idx.band || "")} · ${Math.round(score)}/100</span>
+      </div>
+      <div class="health-bar"><i style="width:${Math.max(2, Math.min(100, score)).toFixed(0)}%"></i></div>
+      <p>${escapeHtml(idx.interpretation_zh || "")}</p>
+    </div>`;
 }
 
 function strategyBriefSection(brief) {

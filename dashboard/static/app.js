@@ -9,7 +9,6 @@ const pages = [
   { id: "audience", label: "觀眾" },
   { id: "sentiment", label: "情緒/衝突" },
   { id: "external_events", label: "外部討論" },
-  { id: "benchmark", label: "相對定位" },
   { id: "strategy", label: "策略輸出" },
 ];
 
@@ -178,7 +177,6 @@ async function renderPage() {
   else if (currentPage === "audience") await renderAudience(root);
   else if (currentPage === "sentiment") await renderSentiment(root);
   else if (currentPage === "external_events") await renderExternalEvents(root);
-  else if (currentPage === "benchmark") renderBenchmark(root);
   else if (currentPage === "strategy") await renderStrategy(root);
 }
 

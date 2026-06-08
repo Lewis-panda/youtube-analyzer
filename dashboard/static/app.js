@@ -283,12 +283,12 @@ async function renderAudience(root) {
       </article>
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類。每張卡片＝一個社群。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
+      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類(用『則數』算、純歸屬作者群)。每張卡片＝一個社群。注意：YouTube 只給留言的讚數、不給『誰按的』，所以任何按讚加權指標反映的是廣大觀眾(可能跨群、甚至純看客)的放大，不等於該社群自己的認同。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
       ${audienceStructureCards(s.network_summary || {})}
       ${communityPersonaCards(s.community_profiles || [], channelThemeNeg)}
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>社群 × 題材：誰對什麼內容特別容易負面 ${infoTip("回答『不同觀眾社群對不同題材是否有不同敏感度／互動風險』。把每個社群 × 每個題材的留言拆開，依『按讚加權負面率』(負面被按讚放大＝更多人認同的負面，互動風險較高)排序。括號的『投入 X×』＝該社群在此題材的 affinity lift(>1＝特別投入)，投入高又負面高＝該群在這題材最容易出事。只取留言量足夠的組合。")}</h3></div></div>
+      <div class="panel-head"><div><h3>社群 × 題材：誰對什麼內容特別容易負面 ${infoTip("回答『不同觀眾社群對不同題材是否有不同敏感度／互動風險』。把每個社群 × 每個題材的留言拆開，依『原始負面率』(用則數算、純歸屬該群作者)排序，主數值與長條都是它。括號的『投入 X×』＝該社群在此題材的 affinity lift(>1＝特別投入)，投入高又負面高＝該群在這題材最容易出事。另附『按讚加權』作為放大/能見度參考——但 YouTube 不給『誰按讚』，讚可能來自其他群或純看客，不代表該群自己更負面。只取留言量足夠(≥200)的組合。")}</h3></div></div>
       ${communityThemeRisk(ctSentiment, ctAffinity, communityName)}
     </section>
   `;
@@ -304,8 +304,8 @@ function communityThemeRisk(ctRows, affRows, communityName) {
     .map((row) => ({
       community: String(row.community),
       theme: row.primary_theme,
-      neg: Number(row.like_weighted_negative_rate || row.negative_rate || 0),
-      rawNeg: Number(row.negative_rate || 0),
+      neg: Number(row.negative_rate || 0),
+      likeNeg: Number(row.like_weighted_negative_rate || 0),
       n: Number(row.n_comments) || 0,
       lift: Number(aff[`${row.community}|${row.primary_theme}`]),
     }))
@@ -319,7 +319,7 @@ function communityThemeRisk(ctRows, affRows, communityName) {
       <div class="insight-row">
         <div class="insight-label">
           <strong>${escapeHtml(communityName[row.community] || `社群 ${row.community}`)} · ${escapeHtml(themeLabel(row.theme))}</strong>
-          <span>${fmtCompact(row.n)} 留言${Number.isFinite(row.lift) ? ` · 投入 ${row.lift.toFixed(2)}×` : ""} · 原始負面 ${formatValue(row.rawNeg, "rate")}</span>
+          <span>${fmtCompact(row.n)} 留言${Number.isFinite(row.lift) ? ` · 投入 ${row.lift.toFixed(2)}×` : ""} · 按讚加權 ${formatValue(row.likeNeg, "rate")}（放大·讚來源不明）</span>
         </div>
         <div class="risk-track"><i style="width:${Math.max(3, (row.neg / max) * 100).toFixed(0)}%"></i></div>
         <div class="insight-value">${formatValue(row.neg, "rate")}</div>

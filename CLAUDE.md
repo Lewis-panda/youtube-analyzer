@@ -37,6 +37,29 @@ run out of tokens mid-task — this file lets any session resume cleanly.
   `load_optional_strategy_brief` merges it into `analysis.strategy_brief`).
 - External page focused on "does external discussion bring new audience" vs baseline.
 
+## TODO QUEUE 2 — 2026-06-09 (in progress)
+
+1. **[DONE]** 總覽 KPI 重複：訂閱/總觀看/總影片/分析留言 與 `channelReportCard` 重複 → 移除 KPI strip。
+
+2. **外部頁：事件前後『同步變化』跨指標**（= 原 paused 事件 detail）。每個外部事件呈現
+   事件前後是否同步變化：YouTube 留言量(`comment_volume_lift_vs_baseline`)、負面率
+   (`delta_post_vs_baseline_negative_rate_pp`)、ABSA 負面主體（事件窗負面面向變化，較難；
+   `external_events/comment_aspect_daily` 或先標 future）、reply conflict
+   (`conflict_score_lift_vs_baseline`)、新留言者比例(已有)。資料：
+   `runs/<slug>/external_events/external_event_impact_diagnostics.csv`（多數欄位都有；
+   前端 fetchTableRows("external_event_impact_diagnostics")）。
+
+3. **分群頁 content sensitivity (RQ3)**：每個觀眾社群顯示 群體大小/留言量/活躍程度/觸及影片數/
+   偏好影片主題/theme affinity lift/情緒分布/高負面主題/代表影片/商業角色+策略。多數已在
+   `audience_segment_profiles`（`preferred_themes`、`over_indexed_themes[lift]`、`negative_sources`、
+   `preferred_videos`、`main_sentiment`、`business_advice`、`group_size`）。檢查是否有
+   `community_theme_affinity.csv` 可補 affinity lift。重點：呈現「哪一群對哪一類內容特別正/負/易互動」。
+
+4. **正面 ABSA**：positive ABSA 已完成（`runs/dodomen-generic-demo/tables/qwen_comment_absa_positive.csv`，
+   144,503 列、0 parse error）。擴充 `scripts/generate_dashboard_video_absa.py` 也產
+   `video_positive_aspect_summary.csv`（per-video 正面面向，讀 positive csv），rebuild dashboard，
+   前端「正面亮點」加 per-video 正面原因（analog 現有負面的 `videoAspectReasons`）。
+
 ## TODO QUEUE — ALL 6 DONE 2026-06-08 (frontend only, no rebuild needed; kept for reference)
 
 Minor remaining cleanup (harmless): after removing the 共享觀眾 tab, these helpers

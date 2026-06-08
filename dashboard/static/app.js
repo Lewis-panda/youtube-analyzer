@@ -192,13 +192,6 @@ async function renderOverview(root) {
     ${sectionIntro("總覽")}
     ${channelReportCard(ch, overview, s)}
 
-    <section class="metric-strip overview-kpis">
-      ${metricTile("訂閱數", ch.subscriber_count ?? overview.subscriber_count, "n")}
-      ${metricTile("總觀看次數", ch.view_count_api ?? overview.channel_view_count_api, "n")}
-      ${metricTile("總影片數", ch.video_count_api ?? overview.channel_video_count_api, "n")}
-      ${metricTile("分析留言數", ch.n_comments_in_scope ?? overview.n_comments_in_scope, "n")}
-    </section>
-
     <section class="panel">
       <div class="panel-head"><div><h3>互動概況 ${infoTip("每千次觀看的留言數、按讚/觀看等互動比率，取分析範圍影片的留言/按讚相對觀看次數彙總。只反映留言與按讚行為，留言者僅是觀看者的一小部分，不能視為全體觀眾。")}</h3></div></div>
       ${overviewEngagementBars(s)}

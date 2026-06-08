@@ -2167,6 +2167,12 @@ select:focus {
   color: var(--teal);
 }
 
+.na-titles {
+  cursor: help;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+
 .na-signal-badge {
   flex-shrink: 0;
   font-size: 11px;

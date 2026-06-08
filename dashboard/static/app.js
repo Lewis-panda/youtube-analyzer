@@ -238,11 +238,16 @@ async function renderContent(root) {
   const themeSummary = await fetchTableRows("theme_summary", 20);
   const sentTheme = await fetchTableRows("sentiment_theme_summary", 20);
   const conflictTheme = await fetchTableRows("reply_conflict_theme_summary", 20);
+  const videoThemes = await fetchTableRows("qwen_video_themes", 2000);
+  const themeViews = {};
+  (videoThemes || []).forEach((row) => {
+    if (row.primary_theme) themeViews[row.primary_theme] = (themeViews[row.primary_theme] || 0) + (Number(row.view_count) || 0);
+  });
   root.innerHTML = `
     ${sectionIntro("內容")}
     <section class="panel">
-      <div class="panel-head"><div><h3>題材一覽 ${infoTip("一張表把每個題材的『量、情緒、衝突』一次看完，不用跨頁。題材由 Qwen 依影片標題/描述/標籤分類。算法：留言量＝該題材影片的留言則數；正/負面率＝該題材該情緒則數÷留言則數；衝突分數＝衝突討論串數 × 回覆衝突串比例（回覆結構，與負面率不同）。")}</h3></div></div>
-      ${themeOverview(themeSummary, sentTheme, conflictTheme)}
+      <div class="panel-head"><div><h3>題材一覽 ${infoTip("一張表把每個題材的『互動密度、情緒、衝突』一次看完，不用跨頁。題材由 Qwen 依影片標題/描述/標籤分類。算法：留言/千觀看＝該題材所有影片的留言則數 ÷ 觀看數 ×1000（已對觀看正規化，比『留言量』更能看出哪種題材真的引發互動，不會只因為片多/觀看高就大）；正/負面率＝該題材該情緒則數÷留言則數；衝突分數＝衝突討論串數 × 回覆衝突串比例（回覆結構，與負面率不同）。游標停在數字可看原始留言/觀看。")}</h3></div></div>
+      ${themeOverview(themeSummary, sentTheme, conflictTheme, themeViews)}
     </section>
     <section class="panel">
       <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的留言數（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；留言數＝爬取到的該片留言數；負面率＝該片負面留言÷留言數；外部事件取自外部討論分析。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
@@ -253,7 +258,7 @@ async function renderContent(root) {
       ${videoEngagementTable(videos)}
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>觀看數 vs 按讚數 ${infoTip("每支影片的累積觀看對累積按讚散布，用來看讚/觀看比的相對位置與離群影片。僅為累積值，不代表流量趨勢。")}</h3></div></div>
+      <div class="panel-head"><div><h3>觀看數 vs 按讚數 ${infoTip("每個點是一支影片：X 軸＝累積觀看數、Y 軸＝累積按讚數（軸為對數，跨數量級才看得清）。算法／怎麼看：點落在同一條斜線上代表『讚/觀看比＝按讚數 ÷ 觀看數』相近；落在多數點上方＝該片按讚轉換特別好(同樣觀看拿到更多讚)，下方＝偏低；離群在右下＝高觀看但讚偏少。用來找按讚轉換的高/低標影片。皆為累積值，不代表流量趨勢；讚是匿名的、只反映有按讚的人。")}</h3></div></div>
       ${likesViewsPanel(videos)}
     </section>
   `;
@@ -414,7 +419,7 @@ async function renderSentiment(root) {
         ${conflictVideoCards(s.reply_conflict_hotspots || [])}
       </article>
       <article class="panel">
-        <div class="panel-head"><div><h3>高衝突題材 ${infoTip("把同樣的衝突分數彙整到 Qwen 主題層級，看哪些題材最容易引發對立討論。")}</h3></div></div>
+        <div class="panel-head"><div><h3>高衝突題材 ${infoTip("看哪些題材『比例上』最容易引發對立討論。算法＝衝突率＝該題材的衝突討論串數 ÷ 有回覆的討論串數（不是衝突『量』，所以大題材不會只因為串多就排前面）。只取有回覆串 ≥20 的題材避免小樣本雜訊。衝突來自回覆串結構（圍剿、對立母串），與單純負面率不同。")}</h3></div></div>
         ${themeConflictBars(themeConflict)}
       </article>
     </section>
@@ -456,6 +461,7 @@ function newAudienceRows(rows, diagMap = {}) {
         date: compactDate(row.event_date || row.event_start),
         sources: sourceLabelList(row.sources),
         posts: Number(row.external_posts) || 0,
+        titles: String(row.top_titles || ""),
         baselineShare: Number(row.baseline_new_commenter_share),
         postShare: Number(row.post_new_commenter_share),
         deltaPp: Number(row.delta_post_vs_baseline_new_commenter_share_pp),
@@ -547,7 +553,17 @@ function naEventCard(event) {
           ${event.signalCount ? `<span class="na-signal-badge">${event.signalCount} 項指標反應</span>` : ""}
           ${naDeltaBadge(event.deltaPp, sig)}
         </div>
-        <span>${escapeHtml(event.date)} · ${escapeHtml(event.sources || "-")} · ${fmtCompact(event.posts)} 篇貼文</span>
+        <span>${escapeHtml(event.date)} · ${escapeHtml(event.sources || "-")} · ${
+          event.titles
+            ? `<span class="na-titles" data-chart-tooltip="${tooltipAttr(
+                event.titles
+                  .split("||")
+                  .map((title) => "• " + title.trim())
+                  .filter((title) => title.length > 2)
+                  .join("\n"),
+              )}">${fmtCompact(event.posts)} 篇貼文 ▸</span>`
+            : `${fmtCompact(event.posts)} 篇貼文`
+        }</span>
       </div>
       ${naCompareBlock(event.baselineShare, event.postShare)}
       ${naSyncBlock(event)}
@@ -1015,27 +1031,33 @@ function bulletMetric(metric) {
   `;
 }
 
-function themeOverview(themeRows, sentRows, conflictRows) {
+function themeOverview(themeRows, sentRows, conflictRows, themeViews = {}) {
   const sent = Object.fromEntries((sentRows || []).map((row) => [row.primary_theme, row]));
   const conf = Object.fromEntries((conflictRows || []).map((row) => [row.primary_theme, row]));
+  const ratioOf = (row) => {
+    const views = Number(themeViews[row.primary_theme]) || 0;
+    return views > 0 ? (Number(row.n_comments) || 0) / views * 1000 : null;
+  };
   const rows = (themeRows || []).filter((row) => row.primary_theme).slice(0, 10);
   if (!rows.length) return `<div class="empty-state">沒有主題資料</div>`;
-  const maxC = Math.max(...rows.map((row) => Number(row.n_comments) || 0), 1);
+  const maxR = Math.max(...rows.map((row) => ratioOf(row) || 0), 0.01);
   return `
     <div class="theme-table">
       <div class="theme-table-head">
-        <span>題材</span><span>影片</span><span>留言量</span><span>正面率</span><span>負面率</span><span>衝突分數</span>
+        <span>題材</span><span>影片</span><span>留言/千觀看</span><span>正面率</span><span>負面率</span><span>衝突分數</span>
       </div>
       ${rows
         .map((row) => {
           const sv = sent[row.primary_theme] || {};
           const cv = conf[row.primary_theme] || {};
-          const w = Math.max(3, (Number(row.n_comments) / maxC) * 100);
+          const ratio = ratioOf(row);
+          const w = ratio != null ? Math.max(3, (ratio / maxR) * 100) : 0;
+          const views = Number(themeViews[row.primary_theme]) || 0;
           return `
             <div class="theme-table-row">
               <span class="theme-name" title="${escapeHtml(themeLabel(row.primary_theme))}">${escapeHtml(themeLabel(row.primary_theme))}</span>
               <span>${fmtCompact(row.n_videos)}</span>
-              <span class="theme-vol"><i style="width:${w.toFixed(0)}%"></i><b>${fmtCompact(row.n_comments)}</b></span>
+              <span class="theme-vol" title="${fmtCompact(row.n_comments)} 留言 ÷ ${fmtCompact(views)} 觀看"><i style="width:${w.toFixed(0)}%"></i><b>${ratio != null ? ratio.toFixed(1) : "-"}</b></span>
               <span class="pos">${formatValue(sv.positive_rate, "rate")}</span>
               <span class="neg">${formatValue(sv.negative_rate, "rate")}</span>
               <span>${cv.conflict_score != null ? formatValue(cv.conflict_score, "") : "-"}</span>
@@ -1707,25 +1729,28 @@ function conflictVideoCards(rows) {
 }
 
 function themeConflictBars(rows) {
-  const usable = (rows || [])
-    .filter((row) => row.primary_theme)
-    .sort((a, b) => Number(b.like_weighted_conflict_score || b.reply_count_weighted_conflict_score || 0) - Number(a.like_weighted_conflict_score || a.reply_count_weighted_conflict_score || 0))
+  // Rank by conflict *rate* (share of replied threads that are conflict threads),
+  // not raw conflict volume; require enough replied threads so the rate isn't noisy.
+  const withReplies = (rows || []).filter((row) => row.primary_theme && Number(row.n_threads_with_replies) >= 20);
+  const pool = withReplies.length ? withReplies : (rows || []).filter((row) => row.primary_theme);
+  const usable = pool
+    .map((row) => ({ ...row, _rate: Number(row.conflict_thread_rate_replied || 0) }))
+    .sort((a, b) => b._rate - a._rate)
     .slice(0, 8);
   if (!usable.length) return `<div class="empty-state">沒有題材衝突資料</div>`;
-  const max = Math.max(...usable.map((row) => Number(row.like_weighted_conflict_score || row.reply_count_weighted_conflict_score || 0)), 1);
+  const max = Math.max(...usable.map((row) => row._rate), 0.01);
   return `<div class="insight-list">${usable
-    .map((row) => {
-      const score = Number(row.like_weighted_conflict_score || row.reply_count_weighted_conflict_score || 0);
-      return `
+    .map(
+      (row) => `
         <div class="insight-row">
           <div class="insight-label">
             <strong>${escapeHtml(themeLabel(row.primary_theme))}</strong>
-            <span>${fmtCompact(row.n_replies)} 回覆 · ${fmtCompact(row.n_conflict_threads)} 衝突串</span>
+            <span>${fmtCompact(row.n_threads_with_replies)} 有回覆串 · ${fmtCompact(row.n_conflict_threads)} 衝突串</span>
           </div>
-          <div class="risk-track"><i style="width:${Math.max(3, (score / max) * 100)}%"></i></div>
-          <div class="insight-value">${formatValue(score, "score")}</div>
-        </div>`;
-    })
+          <div class="risk-track"><i style="width:${Math.max(3, (row._rate / max) * 100)}%"></i></div>
+          <div class="insight-value">${formatValue(row._rate, "rate")}</div>
+        </div>`,
+    )
     .join("")}</div>`;
 }
 

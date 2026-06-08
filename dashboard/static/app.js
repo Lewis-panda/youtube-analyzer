@@ -285,7 +285,7 @@ async function renderAudience(root) {
       </article>
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類(用『則數』算、純歸屬作者群)。每張卡片＝一個社群。注意：YouTube 只給留言的讚數、不給『誰按的』，所以任何按讚加權指標反映的是廣大觀眾(可能跨群、甚至純看客)的放大，不等於該社群自己的認同。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
+      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）。modularity 介於 0~1，慣例 0.3–0.7 才算有明顯結構；但『單一頻道的共同留言網路』因為觀眾天生重疊，數值普遍偏低（本 cohort 中位數約 0.22），所以這裡的高/中/低是『相對同行』而非『絕對乾淨的分割』；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類(用『則數』算、純歸屬作者群)。每張卡片＝一個社群。注意：YouTube 只給留言的讚數、不給『誰按的』，所以任何按讚加權指標反映的是廣大觀眾(可能跨群、甚至純看客)的放大，不等於該社群自己的認同。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
       ${audienceStructureCards(s.network_summary || {})}
       ${communityPersonaCards(s.community_profiles || [])}
     </section>
@@ -2066,9 +2066,9 @@ function audienceStructureCards(network) {
     const pr = Number(baselineMetric("commenter_network_modularity")?.percentile);
     const band = prBand(pr, ["低", "中", "高"]);
     const text = {
-      高: "你的留言者可以被清楚分成幾個內容參與群，代表不同觀眾群可能有不同內容偏好。",
-      中: "留言者的分群結構中等清楚，群與群之間仍有部分交集。",
-      低: "留言者之間交集多、分群界線不明顯，較難切出清楚的觀眾群。",
+      高: "相對多數頻道，你的留言者分得比較開（PR 高）；但因為大家都看同一頻道、觀眾天生重疊，社群比較像『軟性偏好傾向』而非壁壘分明的派系，別把群當成互不相干的鐵票。",
+      中: "留言者的分群結構中等清楚，群與群之間仍有不少交集。",
+      低: "留言者之間交集很多、分群界線不明顯，比較難切出清楚的觀眾群。",
     }[band];
     cards.push(structureCard("分群清晰度", band, `modularity ${mod.toFixed(2)} · ${fmtNumber(network.n_communities)} 群`, pr, text));
   }

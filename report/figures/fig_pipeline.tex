@@ -1,4 +1,4 @@
-% System architecture (TikZ + FontAwesome) -- clean top-down flow, minimal labels
+% System architecture (TikZ) -- clean top-down flow, no icons, centred bands
 \begin{figure}[t]
 \centering
 \definecolor{slate}{HTML}{64748B}
@@ -6,35 +6,29 @@
     font=\small,
     >={Latex[length=2.8mm,width=2.4mm]},
     stage/.style={rounded corners=4pt,draw=#1!60,fill=#1!8,line width=0.8pt,
-                  minimum width=84mm,minimum height=11mm,inner sep=2mm},
+                  minimum width=86mm,minimum height=11mm,inner sep=2mm,align=center},
     mod/.style={rounded corners=4pt,draw=teal!60,fill=white,line width=0.7pt,
-                text width=28mm,minimum height=18mm,align=center,inner sep=1.5mm},
+                text width=31mm,minimum height=15mm,align=center,inner sep=1.5mm},
     arr/.style={->,draw=ink!55,line width=1.1pt},
   ]
 
-  \node[stage=slate] (s1)
-        {\raisebox{-1pt}{\large\color{slate}\faYoutube}\ \ \textbf{YouTube 公開資料}};
+  \node[stage=slate] (s1) {\textbf{YouTube 公開資料}};
+  \node[stage=slate,below=6mm of s1] (s2) {\textbf{資料清理 ${\cdot}$ 分析範圍設定}};
+  \node[stage=gold, below=6mm of s2] (s3) {\textbf{雙模型投票標註 ${+}$ 人工審核}};
 
-  \node[stage=slate,below=6mm of s1] (s2)
-        {\raisebox{-1pt}{\large\color{slate}\faFilter}\ \ \textbf{資料清理 ${\cdot}$ 分析範圍設定}};
-
-  \node[stage=gold,below=6mm of s2] (s3)
-        {\raisebox{-1pt}{\large\color{gold}\faRobot}\ \ \textbf{雙模型投票標註 ${+}$ 人工審核}};
-
-  % ---- analysis stage: three modules grouped in a band ----
-  \node[mod,below=12mm of s3,xshift=-31mm] (a1)
-        {{\large\color{teal}\faHeartbeat}\\[3pt]\textbf{頻道健康}\\[1pt]{\scriptsize\color{ink!60}分層 ${\cdot}$ 回訪 ${\cdot}$ 基準}};
-  \node[mod,right=5mm of a1] (a2)
-        {{\large\color{teal}\faProjectDiagram}\\[3pt]\textbf{觀眾社群}\\[1pt]{\scriptsize\color{ink!60}社群偵測 ${\cdot}$ 敏感度}};
+  % ---- analysis stage: middle module centred, the other two symmetric ----
+  \node[mod,below=12mm of s3] (a2)
+        {\textbf{觀眾社群}\\[2pt]{\scriptsize\color{ink!60}社群偵測 ${\cdot}$ 內容敏感度}};
+  \node[mod,left=5mm of a2]  (a1)
+        {\textbf{頻道健康}\\[2pt]{\scriptsize\color{ink!60}分層 ${\cdot}$ 回訪 ${\cdot}$ 基準}};
   \node[mod,right=5mm of a2] (a3)
-        {{\large\color{teal}\faCommentDots}\\[3pt]\textbf{情緒／衝突風險}\\[1pt]{\scriptsize\color{ink!60}情緒 ${\cdot}$ ABSA ${\cdot}$ 衝突}};
+        {\textbf{情緒／衝突風險}\\[2pt]{\scriptsize\color{ink!60}情緒 ${\cdot}$ ABSA ${\cdot}$ 衝突}};
   \begin{scope}[on background layer]
     \node[rounded corners=5pt,draw=teal!40,fill=teal!6,line width=0.6pt,inner sep=3mm,
           fit=(a1)(a3)] (A) {};
   \end{scope}
 
-  \node[stage=coral,below=12mm of a2] (s5)
-        {\raisebox{-1pt}{\large\color{coral}\faBullseye}\ \ \textbf{策略輸出}};
+  \node[stage=coral,below=12mm of a2] (s5) {\textbf{策略輸出}};
 
   \draw[arr] (s1) -- (s2);
   \draw[arr] (s2) -- (s3);
@@ -42,9 +36,10 @@
   \draw[arr] (A.south) -- (s5.north);
 
 \end{tikzpicture}
-\caption{研究分析的系統架構（由上而下）。\textbf{資料層}取 YouTube 公開影片 metadata 與留言（351 支影片、
-247{,}068 則主留言、112{,}108 位留言者）；\textbf{標註層}以 Qwen 與 OpenAI API 雙模型投票標註影片主題、
-留言情緒與 ABSA 語意主體——兩模型不一致時改由人工標註，一致時則抽樣人工審核；\textbf{分析層}包含頻道健康、
-觀眾社群與情緒／衝突風險三個模組；最終於\textbf{輸出層}轉化為內容、分眾溝通與炎上監測策略。}
+\caption{研究分析的系統架構（由上而下）。\textbf{資料層}取 YouTube 公開影片 metadata 與留言（個案 The DoDo Men
+共 351 支影片、247{,}068 則主留言、112{,}108 位留言者）；\textbf{標註層}以 Qwen 與 OpenAI API 雙模型投票
+標註影片主題、留言情緒與 ABSA 語意主體——兩模型不一致時改由人工標註，一致時則抽樣人工審核（情緒標註涵蓋
+全部約 200 萬則留言，ABSA 則僅針對個案頻道）；\textbf{分析層}包含頻道健康、觀眾社群與情緒／衝突風險三個模組；
+最終於\textbf{輸出層}轉化為內容、分眾溝通與炎上監測策略。}
 \label{fig:pipeline}
 \end{figure}

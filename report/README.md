@@ -47,7 +47,7 @@ export PATH="$HOME/.TinyTeX/bin/x86_64-linux:$PATH"
 tlmgr install latexmk collection-latexrecommended collection-xetex \
   collection-pictures collection-fontsrecommended collection-langcjk \
   xecjk ctex setspace enumitem titlesec booktabs fancyhdr csquotes pgf \
-  multirow makecell threeparttable wrapfig amsmath fontawesome5
+  multirow makecell threeparttable wrapfig amsmath
 ```
 
 字型需求：系統需安裝 `fonts-noto-cjk`（提供 Noto Serif/Sans CJK TC）與

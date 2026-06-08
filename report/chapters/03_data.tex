@@ -61,6 +61,12 @@ network」等結構分析僅採用主留言（top-level comments，共 247{,}068
 此設計可在大規模標註的效率與標註品質之間取得平衡：模型分歧之處由人工把關以降低錯誤，模型一致之處則以抽樣審核
 確認可靠度。若部分資料仍缺少有效標註，則於後續分析中記錄 coverage，並視情況排除或使用 fallback 方法處理。
 
+\textbf{標註範圍.} 需特別說明各類標註的涵蓋範圍並不相同。\textbf{留言情緒標註}套用於本研究所蒐集的\textbf{全部
+留言}（約 200 萬則，涵蓋個案頻道與 48 個 benchmark 頻道），使情緒指標得以在 cohort 層級進行跨頻道比較；
+\textbf{影片主題標註}則於影片層級進行。相對地，\textbf{ABSA 語意主體標註}因屬細粒度、運算成本較高的深入分析，
+本研究僅針對個案頻道 \textbf{The DoDo Men} 的留言執行；因此第~\ref{sec:case-risk} 節的 ABSA 結果為個案頻道
+內部的相對結構，並未與 benchmark cohort 對照（此亦為研究限制之一，見第~\ref{sec:limit} 節）。
+
 \subsection{資料限制}
 \label{sec:data-limit}
 

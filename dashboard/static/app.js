@@ -1820,20 +1820,23 @@ function communityPersonaCards(rows) {
       const pctActive = row.pct_active_commenters ?? row.group_size?.pct_active_commenters ?? row.segment_share;
       const nCommenters = row.group_size?.n_commenters ?? row.n_commenters;
       const avgComments = row.avg_comments_per_commenter ?? row.activity?.avg_comments_per_commenter;
+      const nVideosTouched = row.activity?.n_videos_touched;
+      const nComments = row.activity?.n_comments;
       const barWidth = maxPct > 0 ? Math.max(4, (pctOf(row) / maxPct) * 100) : 0;
       const details = [
-        personaThemeChart("偏好題材（留言量）", row.preferred_themes, {
-          format: (it) => fmtCompact(it.count),
-        }),
-        personaThemeChart("相對集中（lift，>1 高於全頻道）", row.over_indexed_themes, {
+        personaThemeChart("特別活躍題材（lift＞1＝相對全頻道更投入）", row.over_indexed_themes, {
           valueKey: "lift",
           format: (it) => `${(Number(it.lift) || 0).toFixed(2)}×`,
         }),
-        personaThemeChart("負面來源（負面率）", row.negative_sources, {
+        personaThemeChart("特別負面題材（該題材負面率）", row.negative_sources, {
           valueKey: "negative_rate",
           tone: "neg",
           format: (it) => formatValue(it.negative_rate, "rate"),
         }),
+        personaThemeChart("偏好題材（留言量）", row.preferred_themes, {
+          format: (it) => fmtCompact(it.count),
+        }),
+        personaVideoList("代表影片", row.preferred_videos),
         personaKeywordChips(row.common_keywords),
         personaLine("策略用途", personaBusinessAdvice(row)),
         personaQuote(representativeText(row.representative_comments)),
@@ -1847,11 +1850,13 @@ function communityPersonaCards(rows) {
           <div class="persona-size">
             <div class="persona-size-head">
               <span>群體大小</span>
-              <strong>${formatValue(pctActive, "pct_active_commenters")}${nCommenters ? ` · ${fmtCompact(nCommenters)} 人` : ""} · 活躍 ${formatValue(avgComments, "avg_comments_per_commenter")} 次/人</strong>
+              <strong>${formatValue(pctActive, "pct_active_commenters")}${nCommenters ? ` · ${fmtCompact(nCommenters)} 人` : ""}</strong>
             </div>
             <div class="persona-bar"><i style="width:${barWidth.toFixed(1)}%"></i></div>
+            <div class="persona-stat-line">${Number.isFinite(Number(nVideosTouched)) ? `觸及 ${fmtCompact(nVideosTouched)} 支影片 · ` : ""}留言 ${fmtCompact(nComments)} · 活躍 ${formatValue(avgComments, "avg_comments_per_commenter")} 次/人</div>
           </div>
           ${personaSentimentBar(row.main_sentiment)}
+          ${personaSensitivityLine(row)}
           ${personaLine("偏好題材", row.top_preferred_themes || row.preferred_video_themes || labelCountList(row.preferred_themes))}
           ${
             details.trim()
@@ -1861,6 +1866,37 @@ function communityPersonaCards(rows) {
         </article>`;
     })
     .join("")}</div>`;
+}
+
+function personaSensitivityLine(row) {
+  const top = (row.over_indexed_themes || [])[0];
+  const neg = (row.negative_sources || [])[0];
+  const parts = [];
+  if (top && top.theme) {
+    parts.push(`<span class="sens-pos">特別投入：${escapeHtml(themeLabel(top.theme))} ${(Number(top.lift) || 0).toFixed(2)}×</span>`);
+  }
+  if (neg && (neg.theme || neg.label)) {
+    parts.push(`<span class="sens-neg">特別負面：${escapeHtml(themeLabel(neg.theme || neg.label))} ${formatValue(neg.negative_rate, "rate")}</span>`);
+  }
+  if (!parts.length) return "";
+  return `<div class="persona-sensitivity">${parts.join("")}</div>`;
+}
+
+function personaVideoList(label, videos) {
+  const items = (videos || []).slice(0, 3).filter((v) => v && (v.label || v.title));
+  if (!items.length) return "";
+  return `
+    <div class="persona-chart">
+      <span class="persona-chart-label">${escapeHtml(label)}</span>
+      <div class="persona-video-list">
+        ${items
+          .map(
+            (v) =>
+              `<span title="${escapeHtml(v.label || v.title)}">${escapeHtml(v.label || v.title)}${Number.isFinite(Number(v.count)) ? ` · ${fmtCompact(v.count)} 留言` : ""}</span>`,
+          )
+          .join("")}
+      </div>
+    </div>`;
 }
 
 function personaSentimentBar(ms) {

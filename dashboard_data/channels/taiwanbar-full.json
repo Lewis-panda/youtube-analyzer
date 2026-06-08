@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "taiwanbar-full",
   "title": "Taiwan Bar",
   "channel_id": "UCRNsHFT7BFoAPBcuAa5sgEQ",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/taiwanbar-full/tables/actor_communities.csv",
-        "bytes": 11302
+        "bytes": 11302,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/taiwanbar-full/tables/bridge_actors.csv",
-        "bytes": 9710
+        "bytes": 9710,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/taiwanbar-full/tables/channel_overview.csv",
-        "bytes": 357
+        "bytes": 357,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/taiwanbar-full/tables/commenter_activity.csv",
-        "bytes": 638213
+        "bytes": 638213,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/taiwanbar-full/tables/commenter_tiers.csv",
-        "bytes": 268
+        "bytes": 268,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/taiwanbar-full/tables/community_profiles.csv",
-        "bytes": 4802
+        "bytes": 4802,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/taiwanbar-full/tables/community_sentiment_summary.csv",
-        "bytes": 1802
+        "bytes": 1802,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/taiwanbar-full/tables/community_summary.csv",
-        "bytes": 759
+        "bytes": 759,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/taiwanbar-full/tables/community_theme_affinity.csv",
-        "bytes": 4526
+        "bytes": 4526,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/taiwanbar-full/tables/community_theme_sentiment.csv",
-        "bytes": 6592
+        "bytes": 6592,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/taiwanbar-full/tables/continuity_sensitivity.csv",
-        "bytes": 581
+        "bytes": 581,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/taiwanbar-full/tables/continuity_summary.csv",
-        "bytes": 628
+        "bytes": 628,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/taiwanbar-full/tables/diagnostics.csv",
-        "bytes": 1518
+        "bytes": 1518,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/taiwanbar-full/tables/network_actor_metrics.csv",
-        "bytes": 18810
+        "bytes": 18810,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/taiwanbar-full/tables/network_summary.csv",
-        "bytes": 633
+        "bytes": 633,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/taiwanbar-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 2916321
+        "bytes": 2916321,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/taiwanbar-full/tables/qwen_video_themes.csv",
-        "bytes": 393809
+        "bytes": 393809,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/taiwanbar-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2063
+        "bytes": 2063,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/taiwanbar-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 42383
+        "bytes": 42383,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/taiwanbar-full/tables/reply_sentiment_summary.csv",
-        "bytes": 749
+        "bytes": 749,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/taiwanbar-full/tables/reply_thread_metrics.csv",
-        "bytes": 1845056
+        "bytes": 1845056,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/taiwanbar-full/tables/reply_thread_overview.csv",
-        "bytes": 361
+        "bytes": 361,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/taiwanbar-full/tables/rolling_retention.csv",
-        "bytes": 302
+        "bytes": 302,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/taiwanbar-full/tables/sentiment_hotspots.csv",
-        "bytes": 43040
+        "bytes": 43040,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/taiwanbar-full/tables/sentiment_source_summary.csv",
-        "bytes": 251
+        "bytes": 251,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/taiwanbar-full/tables/sentiment_summary.csv",
-        "bytes": 619
+        "bytes": 619,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/taiwanbar-full/tables/sentiment_theme_summary.csv",
-        "bytes": 1919
+        "bytes": 1919,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/taiwanbar-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/taiwanbar-full/tables/theme_summary.csv",
-        "bytes": 227
+        "bytes": 227,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/taiwanbar-full/tables/theme_video_labels.csv",
-        "bytes": 58641
+        "bytes": 58641,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/taiwanbar-full/tables/theme_video_labels_long.csv",
-        "bytes": 53803
+        "bytes": 53803,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/taiwanbar-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1269
+        "bytes": 1269,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/taiwanbar-full/tables/video_cluster_summary.csv",
-        "bytes": 3785
+        "bytes": 3785,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/taiwanbar-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1807
+        "bytes": 1807,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/taiwanbar-full/tables/video_clusters.csv",
-        "bytes": 9614
+        "bytes": 9614,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/taiwanbar-full/tables/video_link_opportunities.csv",
-        "bytes": 84363
+        "bytes": 84363,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/taiwanbar-full/tables/video_metrics.csv",
-        "bytes": 22377
+        "bytes": 22377,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/taiwanbar-full/tables/video_network_metrics.csv",
-        "bytes": 9769
+        "bytes": 9769,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/taiwanbar-full/tables/video_network_summary.csv",
-        "bytes": 626
+        "bytes": 626,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/taiwanbar-full/figures/channel_activity.png",
-        "bytes": 82475
+        "bytes": 82475,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/taiwanbar-full/figures/commenter_tiers.png",
-        "bytes": 22127
+        "bytes": 22127,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/taiwanbar-full/figures/community_sizes.png",
-        "bytes": 22878
+        "bytes": 22878,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/taiwanbar-full/figures/rolling_retention.png",
-        "bytes": 29054
+        "bytes": 29054,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/taiwanbar-full/figures/video_cluster_sizes.png",
-        "bytes": 24833
+        "bytes": 24833,
+        "source_dir": null
       }
     ]
   },
@@ -687,6 +731,778 @@
         "max_core_number": 1
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 34,
+          "pct_active_commenters": 28.57142857142857,
+          "summary_zh": "28.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 212,
+          "avg_comments_per_commenter": 6.235294117647059,
+          "n_videos_touched": 55,
+          "summary_zh": "平均留言 6.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "文字被洪水沖走了？沒關係！臺灣原住民靠這招傳承歷史 -《新．動畫臺灣史》EP2｜臺灣吧 Taiw",
+            "count": 12
+          },
+          {
+            "label": "😱 曾負債兩千萬？！臺灣吧 10 年創業血淚史公開！｜臺灣吧 Taiwan Bar",
+            "count": 12
+          },
+          {
+            "label": "十年了！動畫臺灣史回歸，新在哪？！ -《新．動畫臺灣史》EP0｜臺灣吧 Taiwan Bar",
+            "count": 11
+          },
+          {
+            "label": "權貴 or 難民？施壓 or 受害？戰後臺灣的「外省人」多重宇宙 -《新．動畫臺灣史》EP8｜臺",
+            "count": 11
+          },
+          {
+            "label": "【本季最終回】人民的怒吼！那些年臺灣人一起經歷的社會運動 -《新．動畫臺灣史》EP9｜臺灣吧 T",
+            "count": 10
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 34
+          },
+          {
+            "label": "personal_team_life",
+            "count": 13
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 10
+          },
+          {
+            "label": "travel_exploration",
+            "count": 8
+          },
+          {
+            "label": "food_culture",
+            "count": 6
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "business_brand",
+            "lift": 1.8086739589330265,
+            "n_commenters": 13
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.3736369963653239,
+            "n_commenters": 22
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.2953367875647668,
+            "n_commenters": 34
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "城市",
+            "街訪"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09368635437881874,
+          "neutral_rate": 0.5824847250509165,
+          "positive_rate": 0.32382892057026474,
+          "like_weighted_negative_rate": 0.03070809248554913,
+          "like_weighted_positive_rate": 0.38457369942196534,
+          "summary_zh": "中性討論為主；負面 9.4%，正面 32.4%，按讚加權負面 3.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.1065989847715736,
+            "like_weighted_negative_rate": 0.034512698068157155,
+            "n_comments": 394,
+            "summary_zh": "controversy_response：負面 10.7%，按讚加權負面 3.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 28,
+          "pct_active_commenters": 23.52941176470588,
+          "summary_zh": "23.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 223,
+          "avg_comments_per_commenter": 7.964285714285714,
+          "n_videos_touched": 62,
+          "summary_zh": "平均留言 8.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "原住民的祖先是「他們」！？誰是第一個臺灣人？ -《新．動畫臺灣史》EP1｜臺灣吧 Taiwan",
+            "count": 10
+          },
+          {
+            "label": "受西方教育長大，最後卻成為中華民國的第一夫人！如何理解宋美齡的一生？｜臺灣吧 Taiwan Ba",
+            "count": 9
+          },
+          {
+            "label": "妲己真的是害商代滅亡的「亡國妖女」嗎？｜臺灣吧 Taiwan Bar",
+            "count": 9
+          },
+          {
+            "label": "文成公主的美好形象，都是被塑造出來的？｜臺灣吧 Taiwan Bar",
+            "count": 7
+          },
+          {
+            "label": "150 年前，排灣族少女被迫到東京學日語！｜臺灣吧 Taiwan Bar",
+            "count": 7
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 27
+          },
+          {
+            "label": "food_culture",
+            "count": 12
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 8
+          },
+          {
+            "label": "education_advice",
+            "count": 6
+          },
+          {
+            "label": "other",
+            "count": 6
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "other",
+            "lift": 1.9281914893617023,
+            "n_commenters": 5
+          },
+          {
+            "theme": "event_announcement",
+            "lift": 1.5425531914893618,
+            "n_commenters": 2
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.0360431883137504,
+            "n_commenters": 17
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化",
+            "夜市",
+            "城市",
+            "街訪"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2088235294117647,
+          "neutral_rate": 0.6705882352941176,
+          "positive_rate": 0.12058823529411765,
+          "like_weighted_negative_rate": 0.17002237136465326,
+          "like_weighted_positive_rate": 0.18176733780760626,
+          "summary_zh": "中性討論為主；負面 20.9%，正面 12.1%，按讚加權負面 17.0%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.23357664233576642,
+            "like_weighted_negative_rate": 0.18860244233378562,
+            "n_comments": 274,
+            "summary_zh": "controversy_response：負面 23.4%，按讚加權負面 18.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 6,
+        "segment_label": "Audience segment 6",
+        "group_size": {
+          "n_commenters": 22,
+          "pct_active_commenters": 18.487394957983195,
+          "summary_zh": "18.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 170,
+          "avg_comments_per_commenter": 7.7272727272727275,
+          "n_videos_touched": 69,
+          "summary_zh": "平均留言 7.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【台語有字幕】用台語嘛會通！來聽新ê「動畫台灣史」講台海危機 -《新．動畫台灣史》EP0｜臺灣吧",
+            "count": 10
+          },
+          {
+            "label": "十年了！動畫臺灣史回歸，新在哪？！ -《新．動畫臺灣史》EP0｜臺灣吧 Taiwan Bar",
+            "count": 8
+          },
+          {
+            "label": "海上權力遊戲！鄭成功家族的愛恨情仇，怎麼改變臺灣的歷史？ -《新．動畫臺灣史》EP3｜臺灣吧 T",
+            "count": 5
+          },
+          {
+            "label": "【台語有字幕】文字予大水沖去矣？無要緊！台灣ê原住民靠這步咧傳承歷史-《新．動畫台灣史》EP2｜",
+            "count": 5
+          },
+          {
+            "label": "😱 曾負債兩千萬？！臺灣吧 10 年創業血淚史公開！｜臺灣吧 Taiwan Bar",
+            "count": 5
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 21
+          },
+          {
+            "label": "food_culture",
+            "count": 10
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 8
+          },
+          {
+            "label": "education_advice",
+            "count": 7
+          },
+          {
+            "label": "personal_team_life",
+            "count": 7
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "other",
+            "lift": 1.3425925925925926,
+            "n_commenters": 3
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1.2786596119929452,
+            "n_commenters": 13
+          },
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.1912692068567368,
+            "n_commenters": 17
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化",
+            "夜市",
+            "城市",
+            "街訪"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.1336405529953917,
+          "neutral_rate": 0.41935483870967744,
+          "positive_rate": 0.4470046082949309,
+          "like_weighted_negative_rate": 0.06782608695652174,
+          "like_weighted_positive_rate": 0.44521739130434784,
+          "summary_zh": "正向為主，但仍需看負面來源；負面 13.4%，正面 44.7%，按讚加權負面 6.8%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.18439716312056736,
+            "like_weighted_negative_rate": 0.04404145077720207,
+            "n_comments": 141,
+            "summary_zh": "controversy_response：負面 18.4%，按讚加權負面 4.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 15,
+          "pct_active_commenters": 12.605042016806722,
+          "summary_zh": "12.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 72,
+          "avg_comments_per_commenter": 4.8,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 4.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "原住民的祖先是「他們」！？誰是第一個臺灣人？ -《新．動畫臺灣史》EP1｜臺灣吧 Taiwan",
+            "count": 13
+          },
+          {
+            "label": "十年了！動畫臺灣史回歸，新在哪？！ -《新．動畫臺灣史》EP0｜臺灣吧 Taiwan Bar",
+            "count": 11
+          },
+          {
+            "label": "臺灣人也曾是翻牆高手！？「番界」的前世今生大解密 -《新．動畫臺灣史》EP4｜臺灣吧 Taiwa",
+            "count": 5
+          },
+          {
+            "label": "文字被洪水沖走了？沒關係！臺灣原住民靠這招傳承歷史 -《新．動畫臺灣史》EP2｜臺灣吧 Taiw",
+            "count": 4
+          },
+          {
+            "label": "皇民/非皇民？臺籍戰犯？戰爭下的臺灣人如何生活 -《新．動畫臺灣史》EP7｜臺灣吧 Taiwan",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 15
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 5
+          },
+          {
+            "label": "food_culture",
+            "count": 3
+          },
+          {
+            "label": "other",
+            "count": 2
+          },
+          {
+            "label": "travel_exploration",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "城市",
+            "街訪",
+            "生活風格",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08888888888888889,
+          "neutral_rate": 0.5888888888888889,
+          "positive_rate": 0.32222222222222224,
+          "like_weighted_negative_rate": 0.10371819960861056,
+          "like_weighted_positive_rate": 0.44227005870841485,
+          "summary_zh": "中性討論為主；負面 8.9%，正面 32.2%，按讚加權負面 10.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.08823529411764706,
+            "like_weighted_negative_rate": 0.12626262626262627,
+            "n_comments": 68,
+            "summary_zh": "controversy_response：負面 8.8%，按讚加權負面 12.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 14,
+          "pct_active_commenters": 11.76470588235294,
+          "summary_zh": "11.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 99,
+          "avg_comments_per_commenter": 7.071428571428571,
+          "n_videos_touched": 47,
+          "summary_zh": "平均留言 7.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "臺灣客家的真相，一段被剪接過的歷史 -《客客客棧之嗨客任務》S5EP8｜臺灣吧 Taiwan B",
+            "count": 7
+          },
+          {
+            "label": "妲己真的是害商代滅亡的「亡國妖女」嗎？｜臺灣吧 Taiwan Bar",
+            "count": 7
+          },
+          {
+            "label": "家就在眼前，卻不能回去？原住民的家園發生了什麼事？｜臺灣吧 Taiwan Bar X 臺北市原住",
+            "count": 6
+          },
+          {
+            "label": "被稱為「抗荷急先鋒」的郭懷一，其實只是欠債還不出來的商人？｜臺灣吧 Taiwan Bar",
+            "count": 4
+          },
+          {
+            "label": "為了不變成孤魂野鬼，客家女兒拼了！ -《客客客棧之嗨客任務》S5EP4 ｜臺灣吧 Taiwan",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 14
+          },
+          {
+            "label": "food_culture",
+            "count": 6
+          },
+          {
+            "label": "education_advice",
+            "count": 5
+          },
+          {
+            "label": "personal_team_life",
+            "count": 4
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 3
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化",
+            "夜市",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.16279069767441862,
+          "neutral_rate": 0.6434108527131783,
+          "positive_rate": 0.1937984496124031,
+          "like_weighted_negative_rate": 0.1701388888888889,
+          "like_weighted_positive_rate": 0.21180555555555555,
+          "summary_zh": "中性討論為主；負面 16.3%，正面 19.4%，按讚加權負面 17.0%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.22105263157894736,
+            "like_weighted_negative_rate": 0.21585903083700442,
+            "n_comments": 95,
+            "summary_zh": "controversy_response：負面 22.1%，按讚加權負面 21.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 4,
+          "pct_active_commenters": 3.361344537815126,
+          "summary_zh": "3.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 13,
+          "avg_comments_per_commenter": 3.25,
+          "n_videos_touched": 4,
+          "summary_zh": "平均留言 3.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "你的節日不是我的節日？全國客家日為什麼要改期？-《客客客棧S5之嗨客任務 番外篇》EP1 ｜臺灣",
+            "count": 4
+          },
+          {
+            "label": "文成公主的美好形象，都是被塑造出來的？｜臺灣吧 Taiwan Bar",
+            "count": 4
+          },
+          {
+            "label": "浪漫臺三線其實很暗黑？到底哪裡浪漫了？-《客客客棧S5之嗨客任務 番外篇》EP2｜臺灣吧 Tai",
+            "count": 3
+          },
+          {
+            "label": "侯孝賢的《悲情城市》有一幕出現了「朝鮮樓」，你知道這是什麼地方嗎？｜臺灣吧 Taiwan Bar",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 4
+          },
+          {
+            "label": "food_culture",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "negative",
+          "negative_rate": 0.5,
+          "neutral_rate": 0.5,
+          "positive_rate": 0,
+          "like_weighted_negative_rate": 0.3469387755102041,
+          "like_weighted_positive_rate": 0,
+          "summary_zh": "負面討論偏高；負面 50.0%，正面 0.0%，按讚加權負面 34.7%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 1.680672268907563,
+          "summary_zh": "1.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 11,
+          "avg_comments_per_commenter": 5.5,
+          "n_videos_touched": 5,
+          "summary_zh": "平均留言 5.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "才，才不跟你們玩呢！傲嬌的中國海禁 The Proud Chinese Maritime Ban",
+            "count": 2
+          },
+          {
+            "label": "『想找茶？來臺灣的北部找吧！』\"Looking for tea? Come to the nor",
+            "count": 2
+          },
+          {
+            "label": "臺獨運動，曾經的那次 The Taiwan Independence Movement, the",
+            "count": 2
+          },
+          {
+            "label": "那個原住民被稱「番」的時代  The Era When Indigenous Peoples W",
+            "count": 1
+          },
+          {
+            "label": "【台語有字幕】皇民抑是戰犯？戰爭之下ê台灣人按怎生活？-《新．動畫台灣史》EP7｜臺灣吧 Tai",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 2
+          },
+          {
+            "label": "food_culture",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09090909090909091,
+          "neutral_rate": 0.6363636363636364,
+          "positive_rate": 0.2727272727272727,
+          "like_weighted_negative_rate": 0.04,
+          "like_weighted_positive_rate": 0.7733333333333333,
+          "summary_zh": "中性討論為主；負面 9.1%，正面 27.3%，按讚加權負面 4.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 39,
       "n_edges": 100,
@@ -801,6 +1617,667 @@
         "conductance": 0.3404255319148936,
         "avg_core_number": 2.5,
         "max_core_number": 3
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 11,
+          "date_min": "2024-12-01 12:00:06+00:00",
+          "date_max": "2025-11-22 12:00:06+00:00",
+          "pct_graph_videos": 28.205128205128204
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 10
+            },
+            {
+              "label": "education_advice",
+              "count": 7
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 2
+            },
+            {
+              "label": "travel_exploration",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 1.4181818181818184,
+              "n_videos": 2
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.0129870129870129,
+              "n_videos": 10
+            },
+            {
+              "theme": "education_advice",
+              "lift": 0.9927272727272727,
+              "n_videos": 7
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 0.8863636363636365,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "十年了！動畫臺灣史回歸，新在哪？！ -《新．動畫臺灣史》EP0｜臺灣吧 Taiwan Bar",
+              "count": 834
+            },
+            {
+              "label": "原住民的祖先是「他們」！？誰是第一個臺灣人？ -《新．動畫臺灣史》EP1｜臺灣吧 Taiwan",
+              "count": 621
+            },
+            {
+              "label": "曾經，中國比臺灣更民主！？How Taiwan Went from Martial Law to",
+              "count": 187
+            },
+            {
+              "label": "是韓國人、中國人也是臺灣人！？「韓國華僑」到底是什麼人？",
+              "count": 128
+            },
+            {
+              "label": "文字被洪水沖走了？沒關係！臺灣原住民靠這招傳承歷史 -《新．動畫臺灣史》EP2｜臺灣吧 Taiw",
+              "count": 103
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "城市",
+            "街訪"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.22487298431632427,
+          "neutral_rate": 0.5442898166556218,
+          "positive_rate": 0.23083719902805389,
+          "like_weighted_negative_rate": 0.07082490179740507,
+          "like_weighted_positive_rate": 0.6273657897869301,
+          "summary_zh": "中性討論為主；負面 22.5%，正面 23.1%，按讚加權負面 7.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 2370513,
+          "total_observed_comments": 2392,
+          "unique_commenters": 2083,
+          "median_observed_commenters": 100,
+          "evidence_zh": "11 支影片；2,370,513 views；2,392 observed comments；2,083 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 19,
+          "external_edges": 39,
+          "conductance": 0.41680395387149916,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=19, external_edges=39, conductance=0.417"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (10); education_advice (7); city_lifestyle (2); food_culture (2); travel_exploration (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 22.5%，正面 23.1%，按讚加權負面 7.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "11 支影片；2,370,513 views；2,392 observed comments；2,083 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=19, external_edges=39, conductance=0.417"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 14,
+          "date_min": "2024-12-12 12:01:17+00:00",
+          "date_max": "2025-12-12 10:26:55+00:00",
+          "pct_graph_videos": 35.8974358974359
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 12
+            },
+            {
+              "label": "education_advice",
+              "count": 11
+            },
+            {
+              "label": "personal_team_life",
+              "count": 4
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 4
+            },
+            {
+              "label": "travel_exploration",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "business_brand",
+              "lift": 2.7857142857142856,
+              "n_videos": 1
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.857142857142857,
+              "n_videos": 4
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 1.3928571428571428,
+              "n_videos": 4
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.2257142857142855,
+              "n_videos": 11
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "權貴 or 難民？施壓 or 受害？戰後臺灣的「外省人」多重宇宙 -《新．動畫臺灣史》EP8｜臺",
+              "count": 374
+            },
+            {
+              "label": "皇民/非皇民？臺籍戰犯？戰爭下的臺灣人如何生活 -《新．動畫臺灣史》EP7｜臺灣吧 Taiwan",
+              "count": 132
+            },
+            {
+              "label": "基隆和平島原來有個琉球村！但為什麼現在卻完全消失了？｜臺灣吧 Taiwan Bar",
+              "count": 113
+            },
+            {
+              "label": "【台語有字幕】用台語嘛會通！來聽新ê「動畫台灣史」講台海危機 -《新．動畫台灣史》EP0｜臺灣吧",
+              "count": 112
+            },
+            {
+              "label": "「街友幹嘛不去收容中心？」無家者漂泊理由大解析！從街頭到家的路到底有多遠？｜芒草心慈善協會 X",
+              "count": 95
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.31919905771495877,
+          "neutral_rate": 0.514330585001963,
+          "positive_rate": 0.16647035728307813,
+          "like_weighted_negative_rate": 0.22785118431468063,
+          "like_weighted_positive_rate": 0.25056323448821777,
+          "summary_zh": "中性討論為主；負面 31.9%，正面 16.6%，按讚加權負面 22.8%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1092639,
+          "total_observed_comments": 1268,
+          "unique_commenters": 1062,
+          "median_observed_commenters": 66.5,
+          "evidence_zh": "14 支影片；1,092,639 views；1,268 observed comments；1,062 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 24,
+          "external_edges": 28,
+          "conductance": 0.38809034907597534,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=24, external_edges=28, conductance=0.388"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (12); education_advice (11); personal_team_life (4); city_lifestyle (4); travel_exploration (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 31.9%，正面 16.6%，按讚加權負面 22.8%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "14 支影片；1,092,639 views；1,268 observed comments；1,062 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=24, external_edges=28, conductance=0.388"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 8,
+          "date_min": "2024-05-14 13:00:53+00:00",
+          "date_max": "2024-11-27 12:00:13+00:00",
+          "pct_graph_videos": 20.51282051282051
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 7
+            },
+            {
+              "label": "education_advice",
+              "count": 4
+            },
+            {
+              "label": "travel_exploration",
+              "count": 3
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "travel_exploration",
+              "lift": 1.625,
+              "n_videos": 3
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 1.21875,
+              "n_videos": 2
+            },
+            {
+              "theme": "food_culture",
+              "lift": 0.9750000000000001,
+              "n_videos": 1
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 0.975,
+              "n_videos": 7
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "幾百億的土地竟拿來蓋公園？衛武營原本應該是國宅！｜衛武營國家藝術文化中心 X 臺灣吧",
+              "count": 301
+            },
+            {
+              "label": "妲己真的是害商代滅亡的「亡國妖女」嗎？｜臺灣吧 Taiwan Bar",
+              "count": 125
+            },
+            {
+              "label": "到西方取經的玄奘，跟臺灣有什麼淵源嗎？為什麼他的舍利子會被送到臺灣呢？｜臺灣吧 Taiwan B",
+              "count": 68
+            },
+            {
+              "label": "現在的新兵地獄「成功嶺」，以前曾是超級賽馬場！｜臺灣吧 Taiwan Bar",
+              "count": 39
+            },
+            {
+              "label": "被稱為「抗荷急先鋒」的郭懷一，其實只是欠債還不出來的商人？｜臺灣吧 Taiwan Bar",
+              "count": 37
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.129182156133829,
+          "neutral_rate": 0.6356877323420075,
+          "positive_rate": 0.23513011152416358,
+          "like_weighted_negative_rate": 0.07865652361131047,
+          "like_weighted_positive_rate": 0.396583895507392,
+          "summary_zh": "中性討論為主；負面 12.9%，正面 23.5%，按讚加權負面 7.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 426182,
+          "total_observed_comments": 689,
+          "unique_commenters": 606,
+          "median_observed_commenters": 38,
+          "evidence_zh": "8 支影片；426,182 views；689 observed comments；606 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 9,
+          "external_edges": 11,
+          "conductance": 0.36904761904761907,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=9, external_edges=11, conductance=0.369"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (7); education_advice (4); travel_exploration (3); city_lifestyle (2); food_culture (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 12.9%，正面 23.5%，按讚加權負面 7.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "8 支影片；426,182 views；689 observed comments；606 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=9, external_edges=11, conductance=0.369"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 6,
+          "date_min": "2024-08-07 13:00:24+00:00",
+          "date_max": "2025-01-12 04:55:00+00:00",
+          "pct_graph_videos": 15.384615384615385
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 6
+            },
+            {
+              "label": "education_advice",
+              "count": 3
+            },
+            {
+              "label": "food_culture",
+              "count": 2
+            },
+            {
+              "label": "travel_exploration",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 2.6,
+              "n_videos": 2
+            },
+            {
+              "theme": "travel_exploration",
+              "lift": 1.4444444444444442,
+              "n_videos": 2
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.1142857142857143,
+              "n_videos": 6
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "浪漫臺三線其實很暗黑？到底哪裡浪漫了？-《客客客棧S5之嗨客任務 番外篇》EP2｜臺灣吧 Tai",
+              "count": 90
+            },
+            {
+              "label": "侯孝賢的《悲情城市》有一幕出現了「朝鮮樓」，你知道這是什麼地方嗎？｜臺灣吧 Taiwan Bar",
+              "count": 73
+            },
+            {
+              "label": "文成公主的美好形象，都是被塑造出來的？｜臺灣吧 Taiwan Bar",
+              "count": 61
+            },
+            {
+              "label": "受西方教育長大，最後卻成為中華民國的第一夫人！如何理解宋美齡的一生？｜臺灣吧 Taiwan Ba",
+              "count": 55
+            },
+            {
+              "label": "以愛國歌手著稱的鄧麗君，竟然曾陷入叛國危機，一度不敢回臺灣！｜臺灣吧 Taiwan Bar",
+              "count": 51
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.28554641598119856,
+          "neutral_rate": 0.6486486486486487,
+          "positive_rate": 0.06580493537015276,
+          "like_weighted_negative_rate": 0.24577226606538896,
+          "like_weighted_positive_rate": 0.13791807591131153,
+          "summary_zh": "中性討論為主；負面 28.6%，正面 6.6%，按讚加權負面 24.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 401552,
+          "total_observed_comments": 401,
+          "unique_commenters": 341,
+          "median_observed_commenters": 58,
+          "evidence_zh": "6 支影片；401,552 views；401 observed comments；341 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 6,
+          "external_edges": 6,
+          "conductance": 0.3404255319148936,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=6, external_edges=6, conductance=0.340"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (6); education_advice (3); food_culture (2); travel_exploration (2); personal_team_life (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 28.6%，正面 6.6%，按讚加權負面 24.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "6 支影片；401,552 views；401 observed comments；341 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=6, external_edges=6, conductance=0.340"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1342,6 +2819,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

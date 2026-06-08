@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "goldfishbrain-full",
   "title": "金魚腦Goldfish Brain",
   "channel_id": "UCTT5gtQU5rX8sUQnZaBqiVw",
@@ -110,219 +110,262 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/goldfishbrain-full/tables/actor_communities.csv",
-        "bytes": 82599
+        "bytes": 82599,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/goldfishbrain-full/tables/bridge_actors.csv",
-        "bytes": 11151
+        "bytes": 11151,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/goldfishbrain-full/tables/channel_overview.csv",
-        "bytes": 369
+        "bytes": 369,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/goldfishbrain-full/tables/commenter_activity.csv",
-        "bytes": 2299978
+        "bytes": 2299978,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/goldfishbrain-full/tables/commenter_tiers.csv",
-        "bytes": 285
+        "bytes": 285,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/goldfishbrain-full/tables/community_profiles.csv",
-        "bytes": 4696
+        "bytes": 4696,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/community_sentiment_summary.csv",
-        "bytes": 1707
+        "bytes": 1707,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/community_summary.csv",
-        "bytes": 773
+        "bytes": 773,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/goldfishbrain-full/tables/community_theme_affinity.csv",
-        "bytes": 7443
+        "bytes": 7443,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/goldfishbrain-full/tables/community_theme_sentiment.csv",
-        "bytes": 3740
+        "bytes": 3740,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/goldfishbrain-full/tables/continuity_sensitivity.csv",
-        "bytes": 595
+        "bytes": 595,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/continuity_summary.csv",
-        "bytes": 629
+        "bytes": 629,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/goldfishbrain-full/tables/diagnostics.csv",
-        "bytes": 1376
+        "bytes": 1376,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/goldfishbrain-full/tables/network_actor_metrics.csv",
-        "bytes": 43130
+        "bytes": 43130,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/network_summary.csv",
-        "bytes": 641
+        "bytes": 641,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/goldfishbrain-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 7373926
+        "bytes": 7373926,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/goldfishbrain-full/tables/qwen_video_themes.csv",
-        "bytes": 184886
+        "bytes": 184886,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 1148
+        "bytes": 1148,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 31891
+        "bytes": 31891,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/reply_sentiment_summary.csv",
-        "bytes": 747
+        "bytes": 747,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/goldfishbrain-full/tables/reply_thread_metrics.csv",
-        "bytes": 6763796
+        "bytes": 6763796,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/goldfishbrain-full/tables/reply_thread_overview.csv",
-        "bytes": 362
+        "bytes": 362,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/goldfishbrain-full/tables/rolling_retention.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/goldfishbrain-full/tables/sentiment_hotspots.csv",
-        "bytes": 27550
+        "bytes": 27550,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/sentiment_source_summary.csv",
-        "bytes": 252
+        "bytes": 252,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/sentiment_summary.csv",
-        "bytes": 606
+        "bytes": 606,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/sentiment_theme_summary.csv",
-        "bytes": 1032
+        "bytes": 1032,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/theme_source_summary.csv",
-        "bytes": 30
+        "bytes": 30,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/theme_summary.csv",
-        "bytes": 141
+        "bytes": 141,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/goldfishbrain-full/tables/theme_video_labels.csv",
-        "bytes": 34497
+        "bytes": 34497,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/goldfishbrain-full/tables/theme_video_labels_long.csv",
-        "bytes": 38868
+        "bytes": 38868,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 791
+        "bytes": 791,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/video_cluster_summary.csv",
-        "bytes": 2259
+        "bytes": 2259,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/goldfishbrain-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1867
+        "bytes": 1867,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/goldfishbrain-full/tables/video_clusters.csv",
-        "bytes": 17244
+        "bytes": 17244,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/goldfishbrain-full/tables/video_link_opportunities.csv",
-        "bytes": 148963
+        "bytes": 148963,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/goldfishbrain-full/tables/video_metrics.csv",
-        "bytes": 13766
+        "bytes": 13766,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/goldfishbrain-full/tables/video_network_metrics.csv",
-        "bytes": 19287
+        "bytes": 19287,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/goldfishbrain-full/tables/video_network_summary.csv",
-        "bytes": 574
+        "bytes": 574,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/goldfishbrain-full/figures/channel_activity.png",
-        "bytes": 86123
+        "bytes": 86123,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/goldfishbrain-full/figures/commenter_tiers.png",
-        "bytes": 28855
+        "bytes": 28855,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/goldfishbrain-full/figures/community_sizes.png",
-        "bytes": 25438
+        "bytes": 25438,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/goldfishbrain-full/figures/video_cluster_sizes.png",
-        "bytes": 24580
+        "bytes": 24580,
+        "source_dir": null
       }
     ]
   },
@@ -643,6 +686,661 @@
         "max_core_number": 41
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 358,
+          "pct_active_commenters": 40.451977401129945,
+          "summary_zh": "40.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1860,
+          "avg_comments_per_commenter": 5.195530726256983,
+          "n_videos_touched": 61,
+          "summary_zh": "平均留言 5.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "想去瑞士但沒錢？那就去斯洛維尼亞🇸🇮吧！現在認識還不算晚！｜金魚腦Goldfish Brain",
+            "count": 115
+          },
+          {
+            "label": "檳城也太好玩了吧！超便宜又好吃，馬來西亞不要再只去吉隆坡了！｜金魚腦Goldfish Brain",
+            "count": 98
+          },
+          {
+            "label": "德國一個人小旅行： 我誤會了柏林，以為是高冷，但其實超溫暖，一個你可以做自己的城市 | 金魚腦",
+            "count": 78
+          },
+          {
+            "label": "自學日文兩個月，就跑去日本發了超好聽的日文單曲 !? 日本專業歌手：太厲害了！｜金魚腦 Gold",
+            "count": 76
+          },
+          {
+            "label": "去全世界最貴的國家瑞士登山，把風景做成明信片送給你們！｜金魚腦 Goldfish Brain",
+            "count": 72
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 358
+          },
+          {
+            "label": "personal_team_life",
+            "count": 137
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "automotive_luxury",
+            "lift": 1.923205800282542,
+            "n_commenters": 61
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.541628711408735,
+            "n_commenters": 98
+          },
+          {
+            "theme": "physical_challenge",
+            "lift": 1.4790030656395323,
+            "n_commenters": 118
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.022270114942528736,
+          "neutral_rate": 0.4852729885057471,
+          "positive_rate": 0.49245689655172414,
+          "like_weighted_negative_rate": 0.025878819996467056,
+          "like_weighted_positive_rate": 0.5514485073308603,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.2%，正面 49.2%，按讚加權負面 2.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.022292323869610935,
+            "like_weighted_negative_rate": 0.03207633938836514,
+            "n_comments": 4755,
+            "summary_zh": "travel_exploration：負面 2.2%，按讚加權負面 3.2%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.022167487684729065,
+            "like_weighted_negative_rate": 0.005336382694873261,
+            "n_comments": 812,
+            "summary_zh": "personal_team_life：負面 2.2%，按讚加權負面 0.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 250,
+          "pct_active_commenters": 28.24858757062147,
+          "summary_zh": "28.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1410,
+          "avg_comments_per_commenter": 5.64,
+          "n_videos_touched": 61,
+          "summary_zh": "平均留言 5.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "到日本茨城右駕😳瀑布結冰了！超美日出在大洗磯前神社、袋田瀑布、日立車站、大洗町、常陸秋蕎麥麵｜金",
+            "count": 98
+          },
+          {
+            "label": "入駐淡水老街！我的店搬進了五層樓透天厝！100萬元掰掰【搬家全記錄】｜金魚腦Goldfish B",
+            "count": 77
+          },
+          {
+            "label": "冬季的礁溪:泡湯、看瀑布、吃美食，一次過的完美體驗🥰￼￼＠五峰旗瀑布、葉家香辣椒文創館、路邊烤肉",
+            "count": 71
+          },
+          {
+            "label": "泰國普吉島度假五天花費多少錢？天堂一般的跳島行程、去最熱鬧的芭東海灘、體驗無邊際泳池渡假飯店｜金",
+            "count": 70
+          },
+          {
+            "label": "沖繩一個人小旅行！被陌生人抓去唱歌、自己前往無人島、吃超華麗的鮭魚卵丼飯！超級雷包到底能不能在國",
+            "count": 63
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 249
+          },
+          {
+            "label": "personal_team_life",
+            "count": 129
+          },
+          {
+            "label": "controversy_response",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "survival_outdoor",
+            "lift": 2.8401074443591714,
+            "n_commenters": 41
+          },
+          {
+            "theme": "event_announcement",
+            "lift": 1.6792948673224959,
+            "n_commenters": 16
+          },
+          {
+            "theme": "business_brand",
+            "lift": 1.6091694455952568,
+            "n_commenters": 93
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.016611295681063124,
+          "neutral_rate": 0.3401993355481728,
+          "positive_rate": 0.6431893687707642,
+          "like_weighted_negative_rate": 0.007144274657670173,
+          "like_weighted_positive_rate": 0.8132565985314546,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.7%，正面 64.3%，按讚加權負面 0.7%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.01842948717948718,
+            "like_weighted_negative_rate": 0.007901234567901235,
+            "n_comments": 1248,
+            "summary_zh": "travel_exploration：負面 1.8%，按讚加權負面 0.8%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.00796812749003984,
+            "like_weighted_negative_rate": 0.004081632653061225,
+            "n_comments": 251,
+            "summary_zh": "personal_team_life：負面 0.8%，按讚加權負面 0.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 135,
+          "pct_active_commenters": 15.254237288135593,
+          "summary_zh": "15.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 886,
+          "avg_comments_per_commenter": 6.562962962962963,
+          "n_videos_touched": 61,
+          "summary_zh": "平均留言 6.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "沖繩一個人小旅行！被陌生人抓去唱歌、自己前往無人島、吃超華麗的鮭魚卵丼飯！超級雷包到底能不能在國",
+            "count": 58
+          },
+          {
+            "label": "泰國普吉島度假五天花費多少錢？天堂一般的跳島行程、去最熱鬧的芭東海灘、體驗無邊際泳池渡假飯店｜金",
+            "count": 40
+          },
+          {
+            "label": "不到3萬玩爆愛妮島最美Nacpan海灘、可以邊划船邊喝酒的跳島、180度海景飯店＋豪華露營！|",
+            "count": 32
+          },
+          {
+            "label": "你沒想過的日本🥰佐賀美肌溫泉、九州第一A5和牛火車便當!!深山裡的燈光秀✨佐賀的超級阿金✨ |",
+            "count": 30
+          },
+          {
+            "label": "最美日本海島通船啦！石垣島4天3夜要多少錢！2025超值得去的海島行程！｜金魚腦 Goldfis",
+            "count": 30
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 135
+          },
+          {
+            "label": "personal_team_life",
+            "count": 69
+          },
+          {
+            "label": "controversy_response",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.035269709543568464,
+          "neutral_rate": 0.3817427385892116,
+          "positive_rate": 0.58298755186722,
+          "like_weighted_negative_rate": 0.014911746804625686,
+          "like_weighted_positive_rate": 0.6037735849056604,
+          "summary_zh": "中性偏正，正向討論較多；負面 3.5%，正面 58.3%，按讚加權負面 1.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.0364963503649635,
+            "like_weighted_negative_rate": 0.015703069236259814,
+            "n_comments": 822,
+            "summary_zh": "travel_exploration：負面 3.6%，按讚加權負面 1.6%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.02142857142857143,
+            "like_weighted_negative_rate": 0.008298755186721992,
+            "n_comments": 140,
+            "summary_zh": "personal_team_life：負面 2.1%，按讚加權負面 0.8%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 56,
+          "pct_active_commenters": 6.3276836158192085,
+          "summary_zh": "6.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 246,
+          "avg_comments_per_commenter": 4.392857142857143,
+          "n_videos_touched": 54,
+          "summary_zh": "平均留言 4.4 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "住在深山25年！黑苗族媽媽第一次見海，我感動到落淚！北越沙壩&下龍灣之旅｜金魚腦Goldfish",
+            "count": 13
+          },
+          {
+            "label": "泰國最宜居+超便宜的城市-清邁！數位遊牧、亞太退休天堂，榮登我最愛城市TOP3｜金魚腦 Gold",
+            "count": 11
+          },
+          {
+            "label": "沖繩一個人小旅行！被陌生人抓去唱歌、自己前往無人島、吃超華麗的鮭魚卵丼飯！超級雷包到底能不能在國",
+            "count": 10
+          },
+          {
+            "label": "為什麼你會感到生活沒目標？我做的這些小事，完全轉變了我的生活！｜金魚腦Goldfish Brai",
+            "count": 9
+          },
+          {
+            "label": "台灣人Hold不住瑞士的物價跟美景，一萬六的飛行傘值得嗎？麥當勞重擊錢包君 | 金魚腦Goldf",
+            "count": 9
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 55
+          },
+          {
+            "label": "personal_team_life",
+            "count": 26
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.026717557251908396,
+          "neutral_rate": 0.33969465648854963,
+          "positive_rate": 0.6335877862595419,
+          "like_weighted_negative_rate": 0.008787346221441126,
+          "like_weighted_positive_rate": 0.8523725834797891,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.7%，正面 63.4%，按讚加權負面 0.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.027149321266968326,
+            "like_weighted_negative_rate": 0.008321775312066574,
+            "n_comments": 221,
+            "summary_zh": "travel_exploration：負面 2.7%，按讚加權負面 0.8%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 50,
+          "pct_active_commenters": 5.649717514124294,
+          "summary_zh": "5.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 217,
+          "avg_comments_per_commenter": 4.34,
+          "n_videos_touched": 43,
+          "summary_zh": "平均留言 4.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "花了半年改造100坪工作室！這才是理想的工作環境！攝影棚、錄音室、花園樣樣有｜金魚腦 Goldf",
+            "count": 13
+          },
+          {
+            "label": "台灣人Hold不住瑞士的物價跟美景，一萬六的飛行傘值得嗎？麥當勞重擊錢包君 | 金魚腦Goldf",
+            "count": 13
+          },
+          {
+            "label": "想來瑞士嗎？沒看這支影片別買機票！吃喝玩樂花了六位數！| 金魚腦 Goldfish Brain",
+            "count": 13
+          },
+          {
+            "label": "沒迷過路別說來過威尼斯！此生必來的水上之都，美麗爆擊！義大利旅遊推薦攻略｜金魚腦 Goldfis",
+            "count": 12
+          },
+          {
+            "label": "到日本茨城右駕😳瀑布結冰了！超美日出在大洗磯前神社、袋田瀑布、日立車站、大洗町、常陸秋蕎麥麵｜金",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 50
+          },
+          {
+            "label": "personal_team_life",
+            "count": 20
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.04700854700854701,
+          "neutral_rate": 0.358974358974359,
+          "positive_rate": 0.594017094017094,
+          "like_weighted_negative_rate": 0.012987012987012988,
+          "like_weighted_positive_rate": 0.7582417582417582,
+          "summary_zh": "中性偏正，正向討論較多；負面 4.7%，正面 59.4%，按讚加權負面 1.3%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.046632124352331605,
+            "like_weighted_negative_rate": 0.011441647597254004,
+            "n_comments": 193,
+            "summary_zh": "travel_exploration：負面 4.7%，按讚加權負面 1.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 36,
+          "pct_active_commenters": 4.067796610169491,
+          "summary_zh": "4.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 178,
+          "avg_comments_per_commenter": 4.944444444444445,
+          "n_videos_touched": 43,
+          "summary_zh": "平均留言 4.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "台灣人Hold不住瑞士的物價跟美景，一萬六的飛行傘值得嗎？麥當勞重擊錢包君 | 金魚腦Goldf",
+            "count": 28
+          },
+          {
+            "label": "越南太便宜！米其林料理不到100元！半自助旅行原來這麼好！各位，我們一起吃爆河內！｜金魚腦Gol",
+            "count": 13
+          },
+          {
+            "label": "住在深山25年！黑苗族媽媽第一次見海，我感動到落淚！北越沙壩&下龍灣之旅｜金魚腦Goldfish",
+            "count": 12
+          },
+          {
+            "label": "想來瑞士嗎？沒看這支影片別買機票！吃喝玩樂花了六位數！| 金魚腦 Goldfish Brain",
+            "count": 11
+          },
+          {
+            "label": "菲律賓衝浪天堂！蝦膏島の冒險，為了追尋世界另一端美到讓人想哭的風景！| Goldfish Bra",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 36
+          },
+          {
+            "label": "personal_team_life",
+            "count": 13
+          },
+          {
+            "label": "controversy_response",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.010582010582010581,
+          "neutral_rate": 0.31746031746031744,
+          "positive_rate": 0.671957671957672,
+          "like_weighted_negative_rate": 0.0011370096645821489,
+          "like_weighted_positive_rate": 0.9090392268334281,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.1%，正面 67.2%，按讚加權負面 0.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.012048192771084338,
+            "like_weighted_negative_rate": 0.0012698412698412698,
+            "n_comments": 166,
+            "summary_zh": "travel_exploration：負面 1.2%，按讚加權負面 0.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 62,
       "n_edges": 1609,
@@ -711,6 +1409,356 @@
         "conductance": 0.3829861631450122,
         "avg_core_number": 45.38709677419355,
         "max_core_number": 47
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 31,
+          "date_min": "2023-01-12 12:00:08+00:00",
+          "date_max": "2024-08-21 12:00:26+00:00",
+          "pct_graph_videos": 50
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "travel_exploration",
+              "count": 28
+            },
+            {
+              "label": "food_culture",
+              "count": 22
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 16
+            },
+            {
+              "label": "personal_team_life",
+              "count": 9
+            },
+            {
+              "label": "product_review",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "event_announcement",
+              "lift": 2,
+              "n_videos": 1
+            },
+            {
+              "theme": "survival_outdoor",
+              "lift": 2,
+              "n_videos": 1
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.3846153846153846,
+              "n_videos": 9
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.3333333333333333,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "到日本茨城右駕😳瀑布結冰了！超美日出在大洗磯前神社、袋田瀑布、日立車站、大洗町、常陸秋蕎麥麵｜金",
+              "count": 2383
+            },
+            {
+              "label": "沖繩一個人小旅行！被陌生人抓去唱歌、自己前往無人島、吃超華麗的鮭魚卵丼飯！超級雷包到底能不能在國",
+              "count": 893
+            },
+            {
+              "label": "冬季的礁溪:泡湯、看瀑布、吃美食，一次過的完美體驗🥰￼￼＠五峰旗瀑布、葉家香辣椒文創館、路邊烤肉",
+              "count": 842
+            },
+            {
+              "label": "入駐淡水老街！我的店搬進了五層樓透天厝！100萬元掰掰【搬家全記錄】｜金魚腦Goldfish B",
+              "count": 635
+            },
+            {
+              "label": "泰國普吉島度假五天花費多少錢？天堂一般的跳島行程、去最熱鬧的芭東海灘、體驗無邊際泳池渡假飯店｜金",
+              "count": 613
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "美食",
+            "文化",
+            "夜市",
+            "城市",
+            "街訪"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.030069107484193502,
+          "neutral_rate": 0.3839876488751654,
+          "positive_rate": 0.5859432436406411,
+          "like_weighted_negative_rate": 0.020764850224547434,
+          "like_weighted_positive_rate": 0.6485716931339414,
+          "summary_zh": "中性偏正，正向討論較多；負面 3.0%，正面 58.6%，按讚加權負面 2.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 17631945,
+          "total_observed_comments": 10840,
+          "unique_commenters": 8470,
+          "median_observed_commenters": 216,
+          "evidence_zh": "31 支影片；17,631,945 views；10,840 observed comments；8,470 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 412,
+          "external_edges": 755,
+          "conductance": 0.3829861631450122,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=412, external_edges=755, conductance=0.383"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "travel_exploration (28); food_culture (22); city_lifestyle (16); personal_team_life (9); product_review (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 3.0%，正面 58.6%，按讚加權負面 2.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "31 支影片；17,631,945 views；10,840 observed comments；8,470 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=412, external_edges=755, conductance=0.383"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 31,
+          "date_min": "2024-06-03 12:00:06+00:00",
+          "date_max": "2026-05-07 11:00:06+00:00",
+          "pct_graph_videos": 50
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "travel_exploration",
+              "count": 30
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 18
+            },
+            {
+              "label": "food_culture",
+              "count": 16
+            },
+            {
+              "label": "product_review",
+              "count": 5
+            },
+            {
+              "label": "controversy_response",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "automotive_luxury",
+              "lift": 2,
+              "n_videos": 3
+            },
+            {
+              "theme": "education_advice",
+              "lift": 2,
+              "n_videos": 2
+            },
+            {
+              "theme": "physical_challenge",
+              "lift": 1.5,
+              "n_videos": 3
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.4285714285714286,
+              "n_videos": 5
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "想去瑞士但沒錢？那就去斯洛維尼亞🇸🇮吧！現在認識還不算晚！｜金魚腦Goldfish Brain",
+              "count": 937
+            },
+            {
+              "label": "自學日文兩個月，就跑去日本發了超好聽的日文單曲 !? 日本專業歌手：太厲害了！｜金魚腦 Gold",
+              "count": 831
+            },
+            {
+              "label": "吉隆坡48hr要花多少錢？馬來西亞實在太便宜又好吃！這夜景我醉了...|金魚腦Goldfish",
+              "count": 658
+            },
+            {
+              "label": "檳城也太好玩了吧！超便宜又好吃，馬來西亞不要再只去吉隆坡了！｜金魚腦Goldfish Brain",
+              "count": 653
+            },
+            {
+              "label": "最美日本海島通船啦！石垣島4天3夜要多少錢！2025超值得去的海島行程！｜金魚腦 Goldfis",
+              "count": 617
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "城市",
+            "街訪",
+            "生活風格",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.04213019450226082,
+          "neutral_rate": 0.39661235914734805,
+          "positive_rate": 0.5612574463503912,
+          "like_weighted_negative_rate": 0.02918085939634602,
+          "like_weighted_positive_rate": 0.6993934315743456,
+          "summary_zh": "中性偏正，正向討論較多；負面 4.2%，正面 56.1%，按讚加權負面 2.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 19496364,
+          "total_observed_comments": 10864,
+          "unique_commenters": 8407,
+          "median_observed_commenters": 256,
+          "evidence_zh": "31 支影片；19,496,364 views；10,864 observed comments；8,407 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 442,
+          "external_edges": 755,
+          "conductance": 0.3829861631450122,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=442, external_edges=755, conductance=0.383"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "travel_exploration (30); city_lifestyle (18); food_culture (16); product_review (5); controversy_response (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 4.2%，正面 56.1%，按讚加權負面 2.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "31 支影片；19,496,364 views；10,864 observed comments；8,407 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=442, external_edges=755, conductance=0.383"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1252,6 +2300,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

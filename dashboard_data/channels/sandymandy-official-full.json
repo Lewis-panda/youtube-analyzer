@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "sandymandy-official-full",
   "title": "sandy mandy",
   "channel_id": "UChX5JaALoA1o80Cc5zkQz_Q",
@@ -110,219 +110,262 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/sandymandy-official-full/tables/actor_communities.csv",
-        "bytes": 3521
+        "bytes": 3521,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/sandymandy-official-full/tables/bridge_actors.csv",
-        "bytes": 7520
+        "bytes": 7520,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/sandymandy-official-full/tables/channel_overview.csv",
-        "bytes": 350
+        "bytes": 350,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/sandymandy-official-full/tables/commenter_activity.csv",
-        "bytes": 54251
+        "bytes": 54251,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/sandymandy-official-full/tables/commenter_tiers.csv",
-        "bytes": 202
+        "bytes": 202,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/sandymandy-official-full/tables/community_profiles.csv",
-        "bytes": 1099
+        "bytes": 1099,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/community_sentiment_summary.csv",
-        "bytes": 720
+        "bytes": 720,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/community_summary.csv",
-        "bytes": 360
+        "bytes": 360,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/sandymandy-official-full/tables/community_theme_affinity.csv",
-        "bytes": 1204
+        "bytes": 1204,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/sandymandy-official-full/tables/community_theme_sentiment.csv",
-        "bytes": 1550
+        "bytes": 1550,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/sandymandy-official-full/tables/continuity_sensitivity.csv",
-        "bytes": 530
+        "bytes": 530,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/continuity_summary.csv",
-        "bytes": 616
+        "bytes": 616,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/sandymandy-official-full/tables/diagnostics.csv",
-        "bytes": 1048
+        "bytes": 1048,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/sandymandy-official-full/tables/network_actor_metrics.csv",
-        "bytes": 7520
+        "bytes": 7520,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/network_summary.csv",
-        "bytes": 617
+        "bytes": 617,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/sandymandy-official-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 252834
+        "bytes": 252834,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/sandymandy-official-full/tables/qwen_video_themes.csv",
-        "bytes": 11180
+        "bytes": 11180,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 760
+        "bytes": 760,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 2501
+        "bytes": 2501,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/reply_sentiment_summary.csv",
-        "bytes": 729
+        "bytes": 729,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/sandymandy-official-full/tables/reply_thread_metrics.csv",
-        "bytes": 196074
+        "bytes": 196074,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/sandymandy-official-full/tables/reply_thread_overview.csv",
-        "bytes": 349
+        "bytes": 349,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/sandymandy-official-full/tables/rolling_retention.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/sandymandy-official-full/tables/sentiment_hotspots.csv",
-        "bytes": 2517
+        "bytes": 2517,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/sentiment_source_summary.csv",
-        "bytes": 245
+        "bytes": 245,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/sentiment_summary.csv",
-        "bytes": 605
+        "bytes": 605,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/sentiment_theme_summary.csv",
-        "bytes": 964
+        "bytes": 964,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/theme_source_summary.csv",
-        "bytes": 29
+        "bytes": 29,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/theme_summary.csv",
-        "bytes": 121
+        "bytes": 121,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/sandymandy-official-full/tables/theme_video_labels.csv",
-        "bytes": 2778
+        "bytes": 2778,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/sandymandy-official-full/tables/theme_video_labels_long.csv",
-        "bytes": 2085
+        "bytes": 2085,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 543
+        "bytes": 543,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/video_cluster_summary.csv",
-        "bytes": 945
+        "bytes": 945,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/sandymandy-official-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 418
+        "bytes": 418,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/sandymandy-official-full/tables/video_clusters.csv",
-        "bytes": 1361
+        "bytes": 1361,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/sandymandy-official-full/tables/video_link_opportunities.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/sandymandy-official-full/tables/video_metrics.csv",
-        "bytes": 1089
+        "bytes": 1089,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/sandymandy-official-full/tables/video_network_metrics.csv",
-        "bytes": 1256
+        "bytes": 1256,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/sandymandy-official-full/tables/video_network_summary.csv",
-        "bytes": 442
+        "bytes": 442,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/sandymandy-official-full/figures/channel_activity.png",
-        "bytes": 61846
+        "bytes": 61846,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/sandymandy-official-full/figures/commenter_tiers.png",
-        "bytes": 23187
+        "bytes": 23187,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/sandymandy-official-full/figures/community_sizes.png",
-        "bytes": 23814
+        "bytes": 23814,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/sandymandy-official-full/figures/video_cluster_sizes.png",
-        "bytes": 22619
+        "bytes": 22619,
+        "source_dir": null
       }
     ]
   },
@@ -578,6 +621,270 @@
         "max_core_number": 19
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 20,
+          "pct_active_commenters": 55.55555555555556,
+          "summary_zh": "55.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 137,
+          "avg_comments_per_commenter": 6.85,
+          "n_videos_touched": 6,
+          "summary_zh": "平均留言 6.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "最多人想看的KPOP韓舞! Top requested KPOP dances! / Sandy",
+            "count": 18
+          },
+          {
+            "label": "姐妹兩人的東京🍁 會發生什麼事？/ Sandy & Mandy",
+            "count": 17
+          },
+          {
+            "label": "開箱BLACKPINK, BTS入住的2000萬元單身即地獄天堂島! 韓國首爾奢華旅行VLOG",
+            "count": 16
+          },
+          {
+            "label": "從出道曲開始跳! BLACKPINK 舞蹈串燒來了!!! BLACKPINK Dance Med",
+            "count": 16
+          },
+          {
+            "label": "說走就走的曼谷旅行 / Sony's Xperia 5 V 品牌大使Sandy&Mandy",
+            "count": 15
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 20
+          },
+          {
+            "label": "personal_team_life",
+            "count": 20
+          },
+          {
+            "label": "other",
+            "count": 16
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "food_culture",
+            "lift": 1.4440860215053763,
+            "n_commenters": 17
+          },
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.2458781362007167,
+            "n_commenters": 19
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.1485688323489323,
+            "n_commenters": 20
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "開箱"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0,
+          "neutral_rate": 0.23756906077348067,
+          "positive_rate": 0.7624309392265194,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.8362068965517241,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.0%，正面 76.2%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0,
+            "like_weighted_negative_rate": 0,
+            "n_comments": 98,
+            "summary_zh": "travel_exploration：負面 0.0%，按讚加權負面 0.0%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0,
+            "like_weighted_negative_rate": 0,
+            "n_comments": 55,
+            "summary_zh": "personal_team_life：負面 0.0%，按讚加權負面 0.0%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 16,
+          "pct_active_commenters": 44.44444444444444,
+          "summary_zh": "44.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 92,
+          "avg_comments_per_commenter": 5.75,
+          "n_videos_touched": 6,
+          "summary_zh": "平均留言 5.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "一次跳完NewJeans的舞蹈串燒! NewJeans - Attention + Cookie",
+            "count": 16
+          },
+          {
+            "label": "從出道曲開始跳! BLACKPINK 舞蹈串燒來了!!! BLACKPINK Dance Med",
+            "count": 14
+          },
+          {
+            "label": "最多人想看的KPOP韓舞! Top requested KPOP dances! / Sandy",
+            "count": 12
+          },
+          {
+            "label": "說走就走的曼谷旅行 / Sony's Xperia 5 V 品牌大使Sandy&Mandy",
+            "count": 11
+          },
+          {
+            "label": "開箱BLACKPINK, BTS入住的2000萬元單身即地獄天堂島! 韓國首爾奢華旅行VLOG",
+            "count": 9
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 16
+          },
+          {
+            "label": "travel_exploration",
+            "count": 14
+          },
+          {
+            "label": "other",
+            "count": 14
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "guest_relationship",
+            "lift": 1.1734748010610079,
+            "n_commenters": 16
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.1421686746987951,
+            "n_commenters": 16
+          },
+          {
+            "theme": "product_review",
+            "lift": 1.0284023668639055,
+            "n_commenters": 11
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地",
+            "探索"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.009523809523809525,
+          "neutral_rate": 0.1619047619047619,
+          "positive_rate": 0.8285714285714286,
+          "like_weighted_negative_rate": 0.0025188916876574307,
+          "like_weighted_positive_rate": 0.8992443324937027,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.0%，正面 82.9%，按讚加權負面 0.3%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 6,
       "n_edges": 15,
@@ -623,6 +930,198 @@
         "conductance": null,
         "avg_core_number": 5.0,
         "max_core_number": 5
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 6,
+          "date_min": "2023-03-24 12:00:22+00:00",
+          "date_max": "2025-12-13 09:32:22+00:00",
+          "pct_graph_videos": 100
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 3
+            },
+            {
+              "label": "guest_relationship",
+              "count": 3
+            },
+            {
+              "label": "travel_exploration",
+              "count": 3
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "guest_relationship",
+              "lift": 1,
+              "n_videos": 3
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1,
+              "n_videos": 3
+            },
+            {
+              "theme": "travel_exploration",
+              "lift": 1,
+              "n_videos": 3
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 1,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "從出道曲開始跳! BLACKPINK 舞蹈串燒來了!!! BLACKPINK Dance Med",
+              "count": 115
+            },
+            {
+              "label": "一次跳完NewJeans的舞蹈串燒! NewJeans - Attention + Cookie",
+              "count": 96
+            },
+            {
+              "label": "說走就走的曼谷旅行 / Sony's Xperia 5 V 品牌大使Sandy&Mandy",
+              "count": 83
+            },
+            {
+              "label": "姐妹兩人的東京🍁 會發生什麼事？/ Sandy & Mandy",
+              "count": 83
+            },
+            {
+              "label": "最多人想看的KPOP韓舞! Top requested KPOP dances! / Sandy",
+              "count": 82
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "來賓",
+            "合作",
+            "外國人",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.006369426751592357,
+          "neutral_rate": 0.28556263269639065,
+          "positive_rate": 0.7080679405520169,
+          "like_weighted_negative_rate": 0.0019059720457433292,
+          "like_weighted_positive_rate": 0.7757306226175349,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.6%，正面 70.8%，按讚加權負面 0.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 947814,
+          "total_observed_comments": 618,
+          "unique_commenters": 367,
+          "median_observed_commenters": 83,
+          "evidence_zh": "6 支影片；947,814 views；618 observed comments；367 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 15,
+          "external_edges": 0,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=15, external_edges=0, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (3); guest_relationship (3); travel_exploration (3); city_lifestyle (2); food_culture (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 0.6%，正面 70.8%，按讚加權負面 0.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "6 支影片；947,814 views；618 observed comments；367 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=15, external_edges=0, conductance=-"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1038,6 +1537,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

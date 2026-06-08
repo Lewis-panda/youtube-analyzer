@@ -47,6 +47,7 @@ class ExternalAnalysisConfig:
     min_daily_posts: int = 2
     min_external_engagement: int = 10
     merge_gap_days: int = 3
+    merge_cross_topic: bool = False
     baseline_days: int = 90
     pre_days: int = 28
     post_days: int = 28
@@ -126,6 +127,7 @@ def load_config(path: Path) -> AnalyzerConfig:
             min_daily_posts=int(external.get("min_daily_posts", 2)),
             min_external_engagement=int(external.get("min_external_engagement", 10)),
             merge_gap_days=int(external.get("merge_gap_days", 3)),
+            merge_cross_topic=bool(external.get("merge_cross_topic", False)),
             baseline_days=int(external.get("baseline_days", 90)),
             pre_days=int(external.get("pre_days", 28)),
             post_days=int(external.get("post_days", 28)),

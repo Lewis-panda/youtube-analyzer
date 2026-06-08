@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "3cdogs-full",
   "title": "科技狗 3C Dog",
   "channel_id": "UC5r-9EMDERXlUni-UWAtTdg",
@@ -100,224 +100,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/3cdogs-full/tables/actor_communities.csv",
-        "bytes": 38061
+        "bytes": 38061,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/3cdogs-full/tables/bridge_actors.csv",
-        "bytes": 9861
+        "bytes": 9861,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/3cdogs-full/tables/channel_overview.csv",
-        "bytes": 360
+        "bytes": 360,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/3cdogs-full/tables/commenter_activity.csv",
-        "bytes": 864440
+        "bytes": 864440,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/3cdogs-full/tables/commenter_tiers.csv",
-        "bytes": 266
+        "bytes": 266,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/3cdogs-full/tables/community_profiles.csv",
-        "bytes": 8965
+        "bytes": 8965,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/3cdogs-full/tables/community_sentiment_summary.csv",
-        "bytes": 3464
+        "bytes": 3464,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/3cdogs-full/tables/community_summary.csv",
-        "bytes": 1427
+        "bytes": 1427,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/3cdogs-full/tables/community_theme_affinity.csv",
-        "bytes": 7584
+        "bytes": 7584,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/3cdogs-full/tables/community_theme_sentiment.csv",
-        "bytes": 14086
+        "bytes": 14086,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/3cdogs-full/tables/continuity_sensitivity.csv",
-        "bytes": 593
+        "bytes": 593,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/3cdogs-full/tables/continuity_summary.csv",
-        "bytes": 630
+        "bytes": 630,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/3cdogs-full/tables/diagnostics.csv",
-        "bytes": 1514
+        "bytes": 1514,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/3cdogs-full/tables/network_actor_metrics.csv",
-        "bytes": 32372
+        "bytes": 32372,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/3cdogs-full/tables/network_summary.csv",
-        "bytes": 634
+        "bytes": 634,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/3cdogs-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 4192456
+        "bytes": 4192456,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/3cdogs-full/tables/qwen_video_themes.csv",
-        "bytes": 472390
+        "bytes": 472390,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/3cdogs-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2145
+        "bytes": 2145,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/3cdogs-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 72696
+        "bytes": 72696,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/3cdogs-full/tables/reply_sentiment_summary.csv",
-        "bytes": 730
+        "bytes": 730,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/3cdogs-full/tables/reply_thread_metrics.csv",
-        "bytes": 2737025
+        "bytes": 2737025,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/3cdogs-full/tables/reply_thread_overview.csv",
-        "bytes": 360
+        "bytes": 360,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/3cdogs-full/tables/rolling_retention.csv",
-        "bytes": 625
+        "bytes": 625,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/3cdogs-full/tables/sentiment_hotspots.csv",
-        "bytes": 67286
+        "bytes": 67286,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/3cdogs-full/tables/sentiment_source_summary.csv",
-        "bytes": 251
+        "bytes": 251,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/3cdogs-full/tables/sentiment_summary.csv",
-        "bytes": 619
+        "bytes": 619,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/3cdogs-full/tables/sentiment_theme_summary.csv",
-        "bytes": 1785
+        "bytes": 1785,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/3cdogs-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/3cdogs-full/tables/theme_summary.csv",
-        "bytes": 211
+        "bytes": 211,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/3cdogs-full/tables/theme_video_labels.csv",
-        "bytes": 81966
+        "bytes": 81966,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/3cdogs-full/tables/theme_video_labels_long.csv",
-        "bytes": 72821
+        "bytes": 72821,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/3cdogs-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1978
+        "bytes": 1978,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/3cdogs-full/tables/video_cluster_summary.csv",
-        "bytes": 5045
+        "bytes": 5045,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/3cdogs-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1988
+        "bytes": 1988,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/3cdogs-full/tables/video_clusters.csv",
-        "bytes": 22446
+        "bytes": 22446,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/3cdogs-full/tables/video_link_opportunities.csv",
-        "bytes": 110480
+        "bytes": 110480,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/3cdogs-full/tables/video_metrics.csv",
-        "bytes": 35811
+        "bytes": 35811,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/3cdogs-full/tables/video_network_metrics.csv",
-        "bytes": 22806
+        "bytes": 22806,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/3cdogs-full/tables/video_network_summary.csv",
-        "bytes": 632
+        "bytes": 632,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/3cdogs-full/figures/channel_activity.png",
-        "bytes": 98368
+        "bytes": 98368,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/3cdogs-full/figures/commenter_tiers.png",
-        "bytes": 25297
+        "bytes": 25297,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/3cdogs-full/figures/community_sizes.png",
-        "bytes": 26149
+        "bytes": 26149,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/3cdogs-full/figures/rolling_retention.png",
-        "bytes": 37694
+        "bytes": 37694,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/3cdogs-full/figures/video_cluster_sizes.png",
-        "bytes": 28863
+        "bytes": 28863,
+        "source_dir": null
       }
     ]
   },
@@ -685,6 +729,1309 @@
         "max_core_number": 4
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 10,
+        "segment_label": "Audience segment 10",
+        "group_size": {
+          "n_commenters": 257,
+          "pct_active_commenters": 61.9277108433735,
+          "summary_zh": "61.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1086,
+          "avg_comments_per_commenter": 4.22568093385214,
+          "n_videos_touched": 150,
+          "summary_zh": "平均留言 4.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "iPhone 16e 開箱評測 蘋果手機優缺點 Apple｜A18、續航、拍照、iOS18、動態",
+            "count": 29
+          },
+          {
+            "label": "台積電之恥？Google Tensor G5 大翻車？Pixel 10 Pro XL 缺點災情！",
+            "count": 21
+          },
+          {
+            "label": "募資！？詐騙！？揭露台灣公司 & YouTuber 上千萬募資爭議",
+            "count": 21
+          },
+          {
+            "label": "索黑來溜？最敢怒的 Sony Xperia 1 V 超主觀評測宇宙｜索尼手機開箱評測、災情、優缺",
+            "count": 20
+          },
+          {
+            "label": "索尼拜拜！日系手機新選擇 SHARP AQUOS sense7 plus 超主觀評測宇宙｜手機開",
+            "count": 20
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "workplace_tech_career",
+            "count": 192
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 172
+          },
+          {
+            "label": "product_review",
+            "count": 142
+          },
+          {
+            "label": "business_brand",
+            "count": 53
+          },
+          {
+            "label": "controversy_response",
+            "count": 51
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "food_culture",
+            "lift": 1.862595419847328,
+            "n_commenters": 1
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.862595419847328,
+            "n_commenters": 1
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.1308615049073063,
+            "n_commenters": 15
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "職涯",
+            "科技",
+            "矽谷",
+            "車",
+            "精品",
+            "生活風格",
+            "product_review",
+            "品牌"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09266409266409266,
+          "neutral_rate": 0.7926937926937927,
+          "positive_rate": 0.11464211464211464,
+          "like_weighted_negative_rate": 0.12619578036954526,
+          "like_weighted_positive_rate": 0.1434936443454331,
+          "summary_zh": "中性討論為主；負面 9.3%，正面 11.5%，按讚加權負面 12.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "automotive_luxury",
+            "negative_rate": 0.08919722497522299,
+            "like_weighted_negative_rate": 0.16231578947368422,
+            "n_comments": 1009,
+            "summary_zh": "automotive_luxury：負面 8.9%，按讚加權負面 16.2%"
+          },
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.08816880180859081,
+            "like_weighted_negative_rate": 0.13370143955827252,
+            "n_comments": 1327,
+            "summary_zh": "workplace_tech_career：負面 8.8%，按讚加權負面 13.4%"
+          },
+          {
+            "theme": "product_review",
+            "negative_rate": 0.08804204993429698,
+            "like_weighted_negative_rate": 0.09934599813142324,
+            "n_comments": 761,
+            "summary_zh": "product_review：負面 8.8%，按讚加權負面 9.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 11,
+        "segment_label": "Audience segment 11",
+        "group_size": {
+          "n_commenters": 33,
+          "pct_active_commenters": 7.951807228915662,
+          "summary_zh": "8.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 236,
+          "avg_comments_per_commenter": 7.151515151515151,
+          "n_videos_touched": 79,
+          "summary_zh": "平均留言 7.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "台積電之恥？Google Tensor G5 大翻車？Pixel 10 Pro XL 缺點災情！",
+            "count": 14
+          },
+          {
+            "label": "大啟動！大成功！小米平板最強對手？Lenovo 拯救者平板 Y700 四代開箱評測：臺灣沒賣的神",
+            "count": 13
+          },
+          {
+            "label": "三星手機 Galaxy S23 Ultra 開箱評測、優缺點災情分析 超主觀評測｜S8 Gen",
+            "count": 9
+          },
+          {
+            "label": "lightning 末路！換上 USB-C 的 iPhone 15 Pro Max 蘋果手機真的",
+            "count": 8
+          },
+          {
+            "label": "平價 4K QLED電視 INCLO 55QUG100 vs 山水SANSUI SUTV Q55",
+            "count": 7
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "workplace_tech_career",
+            "count": 30
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 19
+          },
+          {
+            "label": "controversy_response",
+            "count": 19
+          },
+          {
+            "label": "product_review",
+            "count": 17
+          },
+          {
+            "label": "business_brand",
+            "count": 14
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "controversy_response",
+            "lift": 1.9380962659184113,
+            "n_commenters": 19
+          },
+          {
+            "theme": "workplace_tech_career",
+            "lift": 1.1532140921409215,
+            "n_commenters": 32
+          },
+          {
+            "theme": "business_brand",
+            "lift": 1.1139887220599225,
+            "n_commenters": 23
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "職涯",
+            "科技",
+            "矽谷",
+            "車",
+            "精品",
+            "生活風格",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.16716417910447762,
+          "neutral_rate": 0.6656716417910448,
+          "positive_rate": 0.16716417910447762,
+          "like_weighted_negative_rate": 0.1490280777537797,
+          "like_weighted_positive_rate": 0.10151187904967603,
+          "summary_zh": "中性討論為主；負面 16.7%，正面 16.7%，按讚加權負面 14.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "automotive_luxury",
+            "negative_rate": 0.22950819672131148,
+            "like_weighted_negative_rate": 0.21610169491525424,
+            "n_comments": 61,
+            "summary_zh": "automotive_luxury：負面 23.0%，按讚加權負面 21.6%"
+          },
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.15862068965517243,
+            "like_weighted_negative_rate": 0.21541950113378686,
+            "n_comments": 145,
+            "summary_zh": "workplace_tech_career：負面 15.9%，按讚加權負面 21.5%"
+          },
+          {
+            "theme": "product_review",
+            "negative_rate": 0.1,
+            "like_weighted_negative_rate": 0.13725490196078433,
+            "n_comments": 60,
+            "summary_zh": "product_review：負面 10.0%，按讚加權負面 13.7%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 22,
+          "pct_active_commenters": 5.301204819277109,
+          "summary_zh": "5.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 117,
+          "avg_comments_per_commenter": 5.318181818181818,
+          "n_videos_touched": 44,
+          "summary_zh": "平均留言 5.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "iPhone 16e 開箱評測 蘋果手機優缺點 Apple｜A18、續航、拍照、iOS18、動態",
+            "count": 12
+          },
+          {
+            "label": "索黑來溜？最敢怒的 Sony Xperia 1 V 超主觀評測宇宙｜索尼手機開箱評測、災情、優缺",
+            "count": 10
+          },
+          {
+            "label": "買到撞到？三星手機 Galaxy S25 開箱評測、優缺點災情分析｜S8 Elite、Samsu",
+            "count": 6
+          },
+          {
+            "label": "玻璃超臭！台灣最貴 iPhone 17 Pro Max 蘋果手機開箱評測、災情、優缺點分析、Ap",
+            "count": 6
+          },
+          {
+            "label": "災情中獎！中國製造 Sony Xperia 1 VII 死機風波☠️ 索尼手機開箱評測、災情、優",
+            "count": 6
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 20
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 19
+          },
+          {
+            "label": "product_review",
+            "count": 15
+          },
+          {
+            "label": "business_brand",
+            "count": 7
+          },
+          {
+            "label": "controversy_response",
+            "count": 7
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "business_brand",
+            "lift": 1.4657139396875378,
+            "n_commenters": 18
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.2124223602484472,
+            "n_commenters": 2
+          },
+          {
+            "theme": "automotive_luxury",
+            "lift": 1.1567407407407408,
+            "n_commenters": 21
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "職涯",
+            "科技",
+            "矽谷",
+            "product_review",
+            "品牌"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2013888888888889,
+          "neutral_rate": 0.6180555555555556,
+          "positive_rate": 0.18055555555555555,
+          "like_weighted_negative_rate": 0.3182481751824818,
+          "like_weighted_positive_rate": 0.12846715328467154,
+          "summary_zh": "中性討論為主；負面 20.1%，正面 18.1%，按讚加權負面 31.8%"
+        },
+        "negative_sources": [
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.2962962962962963,
+            "like_weighted_negative_rate": 0.3535714285714286,
+            "n_comments": 54,
+            "summary_zh": "workplace_tech_career：負面 29.6%，按讚加權負面 35.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 8,
+        "segment_label": "Audience segment 8",
+        "group_size": {
+          "n_commenters": 16,
+          "pct_active_commenters": 3.8554216867469884,
+          "summary_zh": "3.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 100,
+          "avg_comments_per_commenter": 6.25,
+          "n_videos_touched": 33,
+          "summary_zh": "平均留言 6.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "小米14 Pro 開箱評測 Snapdragon 8 Gen 3 全球首發機皇登場！Xiaomi",
+            "count": 9
+          },
+          {
+            "label": "長焦神拍 vivo X100 Pro 開箱評測！ZEISS 卡爾蔡司 APO 超級長焦登場！真心",
+            "count": 7
+          },
+          {
+            "label": "買到撞到？三星手機 Galaxy S25 開箱評測、優缺點災情分析｜S8 Elite、Samsu",
+            "count": 7
+          },
+          {
+            "label": "Google、Samsung 一家親！Google 親兒子 Pixel 8 Pro 真心話評測｜",
+            "count": 5
+          },
+          {
+            "label": "realme 12 Pro+ 5G 開箱評測、優缺點災情分析 真心話大冒險｜Snapdragon",
+            "count": 5
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 14
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 12
+          },
+          {
+            "label": "product_review",
+            "count": 11
+          },
+          {
+            "label": "business_brand",
+            "count": 11
+          },
+          {
+            "label": "controversy_response",
+            "count": 5
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "職涯",
+            "科技",
+            "矽谷",
+            "product_review",
+            "品牌"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.22764227642276422,
+          "neutral_rate": 0.5447154471544715,
+          "positive_rate": 0.22764227642276422,
+          "like_weighted_negative_rate": 0.14450867052023122,
+          "like_weighted_positive_rate": 0.3872832369942196,
+          "summary_zh": "中性討論為主；負面 22.8%，正面 22.8%，按讚加權負面 14.5%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 15,
+          "pct_active_commenters": 3.614457831325301,
+          "summary_zh": "3.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 67,
+          "avg_comments_per_commenter": 4.466666666666667,
+          "n_videos_touched": 20,
+          "summary_zh": "平均留言 4.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "POCO F5 Pro 5G 超主觀評測宇宙 手機開箱評測、優缺點災情分析 ｜小米、7+ Gen",
+            "count": 9
+          },
+          {
+            "label": "Redmi Note 12 Pro+ 5G 紅米開箱評測、優缺點災情分析｜Dimensity 1",
+            "count": 9
+          },
+          {
+            "label": "POCO X5 Pro 5G 開箱評測、優缺點災情分析 超主觀｜小米、Snapdragon 77",
+            "count": 8
+          },
+          {
+            "label": "華碩手機 ROG Phone 7 開箱評測 災情優缺點｜165Hz、敗家之眼、ASUS、中國小編",
+            "count": 6
+          },
+          {
+            "label": "平板電腦 Surface Pro 9 開箱評測優缺點分析｜微軟電腦、windows 平板、Thu",
+            "count": 5
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 15
+          },
+          {
+            "label": "product_review",
+            "count": 13
+          },
+          {
+            "label": "business_brand",
+            "count": 6
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 2
+          },
+          {
+            "label": "controversy_response",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "product_review",
+            "品牌",
+            "業配",
+            "商業",
+            "職涯"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.22115384615384615,
+          "neutral_rate": 0.5576923076923077,
+          "positive_rate": 0.22115384615384615,
+          "like_weighted_negative_rate": 0.1396761133603239,
+          "like_weighted_positive_rate": 0.44129554655870445,
+          "summary_zh": "中性討論為主；負面 22.1%，正面 22.1%，按讚加權負面 14.0%"
+        },
+        "negative_sources": [
+          {
+            "theme": "automotive_luxury",
+            "negative_rate": 0.2459016393442623,
+            "like_weighted_negative_rate": 0.19402985074626866,
+            "n_comments": 61,
+            "summary_zh": "automotive_luxury：負面 24.6%，按讚加權負面 19.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 9,
+        "segment_label": "Audience segment 9",
+        "group_size": {
+          "n_commenters": 13,
+          "pct_active_commenters": 3.132530120481928,
+          "summary_zh": "3.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 89,
+          "avg_comments_per_commenter": 6.846153846153846,
+          "n_videos_touched": 38,
+          "summary_zh": "平均留言 6.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "國際牌電視 Panasonic MX950W 開箱評測｜4K Mini LED TH-75MX9",
+            "count": 7
+          },
+          {
+            "label": "QD-OLED 巔峰之作 Sony A95L 開箱評測 120Hz Dolby Vision 索",
+            "count": 7
+          },
+          {
+            "label": "追求色域 更求色準！2023 高色準 4K 電視選購指南｜ft. iNclo QUG100 /",
+            "count": 7
+          },
+          {
+            "label": "好市多堆料之王 TCL 75 C845 Mini LED 4K 電視 開箱評測 4K@144Hz",
+            "count": 5
+          },
+          {
+            "label": "OLED 岌岌可危！Mini LED 背光 SONY BRAVIA 9 XR90 開箱評測 12",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "workplace_tech_career",
+            "count": 13
+          },
+          {
+            "label": "product_review",
+            "count": 9
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 9
+          },
+          {
+            "label": "business_brand",
+            "count": 3
+          },
+          {
+            "label": "controversy_response",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "職涯",
+            "科技",
+            "矽谷",
+            "product_review",
+            "車",
+            "精品",
+            "生活風格",
+            "品牌"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.056338028169014086,
+          "neutral_rate": 0.6619718309859155,
+          "positive_rate": 0.28169014084507044,
+          "like_weighted_negative_rate": 0.05134474327628362,
+          "like_weighted_positive_rate": 0.3643031784841076,
+          "summary_zh": "中性討論為主；負面 5.6%，正面 28.2%，按讚加權負面 5.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.06521739130434782,
+            "like_weighted_negative_rate": 0.0546875,
+            "n_comments": 92,
+            "summary_zh": "workplace_tech_career：負面 6.5%，按讚加權負面 5.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 13,
+          "pct_active_commenters": 3.132530120481928,
+          "summary_zh": "3.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 92,
+          "avg_comments_per_commenter": 7.076923076923077,
+          "n_videos_touched": 41,
+          "summary_zh": "平均留言 7.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "好市多推薦電視機？MIni LED 飛利浦 PML9109 開箱評測｜120Hz Dolby V",
+            "count": 7
+          },
+          {
+            "label": "好市多首選電視！亮瞎眼年度機皇 TCL C8K Mini LED 開箱評測 ft. Q85H 聲",
+            "count": 6
+          },
+          {
+            "label": "台灣品牌規格最屌！聲寶 SAMPO 轟天雷 Mini LED QLED 4K 電視 開箱｜Rea",
+            "count": 5
+          },
+          {
+            "label": "性價比之王！TCL C855 4K 電視 開箱評測｜QD Mini LED、CP 值、4K@14",
+            "count": 5
+          },
+          {
+            "label": "MLA-OLED 最完美的一代！LG OLED G4 開箱評測 144Hz Dolby Visi",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "product_review",
+            "count": 12
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 12
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 9
+          },
+          {
+            "label": "business_brand",
+            "count": 1
+          },
+          {
+            "label": "controversy_response",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "車",
+            "精品",
+            "生活風格",
+            "品牌"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09022556390977443,
+          "neutral_rate": 0.849624060150376,
+          "positive_rate": 0.06015037593984962,
+          "like_weighted_negative_rate": 0.0576271186440678,
+          "like_weighted_positive_rate": 0.06440677966101695,
+          "summary_zh": "中性討論為主；負面 9.0%，正面 6.0%，按讚加權負面 5.8%"
+        },
+        "negative_sources": [
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.11764705882352941,
+            "like_weighted_negative_rate": 0.09183673469387756,
+            "n_comments": 51,
+            "summary_zh": "workplace_tech_career：負面 11.8%，按讚加權負面 9.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 11,
+          "pct_active_commenters": 2.6506024096385543,
+          "summary_zh": "2.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 84,
+          "avg_comments_per_commenter": 7.636363636363637,
+          "n_videos_touched": 49,
+          "summary_zh": "平均留言 7.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "追覓 掃地機器人 L20 Ultra 實測開箱 優點、缺點｜Dreame X20 Pro掃拖機器",
+            "count": 6
+          },
+          {
+            "label": "索黑來溜？最敢怒的 Sony Xperia 1 V 超主觀評測宇宙｜索尼手機開箱評測、災情、優缺",
+            "count": 4
+          },
+          {
+            "label": "台日對戰！循環扇對決怎麼拚輸贏？無印良品循環風扇 vs. Acerpure COZY F3 開箱",
+            "count": 4
+          },
+          {
+            "label": "好市多推薦電視機？MIni LED 飛利浦 PML9109 開箱評測｜120Hz Dolby V",
+            "count": 4
+          },
+          {
+            "label": "災情中獎！中國製造 Sony Xperia 1 VII 死機風波☠️ 索尼手機開箱評測、災情、優",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 11
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 10
+          },
+          {
+            "label": "product_review",
+            "count": 9
+          },
+          {
+            "label": "controversy_response",
+            "count": 4
+          },
+          {
+            "label": "business_brand",
+            "count": 3
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "職涯",
+            "科技",
+            "矽谷",
+            "product_review",
+            "爭議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.14414414414414414,
+          "neutral_rate": 0.6756756756756757,
+          "positive_rate": 0.18018018018018017,
+          "like_weighted_negative_rate": 0.28941176470588237,
+          "like_weighted_positive_rate": 0.15294117647058825,
+          "summary_zh": "中性討論為主；負面 14.4%，正面 18.0%，按讚加權負面 28.9%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 11,
+          "pct_active_commenters": 2.6506024096385543,
+          "summary_zh": "2.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 53,
+          "avg_comments_per_commenter": 4.818181818181818,
+          "n_videos_touched": 20,
+          "summary_zh": "平均留言 4.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "POCO X5 Pro 5G 開箱評測、優缺點災情分析 超主觀｜小米、Snapdragon 77",
+            "count": 10
+          },
+          {
+            "label": "realme 10 Pro+ 5G 開箱評測、優缺點災情分析 超主觀評測｜Dimensity 1",
+            "count": 7
+          },
+          {
+            "label": "索尼拜拜！日系手機新選擇 SHARP AQUOS sense7 plus 超主觀評測宇宙｜手機開",
+            "count": 5
+          },
+          {
+            "label": "iPad Pro M2 12.9 吋 開箱評測 優點缺點災情｜iPad、Apple 平板、蘋果電",
+            "count": 5
+          },
+          {
+            "label": "Google 帳號被盜 YouTube 廣告 釣魚預防 資安注意｜Netflix 詐騙、蝦皮詐騙",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 11
+          },
+          {
+            "label": "product_review",
+            "count": 11
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 9
+          },
+          {
+            "label": "controversy_response",
+            "count": 4
+          },
+          {
+            "label": "business_brand",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "爭議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.14285714285714285,
+          "neutral_rate": 0.7,
+          "positive_rate": 0.15714285714285714,
+          "like_weighted_negative_rate": 0.2777777777777778,
+          "like_weighted_positive_rate": 0.06862745098039216,
+          "summary_zh": "中性討論為主；負面 14.3%，正面 15.7%，按讚加權負面 27.8%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 7,
+        "segment_label": "Audience segment 7",
+        "group_size": {
+          "n_commenters": 7,
+          "pct_active_commenters": 1.6867469879518073,
+          "summary_zh": "1.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 51,
+          "avg_comments_per_commenter": 7.285714285714286,
+          "n_videos_touched": 28,
+          "summary_zh": "平均留言 7.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "iPhone 16e 開箱評測 蘋果手機優缺點 Apple｜A18、續航、拍照、iOS18、動態",
+            "count": 5
+          },
+          {
+            "label": "石頭 S8 MaxV Ultra 開箱 優點、缺點｜石頭 Q Revo、追覓、小米、科沃斯、掃地",
+            "count": 4
+          },
+          {
+            "label": "追覓 掃地機器人 L20 Ultra 實測開箱 優點、缺點｜Dreame X20 Pro掃拖機器",
+            "count": 3
+          },
+          {
+            "label": "玻璃超臭！台灣最貴 iPhone 17 Pro Max 蘋果手機開箱評測、災情、優缺點分析、Ap",
+            "count": 3
+          },
+          {
+            "label": "Dyson 挑戰者 高速吹風機 Dreame Glory 開箱上手 優缺點｜Panasonic、",
+            "count": 3
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "workplace_tech_career",
+            "count": 7
+          },
+          {
+            "label": "product_review",
+            "count": 7
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 6
+          },
+          {
+            "label": "business_brand",
+            "count": 3
+          },
+          {
+            "label": "other",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "職涯",
+            "科技",
+            "矽谷",
+            "product_review",
+            "車",
+            "精品",
+            "生活風格",
+            "品牌"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2268041237113402,
+          "neutral_rate": 0.5360824742268041,
+          "positive_rate": 0.23711340206185566,
+          "like_weighted_negative_rate": 0.135,
+          "like_weighted_positive_rate": 0.375,
+          "summary_zh": "中性討論為主；負面 22.7%，正面 23.7%，按讚加權負面 13.5%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 13,
+        "segment_label": "Audience segment 13",
+        "group_size": {
+          "n_commenters": 7,
+          "pct_active_commenters": 1.6867469879518073,
+          "summary_zh": "1.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 37,
+          "avg_comments_per_commenter": 5.285714285714286,
+          "n_videos_touched": 19,
+          "summary_zh": "平均留言 5.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "台灣品牌規格最屌！聲寶 SAMPO 轟天雷 Mini LED QLED 4K 電視 開箱｜Rea",
+            "count": 5
+          },
+          {
+            "label": "華碩手機 ROG Phone 8 Pro 開箱評測 Snapdragon 8 Gen 3 超燙登",
+            "count": 3
+          },
+          {
+            "label": "Redmi Note 12 Pro+ 5G 紅米開箱評測、優缺點災情分析｜Dimensity 1",
+            "count": 3
+          },
+          {
+            "label": "華碩手機 ROG Phone 7 開箱評測 災情優缺點｜165Hz、敗家之眼、ASUS、中國小編",
+            "count": 3
+          },
+          {
+            "label": "索尼拜拜！日系手機新選擇 SHARP AQUOS sense7 plus 超主觀評測宇宙｜手機開",
+            "count": 3
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 6
+          },
+          {
+            "label": "product_review",
+            "count": 6
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 3
+          },
+          {
+            "label": "controversy_response",
+            "count": 3
+          },
+          {
+            "label": "business_brand",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "爭議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.19148936170212766,
+          "neutral_rate": 0.6382978723404256,
+          "positive_rate": 0.1702127659574468,
+          "like_weighted_negative_rate": 0.1490066225165563,
+          "like_weighted_positive_rate": 0.39403973509933776,
+          "summary_zh": "中性討論為主；負面 19.1%，正面 17.0%，按讚加權負面 14.9%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 12,
+        "segment_label": "Audience segment 12",
+        "group_size": {
+          "n_commenters": 3,
+          "pct_active_commenters": 0.7228915662650602,
+          "summary_zh": "0.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 11,
+          "avg_comments_per_commenter": 3.6666666666666665,
+          "n_videos_touched": 4,
+          "summary_zh": "平均留言 3.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "中國爆紅 JMGO N1S 投影機在台上市！1080P@120Hz 雷射 3D 投放+自動對焦，",
+            "count": 3
+          },
+          {
+            "label": "台灣爆紅 JMGO N1S Infinity 4K 投影機 完整開箱評測｜堅果 4K RGB 三",
+            "count": 3
+          },
+          {
+            "label": "杜比革命！Hisense M2 Pro 4K 雷射投影機 開箱評測｜Dolby Vision、杜",
+            "count": 3
+          },
+          {
+            "label": "對打日本、中國 BenQ W5800 雷射旗艦 4K 旗艦投影機 開箱評測｜台灣明基 劇院投影機",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 3
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 3
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "職涯",
+            "科技",
+            "矽谷",
+            "開箱"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.13636363636363635,
+          "neutral_rate": 0.6818181818181818,
+          "positive_rate": 0.18181818181818182,
+          "like_weighted_negative_rate": 0.07317073170731707,
+          "like_weighted_positive_rate": 0.14634146341463414,
+          "summary_zh": "中性討論為主；負面 13.6%，正面 18.2%，按讚加權負面 7.3%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 78,
       "n_edges": 187,
@@ -868,6 +2215,1035 @@
         "conductance": 0.0,
         "avg_core_number": 1.0,
         "max_core_number": 1
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 18,
+          "date_min": "2023-01-11 12:34:23+00:00",
+          "date_max": "2025-12-04 04:01:54+00:00",
+          "pct_graph_videos": 23.076923076923077
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "product_review",
+              "count": 16
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 12
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 4
+            },
+            {
+              "label": "controversy_response",
+              "count": 3
+            },
+            {
+              "label": "business_brand",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "controversy_response",
+              "lift": 3.25,
+              "n_videos": 3
+            },
+            {
+              "theme": "automotive_luxury",
+              "lift": 2,
+              "n_videos": 12
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1,
+              "n_videos": 3
+            },
+            {
+              "theme": "product_review",
+              "lift": 0.9122807017543859,
+              "n_videos": 16
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "三星手機 Galaxy S23 Ultra 開箱評測、優缺點災情分析 超主觀評測｜S8 Gen",
+              "count": 267
+            },
+            {
+              "label": "索黑來溜？最敢怒的 Sony Xperia 1 V 超主觀評測宇宙｜索尼手機開箱評測、災情、優缺",
+              "count": 184
+            },
+            {
+              "label": "索尼拜拜！日系手機新選擇 SHARP AQUOS sense7 plus 超主觀評測宇宙｜手機開",
+              "count": 178
+            },
+            {
+              "label": "募資！？詐騙！？揭露台灣公司 & YouTuber 上千萬募資爭議",
+              "count": 173
+            },
+            {
+              "label": "華碩手機 ROG Phone 7 開箱評測 災情優缺點｜165Hz、敗家之眼、ASUS、中國小編",
+              "count": 143
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "product_review",
+            "車",
+            "精品",
+            "生活風格",
+            "職涯",
+            "科技",
+            "矽谷",
+            "爭議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.208856783919598,
+          "neutral_rate": 0.6099246231155779,
+          "positive_rate": 0.18121859296482412,
+          "like_weighted_negative_rate": 0.22923246419390378,
+          "like_weighted_positive_rate": 0.23393316195372751,
+          "summary_zh": "中性討論為主；負面 20.9%，正面 18.1%，按讚加權負面 22.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1489040,
+          "total_observed_comments": 2009,
+          "unique_commenters": 1629,
+          "median_observed_commenters": 94.5,
+          "evidence_zh": "18 支影片；1,489,040 views；2,009 observed comments；1,629 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 49,
+          "external_edges": 42,
+          "conductance": 0.2548596112311015,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=49, external_edges=42, conductance=0.255"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "product_review (16); automotive_luxury (12); workplace_tech_career (4); controversy_response (3); business_brand (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 20.9%，正面 18.1%，按讚加權負面 22.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "18 支影片；1,489,040 views；2,009 observed comments；1,629 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=49, external_edges=42, conductance=0.255"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 5,
+        "cluster_label": "Video cluster 5",
+        "size": {
+          "n_videos": 17,
+          "date_min": "2024-03-15 11:12:57+00:00",
+          "date_max": "2026-04-15 14:06:22+00:00",
+          "pct_graph_videos": 21.794871794871796
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "product_review",
+              "count": 17
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 8
+            },
+            {
+              "label": "business_brand",
+              "count": 8
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 2
+            },
+            {
+              "label": "controversy_response",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "business_brand",
+              "lift": 2.823529411764706,
+              "n_videos": 8
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.1470588235294117,
+              "n_videos": 1
+            },
+            {
+              "theme": "product_review",
+              "lift": 1.0263157894736843,
+              "n_videos": 17
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 0.9411764705882353,
+              "n_videos": 8
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "台積電之恥？Google Tensor G5 大翻車？Pixel 10 Pro XL 缺點災情！",
+              "count": 227
+            },
+            {
+              "label": "iPhone 16e 開箱評測 蘋果手機優缺點 Apple｜A18、續航、拍照、iOS18、動態",
+              "count": 191
+            },
+            {
+              "label": "災情中獎！中國製造 Sony Xperia 1 VII 死機風波☠️ 索尼手機開箱評測、災情、優",
+              "count": 159
+            },
+            {
+              "label": "買到撞到？三星手機 Galaxy S25 開箱評測、優缺點災情分析｜S8 Elite、Samsu",
+              "count": 124
+            },
+            {
+              "label": "POCO F7 Ultra 最便宜旗艦神機！開箱評測｜旗艦手機、Xiaomi HyperOS 2",
+              "count": 110
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "品牌",
+            "業配",
+            "商業",
+            "車"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.22399445214979197,
+          "neutral_rate": 0.6685159500693482,
+          "positive_rate": 0.10748959778085991,
+          "like_weighted_negative_rate": 0.22313987536601848,
+          "like_weighted_positive_rate": 0.153690216983257,
+          "summary_zh": "中性討論為主；負面 22.4%，正面 10.7%，按讚加權負面 22.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 989603,
+          "total_observed_comments": 1577,
+          "unique_commenters": 1316,
+          "median_observed_commenters": 79,
+          "evidence_zh": "17 支影片；989,603 views；1,577 observed comments；1,316 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 33,
+          "external_edges": 37,
+          "conductance": 0.31204644412191584,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=33, external_edges=37, conductance=0.312"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "product_review (17); workplace_tech_career (8); business_brand (8); automotive_luxury (2); controversy_response (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 22.4%，正面 10.7%，按讚加權負面 22.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "17 支影片；989,603 views；1,577 observed comments；1,316 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=33, external_edges=37, conductance=0.312"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 18,
+          "date_min": "2023-10-18 11:03:46+00:00",
+          "date_max": "2026-03-07 13:16:35+00:00",
+          "pct_graph_videos": 23.076923076923077
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "product_review",
+              "count": 18
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 10
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 6
+            },
+            {
+              "label": "business_brand",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.1111111111111112,
+              "n_videos": 10
+            },
+            {
+              "theme": "product_review",
+              "lift": 1.0263157894736843,
+              "n_videos": 18
+            },
+            {
+              "theme": "automotive_luxury",
+              "lift": 1,
+              "n_videos": 6
+            },
+            {
+              "theme": "business_brand",
+              "lift": 0.3333333333333333,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "台灣品牌規格最屌！聲寶 SAMPO 轟天雷 Mini LED QLED 4K 電視 開箱｜Rea",
+              "count": 226
+            },
+            {
+              "label": "便宜有詐！？小米 4K 電視 Xiaomi S Mini LED 2025 開箱評測｜科技狗",
+              "count": 157
+            },
+            {
+              "label": "網紅別騙！？小米 4K 電視 Xiaomi S Pro Mini LED 2026 致命缺陷公開",
+              "count": 134
+            },
+            {
+              "label": "好市多推薦電視機？MIni LED 飛利浦 PML9109 開箱評測｜120Hz Dolby V",
+              "count": 92
+            },
+            {
+              "label": "性價比之王！TCL C855 4K 電視 開箱評測｜QD Mini LED、CP 值、4K@14",
+              "count": 83
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "車",
+            "精品",
+            "生活風格",
+            "品牌"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2072714916751614,
+          "neutral_rate": 0.6928304451240231,
+          "positive_rate": 0.0998980632008155,
+          "like_weighted_negative_rate": 0.27077719090223135,
+          "like_weighted_positive_rate": 0.12212999892206532,
+          "summary_zh": "中性討論為主；負面 20.7%，正面 10.0%，按讚加權負面 27.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1690225,
+          "total_observed_comments": 1466,
+          "unique_commenters": 1234,
+          "median_observed_commenters": 64,
+          "evidence_zh": "18 支影片；1,690,225 views；1,466 observed comments；1,234 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 20,
+          "external_edges": 18,
+          "conductance": 0.2809667673716012,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=20, external_edges=18, conductance=0.281"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "product_review (18); workplace_tech_career (10); automotive_luxury (6); business_brand (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 20.7%，正面 10.0%，按讚加權負面 27.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "18 支影片；1,690,225 views；1,466 observed comments；1,234 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=20, external_edges=18, conductance=0.281"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 9,
+          "date_min": "2023-01-25 11:43:53+00:00",
+          "date_max": "2024-09-27 06:17:56+00:00",
+          "pct_graph_videos": 11.538461538461538
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "product_review",
+              "count": 9
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 8
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.7777777777777777,
+              "n_videos": 8
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "BenQ 電視推薦 E750 開箱評測 優缺點｜護眼顯示器、護眼電視、E730、QLED、智慧電",
+              "count": 80
+            },
+            {
+              "label": "4K電視 校色復活術！海爾 4K 電視 Haier TV H65S900UX2 開箱評測｜HDM",
+              "count": 76
+            },
+            {
+              "label": "Pixel 9 Pro XL 開箱評測｜Google Tensor G4 效能翻車？Androi",
+              "count": 74
+            },
+            {
+              "label": "飛利浦電視 OLED707 開箱評測 優缺點心得｜Android TV、OLED 電視、Phil",
+              "count": 68
+            },
+            {
+              "label": "4K電視 超廣視角！愛華 AIWA 平價 IPS QLED AG-65JQ1UHD 開箱評測｜J",
+              "count": 63
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "開箱"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07466666666666667,
+          "neutral_rate": 0.8026666666666666,
+          "positive_rate": 0.12266666666666666,
+          "like_weighted_negative_rate": 0.08409014463504877,
+          "like_weighted_positive_rate": 0.1506895391860074,
+          "summary_zh": "中性討論為主；負面 7.5%，正面 12.3%，按讚加權負面 8.4%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1354437,
+          "total_observed_comments": 564,
+          "unique_commenters": 474,
+          "median_observed_commenters": 63,
+          "evidence_zh": "9 支影片；1,354,437 views；564 observed comments；474 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 10,
+          "external_edges": 8,
+          "conductance": 0.2911392405063291,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=10, external_edges=8, conductance=0.291"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "product_review (9); workplace_tech_career (8)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 7.5%，正面 12.3%，按讚加權負面 8.4%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "9 支影片；1,354,437 views；564 observed comments；474 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=10, external_edges=8, conductance=0.291"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 9,
+          "date_min": "2023-09-22 11:08:48+00:00",
+          "date_max": "2024-09-06 10:03:23+00:00",
+          "pct_graph_videos": 11.538461538461538
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "product_review",
+              "count": 9
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 6
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 2
+            },
+            {
+              "label": "education_advice",
+              "count": 1
+            },
+            {
+              "label": "business_brand",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "education_advice",
+              "lift": 8.666666666666666,
+              "n_videos": 1
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.3333333333333333,
+              "n_videos": 6
+            },
+            {
+              "theme": "product_review",
+              "lift": 1.0263157894736843,
+              "n_videos": 9
+            },
+            {
+              "theme": "automotive_luxury",
+              "lift": 0.6666666666666666,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "好市多堆料之王 TCL 75 C845 Mini LED 4K 電視 開箱評測 4K@144Hz",
+              "count": 95
+            },
+            {
+              "label": "國際牌電視 Panasonic MX950W 開箱評測｜4K Mini LED TH-75MX9",
+              "count": 74
+            },
+            {
+              "label": "長焦神拍 vivo X100 Pro 開箱評測！ZEISS 卡爾蔡司 APO 超級長焦登場！真心",
+              "count": 72
+            },
+            {
+              "label": "小米14 Pro 開箱評測 Snapdragon 8 Gen 3 全球首發機皇登場！Xiaomi",
+              "count": 55
+            },
+            {
+              "label": "Google、Samsung 一家親！Google 親兒子 Pixel 8 Pro 真心話評測｜",
+              "count": 53
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "車",
+            "精品",
+            "生活風格",
+            "知識"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.15486307837582625,
+          "neutral_rate": 0.7252124645892352,
+          "positive_rate": 0.11992445703493862,
+          "like_weighted_negative_rate": 0.20134032634032634,
+          "like_weighted_positive_rate": 0.13257575757575757,
+          "summary_zh": "中性討論為主；負面 15.5%，正面 12.0%，按讚加權負面 20.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 476858,
+          "total_observed_comments": 552,
+          "unique_commenters": 464,
+          "median_observed_commenters": 53,
+          "evidence_zh": "9 支影片；476,858 views；552 observed comments；464 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 9,
+          "external_edges": 17,
+          "conductance": 0.45918367346938777,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=9, external_edges=17, conductance=0.459"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "product_review (9); workplace_tech_career (6); automotive_luxury (2); education_advice (1); business_brand (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 15.5%，正面 12.0%，按讚加權負面 20.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "9 支影片；476,858 views；552 observed comments；464 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=9, external_edges=17, conductance=0.459"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 4,
+          "date_min": "2024-03-20 11:00:46+00:00",
+          "date_max": "2024-08-28 11:15:25+00:00",
+          "pct_graph_videos": 5.128205128205128
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "product_review",
+              "count": 4
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 3
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "Dyson 挑戰者 高速吹風機 Dreame Glory 開箱上手 優缺點｜Panasonic、",
+              "count": 67
+            },
+            {
+              "label": "洗地機 終極對決：Dreame H14 Pro vs Roborock Flexi Pro vs",
+              "count": 63
+            },
+            {
+              "label": "追覓 X40 Ultra 掃拖機器人 開箱評測｜仿生邊刷、延邊拖地、熱水洗拖布、AI 避障、智能",
+              "count": 49
+            },
+            {
+              "label": "石頭 S8 MaxV Ultra 開箱 優點、缺點｜石頭 Q Revo、追覓、小米、科沃斯、掃地",
+              "count": 28
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "product_review",
+            "職涯",
+            "科技",
+            "矽谷",
+            "車",
+            "精品",
+            "生活風格",
+            "開箱"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.22192513368983957,
+          "neutral_rate": 0.5641711229946524,
+          "positive_rate": 0.21390374331550802,
+          "like_weighted_negative_rate": 0.24332909783989834,
+          "like_weighted_positive_rate": 0.13913595933926304,
+          "summary_zh": "中性討論為主；負面 22.2%，正面 21.4%，按讚加權負面 24.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 343810,
+          "total_observed_comments": 216,
+          "unique_commenters": 185,
+          "median_observed_commenters": 56,
+          "evidence_zh": "4 支影片；343,810 views；216 observed comments；185 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 3,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=3, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "product_review (4); workplace_tech_career (3); automotive_luxury (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 22.2%，正面 21.4%，按讚加權負面 24.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "4 支影片；343,810 views；216 observed comments；185 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=3, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 6,
+        "cluster_label": "Video cluster 6",
+        "size": {
+          "n_videos": 3,
+          "date_min": "2024-10-22 11:00:21+00:00",
+          "date_max": "2025-01-24 11:01:49+00:00",
+          "pct_graph_videos": 3.8461538461538463
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "automotive_luxury",
+              "count": 3
+            },
+            {
+              "label": "product_review",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "中國爆紅 JMGO N1S 投影機在台上市！1080P@120Hz 雷射 3D 投放+自動對焦，",
+              "count": 98
+            },
+            {
+              "label": "台灣爆紅 JMGO N1S Infinity 4K 投影機 完整開箱評測｜堅果 4K RGB 三",
+              "count": 65
+            },
+            {
+              "label": "對打日本、中國 BenQ W5800 雷射旗艦 4K 旗艦投影機 開箱評測｜台灣明基 劇院投影機",
+              "count": 16
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "product_review",
+            "開箱"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.14161220043572983,
+          "neutral_rate": 0.803921568627451,
+          "positive_rate": 0.054466230936819175,
+          "like_weighted_negative_rate": 0.1485148514851485,
+          "like_weighted_positive_rate": 0.04537953795379538,
+          "summary_zh": "中性討論為主；負面 14.2%，正面 5.4%，按讚加權負面 14.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 217470,
+          "total_observed_comments": 182,
+          "unique_commenters": 164,
+          "median_observed_commenters": 65,
+          "evidence_zh": "3 支影片；217,470 views；182 observed comments；164 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 2,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=2, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "automotive_luxury (3); product_review (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 14.2%，正面 5.4%，按讚加權負面 14.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "3 支影片；217,470 views；182 observed comments；164 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=2, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1409,6 +3785,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

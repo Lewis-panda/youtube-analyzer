@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "ladyflavor-full",
   "title": "好味小姐 Lady Flavor",
   "channel_id": "UCOz7W0VH--2WlqAE_3jtL4w",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/ladyflavor-full/tables/actor_communities.csv",
-        "bytes": 416728
+        "bytes": 416728,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/ladyflavor-full/tables/bridge_actors.csv",
-        "bytes": 11727
+        "bytes": 11727,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/ladyflavor-full/tables/channel_overview.csv",
-        "bytes": 373
+        "bytes": 373,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/ladyflavor-full/tables/commenter_activity.csv",
-        "bytes": 3109945
+        "bytes": 3109945,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/ladyflavor-full/tables/commenter_tiers.csv",
-        "bytes": 293
+        "bytes": 293,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/ladyflavor-full/tables/community_profiles.csv",
-        "bytes": 2278
+        "bytes": 2278,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/ladyflavor-full/tables/community_sentiment_summary.csv",
-        "bytes": 1318
+        "bytes": 1318,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/ladyflavor-full/tables/community_summary.csv",
-        "bytes": 653
+        "bytes": 653,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/ladyflavor-full/tables/community_theme_affinity.csv",
-        "bytes": 3241
+        "bytes": 3241,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/ladyflavor-full/tables/community_theme_sentiment.csv",
-        "bytes": 3367
+        "bytes": 3367,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/ladyflavor-full/tables/continuity_sensitivity.csv",
-        "bytes": 578
+        "bytes": 578,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/ladyflavor-full/tables/continuity_summary.csv",
-        "bytes": 630
+        "bytes": 630,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/ladyflavor-full/tables/diagnostics.csv",
-        "bytes": 1525
+        "bytes": 1525,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/ladyflavor-full/tables/network_actor_metrics.csv",
-        "bytes": 44731
+        "bytes": 44731,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/ladyflavor-full/tables/network_summary.csv",
-        "bytes": 643
+        "bytes": 643,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/ladyflavor-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 16903566
+        "bytes": 16903566,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/ladyflavor-full/tables/qwen_video_themes.csv",
-        "bytes": 144249
+        "bytes": 144249,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/ladyflavor-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 1344
+        "bytes": 1344,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/ladyflavor-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 48477
+        "bytes": 48477,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/ladyflavor-full/tables/reply_sentiment_summary.csv",
-        "bytes": 755
+        "bytes": 755,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/ladyflavor-full/tables/reply_thread_metrics.csv",
-        "bytes": 17158934
+        "bytes": 17158934,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/ladyflavor-full/tables/reply_thread_overview.csv",
-        "bytes": 364
+        "bytes": 364,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/ladyflavor-full/tables/rolling_retention.csv",
-        "bytes": 304
+        "bytes": 304,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/ladyflavor-full/tables/sentiment_hotspots.csv",
-        "bytes": 45731
+        "bytes": 45731,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/ladyflavor-full/tables/sentiment_source_summary.csv",
-        "bytes": 252
+        "bytes": 252,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/ladyflavor-full/tables/sentiment_summary.csv",
-        "bytes": 615
+        "bytes": 615,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/ladyflavor-full/tables/sentiment_theme_summary.csv",
-        "bytes": 1054
+        "bytes": 1054,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/ladyflavor-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/ladyflavor-full/tables/theme_summary.csv",
-        "bytes": 126
+        "bytes": 126,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/ladyflavor-full/tables/theme_video_labels.csv",
-        "bytes": 46730
+        "bytes": 46730,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/ladyflavor-full/tables/theme_video_labels_long.csv",
-        "bytes": 25921
+        "bytes": 25921,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/ladyflavor-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1032
+        "bytes": 1032,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/ladyflavor-full/tables/video_cluster_summary.csv",
-        "bytes": 2545
+        "bytes": 2545,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/ladyflavor-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1479
+        "bytes": 1479,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/ladyflavor-full/tables/video_clusters.csv",
-        "bytes": 22413
+        "bytes": 22413,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/ladyflavor-full/tables/video_link_opportunities.csv",
-        "bytes": 92252
+        "bytes": 92252,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/ladyflavor-full/tables/video_metrics.csv",
-        "bytes": 19757
+        "bytes": 19757,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/ladyflavor-full/tables/video_network_metrics.csv",
-        "bytes": 30644
+        "bytes": 30644,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/ladyflavor-full/tables/video_network_summary.csv",
-        "bytes": 564
+        "bytes": 564,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/ladyflavor-full/figures/channel_activity.png",
-        "bytes": 87637
+        "bytes": 87637,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/ladyflavor-full/figures/commenter_tiers.png",
-        "bytes": 28610
+        "bytes": 28610,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/ladyflavor-full/figures/community_sizes.png",
-        "bytes": 24001
+        "bytes": 24001,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/ladyflavor-full/figures/rolling_retention.png",
-        "bytes": 30025
+        "bytes": 30025,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/ladyflavor-full/figures/video_cluster_sizes.png",
-        "bytes": 24874
+        "bytes": 24874,
+        "source_dir": null
       }
     ]
   },
@@ -621,6 +665,530 @@
         "max_core_number": 324
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 2524,
+          "pct_active_commenters": 55.399473222124676,
+          "summary_zh": "55.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 14529,
+          "avg_comments_per_commenter": 5.756339144215531,
+          "n_videos_touched": 120,
+          "summary_zh": "平均留言 5.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【好味小姐】可能真的救不回來，撿到重傷小黑貓...｜好味貓日常245",
+            "count": 314
+          },
+          {
+            "label": "【好味小姐】好味家新貓出現！？露營跑來一隻貓？｜好味貓日常222",
+            "count": 294
+          },
+          {
+            "label": "【好味小姐】蛋捲身體狀況說明",
+            "count": 288
+          },
+          {
+            "label": "【好味小姐】好味二寶出生啦！過程出乎意料！？｜好味貓日常181",
+            "count": 264
+          },
+          {
+            "label": "【好味小姐】好味家最呆的狗！跟大家介紹我們家秋葵｜好味貓日常195",
+            "count": 255
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 2505
+          },
+          {
+            "label": "personal_team_life",
+            "count": 1402
+          },
+          {
+            "label": "other",
+            "count": 541
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "product_review",
+            "lift": 1.2830273016189229,
+            "n_commenters": 747
+          },
+          {
+            "theme": "other",
+            "lift": 1.068110587705864,
+            "n_commenters": 468
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1.0230431616014015,
+            "n_commenters": 2521
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.02009499451954695,
+          "neutral_rate": 0.4936061381074169,
+          "positive_rate": 0.4862988673730362,
+          "like_weighted_negative_rate": 0.019087640747872774,
+          "like_weighted_positive_rate": 0.4948348969350876,
+          "summary_zh": "中性討論為主；負面 2.0%，正面 48.6%，按讚加權負面 1.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "other",
+            "negative_rate": 0.015384615384615385,
+            "like_weighted_negative_rate": 0.1598750482608543,
+            "n_comments": 845,
+            "summary_zh": "other：負面 1.5%，按讚加權負面 16.0%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.020724986416207406,
+            "like_weighted_negative_rate": 0.011874636803733947,
+            "n_comments": 12883,
+            "summary_zh": "food_culture：負面 2.1%，按讚加權負面 1.2%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.01855976243504083,
+            "like_weighted_negative_rate": 0.0056542932133483315,
+            "n_comments": 2694,
+            "summary_zh": "personal_team_life：負面 1.9%，按讚加權負面 0.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 1019,
+          "pct_active_commenters": 22.36611062335382,
+          "summary_zh": "22.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 9588,
+          "avg_comments_per_commenter": 9.409224730127576,
+          "n_videos_touched": 120,
+          "summary_zh": "平均留言 9.4 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【好味小姐】好味二寶出生啦！過程出乎意料！？｜好味貓日常181",
+            "count": 580
+          },
+          {
+            "label": "【好味小姐】新家終於完成啦！真是太美了我的天啊啊啊｜好味貓日常168",
+            "count": 383
+          },
+          {
+            "label": "【好味小姐】蛋捲身體狀況說明",
+            "count": 375
+          },
+          {
+            "label": "【好味小姐】全家貓咪都疑惑？新家出現一堆不明物體？｜好味貓日常170",
+            "count": 254
+          },
+          {
+            "label": "【好味小姐】放我出去啊啊啊！逃跑的小貓還是好可愛！｜好味貓日常179",
+            "count": 222
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 1001
+          },
+          {
+            "label": "personal_team_life",
+            "count": 976
+          },
+          {
+            "label": "other",
+            "count": 283
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.6967917300910802,
+            "n_commenters": 410
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.2883743680283597,
+            "n_commenters": 1016
+          },
+          {
+            "theme": "business_brand",
+            "lift": 1.0254878180448774,
+            "n_commenters": 70
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.015513350883790899,
+          "neutral_rate": 0.41293719443399773,
+          "positive_rate": 0.5715494546822114,
+          "like_weighted_negative_rate": 0.004214043486933972,
+          "like_weighted_positive_rate": 0.5334843692114787,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.6%，正面 57.2%，按讚加權負面 0.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.014079895219384414,
+            "like_weighted_negative_rate": 0.00998135666140829,
+            "n_comments": 3054,
+            "summary_zh": "personal_team_life：負面 1.4%，按讚加權負面 1.0%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.020224719101123594,
+            "like_weighted_negative_rate": 0.0032232857980074234,
+            "n_comments": 445,
+            "summary_zh": "other：負面 2.0%，按讚加權負面 0.3%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.0158329830460978,
+            "like_weighted_negative_rate": 0.002261406654712094,
+            "n_comments": 7137,
+            "summary_zh": "food_culture：負面 1.6%，按讚加權負面 0.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 678,
+          "pct_active_commenters": 14.881474978050921,
+          "summary_zh": "14.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 7211,
+          "avg_comments_per_commenter": 10.635693215339233,
+          "n_videos_touched": 120,
+          "summary_zh": "平均留言 10.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【好味小姐】好味家新貓出現！？露營跑來一隻貓？｜好味貓日常222",
+            "count": 632
+          },
+          {
+            "label": "【好味小姐】好味二寶出生啦！過程出乎意料！？｜好味貓日常181",
+            "count": 231
+          },
+          {
+            "label": "【好味小姐】蛋捲身體狀況說明",
+            "count": 209
+          },
+          {
+            "label": "【好味小姐】可能真的救不回來，撿到重傷小黑貓...｜好味貓日常245",
+            "count": 181
+          },
+          {
+            "label": "【好味小姐】我們一起睡覺啦！！！跟米香感情大躍進！｜好味貓日常233",
+            "count": 167
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 675
+          },
+          {
+            "label": "food_culture",
+            "count": 670
+          },
+          {
+            "label": "other",
+            "count": 247
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "travel_exploration",
+            "lift": 2.9623088880703703,
+            "n_commenters": 632
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 1.0991478390071232,
+            "n_commenters": 67
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.0446243213586024,
+            "n_commenters": 678
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.019659997687059096,
+          "neutral_rate": 0.47507806175552214,
+          "positive_rate": 0.5052619405574188,
+          "like_weighted_negative_rate": 0.014395936047623403,
+          "like_weighted_positive_rate": 0.5334561054898277,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.0%，正面 50.5%，按讚加權負面 1.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.021442495126705652,
+            "like_weighted_negative_rate": 0.016984705181783556,
+            "n_comments": 6156,
+            "summary_zh": "food_culture：負面 2.1%，按讚加權負面 1.7%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.017357762777242044,
+            "like_weighted_negative_rate": 0.007235498240346516,
+            "n_comments": 2074,
+            "summary_zh": "personal_team_life：負面 1.7%，按讚加權負面 0.7%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.004796163069544364,
+            "like_weighted_negative_rate": 0.00022192632046160674,
+            "n_comments": 417,
+            "summary_zh": "other：負面 0.5%，按讚加權負面 0.0%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 335,
+          "pct_active_commenters": 7.352941176470589,
+          "summary_zh": "7.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 3596,
+          "avg_comments_per_commenter": 10.734328358208955,
+          "n_videos_touched": 119,
+          "summary_zh": "平均留言 10.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【好味小姐】好味家最呆的狗！跟大家介紹我們家秋葵｜好味貓日常195",
+            "count": 158
+          },
+          {
+            "label": "【好味小姐】蛋捲身體狀況說明",
+            "count": 130
+          },
+          {
+            "label": "【好味小姐】一起減肥啦狗勾！全家被迫陪胖狗減肥...｜好味貓日常219",
+            "count": 126
+          },
+          {
+            "label": "【好味小姐】秋葵要去看醫生！秋葵跛腳了？｜好味貓日常218",
+            "count": 100
+          },
+          {
+            "label": "【好味小姐】現在的年輕人啊...我就知道沒那麼簡單！｜好味貓日常215",
+            "count": 89
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 334
+          },
+          {
+            "label": "personal_team_life",
+            "count": 283
+          },
+          {
+            "label": "other",
+            "count": 144
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.017898235745333675,
+          "neutral_rate": 0.4497570953720276,
+          "positive_rate": 0.5323446688826388,
+          "like_weighted_negative_rate": 0.03900074571215511,
+          "like_weighted_positive_rate": 0.619220730797912,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.8%，正面 53.2%，按讚加權負面 3.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.01912298054731289,
+            "like_weighted_negative_rate": 0.046446912965770006,
+            "n_comments": 3033,
+            "summary_zh": "food_culture：負面 1.9%，按讚加權負面 4.6%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.03167420814479638,
+            "like_weighted_negative_rate": 0.016675218060543867,
+            "n_comments": 221,
+            "summary_zh": "other：負面 3.2%，按讚加權負面 1.7%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.0076103500761035,
+            "like_weighted_negative_rate": 0.0008678237650200267,
+            "n_comments": 657,
+            "summary_zh": "personal_team_life：負面 0.8%，按讚加權負面 0.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 120,
       "n_edges": 6930,
@@ -712,6 +1280,513 @@
         "conductance": 0.7332634814193909,
         "avg_core_number": 112.33333333333333,
         "max_core_number": 113
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 36,
+          "date_min": "2023-01-05 12:00:34+00:00",
+          "date_max": "2023-09-14 12:00:10+00:00",
+          "pct_graph_videos": 30
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 30
+            },
+            {
+              "label": "personal_team_life",
+              "count": 21
+            },
+            {
+              "label": "product_review",
+              "count": 2
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 1
+            },
+            {
+              "label": "other",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "personal_team_life",
+              "lift": 1.8918918918918919,
+              "n_videos": 21
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 1.6666666666666665,
+              "n_videos": 1
+            },
+            {
+              "theme": "food_culture",
+              "lift": 0.9345794392523364,
+              "n_videos": 30
+            },
+            {
+              "theme": "other",
+              "lift": 0.5555555555555555,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【好味小姐】好味二寶出生啦！過程出乎意料！？｜好味貓日常181",
+              "count": 2898
+            },
+            {
+              "label": "【好味小姐】蛋捲身體狀況說明",
+              "count": 2504
+            },
+            {
+              "label": "【好味小姐】新家終於完成啦！真是太美了我的天啊啊啊｜好味貓日常168",
+              "count": 1523
+            },
+            {
+              "label": "【好味小姐】好味家最呆的狗！跟大家介紹我們家秋葵｜好味貓日常195",
+              "count": 1468
+            },
+            {
+              "label": "【好味小姐】我們是好夥伴！貓咪寶寶同居日常～｜好味貓日常191",
+              "count": 825
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日",
+            "product_review",
+            "城市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.016809786130913804,
+          "neutral_rate": 0.4044069993519119,
+          "positive_rate": 0.5787832145171743,
+          "like_weighted_negative_rate": 0.007306749637405292,
+          "like_weighted_positive_rate": 0.6135760724794457,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.7%，正面 57.9%，按讚加權負面 0.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 21295547,
+          "total_observed_comments": 22103,
+          "unique_commenters": 11830,
+          "median_observed_commenters": 392.5,
+          "evidence_zh": "36 支影片；21,295,547 views；22,103 observed comments；11,830 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 630,
+          "external_edges": 2945,
+          "conductance": 0.590576679957211,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=630, external_edges=2,945, conductance=0.591"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (30); personal_team_life (21); product_review (2); city_lifestyle (1); other (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 1.7%，正面 57.9%，按讚加權負面 0.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "36 支影片；21,295,547 views；22,103 observed comments；11,830 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=630, external_edges=2,945, conductance=0.591"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 57,
+          "date_min": "2024-04-25 12:00:03+00:00",
+          "date_max": "2026-04-30 12:01:50+00:00",
+          "pct_graph_videos": 47.5
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 53
+            },
+            {
+              "label": "product_review",
+              "count": 10
+            },
+            {
+              "label": "personal_team_life",
+              "count": 9
+            },
+            {
+              "label": "other",
+              "count": 3
+            },
+            {
+              "label": "travel_exploration",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "travel_exploration",
+              "lift": 2.1052631578947367,
+              "n_videos": 1
+            },
+            {
+              "theme": "product_review",
+              "lift": 1.6194331983805668,
+              "n_videos": 10
+            },
+            {
+              "theme": "other",
+              "lift": 1.0526315789473684,
+              "n_videos": 3
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1.042793900639449,
+              "n_videos": 53
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【好味小姐】好味家新貓出現！？露營跑來一隻貓？｜好味貓日常222",
+              "count": 1932
+            },
+            {
+              "label": "【好味小姐】可能真的救不回來，撿到重傷小黑貓...｜好味貓日常245",
+              "count": 1244
+            },
+            {
+              "label": "【好味小姐】我們一起睡覺啦！！！跟米香感情大躍進！｜好味貓日常233",
+              "count": 908
+            },
+            {
+              "label": "【好味小姐】一直撿到貓啊啊啊啊！難道是易撿貓體質？｜好味貓日常226",
+              "count": 873
+            },
+            {
+              "label": "【好味小姐】現在是什麼狀況？｜好味貓日常240",
+              "count": 833
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.019456300226861997,
+          "neutral_rate": 0.4889452839620102,
+          "positive_rate": 0.4915984158111278,
+          "like_weighted_negative_rate": 0.017422621516117943,
+          "like_weighted_positive_rate": 0.4728843478994866,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.9%，正面 49.2%，按讚加權負面 1.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 24675584,
+          "total_observed_comments": 22187,
+          "unique_commenters": 10950,
+          "median_observed_commenters": 307,
+          "evidence_zh": "57 支影片；24,675,584 views；22,187 observed comments；10,950 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1522,
+          "external_edges": 3460,
+          "conductance": 0.5413010693720867,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=1,522, external_edges=3,460, conductance=0.541"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (53); product_review (10); personal_team_life (9); other (3); travel_exploration (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 1.9%，正面 49.2%，按讚加權負面 1.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "57 支影片；24,675,584 views；22,187 observed comments；10,950 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1,522, external_edges=3,460, conductance=0.541"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 27,
+          "date_min": "2023-10-05 12:00:35+00:00",
+          "date_max": "2024-04-11 12:00:00+00:00",
+          "pct_graph_videos": 22.5
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 24
+            },
+            {
+              "label": "personal_team_life",
+              "count": 7
+            },
+            {
+              "label": "other",
+              "count": 2
+            },
+            {
+              "label": "controversy_response",
+              "count": 1
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "business_brand",
+              "lift": 4.444444444444445,
+              "n_videos": 1
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 4.444444444444445,
+              "n_videos": 1
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 2.2222222222222223,
+              "n_videos": 1
+            },
+            {
+              "theme": "other",
+              "lift": 1.4814814814814814,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【好味小姐】這個畫面太驚悚了...史上最恐怖的企劃！｜好味貓日常220",
+              "count": 968
+            },
+            {
+              "label": "【好味小姐】一起減肥啦狗勾！全家被迫陪胖狗減肥...｜好味貓日常219",
+              "count": 905
+            },
+            {
+              "label": "【好味小姐】你確定這能吃！你做這什麼怪東西？｜好味貓日常197",
+              "count": 674
+            },
+            {
+              "label": "【好味小姐】養貓最可怕的事！被我意外拍到了！｜好味貓日常196",
+              "count": 547
+            },
+            {
+              "label": "【好味小姐】秋葵要去看醫生！秋葵跛腳了？｜好味貓日常218",
+              "count": 522
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.027424697635005008,
+          "neutral_rate": 0.5464139896772205,
+          "positive_rate": 0.42616131268777446,
+          "like_weighted_negative_rate": 0.018981708658352935,
+          "like_weighted_positive_rate": 0.5133792449956852,
+          "summary_zh": "中性討論為主；負面 2.7%，正面 42.6%，按讚加權負面 1.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 12430165,
+          "total_observed_comments": 11290,
+          "unique_commenters": 6157,
+          "median_observed_commenters": 365,
+          "evidence_zh": "27 支影片；12,430,165 views；11,290 observed comments；6,157 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 350,
+          "external_edges": 2451,
+          "conductance": 0.7332634814193909,
+          "interpretation_zh": "群集邊界較鬆散，可能是過渡型內容或與其他題材高度混合。",
+          "evidence_zh": "internal_edges=350, external_edges=2,451, conductance=0.733"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (24); personal_team_life (7); other (2); controversy_response (1); city_lifestyle (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 2.7%，正面 42.6%，按讚加權負面 1.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "27 支影片；12,430,165 views；11,290 observed comments；6,157 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=350, external_edges=2,451, conductance=0.733"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1253,6 +2328,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

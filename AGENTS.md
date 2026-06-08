@@ -29,6 +29,15 @@ Current product direction as of 2026-06-06:
 > runner tasks, but the presentation demo should read completed run artifacts
 > and must not trigger real crawling, Qwen inference, or fake progress bars.
 
+Demo adjustment as of 2026-06-07:
+
+> The near-term presentation demo should focus on the DoDoMen case-study page.
+> The dashboard may keep a small set of other completed channels as clickable
+> broad-reference examples, but do not present current cross-channel percentile
+> outputs as similar-topic ranking. Matched similar-channel comparison is future
+> work and should be built from lightweight candidate discovery followed by
+> deep analysis of the selected comparables.
+
 The Web dashboard should show completed channel examples, baseline comparisons,
 tables, figures, and LLM-generated owner-facing reports. It should include
 standard YouTube analytics views where useful, but the project differentiation
@@ -53,6 +62,19 @@ concentration, bridge structure, sentiment rates, negative hotspots, and
 reply-thread conflict. Keep this layer generic: benchmark comparisons should be
 derived from completed channel runs, not from hand-coded expectations about any
 specific channel.
+
+For the current DoDoMen demo, broad benchmark percentiles are rough context
+only. They are not a matched cohort of similar travel / two-host creator
+channels and must be labeled with that caveat in dashboard/report text.
+
+Audience/video cluster displays should be profile-oriented, not graph-ID
+or metric-only. Audience communities should be translated into segment profiles
+with size, activity, preferred videos/themes, keyword evidence, sentiment,
+negative sources, representative-comment status, and business advice. Video
+shared-audience clusters should explain the evidence source for title/theme,
+comment keywords, sentiment, ABSA, metadata, and shared-audience structure.
+If true comment-keyword extraction, ABSA, or representative comments are absent,
+label them as missing/future work instead of inventing semantic evidence.
 
 ## Start Here
 
@@ -427,6 +449,35 @@ Update as of 2026-06-03 15:55 Asia/Taipei:
   `/etc/sudoers.d/channel-community-qwen-cooling`; details are recorded in
   `/home/lewis/ComputerInfo.md`. The helper was tested to set full fans and
   restore auto without relying on a live sudo timestamp.
+
+Update as of 2026-06-07 18:45 Asia/Taipei:
+
+- Aspect-based sentiment analysis (ABSA) for comment/external-event diagnostics
+  was added as an optional extension, not a replacement for existing ternary
+  Qwen sentiment. Core module: `channel_analyzer/absa.py`. CLIs:
+  `scripts/run_qwen_comment_absa.py`, `scripts/run_qwen_external_absa.py`, and
+  `scripts/run_absa_analysis.py`.
+- The ABSA taxonomy is generic and should remain channel-independent:
+  pacing/editing, commercial sponsorship, authenticity/fabrication,
+  host persona, guest/collab, cultural values/politics, content quality,
+  production quality, price/value/product, safety/ethics, other, and unclear.
+  Do not hard-code DoDoMen-specific split labels into the generic taxonomy.
+- Comment ABSA is resumable by `unit_id`. Rows with `absa_parse_error=true` or
+  empty `absa_raw` are not counted as complete, so interrupted vLLM batches are
+  retried and overwritten on resume.
+- ABSA lift metrics must distinguish scored-scope rates from full-channel
+  denominators. For negative-only scope, use
+  `negative_aspect_prevalence_lift_vs_full_channel_negative_rate` for
+  full-comment baseline interpretation; do not treat
+  `mention_rate_scored_scope` as a full-channel prevalence unless the run used
+  `--scope all`.
+- A DoDoMen negative-only ABSA run is in progress under tmux session
+  `qwen_absa_dodomen_negative`, writing
+  `runs/dodomen-generic-demo/tables/qwen_comment_absa_negative.csv` and log
+  `logs/qwen_absa_dodomen_negative_20260607.log`. It uses local
+  `micromamba run -n llm-opt`, Qwen3-8B, include-replies, thermal guard
+  73°C, 60-second checks, and 30-minute cooldown. Initial verified status after
+  parser fixes: 1,625/22,900 unique units, 0 parse errors, 0 empty raw rows.
 
 ## Data Contract
 

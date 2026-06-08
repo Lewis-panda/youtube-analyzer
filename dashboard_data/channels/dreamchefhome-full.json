@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "dreamchefhome-full",
   "title": "Dream Chef Home 夢幻廚房在我家",
   "channel_id": "UCUz5OVO4aYhfur0R-TCaBtg",
@@ -100,224 +100,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/dreamchefhome-full/tables/actor_communities.csv",
-        "bytes": 33438
+        "bytes": 33438,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/dreamchefhome-full/tables/bridge_actors.csv",
-        "bytes": 10996
+        "bytes": 10996,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/dreamchefhome-full/tables/channel_overview.csv",
-        "bytes": 386
+        "bytes": 386,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/dreamchefhome-full/tables/commenter_activity.csv",
-        "bytes": 1353459
+        "bytes": 1353459,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/dreamchefhome-full/tables/commenter_tiers.csv",
-        "bytes": 285
+        "bytes": 285,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/dreamchefhome-full/tables/community_profiles.csv",
-        "bytes": 4770
+        "bytes": 4770,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/community_sentiment_summary.csv",
-        "bytes": 2023
+        "bytes": 2023,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/community_summary.csv",
-        "bytes": 842
+        "bytes": 842,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/dreamchefhome-full/tables/community_theme_affinity.csv",
-        "bytes": 2807
+        "bytes": 2807,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/dreamchefhome-full/tables/community_theme_sentiment.csv",
-        "bytes": 2141
+        "bytes": 2141,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/dreamchefhome-full/tables/continuity_sensitivity.csv",
-        "bytes": 584
+        "bytes": 584,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/continuity_summary.csv",
-        "bytes": 631
+        "bytes": 631,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/dreamchefhome-full/tables/diagnostics.csv",
-        "bytes": 1530
+        "bytes": 1530,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/dreamchefhome-full/tables/network_actor_metrics.csv",
-        "bytes": 37053
+        "bytes": 37053,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/network_summary.csv",
-        "bytes": 637
+        "bytes": 637,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/dreamchefhome-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 4901838
+        "bytes": 4901838,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/dreamchefhome-full/tables/qwen_video_themes.csv",
-        "bytes": 960924
+        "bytes": 960924,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 862
+        "bytes": 862,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 75964
+        "bytes": 75964,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/reply_sentiment_summary.csv",
-        "bytes": 736
+        "bytes": 736,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/dreamchefhome-full/tables/reply_thread_metrics.csv",
-        "bytes": 4280997
+        "bytes": 4280997,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/dreamchefhome-full/tables/reply_thread_overview.csv",
-        "bytes": 364
+        "bytes": 364,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/dreamchefhome-full/tables/rolling_retention.csv",
-        "bytes": 947
+        "bytes": 947,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/dreamchefhome-full/tables/sentiment_hotspots.csv",
-        "bytes": 82872
+        "bytes": 82872,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/sentiment_source_summary.csv",
-        "bytes": 252
+        "bytes": 252,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/sentiment_summary.csv",
-        "bytes": 608
+        "bytes": 608,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/sentiment_theme_summary.csv",
-        "bytes": 609
+        "bytes": 609,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/theme_summary.csv",
-        "bytes": 100
+        "bytes": 100,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/dreamchefhome-full/tables/theme_video_labels.csv",
-        "bytes": 100361
+        "bytes": 100361,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/dreamchefhome-full/tables/theme_video_labels_long.csv",
-        "bytes": 63009
+        "bytes": 63009,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 2157
+        "bytes": 2157,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/video_cluster_summary.csv",
-        "bytes": 6113
+        "bytes": 6113,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/dreamchefhome-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1493
+        "bytes": 1493,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/dreamchefhome-full/tables/video_clusters.csv",
-        "bytes": 25371
+        "bytes": 25371,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/dreamchefhome-full/tables/video_link_opportunities.csv",
-        "bytes": 123934
+        "bytes": 123934,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/dreamchefhome-full/tables/video_metrics.csv",
-        "bytes": 42357
+        "bytes": 42357,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/dreamchefhome-full/tables/video_network_metrics.csv",
-        "bytes": 28325
+        "bytes": 28325,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/dreamchefhome-full/tables/video_network_summary.csv",
-        "bytes": 636
+        "bytes": 636,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/dreamchefhome-full/figures/channel_activity.png",
-        "bytes": 84024
+        "bytes": 84024,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/dreamchefhome-full/figures/commenter_tiers.png",
-        "bytes": 22228
+        "bytes": 22228,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/dreamchefhome-full/figures/community_sizes.png",
-        "bytes": 24015
+        "bytes": 24015,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/dreamchefhome-full/figures/rolling_retention.png",
-        "bytes": 38826
+        "bytes": 38826,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/dreamchefhome-full/figures/video_cluster_sizes.png",
-        "bytes": 25917
+        "bytes": 25917,
+        "source_dir": null
       }
     ]
   },
@@ -661,6 +705,751 @@
         "max_core_number": 1
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 123,
+          "pct_active_commenters": 34.55056179775281,
+          "summary_zh": "34.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 866,
+          "avg_comments_per_commenter": 7.040650406504065,
+          "n_videos_touched": 166,
+          "summary_zh": "平均留言 7.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "缺蛋不怕2種食材自製嫩豆腐，優質蛋白「鷹嘴豆腐」super簡單！Chickpea Tofu  |",
+            "count": 27
+          },
+          {
+            "label": "自製無添加「素雞」，素肉可以這樣做出來～Handmade Vegan Chicken | 夢幻廚",
+            "count": 25
+          },
+          {
+            "label": "「自製素火腿」The Vegetarian Ham | 夢幻廚房在我家 ENG SUB",
+            "count": 20
+          },
+          {
+            "label": "世界最簡單的「豆花」，兩種材料快速做豆花，嫩到不像話！免鹽滷法～Tofu Pudding | 夢",
+            "count": 20
+          },
+          {
+            "label": "自製拌飯「海苔酥海苔碎」，也太簡單划算了吧！？拌飯太好吃惹👍素香鬆～Korean Seaweed",
+            "count": 19
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 123
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "product_review",
+            "lift": 1.2019261637239167,
+            "n_commenters": 114
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.1653023748015812,
+            "n_commenters": 72
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.0170144462279296,
+            "n_commenters": 17
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.01791359325605901,
+          "neutral_rate": 0.45626975763962063,
+          "positive_rate": 0.5258166491043204,
+          "like_weighted_negative_rate": 0.011829652996845425,
+          "like_weighted_positive_rate": 0.638801261829653,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.8%，正面 52.6%，按讚加權負面 1.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.01791359325605901,
+            "like_weighted_negative_rate": 0.011829652996845425,
+            "n_comments": 949,
+            "summary_zh": "food_culture：負面 1.8%，按讚加權負面 1.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 90,
+          "pct_active_commenters": 25.280898876404496,
+          "summary_zh": "25.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 719,
+          "avg_comments_per_commenter": 7.988888888888889,
+          "n_videos_touched": 172,
+          "summary_zh": "平均留言 8.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "完勝原版「老乾媽」，盲測第一名《手把手教學》廚房小白都能學會的萬用辣椒醬做法！真的太萬用惹Rep",
+            "count": 19
+          },
+          {
+            "label": "這樣做蔬菜雞肉真的好鮮甜，「無水高麗菜燜雞」，保留食材原汁原味的懶人料理！No-Water Ca",
+            "count": 15
+          },
+          {
+            "label": "「生醃蛋黃」簡直人間美味，媲美蟹黃的鮮美滋味，不學起來對不起上帝創造雞蛋| 夢幻廚房在我家",
+            "count": 12
+          },
+          {
+            "label": "「鼎泰豐炸排骨」黃金秘方一試成主顧！輕鬆復刻米其林級炸排骨 Din Tai Fung’s Ico",
+            "count": 12
+          },
+          {
+            "label": "無水醬滷牛肉，用最少的醬料煮出好吃的滷牛腱，低碳必備‼️| 夢幻廚房在我家",
+            "count": 12
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 90
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "personal_team_life",
+            "lift": 1.3764223941738736,
+            "n_commenters": 20
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1,
+            "n_commenters": 90
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 0.931191885038039,
+            "n_commenters": 14
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.011210762331838564,
+          "neutral_rate": 0.7226137091607944,
+          "positive_rate": 0.2661755285073671,
+          "like_weighted_negative_rate": 0.008728046833422032,
+          "like_weighted_positive_rate": 0.32240553485896756,
+          "summary_zh": "中性討論為主；負面 1.1%，正面 26.6%，按讚加權負面 0.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.011210762331838564,
+            "like_weighted_negative_rate": 0.008728046833422032,
+            "n_comments": 3122,
+            "summary_zh": "food_culture：負面 1.1%，按讚加權負面 0.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 61,
+          "pct_active_commenters": 17.134831460674157,
+          "summary_zh": "17.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 458,
+          "avg_comments_per_commenter": 7.508196721311475,
+          "n_videos_touched": 147,
+          "summary_zh": "平均留言 7.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "神奇的2分鐘無麵粉蛋糕，拌一拌就能輕鬆搞定，這不就戚風蛋糕的質地‼️ | 夢幻廚房在我家 ENG",
+            "count": 15
+          },
+          {
+            "label": "有夠好吃的「水煎牛肋條」水煎牛腩，極度美味新吃法，少油增肌又減脂低碳！Pan-Fried Bee",
+            "count": 14
+          },
+          {
+            "label": "缺蛋不怕2種食材自製嫩豆腐，優質蛋白「鷹嘴豆腐」super簡單！Chickpea Tofu  |",
+            "count": 10
+          },
+          {
+            "label": "低卡低碳「豆腐蔬菜餅」，營養豐富又有飽足感，最近愛做的早餐餅～Tofu Vegetable Pa",
+            "count": 10
+          },
+          {
+            "label": "超簡單的「無水蔥油燒全雞」，賣相太讚竟然不加一滴水‼️年菜必做！No-Water Scallio",
+            "count": 10
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 61
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "travel_exploration",
+            "lift": 1.2857142857142858,
+            "n_commenters": 12
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.153846153846154,
+            "n_commenters": 12
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1,
+            "n_commenters": 61
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.03987240829346093,
+          "neutral_rate": 0.4513556618819777,
+          "positive_rate": 0.5087719298245614,
+          "like_weighted_negative_rate": 0.02900717703349282,
+          "like_weighted_positive_rate": 0.5481459330143541,
+          "summary_zh": "中性偏正，正向討論較多；負面 4.0%，正面 50.9%，按讚加權負面 2.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.03987240829346093,
+            "like_weighted_negative_rate": 0.02900717703349282,
+            "n_comments": 627,
+            "summary_zh": "food_culture：負面 4.0%，按讚加權負面 2.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 6,
+        "segment_label": "Audience segment 6",
+        "group_size": {
+          "n_commenters": 42,
+          "pct_active_commenters": 11.797752808988763,
+          "summary_zh": "11.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 364,
+          "avg_comments_per_commenter": 8.666666666666666,
+          "n_videos_touched": 123,
+          "summary_zh": "平均留言 8.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "自製「鷹嘴豆味噌」超美味不死鹹，沒想到一天內就能完成！？驚艷的甘甜美味～Homemade Chi",
+            "count": 17
+          },
+          {
+            "label": "日料店配方「糖醋蘿蔔」！小菜喝粥最佳配菜～Pickled Sweet and Sour Radi",
+            "count": 17
+          },
+          {
+            "label": "零失敗「壽司卷」！用自製醃黃蘿蔔來做，基礎壽司手把手教學～Basic Seaweed Sushi",
+            "count": 15
+          },
+          {
+            "label": "自製無添加「素雞」，素肉可以這樣做出來～Handmade Vegan Chicken | 夢幻廚",
+            "count": 12
+          },
+          {
+            "label": "親測最簡單配方「墨西哥捲餅皮」，好吃免烤箱，還能做低卡派皮、各式捲餅極萬用～Mexican To",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 42
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "education_advice",
+            "lift": 1.168846228177543,
+            "n_commenters": 28
+          },
+          {
+            "theme": "product_review",
+            "lift": 1.0678006644518272,
+            "n_commenters": 37
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1,
+            "n_commenters": 42
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.004987531172069825,
+          "neutral_rate": 0.5062344139650873,
+          "positive_rate": 0.48877805486284287,
+          "like_weighted_negative_rate": 0.0033764772087788407,
+          "like_weighted_positive_rate": 0.6207090602138435,
+          "summary_zh": "中性討論為主；負面 0.5%，正面 48.9%，按讚加權負面 0.3%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.004987531172069825,
+            "like_weighted_negative_rate": 0.0033764772087788407,
+            "n_comments": 401,
+            "summary_zh": "food_culture：負面 0.5%，按讚加權負面 0.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 7,
+        "segment_label": "Audience segment 7",
+        "group_size": {
+          "n_commenters": 30,
+          "pct_active_commenters": 8.426966292134832,
+          "summary_zh": "8.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 324,
+          "avg_comments_per_commenter": 10.8,
+          "n_videos_touched": 126,
+          "summary_zh": "平均留言 10.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "破解名店「蛋黃酥」靈魂！中式酥油皮黃金比例，層次分明不破酥，新手一次就成功",
+            "count": 9
+          },
+          {
+            "label": "色香味俱全的「酸菜魚」做法來啦！超簡單就能搞定，詳細教程小白也能輕鬆學～Boiled Fish",
+            "count": 9
+          },
+          {
+            "label": "超級食物花椰菜的妙吃，「花椰菜餅」，低碳超級美味！Broccoli Patties | 夢幻廚房",
+            "count": 7
+          },
+          {
+            "label": "「生醃蛋黃」簡直人間美味，媲美蟹黃的鮮美滋味，不學起來對不起上帝創造雞蛋| 夢幻廚房在我家",
+            "count": 7
+          },
+          {
+            "label": "自製「萬用甘甜醬油」，所有料理靠它提鮮100%，萬能百搭～All-Purpose Sweet S",
+            "count": 7
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 30
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.002824858757062147,
+          "neutral_rate": 0.4887005649717514,
+          "positive_rate": 0.5084745762711864,
+          "like_weighted_negative_rate": 0.0053226879574184965,
+          "like_weighted_positive_rate": 0.6274118429807053,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.3%，正面 50.8%，按讚加權負面 0.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.002824858757062147,
+            "like_weighted_negative_rate": 0.0053226879574184965,
+            "n_comments": 354,
+            "summary_zh": "food_culture：負面 0.3%，按讚加權負面 0.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 6,
+          "pct_active_commenters": 1.6853932584269662,
+          "summary_zh": "1.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 53,
+          "avg_comments_per_commenter": 8.833333333333334,
+          "n_videos_touched": 23,
+          "summary_zh": "平均留言 8.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "超越麻油豬肝，脆又嫩的『蔥鹽煎豬肝』不做太可惜惹| 夢幻廚房在我家",
+            "count": 3
+          },
+          {
+            "label": "復刻鼎泰豐「招牌小菜」10分鐘零失敗快手做法Quick Din Tai Fung Side Di",
+            "count": 3
+          },
+          {
+            "label": "油膩膩的地板這樣清就對了‼️實測Scion無線吸塵洗地機，有驚艷到 | 夢幻廚房在我家 ENG",
+            "count": 2
+          },
+          {
+            "label": "驚艷！「高麗菜一夜漬」，更勝台式泡菜，免動火熱量低的開胃小菜～Overnight Pickled",
+            "count": 2
+          },
+          {
+            "label": "素食百搭萬用醬「鷹嘴豆泥」，比薯泥更讚的超級食物，大推！低脂低醣高蛋白Hummus | 夢幻廚房",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 6
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "實測"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.03076923076923077,
+          "neutral_rate": 0.46153846153846156,
+          "positive_rate": 0.5076923076923077,
+          "like_weighted_negative_rate": 0.050359712230215826,
+          "like_weighted_positive_rate": 0.5827338129496403,
+          "summary_zh": "中性偏正，正向討論較多；負面 3.1%，正面 50.8%，按讚加權負面 5.0%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.03076923076923077,
+            "like_weighted_negative_rate": 0.050359712230215826,
+            "n_comments": 65,
+            "summary_zh": "food_culture：負面 3.1%，按讚加權負面 5.0%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 0.5617977528089888,
+          "summary_zh": "0.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 6,
+          "avg_comments_per_commenter": 3.0,
+          "n_videos_touched": 3,
+          "summary_zh": "平均留言 3.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "世界最簡單的「焗烤薯泥」，簡單卻美味無比！Baked Mashed Potatoes | 夢幻廚",
+            "count": 2
+          },
+          {
+            "label": "復刻吉野家牛丼飯，天啊！我覺得贏他了耶！順便做黃金燒肉醬！Yoshinoya's Beef Bo",
+            "count": 2
+          },
+          {
+            "label": "大口吃肉大口喝湯的白灼牛腩清蒸牛肋條，太簡單好吃了！有肉有湯真棒！Blanched Beef B",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0,
+          "neutral_rate": 0,
+          "positive_rate": 1,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 1,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.0%，正面 100.0%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 0.5617977528089888,
+          "summary_zh": "0.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 9,
+          "avg_comments_per_commenter": 4.5,
+          "n_videos_touched": 4,
+          "summary_zh": "平均留言 4.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "鳳梨皮華麗轉身，2天釀出酵素氣泡飲！Pineapple Sparkling Ferment in",
+            "count": 2
+          },
+          {
+            "label": "天啊‼️這「焦香豆漿」也太好喝了，用黃豆取代咖啡，不喝拿鐵改喝它了！Roasted soy mi",
+            "count": 2
+          },
+          {
+            "label": "跌破眼鏡簡單的「免揉牛奶麵包吐司」，太可愛高顏值！做法簡單～No Knead Milk Brea",
+            "count": 2
+          },
+          {
+            "label": "自製無添加「素雞」，素肉可以這樣做出來～Handmade Vegan Chicken | 夢幻廚",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0,
+          "neutral_rate": 0.6666666666666666,
+          "positive_rate": 0.3333333333333333,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.5217391304347826,
+          "summary_zh": "中性討論為主；負面 0.0%，正面 33.3%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 109,
       "n_edges": 316,
@@ -867,6 +1656,1131 @@
         "conductance": 0.0,
         "avg_core_number": 1.0,
         "max_core_number": 1
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 24,
+          "date_min": "2023-01-19 11:00:10+00:00",
+          "date_max": "2026-03-29 12:30:06+00:00",
+          "pct_graph_videos": 22.018348623853214
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 24
+            },
+            {
+              "label": "product_review",
+              "count": 9
+            },
+            {
+              "label": "personal_team_life",
+              "count": 3
+            },
+            {
+              "label": "education_advice",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "personal_team_life",
+              "lift": 4.541666666666666,
+              "n_videos": 3
+            },
+            {
+              "theme": "product_review",
+              "lift": 1.1047297297297296,
+              "n_videos": 9
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1,
+              "n_videos": 24
+            },
+            {
+              "theme": "education_advice",
+              "lift": 0.2390350877192982,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "「鼎泰豐炸排骨」黃金秘方一試成主顧！輕鬆復刻米其林級炸排骨 Din Tai Fung’s Ico",
+              "count": 209
+            },
+            {
+              "label": "極簡無糖「牛軋糖」‼️無糖低糖自行變化，真的愛上這個做法還好吃不黏牙～Nougat｛必學年糖果｝",
+              "count": 207
+            },
+            {
+              "label": "「生醃蛋黃」簡直人間美味，媲美蟹黃的鮮美滋味，不學起來對不起上帝創造雞蛋| 夢幻廚房在我家",
+              "count": 201
+            },
+            {
+              "label": "完勝原版「老乾媽」，盲測第一名《手把手教學》廚房小白都能學會的萬用辣椒醬做法！真的太萬用惹Rep",
+              "count": 198
+            },
+            {
+              "label": "超簡單的「無水蔥油燒全雞」，賣相太讚竟然不加一滴水‼️年菜必做！No-Water Scallio",
+              "count": 175
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "團隊",
+            "近況",
+            "生日",
+            "知識"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.02145922746781116,
+          "neutral_rate": 0.5894134477825465,
+          "positive_rate": 0.38912732474964234,
+          "like_weighted_negative_rate": 0.010355029585798817,
+          "like_weighted_positive_rate": 0.4751210328133405,
+          "summary_zh": "中性討論為主；負面 2.1%，正面 38.9%，按讚加權負面 1.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 6099521,
+          "total_observed_comments": 2597,
+          "unique_commenters": 2176,
+          "median_observed_commenters": 90.5,
+          "evidence_zh": "24 支影片；6,099,521 views；2,597 observed comments；2,176 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 34,
+          "external_edges": 38,
+          "conductance": 0.3468013468013468,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=34, external_edges=38, conductance=0.347"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (24); product_review (9); personal_team_life (3); education_advice (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 2.1%，正面 38.9%，按讚加權負面 1.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "24 支影片；6,099,521 views；2,597 observed comments；2,176 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=34, external_edges=38, conductance=0.347"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。"
+      },
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 24,
+          "date_min": "2023-01-12 11:00:08+00:00",
+          "date_max": "2023-08-10 11:00:08+00:00",
+          "pct_graph_videos": 22.018348623853214
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 24
+            },
+            {
+              "label": "product_review",
+              "count": 13
+            },
+            {
+              "label": "education_advice",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "product_review",
+              "lift": 1.5957207207207205,
+              "n_videos": 13
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.1951754385964912,
+              "n_videos": 5
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1,
+              "n_videos": 24
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "驚艷！「高麗菜一夜漬」，更勝台式泡菜，免動火熱量低的開胃小菜～Overnight Pickled",
+              "count": 248
+            },
+            {
+              "label": "缺蛋不怕2種食材自製嫩豆腐，優質蛋白「鷹嘴豆腐」super簡單！Chickpea Tofu  |",
+              "count": 234
+            },
+            {
+              "label": "素食百搭萬用醬「鷹嘴豆泥」，比薯泥更讚的超級食物，大推！低脂低醣高蛋白Hummus | 夢幻廚房",
+              "count": 213
+            },
+            {
+              "label": "世界最簡單的「豆花」，兩種材料快速做豆花，嫩到不像話！免鹽滷法～Tofu Pudding | 夢",
+              "count": 206
+            },
+            {
+              "label": "自製無添加「素雞」，素肉可以這樣做出來～Handmade Vegan Chicken | 夢幻廚",
+              "count": 145
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "知識",
+            "教學",
+            "建議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.0273224043715847,
+          "neutral_rate": 0.5435336976320583,
+          "positive_rate": 0.429143897996357,
+          "like_weighted_negative_rate": 0.015748031496062992,
+          "like_weighted_positive_rate": 0.5590551181102362,
+          "summary_zh": "中性討論為主；負面 2.7%，正面 42.9%，按讚加權負面 1.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 4578271,
+          "total_observed_comments": 2087,
+          "unique_commenters": 1693,
+          "median_observed_commenters": 65,
+          "evidence_zh": "24 支影片；4,578,271 views；2,087 observed comments；1,693 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 54,
+          "external_edges": 77,
+          "conductance": 0.3926174496644295,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=54, external_edges=77, conductance=0.393"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (24); product_review (13); education_advice (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 2.7%，正面 42.9%，按讚加權負面 1.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "24 支影片；4,578,271 views；2,087 observed comments；1,693 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=54, external_edges=77, conductance=0.393"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 7,
+        "cluster_label": "Video cluster 7",
+        "size": {
+          "n_videos": 21,
+          "date_min": "2023-07-27 11:00:09+00:00",
+          "date_max": "2025-07-15 11:00:07+00:00",
+          "pct_graph_videos": 19.26605504587156
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 21
+            },
+            {
+              "label": "education_advice",
+              "count": 6
+            },
+            {
+              "label": "product_review",
+              "count": 3
+            },
+            {
+              "label": "travel_exploration",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "travel_exploration",
+              "lift": 5.19047619047619,
+              "n_videos": 1
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.639097744360902,
+              "n_videos": 6
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1,
+              "n_videos": 21
+            },
+            {
+              "theme": "product_review",
+              "lift": 0.4208494208494208,
+              "n_videos": 3
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "有夠好吃的「水煎牛肋條」水煎牛腩，極度美味新吃法，少油增肌又減脂低碳！Pan-Fried Bee",
+              "count": 353
+            },
+            {
+              "label": "這個羊肉湯真的要命清甜，完全不腥不羶，湯頭太好喝了吧‼️～Clear Lamb Soup | 夢",
+              "count": 150
+            },
+            {
+              "label": "真的好吃簡單一定要試試「油蒜蝦」，西班牙Tapas開胃菜10分鐘搞定的美味！Spanish Ga",
+              "count": 140
+            },
+            {
+              "label": "老爸的「醃辣椒」簡單好吃，拌飯涼拌超萬用，分享給所有喜歡吃辣的朋友～Marinated Chil",
+              "count": 132
+            },
+            {
+              "label": "這樣做蔬菜雞肉真的好鮮甜，「無水高麗菜燜雞」，保留食材原汁原味的懶人料理！No-Water Ca",
+              "count": 112
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "知識",
+            "教學",
+            "建議",
+            "product_review",
+            "旅遊"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.035621198957428324,
+          "neutral_rate": 0.6190269331016507,
+          "positive_rate": 0.34535186794092093,
+          "like_weighted_negative_rate": 0.022685013015991073,
+          "like_weighted_positive_rate": 0.449237634808479,
+          "summary_zh": "中性討論為主；負面 3.6%，正面 34.5%，按讚加權負面 2.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 5171576,
+          "total_observed_comments": 1740,
+          "unique_commenters": 1490,
+          "median_observed_commenters": 55,
+          "evidence_zh": "21 支影片；5,171,576 views；1,740 observed comments；1,490 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 25,
+          "external_edges": 27,
+          "conductance": 0.3392070484581498,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=25, external_edges=27, conductance=0.339"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (21); education_advice (6); product_review (3); travel_exploration (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 3.6%，正面 34.5%，按讚加權負面 2.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "21 支影片；5,171,576 views；1,740 observed comments；1,490 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=25, external_edges=27, conductance=0.339"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 19,
+          "date_min": "2023-01-05 11:00:10+00:00",
+          "date_max": "2024-01-09 11:00:08+00:00",
+          "pct_graph_videos": 17.431192660550458
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 19
+            },
+            {
+              "label": "product_review",
+              "count": 6
+            },
+            {
+              "label": "education_advice",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 1,
+              "n_videos": 19
+            },
+            {
+              "theme": "product_review",
+              "lift": 0.9302987197724039,
+              "n_videos": 6
+            },
+            {
+              "theme": "education_advice",
+              "lift": 0.6038781163434902,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "日料店配方「糖醋蘿蔔」！小菜喝粥最佳配菜～Pickled Sweet and Sour Radi",
+              "count": 275
+            },
+            {
+              "label": "自製「鷹嘴豆味噌」超美味不死鹹，沒想到一天內就能完成！？驚艷的甘甜美味～Homemade Chi",
+              "count": 237
+            },
+            {
+              "label": "零失敗「壽司卷」！用自製醃黃蘿蔔來做，基礎壽司手把手教學～Basic Seaweed Sushi",
+              "count": 202
+            },
+            {
+              "label": "親測最簡單配方「墨西哥捲餅皮」，好吃免烤箱，還能做低卡派皮、各式捲餅極萬用～Mexican To",
+              "count": 153
+            },
+            {
+              "label": "自製拌飯「海苔酥海苔碎」，也太簡單划算了吧！？拌飯太好吃惹👍素香鬆～Korean Seaweed",
+              "count": 115
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "知識",
+            "教學",
+            "建議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.008228460793804453,
+          "neutral_rate": 0.6069699903194579,
+          "positive_rate": 0.3848015488867377,
+          "like_weighted_negative_rate": 0.009679153970245564,
+          "like_weighted_positive_rate": 0.49453307044273165,
+          "summary_zh": "中性討論為主；負面 0.8%，正面 38.5%，按讚加權負面 1.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 2240019,
+          "total_observed_comments": 1769,
+          "unique_commenters": 1451,
+          "median_observed_commenters": 65,
+          "evidence_zh": "19 支影片；2,240,019 views；1,769 observed comments；1,451 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 46,
+          "external_edges": 90,
+          "conductance": 0.46928327645051193,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=46, external_edges=90, conductance=0.469"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (19); product_review (6); education_advice (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 0.8%，正面 38.5%，按讚加權負面 1.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "19 支影片；2,240,019 views；1,769 observed comments；1,451 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=46, external_edges=90, conductance=0.469"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 10,
+          "date_min": "2023-05-04 11:00:09+00:00",
+          "date_max": "2025-10-10 11:00:11+00:00",
+          "pct_graph_videos": 9.174311926605505
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 10
+            },
+            {
+              "label": "education_advice",
+              "count": 5
+            },
+            {
+              "label": "product_review",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "education_advice",
+              "lift": 2.8684210526315788,
+              "n_videos": 5
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1,
+              "n_videos": 10
+            },
+            {
+              "theme": "product_review",
+              "lift": 0.2945945945945946,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "神奇的2分鐘無麵粉蛋糕，拌一拌就能輕鬆搞定，這不就戚風蛋糕的質地‼️ | 夢幻廚房在我家 ENG",
+              "count": 230
+            },
+            {
+              "label": "原來這些錯誤，讓不鏽鋼鍋沾的亂七八糟！沾鍋問題總整理～How to prevent stainl",
+              "count": 198
+            },
+            {
+              "label": "炒冬粉不黏不坨的秘密，果然炒出不同高度！必學炒冬粉～Stir-fried Vermicelli",
+              "count": 146
+            },
+            {
+              "label": "低卡低碳「豆腐蔬菜餅」，營養豐富又有飽足感，最近愛做的早餐餅～Tofu Vegetable Pa",
+              "count": 130
+            },
+            {
+              "label": "只要藜麥＋水！無麵粉、不升糖、低碳高蛋白煎餅｜2-Ingredient Gluten-Free",
+              "count": 129
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "知識",
+            "教學",
+            "建議",
+            "product_review"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.040023201856148494,
+          "neutral_rate": 0.5939675174013921,
+          "positive_rate": 0.3660092807424594,
+          "like_weighted_negative_rate": 0.027148253068932957,
+          "like_weighted_positive_rate": 0.49799338999055714,
+          "summary_zh": "中性討論為主；負面 4.0%，正面 36.6%，按讚加權負面 2.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 5190475,
+          "total_observed_comments": 1204,
+          "unique_commenters": 1081,
+          "median_observed_commenters": 111,
+          "evidence_zh": "10 支影片；5,190,475 views；1,204 observed comments；1,081 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 9,
+          "external_edges": 27,
+          "conductance": 0.5846153846153846,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=9, external_edges=27, conductance=0.585"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (10); education_advice (5); product_review (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 4.0%，正面 36.6%，按讚加權負面 2.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "10 支影片；5,190,475 views；1,204 observed comments；1,081 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=9, external_edges=27, conductance=0.585"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 7,
+          "date_min": "2023-01-15 11:00:10+00:00",
+          "date_max": "2023-09-24 11:00:08+00:00",
+          "pct_graph_videos": 6.422018348623854
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 7
+            },
+            {
+              "label": "product_review",
+              "count": 4
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "product_review",
+              "lift": 1.6833976833976831,
+              "n_videos": 4
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1,
+              "n_videos": 7
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "這個「免揉軟歐包」我真的太滿意惹！蔓越莓堅果麵包親測好吃配方，氣炸鍋即可，真心推薦好做好吃！No",
+              "count": 307
+            },
+            {
+              "label": "「免揉佛卡夏」，親測目前最簡單做法，外脆內軟真心推薦的食譜！大氣孔太療癒No Knead Foc",
+              "count": 181
+            },
+            {
+              "label": "不用再搶陳耀訓！復刻「天花板等級」蛋黃酥，材料更純、口感比名店更驚艷",
+              "count": 102
+            },
+            {
+              "label": "跌破眼鏡簡單的「免揉牛奶麵包吐司」，太可愛高顏值！做法簡單～No Knead Milk Brea",
+              "count": 87
+            },
+            {
+              "label": "【烤福貴年糕】，太簡單又好吃惹！過年必備好運福氣到你家❤️ Fugui Cake | 夢幻廚房在",
+              "count": 65
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.019388516032811335,
+          "neutral_rate": 0.6666666666666666,
+          "positive_rate": 0.313944817300522,
+          "like_weighted_negative_rate": 0.019894998618402875,
+          "like_weighted_positive_rate": 0.5272174633876762,
+          "summary_zh": "中性討論為主；負面 1.9%，正面 31.4%，按讚加權負面 2.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 2058078,
+          "total_observed_comments": 887,
+          "unique_commenters": 776,
+          "median_observed_commenters": 87,
+          "evidence_zh": "7 支影片；2,058,078 views；887 observed comments；776 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 9,
+          "external_edges": 15,
+          "conductance": 0.43,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=9, external_edges=15, conductance=0.430"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (7); product_review (4)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 1.9%，正面 31.4%，按讚加權負面 2.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "7 支影片；2,058,078 views；887 observed comments；776 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=9, external_edges=15, conductance=0.430"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。"
+      },
+      {
+        "video_cluster": 5,
+        "cluster_label": "Video cluster 5",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-11-14 11:00:09+00:00",
+          "date_max": "2023-11-30 11:00:12+00:00",
+          "pct_graph_videos": 1.834862385321101
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 2
+            },
+            {
+              "label": "product_review",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "product_review",
+              "lift": 1.4729729729729728,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "天啊‼️這「焦香豆漿」也太好喝了，用黃豆取代咖啡，不喝拿鐵改喝它了！Roasted soy mi",
+              "count": 68
+            },
+            {
+              "label": "無腥味「鷹嘴豆漿」，豆漿新選擇不輸普通豆漿，真的好喝！Soy Milk Maker Method",
+              "count": 25
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.014598540145985401,
+          "neutral_rate": 0.7372262773722628,
+          "positive_rate": 0.24817518248175183,
+          "like_weighted_negative_rate": 0.005649717514124294,
+          "like_weighted_positive_rate": 0.3192090395480226,
+          "summary_zh": "中性討論為主；負面 1.5%，正面 24.8%，按讚加權負面 0.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 157404,
+          "total_observed_comments": 100,
+          "unique_commenters": 88,
+          "median_observed_commenters": 46.5,
+          "evidence_zh": "2 支影片；157,404 views；100 observed comments；88 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (2); product_review (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 1.5%，正面 24.8%，按讚加權負面 0.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；157,404 views；100 observed comments；88 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。"
+      },
+      {
+        "video_cluster": 6,
+        "cluster_label": "Video cluster 6",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-10-03 11:00:10+00:00",
+          "date_max": "2023-10-05 11:00:10+00:00",
+          "pct_graph_videos": 1.834862385321101
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "最健康好吃的蔬菜，「水炒高麗菜猪肉」簡單美味，上桌秒殺版！Pan-Fried Cabbage w",
+              "count": 20
+            },
+            {
+              "label": "低碳高纖「蔬菜肉捲」水煎更營養美味，5分鐘搞定低碳！Water-fried Vegetable",
+              "count": 15
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0,
+          "neutral_rate": 0.4791666666666667,
+          "positive_rate": 0.5208333333333334,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.6,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.0%，正面 52.1%，按讚加權負面 0.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 67659,
+          "total_observed_comments": 38,
+          "unique_commenters": 29,
+          "median_observed_commenters": 17.5,
+          "evidence_zh": "2 支影片；67,659 views；38 observed comments；29 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 0.0%，正面 52.1%，按讚加權負面 0.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；67,659 views；38 observed comments；29 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1408,6 +3322,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

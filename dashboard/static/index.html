@@ -3,66 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>頻道社群分析工作台</title>
+    <title>頻道社群分析儀表板</title>
     <link rel="stylesheet" href="/static/styles.css" />
   </head>
   <body>
     <div class="app-shell">
-      <aside class="left-rail" aria-label="頻道與資料範圍">
-        <div class="brand">
-          <div class="brand-kicker">Channel Community Analyzer</div>
-          <h1>頻道社群分析工作台</h1>
-          <p>已完成案例的社群健康、內容結構、情緒風險與同儕比較。</p>
-        </div>
-
-        <div class="data-scope" id="global-stats"></div>
-
-        <div class="filters">
-          <label>
-            <span>搜尋頻道</span>
-            <input id="search" type="search" placeholder="例如 錫蘭、百靈果、阿滴" autocomplete="off" />
-          </label>
-          <label>
-            <span>訂閱門檻</span>
-            <select id="subscriber-filter">
-              <option value="0">全部完成案例</option>
-              <option value="500000">50 萬以上</option>
-              <option value="1000000">100 萬以上</option>
-            </select>
-          </label>
-        </div>
-
-        <div class="rail-section">
-          <div class="rail-title">快速參照</div>
-          <div id="rail-insights" class="rail-insights"></div>
-        </div>
-
-        <div class="rail-section grow">
-          <div class="rail-title">頻道清單</div>
-          <div id="examples" class="channel-list"></div>
-        </div>
-      </aside>
-
       <main class="main-stage">
-        <header class="stage-header">
+        <section id="directory-page" class="directory-page" aria-live="polite">
+          <header class="directory-header">
+            <div>
+              <div class="brand-kicker">頻道社群分析工具</div>
+              <h1>頻道社群分析儀表板</h1>
+            </div>
+            <div class="data-scope" id="global-stats"></div>
+          </header>
+
+          <div class="directory-toolbar">
+            <label>
+              <span>搜尋頻道</span>
+              <input id="search" type="search" placeholder="輸入頻道名稱" autocomplete="off" />
+            </label>
+            <label>
+              <span>訂閱門檻</span>
+              <select id="subscriber-filter">
+                <option value="0">全部</option>
+                <option value="500000">50 萬以上</option>
+                <option value="1000000">100 萬以上</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="examples" class="case-table"></div>
+        </section>
+
+        <section id="analysis-page" class="analysis-page" hidden>
+          <header class="stage-header">
           <div>
-            <div id="channel-eyebrow" class="stage-eyebrow">尚未選擇頻道</div>
             <h2 id="channel-title">載入中</h2>
             <p id="channel-meta"></p>
           </div>
           <div class="stage-actions">
-            <div class="date-chip">
-              <span>資料視窗</span>
-              <strong id="channel-window">-</strong>
-            </div>
-            <a class="public-link" href="/" aria-label="重新載入本機儀表板">本機儀表板</a>
+            <button id="back-to-directory" class="public-link" type="button">所有案例</button>
           </div>
-        </header>
+          </header>
 
-        <nav id="view-tabs" class="view-tabs" aria-label="分析頁面"></nav>
+          <nav id="view-tabs" class="view-tabs" aria-label="分析頁面"></nav>
 
-        <section id="page-content" class="page-content" aria-live="polite">
-          <div class="loading-panel">正在載入 dashboard data...</div>
+          <section id="page-content" class="page-content" aria-live="polite">
+            <div class="loading-panel">正在載入分析資料…</div>
+          </section>
         </section>
       </main>
     </div>

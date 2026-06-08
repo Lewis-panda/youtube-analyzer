@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "alisasa-official-full",
   "title": "愛莉莎莎 Alisasa",
   "channel_id": "UCAKJ0tmI_RMXqTgxL_OMfIg",
@@ -100,219 +100,262 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/alisasa-official-full/tables/actor_communities.csv",
-        "bytes": 185473
+        "bytes": 185473,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/alisasa-official-full/tables/bridge_actors.csv",
-        "bytes": 11090
+        "bytes": 11090,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/alisasa-official-full/tables/channel_overview.csv",
-        "bytes": 368
+        "bytes": 368,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/alisasa-official-full/tables/commenter_activity.csv",
-        "bytes": 4979529
+        "bytes": 4979529,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/alisasa-official-full/tables/commenter_tiers.csv",
-        "bytes": 287
+        "bytes": 287,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/alisasa-official-full/tables/community_profiles.csv",
-        "bytes": 3098
+        "bytes": 3098,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/alisasa-official-full/tables/community_sentiment_summary.csv",
-        "bytes": 1510
+        "bytes": 1510,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/alisasa-official-full/tables/community_summary.csv",
-        "bytes": 718
+        "bytes": 718,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/alisasa-official-full/tables/community_theme_affinity.csv",
-        "bytes": 4903
+        "bytes": 4903,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/alisasa-official-full/tables/community_theme_sentiment.csv",
-        "bytes": 11226
+        "bytes": 11226,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/alisasa-official-full/tables/continuity_sensitivity.csv",
-        "bytes": 586
+        "bytes": 586,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/alisasa-official-full/tables/continuity_summary.csv",
-        "bytes": 632
+        "bytes": 632,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/alisasa-official-full/tables/diagnostics.csv",
-        "bytes": 1366
+        "bytes": 1366,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/alisasa-official-full/tables/network_actor_metrics.csv",
-        "bytes": 43555
+        "bytes": 43555,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/alisasa-official-full/tables/network_summary.csv",
-        "bytes": 636
+        "bytes": 636,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/alisasa-official-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 22879747
+        "bytes": 22879747,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/alisasa-official-full/tables/qwen_video_themes.csv",
-        "bytes": 142841
+        "bytes": 142841,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/alisasa-official-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 3111
+        "bytes": 3111,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/alisasa-official-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 39125
+        "bytes": 39125,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/alisasa-official-full/tables/reply_sentiment_summary.csv",
-        "bytes": 762
+        "bytes": 762,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/alisasa-official-full/tables/reply_thread_metrics.csv",
-        "bytes": 15942269
+        "bytes": 15942269,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/alisasa-official-full/tables/reply_thread_overview.csv",
-        "bytes": 365
+        "bytes": 365,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/alisasa-official-full/tables/rolling_retention.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/alisasa-official-full/tables/sentiment_hotspots.csv",
-        "bytes": 28953
+        "bytes": 28953,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/alisasa-official-full/tables/sentiment_source_summary.csv",
-        "bytes": 253
+        "bytes": 253,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/alisasa-official-full/tables/sentiment_summary.csv",
-        "bytes": 643
+        "bytes": 643,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/alisasa-official-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2781
+        "bytes": 2781,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/alisasa-official-full/tables/theme_source_summary.csv",
-        "bytes": 30
+        "bytes": 30,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/alisasa-official-full/tables/theme_summary.csv",
-        "bytes": 323
+        "bytes": 323,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/alisasa-official-full/tables/theme_video_labels.csv",
-        "bytes": 32776
+        "bytes": 32776,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/alisasa-official-full/tables/theme_video_labels_long.csv",
-        "bytes": 22339
+        "bytes": 22339,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/alisasa-official-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1054
+        "bytes": 1054,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/alisasa-official-full/tables/video_cluster_summary.csv",
-        "bytes": 2477
+        "bytes": 2477,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/alisasa-official-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 2237
+        "bytes": 2237,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/alisasa-official-full/tables/video_clusters.csv",
-        "bytes": 15151
+        "bytes": 15151,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/alisasa-official-full/tables/video_link_opportunities.csv",
-        "bytes": 98034
+        "bytes": 98034,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/alisasa-official-full/tables/video_metrics.csv",
-        "bytes": 12306
+        "bytes": 12306,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/alisasa-official-full/tables/video_network_metrics.csv",
-        "bytes": 18974
+        "bytes": 18974,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/alisasa-official-full/tables/video_network_summary.csv",
-        "bytes": 615
+        "bytes": 615,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/alisasa-official-full/figures/channel_activity.png",
-        "bytes": 75287
+        "bytes": 75287,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/alisasa-official-full/figures/commenter_tiers.png",
-        "bytes": 28172
+        "bytes": 28172,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/alisasa-official-full/figures/community_sizes.png",
-        "bytes": 25614
+        "bytes": 25614,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/alisasa-official-full/figures/video_cluster_sizes.png",
-        "bytes": 26544
+        "bytes": 26544,
+        "source_dir": null
       }
     ]
   },
@@ -649,6 +692,658 @@
         "max_core_number": 54
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 710,
+          "pct_active_commenters": 35.06172839506173,
+          "summary_zh": "35.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 3000,
+          "avg_comments_per_commenter": 4.225352112676056,
+          "n_videos_touched": 76,
+          "summary_zh": "平均留言 4.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "與柯文哲共度一天😂藍白合真正破局原因?💔阿北仇女嗎？Ft. @Team__KP ｜愛莉莎莎Ali",
+            "count": 200
+          },
+          {
+            "label": "把我的名牌包都捐到尼泊爾😭｜愛莉莎莎Alisasa",
+            "count": 93
+          },
+          {
+            "label": "揭開「心靈成長課」的神秘面紗😱邪教？PUA？一次揭露 @robertzona ｜愛莉莎莎Alis",
+            "count": 91
+          },
+          {
+            "label": "與男友的「泰國前女友」見面❤️超正嚇死我😭｜愛莉莎莎Alisasa",
+            "count": 79
+          },
+          {
+            "label": "回應近期Dcard事件🔥如茵老師親自來說明🔮｜愛莉莎莎Alisasa",
+            "count": 71
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 512
+          },
+          {
+            "label": "controversy_response",
+            "count": 496
+          },
+          {
+            "label": "travel_exploration",
+            "count": 318
+          },
+          {
+            "label": "other",
+            "count": 154
+          },
+          {
+            "label": "business_brand",
+            "count": 142
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "education_advice",
+            "lift": 1.1028684023515731,
+            "n_commenters": 178
+          },
+          {
+            "theme": "other",
+            "lift": 1.0683108681808533,
+            "n_commenters": 154
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.0556279372010393,
+            "n_commenters": 375
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.17127862595419846,
+          "neutral_rate": 0.49188931297709926,
+          "positive_rate": 0.3368320610687023,
+          "like_weighted_negative_rate": 0.07661869028580802,
+          "like_weighted_positive_rate": 0.6354410136548161,
+          "summary_zh": "中性討論為主；負面 17.1%，正面 33.7%，按讚加權負面 7.7%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.1771523178807947,
+            "like_weighted_negative_rate": 0.1079804285473258,
+            "n_comments": 604,
+            "summary_zh": "travel_exploration：負面 17.7%，按讚加權負面 10.8%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.2432975871313673,
+            "like_weighted_negative_rate": 0.09670526263479601,
+            "n_comments": 1492,
+            "summary_zh": "controversy_response：負面 24.3%，按讚加權負面 9.7%"
+          },
+          {
+            "theme": "business_brand",
+            "negative_rate": 0.16342412451361868,
+            "like_weighted_negative_rate": 0.08195089581950896,
+            "n_comments": 257,
+            "summary_zh": "business_brand：負面 16.3%，按讚加權負面 8.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 487,
+          "pct_active_commenters": 24.049382716049383,
+          "summary_zh": "24.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 2909,
+          "avg_comments_per_commenter": 5.973305954825462,
+          "n_videos_touched": 76,
+          "summary_zh": "平均留言 6.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "還原「家暴事件」真相💔｜愛莉莎莎Alisasa",
+            "count": 186
+          },
+          {
+            "label": "裝潢美到哭😭開箱我人生第二間房子！｜愛莉莎莎Alisasa",
+            "count": 160
+          },
+          {
+            "label": "為結婚做準備❤️Ft.羽球教練｜愛莉莎莎Alisasa",
+            "count": 138
+          },
+          {
+            "label": "與柯文哲共度一天😂藍白合真正破局原因?💔阿北仇女嗎？Ft. @Team__KP ｜愛莉莎莎Ali",
+            "count": 123
+          },
+          {
+            "label": "我的助理變瘦啦😱減肥過程大公開！｜愛莉莎莎Alisasa",
+            "count": 110
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 427
+          },
+          {
+            "label": "controversy_response",
+            "count": 376
+          },
+          {
+            "label": "business_brand",
+            "count": 200
+          },
+          {
+            "label": "travel_exploration",
+            "count": 158
+          },
+          {
+            "label": "product_review",
+            "count": 153
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.2475477082856488,
+            "n_commenters": 263
+          },
+          {
+            "theme": "product_review",
+            "lift": 1.2440419940539393,
+            "n_commenters": 327
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1.1780554708930204,
+            "n_commenters": 107
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09022671568627451,
+          "neutral_rate": 0.5968137254901961,
+          "positive_rate": 0.31295955882352944,
+          "like_weighted_negative_rate": 0.03427326433988352,
+          "like_weighted_positive_rate": 0.5487493191435874,
+          "summary_zh": "中性討論為主；負面 9.0%，正面 31.3%，按讚加權負面 3.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "product_review",
+            "negative_rate": 0.028169014084507043,
+            "like_weighted_negative_rate": 0.06494694474935968,
+            "n_comments": 426,
+            "summary_zh": "product_review：負面 2.8%，按讚加權負面 6.5%"
+          },
+          {
+            "theme": "business_brand",
+            "negative_rate": 0.06948640483383686,
+            "like_weighted_negative_rate": 0.06390293225480283,
+            "n_comments": 662,
+            "summary_zh": "business_brand：負面 6.9%，按讚加權負面 6.4%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.1768837803320562,
+            "like_weighted_negative_rate": 0.03854541280893718,
+            "n_comments": 1566,
+            "summary_zh": "controversy_response：負面 17.7%，按讚加權負面 3.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 471,
+          "pct_active_commenters": 23.25925925925926,
+          "summary_zh": "23.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 2928,
+          "avg_comments_per_commenter": 6.2165605095541405,
+          "n_videos_touched": 76,
+          "summary_zh": "平均留言 6.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "我在杜拜買房了 ✨｜愛莉莎莎Alisasa",
+            "count": 161
+          },
+          {
+            "label": "與柯文哲共度一天😂藍白合真正破局原因?💔阿北仇女嗎？Ft. @Team__KP ｜愛莉莎莎Ali",
+            "count": 120
+          },
+          {
+            "label": "第一天到印度就哭了😭連夜逃離可怕旅館….｜愛莉莎莎Alisasa",
+            "count": 118
+          },
+          {
+            "label": "台灣女生獨自印度一日遊😱到底多可怕？｜愛莉莎莎Alisasa",
+            "count": 105
+          },
+          {
+            "label": "去住杜拜「最奢華飯店」✨一入住就送20,000元的愛馬仕😱Atlantis the Royal",
+            "count": 103
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 339
+          },
+          {
+            "label": "personal_team_life",
+            "count": 333
+          },
+          {
+            "label": "controversy_response",
+            "count": 316
+          },
+          {
+            "label": "business_brand",
+            "count": 245
+          },
+          {
+            "label": "other",
+            "count": 177
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1302691721686135,
+          "neutral_rate": 0.5220924327069578,
+          "positive_rate": 0.3476383951244286,
+          "like_weighted_negative_rate": 0.11492168178070898,
+          "like_weighted_positive_rate": 0.5528441879637263,
+          "summary_zh": "中性討論為主；負面 13.0%，正面 34.8%，按讚加權負面 11.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.17714884696016772,
+            "like_weighted_negative_rate": 0.22235387045813587,
+            "n_comments": 954,
+            "summary_zh": "controversy_response：負面 17.7%，按讚加權負面 22.2%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.09828571428571428,
+            "like_weighted_negative_rate": 0.10909429395885693,
+            "n_comments": 875,
+            "summary_zh": "personal_team_life：負面 9.8%，按讚加權負面 10.9%"
+          },
+          {
+            "theme": "business_brand",
+            "negative_rate": 0.17408906882591094,
+            "like_weighted_negative_rate": 0.08402471315092674,
+            "n_comments": 494,
+            "summary_zh": "business_brand：負面 17.4%，按讚加權負面 8.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 280,
+          "pct_active_commenters": 13.82716049382716,
+          "summary_zh": "13.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1587,
+          "avg_comments_per_commenter": 5.667857142857143,
+          "n_videos_touched": 73,
+          "summary_zh": "平均留言 5.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "與柯文哲共度一天😂藍白合真正破局原因?💔阿北仇女嗎？Ft. @Team__KP ｜愛莉莎莎Ali",
+            "count": 225
+          },
+          {
+            "label": "與男友的「泰國前女友」見面❤️超正嚇死我😭｜愛莉莎莎Alisasa",
+            "count": 177
+          },
+          {
+            "label": "去泰國住一個月🇹🇭｜愛莉莎莎Alisasa",
+            "count": 123
+          },
+          {
+            "label": "Toyz本人有魅力嗎？跟「世仇」約會一天💔｜愛莉莎莎Alisasa",
+            "count": 74
+          },
+          {
+            "label": "才剛買新車2個月就撞壞了😭｜愛莉莎莎Alisasa",
+            "count": 44
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 253
+          },
+          {
+            "label": "controversy_response",
+            "count": 250
+          },
+          {
+            "label": "business_brand",
+            "count": 142
+          },
+          {
+            "label": "travel_exploration",
+            "count": 94
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 44
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.24361430395913156,
+          "neutral_rate": 0.5210727969348659,
+          "positive_rate": 0.23531289910600256,
+          "like_weighted_negative_rate": 0.11136411406151475,
+          "like_weighted_positive_rate": 0.5967911441182653,
+          "summary_zh": "中性討論為主；負面 24.4%，正面 23.5%，按讚加權負面 11.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.19066147859922178,
+            "like_weighted_negative_rate": 0.181360201511335,
+            "n_comments": 257,
+            "summary_zh": "travel_exploration：負面 19.1%，按讚加權負面 18.1%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.29707112970711297,
+            "like_weighted_negative_rate": 0.12402611076016003,
+            "n_comments": 1434,
+            "summary_zh": "controversy_response：負面 29.7%，按讚加權負面 12.4%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.1981981981981982,
+            "like_weighted_negative_rate": 0.10358755048705155,
+            "n_comments": 999,
+            "summary_zh": "personal_team_life：負面 19.8%，按讚加權負面 10.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 77,
+          "pct_active_commenters": 3.802469135802469,
+          "summary_zh": "3.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 368,
+          "avg_comments_per_commenter": 4.779220779220779,
+          "n_videos_touched": 43,
+          "summary_zh": "平均留言 4.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "與柯文哲共度一天😂藍白合真正破局原因?💔阿北仇女嗎？Ft. @Team__KP ｜愛莉莎莎Ali",
+            "count": 61
+          },
+          {
+            "label": "Toyz本人有魅力嗎？跟「世仇」約會一天💔｜愛莉莎莎Alisasa",
+            "count": 47
+          },
+          {
+            "label": "揭開「心靈成長課」的神秘面紗😱邪教？PUA？一次揭露 @robertzona ｜愛莉莎莎Alis",
+            "count": 35
+          },
+          {
+            "label": "我在杜拜買房了 ✨｜愛莉莎莎Alisasa",
+            "count": 20
+          },
+          {
+            "label": "我買了一間曼谷的房子🇹🇭泰國房地產到底如何呢？｜愛莉莎莎Alisasa",
+            "count": 17
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 71
+          },
+          {
+            "label": "personal_team_life",
+            "count": 59
+          },
+          {
+            "label": "travel_exploration",
+            "count": 29
+          },
+          {
+            "label": "business_brand",
+            "count": 25
+          },
+          {
+            "label": "other",
+            "count": 13
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.19569471624266144,
+          "neutral_rate": 0.4324853228962818,
+          "positive_rate": 0.37181996086105673,
+          "like_weighted_negative_rate": 0.2842140356726121,
+          "like_weighted_positive_rate": 0.4727454575762627,
+          "summary_zh": "中性討論為主；負面 19.6%，正面 37.2%，按讚加權負面 28.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.2578397212543554,
+            "like_weighted_negative_rate": 0.3129520052596976,
+            "n_comments": 287,
+            "summary_zh": "controversy_response：負面 25.8%，按讚加權負面 31.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 76,
       "n_edges": 2409,
@@ -740,6 +1435,499 @@
         "conductance": 0.5143518518518518,
         "avg_core_number": 46.535714285714285,
         "max_core_number": 49
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 9,
+          "date_min": "2023-12-02 03:57:49+00:00",
+          "date_max": "2024-04-09 10:27:05+00:00",
+          "pct_graph_videos": 11.842105263157894
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 4
+            },
+            {
+              "label": "personal_team_life",
+              "count": 4
+            },
+            {
+              "label": "business_brand",
+              "count": 2
+            },
+            {
+              "label": "travel_exploration",
+              "count": 2
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "automotive_luxury",
+              "lift": 4.222222222222222,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "與柯文哲共度一天😂藍白合真正破局原因?💔阿北仇女嗎？Ft. @Team__KP ｜愛莉莎莎Ali",
+              "count": 13729
+            },
+            {
+              "label": "與男友的「泰國前女友」見面❤️超正嚇死我😭｜愛莉莎莎Alisasa",
+              "count": 1973
+            },
+            {
+              "label": "Toyz本人有魅力嗎？跟「世仇」約會一天💔｜愛莉莎莎Alisasa",
+              "count": 1156
+            },
+            {
+              "label": "目擊鬥毆現場😱舊金山徹底淪陷了🇺🇸｜愛莉莎莎Alisasa",
+              "count": 794
+            },
+            {
+              "label": "我買了一間曼谷的房子🇹🇭泰國房地產到底如何呢？｜愛莉莎莎Alisasa",
+              "count": 715
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2156953642384106,
+          "neutral_rate": 0.4619867549668874,
+          "positive_rate": 0.32231788079470197,
+          "like_weighted_negative_rate": 0.0928099613023857,
+          "like_weighted_positive_rate": 0.7032769836252778,
+          "summary_zh": "中性討論為主；負面 21.6%，正面 32.2%，按讚加權負面 9.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 7311548,
+          "total_observed_comments": 23387,
+          "unique_commenters": 18537,
+          "median_observed_commenters": 715,
+          "evidence_zh": "9 支影片；7,311,548 views；23,387 observed comments；18,537 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 36,
+          "external_edges": 575,
+          "conductance": 0.6825530128070544,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=36, external_edges=575, conductance=0.683"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (4); personal_team_life (4); business_brand (2); travel_exploration (2); automotive_luxury (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 21.6%，正面 32.2%，按讚加權負面 9.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "9 支影片；7,311,548 views；23,387 observed comments；18,537 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=36, external_edges=575, conductance=0.683"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 39,
+          "date_min": "2024-03-30 08:56:53+00:00",
+          "date_max": "2026-03-12 10:30:19+00:00",
+          "pct_graph_videos": 51.31578947368421
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 16
+            },
+            {
+              "label": "business_brand",
+              "count": 14
+            },
+            {
+              "label": "travel_exploration",
+              "count": 13
+            },
+            {
+              "label": "controversy_response",
+              "count": 9
+            },
+            {
+              "label": "product_review",
+              "count": 8
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "travel_exploration",
+              "lift": 1.4074074074074074,
+              "n_videos": 13
+            },
+            {
+              "theme": "other",
+              "lift": 1.2991452991452992,
+              "n_videos": 4
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.1135531135531136,
+              "n_videos": 4
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.0912820512820511,
+              "n_videos": 14
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "揭開「心靈成長課」的神秘面紗😱邪教？PUA？一次揭露 @robertzona ｜愛莉莎莎Alis",
+              "count": 1513
+            },
+            {
+              "label": "把我的名牌包都捐到尼泊爾😭｜愛莉莎莎Alisasa",
+              "count": 1079
+            },
+            {
+              "label": "第一天到印度就哭了😭連夜逃離可怕旅館….｜愛莉莎莎Alisasa",
+              "count": 1003
+            },
+            {
+              "label": "我在杜拜買房了 ✨｜愛莉莎莎Alisasa",
+              "count": 967
+            },
+            {
+              "label": "回應近期Dcard事件🔥如茵老師親自來說明🔮｜愛莉莎莎Alisasa",
+              "count": 897
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "品牌",
+            "業配",
+            "商業",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1683816248331683,
+          "neutral_rate": 0.5587893399922504,
+          "positive_rate": 0.2728290351745813,
+          "like_weighted_negative_rate": 0.17209989564067327,
+          "like_weighted_positive_rate": 0.4280557822988672,
+          "summary_zh": "中性討論為主；負面 16.8%，正面 27.3%，按讚加權負面 17.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 15279782,
+          "total_observed_comments": 15590,
+          "unique_commenters": 11445,
+          "median_observed_commenters": 256,
+          "evidence_zh": "39 支影片；15,279,782 views；15,590 observed comments；11,445 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 704,
+          "external_edges": 1083,
+          "conductance": 0.4049353123751575,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=704, external_edges=1,083, conductance=0.405"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (16); business_brand (14); travel_exploration (13); controversy_response (9); product_review (8)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 16.8%，正面 27.3%，按讚加權負面 17.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "39 支影片；15,279,782 views；15,590 observed comments；11,445 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=704, external_edges=1,083, conductance=0.405"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 28,
+          "date_min": "2023-01-18 09:56:58+00:00",
+          "date_max": "2023-11-24 12:16:29+00:00",
+          "pct_graph_videos": 36.84210526315789
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 11
+            },
+            {
+              "label": "product_review",
+              "count": 10
+            },
+            {
+              "label": "business_brand",
+              "count": 9
+            },
+            {
+              "label": "controversy_response",
+              "count": 6
+            },
+            {
+              "label": "food_culture",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 2.261904761904762,
+              "n_videos": 5
+            },
+            {
+              "theme": "product_review",
+              "lift": 1.5079365079365081,
+              "n_videos": 10
+            },
+            {
+              "theme": "automotive_luxury",
+              "lift": 1.3571428571428572,
+              "n_videos": 1
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 1.2063492063492063,
+              "n_videos": 4
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "還原「家暴事件」真相💔｜愛莉莎莎Alisasa",
+              "count": 956
+            },
+            {
+              "label": "那些年我們的Metoo事件｜愛莉莎莎Alisasa",
+              "count": 940
+            },
+            {
+              "label": "裝潢美到哭😭開箱我人生第二間房子！｜愛莉莎莎Alisasa",
+              "count": 940
+            },
+            {
+              "label": "為結婚做準備❤️Ft.羽球教練｜愛莉莎莎Alisasa",
+              "count": 670
+            },
+            {
+              "label": "Le labo東京有上榜？無業配開箱愛用香水前5名😍｜愛莉莎莎Alisasa",
+              "count": 606
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "product_review",
+            "品牌",
+            "業配",
+            "商業",
+            "爭議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.14382201032975764,
+          "neutral_rate": 0.4898688915375447,
+          "positive_rate": 0.36630909813269763,
+          "like_weighted_negative_rate": 0.10414505328680562,
+          "like_weighted_positive_rate": 0.5660426294444968,
+          "summary_zh": "中性討論為主；負面 14.4%，正面 36.6%，按讚加權負面 10.4%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 12763530,
+          "total_observed_comments": 10746,
+          "unique_commenters": 7985,
+          "median_observed_commenters": 260,
+          "evidence_zh": "28 支影片；12,763,530 views；10,746 observed comments；7,985 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 350,
+          "external_edges": 980,
+          "conductance": 0.5143518518518518,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=350, external_edges=980, conductance=0.514"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (11); product_review (10); business_brand (9); controversy_response (6); food_culture (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 14.4%，正面 36.6%，按讚加權負面 10.4%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "28 支影片；12,763,530 views；10,746 observed comments；7,985 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=350, external_edges=980, conductance=0.514"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1281,6 +2469,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

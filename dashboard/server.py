@@ -141,7 +141,7 @@ def read_table(data_dir: Path, slug: str, table: str, limit: int) -> dict:
     validate_name(table, "table")
     if table in BLOCKED_TABLES:
         raise HttpError(HTTPStatus.FORBIDDEN, f"Table is not exposed in the demo: {table}")
-    limit = max(1, min(limit, 500))
+    limit = max(1, min(limit, 5000))
     channel = read_channel(data_dir, slug)
     item = find_named_artifact(channel, "tables", table)
     path = resolve_project_path(item["path"])

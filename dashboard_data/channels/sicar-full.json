@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "sicar-full",
   "title": "SiCAR愛車酷",
   "channel_id": "UCD76jE_-uOSeyC2q8jX7pVQ",
@@ -100,224 +100,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/sicar-full/tables/actor_communities.csv",
-        "bytes": 1387
+        "bytes": 1387,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/sicar-full/tables/bridge_actors.csv",
-        "bytes": 2227
+        "bytes": 2227,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/sicar-full/tables/channel_overview.csv",
-        "bytes": 358
+        "bytes": 358,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/sicar-full/tables/commenter_activity.csv",
-        "bytes": 495048
+        "bytes": 495048,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/sicar-full/tables/commenter_tiers.csv",
-        "bytes": 264
+        "bytes": 264,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/sicar-full/tables/community_profiles.csv",
-        "bytes": 2595
+        "bytes": 2595,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/sicar-full/tables/community_sentiment_summary.csv",
-        "bytes": 1077
+        "bytes": 1077,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/sicar-full/tables/community_summary.csv",
-        "bytes": 442
+        "bytes": 442,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/sicar-full/tables/community_theme_affinity.csv",
-        "bytes": 1796
+        "bytes": 1796,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/sicar-full/tables/community_theme_sentiment.csv",
-        "bytes": 1453
+        "bytes": 1453,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/sicar-full/tables/continuity_sensitivity.csv",
-        "bytes": 591
+        "bytes": 591,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/sicar-full/tables/continuity_summary.csv",
-        "bytes": 626
+        "bytes": 626,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/sicar-full/tables/diagnostics.csv",
-        "bytes": 1316
+        "bytes": 1316,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/sicar-full/tables/network_actor_metrics.csv",
-        "bytes": 2227
+        "bytes": 2227,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/sicar-full/tables/network_summary.csv",
-        "bytes": 615
+        "bytes": 615,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/sicar-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 1942800
+        "bytes": 1942800,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/sicar-full/tables/qwen_video_themes.csv",
-        "bytes": 521188
+        "bytes": 521188,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/sicar-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 846
+        "bytes": 846,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/sicar-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 85592
+        "bytes": 85592,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/sicar-full/tables/reply_sentiment_summary.csv",
-        "bytes": 743
+        "bytes": 743,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/sicar-full/tables/reply_thread_metrics.csv",
-        "bytes": 1355543
+        "bytes": 1355543,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/sicar-full/tables/reply_thread_overview.csv",
-        "bytes": 358
+        "bytes": 358,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/sicar-full/tables/rolling_retention.csv",
-        "bytes": 1257
+        "bytes": 1257,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/sicar-full/tables/sentiment_hotspots.csv",
-        "bytes": 86609
+        "bytes": 86609,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/sicar-full/tables/sentiment_source_summary.csv",
-        "bytes": 249
+        "bytes": 249,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/sicar-full/tables/sentiment_summary.csv",
-        "bytes": 633
+        "bytes": 633,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/sicar-full/tables/sentiment_theme_summary.csv",
-        "bytes": 763
+        "bytes": 763,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/sicar-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/sicar-full/tables/theme_summary.csv",
-        "bytes": 108
+        "bytes": 108,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/sicar-full/tables/theme_video_labels.csv",
-        "bytes": 123850
+        "bytes": 123850,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/sicar-full/tables/theme_video_labels_long.csv",
-        "bytes": 101411
+        "bytes": 101411,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/sicar-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 529
+        "bytes": 529,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/sicar-full/tables/video_cluster_summary.csv",
-        "bytes": 719
+        "bytes": 719,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/sicar-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 177
+        "bytes": 177,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/sicar-full/tables/video_clusters.csv",
-        "bytes": 633
+        "bytes": 633,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/sicar-full/tables/video_link_opportunities.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/sicar-full/tables/video_metrics.csv",
-        "bytes": 49897
+        "bytes": 49897,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/sicar-full/tables/video_network_metrics.csv",
-        "bytes": 674
+        "bytes": 674,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/sicar-full/tables/video_network_summary.csv",
-        "bytes": 439
+        "bytes": 439,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/sicar-full/figures/channel_activity.png",
-        "bytes": 98403
+        "bytes": 98403,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/sicar-full/figures/commenter_tiers.png",
-        "bytes": 26267
+        "bytes": 26267,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/sicar-full/figures/community_sizes.png",
-        "bytes": 18389
+        "bytes": 18389,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/sicar-full/figures/rolling_retention.png",
-        "bytes": 43284
+        "bytes": 43284,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/sicar-full/figures/video_cluster_sizes.png",
-        "bytes": 29442
+        "bytes": 29442,
+        "source_dir": null
       }
     ]
   },
@@ -605,6 +649,427 @@
         "max_core_number": 1
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 5,
+          "pct_active_commenters": 35.714285714285715,
+          "summary_zh": "35.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 30,
+          "avg_comments_per_commenter": 6.0,
+          "n_videos_touched": 13,
+          "summary_zh": "平均留言 6.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【ANDY老爹試駕】六代大改款Honda CR-V  S車型 CP值最高！？ 強大Honda C",
+            "count": 4
+          },
+          {
+            "label": "【Andy老爹試駕】24年式配備下放！180車款也能選ST-Line外觀！差6萬到底要不要升級S",
+            "count": 4
+          },
+          {
+            "label": "【Andy老爹試駕】KUGA的最後一舞 錯過就買不到了！？這CP值..簡直是國產配備的天花板了吧",
+            "count": 4
+          },
+          {
+            "label": "【Andy老爹試駕】碗公襲台！多項同級最高等你來挖掘！空間竟比SUV還優秀！？ ft.劉璇｜FO",
+            "count": 3
+          },
+          {
+            "label": "【Andy老爹試駕】空間與性能完美兼具！配備傲視同級但還是有美中不足的地方！？｜FORD Foc",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 5
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "travel_exploration",
+            "lift": 1.4479638009049776,
+            "n_commenters": 4
+          },
+          {
+            "theme": "product_review",
+            "lift": 1.1787648970747562,
+            "n_commenters": 5
+          },
+          {
+            "theme": "automotive_luxury",
+            "lift": 1.0158730158730158,
+            "n_commenters": 5
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.15789473684210525,
+          "neutral_rate": 0.39473684210526316,
+          "positive_rate": 0.4473684210526316,
+          "like_weighted_negative_rate": 0.17553191489361702,
+          "like_weighted_positive_rate": 0.43617021276595747,
+          "summary_zh": "正向為主，但仍需看負面來源；負面 15.8%，正面 44.7%，按讚加權負面 17.6%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 4,
+          "pct_active_commenters": 28.57142857142857,
+          "summary_zh": "28.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 65,
+          "avg_comments_per_commenter": 16.25,
+          "n_videos_touched": 47,
+          "summary_zh": "平均留言 16.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【Andy老爹試駕】全新PEUGEOT 408 Hybrid深度試駕！加了新世代P2架構的油電系",
+            "count": 4
+          },
+          {
+            "label": "【特別企劃】美女主持人艾兒想換車了！？原本就開歐洲車的她 還有什麼其他要求呢！？｜Škoda K",
+            "count": 3
+          },
+          {
+            "label": "【Andy老爹試駕】Peugeot 3008 Hybrid 1.2 GT Cielo 空間 動力",
+            "count": 3
+          },
+          {
+            "label": "【特別企劃】艾兒來試駕！看似沒什麼改動 實則內在升級幅度非常大！？以男女角度不同觀點來分析這部車",
+            "count": 2
+          },
+          {
+            "label": "【特別企劃】這個男人太狠了！又交車？？你甚至開始算不清楚他到底買了幾台車！？｜Peugeot 4",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 4
+          },
+          {
+            "label": "controversy_response",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "event_announcement",
+            "lift": 1.9692307692307693,
+            "n_commenters": 1
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1.9692307692307693,
+            "n_commenters": 1
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.5753846153846154,
+            "n_commenters": 3
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.0375,
+          "neutral_rate": 0.3,
+          "positive_rate": 0.6625,
+          "like_weighted_negative_rate": 0.016666666666666666,
+          "like_weighted_positive_rate": 0.5666666666666667,
+          "summary_zh": "中性偏正，正向討論較多；負面 3.8%，正面 66.2%，按讚加權負面 1.7%"
+        },
+        "negative_sources": [
+          {
+            "theme": "automotive_luxury",
+            "negative_rate": 0.0379746835443038,
+            "like_weighted_negative_rate": 0.01675977653631285,
+            "n_comments": 79,
+            "summary_zh": "automotive_luxury：負面 3.8%，按讚加權負面 1.7%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 3,
+          "pct_active_commenters": 21.428571428571427,
+          "summary_zh": "21.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 11,
+          "avg_comments_per_commenter": 3.6666666666666665,
+          "n_videos_touched": 5,
+          "summary_zh": "平均留言 3.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【特別企劃】車側撞擊也能拍！Mio MiVue 960W3 三鏡頭行車記錄器 開箱分享",
+            "count": 3
+          },
+          {
+            "label": "【特別企劃】萬元出頭價 買前後4K鏡頭的行車記錄器 ｜Mio MiVue 962WD｜",
+            "count": 3
+          },
+          {
+            "label": "【特別企劃】畫面無遮擋！分離鏡頭超好用｜ Mio MiVue D910W 後視鏡型行車紀錄器",
+            "count": 3
+          },
+          {
+            "label": "【Andy老爹試駕】主安升級為Level2！同級距少有的輕度越野功能且又多了一款新色！｜HYUN",
+            "count": 1
+          },
+          {
+            "label": "【Andy老爹試駕】Hyundai Santa Fe 大改款 豪華氛圍給過 操控性老爹給幾分?",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 3
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "automotive_luxury",
+            "lift": 1.0158730158730158,
+            "n_commenters": 3
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "開箱"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0,
+          "neutral_rate": 0.25,
+          "positive_rate": 0.75,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.8421052631578947,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.0%，正面 75.0%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 14.285714285714285,
+          "summary_zh": "14.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 26,
+          "avg_comments_per_commenter": 13.0,
+          "n_videos_touched": 23,
+          "summary_zh": "平均留言 13.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【Andy老爹試駕】兩百萬級距 買直逼 S-Class 的後座空間！大改款 LEXUS ES 5",
+            "count": 2
+          },
+          {
+            "label": "【Andy老爹試駕】新舊408大比拚！不只售價狂降接近20萬！？還新增全新Hybrid 油電系統",
+            "count": 2
+          },
+          {
+            "label": "【Andy老爹試駕】剛剛好的尺寸 剛好適合你 全新改款SUZUKI SWIFT輕油電",
+            "count": 2
+          },
+          {
+            "label": "【Andy老爹試駕】兩百萬買質感跟直六 這台七人座LSUV 都有了 Mazda CX-90 3.",
+            "count": 1
+          },
+          {
+            "label": "【Andy老爹試駕】重點試駕！X1同車系油/電差異在哪裡？又要怎麼選！？｜BMW iX1 sDr",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "automotive_luxury",
+            "count": 2
+          },
+          {
+            "label": "controversy_response",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "controversy_response",
+            "lift": 2.8131868131868134,
+            "n_commenters": 2
+          },
+          {
+            "theme": "product_review",
+            "lift": 1.248104008667389,
+            "n_commenters": 2
+          },
+          {
+            "theme": "automotive_luxury",
+            "lift": 0.9768009768009768,
+            "n_commenters": 2
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2727272727272727,
+          "neutral_rate": 0.3939393939393939,
+          "positive_rate": 0.3333333333333333,
+          "like_weighted_negative_rate": 0.11428571428571428,
+          "like_weighted_positive_rate": 0.2857142857142857,
+          "summary_zh": "中性討論為主；負面 27.3%，正面 33.3%，按讚加權負面 11.4%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 2,
       "n_edges": 1,
@@ -650,6 +1115,160 @@
         "conductance": null,
         "avg_core_number": 1.0,
         "max_core_number": 1
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-08-24 10:00:14+00:00",
+          "date_max": "2024-10-02 07:30:30+00:00",
+          "pct_graph_videos": 100
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "automotive_luxury",
+              "count": 2
+            },
+            {
+              "label": "product_review",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "automotive_luxury",
+              "lift": 1,
+              "n_videos": 2
+            },
+            {
+              "theme": "product_review",
+              "lift": 1,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【ANDY老爹試駕】六代大改款Honda CR-V  S車型 CP值最高！？ 強大Honda C",
+              "count": 83
+            },
+            {
+              "label": "【Andy老爹試駕】KUGA的最後一舞 錯過就買不到了！？這CP值..簡直是國產配備的天花板了吧",
+              "count": 64
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "車",
+            "精品",
+            "生活風格",
+            "product_review"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2222222222222222,
+          "neutral_rate": 0.6180555555555556,
+          "positive_rate": 0.1597222222222222,
+          "like_weighted_negative_rate": 0.18426724137931033,
+          "like_weighted_positive_rate": 0.23814655172413793,
+          "summary_zh": "中性討論為主；負面 22.2%，正面 16.0%，按讚加權負面 18.4%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 209459,
+          "total_observed_comments": 154,
+          "unique_commenters": 142,
+          "median_observed_commenters": 73.5,
+          "evidence_zh": "2 支影片；209,459 views；154 observed comments；142 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "automotive_luxury (2); product_review (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 22.2%，正面 16.0%，按讚加權負面 18.4%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；209,459 views；154 observed comments；142 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=-"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1191,6 +1810,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

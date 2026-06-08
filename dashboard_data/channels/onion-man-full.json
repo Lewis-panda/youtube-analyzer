@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "onion-man-full",
   "title": "Onion Man",
   "channel_id": "UCzxN4G3s9uR9ao5_O5DoXmA",
@@ -110,209 +110,250 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/onion-man-full/tables/actor_communities.csv",
-        "bytes": 582192
+        "bytes": 582192,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/onion-man-full/tables/bridge_actors.csv",
-        "bytes": 7250
+        "bytes": 7250,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/onion-man-full/tables/channel_overview.csv",
-        "bytes": 360
+        "bytes": 360,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/onion-man-full/tables/commenter_activity.csv",
-        "bytes": 7101526
+        "bytes": 7101526,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/onion-man-full/tables/commenter_tiers.csv",
-        "bytes": 292
+        "bytes": 292,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/onion-man-full/tables/community_profiles.csv",
-        "bytes": 2795
+        "bytes": 2795,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/onion-man-full/tables/community_sentiment_summary.csv",
-        "bytes": 1294
+        "bytes": 1294,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/onion-man-full/tables/community_summary.csv",
-        "bytes": 227
+        "bytes": 227,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/onion-man-full/tables/community_theme_affinity.csv",
-        "bytes": 4547
+        "bytes": 4547,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/onion-man-full/tables/community_theme_sentiment.csv",
-        "bytes": 6319
+        "bytes": 6319,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/onion-man-full/tables/continuity_sensitivity.csv",
-        "bytes": 591
+        "bytes": 591,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/onion-man-full/tables/continuity_summary.csv",
-        "bytes": 634
+        "bytes": 634,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/onion-man-full/tables/diagnostics.csv",
-        "bytes": 1246
+        "bytes": 1246,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/onion-man-full/tables/network_summary.csv",
-        "bytes": 201
+        "bytes": 201,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/onion-man-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 29077833
+        "bytes": 29077833,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/onion-man-full/tables/qwen_video_themes.csv",
-        "bytes": 300300
+        "bytes": 300300,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/onion-man-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2167
+        "bytes": 2167,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/onion-man-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 60242
+        "bytes": 60242,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/onion-man-full/tables/reply_sentiment_summary.csv",
-        "bytes": 761
+        "bytes": 761,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/onion-man-full/tables/reply_thread_metrics.csv",
-        "bytes": 27428743
+        "bytes": 27428743,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/onion-man-full/tables/reply_thread_overview.csv",
-        "bytes": 370
+        "bytes": 370,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/onion-man-full/tables/rolling_retention.csv",
-        "bytes": 304
+        "bytes": 304,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/onion-man-full/tables/sentiment_hotspots.csv",
-        "bytes": 47376
+        "bytes": 47376,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/onion-man-full/tables/sentiment_source_summary.csv",
-        "bytes": 255
+        "bytes": 255,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/onion-man-full/tables/sentiment_summary.csv",
-        "bytes": 625
+        "bytes": 625,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/onion-man-full/tables/sentiment_theme_summary.csv",
-        "bytes": 1753
+        "bytes": 1753,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/onion-man-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/onion-man-full/tables/theme_summary.csv",
-        "bytes": 221
+        "bytes": 221,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/onion-man-full/tables/theme_video_labels.csv",
-        "bytes": 62582
+        "bytes": 62582,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/onion-man-full/tables/theme_video_labels_long.csv",
-        "bytes": 54528
+        "bytes": 54528,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/onion-man-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1075
+        "bytes": 1075,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/onion-man-full/tables/video_cluster_summary.csv",
-        "bytes": 2288
+        "bytes": 2288,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/onion-man-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 2170
+        "bytes": 2170,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/onion-man-full/tables/video_clusters.csv",
-        "bytes": 27787
+        "bytes": 27787,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/onion-man-full/tables/video_metrics.csv",
-        "bytes": 21187
+        "bytes": 21187,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/onion-man-full/tables/video_network_summary.csv",
-        "bytes": 191
+        "bytes": 191,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/onion-man-full/figures/channel_activity.png",
-        "bytes": 97744
+        "bytes": 97744,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/onion-man-full/figures/commenter_tiers.png",
-        "bytes": 23124
+        "bytes": 23124,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/onion-man-full/figures/community_sizes.png",
-        "bytes": 23949
+        "bytes": 23949,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/onion-man-full/figures/rolling_retention.png",
-        "bytes": 27631
+        "bytes": 27631,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/onion-man-full/figures/video_cluster_sizes.png",
-        "bytes": 24878
+        "bytes": 24878,
+        "source_dir": null
       }
     ]
   },
@@ -582,6 +623,554 @@
         "internal_weighted_degree": 34880.0
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 2609,
+          "pct_active_commenters": 41.98583842935307,
+          "summary_zh": "42.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 12662,
+          "avg_comments_per_commenter": 4.85320045994634,
+          "n_videos_touched": 118,
+          "summary_zh": "平均留言 4.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "Onion Man | 小學生的賭博！20年前沒有手機的娛樂！ 懷念的童玩篇",
+            "count": 297
+          },
+          {
+            "label": "Onion Man | 重組肉排、死甜奶精茶、台式鹹麵包！台灣庶民美食篇！平凡卻上癮！",
+            "count": 264
+          },
+          {
+            "label": "Onion Man | 糖葫蘆一串299？逛夜市我專挑貴的吃！奢華夜市美食篇！ | 逢甲夜市",
+            "count": 236
+          },
+          {
+            "label": "Onion Man | 被誤認為色狼？滿身皮膚病的客人！洋蔥去按摩的奇葩故事！",
+            "count": 224
+          },
+          {
+            "label": "Onion Man | 中原大學超佛美食篇！乞丐超人超省吃法！一餐50元解決！|   @BIGS",
+            "count": 210
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 2459
+          },
+          {
+            "label": "food_culture",
+            "count": 1040
+          },
+          {
+            "label": "travel_exploration",
+            "count": 954
+          },
+          {
+            "label": "controversy_response",
+            "count": 878
+          },
+          {
+            "label": "other",
+            "count": 576
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "business_brand",
+            "lift": 1.5053748341727855,
+            "n_commenters": 210
+          },
+          {
+            "theme": "guest_relationship",
+            "lift": 1.2225468350251711,
+            "n_commenters": 110
+          },
+          {
+            "theme": "workplace_tech_career",
+            "lift": 1.1989146210514559,
+            "n_commenters": 1451
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化",
+            "夜市",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09718875502008033,
+          "neutral_rate": 0.6940376892184121,
+          "positive_rate": 0.20877355576150758,
+          "like_weighted_negative_rate": 0.09181688828834363,
+          "like_weighted_positive_rate": 0.21513169343528954,
+          "summary_zh": "中性討論為主；負面 9.7%，正面 20.9%，按讚加權負面 9.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.10600203458799592,
+            "like_weighted_negative_rate": 0.14040811104714387,
+            "n_comments": 9830,
+            "summary_zh": "personal_team_life：負面 10.6%，按讚加權負面 14.0%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.13486005089058525,
+            "like_weighted_negative_rate": 0.06419346670043048,
+            "n_comments": 1572,
+            "summary_zh": "controversy_response：負面 13.5%，按讚加權負面 6.4%"
+          },
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.06001091107474086,
+            "like_weighted_negative_rate": 0.02915770546134048,
+            "n_comments": 1833,
+            "summary_zh": "travel_exploration：負面 6.0%，按讚加權負面 2.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 1817,
+          "pct_active_commenters": 29.240424847119407,
+          "summary_zh": "29.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 12470,
+          "avg_comments_per_commenter": 6.862960924600991,
+          "n_videos_touched": 118,
+          "summary_zh": "平均留言 6.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "Onion Man | 重組肉排、死甜奶精茶、台式鹹麵包！台灣庶民美食篇！平凡卻上癮！",
+            "count": 461
+          },
+          {
+            "label": "Onion Man | 我家又出現一堆蟑螂..我開始超病態的蟑螂修行！",
+            "count": 382
+          },
+          {
+            "label": "Onion Man | 醜男與女神交往的悲慘戀愛故事（下）",
+            "count": 369
+          },
+          {
+            "label": "Onion Man | 這一年我被炎上的所有事！環島幫出門就是輪流被燒？",
+            "count": 364
+          },
+          {
+            "label": "Onion Man | 我靠賣證件照賺了十幾萬！但卻付出超大代價！擺攤崩潰事件篇…",
+            "count": 342
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 1772
+          },
+          {
+            "label": "food_culture",
+            "count": 1042
+          },
+          {
+            "label": "travel_exploration",
+            "count": 720
+          },
+          {
+            "label": "controversy_response",
+            "count": 592
+          },
+          {
+            "label": "other",
+            "count": 444
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "food_culture",
+            "lift": 1.0555709211422672,
+            "n_commenters": 1644
+          },
+          {
+            "theme": "product_review",
+            "lift": 1.007942051068899,
+            "n_commenters": 497
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 0.9925202384842029,
+            "n_commenters": 1811
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化",
+            "夜市",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1157529493407356,
+          "neutral_rate": 0.6431644691186675,
+          "positive_rate": 0.2410825815405968,
+          "like_weighted_negative_rate": 0.1145093100656652,
+          "like_weighted_positive_rate": 0.30607505294920967,
+          "summary_zh": "中性討論為主；負面 11.6%，正面 24.1%，按讚加權負面 11.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.12466387006561257,
+            "like_weighted_negative_rate": 0.13582495671141695,
+            "n_comments": 9297,
+            "summary_zh": "personal_team_life：負面 12.5%，按讚加權負面 13.6%"
+          },
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.08642911296436695,
+            "like_weighted_negative_rate": 0.09160150299583629,
+            "n_comments": 1319,
+            "summary_zh": "travel_exploration：負面 8.6%，按讚加權負面 9.2%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.18333333333333332,
+            "like_weighted_negative_rate": 0.08983200707338639,
+            "n_comments": 1020,
+            "summary_zh": "controversy_response：負面 18.3%，按讚加權負面 9.0%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 1462,
+          "pct_active_commenters": 23.527518506598007,
+          "summary_zh": "23.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 11266,
+          "avg_comments_per_commenter": 7.705882352941177,
+          "n_videos_touched": 118,
+          "summary_zh": "平均留言 7.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "Onion Man | 超高殺傷力的戰鬥陀螺！童年激戰回憶！| 男人的童年浪漫篇",
+            "count": 371
+          },
+          {
+            "label": "Onion Man | 喝酒被女生當場洗臉，近期發生的荒唐事與轉變 | 這兩年想跟大家說的內心話",
+            "count": 328
+          },
+          {
+            "label": "Onion Man | 威力大到能殺人的玩具彈珠超人！ 超唬爛童年動畫｜ 真實故事篇",
+            "count": 311
+          },
+          {
+            "label": "Onion Man | 我只是想活下去罷了！無時無刻被罵的YOUTUBER人生！ 九年來的創作人",
+            "count": 296
+          },
+          {
+            "label": "Onion Man | 兒時麥當勞七大回憶篇!! 沒在麥當當談過戀愛別說你當過學生!!",
+            "count": 259
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 1435
+          },
+          {
+            "label": "controversy_response",
+            "count": 857
+          },
+          {
+            "label": "travel_exploration",
+            "count": 718
+          },
+          {
+            "label": "other",
+            "count": 456
+          },
+          {
+            "label": "food_culture",
+            "count": 448
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08625421469458167,
+          "neutral_rate": 0.6171881126009566,
+          "positive_rate": 0.2965576727044617,
+          "like_weighted_negative_rate": 0.05878620825784439,
+          "like_weighted_positive_rate": 0.42725215540030875,
+          "summary_zh": "中性討論為主；負面 8.6%，正面 29.7%，按讚加權負面 5.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.1351190476190476,
+            "like_weighted_negative_rate": 0.18011113240084306,
+            "n_comments": 1680,
+            "summary_zh": "controversy_response：負面 13.5%，按讚加權負面 18.0%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.08022249690976514,
+            "like_weighted_negative_rate": 0.06008010680907877,
+            "n_comments": 8090,
+            "summary_zh": "personal_team_life：負面 8.0%，按讚加權負面 6.0%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.08560311284046693,
+            "like_weighted_negative_rate": 0.02240566037735849,
+            "n_comments": 771,
+            "summary_zh": "food_culture：負面 8.6%，按讚加權負面 2.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 326,
+          "pct_active_commenters": 5.246218216929514,
+          "summary_zh": "5.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 2275,
+          "avg_comments_per_commenter": 6.978527607361963,
+          "n_videos_touched": 118,
+          "summary_zh": "平均留言 7.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "Onion Man | 超高殺傷力的戰鬥陀螺！童年激戰回憶！| 男人的童年浪漫篇",
+            "count": 232
+          },
+          {
+            "label": "Onion Man | 重組肉排、死甜奶精茶、台式鹹麵包！台灣庶民美食篇！平凡卻上癮！",
+            "count": 156
+          },
+          {
+            "label": "Onion Man | 威力大到能殺人的玩具彈珠超人！ 超唬爛童年動畫｜ 真實故事篇",
+            "count": 137
+          },
+          {
+            "label": "Onion Man | 養蠶寶寶活不過一週！鬥牌賭博！泡漫畫店！20年前的娛樂(下) 懷念童玩篇",
+            "count": 78
+          },
+          {
+            "label": "Onion Man | 糖葫蘆一串299？逛夜市我專挑貴的吃！奢華夜市美食篇！ | 逢甲夜市",
+            "count": 69
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 284
+          },
+          {
+            "label": "other",
+            "count": 254
+          },
+          {
+            "label": "food_culture",
+            "count": 217
+          },
+          {
+            "label": "controversy_response",
+            "count": 184
+          },
+          {
+            "label": "travel_exploration",
+            "count": 109
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化",
+            "夜市",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07865612648221344,
+          "neutral_rate": 0.6770750988142292,
+          "positive_rate": 0.24426877470355732,
+          "like_weighted_negative_rate": 0.1307581692864581,
+          "like_weighted_positive_rate": 0.31135022561610554,
+          "summary_zh": "中性討論為主；負面 7.9%，正面 24.4%，按讚加權負面 13.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.08839779005524862,
+            "like_weighted_negative_rate": 0.18144918821407097,
+            "n_comments": 1267,
+            "summary_zh": "personal_team_life：負面 8.8%，按讚加權負面 18.1%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.09747292418772563,
+            "like_weighted_negative_rate": 0.08814352574102964,
+            "n_comments": 277,
+            "summary_zh": "controversy_response：負面 9.7%，按讚加權負面 8.8%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.09153318077803203,
+            "like_weighted_negative_rate": 0.024172185430463577,
+            "n_comments": 437,
+            "summary_zh": "food_culture：負面 9.2%，按讚加權負面 2.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 118,
       "n_edges": 6903,
@@ -629,6 +1218,504 @@
         "total_views": 23790274,
         "top_theme_labels": "personal_team_life (21); controversy_response (18); workplace_tech_career (8); food_culture (7); travel_exploration (3)",
         "top_videos": "Onion Man | 小學生的賭博！20年前沒有手機的娛樂！ 懷念的童玩篇 (1515); Onion Man | 糖葫蘆一串299？逛夜市我專挑貴的吃！奢華夜市美食篇！ | 逢甲夜市   (1365); Onion Man | 養蠶寶寶活不過一週！鬥牌賭博！泡漫畫店！20年前的娛樂(下) 懷念童玩篇 (1043); Onion Man | 20年前折疊式手機有多潮?  洋蔥的手機進化史篇 | 真實回憶故事 (1037); Onion Man | 拿吹風機吹私處？健身房怪人篇！ (1011)"
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 41,
+          "date_min": "2025-01-09 12:00:06+00:00",
+          "date_max": "2026-05-03 12:00:07+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 32
+            },
+            {
+              "label": "controversy_response",
+              "count": 31
+            },
+            {
+              "label": "food_culture",
+              "count": 19
+            },
+            {
+              "label": "travel_exploration",
+              "count": 9
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 6
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "product_review",
+              "lift": 1.4390243902439024,
+              "n_videos": 2
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1.2151761517615178,
+              "n_videos": 19
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 0.959349593495935,
+              "n_videos": 1
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 0.9118570393624729,
+              "n_videos": 32
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "Onion Man | 重組肉排、死甜奶精茶、台式鹹麵包！台灣庶民美食篇！平凡卻上癮！",
+              "count": 4258
+            },
+            {
+              "label": "Onion Man | 我靠賣證件照賺了十幾萬！但卻付出超大代價！擺攤崩潰事件篇…",
+              "count": 1814
+            },
+            {
+              "label": "Onion man | 30歲興趣全退坑血淚史...夾娃娃、刮刮樂、電動！電子陽痿的世代",
+              "count": 1798
+            },
+            {
+              "label": "Onion Man l 超大顆和牛漢堡肉?? 日本超大份量美食篇!!",
+              "count": 1644
+            },
+            {
+              "label": "Onion Man | 這一年我被炎上的所有事！環島幫出門就是輪流被燒？",
+              "count": 1421
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09997538103444417,
+          "neutral_rate": 0.6588035182739868,
+          "positive_rate": 0.24122110069156913,
+          "like_weighted_negative_rate": 0.09884263625503596,
+          "like_weighted_positive_rate": 0.26827575533340103,
+          "summary_zh": "中性討論為主；負面 10.0%，正面 24.1%，按讚加權負面 9.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 36286642,
+          "total_observed_comments": 36580,
+          "unique_commenters": 23956,
+          "median_observed_commenters": 649,
+          "evidence_zh": "41 支影片；36,286,642 views；36,580 observed comments；23,956 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (32); controversy_response (31); food_culture (19); travel_exploration (9); workplace_tech_career (6)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.0%，正面 24.1%，按讚加權負面 9.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "41 支影片；36,286,642 views；36,580 observed comments；23,956 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 55,
+          "date_min": "2023-01-05 12:01:42+00:00",
+          "date_max": "2024-05-05 12:00:17+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 49
+            },
+            {
+              "label": "personal_team_life",
+              "count": 48
+            },
+            {
+              "label": "travel_exploration",
+              "count": 19
+            },
+            {
+              "label": "food_culture",
+              "count": 19
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "education_advice",
+              "lift": 2.1454545454545455,
+              "n_videos": 2
+            },
+            {
+              "theme": "automotive_luxury",
+              "lift": 2.1454545454545455,
+              "n_videos": 1
+            },
+            {
+              "theme": "guest_relationship",
+              "lift": 2.1454545454545455,
+              "n_videos": 1
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 1.4303030303030302,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "Onion Man | 超高殺傷力的戰鬥陀螺！童年激戰回憶！| 男人的童年浪漫篇",
+              "count": 3716
+            },
+            {
+              "label": "Onion Man | 威力大到能殺人的玩具彈珠超人！ 超唬爛童年動畫｜ 真實故事篇",
+              "count": 2597
+            },
+            {
+              "label": "Onion Man | 兒時麥當勞七大回憶篇!! 沒在麥當當談過戀愛別說你當過學生!!",
+              "count": 1066
+            },
+            {
+              "label": "Onion Man | 喝酒被女生當場洗臉，近期發生的荒唐事與轉變 | 這兩年想跟大家說的內心話",
+              "count": 1058
+            },
+            {
+              "label": "Onion Man | 玩娃娃機瘋到成為台主！卻遭受各種洗禮..地獄的一年 (二)",
+              "count": 933
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08202820006429982,
+          "neutral_rate": 0.6188857759610527,
+          "positive_rate": 0.2990860239746475,
+          "like_weighted_negative_rate": 0.08696269287543684,
+          "like_weighted_positive_rate": 0.3672676347762456,
+          "summary_zh": "中性討論為主；負面 8.2%，正面 29.9%，按讚加權負面 8.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 50313730,
+          "total_observed_comments": 35078,
+          "unique_commenters": 21995,
+          "median_observed_commenters": 493,
+          "evidence_zh": "55 支影片；50,313,730 views；35,078 observed comments；21,995 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (49); personal_team_life (48); travel_exploration (19); food_culture (19); workplace_tech_career (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 8.2%，正面 29.9%，按讚加權負面 8.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "55 支影片；50,313,730 views；35,078 observed comments；21,995 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 22,
+          "date_min": "2024-05-19 12:00:21+00:00",
+          "date_max": "2024-12-22 12:00:06+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 21
+            },
+            {
+              "label": "controversy_response",
+              "count": 18
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 8
+            },
+            {
+              "label": "food_culture",
+              "count": 7
+            },
+            {
+              "label": "travel_exploration",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "business_brand",
+              "lift": 2.681818181818182,
+              "n_videos": 1
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 2.258373205741627,
+              "n_videos": 8
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "Onion Man | 小學生的賭博！20年前沒有手機的娛樂！ 懷念的童玩篇",
+              "count": 1515
+            },
+            {
+              "label": "Onion Man | 糖葫蘆一串299？逛夜市我專挑貴的吃！奢華夜市美食篇！ | 逢甲夜市",
+              "count": 1365
+            },
+            {
+              "label": "Onion Man | 養蠶寶寶活不過一週！鬥牌賭博！泡漫畫店！20年前的娛樂(下) 懷念童玩篇",
+              "count": 1043
+            },
+            {
+              "label": "Onion Man | 20年前折疊式手機有多潮?  洋蔥的手機進化史篇 | 真實回憶故事",
+              "count": 1037
+            },
+            {
+              "label": "Onion Man | 拿吹風機吹私處？健身房怪人篇！",
+              "count": 1011
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.118711057379336,
+          "neutral_rate": 0.7058960290151586,
+          "positive_rate": 0.17539291360550543,
+          "like_weighted_negative_rate": 0.09648285137861466,
+          "like_weighted_positive_rate": 0.19535978480161398,
+          "summary_zh": "中性討論為主；負面 11.9%，正面 17.5%，按讚加權負面 9.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 23790274,
+          "total_observed_comments": 17251,
+          "unique_commenters": 12539,
+          "median_observed_commenters": 690,
+          "evidence_zh": "22 支影片；23,790,274 views；17,251 observed comments；12,539 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (21); controversy_response (18); workplace_tech_career (8); food_culture (7); travel_exploration (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 11.9%，正面 17.5%，按讚加權負面 9.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "22 支影片；23,790,274 views；17,251 observed comments；12,539 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1170,6 +2257,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

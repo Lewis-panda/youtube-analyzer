@@ -12,6 +12,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_DEMO_TARGET_RUN = ROOT / "case_studies" / "dodomen" / "dodomen-generic-demo"
 
 KEY_BASELINE_METRICS = [
     "n_videos_in_scope",
@@ -635,6 +636,8 @@ DASHBOARD_TABS = [
             "sentiment_theme_summary",
             "sentiment_hotspots",
             "theme_video_labels",
+            "comment_aspect_summary",
+            "comment_aspect_daily",
         ],
         "figures": [],
     },
@@ -732,6 +735,11 @@ def build_parser() -> ArgumentParser:
         default=[],
         help="Extra completed run directory to include, e.g. a case study. Can be repeated.",
     )
+    parser.add_argument(
+        "--skip-default-demo-target",
+        action="store_true",
+        help="Do not include the default DoDoMen case-study run in dashboard_data.",
+    )
     return parser
 
 
@@ -745,6 +753,8 @@ def main() -> None:
 
     baseline = load_baseline(baseline_dir)
     run_dirs = discover_run_dirs(runs_dir)
+    if not args.skip_default_demo_target and DEFAULT_DEMO_TARGET_RUN.exists():
+        run_dirs.append(DEFAULT_DEMO_TARGET_RUN.resolve())
     run_dirs.extend(Path(item).expanduser().resolve() for item in args.include_run)
     run_dirs = sorted(set(run_dirs), key=lambda path: path.name)
 
@@ -782,6 +792,13 @@ def main() -> None:
             "runs_dir": display_path(runs_dir),
             "baseline_dir": display_path(baseline_dir),
             "output_dir": display_path(output_dir),
+        },
+        "demo_target_slug": "dodomen-generic-demo",
+        "demo_focus": {
+            "slug": "dodomen-generic-demo",
+            "scope_zh": "後天 demo 聚焦 DoDoMen 單一 case study；其他頻道目前只作為 broad reference 與 future work 背景。",
+            "comparison_caution_zh": "目前 percentile 是相對整體台灣 benchmark cohort，尚未完成類似主題頻道的 matched cohort；因此只可作為粗略相對位置，不應包裝成同類型頻道排名。",
+            "future_work_zh": "下一階段應先用輕量 metadata 建立台灣 YTR candidate pool，依題材、規模、內容型態與互動強度選出相似候選，再對 Top 20-50 做深度留言與網路分析。",
         },
         "baseline": build_baseline_summary(baseline, baseline_dir),
         "dashboard_statistics": build_index_statistics(examples, baseline),
@@ -838,7 +855,11 @@ def build_channel_doc(run_dir: Path, baseline: dict[str, pd.DataFrame], generate
     channel_id = str(channel.get("channel_id") or overview.get("channel_id") or "")
     title = str(channel.get("title") or overview.get("channel_title") or slug)
 
-    tables = list_artifacts(run_dir / "tables", suffix=".csv")
+    tables = [
+        *list_artifacts(run_dir / "tables", suffix=".csv", source_dir="tables"),
+        *list_artifacts(run_dir / "external_events", suffix=".csv", source_dir="external_events"),
+        *list_artifacts(run_dir / "absa", suffix=".csv", source_dir="absa"),
+    ]
     figures = list_artifacts(run_dir / "figures", suffix=".png")
     reports = {
         "report_md": path_if_exists(run_dir / "report.md"),
@@ -851,6 +872,9 @@ def build_channel_doc(run_dir: Path, baseline: dict[str, pd.DataFrame], generate
     baseline_doc = build_channel_baseline(channel_id, title, slug, run_dir, baseline)
     dashboard_summary = build_dashboard_summary(report)
     analysis_doc = build_channel_analysis(title, dashboard_summary, baseline_doc)
+    strategy_brief = load_optional_strategy_brief(run_dir)
+    if strategy_brief:
+        analysis_doc["strategy_brief"] = strategy_brief
     tabs = build_tabs(run_dir, tables, figures, baseline_doc)
 
     return clean_json(
@@ -954,8 +978,12 @@ def build_dashboard_summary(report: dict[str, Any]) -> dict[str, Any]:
         "commenter_tiers": list_rows(report.get("commenter_tiers"), limit=5),
         "network_summary": first_row(report.get("network_summary")),
         "community_summary": list_rows(report.get("community_summary"), limit=8),
+        "audience_segment_profiles": build_audience_segment_profiles(report),
+        "audience_segment_profile_contract": audience_segment_profile_contract(),
         "video_network_summary": first_row(report.get("video_network_summary")),
         "video_clusters": list_rows(report.get("video_cluster_summary"), limit=8),
+        "video_cluster_profiles": build_video_cluster_profiles(report),
+        "video_cluster_explanation_contract": video_cluster_explanation_contract(),
         "negative_hotspots": list_rows(report.get("sentiment_hotspots"), limit=8),
         "reply_overview": reply_overview,
         "reply_conflict_hotspots": list_rows(
@@ -963,6 +991,487 @@ def build_dashboard_summary(report: dict[str, Any]) -> dict[str, Any]:
             limit=8,
         ),
     }
+
+
+def audience_segment_profile_contract() -> list[dict[str, str]]:
+    return [
+        {
+            "aspect": "群體大小",
+            "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+            "source": "community_profiles.n_commenters / pct_nodes",
+        },
+        {
+            "aspect": "活躍程度",
+            "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+            "source": "community_profiles.n_comments / n_commenters / n_videos_touched",
+        },
+        {
+            "aspect": "偏好影片",
+            "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+            "source": "community_profiles.top_comment_videos",
+        },
+        {
+            "aspect": "常見關鍵字",
+            "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+            "source": "future: comment keyword extraction over raw comments",
+        },
+        {
+            "aspect": "主要情緒",
+            "meaning": "這群觀眾的正/中/負向留言結構。",
+            "source": "community_sentiment_summary",
+        },
+        {
+            "aspect": "負面來源",
+            "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+            "source": "community_theme_sentiment",
+        },
+        {
+            "aspect": "代表留言",
+            "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+            "source": "future: representative comment sampler",
+        },
+        {
+            "aspect": "商業建議",
+            "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+            "source": "derived from profile evidence; not causal proof",
+        },
+    ]
+
+
+def video_cluster_explanation_contract() -> list[dict[str, str]]:
+    return [
+        {
+            "source": "title / description / tags",
+            "explains": "這群影片的主題、格式與內容定位。",
+            "current_status": "available via qwen_video_themes / theme labels",
+        },
+        {
+            "source": "comment keywords",
+            "explains": "觀眾在這群影片下實際討論什麼。",
+            "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added",
+        },
+        {
+            "source": "sentiment",
+            "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+            "current_status": "available via video_cluster_sentiment_summary",
+        },
+        {
+            "source": "ABSA",
+            "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+            "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA",
+        },
+        {
+            "source": "metadata",
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+            "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation",
+        },
+        {
+            "source": "shared audience",
+            "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+            "current_status": "available via video shared-audience graph metrics",
+        },
+    ]
+
+
+def build_audience_segment_profiles(report: dict[str, Any]) -> list[dict[str, Any]]:
+    profiles = list_rows(report.get("community_profiles"), limit=12)
+    sentiments = by_key(list_rows(report.get("community_sentiment_summary"), limit=50), "community")
+    theme_sentiments = group_by_key(list_rows(report.get("community_theme_sentiment"), limit=80), "community")
+    affinity = group_by_key(list_rows(report.get("community_theme_affinity"), limit=80), "community")
+
+    out = []
+    for row in profiles:
+        community = row.get("community")
+        sentiment = sentiments.get(str(community), {})
+        themes = parse_ranked_items(row.get("top_primary_themes"))
+        top_videos = parse_ranked_items(row.get("top_comment_videos"))
+        top_affinity = sorted(
+            affinity.get(str(community), []),
+            key=lambda item: (as_number(item.get("lift")) or 0, as_number(item.get("n_actor_video_pairs")) or 0),
+            reverse=True,
+        )[:3]
+        negative_sources = top_negative_sources(theme_sentiments.get(str(community), []))
+        n_commenters = as_number(row.get("n_commenters"))
+        n_comments = as_number(row.get("n_comments"))
+        avg_comments = (float(n_comments) / float(n_commenters)) if n_commenters else None
+        keywords = segment_keywords_from_themes(themes, top_videos)
+        out.append(
+            clean_json(
+                {
+                    "community": community,
+                    "segment_label": f"Audience segment {community}",
+                    "group_size": {
+                        "n_commenters": n_commenters,
+                        "pct_active_commenters": as_number(row.get("pct_nodes")),
+                        "summary_zh": f"{format_percent(row.get('pct_nodes'))} of active commenters",
+                    },
+                    "activity": {
+                        "n_comments": n_comments,
+                        "avg_comments_per_commenter": avg_comments,
+                        "n_videos_touched": as_number(row.get("n_videos_touched")),
+                        "summary_zh": (
+                            f"平均留言 {avg_comments:.1f} 次 / 人"
+                            if avg_comments is not None
+                            else "缺少活躍程度資料"
+                        ),
+                    },
+                    "preferred_videos": top_videos[:5],
+                    "preferred_themes": themes[:5],
+                    "over_indexed_themes": [
+                        {
+                            "theme": item.get("theme_label"),
+                            "lift": as_number(item.get("lift")),
+                            "n_commenters": as_number(item.get("n_commenters")),
+                        }
+                        for item in top_affinity
+                    ],
+                    "common_keywords": {
+                        "values": keywords,
+                        "source": "theme/title proxy",
+                        "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。",
+                    },
+                    "main_sentiment": sentiment_profile(sentiment),
+                    "negative_sources": negative_sources,
+                    "representative_comments": {
+                        "values": [],
+                        "status": "missing_current_artifact",
+                        "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。",
+                    },
+                    "business_advice": business_advice_for_themes(themes, sentiment, negative_sources),
+                    "evidence_fields": [
+                        "community_profiles",
+                        "community_theme_affinity",
+                        "community_sentiment_summary",
+                        "community_theme_sentiment",
+                    ],
+                }
+            )
+        )
+    return out
+
+
+def build_video_cluster_profiles(report: dict[str, Any]) -> list[dict[str, Any]]:
+    clusters = list_rows(report.get("video_cluster_summary"), limit=12)
+    sentiments = by_key(list_rows(report.get("video_cluster_sentiment_summary"), limit=50), "video_cluster")
+    affinity = group_by_key(list_rows(report.get("video_cluster_theme_affinity"), limit=80), "video_cluster")
+
+    out = []
+    for row in clusters:
+        cluster = row.get("video_cluster")
+        sentiment = sentiments.get(str(cluster), {})
+        themes = parse_ranked_items(row.get("top_theme_labels"))
+        top_videos = parse_ranked_items(row.get("top_videos"))
+        top_affinity = sorted(
+            affinity.get(str(cluster), []),
+            key=lambda item: (as_number(item.get("lift")) or 0, as_number(item.get("n_videos")) or 0),
+            reverse=True,
+        )[:4]
+        keywords = segment_keywords_from_themes(themes, top_videos)
+        metadata_evidence = (
+            f"{format_number(row.get('n_videos'))} 支影片；"
+            f"{format_number(row.get('total_views'))} views；"
+            f"{format_number(row.get('total_observed_comments'))} observed comments；"
+            f"{format_number(row.get('unique_commenters'))} unique commenters"
+        )
+        shared_evidence = (
+            f"internal_edges={format_number(row.get('internal_edges'))}, "
+            f"external_edges={format_number(row.get('external_edges'))}, "
+            f"conductance={format_decimal(row.get('conductance'))}"
+        )
+        out.append(
+            clean_json(
+                {
+                    "video_cluster": cluster,
+                    "cluster_label": f"Video cluster {cluster}",
+                    "size": {
+                        "n_videos": as_number(row.get("n_videos")),
+                        "date_min": row.get("date_min"),
+                        "date_max": row.get("date_max"),
+                        "pct_graph_videos": as_number(row.get("pct_graph_videos")),
+                    },
+                    "topic_from_title_description_tags": {
+                        "top_themes": themes[:5],
+                        "over_indexed_themes": [
+                            {
+                                "theme": item.get("theme_label"),
+                                "lift": as_number(item.get("lift")),
+                                "n_videos": as_number(item.get("n_videos")),
+                            }
+                            for item in top_affinity
+                        ],
+                        "top_videos": top_videos[:5],
+                    },
+                    "comment_keywords": {
+                        "values": keywords,
+                        "source": "theme/title proxy",
+                        "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。",
+                    },
+                    "sentiment": sentiment_profile(sentiment),
+                    "absa": {
+                        "status": "missing_current_pipeline",
+                        "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。",
+                    },
+                    "metadata": {
+                        "total_views": as_number(row.get("total_views")),
+                        "total_observed_comments": as_number(row.get("total_observed_comments")),
+                        "unique_commenters": as_number(row.get("unique_commenters")),
+                        "median_observed_commenters": as_number(row.get("median_observed_commenters")),
+                        "evidence_zh": metadata_evidence,
+                    },
+                    "shared_audience": {
+                        "internal_edges": as_number(row.get("internal_edges")),
+                        "external_edges": as_number(row.get("external_edges")),
+                        "conductance": as_number(row.get("conductance")),
+                        "interpretation_zh": shared_audience_interpretation(row),
+                        "evidence_zh": shared_evidence,
+                    },
+                    "explanation_sources": [
+                        {
+                            "source": "title / description / tags",
+                            "available": True,
+                            "explains": "這群影片的主題。",
+                            "evidence_zh": row.get("top_theme_labels"),
+                        },
+                        {
+                            "source": "comment keywords",
+                            "available": False,
+                            "explains": "觀眾在這群影片下討論什麼。",
+                            "evidence_zh": "目前只有 theme/title proxy。",
+                        },
+                        {
+                            "source": "sentiment",
+                            "available": bool(sentiment),
+                            "explains": "這群影片的觀眾反應好不好。",
+                            "evidence_zh": (sentiment_profile(sentiment) or {}).get("summary_zh"),
+                        },
+                        {
+                            "source": "ABSA",
+                            "available": False,
+                            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+                            "evidence_zh": "目前 pipeline 尚未輸出。",
+                        },
+                        {
+                            "source": "metadata",
+                            "available": True,
+                            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+                            "evidence_zh": metadata_evidence,
+                        },
+                        {
+                            "source": "shared audience",
+                            "available": True,
+                            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+                            "evidence_zh": shared_evidence,
+                        },
+                    ],
+                    "business_read": business_advice_for_themes(themes, sentiment, []),
+                }
+            )
+        )
+    return out
+
+
+def by_key(rows: list[dict[str, Any]], key: str) -> dict[str, dict[str, Any]]:
+    return {str(row.get(key)): row for row in rows if row.get(key) is not None}
+
+
+def group_by_key(rows: list[dict[str, Any]], key: str) -> dict[str, list[dict[str, Any]]]:
+    out: dict[str, list[dict[str, Any]]] = {}
+    for row in rows:
+        value = row.get(key)
+        if value is None:
+            continue
+        out.setdefault(str(value), []).append(row)
+    return out
+
+
+def parse_ranked_items(value: Any) -> list[dict[str, Any]]:
+    text = str(value or "").strip()
+    if not text:
+        return []
+    out = []
+    for raw in text.split(";"):
+        item = raw.strip()
+        if not item:
+            continue
+        label = item
+        count = None
+        if item.endswith(")") and "(" in item:
+            label, suffix = item.rsplit("(", 1)
+            label = label.strip()
+            count = as_number(suffix.rstrip(")").replace(",", ""))
+        out.append({"label": label, "count": count})
+    return out
+
+
+THEME_KEYWORDS_ZH = {
+    "travel_exploration": ["旅遊", "目的地", "探索", "在地體驗"],
+    "personal_team_life": ["團隊", "近況", "生日", "生活"],
+    "guest_relationship": ["來賓", "合作", "外國人", "跨圈層"],
+    "physical_challenge": ["挑戰", "體能", "極限", "任務"],
+    "survival_outdoor": ["戶外", "求生", "荒島", "挑戰"],
+    "workplace_tech_career": ["職涯", "科技", "矽谷", "工作"],
+    "education_advice": ["知識", "教學", "建議", "解釋"],
+    "food_culture": ["美食", "文化", "夜市", "在地"],
+    "city_lifestyle": ["城市", "街訪", "生活風格", "台灣"],
+    "business_brand": ["品牌", "業配", "商業", "合作"],
+    "automotive_luxury": ["車", "精品", "生活風格", "高價產品"],
+    "controversy_response": ["爭議", "回應", "澄清", "輿論"],
+}
+
+
+def segment_keywords_from_themes(
+    themes: list[dict[str, Any]], top_videos: list[dict[str, Any]]
+) -> list[str]:
+    out: list[str] = []
+    for item in themes[:4]:
+        label = str(item.get("label") or "")
+        mapped = THEME_KEYWORDS_ZH.get(label)
+        if mapped:
+            out.extend(mapped[:3])
+        elif label and label != "other":
+            out.append(label)
+    title_text = " ".join(str(item.get("label") or "") for item in top_videos[:3])
+    for token in ["比較", "開箱", "實測", "挑戰", "旅遊", "外國人", "分開", "工程師", "荒島", "生日"]:
+        if token in title_text:
+            out.append(token)
+    seen = set()
+    deduped = []
+    for item in out:
+        if item in seen:
+            continue
+        seen.add(item)
+        deduped.append(item)
+    return deduped[:8]
+
+
+def sentiment_profile(row: dict[str, Any]) -> dict[str, Any]:
+    if not row:
+        return {}
+    neg = as_number(row.get("negative_rate"))
+    neu = as_number(row.get("neutral_rate"))
+    pos = as_number(row.get("positive_rate"))
+    weighted_neg = as_number(row.get("like_weighted_negative_rate"))
+    weighted_pos = as_number(row.get("like_weighted_positive_rate"))
+    values = {"negative": neg, "neutral": neu, "positive": pos}
+    dominant = max(
+        ((key, value) for key, value in values.items() if value is not None),
+        key=lambda item: item[1],
+        default=("unknown", None),
+    )[0]
+    if dominant == "positive" and (neg or 0) < 0.1:
+        label = "中性偏正，正向討論較多"
+    elif dominant == "positive":
+        label = "正向為主，但仍需看負面來源"
+    elif dominant == "neutral":
+        label = "中性討論為主"
+    elif dominant == "negative":
+        label = "負面討論偏高"
+    else:
+        label = "缺少情緒資料"
+    return {
+        "dominant": dominant,
+        "negative_rate": neg,
+        "neutral_rate": neu,
+        "positive_rate": pos,
+        "like_weighted_negative_rate": weighted_neg,
+        "like_weighted_positive_rate": weighted_pos,
+        "summary_zh": (
+            f"{label}；負面 {format_percent_rate(neg)}，正面 {format_percent_rate(pos)}，"
+            f"按讚加權負面 {format_percent_rate(weighted_neg)}"
+        ),
+    }
+
+
+def top_negative_sources(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    candidates = []
+    for row in rows:
+        n_comments = as_number(row.get("n_comments")) or 0
+        if n_comments < 50:
+            continue
+        score = as_number(row.get("like_weighted_negative_rate"))
+        if score is None:
+            score = as_number(row.get("negative_rate")) or 0
+        candidates.append((score, n_comments, row))
+    candidates.sort(reverse=True, key=lambda item: (item[0], item[1]))
+    out = []
+    for _, _, row in candidates[:3]:
+        out.append(
+            {
+                "theme": row.get("primary_theme"),
+                "negative_rate": as_number(row.get("negative_rate")),
+                "like_weighted_negative_rate": as_number(row.get("like_weighted_negative_rate")),
+                "n_comments": as_number(row.get("n_comments")),
+                "summary_zh": (
+                    f"{row.get('primary_theme')}：負面 {format_percent_rate(row.get('negative_rate'))}，"
+                    f"按讚加權負面 {format_percent_rate(row.get('like_weighted_negative_rate'))}"
+                ),
+            }
+        )
+    return out
+
+
+def business_advice_for_themes(
+    themes: list[dict[str, Any]], sentiment: dict[str, Any], negative_sources: list[dict[str, Any]]
+) -> str:
+    labels = [str(item.get("label") or "") for item in themes[:3]]
+    label_set = set(labels)
+    if "travel_exploration" in label_set:
+        base = "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+    elif "workplace_tech_career" in label_set or "education_advice" in label_set:
+        base = "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+    elif "guest_relationship" in label_set:
+        base = "適合跨圈層來賓合作、人物故事與互相導流的聯名企劃。"
+    elif "physical_challenge" in label_set or "survival_outdoor" in label_set:
+        base = "適合挑戰型企劃、戶外品牌合作與高記憶點系列內容。"
+    elif "food_culture" in label_set:
+        base = "適合餐飲、城市體驗、在地文化與消費導購合作。"
+    else:
+        base = "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+    if negative_sources:
+        return base + " 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。"
+    profile = sentiment_profile(sentiment)
+    if profile.get("dominant") == "positive":
+        return base + " 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+    return base
+
+
+def shared_audience_interpretation(row: dict[str, Any]) -> str:
+    conductance = as_number(row.get("conductance"))
+    if conductance is None:
+        return "缺少 shared-audience conductance。"
+    if conductance < 0.4:
+        return "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。"
+    if conductance < 0.7:
+        return "群內外都有共享觀眾，可檢查跨主題橋接企劃。"
+    return "群集邊界較鬆散，可能是過渡型內容或與其他題材高度混合。"
+
+
+def format_number(value: Any) -> str:
+    number = as_number(value)
+    if number is None:
+        return "-"
+    return f"{number:,.0f}"
+
+
+def format_decimal(value: Any) -> str:
+    number = as_number(value)
+    if number is None:
+        return "-"
+    return f"{number:.3f}"
+
+
+def format_percent(value: Any) -> str:
+    number = as_number(value)
+    if number is None:
+        return "-"
+    return f"{number:.1f}%"
+
+
+def format_percent_rate(value: Any) -> str:
+    number = as_number(value)
+    if number is None:
+        return "-"
+    return f"{number * 100:.1f}%" if abs(number) <= 1 else f"{number:.1f}%"
 
 
 def build_channel_baseline(
@@ -974,12 +1483,20 @@ def build_channel_baseline(
 ) -> dict[str, Any]:
     metrics = baseline.get("metrics", pd.DataFrame())
     percentiles = baseline.get("percentiles", pd.DataFrame())
+    target_percentiles = baseline.get("target_percentiles", pd.DataFrame())
     distributions = baseline.get("distributions", pd.DataFrame())
     members = baseline.get("members", pd.DataFrame())
 
     metric_row = find_channel_row(metrics, channel_id, title, slug, run_dir)
     member_row = find_channel_row(members, channel_id, title, slug, run_dir)
     percentile_rows = find_percentile_rows(percentiles, channel_id, title, slug, run_dir)
+    comparison_source = "baseline_member_percentiles"
+    if percentile_rows.empty and not target_percentiles.empty:
+        percentile_rows = normalize_target_percentile_rows(
+            find_percentile_rows(target_percentiles, channel_id, title, slug, run_dir)
+        )
+        if not percentile_rows.empty:
+            comparison_source = "target_vs_broad_benchmark"
 
     distribution_by_metric = {
         str(row["metric"]): row.to_dict()
@@ -1027,6 +1544,12 @@ def build_channel_baseline(
         {
             "is_baseline_member": not metric_row.empty,
             "membership": first_df_row(member_row),
+            "comparison_source": comparison_source,
+            "comparison_caution_zh": (
+                "此比較使用整體台灣 benchmark cohort，不是相似題材 matched cohort；適合 demo 粗略定位，不應視為同類型頻道排名。"
+                if comparison_source == "target_vs_broad_benchmark"
+                else "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。"
+            ),
             "key_metrics": key_metrics,
             "all_metrics": all_metrics,
             "n_metrics": len(all_metrics),
@@ -1034,6 +1557,21 @@ def build_channel_baseline(
             "risk_opportunity_summary": build_risk_opportunity_summary(key_metrics),
         }
     )
+
+
+def load_optional_strategy_brief(run_dir: Path) -> dict[str, Any] | None:
+    """Optional per-run authored strategy brief.
+
+    If ``run_dir/strategy_brief_zh.json`` exists it is merged into the channel
+    ``analysis`` doc as ``strategy_brief``. This lets a completed run ship an
+    interpreted, source-cited owner strategy without hard-coding channel
+    specifics into the generic builder. Returns ``None`` when absent or invalid.
+    """
+    brief = read_json_if_exists(run_dir / "strategy_brief_zh.json")
+    items = brief.get("items") if isinstance(brief, dict) else None
+    if not isinstance(items, list) or not items:
+        return None
+    return clean_json(brief)
 
 
 def build_channel_analysis(
@@ -1456,6 +1994,17 @@ def find_percentile_rows(df: pd.DataFrame, channel_id: str, title: str, slug: st
     for extra in masks[1:]:
         mask = mask | extra
     return df[mask].copy()
+
+
+def normalize_target_percentile_rows(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
+    out = df.copy()
+    if "percentile" not in out.columns and "percentile_at_or_below" in out.columns:
+        out["percentile"] = out["percentile_at_or_below"]
+    if "n_cohort" not in out.columns and "cohort_n" in out.columns:
+        out["n_cohort"] = out["cohort_n"]
+    return out
 
 
 def compact_distribution(row: dict[str, Any]) -> dict[str, Any]:
@@ -2149,7 +2698,7 @@ def sum_number(rows: list[dict[str, Any]], key: str) -> int | float:
     return int(total) if total.is_integer() else total
 
 
-def list_artifacts(directory: Path, suffix: str) -> list[dict[str, Any]]:
+def list_artifacts(directory: Path, suffix: str, source_dir: str | None = None) -> list[dict[str, Any]]:
     if not directory.exists():
         return []
     out = []
@@ -2159,6 +2708,7 @@ def list_artifacts(directory: Path, suffix: str) -> list[dict[str, Any]]:
                 "name": path.stem,
                 "path": display_path(path),
                 "bytes": path.stat().st_size,
+                "source_dir": source_dir,
             }
         )
     return out

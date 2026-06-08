@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "mindiworldnews-full",
   "title": "敏迪選讀",
   "channel_id": "UCH6GnFl2Lk2sxDGdV7GuJzA",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/mindiworldnews-full/tables/actor_communities.csv",
-        "bytes": 63613
+        "bytes": 63613,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/mindiworldnews-full/tables/bridge_actors.csv",
-        "bytes": 10987
+        "bytes": 10987,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/mindiworldnews-full/tables/channel_overview.csv",
-        "bytes": 357
+        "bytes": 357,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/mindiworldnews-full/tables/commenter_activity.csv",
-        "bytes": 2040664
+        "bytes": 2040664,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/mindiworldnews-full/tables/commenter_tiers.csv",
-        "bytes": 288
+        "bytes": 288,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/mindiworldnews-full/tables/community_profiles.csv",
-        "bytes": 5030
+        "bytes": 5030,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/community_sentiment_summary.csv",
-        "bytes": 2213
+        "bytes": 2213,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/community_summary.csv",
-        "bytes": 941
+        "bytes": 941,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/mindiworldnews-full/tables/community_theme_affinity.csv",
-        "bytes": 8861
+        "bytes": 8861,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/mindiworldnews-full/tables/community_theme_sentiment.csv",
-        "bytes": 9749
+        "bytes": 9749,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/mindiworldnews-full/tables/continuity_sensitivity.csv",
-        "bytes": 591
+        "bytes": 591,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/continuity_summary.csv",
-        "bytes": 630
+        "bytes": 630,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/mindiworldnews-full/tables/diagnostics.csv",
-        "bytes": 1526
+        "bytes": 1526,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/mindiworldnews-full/tables/network_actor_metrics.csv",
-        "bytes": 40745
+        "bytes": 40745,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/network_summary.csv",
-        "bytes": 637
+        "bytes": 637,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/mindiworldnews-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 12025206
+        "bytes": 12025206,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/mindiworldnews-full/tables/qwen_video_themes.csv",
-        "bytes": 464083
+        "bytes": 464083,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2423
+        "bytes": 2423,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 85388
+        "bytes": 85388,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/reply_sentiment_summary.csv",
-        "bytes": 728
+        "bytes": 728,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/mindiworldnews-full/tables/reply_thread_metrics.csv",
-        "bytes": 6946993
+        "bytes": 6946993,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/mindiworldnews-full/tables/reply_thread_overview.csv",
-        "bytes": 365
+        "bytes": 365,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/mindiworldnews-full/tables/rolling_retention.csv",
-        "bytes": 1265
+        "bytes": 1265,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/mindiworldnews-full/tables/sentiment_hotspots.csv",
-        "bytes": 85490
+        "bytes": 85490,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/sentiment_source_summary.csv",
-        "bytes": 253
+        "bytes": 253,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/sentiment_summary.csv",
-        "bytes": 597
+        "bytes": 597,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2344
+        "bytes": 2344,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/theme_summary.csv",
-        "bytes": 287
+        "bytes": 287,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/mindiworldnews-full/tables/theme_video_labels.csv",
-        "bytes": 117826
+        "bytes": 117826,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/mindiworldnews-full/tables/theme_video_labels_long.csv",
-        "bytes": 82271
+        "bytes": 82271,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1708
+        "bytes": 1708,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/video_cluster_summary.csv",
-        "bytes": 3474
+        "bytes": 3474,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/mindiworldnews-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 3323
+        "bytes": 3323,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/mindiworldnews-full/tables/video_clusters.csv",
-        "bytes": 26797
+        "bytes": 26797,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/mindiworldnews-full/tables/video_link_opportunities.csv",
-        "bytes": 90323
+        "bytes": 90323,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/mindiworldnews-full/tables/video_metrics.csv",
-        "bytes": 37359
+        "bytes": 37359,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/mindiworldnews-full/tables/video_network_metrics.csv",
-        "bytes": 26782
+        "bytes": 26782,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/mindiworldnews-full/tables/video_network_summary.csv",
-        "bytes": 635
+        "bytes": 635,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/mindiworldnews-full/figures/channel_activity.png",
-        "bytes": 82052
+        "bytes": 82052,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/mindiworldnews-full/figures/commenter_tiers.png",
-        "bytes": 27106
+        "bytes": 27106,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/mindiworldnews-full/figures/community_sizes.png",
-        "bytes": 24765
+        "bytes": 24765,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/mindiworldnews-full/figures/rolling_retention.png",
-        "bytes": 43040
+        "bytes": 43040,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/mindiworldnews-full/figures/video_cluster_sizes.png",
-        "bytes": 25931
+        "bytes": 25931,
+        "source_dir": null
       }
     ]
   },
@@ -707,6 +751,998 @@
         "max_core_number": 1
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 186,
+          "pct_active_commenters": 26.609442060085836,
+          "summary_zh": "26.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1059,
+          "avg_comments_per_commenter": 5.693548387096774,
+          "n_videos_touched": 105,
+          "summary_zh": "平均留言 5.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "不負責REACT | 「難道中國都沒責任嗎？」馬英九接受德國之聲專訪（上）",
+            "count": 77
+          },
+          {
+            "label": "不負責REACT | 「我們必須相信習近平」馬英九接受德國之聲專訪（下）",
+            "count": 74
+          },
+          {
+            "label": "不負責REACT |  「你有正式獨立的藍圖嗎？」賴清德這樣回答彭博社",
+            "count": 46
+          },
+          {
+            "label": "不負責REACT | 侯友宜主動提要和美國談軍購？詳解彭博社Bloomberg侯友宜專訪",
+            "count": 45
+          },
+          {
+            "label": "不負責REACT |  怪異風格的驚奇候選人？彭博社這樣介紹柯文哲，太唱跳了吧！",
+            "count": 40
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 186
+          },
+          {
+            "label": "personal_team_life",
+            "count": 60
+          },
+          {
+            "label": "other",
+            "count": 43
+          },
+          {
+            "label": "guest_relationship",
+            "count": 32
+          },
+          {
+            "label": "travel_exploration",
+            "count": 20
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "other",
+            "lift": 1.50810065494657,
+            "n_commenters": 43
+          },
+          {
+            "theme": "event_announcement",
+            "lift": 1.4767321613236815,
+            "n_commenters": 26
+          },
+          {
+            "theme": "business_brand",
+            "lift": 1.4694349672685385,
+            "n_commenters": 150
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "來賓",
+            "合作"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.21089558398679323,
+          "neutral_rate": 0.49566652909616177,
+          "positive_rate": 0.293437886917045,
+          "like_weighted_negative_rate": 0.1827916487300904,
+          "like_weighted_positive_rate": 0.4191777873439518,
+          "summary_zh": "中性討論為主；負面 21.1%，正面 29.3%，按讚加權負面 18.3%"
+        },
+        "negative_sources": [
+          {
+            "theme": "other",
+            "negative_rate": 0.22666666666666666,
+            "like_weighted_negative_rate": 0.24923312883435583,
+            "n_comments": 75,
+            "summary_zh": "other：負面 22.7%，按讚加權負面 24.9%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.2458842272968667,
+            "like_weighted_negative_rate": 0.22728653904588272,
+            "n_comments": 1883,
+            "summary_zh": "controversy_response：負面 24.6%，按讚加權負面 22.7%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.0782312925170068,
+            "like_weighted_negative_rate": 0.025796049979846837,
+            "n_comments": 294,
+            "summary_zh": "personal_team_life：負面 7.8%，按讚加權負面 2.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 153,
+          "pct_active_commenters": 21.888412017167383,
+          "summary_zh": "21.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 891,
+          "avg_comments_per_commenter": 5.823529411764706,
+          "n_videos_touched": 112,
+          "summary_zh": "平均留言 5.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "這三年來，台灣做了哪些準備    #台海衝突 #兵推",
+            "count": 71
+          },
+          {
+            "label": "不負責React | 「我深信台灣會贏」 美國空軍專家釐清台海熱戰各種說法",
+            "count": 64
+          },
+          {
+            "label": "不負責React | 「五桶台灣然後勒」 美國智庫大叔分析中國侵台劇本",
+            "count": 48
+          },
+          {
+            "label": "不負責React | 美國聽證會2.5小時激辯，美國該如何協防台灣，先封鎖中國可能嗎",
+            "count": 47
+          },
+          {
+            "label": "7分鐘了解黎智英案，與台灣的啟發",
+            "count": 36
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 153
+          },
+          {
+            "label": "personal_team_life",
+            "count": 62
+          },
+          {
+            "label": "other",
+            "count": 30
+          },
+          {
+            "label": "travel_exploration",
+            "count": 26
+          },
+          {
+            "label": "guest_relationship",
+            "count": 18
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.3439306358381503,
+          "neutral_rate": 0.5196531791907515,
+          "positive_rate": 0.13641618497109825,
+          "like_weighted_negative_rate": 0.26046304541406945,
+          "like_weighted_positive_rate": 0.284839715048976,
+          "summary_zh": "中性討論為主；負面 34.4%，正面 13.6%，按讚加權負面 26.0%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.3595505617977528,
+            "like_weighted_negative_rate": 0.289050482450007,
+            "n_comments": 1424,
+            "summary_zh": "controversy_response：負面 36.0%，按讚加權負面 28.9%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.4264705882352941,
+            "like_weighted_negative_rate": 0.1927710843373494,
+            "n_comments": 68,
+            "summary_zh": "other：負面 42.6%，按讚加權負面 19.3%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.2261904761904762,
+            "like_weighted_negative_rate": 0.18265440210249673,
+            "n_comments": 168,
+            "summary_zh": "personal_team_life：負面 22.6%，按讚加權負面 18.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 6,
+        "segment_label": "Audience segment 6",
+        "group_size": {
+          "n_commenters": 150,
+          "pct_active_commenters": 21.45922746781116,
+          "summary_zh": "21.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 795,
+          "avg_comments_per_commenter": 5.3,
+          "n_videos_touched": 94,
+          "summary_zh": "平均留言 5.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "賴總統就職一週年，你想問他什麼—專訪中華民國台灣總統賴清德",
+            "count": 67
+          },
+          {
+            "label": "特別集｜這次國會又在吵什麼 ft. 法律白話文珞亦",
+            "count": 56
+          },
+          {
+            "label": "太多問題了，只好請阿苗來講清楚",
+            "count": 42
+          },
+          {
+            "label": "敏迪專訪｜那些被刪除的外交預算 ft. 數位外交協會 郭家佑",
+            "count": 23
+          },
+          {
+            "label": "給今晚感到焦慮的人",
+            "count": 23
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 150
+          },
+          {
+            "label": "personal_team_life",
+            "count": 96
+          },
+          {
+            "label": "other",
+            "count": 38
+          },
+          {
+            "label": "travel_exploration",
+            "count": 15
+          },
+          {
+            "label": "guest_relationship",
+            "count": 6
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.35786802030456855,
+          "neutral_rate": 0.42554991539763115,
+          "positive_rate": 0.21658206429780033,
+          "like_weighted_negative_rate": 0.33462836110827116,
+          "like_weighted_positive_rate": 0.3583478171966057,
+          "summary_zh": "中性討論為主；負面 35.8%，正面 21.7%，按讚加權負面 33.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.37142857142857144,
+            "like_weighted_negative_rate": 0.4168956043956044,
+            "n_comments": 210,
+            "summary_zh": "personal_team_life：負面 37.1%，按讚加權負面 41.7%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.25925925925925924,
+            "like_weighted_negative_rate": 0.31343283582089554,
+            "n_comments": 54,
+            "summary_zh": "other：負面 25.9%，按讚加權負面 31.3%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.3714609286523216,
+            "like_weighted_negative_rate": 0.3037082439472878,
+            "n_comments": 883,
+            "summary_zh": "controversy_response：負面 37.1%，按讚加權負面 30.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 122,
+          "pct_active_commenters": 17.453505007153076,
+          "summary_zh": "17.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1358,
+          "avg_comments_per_commenter": 11.131147540983607,
+          "n_videos_touched": 219,
+          "summary_zh": "平均留言 11.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【真是抱歉Podcast】EP130｜難以下標的一集",
+            "count": 29
+          },
+          {
+            "label": "【真是抱歉Podcast】EP107 | 活著的意義",
+            "count": 19
+          },
+          {
+            "label": "【真是抱歉Podcast】EP133 | 沒有說出口的謝謝或對不起",
+            "count": 19
+          },
+          {
+            "label": "真是抱歉vlog | 漂寶越南行，一言不合就嫌棄彼此是最正確的旅行方式",
+            "count": 19
+          },
+          {
+            "label": "【真是抱歉Podcast】EP108 | 這是船上最值得買的",
+            "count": 17
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 119
+          },
+          {
+            "label": "controversy_response",
+            "count": 110
+          },
+          {
+            "label": "travel_exploration",
+            "count": 49
+          },
+          {
+            "label": "other",
+            "count": 8
+          },
+          {
+            "label": "food_culture",
+            "count": 8
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "product_review",
+            "lift": 2.998102466793169,
+            "n_commenters": 49
+          },
+          {
+            "theme": "workplace_tech_career",
+            "lift": 2.873900293255132,
+            "n_commenters": 37
+          },
+          {
+            "theme": "physical_challenge",
+            "lift": 2.5089605734767026,
+            "n_commenters": 6
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.039765319426336376,
+          "neutral_rate": 0.5215123859191656,
+          "positive_rate": 0.438722294654498,
+          "like_weighted_negative_rate": 0.11154071470415934,
+          "like_weighted_positive_rate": 0.5028705330990041,
+          "summary_zh": "中性討論為主；負面 4.0%，正面 43.9%，按讚加權負面 11.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.06589785831960461,
+            "like_weighted_negative_rate": 0.16404323914280297,
+            "n_comments": 607,
+            "summary_zh": "controversy_response：負面 6.6%，按讚加權負面 16.4%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.024330900243309004,
+            "like_weighted_negative_rate": 0.028246641405442644,
+            "n_comments": 822,
+            "summary_zh": "personal_team_life：負面 2.4%，按讚加權負面 2.8%"
+          },
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0,
+            "like_weighted_negative_rate": 0,
+            "n_comments": 68,
+            "summary_zh": "travel_exploration：負面 0.0%，按讚加權負面 0.0%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 8,
+        "segment_label": "Audience segment 8",
+        "group_size": {
+          "n_commenters": 73,
+          "pct_active_commenters": 10.44349070100143,
+          "summary_zh": "10.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 412,
+          "avg_comments_per_commenter": 5.6438356164383565,
+          "n_videos_touched": 81,
+          "summary_zh": "平均留言 5.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "不負責REACT |  怪異風格的驚奇候選人？彭博社這樣介紹柯文哲，太唱跳了吧！",
+            "count": 34
+          },
+          {
+            "label": "不負責REACT | 隨口說要和中國簽whatever宣言？彭博社如何報導郭台銘參選？",
+            "count": 27
+          },
+          {
+            "label": "不負責REACT |  「你有正式獨立的藍圖嗎？」賴清德這樣回答彭博社",
+            "count": 24
+          },
+          {
+            "label": "太多問題了，只好請阿苗來講清楚",
+            "count": 20
+          },
+          {
+            "label": "不負責React | 選後中國人都不談賴清德？美實況主精彩分析台灣大選結果 @atrioc",
+            "count": 12
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 73
+          },
+          {
+            "label": "personal_team_life",
+            "count": 36
+          },
+          {
+            "label": "travel_exploration",
+            "count": 12
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 11
+          },
+          {
+            "label": "other",
+            "count": 9
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.33292978208232443,
+          "neutral_rate": 0.4794188861985472,
+          "positive_rate": 0.18765133171912832,
+          "like_weighted_negative_rate": 0.17582804792107118,
+          "like_weighted_positive_rate": 0.41296687808315713,
+          "summary_zh": "中性討論為主；負面 33.3%，正面 18.8%，按讚加權負面 17.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.4367816091954023,
+            "like_weighted_negative_rate": 0.27624309392265195,
+            "n_comments": 87,
+            "summary_zh": "personal_team_life：負面 43.7%，按讚加權負面 27.6%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.3261538461538461,
+            "like_weighted_negative_rate": 0.1879598662207358,
+            "n_comments": 650,
+            "summary_zh": "controversy_response：負面 32.6%，按讚加權負面 18.8%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 7,
+          "pct_active_commenters": 1.0014306151645207,
+          "summary_zh": "1.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 41,
+          "avg_comments_per_commenter": 5.857142857142857,
+          "n_videos_touched": 11,
+          "summary_zh": "平均留言 5.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "敏迪專訪 | 疑美論？半導體去台化？要怎麼提升台美信任呢─美國在台協會處長谷立言（Raymond",
+            "count": 7
+          },
+          {
+            "label": "敏迪專訪 | AIT新處長來了！接受我們的靈魂拷問吧！─美國在台協會處長谷立言（Raymond",
+            "count": 6
+          },
+          {
+            "label": "敏迪專訪｜為什麼對川普有信心 ft 美中台戰情室 趙君朔",
+            "count": 4
+          },
+          {
+            "label": "不負責REACT | 臺灣沒有付保護費還搶走晶片產業？川普在《Bloomberg》到底說了什麼？",
+            "count": 3
+          },
+          {
+            "label": "川普的對等關稅清單，我怎麼看",
+            "count": 3
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 7
+          },
+          {
+            "label": "guest_relationship",
+            "count": 6
+          },
+          {
+            "label": "personal_team_life",
+            "count": 3
+          },
+          {
+            "label": "travel_exploration",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "來賓",
+            "合作",
+            "外國人",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.13043478260869565,
+          "neutral_rate": 0.6739130434782609,
+          "positive_rate": 0.1956521739130435,
+          "like_weighted_negative_rate": 0.032520325203252036,
+          "like_weighted_positive_rate": 0.5203252032520326,
+          "summary_zh": "中性討論為主；負面 13.0%，正面 19.6%，按讚加權負面 3.3%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合跨圈層來賓合作、人物故事與互相導流的聯名企劃。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 3,
+          "pct_active_commenters": 0.4291845493562232,
+          "summary_zh": "0.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 10,
+          "avg_comments_per_commenter": 3.3333333333333335,
+          "n_videos_touched": 3,
+          "summary_zh": "平均留言 3.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "不負責REACT | 「難道中國都沒責任嗎？」馬英九接受德國之聲專訪（上）",
+            "count": 3
+          },
+          {
+            "label": "不負責REACT | 隨口說要和中國簽whatever宣言？彭博社如何報導郭台銘參選？",
+            "count": 3
+          },
+          {
+            "label": "不負責REACT | 「我們必須相信習近平」馬英九接受德國之聲專訪（下）",
+            "count": 3
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 3
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "negative",
+          "negative_rate": 0.6,
+          "neutral_rate": 0.2,
+          "positive_rate": 0.2,
+          "like_weighted_negative_rate": 0.8322147651006712,
+          "like_weighted_positive_rate": 0.1342281879194631,
+          "summary_zh": "負面討論偏高；負面 60.0%，正面 20.0%，按讚加權負面 83.2%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 7,
+        "segment_label": "Audience segment 7",
+        "group_size": {
+          "n_commenters": 3,
+          "pct_active_commenters": 0.4291845493562232,
+          "summary_zh": "0.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 16,
+          "avg_comments_per_commenter": 5.333333333333333,
+          "n_videos_touched": 10,
+          "summary_zh": "平均留言 5.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "賴總統就職一週年，你想問他什麼—專訪中華民國台灣總統賴清德",
+            "count": 3
+          },
+          {
+            "label": "川普的對等關稅清單，我怎麼看",
+            "count": 3
+          },
+          {
+            "label": "【國際八點檔】禁航區是什麼？中國可以說禁就禁嗎？防空識別區和領空的差別",
+            "count": 2
+          },
+          {
+            "label": "速講哈米尼死亡後的伊朗可能變化",
+            "count": 2
+          },
+          {
+            "label": "不負責React | 全美當紅實況主Kai Cenat和台灣人Ray的地緣政治小插曲",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 3
+          },
+          {
+            "label": "personal_team_life",
+            "count": 3
+          },
+          {
+            "label": "other",
+            "count": 2
+          },
+          {
+            "label": "travel_exploration",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "negative",
+          "negative_rate": 0.4634146341463415,
+          "neutral_rate": 0.3902439024390244,
+          "positive_rate": 0.14634146341463414,
+          "like_weighted_negative_rate": 0.26506024096385544,
+          "like_weighted_positive_rate": 0.37349397590361444,
+          "summary_zh": "負面討論偏高；負面 46.3%，正面 14.6%，按讚加權負面 26.5%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 0.28612303290414876,
+          "summary_zh": "0.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 11,
+          "avg_comments_per_commenter": 5.5,
+          "n_videos_touched": 8,
+          "summary_zh": "平均留言 5.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【國際八點檔】禁航區是什麼？中國可以說禁就禁嗎？防空識別區和領空的差別",
+            "count": 2
+          },
+          {
+            "label": "【國際八點檔】不挺烏克蘭了？東歐國家禁止進口烏克蘭穀物，換做是你會怎麼辦？",
+            "count": 2
+          },
+          {
+            "label": "【國際八點檔】從山寨王變軍事強人，蘇丹快速支持部隊RSF是什麼？蘇丹內亂到底誰打誰？",
+            "count": 2
+          },
+          {
+            "label": "【真是抱歉Podcast】EP32｜漂寶國慶企劃提案",
+            "count": 1
+          },
+          {
+            "label": "原來人多不一定好？印度將成為全球人口最多的國家，這會引發哪些問題？",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 2
+          },
+          {
+            "label": "personal_team_life",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0,
+          "neutral_rate": 0.36363636363636365,
+          "positive_rate": 0.6363636363636364,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.5405405405405406,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.0%，正面 63.6%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 139,
       "n_edges": 901,
@@ -867,6 +1903,844 @@
         "conductance": 0.0,
         "avg_core_number": 1.0,
         "max_core_number": 1
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 43,
+          "date_min": "2024-05-22 10:39:07+00:00",
+          "date_max": "2026-04-13 13:07:13+00:00",
+          "pct_graph_videos": 30.935251798561154
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 35
+            },
+            {
+              "label": "business_brand",
+              "count": 11
+            },
+            {
+              "label": "personal_team_life",
+              "count": 8
+            },
+            {
+              "label": "travel_exploration",
+              "count": 6
+            },
+            {
+              "label": "guest_relationship",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "automotive_luxury",
+              "lift": 3.2325581395348837,
+              "n_videos": 1
+            },
+            {
+              "theme": "other",
+              "lift": 2.1550387596899223,
+              "n_videos": 2
+            },
+            {
+              "theme": "survival_outdoor",
+              "lift": 1.6162790697674418,
+              "n_videos": 1
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.422325581395349,
+              "n_videos": 11
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "賴總統就職一週年，你想問他什麼—專訪中華民國台灣總統賴清德",
+              "count": 2187
+            },
+            {
+              "label": "特別集｜這次國會又在吵什麼 ft. 法律白話文珞亦",
+              "count": 845
+            },
+            {
+              "label": "太多問題了，只好請阿苗來講清楚",
+              "count": 613
+            },
+            {
+              "label": "這三年來，台灣做了哪些準備    #台海衝突 #兵推",
+              "count": 539
+            },
+            {
+              "label": "不負責React | 美國聽證會2.5小時激辯，美國該如何協防台灣，先封鎖中國可能嗎",
+              "count": 528
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配",
+            "商業",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.36856676368282815,
+          "neutral_rate": 0.4953148292752183,
+          "positive_rate": 0.13611840704195358,
+          "like_weighted_negative_rate": 0.3071540752165812,
+          "like_weighted_positive_rate": 0.2965656611144573,
+          "summary_zh": "中性討論為主；負面 36.9%，正面 13.6%，按讚加權負面 30.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 3545131,
+          "total_observed_comments": 12812,
+          "unique_commenters": 9626,
+          "median_observed_commenters": 149,
+          "evidence_zh": "43 支影片；3,545,131 views；12,812 observed comments；9,626 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 320,
+          "external_edges": 207,
+          "conductance": 0.2243162817061074,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=320, external_edges=207, conductance=0.224"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (35); business_brand (11); personal_team_life (8); travel_exploration (6); guest_relationship (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 36.9%，正面 13.6%，按讚加權負面 30.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "43 支影片；3,545,131 views；12,812 observed comments；9,626 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=320, external_edges=207, conductance=0.224"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 35,
+          "date_min": "2023-08-19 11:25:25+00:00",
+          "date_max": "2024-11-28 10:00:16+00:00",
+          "pct_graph_videos": 25.179856115107913
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 29
+            },
+            {
+              "label": "travel_exploration",
+              "count": 12
+            },
+            {
+              "label": "business_brand",
+              "count": 11
+            },
+            {
+              "label": "personal_team_life",
+              "count": 7
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 6
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "不負責REACT |  怪異風格的驚奇候選人？彭博社這樣介紹柯文哲，太唱跳了吧！",
+              "count": 567
+            },
+            {
+              "label": "不負責React | 緬甸為什麼要對羅興亞人趕盡殺絕？翁山蘇姬到底是好人還是壞人？",
+              "count": 464
+            },
+            {
+              "label": "不負責REACT |  「你有正式獨立的藍圖嗎？」賴清德這樣回答彭博社",
+              "count": 444
+            },
+            {
+              "label": "不負責REACT | 「難道中國都沒責任嗎？」馬英九接受德國之聲專訪（上）",
+              "count": 441
+            },
+            {
+              "label": "不負責REACT | 「我們必須相信習近平」馬英九接受德國之聲專訪（下）",
+              "count": 329
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "旅遊",
+            "目的地",
+            "探索",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.3204975293917192,
+          "neutral_rate": 0.5231726018060998,
+          "positive_rate": 0.15632986880218094,
+          "like_weighted_negative_rate": 0.20639229080897153,
+          "like_weighted_positive_rate": 0.3543812257302043,
+          "summary_zh": "中性討論為主；負面 32.0%，正面 15.6%，按讚加權負面 20.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 2235240,
+          "total_observed_comments": 5982,
+          "unique_commenters": 4411,
+          "median_observed_commenters": 113,
+          "evidence_zh": "35 支影片；2,235,240 views；5,982 observed comments；4,411 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 160,
+          "external_edges": 210,
+          "conductance": 0.3417396879675144,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=160, external_edges=210, conductance=0.342"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (29); travel_exploration (12); business_brand (11); personal_team_life (7); city_lifestyle (6)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 32.0%，正面 15.6%，按讚加權負面 20.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "35 支影片；2,235,240 views；5,982 observed comments；4,411 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=160, external_edges=210, conductance=0.342"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 5,
+        "cluster_label": "Video cluster 5",
+        "size": {
+          "n_videos": 55,
+          "date_min": "2023-12-19 09:00:45+00:00",
+          "date_max": "2025-12-30 09:01:04+00:00",
+          "pct_graph_videos": 39.568345323741006
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 46
+            },
+            {
+              "label": "personal_team_life",
+              "count": 43
+            },
+            {
+              "label": "guest_relationship",
+              "count": 9
+            },
+            {
+              "label": "product_review",
+              "count": 5
+            },
+            {
+              "label": "travel_exploration",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "product_review",
+              "lift": 2.5272727272727273,
+              "n_videos": 5
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 2.527272727272727,
+              "n_videos": 2
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.6980113636363636,
+              "n_videos": 43
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1.6848484848484846,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【真是抱歉Podcast】EP130｜難以下標的一集",
+              "count": 60
+            },
+            {
+              "label": "【真是抱歉Podcast】EP107 | 活著的意義",
+              "count": 39
+            },
+            {
+              "label": "真是抱歉vlog | 漂寶越南行，一言不合就嫌棄彼此是最正確的旅行方式",
+              "count": 37
+            },
+            {
+              "label": "【真是抱歉Podcast】EP133 | 沒有說出口的謝謝或對不起",
+              "count": 30
+            },
+            {
+              "label": "【真是抱歉Podcast】EP95｜我一直不敢跟別人說",
+              "count": 29
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "來賓",
+            "合作"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.02566295979469632,
+          "neutral_rate": 0.5363558597091531,
+          "positive_rate": 0.43798118049615054,
+          "like_weighted_negative_rate": 0.034030596315953794,
+          "like_weighted_positive_rate": 0.49297533562285356,
+          "summary_zh": "中性討論為主；負面 2.6%，正面 43.8%，按讚加權負面 3.4%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 301415,
+          "total_observed_comments": 1000,
+          "unique_commenters": 403,
+          "median_observed_commenters": 15,
+          "evidence_zh": "55 支影片；301,415 views；1,000 observed comments；403 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 208,
+          "external_edges": 3,
+          "conductance": 0.006825938566552901,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=208, external_edges=3, conductance=0.007"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (46); personal_team_life (43); guest_relationship (9); product_review (5); travel_exploration (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 2.6%，正面 43.8%，按讚加權負面 3.4%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "55 支影片；301,415 views；1,000 observed comments；403 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=208, external_edges=3, conductance=0.007"
+          }
+        ],
+        "business_read": "適合跨圈層來賓合作、人物故事與互相導流的聯名企劃。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-07-04 09:30:00+00:00",
+          "date_max": "2023-07-18 17:40:35+00:00",
+          "pct_graph_videos": 1.4388489208633095
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "education_advice",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【真是抱歉Podcast】EP18 | 終於解開身世之謎",
+              "count": 35
+            },
+            {
+              "label": "【真是抱歉Podcast】EP20｜我偏偏要用手指月亮",
+              "count": 12
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.02857142857142857,
+          "neutral_rate": 0.7428571428571429,
+          "positive_rate": 0.22857142857142856,
+          "like_weighted_negative_rate": 0.012875536480686695,
+          "like_weighted_positive_rate": 0.26180257510729615,
+          "summary_zh": "中性討論為主；負面 2.9%，正面 22.9%，按讚加權負面 1.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 18755,
+          "total_observed_comments": 49,
+          "unique_commenters": 41,
+          "median_observed_commenters": 23.5,
+          "evidence_zh": "2 支影片；18,755 views；49 observed comments；41 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (2); personal_team_life (2); education_advice (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 2.9%，正面 22.9%，按讚加權負面 1.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；18,755 views；49 observed comments；41 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-08-08 09:06:48+00:00",
+          "date_max": "2023-08-22 09:10:43+00:00",
+          "pct_graph_videos": 1.4388489208633095
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "controversy_response",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【真是抱歉Podcast】EP23 | 你不理財才不理你",
+              "count": 33
+            },
+            {
+              "label": "【真是抱歉Podcast】EP25｜暑假作業寫了沒",
+              "count": 13
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.046153846153846156,
+          "neutral_rate": 0.5384615384615384,
+          "positive_rate": 0.4153846153846154,
+          "like_weighted_negative_rate": 0.051470588235294115,
+          "like_weighted_positive_rate": 0.5514705882352942,
+          "summary_zh": "中性討論為主；負面 4.6%，正面 41.5%，按讚加權負面 5.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 9464,
+          "total_observed_comments": 46,
+          "unique_commenters": 40,
+          "median_observed_commenters": 23,
+          "evidence_zh": "2 支影片；9,464 views；46 observed comments；40 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "education_advice (2); personal_team_life (2); controversy_response (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 4.6%，正面 41.5%，按讚加權負面 5.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；9,464 views；46 observed comments；40 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2024-06-04 09:00:29+00:00",
+          "date_max": "2025-07-08 09:01:22+00:00",
+          "pct_graph_videos": 1.4388489208633095
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 1
+            },
+            {
+              "label": "travel_exploration",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【真是抱歉Podcast】EP122 | 我媽就不吵不鬧",
+              "count": 13
+            },
+            {
+              "label": "【真是抱歉Podcast】EP 66 | 穿西裝代表我重視",
+              "count": 12
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "城市",
+            "街訪",
+            "生活風格",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0,
+          "neutral_rate": 0.7142857142857143,
+          "positive_rate": 0.2857142857142857,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.27884615384615385,
+          "summary_zh": "中性討論為主；負面 0.0%，正面 28.6%，按讚加權負面 0.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 11367,
+          "total_observed_comments": 25,
+          "unique_commenters": 20,
+          "median_observed_commenters": 12.5,
+          "evidence_zh": "2 支影片；11,367 views；25 observed comments；20 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (2); city_lifestyle (1); travel_exploration (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 0.0%，正面 28.6%，按讚加權負面 0.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；11,367 views；25 observed comments；20 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1408,6 +3282,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

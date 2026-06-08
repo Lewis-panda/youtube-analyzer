@@ -15,6 +15,23 @@ from .data import ChannelData
 
 
 SEMANTIC_LABEL_FILENAME = "qwen_external_post_labels.csv"
+LOW_SIGNAL_EXTERNAL_TOPICS = {
+    "general",
+    "recommendation_or_general_mentions",
+    "survey_or_spam",
+}
+EXTERNAL_TOPIC_PRIORITY = {
+    "political_or_social_controversy": 90,
+    "content_authenticity_question": 85,
+    "authenticity_or_fabrication": 85,
+    "controversy_or_apology": 80,
+    "controversy_or_criticism": 80,
+    "staff_or_host_change": 70,
+    "content_quality_criticism": 65,
+    "politics_or_culture": 60,
+    "recommendation_or_general_mentions": 20,
+    "general": 10,
+}
 
 
 @dataclass(frozen=True)
@@ -519,9 +536,9 @@ def classify_heuristic_topic(text: object) -> str:
         return "staff_or_host_change"
     if any(keyword in lowered for keyword in ["統戰", "政治", "中共同路人", "西藏", "台派"]):
         return "political_or_social_controversy"
-    if any(keyword in lowered for keyword in ["尬", "沒梗", "失望", "難看", "水準", "不好笑", "cringe"]):
+    if any(keyword in lowered for keyword in ["尬", "沒梗", "失望", "難看", "水準", "不好笑", "生氣", "媽寶", "cringe"]):
         return "content_quality_criticism"
-    if any(keyword in lowered for keyword in ["set", "造假", "真的假的", "真實", "剪輯", "腳本"]):
+    if any(keyword in lowered for keyword in ["set", "造假", "真的假的", "真實", "剪輯", "腳本", "草皮"]):
         return "content_authenticity_question"
     if any(keyword in lowered for keyword in ["推薦", "求推薦", "好看", "精彩"]):
         return "recommendation_or_general_mentions"
@@ -571,16 +588,12 @@ def build_event_clusters(
 ) -> pd.DataFrame:
     if daily.empty:
         return pd.DataFrame()
-    event_days = daily[
-        (daily["external_posts"] >= config.min_daily_posts)
-        | daily["sources"].str.contains(",", regex=False)
-        | (daily["external_engagement"] >= config.min_external_engagement)
-        | (daily["candidate_hints"] > 0)
-    ].copy()
+    event_days = daily[daily.apply(lambda row: external_day_is_candidate(row, config), axis=1)].copy()
     if event_days.empty:
         return pd.DataFrame()
 
-    event_days = event_days.sort_values(["dominant_topic", "event_date"]).reset_index(drop=True)
+    sort_cols = ["event_date", "dominant_topic"] if config.merge_cross_topic else ["dominant_topic", "event_date"]
+    event_days = event_days.sort_values(sort_cols).reset_index(drop=True)
     clusters = []
     current = []
     current_topic = None
@@ -589,7 +602,10 @@ def build_event_clusters(
     for _, row in event_days.iterrows():
         topic = row["dominant_topic"]
         date = row["event_date"]
-        should_start = current_topic != topic or last_date is None or date - last_date > gap
+        topic_changed = current_topic != topic
+        should_start = last_date is None or date - last_date > gap or (
+            topic_changed and not config.merge_cross_topic
+        )
         if should_start and current:
             clusters.append(cluster_rows(current, posts, config))
             current = []
@@ -602,16 +618,66 @@ def build_event_clusters(
     out = pd.DataFrame(clusters)
     if out.empty:
         return out
-    out = out[
-        (out["external_posts"] >= max(config.min_event_posts, config.min_daily_posts))
-        | out["sources"].str.contains(",", regex=False)
-        | (out["external_engagement"] >= config.min_external_engagement)
-        | (out["candidate_hints"] > 0)
-    ].copy()
+    out = out[out.apply(lambda row: external_cluster_is_candidate(row, config), axis=1)].copy()
     out = out.sort_values(["event_start", "external_posts", "external_engagement"], ascending=[True, False, False])
     out["event_cluster_id"] = [f"external_event_{idx:03d}" for idx in range(1, len(out) + 1)]
     cols = ["event_cluster_id"] + [col for col in out.columns if col != "event_cluster_id"]
     return out[cols]
+
+
+def external_day_is_candidate(row: pd.Series, config: ExternalAnalysisConfig) -> bool:
+    posts = int(row.get("external_posts") or 0)
+    engagement = int(row.get("external_engagement") or 0)
+    candidate_hints = int(row.get("candidate_hints") or 0)
+    sources = str(row.get("sources") or "")
+    topic = str(row.get("dominant_topic") or "")
+    cross_source = "," in sources
+    if candidate_hints > 0 or cross_source or engagement >= config.min_external_engagement:
+        return True
+    if is_low_signal_external_topic(topic):
+        return posts >= max(config.min_daily_posts * 2, config.min_event_posts, 4)
+    return posts >= config.min_daily_posts
+
+
+def external_cluster_is_candidate(row: pd.Series, config: ExternalAnalysisConfig) -> bool:
+    posts = int(row.get("external_posts") or 0)
+    engagement = int(row.get("external_engagement") or 0)
+    candidate_hints = int(row.get("candidate_hints") or 0)
+    sources = str(row.get("sources") or "")
+    topic = str(row.get("event_topic") or "")
+    cross_source = "," in sources
+    if candidate_hints > 0 or cross_source or engagement >= config.min_external_engagement:
+        return True
+    if is_low_signal_external_topic(topic):
+        return posts >= max(config.min_daily_posts * 2, config.min_event_posts, 4)
+    return posts >= max(config.min_event_posts, config.min_daily_posts)
+
+
+def is_low_signal_external_topic(topic: str) -> bool:
+    return str(topic or "").strip() in LOW_SIGNAL_EXTERNAL_TOPICS
+
+
+def infer_cluster_topic(cluster_posts: pd.DataFrame, fallback_topic: object) -> str:
+    if cluster_posts.empty or "event_topic" not in cluster_posts.columns:
+        return str(fallback_topic or "general")
+    weights: dict[str, float] = {}
+    for _, row in cluster_posts.iterrows():
+        topic = str(row.get("event_topic") or "").strip() or "general"
+        if topic == "survey_or_spam":
+            continue
+        engagement = max(float(row.get("engagement") or 0), 0.0)
+        candidate_bonus = 25.0 if to_bool(row.get("event_candidate_hint")) else 0.0
+        semantic_bonus = 5.0 if to_bool(row.get("semantic_used")) else 0.0
+        weights[topic] = weights.get(topic, 0.0) + 1.0 + math.log1p(engagement) + candidate_bonus + semantic_bonus
+    if not weights:
+        return str(fallback_topic or "general")
+    non_low = {topic: weight for topic, weight in weights.items() if not is_low_signal_external_topic(topic)}
+    candidates = non_low or weights
+    return sorted(
+        candidates.items(),
+        key=lambda item: (item[1], EXTERNAL_TOPIC_PRIORITY.get(item[0], 40), item[0]),
+        reverse=True,
+    )[0][0]
 
 
 def cluster_rows(rows: list[pd.Series], posts: pd.DataFrame, config: ExternalAnalysisConfig) -> dict:
@@ -625,16 +691,21 @@ def cluster_rows(rows: list[pd.Series], posts: pd.DataFrame, config: ExternalAna
         & (posts["event_date"] >= start)
         & (posts["event_date"] <= end)
     )
-    topic_mask = base_mask & posts["event_topic"].eq(peak["dominant_topic"])
-    cluster_posts = posts.loc[topic_mask].sort_values(["date", "source", "title"])
-    event_topic = peak["dominant_topic"]
-    topic_cluster_passes = (
-        len(cluster_posts) >= max(config.min_event_posts, config.min_daily_posts)
-        or "," in str(",".join(sorted(set(cluster_posts["source"]))) if not cluster_posts.empty else peak["sources"])
-        or (int(cluster_posts["engagement"].sum()) if not cluster_posts.empty else int(frame["external_engagement"].sum()))
-        >= config.min_external_engagement
-        or (int(cluster_posts["event_candidate_hint"].sum()) if not cluster_posts.empty else int(frame["candidate_hints"].sum())) > 0
-    )
+    if config.merge_cross_topic:
+        cluster_posts = posts.loc[base_mask].sort_values(["date", "source", "title"])
+        event_topic = infer_cluster_topic(cluster_posts, peak["dominant_topic"])
+        topic_cluster_passes = True
+    else:
+        topic_mask = base_mask & posts["event_topic"].eq(peak["dominant_topic"])
+        cluster_posts = posts.loc[topic_mask].sort_values(["date", "source", "title"])
+        event_topic = peak["dominant_topic"]
+        topic_cluster_passes = (
+            len(cluster_posts) >= max(config.min_event_posts, config.min_daily_posts)
+            or "," in str(",".join(sorted(set(cluster_posts["source"]))) if not cluster_posts.empty else peak["sources"])
+            or (int(cluster_posts["engagement"].sum()) if not cluster_posts.empty else int(frame["external_engagement"].sum()))
+            >= config.min_external_engagement
+            or (int(cluster_posts["event_candidate_hint"].sum()) if not cluster_posts.empty else int(frame["candidate_hints"].sum())) > 0
+        )
     if not topic_cluster_passes and int(frame["external_posts"].sum()) >= config.min_daily_posts:
         cluster_posts = posts.loc[base_mask].sort_values(["date", "source", "title"])
         event_topic = "mixed_external_discussion"
@@ -1451,33 +1522,33 @@ def render_external_report_block(
     if zh:
         lines.extend(
             [
-                "## 外部事件分析",
+                "## 外部討論對齊分析",
                 "",
-                "這一節把 PTT/Dcard 外部討論和 YouTube 留言反應對齊。它是事件視窗關聯分析，不是因果估計。",
+                "這一節把 PTT/Dcard 外部討論和 YouTube 留言反應窗口對齊。它是時間窗關聯分析，不是因果估計；外部討論可能先於影片，也可能是影片本身引發外部討論。",
                 "",
                 f"- 狀態：`{status}`",
                 f"- 外部貼文數：{int(row.get('n_external_posts') or 0):,}",
                 f"- 相關貼文數：{int(row.get('n_relevant_posts') or 0):,}",
-                f"- 事件群數：{int(row.get('n_event_clusters') or 0):,}",
+                f"- 討論群數：{int(row.get('n_event_clusters') or 0):,}",
                 f"- 外部貼文語意來源：`{row.get('external_semantics_source') or ''}`",
                 f"- 情緒來源：`{row.get('sentiment_source') or ''}`",
-                f"- 視窗：baseline {int(row.get('baseline_days') or 0)} 天，pre {int(row.get('pre_days') or 0)} 天，post {int(row.get('post_days') or 0)} 天。",
+                f"- 對齊視窗：baseline {int(row.get('baseline_days') or 0)} 天，pre {int(row.get('pre_days') or 0)} 天，post {int(row.get('post_days') or 0)} 天。",
             ]
         )
     else:
         lines.extend(
             [
-                "## External Event Analysis",
+                "## External Discussion Alignment Analysis",
                 "",
-                "This section aligns PTT/Dcard external discussion with YouTube comment response. It is event-window association evidence, not a causal estimate.",
+                "This section aligns PTT/Dcard external discussion with YouTube comment response windows. It is time-window association evidence, not a causal estimate; external discussion may precede a video, or a video may itself trigger external discussion.",
                 "",
                 f"- Status: `{status}`",
                 f"- External posts: {int(row.get('n_external_posts') or 0):,}",
                 f"- Relevant posts: {int(row.get('n_relevant_posts') or 0):,}",
-                f"- Event clusters: {int(row.get('n_event_clusters') or 0):,}",
+                f"- Discussion clusters: {int(row.get('n_event_clusters') or 0):,}",
                 f"- External semantic source: `{row.get('external_semantics_source') or ''}`",
                 f"- Sentiment source: `{row.get('sentiment_source') or ''}`",
-                f"- Windows: baseline {int(row.get('baseline_days') or 0)} days, pre {int(row.get('pre_days') or 0)} days, post {int(row.get('post_days') or 0)} days.",
+                f"- Alignment windows: baseline {int(row.get('baseline_days') or 0)} days, pre {int(row.get('pre_days') or 0)} days, post {int(row.get('post_days') or 0)} days.",
             ]
         )
     if status != "ok":
@@ -1555,22 +1626,22 @@ def render_external_report_block(
             else pd.DataFrame()
         )
         if zh:
-            lines.extend(["", "### 負面反應高於 baseline 的事件群", ""])
+            lines.extend(["", "### 負面反應高於 baseline 的討論群", ""])
         else:
-            lines.extend(["", "### Event Clusters With Negative Response Above Baseline", ""])
+            lines.extend(["", "### Discussion Clusters With Negative Response Above Baseline", ""])
         lines.append(markdown_table(top_sentiment, sentiment_cols))
         if zh:
-            lines.extend(["", "### 新留言者高於 baseline 的事件群", ""])
+            lines.extend(["", "### 新留言者高於 baseline 的討論群", ""])
         else:
-            lines.extend(["", "### Event Clusters With New Commenters Above Baseline", ""])
+            lines.extend(["", "### Discussion Clusters With New Commenters Above Baseline", ""])
         lines.append(markdown_table(top_audience, audience_cols))
         if zh:
             lines.extend(
                 [
                     "",
-                    "### 外部事件影響診斷指標",
+                    "### 外部討論反應診斷指標",
                     "",
-                    "`pp` 是 percentage points；`negative_amplification_index` 大於 1 代表 post window 中負面留言得到的 like 權重高於負面留言占比；`spillover_ratio` 只在事件附近影片也有受影響影片時才有定義。",
+                    "`pp` 是 percentage points；`negative_amplification_index` 大於 1 代表對齊後窗中負面留言得到的 like 權重高於負面留言占比；`spillover_ratio` 只在討論日期附近影片也有高負面影片時才有定義。這些是反應窗口診斷，不代表外部討論造成影片流量或留言變化。",
                     "",
                 ]
             )
@@ -1578,9 +1649,9 @@ def render_external_report_block(
             lines.extend(
                 [
                     "",
-                    "### External Event Impact Diagnostics",
+                    "### External Discussion Response Diagnostics",
                     "",
-                    "`pp` means percentage points. `negative_amplification_index` above 1 means negative comments received more like weight than their raw share in the post window. `spillover_ratio` is defined only when event-nearby videos also contain affected videos.",
+                    "`pp` means percentage points. `negative_amplification_index` above 1 means negative comments received more like weight than their raw share in the aligned post window. `spillover_ratio` is defined only when discussion-nearby videos also contain high-negative videos. These are response-window diagnostics, not evidence that external discussion caused traffic or comment changes.",
                     "",
                 ]
             )

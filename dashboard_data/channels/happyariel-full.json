@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "happyariel-full",
   "title": "欸你這週要幹嘛",
   "channel_id": "UCFycVZXj9fRWB_OZfFKe2PA",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/happyariel-full/tables/actor_communities.csv",
-        "bytes": 414236
+        "bytes": 414236,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/happyariel-full/tables/bridge_actors.csv",
-        "bytes": 11340
+        "bytes": 11340,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/happyariel-full/tables/channel_overview.csv",
-        "bytes": 371
+        "bytes": 371,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/happyariel-full/tables/commenter_activity.csv",
-        "bytes": 5158181
+        "bytes": 5158181,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/happyariel-full/tables/commenter_tiers.csv",
-        "bytes": 292
+        "bytes": 292,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/happyariel-full/tables/community_profiles.csv",
-        "bytes": 2695
+        "bytes": 2695,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/happyariel-full/tables/community_sentiment_summary.csv",
-        "bytes": 1284
+        "bytes": 1284,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/happyariel-full/tables/community_summary.csv",
-        "bytes": 646
+        "bytes": 646,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/happyariel-full/tables/community_theme_affinity.csv",
-        "bytes": 5270
+        "bytes": 5270,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/happyariel-full/tables/community_theme_sentiment.csv",
-        "bytes": 7061
+        "bytes": 7061,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/happyariel-full/tables/continuity_sensitivity.csv",
-        "bytes": 579
+        "bytes": 579,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/happyariel-full/tables/continuity_summary.csv",
-        "bytes": 634
+        "bytes": 634,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/happyariel-full/tables/diagnostics.csv",
-        "bytes": 1528
+        "bytes": 1528,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/happyariel-full/tables/network_actor_metrics.csv",
-        "bytes": 44364
+        "bytes": 44364,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/happyariel-full/tables/network_summary.csv",
-        "bytes": 641
+        "bytes": 641,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/happyariel-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 19483009
+        "bytes": 19483009,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/happyariel-full/tables/qwen_video_themes.csv",
-        "bytes": 407629
+        "bytes": 407629,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/happyariel-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2054
+        "bytes": 2054,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/happyariel-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 68919
+        "bytes": 68919,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/happyariel-full/tables/reply_sentiment_summary.csv",
-        "bytes": 742
+        "bytes": 742,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/happyariel-full/tables/reply_thread_metrics.csv",
-        "bytes": 20622161
+        "bytes": 20622161,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/happyariel-full/tables/reply_thread_overview.csv",
-        "bytes": 365
+        "bytes": 365,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/happyariel-full/tables/rolling_retention.csv",
-        "bytes": 792
+        "bytes": 792,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/happyariel-full/tables/sentiment_hotspots.csv",
-        "bytes": 73175
+        "bytes": 73175,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/happyariel-full/tables/sentiment_source_summary.csv",
-        "bytes": 252
+        "bytes": 252,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/happyariel-full/tables/sentiment_summary.csv",
-        "bytes": 642
+        "bytes": 642,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/happyariel-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2063
+        "bytes": 2063,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/happyariel-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/happyariel-full/tables/theme_summary.csv",
-        "bytes": 242
+        "bytes": 242,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/happyariel-full/tables/theme_video_labels.csv",
-        "bytes": 90271
+        "bytes": 90271,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/happyariel-full/tables/theme_video_labels_long.csv",
-        "bytes": 77768
+        "bytes": 77768,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/happyariel-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1291
+        "bytes": 1291,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/happyariel-full/tables/video_cluster_summary.csv",
-        "bytes": 3491
+        "bytes": 3491,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/happyariel-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 3106
+        "bytes": 3106,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/happyariel-full/tables/video_clusters.csv",
-        "bytes": 41481
+        "bytes": 41481,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/happyariel-full/tables/video_link_opportunities.csv",
-        "bytes": 106533
+        "bytes": 106533,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/happyariel-full/tables/video_metrics.csv",
-        "bytes": 32515
+        "bytes": 32515,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/happyariel-full/tables/video_network_metrics.csv",
-        "bytes": 50122
+        "bytes": 50122,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/happyariel-full/tables/video_network_summary.csv",
-        "bytes": 639
+        "bytes": 639,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/happyariel-full/figures/channel_activity.png",
-        "bytes": 84563
+        "bytes": 84563,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/happyariel-full/figures/commenter_tiers.png",
-        "bytes": 28163
+        "bytes": 28163,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/happyariel-full/figures/community_sizes.png",
-        "bytes": 27189
+        "bytes": 27189,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/happyariel-full/figures/rolling_retention.png",
-        "bytes": 43817
+        "bytes": 43817,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/happyariel-full/figures/video_cluster_sizes.png",
-        "bytes": 26972
+        "bytes": 26972,
+        "source_dir": null
       }
     ]
   },
@@ -645,6 +689,554 @@
         "max_core_number": 175
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 2049,
+          "pct_active_commenters": 45.53333333333333,
+          "summary_zh": "45.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 12906,
+          "avg_comments_per_commenter": 6.2986822840409955,
+          "n_videos_touched": 188,
+          "summary_zh": "平均留言 6.3 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【苗栗豪華露營】黑糖慶生！泳池、BBQ、酒吧、和牛火鍋、煙火通通有！",
+            "count": 376
+          },
+          {
+            "label": "【圓夢企劃】給欸了粉生日驚喜嚇到爆哭！緊張到想吐！",
+            "count": 204
+          },
+          {
+            "label": "【台南】有夜市的飯店！看跨年401秒煙火！酒吧、控窯、釣魚、通通有！",
+            "count": 199
+          },
+          {
+            "label": "【清邁親子ep.2】大姐終於喊出離婚了！超推真心市集、近距離參觀長頸族村！",
+            "count": 186
+          },
+          {
+            "label": "【通霄過年特輯】欸宇宙成員無條件+1！好開心啊！",
+            "count": 177
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 1984
+          },
+          {
+            "label": "personal_team_life",
+            "count": 1126
+          },
+          {
+            "label": "food_culture",
+            "count": 705
+          },
+          {
+            "label": "controversy_response",
+            "count": 232
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 228
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "product_review",
+            "lift": 1.3717082800407552,
+            "n_commenters": 524
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 1.3362765368006435,
+            "n_commenters": 626
+          },
+          {
+            "theme": "guest_relationship",
+            "lift": 1.3309212339924315,
+            "n_commenters": 79
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.02703287197231834,
+          "neutral_rate": 0.3703863898500577,
+          "positive_rate": 0.602580738177624,
+          "like_weighted_negative_rate": 0.018355945730247406,
+          "like_weighted_positive_rate": 0.672585794094174,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.7%，正面 60.3%，按讚加權負面 1.8%"
+        },
+        "negative_sources": [
+          {
+            "theme": "other",
+            "negative_rate": 0.15966386554621848,
+            "like_weighted_negative_rate": 0.1502958579881657,
+            "n_comments": 119,
+            "summary_zh": "other：負面 16.0%，按讚加權負面 15.0%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.038338658146964855,
+            "like_weighted_negative_rate": 0.02263540824575586,
+            "n_comments": 313,
+            "summary_zh": "controversy_response：負面 3.8%，按讚加權負面 2.3%"
+          },
+          {
+            "theme": "city_lifestyle",
+            "negative_rate": 0.030821917808219176,
+            "like_weighted_negative_rate": 0.021484375,
+            "n_comments": 292,
+            "summary_zh": "city_lifestyle：負面 3.1%，按讚加權負面 2.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 1282,
+          "pct_active_commenters": 28.48888888888889,
+          "summary_zh": "28.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 9462,
+          "avg_comments_per_commenter": 7.380655226209049,
+          "n_videos_touched": 187,
+          "summary_zh": "平均留言 7.4 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "我被求婚了！像一場音樂會的求婚。",
+            "count": 276
+          },
+          {
+            "label": "【東京特企】頻道換人拍會怎樣？阿姨媽媽Youtuber初體驗！",
+            "count": 256
+          },
+          {
+            "label": "【日本茨城ep.1】挑戰帶兩老出國！直接去八年來蟬聯日本最無魅力之城！台湾人の茨城観光グルメ満喫",
+            "count": 255
+          },
+          {
+            "label": "【馬來西亞過年ep.2】叔叔馬來語小教室之麻將爭霸戰！輸家被踹進游泳池！",
+            "count": 208
+          },
+          {
+            "label": "【東京崩潰實錄ep.1】帶小孩搭飛機、搭地鐵、找住宿！真的超崩潰啊～",
+            "count": 181
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 1272
+          },
+          {
+            "label": "personal_team_life",
+            "count": 635
+          },
+          {
+            "label": "food_culture",
+            "count": 326
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 206
+          },
+          {
+            "label": "controversy_response",
+            "count": 99
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "automotive_luxury",
+            "lift": 2.0068412214689966,
+            "n_commenters": 48
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1.2319589901951478,
+            "n_commenters": 1247
+          },
+          {
+            "theme": "survival_outdoor",
+            "lift": 1.1866390498959172,
+            "n_commenters": 104
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.0216791486007095,
+          "neutral_rate": 0.35622782814347653,
+          "positive_rate": 0.622093023255814,
+          "like_weighted_negative_rate": 0.015263818421701868,
+          "like_weighted_positive_rate": 0.6910873459405537,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.2%，正面 62.2%，按讚加權負面 1.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.017341040462427744,
+            "like_weighted_negative_rate": 0.02907546553413917,
+            "n_comments": 1211,
+            "summary_zh": "personal_team_life：負面 1.7%，按讚加權負面 2.9%"
+          },
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.021330304177710462,
+            "like_weighted_negative_rate": 0.014442823173367921,
+            "n_comments": 7923,
+            "summary_zh": "travel_exploration：負面 2.1%，按讚加權負面 1.4%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.023032629558541268,
+            "like_weighted_negative_rate": 0.0057251908396946565,
+            "n_comments": 521,
+            "summary_zh": "food_culture：負面 2.3%，按讚加權負面 0.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 681,
+          "pct_active_commenters": 15.133333333333333,
+          "summary_zh": "15.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 3809,
+          "avg_comments_per_commenter": 5.593245227606461,
+          "n_videos_touched": 185,
+          "summary_zh": "平均留言 5.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【苗栗豪華露營】黑糖慶生！泳池、BBQ、酒吧、和牛火鍋、煙火通通有！",
+            "count": 561
+          },
+          {
+            "label": "【日本茨城ep.1】挑戰帶兩老出國！直接去八年來蟬聯日本最無魅力之城！台湾人の茨城観光グルメ満喫",
+            "count": 527
+          },
+          {
+            "label": "【台南】有夜市的飯店！看跨年401秒煙火！酒吧、控窯、釣魚、通通有！",
+            "count": 327
+          },
+          {
+            "label": "【清邁親子ep.2】大姐終於喊出離婚了！超推真心市集、近距離參觀長頸族村！",
+            "count": 152
+          },
+          {
+            "label": "【夏威夷ep.5】前往恐龍灣、珍珠港！發現大賣場的秘密！",
+            "count": 130
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 681
+          },
+          {
+            "label": "personal_team_life",
+            "count": 269
+          },
+          {
+            "label": "food_culture",
+            "count": 96
+          },
+          {
+            "label": "physical_challenge",
+            "count": 94
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 51
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.01494345718901454,
+          "neutral_rate": 0.2918012924071082,
+          "positive_rate": 0.6932552504038773,
+          "like_weighted_negative_rate": 0.013537505548158012,
+          "like_weighted_positive_rate": 0.5157365936327322,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.5%，正面 69.3%，按讚加權負面 1.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.01376889848812095,
+            "like_weighted_negative_rate": 0.017942997203280645,
+            "n_comments": 3704,
+            "summary_zh": "travel_exploration：負面 1.4%，按讚加權負面 1.8%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.025454545454545455,
+            "like_weighted_negative_rate": 0.008003048780487805,
+            "n_comments": 275,
+            "summary_zh": "food_culture：負面 2.5%，按讚加權負面 0.8%"
+          },
+          {
+            "theme": "physical_challenge",
+            "negative_rate": 0.009259259259259259,
+            "like_weighted_negative_rate": 0.003125,
+            "n_comments": 108,
+            "summary_zh": "physical_challenge：負面 0.9%，按讚加權負面 0.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 488,
+          "pct_active_commenters": 10.844444444444443,
+          "summary_zh": "10.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 4316,
+          "avg_comments_per_commenter": 8.844262295081966,
+          "n_videos_touched": 187,
+          "summary_zh": "平均留言 8.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "我被求婚了！像一場音樂會的求婚。",
+            "count": 393
+          },
+          {
+            "label": "【結婚登記】登記遇上大地震全記錄！40位親友到場祝福！咖啡廳包場啦～",
+            "count": 271
+          },
+          {
+            "label": "六週年辦桌全記錄！真的要累瘋了...",
+            "count": 149
+          },
+          {
+            "label": "【苗栗豪華露營】黑糖慶生！泳池、BBQ、酒吧、和牛火鍋、煙火通通有！",
+            "count": 142
+          },
+          {
+            "label": "【神秘埃及ep.1】22個人勇闖埃及！商務艙機票多少錢？當地導遊帶路！中文超溜！",
+            "count": 113
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 477
+          },
+          {
+            "label": "travel_exploration",
+            "count": 463
+          },
+          {
+            "label": "food_culture",
+            "count": 108
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 85
+          },
+          {
+            "label": "controversy_response",
+            "count": 41
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地",
+            "探索",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.01910136748426308,
+          "neutral_rate": 0.2674191447796831,
+          "positive_rate": 0.7134794877360539,
+          "like_weighted_negative_rate": 0.026526924466931695,
+          "like_weighted_positive_rate": 0.7728225514998193,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.9%，正面 71.3%，按讚加權負面 2.7%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.020319303338171262,
+            "like_weighted_negative_rate": 0.038998857311364224,
+            "n_comments": 2756,
+            "summary_zh": "travel_exploration：負面 2.0%，按讚加權負面 3.9%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.024875621890547265,
+            "like_weighted_negative_rate": 0.0091324200913242,
+            "n_comments": 201,
+            "summary_zh": "food_culture：負面 2.5%，按讚加權負面 0.9%"
+          },
+          {
+            "theme": "city_lifestyle",
+            "negative_rate": 0.04424778761061947,
+            "like_weighted_negative_rate": 0.004685408299866131,
+            "n_comments": 113,
+            "summary_zh": "city_lifestyle：負面 4.4%，按讚加權負面 0.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 188,
       "n_edges": 17301,
@@ -759,6 +1351,630 @@
         "conductance": 0.7915249447938797,
         "avg_core_number": 169.91176470588235,
         "max_core_number": 170
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 12,
+          "date_min": "2023-03-23 04:00:15+00:00",
+          "date_max": "2025-07-21 04:00:36+00:00",
+          "pct_graph_videos": 6.382978723404255
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "city_lifestyle",
+              "count": 7
+            },
+            {
+              "label": "travel_exploration",
+              "count": 7
+            },
+            {
+              "label": "personal_team_life",
+              "count": 5
+            },
+            {
+              "label": "event_announcement",
+              "count": 4
+            },
+            {
+              "label": "food_culture",
+              "count": 4
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【日本茨城ep.1】挑戰帶兩老出國！直接去八年來蟬聯日本最無魅力之城！台湾人の茨城観光グルメ満喫",
+              "count": 8396
+            },
+            {
+              "label": "【苗栗豪華露營】黑糖慶生！泳池、BBQ、酒吧、和牛火鍋、煙火通通有！",
+              "count": 7959
+            },
+            {
+              "label": "【台南】有夜市的飯店！看跨年401秒煙火！酒吧、控窯、釣魚、通通有！",
+              "count": 2375
+            },
+            {
+              "label": "我被求婚了！像一場音樂會的求婚。",
+              "count": 2206
+            },
+            {
+              "label": "【清邁親子ep.2】大姐終於喊出離婚了！超推真心市集、近距離參觀長頸族村！",
+              "count": 1372
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "城市",
+            "街訪",
+            "生活風格",
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.020524318730596756,
+          "neutral_rate": 0.15719213521904105,
+          "positive_rate": 0.8222835460503622,
+          "like_weighted_negative_rate": 0.07877661034715117,
+          "like_weighted_positive_rate": 0.6745613816167112,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.1%，正面 82.2%，按讚加權負面 7.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 8442523,
+          "total_observed_comments": 27234,
+          "unique_commenters": 21753,
+          "median_observed_commenters": 900.5,
+          "evidence_zh": "12 支影片；8,442,523 views；27,234 observed comments；21,753 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 66,
+          "external_edges": 2112,
+          "conductance": 0.7806570904223759,
+          "interpretation_zh": "群集邊界較鬆散，可能是過渡型內容或與其他題材高度混合。",
+          "evidence_zh": "internal_edges=66, external_edges=2,112, conductance=0.781"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "city_lifestyle (7); travel_exploration (7); personal_team_life (5); event_announcement (4); food_culture (4)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 2.1%，正面 82.2%，按讚加權負面 7.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "12 支影片；8,442,523 views；27,234 observed comments；21,753 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=66, external_edges=2,112, conductance=0.781"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 73,
+          "date_min": "2023-01-02 04:00:02+00:00",
+          "date_max": "2024-05-06 04:00:08+00:00",
+          "pct_graph_videos": 38.82978723404255
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "travel_exploration",
+              "count": 68
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 55
+            },
+            {
+              "label": "food_culture",
+              "count": 48
+            },
+            {
+              "label": "personal_team_life",
+              "count": 13
+            },
+            {
+              "label": "controversy_response",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "automotive_luxury",
+              "lift": 2.5753424657534247,
+              "n_videos": 1
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1.4543110394842866,
+              "n_videos": 48
+            },
+            {
+              "theme": "survival_outdoor",
+              "lift": 1.2876712328767124,
+              "n_videos": 1
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.2876712328767124,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【竹東關西一日遊】吃爆竹東市場！你看過在橋下的天然洗衣坑嗎? feat.浪漫臺三線藝術季",
+              "count": 1114
+            },
+            {
+              "label": "【東京特企】頻道換人拍會怎樣？阿姨媽媽Youtuber初體驗！",
+              "count": 875
+            },
+            {
+              "label": "【馬來西亞過年ep.2】叔叔馬來語小教室之麻將爭霸戰！輸家被踹進游泳池！",
+              "count": 725
+            },
+            {
+              "label": "【西葡連載ep.1】出發西班牙！超過24小時沒洗腳！腳超臭！！！feat.國泰產險",
+              "count": 482
+            },
+            {
+              "label": "【馬來西亞過年ep.1】先塞車六個小時...幹話兄弟強強聯手！過年整條街放煙火！New Year",
+              "count": 481
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "城市",
+            "街訪",
+            "生活風格",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.023762113367848135,
+          "neutral_rate": 0.40112394353732467,
+          "positive_rate": 0.5751139430948272,
+          "like_weighted_negative_rate": 0.014677529697120467,
+          "like_weighted_positive_rate": 0.6589340133092854,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.4%，正面 57.5%，按讚加權負面 1.5%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 58850737,
+          "total_observed_comments": 20384,
+          "unique_commenters": 11131,
+          "median_observed_commenters": 212,
+          "evidence_zh": "73 支影片；58,850,737 views；20,384 observed comments；11,131 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 2627,
+          "external_edges": 8169,
+          "conductance": 0.5237005823416646,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=2,627, external_edges=8,169, conductance=0.524"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "travel_exploration (68); city_lifestyle (55); food_culture (48); personal_team_life (13); controversy_response (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 2.4%，正面 57.5%，按讚加權負面 1.5%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "73 支影片；58,850,737 views；20,384 observed comments；11,131 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=2,627, external_edges=8,169, conductance=0.524"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 69,
+          "date_min": "2024-11-18 04:00:11+00:00",
+          "date_max": "2026-05-11 04:00:29+00:00",
+          "pct_graph_videos": 36.702127659574465
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "travel_exploration",
+              "count": 49
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 38
+            },
+            {
+              "label": "food_culture",
+              "count": 23
+            },
+            {
+              "label": "personal_team_life",
+              "count": 20
+            },
+            {
+              "label": "controversy_response",
+              "count": 8
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "guest_relationship",
+              "lift": 2.7246376811594204,
+              "n_videos": 1
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.816425120772947,
+              "n_videos": 8
+            },
+            {
+              "theme": "product_review",
+              "lift": 1.816425120772947,
+              "n_videos": 8
+            },
+            {
+              "theme": "physical_challenge",
+              "lift": 1.634782608695652,
+              "n_videos": 3
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【東京馬拉松實錄】邊跑邊哭、膝蓋劇烈疼痛！差點放棄的42公里！",
+              "count": 712
+            },
+            {
+              "label": "爸媽離婚30年首度同框！問題超級辛辣！紅燒肉大戰來了！",
+              "count": 499
+            },
+            {
+              "label": "馬來西亞集合！找幹話叔叔麻將大戰、吃爆榴槤！誰是最後贏家？",
+              "count": 438
+            },
+            {
+              "label": "【通霄過年特輯】欸宇宙成員無條件+1！好開心啊！",
+              "count": 429
+            },
+            {
+              "label": "【台北滷肉飯圖鑑】台北7間滷肉飯PK！最後居然殺出一間黑馬！",
+              "count": 409
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "城市",
+            "街訪",
+            "生活風格",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.03514246947082768,
+          "neutral_rate": 0.4033242876526459,
+          "positive_rate": 0.5615332428765265,
+          "like_weighted_negative_rate": 0.027955878093269767,
+          "like_weighted_positive_rate": 0.6182703523646242,
+          "summary_zh": "中性偏正，正向討論較多；負面 3.5%，正面 56.2%，按讚加權負面 2.8%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 28993003,
+          "total_observed_comments": 13021,
+          "unique_commenters": 7210,
+          "median_observed_commenters": 150,
+          "evidence_zh": "69 支影片；28,993,003 views；13,021 observed comments；7,210 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 2345,
+          "external_edges": 7940,
+          "conductance": 0.5767144472912772,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=2,345, external_edges=7,940, conductance=0.577"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "travel_exploration (49); city_lifestyle (38); food_culture (23); personal_team_life (20); controversy_response (8)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 3.5%，正面 56.2%，按讚加權負面 2.8%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "69 支影片；28,993,003 views；13,021 observed comments；7,210 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=2,345, external_edges=7,940, conductance=0.577"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 34,
+          "date_min": "2024-03-04 04:00:14+00:00",
+          "date_max": "2025-01-06 04:00:18+00:00",
+          "pct_graph_videos": 18.085106382978726
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "travel_exploration",
+              "count": 31
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 28
+            },
+            {
+              "label": "food_culture",
+              "count": 10
+            },
+            {
+              "label": "product_review",
+              "count": 3
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【神秘埃及最終回】道別集體落淚！公開埃及總花費！",
+              "count": 459
+            },
+            {
+              "label": "【神秘埃及ep.2】撒哈拉沙漠飆沙！衝進黑白沙漠升營火！",
+              "count": 305
+            },
+            {
+              "label": "【泰國巴達雅】必推！郵輪男模後台直擊！近距離窺探飆戲！",
+              "count": 258
+            },
+            {
+              "label": "【遠征紐西蘭ep.1】超大露營車環冬季南島！帶2歲小孩勇敢出發！",
+              "count": 253
+            },
+            {
+              "label": "【日本五島】 什麼？連日本人都不知道的地方！新秘密景點解鎖！",
+              "count": 250
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "城市",
+            "街訪",
+            "生活風格",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.03535075653370014,
+          "neutral_rate": 0.42448418156808804,
+          "positive_rate": 0.5401650618982118,
+          "like_weighted_negative_rate": 0.017358124046066323,
+          "like_weighted_positive_rate": 0.6985153323158041,
+          "summary_zh": "中性偏正，正向討論較多；負面 3.5%，正面 54.0%，按讚加權負面 1.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 21467448,
+          "total_observed_comments": 6339,
+          "unique_commenters": 3941,
+          "median_observed_commenters": 164.5,
+          "evidence_zh": "34 支影片；21,467,448 views；6,339 observed comments；3,941 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 561,
+          "external_edges": 5183,
+          "conductance": 0.7915249447938797,
+          "interpretation_zh": "群集邊界較鬆散，可能是過渡型內容或與其他題材高度混合。",
+          "evidence_zh": "internal_edges=561, external_edges=5,183, conductance=0.792"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "travel_exploration (31); city_lifestyle (28); food_culture (10); product_review (3); personal_team_life (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 3.5%，正面 54.0%，按讚加權負面 1.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "34 支影片；21,467,448 views；6,339 observed comments；3,941 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=561, external_edges=5,183, conductance=0.792"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1300,6 +2516,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

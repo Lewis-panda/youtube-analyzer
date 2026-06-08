@@ -48,8 +48,10 @@ external_analysis:
   channel_aliases: "DoDoMen, The DoDo Men, 嘟嘟人, dodomen"
   require_alias_match: false
   min_daily_posts: 2
-  min_external_engagement: 10
-  merge_gap_days: 3
+  min_external_engagement: 50
+  merge_gap_days: 14
+  merge_cross_topic: true
+  min_event_posts: 1
   baseline_days: 90
   pre_days: 28
   post_days: 28

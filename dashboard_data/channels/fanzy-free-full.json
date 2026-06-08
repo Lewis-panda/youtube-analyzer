@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "fanzy-free-full",
   "title": "反正我很閒",
   "channel_id": "UCzjNxGvrqfxL9KGkObbzrmg",
@@ -110,219 +110,262 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/fanzy-free-full/tables/actor_communities.csv",
-        "bytes": 74642
+        "bytes": 74642,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/fanzy-free-full/tables/bridge_actors.csv",
-        "bytes": 10995
+        "bytes": 10995,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/fanzy-free-full/tables/channel_overview.csv",
-        "bytes": 361
+        "bytes": 361,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/fanzy-free-full/tables/commenter_activity.csv",
-        "bytes": 1275465
+        "bytes": 1275465,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/fanzy-free-full/tables/commenter_tiers.csv",
-        "bytes": 269
+        "bytes": 269,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/fanzy-free-full/tables/community_profiles.csv",
-        "bytes": 4048
+        "bytes": 4048,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/fanzy-free-full/tables/community_sentiment_summary.csv",
-        "bytes": 1717
+        "bytes": 1717,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/fanzy-free-full/tables/community_summary.csv",
-        "bytes": 818
+        "bytes": 818,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/fanzy-free-full/tables/community_theme_affinity.csv",
-        "bytes": 4585
+        "bytes": 4585,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/fanzy-free-full/tables/community_theme_sentiment.csv",
-        "bytes": 6957
+        "bytes": 6957,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/fanzy-free-full/tables/continuity_sensitivity.csv",
-        "bytes": 587
+        "bytes": 587,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/fanzy-free-full/tables/continuity_summary.csv",
-        "bytes": 624
+        "bytes": 624,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/fanzy-free-full/tables/diagnostics.csv",
-        "bytes": 1378
+        "bytes": 1378,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/fanzy-free-full/tables/network_actor_metrics.csv",
-        "bytes": 43227
+        "bytes": 43227,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/fanzy-free-full/tables/network_summary.csv",
-        "bytes": 639
+        "bytes": 639,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/fanzy-free-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 4454229
+        "bytes": 4454229,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/fanzy-free-full/tables/qwen_video_themes.csv",
-        "bytes": 32453
+        "bytes": 32453,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/fanzy-free-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 1858
+        "bytes": 1858,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/fanzy-free-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 11512
+        "bytes": 11512,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/fanzy-free-full/tables/reply_sentiment_summary.csv",
-        "bytes": 718
+        "bytes": 718,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/fanzy-free-full/tables/reply_thread_metrics.csv",
-        "bytes": 4050102
+        "bytes": 4050102,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/fanzy-free-full/tables/reply_thread_overview.csv",
-        "bytes": 363
+        "bytes": 363,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/fanzy-free-full/tables/rolling_retention.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/fanzy-free-full/tables/sentiment_hotspots.csv",
-        "bytes": 8489
+        "bytes": 8489,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/fanzy-free-full/tables/sentiment_source_summary.csv",
-        "bytes": 252
+        "bytes": 252,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/fanzy-free-full/tables/sentiment_summary.csv",
-        "bytes": 620
+        "bytes": 620,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/fanzy-free-full/tables/sentiment_theme_summary.csv",
-        "bytes": 1502
+        "bytes": 1502,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/fanzy-free-full/tables/theme_source_summary.csv",
-        "bytes": 30
+        "bytes": 30,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/fanzy-free-full/tables/theme_summary.csv",
-        "bytes": 178
+        "bytes": 178,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/fanzy-free-full/tables/theme_video_labels.csv",
-        "bytes": 8687
+        "bytes": 8687,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/fanzy-free-full/tables/theme_video_labels_long.csv",
-        "bytes": 5017
+        "bytes": 5017,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/fanzy-free-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 790
+        "bytes": 790,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/fanzy-free-full/tables/video_cluster_summary.csv",
-        "bytes": 1935
+        "bytes": 1935,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/fanzy-free-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 946
+        "bytes": 946,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/fanzy-free-full/tables/video_clusters.csv",
-        "bytes": 4260
+        "bytes": 4260,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/fanzy-free-full/tables/video_link_opportunities.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/fanzy-free-full/tables/video_metrics.csv",
-        "bytes": 3755
+        "bytes": 3755,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/fanzy-free-full/tables/video_network_metrics.csv",
-        "bytes": 5302
+        "bytes": 5302,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/fanzy-free-full/tables/video_network_summary.csv",
-        "bytes": 542
+        "bytes": 542,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/fanzy-free-full/figures/channel_activity.png",
-        "bytes": 82272
+        "bytes": 82272,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/fanzy-free-full/figures/commenter_tiers.png",
-        "bytes": 22374
+        "bytes": 22374,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/fanzy-free-full/figures/community_sizes.png",
-        "bytes": 25226
+        "bytes": 25226,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/fanzy-free-full/figures/video_cluster_sizes.png",
-        "bytes": 24014
+        "bytes": 24014,
+        "source_dir": null
       }
     ]
   },
@@ -655,6 +698,799 @@
         "max_core_number": 61
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 166,
+          "pct_active_commenters": 20.39312039312039,
+          "summary_zh": "20.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 780,
+          "avg_comments_per_commenter": 4.698795180722891,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 4.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【不動明王】約會跟女生互動的關鍵方法！男女審美價值觀差異大不同？？｜反正我很閒",
+            "count": 91
+          },
+          {
+            "label": "【聽團大暴怒】兄弟反目！偵查組啟動調查暴怒原因！｜反正我很閒",
+            "count": 75
+          },
+          {
+            "label": "【租房者悲歌】吸血房東來襲！房東漲價的背後秘密！｜反正我很閒",
+            "count": 59
+          },
+          {
+            "label": "【孤單山姆－最終章之山姆不孤單】去海邊被放生！忍無可忍！怒火燎原！｜反正我很閒",
+            "count": 57
+          },
+          {
+            "label": "【十分之一的愛】如何跟女友好好說話？交往長久走下去的方法！｜反正我很閒",
+            "count": 48
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 152
+          },
+          {
+            "label": "personal_team_life",
+            "count": 148
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 69
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 33
+          },
+          {
+            "label": "food_culture",
+            "count": 10
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "event_announcement",
+            "lift": 1.5933333333333333,
+            "n_commenters": 33
+          },
+          {
+            "theme": "survival_outdoor",
+            "lift": 1.5933333333333333,
+            "n_commenters": 33
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 1.4526860025220683,
+            "n_commenters": 141
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "戶外",
+            "求生"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.14255091103965703,
+          "neutral_rate": 0.6988210075026795,
+          "positive_rate": 0.15862808145766344,
+          "like_weighted_negative_rate": 0.16918366502544582,
+          "like_weighted_positive_rate": 0.2923993545450784,
+          "summary_zh": "中性討論為主；負面 14.3%，正面 15.9%，按讚加權負面 16.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "other",
+            "negative_rate": 0.16879795396419436,
+            "like_weighted_negative_rate": 0.2776622776622777,
+            "n_comments": 391,
+            "summary_zh": "other：負面 16.9%，按讚加權負面 27.8%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.13486005089058525,
+            "like_weighted_negative_rate": 0.05718901453957997,
+            "n_comments": 393,
+            "summary_zh": "personal_team_life：負面 13.5%，按讚加權負面 5.7%"
+          },
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.061855670103092786,
+            "like_weighted_negative_rate": 0.001558846453624318,
+            "n_comments": 97,
+            "summary_zh": "workplace_tech_career：負面 6.2%，按讚加權負面 0.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 162,
+          "pct_active_commenters": 19.901719901719904,
+          "summary_zh": "19.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 688,
+          "avg_comments_per_commenter": 4.246913580246914,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 4.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【大飯桶】分享的痛苦！台北六張犁飯桶的一天！｜反正我很閒",
+            "count": 67
+          },
+          {
+            "label": "【孤單山姆－最終章之山姆不孤單】去海邊被放生！忍無可忍！怒火燎原！｜反正我很閒",
+            "count": 65
+          },
+          {
+            "label": "【聽團大暴怒】兄弟反目！偵查組啟動調查暴怒原因！｜反正我很閒",
+            "count": 61
+          },
+          {
+            "label": "【租房者悲歌】吸血房東來襲！房東漲價的背後秘密！｜反正我很閒",
+            "count": 55
+          },
+          {
+            "label": "【直播主之亂】直播主生日趴狂歡！直播主背後秘辛揭秘！｜反正我很閒",
+            "count": 54
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 154
+          },
+          {
+            "label": "personal_team_life",
+            "count": 131
+          },
+          {
+            "label": "food_culture",
+            "count": 67
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 29
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 13
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "other",
+            "lift": 1.2898509483765246,
+            "n_commenters": 154
+          },
+          {
+            "theme": "food_culture",
+            "lift": 0.9179330675967448,
+            "n_commenters": 71
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 0.7973919780138996,
+            "n_commenters": 90
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化",
+            "夜市",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1278648974668275,
+          "neutral_rate": 0.6755126658624849,
+          "positive_rate": 0.19662243667068757,
+          "like_weighted_negative_rate": 0.20019139460414442,
+          "like_weighted_positive_rate": 0.24277669402627994,
+          "summary_zh": "中性討論為主；負面 12.8%，正面 19.7%，按讚加權負面 20.0%"
+        },
+        "negative_sources": [
+          {
+            "theme": "other",
+            "negative_rate": 0.1198044009779951,
+            "like_weighted_negative_rate": 0.3095950842917914,
+            "n_comments": 409,
+            "summary_zh": "other：負面 12.0%，按讚加權負面 31.0%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.20270270270270271,
+            "like_weighted_negative_rate": 0.2007361963190184,
+            "n_comments": 74,
+            "summary_zh": "food_culture：負面 20.3%，按讚加權負面 20.1%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.09473684210526316,
+            "like_weighted_negative_rate": 0.0128103389638363,
+            "n_comments": 285,
+            "summary_zh": "personal_team_life：負面 9.5%，按讚加權負面 1.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 161,
+          "pct_active_commenters": 19.77886977886978,
+          "summary_zh": "19.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 760,
+          "avg_comments_per_commenter": 4.720496894409938,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 4.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【邏輯俠】跟前任見面！邏輯俠之被遺忘的邏輯堡壘！｜反正我很閒",
+            "count": 114
+          },
+          {
+            "label": "【聖劍海盜】工作責任制地獄！夢想藍圖之老闆的格局！｜反正我很閒",
+            "count": 78
+          },
+          {
+            "label": "【錯愛404】魯蛇新女友！既然我感動不了你！我就放過我自己！｜反正我很閒",
+            "count": 74
+          },
+          {
+            "label": "【大飯桶】分享的痛苦！台北六張犁飯桶的一天！｜反正我很閒",
+            "count": 63
+          },
+          {
+            "label": "【統編戰士】一行眼淚＋一杯孤獨的酒！老闆心腹的抉擇！｜反正我很閒",
+            "count": 62
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 157
+          },
+          {
+            "label": "other",
+            "count": 123
+          },
+          {
+            "label": "food_culture",
+            "count": 63
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 59
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 8
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "food_culture",
+            "lift": 1.984938063063063,
+            "n_commenters": 138
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.1543293293293293,
+            "n_commenters": 157
+          },
+          {
+            "theme": "workplace_tech_career",
+            "lift": 0.9782354469854471,
+            "n_commenters": 59
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化",
+            "夜市",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10357142857142858,
+          "neutral_rate": 0.705952380952381,
+          "positive_rate": 0.19047619047619047,
+          "like_weighted_negative_rate": 0.08400247066090179,
+          "like_weighted_positive_rate": 0.09826492223033298,
+          "summary_zh": "中性討論為主；負面 10.4%，正面 19.0%，按讚加權負面 8.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.15714285714285714,
+            "like_weighted_negative_rate": 0.2622415669205658,
+            "n_comments": 70,
+            "summary_zh": "workplace_tech_career：負面 15.7%，按讚加權負面 26.2%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.08144796380090498,
+            "like_weighted_negative_rate": 0.09607067267875219,
+            "n_comments": 442,
+            "summary_zh": "personal_team_life：負面 8.1%，按讚加權負面 9.6%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.125,
+            "like_weighted_negative_rate": 0.04239401496259352,
+            "n_comments": 72,
+            "summary_zh": "food_culture：負面 12.5%，按讚加權負面 4.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 131,
+          "pct_active_commenters": 16.093366093366093,
+          "summary_zh": "16.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 588,
+          "avg_comments_per_commenter": 4.488549618320611,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 4.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【直播主之亂】直播主生日趴狂歡！直播主背後秘辛揭秘！｜反正我很閒",
+            "count": 76
+          },
+          {
+            "label": "【善良的瘤】欠債敗類打工還債！一心決定好好做人！｜反正我很閒",
+            "count": 54
+          },
+          {
+            "label": "【十分之一的愛】如何跟女友好好說話？交往長久走下去的方法！｜反正我很閒",
+            "count": 53
+          },
+          {
+            "label": "【鬼壓床地獄】恐怖原因大揭秘！鬼壓床破解招數！｜反正我很閒",
+            "count": 48
+          },
+          {
+            "label": "【錯愛404】魯蛇新女友！既然我感動不了你！我就放過我自己！｜反正我很閒",
+            "count": 47
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 120
+          },
+          {
+            "label": "personal_team_life",
+            "count": 117
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 55
+          },
+          {
+            "label": "food_culture",
+            "count": 20
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 14
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10872894333843798,
+          "neutral_rate": 0.6493108728943339,
+          "positive_rate": 0.24196018376722817,
+          "like_weighted_negative_rate": 0.054831612794042986,
+          "like_weighted_positive_rate": 0.49046651999774354,
+          "summary_zh": "中性討論為主；負面 10.9%，正面 24.2%，按讚加權負面 5.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "other",
+            "negative_rate": 0.08394160583941605,
+            "like_weighted_negative_rate": 0.11187357038885423,
+            "n_comments": 274,
+            "summary_zh": "other：負面 8.4%，按讚加權負面 11.2%"
+          },
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.17857142857142858,
+            "like_weighted_negative_rate": 0.017971898486003703,
+            "n_comments": 84,
+            "summary_zh": "workplace_tech_career：負面 17.9%，按讚加權負面 1.8%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.10505836575875487,
+            "like_weighted_negative_rate": 0.01600341406166649,
+            "n_comments": 257,
+            "summary_zh": "personal_team_life：負面 10.5%，按讚加權負面 1.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 123,
+          "pct_active_commenters": 15.11056511056511,
+          "summary_zh": "15.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 540,
+          "avg_comments_per_commenter": 4.390243902439025,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 4.4 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【山中的老禪】終於抖內到能約出來！與老禪的意外邂逅！｜反正我很閒",
+            "count": 85
+          },
+          {
+            "label": "【邏輯俠】跟前任見面！邏輯俠之被遺忘的邏輯堡壘！｜反正我很閒",
+            "count": 51
+          },
+          {
+            "label": "【籃球之神】橋下打球被嗆！松山區球神火爆開打！｜反正我很閒",
+            "count": 49
+          },
+          {
+            "label": "【錯愛404】魯蛇新女友！既然我感動不了你！我就放過我自己！｜反正我很閒",
+            "count": 43
+          },
+          {
+            "label": "【聽團大暴怒】兄弟反目！偵查組啟動調查暴怒原因！｜反正我很閒",
+            "count": 36
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 123
+          },
+          {
+            "label": "other",
+            "count": 92
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 30
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 16
+          },
+          {
+            "label": "food_culture",
+            "count": 11
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "戶外",
+            "求生",
+            "荒島",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.11336717428087986,
+          "neutral_rate": 0.7360406091370558,
+          "positive_rate": 0.1505922165820643,
+          "like_weighted_negative_rate": 0.177362835402483,
+          "like_weighted_positive_rate": 0.26361633960752906,
+          "summary_zh": "中性討論為主；負面 11.3%，正面 15.1%，按讚加權負面 17.7%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.09971509971509972,
+            "like_weighted_negative_rate": 0.2946675900277008,
+            "n_comments": 351,
+            "summary_zh": "personal_team_life：負面 10.0%，按讚加權負面 29.5%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.1411764705882353,
+            "like_weighted_negative_rate": 0.010736653742916791,
+            "n_comments": 170,
+            "summary_zh": "other：負面 14.1%，按讚加權負面 1.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合挑戰型企劃、戶外品牌合作與高記憶點系列內容。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 71,
+          "pct_active_commenters": 8.722358722358722,
+          "summary_zh": "8.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 330,
+          "avg_comments_per_commenter": 4.647887323943662,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 4.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【自由五老頭】社畜的背水一戰！站在自由面前的選擇！｜反正我很閒",
+            "count": 47
+          },
+          {
+            "label": "【十分之一的愛】如何跟女友好好說話？交往長久走下去的方法！｜反正我很閒",
+            "count": 46
+          },
+          {
+            "label": "【直播主之亂】直播主生日趴狂歡！直播主背後秘辛揭秘！｜反正我很閒",
+            "count": 42
+          },
+          {
+            "label": "【代購帝王】日本東京大爆賺！開啟帝王級的霸業！｜反正我很閒",
+            "count": 30
+          },
+          {
+            "label": "【山中的老禪】終於抖內到能約出來！與老禪的意外邂逅！｜反正我很閒",
+            "count": 20
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 65
+          },
+          {
+            "label": "other",
+            "count": 59
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 47
+          },
+          {
+            "label": "food_culture",
+            "count": 12
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.13131313131313133,
+          "neutral_rate": 0.6641414141414141,
+          "positive_rate": 0.20454545454545456,
+          "like_weighted_negative_rate": 0.19473319473319473,
+          "like_weighted_positive_rate": 0.0641025641025641,
+          "summary_zh": "中性討論為主；負面 13.1%，正面 20.5%，按讚加權負面 19.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.21666666666666667,
+            "like_weighted_negative_rate": 0.359769605671245,
+            "n_comments": 60,
+            "summary_zh": "workplace_tech_career：負面 21.7%，按讚加權負面 36.0%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.13812154696132597,
+            "like_weighted_negative_rate": 0.13165266106442577,
+            "n_comments": 181,
+            "summary_zh": "personal_team_life：負面 13.8%，按讚加權負面 13.2%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.0948905109489051,
+            "like_weighted_negative_rate": 0.04865771812080537,
+            "n_comments": 137,
+            "summary_zh": "other：負面 9.5%，按讚加權負面 4.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 21,
       "n_edges": 210,
@@ -723,6 +1559,356 @@
         "conductance": 0.6708533431843369,
         "avg_core_number": 20.0,
         "max_core_number": 20
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 14,
+          "date_min": "2023-01-16 11:28:14+00:00",
+          "date_max": "2023-11-27 11:28:01+00:00",
+          "pct_graph_videos": 66.66666666666666
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 6
+            },
+            {
+              "label": "other",
+              "count": 5
+            },
+            {
+              "label": "controversy_response",
+              "count": 3
+            },
+            {
+              "label": "food_culture",
+              "count": 2
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 1.5,
+              "n_videos": 2
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.5,
+              "n_videos": 2
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1,
+              "n_videos": 6
+            },
+            {
+              "theme": "other",
+              "lift": 0.9375000000000001,
+              "n_videos": 5
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【邏輯俠】跟前任見面！邏輯俠之被遺忘的邏輯堡壘！｜反正我很閒",
+              "count": 1196
+            },
+            {
+              "label": "【十分之一的愛】如何跟女友好好說話？交往長久走下去的方法！｜反正我很閒",
+              "count": 832
+            },
+            {
+              "label": "【直播主之亂】直播主生日趴狂歡！直播主背後秘辛揭秘！｜反正我很閒",
+              "count": 781
+            },
+            {
+              "label": "【山中的老禪】終於抖內到能約出來！與老禪的意外邂逅！｜反正我很閒",
+              "count": 769
+            },
+            {
+              "label": "【大飯桶】分享的痛苦！台北六張犁飯桶的一天！｜反正我很閒",
+              "count": 731
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10179431072210066,
+          "neutral_rate": 0.7011816192560175,
+          "positive_rate": 0.19702407002188183,
+          "like_weighted_negative_rate": 0.0885636207395099,
+          "like_weighted_positive_rate": 0.34875234685856943,
+          "summary_zh": "中性討論為主；負面 10.2%，正面 19.7%，按讚加權負面 8.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 7383560,
+          "total_observed_comments": 8941,
+          "unique_commenters": 6439,
+          "median_observed_commenters": 594,
+          "evidence_zh": "14 支影片；7,383,560 views；8,941 observed comments；6,439 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 91,
+          "external_edges": 98,
+          "conductance": 0.6708533431843369,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=91, external_edges=98, conductance=0.671"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (6); other (5); controversy_response (3); food_culture (2); workplace_tech_career (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.2%，正面 19.7%，按讚加權負面 8.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "14 支影片；7,383,560 views；8,941 observed comments；6,439 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=91, external_edges=98, conductance=0.671"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 7,
+          "date_min": "2024-03-07 11:47:11+00:00",
+          "date_max": "2024-12-02 11:30:03+00:00",
+          "pct_graph_videos": 33.33333333333333
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 3
+            },
+            {
+              "label": "other",
+              "count": 3
+            },
+            {
+              "label": "controversy_response",
+              "count": 2
+            },
+            {
+              "label": "business_brand",
+              "count": 1
+            },
+            {
+              "label": "event_announcement",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "event_announcement",
+              "lift": 3,
+              "n_videos": 1
+            },
+            {
+              "theme": "survival_outdoor",
+              "lift": 3,
+              "n_videos": 1
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.5,
+              "n_videos": 1
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.2,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【聽團大暴怒】兄弟反目！偵查組啟動調查暴怒原因！｜反正我很閒",
+              "count": 857
+            },
+            {
+              "label": "【租房者悲歌】吸血房東來襲！房東漲價的背後秘密！｜反正我很閒",
+              "count": 755
+            },
+            {
+              "label": "【孤單山姆－最終章之山姆不孤單】去海邊被放生！忍無可忍！怒火燎原！｜反正我很閒",
+              "count": 644
+            },
+            {
+              "label": "【不動明王】約會跟女生互動的關鍵方法！男女審美價值觀差異大不同？？｜反正我很閒",
+              "count": 573
+            },
+            {
+              "label": "【籃球貴族】籃球賤民的宿命！活在籃球場上的史詩故事｜反正我很閒",
+              "count": 515
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.16241685144124168,
+          "neutral_rate": 0.7211751662971175,
+          "positive_rate": 0.1164079822616408,
+          "like_weighted_negative_rate": 0.14840197802927219,
+          "like_weighted_positive_rate": 0.15028542033122033,
+          "summary_zh": "中性討論為主；負面 16.2%，正面 11.6%，按讚加權負面 14.8%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 2675646,
+          "total_observed_comments": 4119,
+          "unique_commenters": 3400,
+          "median_observed_commenters": 573,
+          "evidence_zh": "7 支影片；2,675,646 views；4,119 observed comments；3,400 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 21,
+          "external_edges": 98,
+          "conductance": 0.6708533431843369,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=21, external_edges=98, conductance=0.671"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (3); other (3); controversy_response (2); business_brand (1); event_announcement (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 16.2%，正面 11.6%，按讚加權負面 14.8%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "7 支影片；2,675,646 views；4,119 observed comments；3,400 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=21, external_edges=98, conductance=0.671"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1264,6 +2450,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

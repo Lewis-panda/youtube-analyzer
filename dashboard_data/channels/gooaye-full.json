@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "gooaye-full",
   "title": "Gooaye 股癌",
   "channel_id": "UC23rnlQU_qE3cec9x709peA",
@@ -100,224 +100,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/gooaye-full/tables/actor_communities.csv",
-        "bytes": 92158
+        "bytes": 92158,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/gooaye-full/tables/bridge_actors.csv",
-        "bytes": 11171
+        "bytes": 11171,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/gooaye-full/tables/channel_overview.csv",
-        "bytes": 358
+        "bytes": 358,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/gooaye-full/tables/commenter_activity.csv",
-        "bytes": 552867
+        "bytes": 552867,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/gooaye-full/tables/commenter_tiers.csv",
-        "bytes": 281
+        "bytes": 281,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/gooaye-full/tables/community_profiles.csv",
-        "bytes": 822
+        "bytes": 822,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/gooaye-full/tables/community_sentiment_summary.csv",
-        "bytes": 1041
+        "bytes": 1041,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/gooaye-full/tables/community_summary.csv",
-        "bytes": 509
+        "bytes": 509,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/gooaye-full/tables/community_theme_affinity.csv",
-        "bytes": 3616
+        "bytes": 3616,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/gooaye-full/tables/community_theme_sentiment.csv",
-        "bytes": 7647
+        "bytes": 7647,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/gooaye-full/tables/continuity_sensitivity.csv",
-        "bytes": 583
+        "bytes": 583,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/gooaye-full/tables/continuity_summary.csv",
-        "bytes": 629
+        "bytes": 629,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/gooaye-full/tables/diagnostics.csv",
-        "bytes": 1516
+        "bytes": 1516,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/gooaye-full/tables/network_actor_metrics.csv",
-        "bytes": 43659
+        "bytes": 43659,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/gooaye-full/tables/network_summary.csv",
-        "bytes": 623
+        "bytes": 623,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/gooaye-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 5330359
+        "bytes": 5330359,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/gooaye-full/tables/qwen_video_themes.csv",
-        "bytes": 613922
+        "bytes": 613922,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/gooaye-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2847
+        "bytes": 2847,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/gooaye-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 82271
+        "bytes": 82271,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/gooaye-full/tables/reply_sentiment_summary.csv",
-        "bytes": 747
+        "bytes": 747,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/gooaye-full/tables/reply_thread_metrics.csv",
-        "bytes": 5335288
+        "bytes": 5335288,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/gooaye-full/tables/reply_thread_overview.csv",
-        "bytes": 363
+        "bytes": 363,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/gooaye-full/tables/rolling_retention.csv",
-        "bytes": 1903
+        "bytes": 1903,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/gooaye-full/tables/sentiment_hotspots.csv",
-        "bytes": 99460
+        "bytes": 99460,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/gooaye-full/tables/sentiment_source_summary.csv",
-        "bytes": 252
+        "bytes": 252,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/gooaye-full/tables/sentiment_summary.csv",
-        "bytes": 620
+        "bytes": 620,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/gooaye-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2960
+        "bytes": 2960,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/gooaye-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/gooaye-full/tables/theme_summary.csv",
-        "bytes": 351
+        "bytes": 351,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/gooaye-full/tables/theme_video_labels.csv",
-        "bytes": 114078
+        "bytes": 114078,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/gooaye-full/tables/theme_video_labels_long.csv",
-        "bytes": 45457
+        "bytes": 45457,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/gooaye-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 769
+        "bytes": 769,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/gooaye-full/tables/video_cluster_summary.csv",
-        "bytes": 1100
+        "bytes": 1100,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/gooaye-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 2116
+        "bytes": 2116,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/gooaye-full/tables/video_clusters.csv",
-        "bytes": 38562
+        "bytes": 38562,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/gooaye-full/tables/video_link_opportunities.csv",
-        "bytes": 44933
+        "bytes": 44933,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/gooaye-full/tables/video_metrics.csv",
-        "bytes": 28860
+        "bytes": 28860,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/gooaye-full/tables/video_network_metrics.csv",
-        "bytes": 64143
+        "bytes": 64143,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/gooaye-full/tables/video_network_summary.csv",
-        "bytes": 597
+        "bytes": 597,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/gooaye-full/figures/channel_activity.png",
-        "bytes": 83084
+        "bytes": 83084,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/gooaye-full/figures/commenter_tiers.png",
-        "bytes": 26282
+        "bytes": 26282,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/gooaye-full/figures/community_sizes.png",
-        "bytes": 23846
+        "bytes": 23846,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/gooaye-full/figures/rolling_retention.png",
-        "bytes": 40406
+        "bytes": 40406,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/gooaye-full/figures/video_cluster_sizes.png",
-        "bytes": 26332
+        "bytes": 26332,
+        "source_dir": null
       }
     ]
   },
@@ -627,6 +671,433 @@
         "max_core_number": 65
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 639,
+          "pct_active_commenters": 62.95566502463055,
+          "summary_zh": "63.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 8191,
+          "avg_comments_per_commenter": 12.818466353677621,
+          "n_videos_touched": 350,
+          "summary_zh": "平均留言 12.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "EP619 | 🛰️",
+            "count": 70
+          },
+          {
+            "label": "EP503 | 👶",
+            "count": 61
+          },
+          {
+            "label": "EP515 | 🥓",
+            "count": 60
+          },
+          {
+            "label": "EP546 | 🕶️",
+            "count": 53
+          },
+          {
+            "label": "EP547 | 🚞",
+            "count": 53
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 513
+          },
+          {
+            "label": "business_brand",
+            "count": 496
+          },
+          {
+            "label": "product_review",
+            "count": 389
+          },
+          {
+            "label": "controversy_response",
+            "count": 339
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 276
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "workplace_tech_career",
+            "lift": 1.343028454442511,
+            "n_commenters": 90
+          },
+          {
+            "theme": "other",
+            "lift": 1.155007999070801,
+            "n_commenters": 507
+          },
+          {
+            "theme": "food_culture",
+            "lift": 1.073847467578664,
+            "n_commenters": 371
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "product_review",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08742869679684072,
+          "neutral_rate": 0.47729267222465993,
+          "positive_rate": 0.43527863097849934,
+          "like_weighted_negative_rate": 0.09766306243460063,
+          "like_weighted_positive_rate": 0.3445238925706313,
+          "summary_zh": "中性討論為主；負面 8.7%，正面 43.5%，按讚加權負面 9.8%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.12903225806451613,
+            "like_weighted_negative_rate": 0.20140515222482436,
+            "n_comments": 124,
+            "summary_zh": "travel_exploration：負面 12.9%，按讚加權負面 20.1%"
+          },
+          {
+            "theme": "business_brand",
+            "negative_rate": 0.1100244498777506,
+            "like_weighted_negative_rate": 0.1333833458364591,
+            "n_comments": 2454,
+            "summary_zh": "business_brand：負面 11.0%，按讚加權負面 13.3%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.06578947368421052,
+            "like_weighted_negative_rate": 0.10766045548654245,
+            "n_comments": 228,
+            "summary_zh": "personal_team_life：負面 6.6%，按讚加權負面 10.8%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 306,
+          "pct_active_commenters": 30.147783251231523,
+          "summary_zh": "30.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 5056,
+          "avg_comments_per_commenter": 16.522875816993466,
+          "n_videos_touched": 338,
+          "summary_zh": "平均留言 16.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "EP339 | 🤌",
+            "count": 60
+          },
+          {
+            "label": "EP344 | 🧶",
+            "count": 59
+          },
+          {
+            "label": "EP380 | 🍂",
+            "count": 51
+          },
+          {
+            "label": "EP379 | 💫",
+            "count": 50
+          },
+          {
+            "label": "EP365 | 👀",
+            "count": 49
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "business_brand",
+            "count": 274
+          },
+          {
+            "label": "product_review",
+            "count": 259
+          },
+          {
+            "label": "other",
+            "count": 236
+          },
+          {
+            "label": "controversy_response",
+            "count": 176
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 171
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.6485059205563026,
+            "n_commenters": 26
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.35973648033422,
+            "n_commenters": 122
+          },
+          {
+            "theme": "product_review",
+            "lift": 1.0991145998715097,
+            "n_commenters": 298
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "product_review",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08793164827340691,
+          "neutral_rate": 0.5471698113207547,
+          "positive_rate": 0.36489854040583836,
+          "like_weighted_negative_rate": 0.12329240878436798,
+          "like_weighted_positive_rate": 0.3189521009856476,
+          "summary_zh": "中性討論為主；負面 8.8%，正面 36.5%，按讚加權負面 12.3%"
+        },
+        "negative_sources": [
+          {
+            "theme": "business_brand",
+            "negative_rate": 0.10459770114942529,
+            "like_weighted_negative_rate": 0.1540667361835245,
+            "n_comments": 1740,
+            "summary_zh": "business_brand：負面 10.5%，按讚加權負面 15.4%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.08932038834951456,
+            "like_weighted_negative_rate": 0.12505789717461788,
+            "n_comments": 1030,
+            "summary_zh": "other：負面 8.9%，按讚加權負面 12.5%"
+          },
+          {
+            "theme": "product_review",
+            "negative_rate": 0.0812603648424544,
+            "like_weighted_negative_rate": 0.11358942585708386,
+            "n_comments": 1206,
+            "summary_zh": "product_review：負面 8.1%，按讚加權負面 11.4%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 70,
+          "pct_active_commenters": 6.896551724137931,
+          "summary_zh": "6.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 530,
+          "avg_comments_per_commenter": 7.571428571428571,
+          "n_videos_touched": 236,
+          "summary_zh": "平均留言 7.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "EP319 | 👑",
+            "count": 10
+          },
+          {
+            "label": "EP433 | 🐦",
+            "count": 7
+          },
+          {
+            "label": "EP389 | 🐸",
+            "count": 6
+          },
+          {
+            "label": "EP473 | 🌀",
+            "count": 6
+          },
+          {
+            "label": "EP472 | 🦏",
+            "count": 6
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "business_brand",
+            "count": 50
+          },
+          {
+            "label": "other",
+            "count": 47
+          },
+          {
+            "label": "product_review",
+            "count": 42
+          },
+          {
+            "label": "controversy_response",
+            "count": 26
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 22
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "product_review",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08034188034188035,
+          "neutral_rate": 0.7333333333333333,
+          "positive_rate": 0.18632478632478633,
+          "like_weighted_negative_rate": 0.09166666666666666,
+          "like_weighted_positive_rate": 0.20462962962962963,
+          "summary_zh": "中性討論為主；負面 8.0%，正面 18.6%，按讚加權負面 9.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.11475409836065574,
+            "like_weighted_negative_rate": 0.09836065573770492,
+            "n_comments": 61,
+            "summary_zh": "controversy_response：負面 11.5%，按讚加權負面 9.8%"
+          },
+          {
+            "theme": "business_brand",
+            "negative_rate": 0.07734806629834254,
+            "like_weighted_negative_rate": 0.0946372239747634,
+            "n_comments": 181,
+            "summary_zh": "business_brand：負面 7.7%，按讚加權負面 9.5%"
+          },
+          {
+            "theme": "product_review",
+            "negative_rate": 0.08333333333333333,
+            "like_weighted_negative_rate": 0.09316770186335403,
+            "n_comments": 108,
+            "summary_zh": "product_review：負面 8.3%，按讚加權負面 9.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 350,
       "n_edges": 54901,
@@ -695,6 +1166,354 @@
         "conductance": 0.4095327947006574,
         "avg_core_number": 262.60869565217394,
         "max_core_number": 281
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 189,
+          "date_min": "2024-05-04 09:27:33+00:00",
+          "date_max": "2026-05-09 04:10:55+00:00",
+          "pct_graph_videos": 54
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 83
+            },
+            {
+              "label": "product_review",
+              "count": 76
+            },
+            {
+              "label": "other",
+              "count": 55
+            },
+            {
+              "label": "food_culture",
+              "count": 26
+            },
+            {
+              "label": "controversy_response",
+              "count": 20
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.3888888888888888,
+              "n_videos": 3
+            },
+            {
+              "theme": "other",
+              "lift": 1.2574302697759487,
+              "n_videos": 55
+            },
+            {
+              "theme": "event_announcement",
+              "lift": 1.2345679012345678,
+              "n_videos": 4
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.1396011396011394,
+              "n_videos": 8
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "EP619 | 🛰️",
+              "count": 139
+            },
+            {
+              "label": "EP503 | 👶",
+              "count": 104
+            },
+            {
+              "label": "EP547 | 🚞",
+              "count": 103
+            },
+            {
+              "label": "EP546 | 🕶️",
+              "count": 100
+            },
+            {
+              "label": "EP514 | 🦎",
+              "count": 99
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "product_review",
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10207214121258634,
+          "neutral_rate": 0.512854950115119,
+          "positive_rate": 0.3850729086722947,
+          "like_weighted_negative_rate": 0.12329551555062453,
+          "like_weighted_positive_rate": 0.31555778247020505,
+          "summary_zh": "中性討論為主；負面 10.2%，正面 38.5%，按讚加權負面 12.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 4390308,
+          "total_observed_comments": 8683,
+          "unique_commenters": 2471,
+          "median_observed_commenters": 41,
+          "evidence_zh": "189 支影片；4,390,308 views；8,683 observed comments；2,471 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 17196,
+          "external_edges": 25551,
+          "conductance": 0.4095327947006574,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=17,196, external_edges=25,551, conductance=0.410"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (83); product_review (76); other (55); food_culture (26); controversy_response (20)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.2%，正面 38.5%，按讚加權負面 12.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "189 支影片；4,390,308 views；8,683 observed comments；2,471 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=17,196, external_edges=25,551, conductance=0.410"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 161,
+          "date_min": "2023-01-04 09:30:57+00:00",
+          "date_max": "2024-08-14 08:59:09+00:00",
+          "pct_graph_videos": 46
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 87
+            },
+            {
+              "label": "product_review",
+              "count": 75
+            },
+            {
+              "label": "other",
+              "count": 26
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 21
+            },
+            {
+              "label": "food_culture",
+              "count": 17
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "city_lifestyle",
+              "lift": 2.1739130434782608,
+              "n_videos": 1
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.4492753623188406,
+              "n_videos": 6
+            },
+            {
+              "theme": "automotive_luxury",
+              "lift": 1.2681159420289856,
+              "n_videos": 21
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.112531969309463,
+              "n_videos": 87
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "EP344 | 🧶",
+              "count": 222
+            },
+            {
+              "label": "EP339 | 🤌",
+              "count": 182
+            },
+            {
+              "label": "EP422 | 🕸",
+              "count": 107
+            },
+            {
+              "label": "EP380 | 🍂",
+              "count": 97
+            },
+            {
+              "label": "EP345 | 🪴",
+              "count": 91
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "product_review",
+            "車",
+            "精品",
+            "生活風格"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08798195242001641,
+          "neutral_rate": 0.5430680885972108,
+          "positive_rate": 0.3689499589827728,
+          "like_weighted_negative_rate": 0.11295,
+          "like_weighted_positive_rate": 0.3274,
+          "summary_zh": "中性討論為主；負面 8.8%，正面 36.9%，按讚加權負面 11.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 3057757,
+          "total_observed_comments": 8552,
+          "unique_commenters": 2143,
+          "median_observed_commenters": 49,
+          "evidence_zh": "161 支影片；3,057,757 views；8,552 observed comments；2,143 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 12154,
+          "external_edges": 25551,
+          "conductance": 0.4095327947006574,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=12,154, external_edges=25,551, conductance=0.410"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (87); product_review (75); other (26); automotive_luxury (21); food_culture (17)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 8.8%，正面 36.9%，按讚加權負面 11.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "161 支影片；3,057,757 views；8,552 observed comments；2,143 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=12,154, external_edges=25,551, conductance=0.410"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1236,6 +2055,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "tolocat-full",
   "title": "老皮（Opchannel）",
   "channel_id": "UC6yxPVu2b52UVJQEwCTzivQ",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/tolocat-full/tables/actor_communities.csv",
-        "bytes": 29565
+        "bytes": 29565,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/tolocat-full/tables/bridge_actors.csv",
-        "bytes": 11103
+        "bytes": 11103,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/tolocat-full/tables/channel_overview.csv",
-        "bytes": 369
+        "bytes": 369,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/tolocat-full/tables/commenter_activity.csv",
-        "bytes": 721194
+        "bytes": 721194,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/tolocat-full/tables/commenter_tiers.csv",
-        "bytes": 269
+        "bytes": 269,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/tolocat-full/tables/community_profiles.csv",
-        "bytes": 4109
+        "bytes": 4109,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/tolocat-full/tables/community_sentiment_summary.csv",
-        "bytes": 1488
+        "bytes": 1488,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/tolocat-full/tables/community_summary.csv",
-        "bytes": 659
+        "bytes": 659,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/tolocat-full/tables/community_theme_affinity.csv",
-        "bytes": 7112
+        "bytes": 7112,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/tolocat-full/tables/community_theme_sentiment.csv",
-        "bytes": 11501
+        "bytes": 11501,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/tolocat-full/tables/continuity_sensitivity.csv",
-        "bytes": 588
+        "bytes": 588,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/tolocat-full/tables/continuity_summary.csv",
-        "bytes": 630
+        "bytes": 630,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/tolocat-full/tables/diagnostics.csv",
-        "bytes": 1526
+        "bytes": 1526,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/tolocat-full/tables/network_actor_metrics.csv",
-        "bytes": 37249
+        "bytes": 37249,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/tolocat-full/tables/network_summary.csv",
-        "bytes": 635
+        "bytes": 635,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/tolocat-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 3049726
+        "bytes": 3049726,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/tolocat-full/tables/qwen_video_themes.csv",
-        "bytes": 518675
+        "bytes": 518675,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/tolocat-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 3028
+        "bytes": 3028,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/tolocat-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 126371
+        "bytes": 126371,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/tolocat-full/tables/reply_sentiment_summary.csv",
-        "bytes": 742
+        "bytes": 742,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/tolocat-full/tables/reply_thread_metrics.csv",
-        "bytes": 2775241
+        "bytes": 2775241,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/tolocat-full/tables/reply_thread_overview.csv",
-        "bytes": 361
+        "bytes": 361,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/tolocat-full/tables/rolling_retention.csv",
-        "bytes": 1909
+        "bytes": 1909,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/tolocat-full/tables/sentiment_hotspots.csv",
-        "bytes": 145669
+        "bytes": 145669,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/tolocat-full/tables/sentiment_source_summary.csv",
-        "bytes": 251
+        "bytes": 251,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/tolocat-full/tables/sentiment_summary.csv",
-        "bytes": 620
+        "bytes": 620,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/tolocat-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2915
+        "bytes": 2915,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/tolocat-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/tolocat-full/tables/theme_summary.csv",
-        "bytes": 348
+        "bytes": 348,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/tolocat-full/tables/theme_video_labels.csv",
-        "bytes": 171620
+        "bytes": 171620,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/tolocat-full/tables/theme_video_labels_long.csv",
-        "bytes": 126133
+        "bytes": 126133,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/tolocat-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 2125
+        "bytes": 2125,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/tolocat-full/tables/video_cluster_summary.csv",
-        "bytes": 6944
+        "bytes": 6944,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/tolocat-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 4797
+        "bytes": 4797,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/tolocat-full/tables/video_clusters.csv",
-        "bytes": 23039
+        "bytes": 23039,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/tolocat-full/tables/video_link_opportunities.csv",
-        "bytes": 124886
+        "bytes": 124886,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/tolocat-full/tables/video_metrics.csv",
-        "bytes": 79850
+        "bytes": 79850,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/tolocat-full/tables/video_network_metrics.csv",
-        "bytes": 25160
+        "bytes": 25160,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/tolocat-full/tables/video_network_summary.csv",
-        "bytes": 603
+        "bytes": 603,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/tolocat-full/figures/channel_activity.png",
-        "bytes": 83633
+        "bytes": 83633,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/tolocat-full/figures/commenter_tiers.png",
-        "bytes": 22004
+        "bytes": 22004,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/tolocat-full/figures/community_sizes.png",
-        "bytes": 23922
+        "bytes": 23922,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/tolocat-full/figures/rolling_retention.png",
-        "bytes": 40821
+        "bytes": 40821,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/tolocat-full/figures/video_cluster_sizes.png",
-        "bytes": 25172
+        "bytes": 25172,
+        "source_dir": null
       }
     ]
   },
@@ -665,6 +709,672 @@
         "max_core_number": 14
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 81,
+          "pct_active_commenters": 26.557377049180324,
+          "summary_zh": "26.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 890,
+          "avg_comments_per_commenter": 10.987654320987655,
+          "n_videos_touched": 272,
+          "summary_zh": "平均留言 11.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【老皮實況】第五屆 「AI音樂殘酷二選一」巔峰之戰開打😲讓所有人聽到雞皮疙瘩的歌曲...居然是病",
+            "count": 16
+          },
+          {
+            "label": "【老皮實況】第六屆 「AI音樂殘酷二選一」MV超進化😎蔡倫將軍居然還有第二季OP...有史以來最",
+            "count": 14
+          },
+          {
+            "label": "【老皮實況】吼呦！哥哥你很煩耶😏只能用語音教AI妹妹開車，車會先壞掉還是你的理智線先斷掉😂 |",
+            "count": 11
+          },
+          {
+            "label": "【老皮實況】 「終極MV之戰」超有創意的投稿竟然觀眾陷入兩難？！ | 『AI音樂殘酷二選一』 #",
+            "count": 11
+          },
+          {
+            "label": "【老皮實況】信皮航空 高雄-澎湖 5487號航班，皮機長邊開邊學，有辦法帶著觀眾平安抵達嗎？ |",
+            "count": 10
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 68
+          },
+          {
+            "label": "controversy_response",
+            "count": 65
+          },
+          {
+            "label": "personal_team_life",
+            "count": 57
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 44
+          },
+          {
+            "label": "travel_exploration",
+            "count": 27
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "automotive_luxury",
+            "lift": 1.6242963842310925,
+            "n_commenters": 32
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.41452744881361,
+            "n_commenters": 57
+          },
+          {
+            "theme": "workplace_tech_career",
+            "lift": 1.3177713170128793,
+            "n_commenters": 41
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "戶外",
+            "求生"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.06330275229357799,
+          "neutral_rate": 0.6522935779816513,
+          "positive_rate": 0.28440366972477066,
+          "like_weighted_negative_rate": 0.05530829030918046,
+          "like_weighted_positive_rate": 0.2637825648329476,
+          "summary_zh": "中性討論為主；負面 6.3%，正面 28.4%，按讚加權負面 5.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "travel_exploration",
+            "negative_rate": 0.10909090909090909,
+            "like_weighted_negative_rate": 0.10909090909090909,
+            "n_comments": 55,
+            "summary_zh": "travel_exploration：負面 10.9%，按讚加權負面 10.9%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.07224334600760456,
+            "like_weighted_negative_rate": 0.06121919584954604,
+            "n_comments": 263,
+            "summary_zh": "controversy_response：負面 7.2%，按讚加權負面 6.1%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.06666666666666667,
+            "like_weighted_negative_rate": 0.03211716341212744,
+            "n_comments": 210,
+            "summary_zh": "personal_team_life：負面 6.7%，按讚加權負面 3.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 79,
+          "pct_active_commenters": 25.901639344262296,
+          "summary_zh": "25.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 560,
+          "avg_comments_per_commenter": 7.0886075949367084,
+          "n_videos_touched": 216,
+          "summary_zh": "平均留言 7.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【老皮實況】太空垃圾幫！巨人來襲篇😮一口一個咖波脆，快逃啊～ | 致命公司 Lethal Com",
+            "count": 12
+          },
+          {
+            "label": "【老皮實況】觀眾投稿了自製的AI音樂，居然搞出了張震嶽、周杰倫風格！？太神了吧！ | AI音樂鑑",
+            "count": 11
+          },
+          {
+            "label": "【老皮實況】SCP收容失「笑」之 何老師被弄到不要不要🤣面對SCP居然有通關密語可以保命?! |",
+            "count": 10
+          },
+          {
+            "label": "【老皮實況】雙人企鵝爬山！用繩子綁在一起的生命共同體🤣據說有99%的朋友在半山腰就絕交了 | B",
+            "count": 9
+          },
+          {
+            "label": "【老皮實況】超級小粉腸 Is Back😏粉腸娘的生物進化史，皮氏審美觀越來越棒了 | 苞子 SP",
+            "count": 8
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 64
+          },
+          {
+            "label": "personal_team_life",
+            "count": 54
+          },
+          {
+            "label": "controversy_response",
+            "count": 54
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 30
+          },
+          {
+            "label": "food_culture",
+            "count": 19
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "戶外",
+            "求生"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.05580693815987934,
+          "neutral_rate": 0.5776772247360482,
+          "positive_rate": 0.3665158371040724,
+          "like_weighted_negative_rate": 0.05897753892793165,
+          "like_weighted_positive_rate": 0.4012677414909742,
+          "summary_zh": "中性討論為主；負面 5.6%，正面 36.7%，按讚加權負面 5.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "other",
+            "negative_rate": 0.05701754385964912,
+            "like_weighted_negative_rate": 0.057180851063829786,
+            "n_comments": 228,
+            "summary_zh": "other：負面 5.7%，按讚加權負面 5.7%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.05442176870748299,
+            "like_weighted_negative_rate": 0.05242905242905243,
+            "n_comments": 147,
+            "summary_zh": "personal_team_life：負面 5.4%，按讚加權負面 5.2%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.034722222222222224,
+            "like_weighted_negative_rate": 0.03276353276353276,
+            "n_comments": 144,
+            "summary_zh": "controversy_response：負面 3.5%，按讚加權負面 3.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 62,
+          "pct_active_commenters": 20.327868852459016,
+          "summary_zh": "20.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 631,
+          "avg_comments_per_commenter": 10.17741935483871,
+          "n_videos_touched": 205,
+          "summary_zh": "平均留言 10.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【老皮實況】新連載！回鍋RUST第一天就抄家🤣居然就遇到小屁孩！？ | RUST 生存系列",
+            "count": 33
+          },
+          {
+            "label": "【老皮實況】Rust 一上線家都沒了😱為了農裝前往地下鐵，居然引發一場瘋狂追逐戰！ | Rust",
+            "count": 24
+          },
+          {
+            "label": "【老皮實況】Rust 小屁孩系列最終章！再戰小屁孩，要2:1嚕老哥🤣但這次居然捅到伺服器大咖？！",
+            "count": 23
+          },
+          {
+            "label": "【老皮實況】畫圖解謎小遊戲！Q之IQ測試智商😎我的智商測出來居然....? | Q REMAST",
+            "count": 9
+          },
+          {
+            "label": "【老皮實況】你的血，是他的菜，你的恐懼，是他的最愛『變形皮王』🤣這會是旅途的終點嗎？ | Bar",
+            "count": 8
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "survival_outdoor",
+            "count": 54
+          },
+          {
+            "label": "other",
+            "count": 49
+          },
+          {
+            "label": "controversy_response",
+            "count": 44
+          },
+          {
+            "label": "personal_team_life",
+            "count": 39
+          },
+          {
+            "label": "food_culture",
+            "count": 14
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "physical_challenge",
+            "lift": 1.9231273776728322,
+            "n_commenters": 33
+          },
+          {
+            "theme": "survival_outdoor",
+            "lift": 1.6021700647550987,
+            "n_commenters": 54
+          },
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.4178756329293964,
+            "n_commenters": 13
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "戶外",
+            "求生",
+            "荒島",
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07301173402868318,
+          "neutral_rate": 0.5840938722294654,
+          "positive_rate": 0.3428943937418514,
+          "like_weighted_negative_rate": 0.06900328587075576,
+          "like_weighted_positive_rate": 0.4790069368382621,
+          "summary_zh": "中性討論為主；負面 7.3%，正面 34.3%，按讚加權負面 6.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "survival_outdoor",
+            "negative_rate": 0.11602209944751381,
+            "like_weighted_negative_rate": 0.1207667731629393,
+            "n_comments": 181,
+            "summary_zh": "survival_outdoor：負面 11.6%，按讚加權負面 12.1%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.03669724770642202,
+            "like_weighted_negative_rate": 0.06937269372693727,
+            "n_comments": 218,
+            "summary_zh": "other：負面 3.7%，按讚加權負面 6.9%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.07692307692307693,
+            "like_weighted_negative_rate": 0.056152927120669056,
+            "n_comments": 130,
+            "summary_zh": "personal_team_life：負面 7.7%，按讚加權負面 5.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合挑戰型企劃、戶外品牌合作與高記憶點系列內容。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 51,
+          "pct_active_commenters": 16.721311475409838,
+          "summary_zh": "16.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 567,
+          "avg_comments_per_commenter": 11.117647058823529,
+          "n_videos_touched": 209,
+          "summary_zh": "平均留言 11.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【老皮實況】超爆笑！太空撿垃圾😎業績不達標就會被排泄，拚上命進入異星廢墟探索 | 致命公司 Le",
+            "count": 18
+          },
+          {
+            "label": "【老皮實況】那個超乎常人的何老師來了😂設計出的鐵路，迪士尼CEO驚呼神奇?? | RAILROA",
+            "count": 14
+          },
+          {
+            "label": "【老皮實況】太空垃圾幫！巨人來襲篇😮一口一個咖波脆，快逃啊～ | 致命公司 Lethal Com",
+            "count": 12
+          },
+          {
+            "label": "【老皮實況】畫圖解謎小遊戲！Q之IQ測試智商😎我的智商測出來居然....? | Q REMAST",
+            "count": 11
+          },
+          {
+            "label": "【老皮實況】ARMA3 『代號 : 教召行動』💪號召近百位觀眾一起用遊戲來教召演習，這些新兵的表",
+            "count": 9
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 50
+          },
+          {
+            "label": "controversy_response",
+            "count": 39
+          },
+          {
+            "label": "personal_team_life",
+            "count": 35
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 26
+          },
+          {
+            "label": "food_culture",
+            "count": 17
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "戶外",
+            "求生"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08566978193146417,
+          "neutral_rate": 0.5514018691588785,
+          "positive_rate": 0.3629283489096573,
+          "like_weighted_negative_rate": 0.05617210175857948,
+          "like_weighted_positive_rate": 0.5542086392351033,
+          "summary_zh": "中性討論為主；負面 8.6%，正面 36.3%，按讚加權負面 5.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "survival_outdoor",
+            "negative_rate": 0.12698412698412698,
+            "like_weighted_negative_rate": 0.25,
+            "n_comments": 63,
+            "summary_zh": "survival_outdoor：負面 12.7%，按讚加權負面 25.0%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.05714285714285714,
+            "like_weighted_negative_rate": 0.07249712313003452,
+            "n_comments": 140,
+            "summary_zh": "personal_team_life：負面 5.7%，按讚加權負面 7.2%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.09523809523809523,
+            "like_weighted_negative_rate": 0.05743740795287187,
+            "n_comments": 231,
+            "summary_zh": "other：負面 9.5%，按讚加權負面 5.7%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 32,
+          "pct_active_commenters": 10.491803278688524,
+          "summary_zh": "10.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 380,
+          "avg_comments_per_commenter": 11.875,
+          "n_videos_touched": 173,
+          "summary_zh": "平均留言 11.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【老皮實況】觀眾有bear而來🤩居然還自製MV來參賽，水準越來越高，讓人選擇困難發作啦 | 『A",
+            "count": 12
+          },
+          {
+            "label": "【老皮實況】從小被阿罵家荼毒的美學，兄弟黨設計師！直接把洋房豪宅改造成台灣老宅🤣 | 房產達人2",
+            "count": 12
+          },
+          {
+            "label": "【老皮實況】第七屆 「AI音樂殘酷二選一」😏迪O尼華麗歌劇 vs. 味道超濃郁神曲！這真的是我能",
+            "count": 9
+          },
+          {
+            "label": "【老皮實況】鵝~八嘎鴨肉🤣「聲音動物園」滿坑滿谷都是我的怪聲，這遊戲根本是公開處刑吧！！😂 |",
+            "count": 9
+          },
+          {
+            "label": "【老皮實況】勸世模擬器🤣四人辛勤經營餐廳，還是敵不過資源黑洞的能力，結局讓人笑到噴淚 | 餐廳模",
+            "count": 9
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 31
+          },
+          {
+            "label": "personal_team_life",
+            "count": 25
+          },
+          {
+            "label": "controversy_response",
+            "count": 25
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 18
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 12
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "戶外",
+            "求生"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.05353319057815846,
+          "neutral_rate": 0.6316916488222698,
+          "positive_rate": 0.3147751605995717,
+          "like_weighted_negative_rate": 0.15257854179016006,
+          "like_weighted_positive_rate": 0.375696502667457,
+          "summary_zh": "中性討論為主；負面 5.4%，正面 31.5%，按讚加權負面 15.3%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.05263157894736842,
+            "like_weighted_negative_rate": 0.3645200486026732,
+            "n_comments": 114,
+            "summary_zh": "controversy_response：負面 5.3%，按讚加權負面 36.5%"
+          },
+          {
+            "theme": "other",
+            "negative_rate": 0.09090909090909091,
+            "like_weighted_negative_rate": 0.149812734082397,
+            "n_comments": 143,
+            "summary_zh": "other：負面 9.1%，按讚加權負面 15.0%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.038461538461538464,
+            "like_weighted_negative_rate": 0.020669992872416252,
+            "n_comments": 104,
+            "summary_zh": "personal_team_life：負面 3.8%，按讚加權負面 2.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 90,
       "n_edges": 266,
@@ -871,6 +1581,1142 @@
         "conductance": 0.0,
         "avg_core_number": 1.0,
         "max_core_number": 1
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 19,
+          "date_min": "2023-05-21 10:46:36+00:00",
+          "date_max": "2026-04-26 10:27:40+00:00",
+          "pct_graph_videos": 21.11111111111111
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 10
+            },
+            {
+              "label": "personal_team_life",
+              "count": 7
+            },
+            {
+              "label": "other",
+              "count": 5
+            },
+            {
+              "label": "education_advice",
+              "count": 3
+            },
+            {
+              "label": "product_review",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "education_advice",
+              "lift": 4.7368421052631575,
+              "n_videos": 3
+            },
+            {
+              "theme": "event_announcement",
+              "lift": 2.3684210526315788,
+              "n_videos": 2
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.5789473684210527,
+              "n_videos": 1
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.3533834586466165,
+              "n_videos": 10
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【老皮實況】從小被阿罵家荼毒的美學，兄弟黨設計師！直接把洋房豪宅改造成台灣老宅🤣 | 房產達人2",
+              "count": 100
+            },
+            {
+              "label": "【老皮實況】觀眾有bear而來🤩居然還自製MV來參賽，水準越來越高，讓人選擇困難發作啦 | 『A",
+              "count": 93
+            },
+            {
+              "label": "【老皮實況】觀眾投稿了自製的AI音樂，居然搞出了張震嶽、周杰倫風格！？太神了吧！ | AI音樂鑑",
+              "count": 90
+            },
+            {
+              "label": "【老皮實況】模擬市民的黑暗玩法，那個煞爽的男人回來了😨他到底是怎麼一步一步地走上伊藤誠的道路呢？",
+              "count": 65
+            },
+            {
+              "label": "【老皮實況】 「終極MV之戰」超有創意的投稿竟然觀眾陷入兩難？！ | 『AI音樂殘酷二選一』 #",
+              "count": 65
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.04157549234135667,
+          "neutral_rate": 0.5886214442013129,
+          "positive_rate": 0.36980306345733044,
+          "like_weighted_negative_rate": 0.02549622588761532,
+          "like_weighted_positive_rate": 0.47028235951915015,
+          "summary_zh": "中性討論為主；負面 4.2%，正面 37.0%，按讚加權負面 2.5%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1849367,
+          "total_observed_comments": 1033,
+          "unique_commenters": 791,
+          "median_observed_commenters": 53,
+          "evidence_zh": "19 支影片；1,849,367 views；1,033 observed comments；791 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 37,
+          "external_edges": 57,
+          "conductance": 0.4074074074074074,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=37, external_edges=57, conductance=0.407"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (10); personal_team_life (7); other (5); education_advice (3); product_review (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 4.2%，正面 37.0%，按讚加權負面 2.5%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "19 支影片；1,849,367 views；1,033 observed comments；791 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=37, external_edges=57, conductance=0.407"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 15,
+          "date_min": "2023-01-11 11:30:07+00:00",
+          "date_max": "2026-02-04 10:00:22+00:00",
+          "pct_graph_videos": 16.666666666666664
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "survival_outdoor",
+              "count": 8
+            },
+            {
+              "label": "personal_team_life",
+              "count": 4
+            },
+            {
+              "label": "controversy_response",
+              "count": 4
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 2
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【老皮實況】Rust 小屁孩系列最終章！再戰小屁孩，要2:1嚕老哥🤣但這次居然捅到伺服器大咖？！",
+              "count": 196
+            },
+            {
+              "label": "【老皮實況】新連載！回鍋RUST第一天就抄家🤣居然就遇到小屁孩！？ | RUST 生存系列",
+              "count": 140
+            },
+            {
+              "label": "【老皮實況】Rust 一上線家都沒了😱為了農裝前往地下鐵，居然引發一場瘋狂追逐戰！ | Rust",
+              "count": 127
+            },
+            {
+              "label": "【老皮實況】太空垃圾幫！巨人來襲篇😮一口一個咖波脆，快逃啊～ | 致命公司 Lethal Com",
+              "count": 89
+            },
+            {
+              "label": "【老皮實況】超爆笑！太空撿垃圾😎業績不達標就會被排泄，拚上命進入異星廢墟探索 | 致命公司 Le",
+              "count": 75
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "戶外",
+            "求生",
+            "荒島",
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.13552526062550121,
+          "neutral_rate": 0.5966319165998396,
+          "positive_rate": 0.2678428227746592,
+          "like_weighted_negative_rate": 0.08370577281191806,
+          "like_weighted_positive_rate": 0.3664804469273743,
+          "summary_zh": "中性討論為主；負面 13.6%，正面 26.8%，按讚加權負面 8.4%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1702157,
+          "total_observed_comments": 946,
+          "unique_commenters": 740,
+          "median_observed_commenters": 35,
+          "evidence_zh": "15 支影片；1,702,157 views；946 observed comments；740 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 20,
+          "external_edges": 39,
+          "conductance": 0.3972602739726027,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=20, external_edges=39, conductance=0.397"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "survival_outdoor (8); personal_team_life (4); controversy_response (4); workplace_tech_career (2); automotive_luxury (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 13.6%，正面 26.8%，按讚加權負面 8.4%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "15 支影片；1,702,157 views；946 observed comments；740 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=20, external_edges=39, conductance=0.397"
+          }
+        ],
+        "business_read": "適合挑戰型企劃、戶外品牌合作與高記憶點系列內容。"
+      },
+      {
+        "video_cluster": 5,
+        "cluster_label": "Video cluster 5",
+        "size": {
+          "n_videos": 22,
+          "date_min": "2023-06-09 10:45:02+00:00",
+          "date_max": "2026-04-10 09:58:22+00:00",
+          "pct_graph_videos": 24.444444444444443
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 7
+            },
+            {
+              "label": "personal_team_life",
+              "count": 7
+            },
+            {
+              "label": "other",
+              "count": 6
+            },
+            {
+              "label": "travel_exploration",
+              "count": 6
+            },
+            {
+              "label": "physical_challenge",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "travel_exploration",
+              "lift": 2.4545454545454546,
+              "n_videos": 6
+            },
+            {
+              "theme": "physical_challenge",
+              "lift": 2.0454545454545454,
+              "n_videos": 3
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 2.0454545454545454,
+              "n_videos": 1
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.3636363636363638,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "【老皮實況】人間量角器登場😂這樣的操作！連皮弟都直接看傻眼，雞膽的最終決戰 | 雞膽大挑戰 第二",
+              "count": 86
+            },
+            {
+              "label": "【老皮實況】觀眾造橋計畫，恰到好處完美的橋登場👌連機械工程師都跑來參與了!? | 造橋大師3",
+              "count": 72
+            },
+            {
+              "label": "【老皮實況】SCP收容失「笑」之 何老師被弄到不要不要🤣面對SCP居然有通關密語可以保命?! |",
+              "count": 63
+            },
+            {
+              "label": "【老皮實況】最好的路怒症模擬器🤣2023年版空中步道，第一次體驗的觀眾現場大崩潰😎 | 俠盜列車",
+              "count": 50
+            },
+            {
+              "label": "【老皮實況】GTA之夜，五代最後的戀愛巴士環島😎有史以來最瘋狂的環島挑戰，六代還能更瘋狂嗎？ |",
+              "count": 50
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.06016260162601626,
+          "neutral_rate": 0.6308943089430894,
+          "positive_rate": 0.3089430894308943,
+          "like_weighted_negative_rate": 0.11189891189891189,
+          "like_weighted_positive_rate": 0.4328536328536329,
+          "summary_zh": "中性討論為主；負面 6.0%，正面 30.9%，按讚加權負面 11.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 2417335,
+          "total_observed_comments": 925,
+          "unique_commenters": 681,
+          "median_observed_commenters": 40.5,
+          "evidence_zh": "22 支影片；2,417,335 views；925 observed comments；681 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 33,
+          "external_edges": 51,
+          "conductance": 0.43154761904761907,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=33, external_edges=51, conductance=0.432"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (7); personal_team_life (7); other (6); travel_exploration (6); physical_challenge (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 6.0%，正面 30.9%，按讚加權負面 11.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "22 支影片；2,417,335 views；925 observed comments；681 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=33, external_edges=51, conductance=0.432"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 7,
+        "cluster_label": "Video cluster 7",
+        "size": {
+          "n_videos": 17,
+          "date_min": "2023-10-18 10:47:49+00:00",
+          "date_max": "2024-09-08 11:20:24+00:00",
+          "pct_graph_videos": 18.88888888888889
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 4
+            },
+            {
+              "label": "survival_outdoor",
+              "count": 4
+            },
+            {
+              "label": "personal_team_life",
+              "count": 4
+            },
+            {
+              "label": "product_review",
+              "count": 3
+            },
+            {
+              "label": "other",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【老皮實況】ARMA3 『代號 : 教召行動』💪號召近百位觀眾一起用遊戲來教召演習，這些新兵的表",
+              "count": 101
+            },
+            {
+              "label": "【老皮實況】勸世模擬器🤣四人辛勤經營餐廳，還是敵不過資源黑洞的能力，結局讓人笑到噴淚 | 餐廳模",
+              "count": 68
+            },
+            {
+              "label": "【老皮實況】ARMA3 『代號 : 深入敵後』💪教召計畫進入尾聲，指揮部竟要求完全沒有空降經驗的",
+              "count": 56
+            },
+            {
+              "label": "【老皮實況】神奇密碼3.2.1🤣喊完後，遊戲開始出現各種神奇的BUG！巨大化餐廳開幕 | 餐廳模",
+              "count": 48
+            },
+            {
+              "label": "【老皮實況】VR打殭屍，我嘗試使用台中風格的槍法來打殭屍，意外的百發百中😂果然是經過實戰驗證的流",
+              "count": 35
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "戶外",
+            "求生",
+            "荒島",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07123287671232877,
+          "neutral_rate": 0.673972602739726,
+          "positive_rate": 0.2547945205479452,
+          "like_weighted_negative_rate": 0.10653073286052009,
+          "like_weighted_positive_rate": 0.2764479905437352,
+          "summary_zh": "中性討論為主；負面 7.1%，正面 25.5%，按讚加權負面 10.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1111967,
+          "total_observed_comments": 604,
+          "unique_commenters": 443,
+          "median_observed_commenters": 27,
+          "evidence_zh": "17 支影片；1,111,967 views；604 observed comments；443 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 44,
+          "external_edges": 68,
+          "conductance": 0.4223669923995657,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=44, external_edges=68, conductance=0.422"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (4); survival_outdoor (4); personal_team_life (4); product_review (3); other (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 7.1%，正面 25.5%，按讚加權負面 10.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "17 支影片；1,111,967 views；604 observed comments；443 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=44, external_edges=68, conductance=0.422"
+          }
+        ],
+        "business_read": "適合挑戰型企劃、戶外品牌合作與高記憶點系列內容。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 7,
+          "date_min": "2023-05-08 11:36:15+00:00",
+          "date_max": "2024-08-18 09:29:26+00:00",
+          "pct_graph_videos": 7.777777777777778
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 4
+            },
+            {
+              "label": "personal_team_life",
+              "count": 3
+            },
+            {
+              "label": "survival_outdoor",
+              "count": 2
+            },
+            {
+              "label": "other",
+              "count": 1
+            },
+            {
+              "label": "physical_challenge",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【老皮實況】畫圖解謎小遊戲！Q之IQ測試智商😎我的智商測出來居然....? | Q REMAST",
+              "count": 106
+            },
+            {
+              "label": "【老皮實況】年度最佳RPG預定，高自由度玩到商人崩潰🤣還能利用偷竊技能，跳過任務直接拿到獎勵 |",
+              "count": 68
+            },
+            {
+              "label": "【老皮實況】四人勇闖廢墟尋找真相😱尖叫、喘氣、甚至打噴嚏，發出一點聲響就會引來不可名狀之物 |",
+              "count": 41
+            },
+            {
+              "label": "【老皮實況】超爆笑16人一起經營超市😁多頭馬車直接變成吵架模擬器，誰結錯帳就倒大楣了 | Sup",
+              "count": 28
+            },
+            {
+              "label": "【老皮實況】與小夥伴一起快樂的外送民主🤣意外發現了BUG，結果皮弟帶了四組地雷讓這遊戲變成另一種",
+              "count": 27
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "戶外",
+            "求生"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.05585106382978723,
+          "neutral_rate": 0.6888297872340425,
+          "positive_rate": 0.2553191489361702,
+          "like_weighted_negative_rate": 0.02021772939346812,
+          "like_weighted_positive_rate": 0.2643856920684292,
+          "summary_zh": "中性討論為主；負面 5.6%，正面 25.5%，按讚加權負面 2.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 714580,
+          "total_observed_comments": 318,
+          "unique_commenters": 270,
+          "median_observed_commenters": 28,
+          "evidence_zh": "7 支影片；714,580 views；318 observed comments；270 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 7,
+          "external_edges": 14,
+          "conductance": 0.5032679738562091,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=7, external_edges=14, conductance=0.503"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (4); personal_team_life (3); survival_outdoor (2); other (1); physical_challenge (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 5.6%，正面 25.5%，按讚加權負面 2.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "7 支影片；714,580 views；318 observed comments；270 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=7, external_edges=14, conductance=0.503"
+          }
+        ],
+        "business_read": "適合挑戰型企劃、戶外品牌合作與高記憶點系列內容。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 6,
+          "date_min": "2024-12-04 10:30:02+00:00",
+          "date_max": "2025-07-31 10:50:25+00:00",
+          "pct_graph_videos": 6.666666666666667
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 3
+            },
+            {
+              "label": "personal_team_life",
+              "count": 3
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 2
+            },
+            {
+              "label": "other",
+              "count": 1
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【老皮實況】兒時回憶，挑戰六人連線通關困難難度😭以前有這麼困難嗎?！我的天啊！ | 小朋友齊打交",
+              "count": 112
+            },
+            {
+              "label": "【老皮實況】信皮航空 高雄-澎湖 5487號航班，皮機長邊開邊學，有辦法帶著觀眾平安抵達嗎？ |",
+              "count": 66
+            },
+            {
+              "label": "【老皮實況】你又窮又禿，想成為CEO必經的荊棘之路 | GET TO WORK #精華篇",
+              "count": 38
+            },
+            {
+              "label": "【老皮實況】還敢...還敢不減速啊🤣我的Speed Run運輸公司居然因為「超速」差點倒閉？！",
+              "count": 33
+            },
+            {
+              "label": "【老皮實況】我們開了一個百人「運輸模擬」伺服器😎完全復刻台灣交通，還被人騙去貸款開公司...下場",
+              "count": 28
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "車",
+            "精品"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09350649350649351,
+          "neutral_rate": 0.7012987012987013,
+          "positive_rate": 0.2051948051948052,
+          "like_weighted_negative_rate": 0.050216986980781156,
+          "like_weighted_positive_rate": 0.2882827030378177,
+          "summary_zh": "中性討論為主；負面 9.4%，正面 20.5%，按讚加權負面 5.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 486534,
+          "total_observed_comments": 308,
+          "unique_commenters": 266,
+          "median_observed_commenters": 35.5,
+          "evidence_zh": "6 支影片；486,534 views；308 observed comments；266 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 5,
+          "external_edges": 7,
+          "conductance": 0.39325842696629215,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=5, external_edges=7, conductance=0.393"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (3); personal_team_life (3); automotive_luxury (2); other (1); workplace_tech_career (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 9.4%，正面 20.5%，按讚加權負面 5.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "6 支影片；486,534 views；308 observed comments；266 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=5, external_edges=7, conductance=0.393"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2025-01-02 10:50:40+00:00",
+          "date_max": "2025-01-05 10:00:20+00:00",
+          "pct_graph_videos": 2.2222222222222223
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 2
+            },
+            {
+              "label": "survival_outdoor",
+              "count": 1
+            },
+            {
+              "label": "travel_exploration",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【老皮實況】B42版人物初始強度大幅下修，真版本解答居然是DIO....?! | 殭屍毀滅工程",
+              "count": 26
+            },
+            {
+              "label": "【老皮實況】B42 有趣的BUG事件，峰迴路轉的公路奇聞 | 殭屍毀滅工程 #精華篇 DAY3",
+              "count": 22
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "戶外",
+            "求生",
+            "荒島",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07017543859649122,
+          "neutral_rate": 0.7017543859649122,
+          "positive_rate": 0.22807017543859648,
+          "like_weighted_negative_rate": 0.039301310043668124,
+          "like_weighted_positive_rate": 0.20087336244541484,
+          "summary_zh": "中性討論為主；負面 7.0%，正面 22.8%，按讚加權負面 3.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 80653,
+          "total_observed_comments": 50,
+          "unique_commenters": 43,
+          "median_observed_commenters": 24,
+          "evidence_zh": "2 支影片；80,653 views；50 observed comments；43 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (2); survival_outdoor (1); travel_exploration (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 7.0%，正面 22.8%，按讚加權負面 3.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；80,653 views；50 observed comments；43 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 6,
+        "cluster_label": "Video cluster 6",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2025-03-30 09:40:07+00:00",
+          "date_max": "2025-04-18 10:00:01+00:00",
+          "pct_graph_videos": 2.2222222222222223
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 1
+            },
+            {
+              "label": "controversy_response",
+              "count": 1
+            },
+            {
+              "label": "other",
+              "count": 1
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "【老皮實況】寫實版模擬市民？！超強大的捏臉系統😉何～老師～你在你在哪！原來你在這啊🤣 | inZ",
+              "count": 22
+            },
+            {
+              "label": "【老皮實況】三叔回來啦！壞壞帥帥的中年大叔🤣身無分文是如何逆轉人生，走上「顛」峰？！ | inZ",
+              "count": 19
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0,
+          "neutral_rate": 0.6938775510204082,
+          "positive_rate": 0.30612244897959184,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.5559105431309904,
+          "summary_zh": "中性討論為主；負面 0.0%，正面 30.6%，按讚加權負面 0.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 68990,
+          "total_observed_comments": 41,
+          "unique_commenters": 36,
+          "median_observed_commenters": 20.5,
+          "evidence_zh": "2 支影片；68,990 views；41 observed comments；36 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (1); controversy_response (1); other (1); personal_team_life (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 0.0%，正面 30.6%，按讚加權負面 0.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；68,990 views；41 observed comments；36 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1412,6 +3258,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "kedaibiao-full",
   "title": "课代表立正",
   "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -100,209 +100,250 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/kedaibiao-full/tables/actor_communities.csv",
-        "bytes": 35920
+        "bytes": 35920,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/kedaibiao-full/tables/bridge_actors.csv",
-        "bytes": 6684
+        "bytes": 6684,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/kedaibiao-full/tables/channel_overview.csv",
-        "bytes": 361
+        "bytes": 361,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/kedaibiao-full/tables/commenter_activity.csv",
-        "bytes": 1085034
+        "bytes": 1085034,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/kedaibiao-full/tables/commenter_tiers.csv",
-        "bytes": 283
+        "bytes": 283,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/kedaibiao-full/tables/community_profiles.csv",
-        "bytes": 7730
+        "bytes": 7730,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/kedaibiao-full/tables/community_sentiment_summary.csv",
-        "bytes": 3926
+        "bytes": 3926,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/kedaibiao-full/tables/community_summary.csv",
-        "bytes": 607
+        "bytes": 607,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/kedaibiao-full/tables/community_theme_affinity.csv",
-        "bytes": 12019
+        "bytes": 12019,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/kedaibiao-full/tables/community_theme_sentiment.csv",
-        "bytes": 19014
+        "bytes": 19014,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/kedaibiao-full/tables/continuity_sensitivity.csv",
-        "bytes": 590
+        "bytes": 590,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/kedaibiao-full/tables/continuity_summary.csv",
-        "bytes": 636
+        "bytes": 636,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/kedaibiao-full/tables/diagnostics.csv",
-        "bytes": 1241
+        "bytes": 1241,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/kedaibiao-full/tables/network_summary.csv",
-        "bytes": 199
+        "bytes": 199,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/kedaibiao-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 5975688
+        "bytes": 5975688,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/kedaibiao-full/tables/qwen_video_themes.csv",
-        "bytes": 956979
+        "bytes": 956979,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/kedaibiao-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 1501
+        "bytes": 1501,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/kedaibiao-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 120490
+        "bytes": 120490,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/kedaibiao-full/tables/reply_sentiment_summary.csv",
-        "bytes": 734
+        "bytes": 734,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/kedaibiao-full/tables/reply_thread_metrics.csv",
-        "bytes": 4221607
+        "bytes": 4221607,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/kedaibiao-full/tables/reply_thread_overview.csv",
-        "bytes": 362
+        "bytes": 362,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/kedaibiao-full/tables/rolling_retention.csv",
-        "bytes": 3036
+        "bytes": 3036,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/kedaibiao-full/tables/sentiment_hotspots.csv",
-        "bytes": 156047
+        "bytes": 156047,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/kedaibiao-full/tables/sentiment_source_summary.csv",
-        "bytes": 252
+        "bytes": 252,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/kedaibiao-full/tables/sentiment_summary.csv",
-        "bytes": 605
+        "bytes": 605,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/kedaibiao-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2666
+        "bytes": 2666,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/kedaibiao-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/kedaibiao-full/tables/theme_summary.csv",
-        "bytes": 349
+        "bytes": 349,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/kedaibiao-full/tables/theme_video_labels.csv",
-        "bytes": 215220
+        "bytes": 215220,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/kedaibiao-full/tables/theme_video_labels_long.csv",
-        "bytes": 138996
+        "bytes": 138996,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/kedaibiao-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 2207
+        "bytes": 2207,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/kedaibiao-full/tables/video_cluster_summary.csv",
-        "bytes": 4254
+        "bytes": 4254,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/kedaibiao-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 3495
+        "bytes": 3495,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/kedaibiao-full/tables/video_clusters.csv",
-        "bytes": 19459
+        "bytes": 19459,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/kedaibiao-full/tables/video_metrics.csv",
-        "bytes": 68670
+        "bytes": 68670,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/kedaibiao-full/tables/video_network_summary.csv",
-        "bytes": 218
+        "bytes": 218,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/kedaibiao-full/figures/channel_activity.png",
-        "bytes": 117278
+        "bytes": 117278,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/kedaibiao-full/figures/commenter_tiers.png",
-        "bytes": 26624
+        "bytes": 26624,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/kedaibiao-full/figures/community_sizes.png",
-        "bytes": 25651
+        "bytes": 25651,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/kedaibiao-full/figures/rolling_retention.png",
-        "bytes": 49053
+        "bytes": 49053,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/kedaibiao-full/figures/video_cluster_sizes.png",
-        "bytes": 30342
+        "bytes": 30342,
+        "source_dir": null
       }
     ]
   },
@@ -612,6 +653,1304 @@
         "internal_weighted_degree": 194.0
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 9,
+        "segment_label": "Audience segment 9",
+        "group_size": {
+          "n_commenters": 100,
+          "pct_active_commenters": 24.752475247524753,
+          "summary_zh": "24.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 891,
+          "avg_comments_per_commenter": 8.91,
+          "n_videos_touched": 250,
+          "summary_zh": "平均留言 8.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "公司被OpenAI收购前夜离职：回答大家关心的问题",
+            "count": 16
+          },
+          {
+            "label": "前高管解密升职加薪的游戏规则 -- 情绪价值｜Vivian 访谈 1/2",
+            "count": 14
+          },
+          {
+            "label": "清华教授：应试教育在AI面前全军覆没，我们应该如何重新学习？",
+            "count": 14
+          },
+          {
+            "label": "十年估值三千亿，创始人首次揭秘，如何识别并抓住机会？｜Databricks Cofounder",
+            "count": 14
+          },
+          {
+            "label": "樊登：讲完几百本书，提升最大的是这三次认知迭代",
+            "count": 13
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 90
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 79
+          },
+          {
+            "label": "education_advice",
+            "count": 65
+          },
+          {
+            "label": "controversy_response",
+            "count": 62
+          },
+          {
+            "label": "business_brand",
+            "count": 52
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "event_announcement",
+            "lift": 3.990361445783133,
+            "n_commenters": 1
+          },
+          {
+            "theme": "guest_relationship",
+            "lift": 1.4324374420759962,
+            "n_commenters": 11
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.4234016585823814,
+            "n_commenters": 99
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.0530279259491685,
+          "neutral_rate": 0.807028553498588,
+          "positive_rate": 0.1399435205522435,
+          "like_weighted_negative_rate": 0.0881120213373976,
+          "like_weighted_positive_rate": 0.16336445037149933,
+          "summary_zh": "中性討論為主；負面 5.3%，正面 14.0%，按讚加權負面 8.8%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.06689246401354784,
+            "like_weighted_negative_rate": 0.13514173998044965,
+            "n_comments": 1181,
+            "summary_zh": "personal_team_life：負面 6.7%，按讚加權負面 13.5%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.08888888888888889,
+            "like_weighted_negative_rate": 0.11092246745897001,
+            "n_comments": 360,
+            "summary_zh": "controversy_response：負面 8.9%，按讚加權負面 11.1%"
+          },
+          {
+            "theme": "business_brand",
+            "negative_rate": 0.04424778761061947,
+            "like_weighted_negative_rate": 0.08020050125313283,
+            "n_comments": 226,
+            "summary_zh": "business_brand：負面 4.4%，按讚加權負面 8.0%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 6,
+        "segment_label": "Audience segment 6",
+        "group_size": {
+          "n_commenters": 50,
+          "pct_active_commenters": 12.376237623762377,
+          "summary_zh": "12.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 446,
+          "avg_comments_per_commenter": 8.92,
+          "n_videos_touched": 185,
+          "summary_zh": "平均留言 8.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "婚礼视频！",
+            "count": 19
+          },
+          {
+            "label": "我对防疫的感受和看法",
+            "count": 14
+          },
+          {
+            "label": "全网唯一，不搞噱头的Web3",
+            "count": 11
+          },
+          {
+            "label": "ChatGPT的理解、思考、与合理推演",
+            "count": 11
+          },
+          {
+            "label": "回美国了！为什么离开大厂？",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 48
+          },
+          {
+            "label": "controversy_response",
+            "count": 37
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 31
+          },
+          {
+            "label": "education_advice",
+            "count": 30
+          },
+          {
+            "label": "other",
+            "count": 17
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "automotive_luxury",
+            "lift": 3.1098591549295778,
+            "n_commenters": 4
+          },
+          {
+            "theme": "guest_relationship",
+            "lift": 1.3954496208017335,
+            "n_commenters": 7
+          },
+          {
+            "theme": "other",
+            "lift": 1.3382590625721542,
+            "n_commenters": 17
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.05434782608695652,
+          "neutral_rate": 0.6068840579710145,
+          "positive_rate": 0.338768115942029,
+          "like_weighted_negative_rate": 0.06329113924050633,
+          "like_weighted_positive_rate": 0.38976793248945146,
+          "summary_zh": "中性討論為主；負面 5.4%，正面 33.9%，按讚加權負面 6.3%"
+        },
+        "negative_sources": [
+          {
+            "theme": "education_advice",
+            "negative_rate": 0.050505050505050504,
+            "like_weighted_negative_rate": 0.1552346570397112,
+            "n_comments": 99,
+            "summary_zh": "education_advice：負面 5.1%，按讚加權負面 15.5%"
+          },
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.1111111111111111,
+            "like_weighted_negative_rate": 0.09027777777777778,
+            "n_comments": 108,
+            "summary_zh": "controversy_response：負面 11.1%，按讚加權負面 9.0%"
+          },
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.07317073170731707,
+            "like_weighted_negative_rate": 0.07672634271099744,
+            "n_comments": 82,
+            "summary_zh": "workplace_tech_career：負面 7.3%，按讚加權負面 7.7%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 43,
+          "pct_active_commenters": 10.643564356435643,
+          "summary_zh": "10.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 334,
+          "avg_comments_per_commenter": 7.767441860465116,
+          "n_videos_touched": 143,
+          "summary_zh": "平均留言 7.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "留美14年，为何在升职前夕决定回国？｜游戏行业有多厉害？",
+            "count": 16
+          },
+          {
+            "label": "我对防疫的感受和看法",
+            "count": 16
+          },
+          {
+            "label": "头铁up主，中英夹杂还有理了？",
+            "count": 15
+          },
+          {
+            "label": "Influence Without Authority ｜ 人生元能力",
+            "count": 14
+          },
+          {
+            "label": "婚礼视频！",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 43
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 35
+          },
+          {
+            "label": "controversy_response",
+            "count": 33
+          },
+          {
+            "label": "education_advice",
+            "count": 12
+          },
+          {
+            "label": "business_brand",
+            "count": 7
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.06060606060606061,
+          "neutral_rate": 0.5967365967365967,
+          "positive_rate": 0.34265734265734266,
+          "like_weighted_negative_rate": 0.21166666666666667,
+          "like_weighted_positive_rate": 0.2761111111111111,
+          "summary_zh": "中性討論為主；負面 6.1%，正面 34.3%，按讚加權負面 21.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.05309734513274336,
+            "like_weighted_negative_rate": 0.30591497227356745,
+            "n_comments": 226,
+            "summary_zh": "personal_team_life：負面 5.3%，按讚加權負面 30.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 41,
+          "pct_active_commenters": 10.14851485148515,
+          "summary_zh": "10.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 367,
+          "avg_comments_per_commenter": 8.951219512195122,
+          "n_videos_touched": 180,
+          "summary_zh": "平均留言 9.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "Influence Without Authority ｜ 人生元能力",
+            "count": 16
+          },
+          {
+            "label": "我对防疫的感受和看法",
+            "count": 8
+          },
+          {
+            "label": "跳槽前应该做哪些研究？",
+            "count": 8
+          },
+          {
+            "label": "中国互联网大厂跟硅谷有什么区别？",
+            "count": 8
+          },
+          {
+            "label": "打工人如何获得财富自由？｜什么才是真正的财富和真正的自由？（中文字幕）｜Multiple-Fir",
+            "count": 6
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 41
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 35
+          },
+          {
+            "label": "controversy_response",
+            "count": 20
+          },
+          {
+            "label": "business_brand",
+            "count": 15
+          },
+          {
+            "label": "education_advice",
+            "count": 14
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.044585987261146494,
+          "neutral_rate": 0.5498938428874734,
+          "positive_rate": 0.40552016985138006,
+          "like_weighted_negative_rate": 0.05628803245436106,
+          "like_weighted_positive_rate": 0.44929006085192696,
+          "summary_zh": "中性討論為主；負面 4.5%，正面 40.6%，按讚加權負面 5.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.04918032786885246,
+            "like_weighted_negative_rate": 0.05777310924369748,
+            "n_comments": 244,
+            "summary_zh": "personal_team_life：負面 4.9%，按讚加權負面 5.8%"
+          },
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.010309278350515464,
+            "like_weighted_negative_rate": 0.010574018126888218,
+            "n_comments": 97,
+            "summary_zh": "workplace_tech_career：負面 1.0%，按讚加權負面 1.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 41,
+          "pct_active_commenters": 10.14851485148515,
+          "summary_zh": "10.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 415,
+          "avg_comments_per_commenter": 10.121951219512194,
+          "n_videos_touched": 164,
+          "summary_zh": "平均留言 10.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "回美国了！为什么离开大厂？",
+            "count": 19
+          },
+          {
+            "label": "婚礼视频！",
+            "count": 16
+          },
+          {
+            "label": "满分征友启事！",
+            "count": 12
+          },
+          {
+            "label": "我的减肥攻略应该收多少钱？",
+            "count": 11
+          },
+          {
+            "label": "看不惯的同学比自己赚的多，如何自我和解？",
+            "count": 10
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 41
+          },
+          {
+            "label": "controversy_response",
+            "count": 25
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 24
+          },
+          {
+            "label": "education_advice",
+            "count": 16
+          },
+          {
+            "label": "other",
+            "count": 8
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.052336448598130844,
+          "neutral_rate": 0.6037383177570094,
+          "positive_rate": 0.34392523364485983,
+          "like_weighted_negative_rate": 0.07410881801125703,
+          "like_weighted_positive_rate": 0.4427767354596623,
+          "summary_zh": "中性討論為主；負面 5.2%，正面 34.4%，按讚加權負面 7.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.03333333333333333,
+            "like_weighted_negative_rate": 0.041117145073700546,
+            "n_comments": 330,
+            "summary_zh": "personal_team_life：負面 3.3%，按讚加權負面 4.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 15,
+        "segment_label": "Audience segment 15",
+        "group_size": {
+          "n_commenters": 40,
+          "pct_active_commenters": 9.900990099009901,
+          "summary_zh": "9.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 367,
+          "avg_comments_per_commenter": 9.175,
+          "n_videos_touched": 167,
+          "summary_zh": "平均留言 9.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "Influence Without Authority ｜ 人生元能力",
+            "count": 13
+          },
+          {
+            "label": "回美国了！为什么离开大厂？",
+            "count": 13
+          },
+          {
+            "label": "我对防疫的感受和看法",
+            "count": 12
+          },
+          {
+            "label": "注意这个隐藏属性，让你识别出身边的大佬",
+            "count": 11
+          },
+          {
+            "label": "我们如何利用好这轮衰退？｜生成式AI神预言",
+            "count": 10
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 39
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 33
+          },
+          {
+            "label": "controversy_response",
+            "count": 26
+          },
+          {
+            "label": "education_advice",
+            "count": 22
+          },
+          {
+            "label": "other",
+            "count": 15
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.03382663847780127,
+          "neutral_rate": 0.6469344608879493,
+          "positive_rate": 0.3192389006342495,
+          "like_weighted_negative_rate": 0.05405405405405406,
+          "like_weighted_positive_rate": 0.4120242691671263,
+          "summary_zh": "中性討論為主；負面 3.4%，正面 31.9%，按讚加權負面 5.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "workplace_tech_career",
+            "negative_rate": 0.030927835051546393,
+            "like_weighted_negative_rate": 0.09166666666666666,
+            "n_comments": 97,
+            "summary_zh": "workplace_tech_career：負面 3.1%，按讚加權負面 9.2%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.034482758620689655,
+            "like_weighted_negative_rate": 0.04908675799086758,
+            "n_comments": 203,
+            "summary_zh": "personal_team_life：負面 3.4%，按讚加權負面 4.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 10,
+        "segment_label": "Audience segment 10",
+        "group_size": {
+          "n_commenters": 33,
+          "pct_active_commenters": 8.16831683168317,
+          "summary_zh": "8.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 284,
+          "avg_comments_per_commenter": 8.606060606060606,
+          "n_videos_touched": 139,
+          "summary_zh": "平均留言 8.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "我对防疫的感受和看法",
+            "count": 19
+          },
+          {
+            "label": "回美国了！为什么离开大厂？",
+            "count": 17
+          },
+          {
+            "label": "十年创业，阿里收购，辛酸艰苦坦白局｜《ToB的本质》作者尚书",
+            "count": 9
+          },
+          {
+            "label": "中国经济怎么了？",
+            "count": 9
+          },
+          {
+            "label": "如何积累第一桶金？｜摆脱韭菜思维的最后一次努力｜Leon访谈_上",
+            "count": 8
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 32
+          },
+          {
+            "label": "controversy_response",
+            "count": 28
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 24
+          },
+          {
+            "label": "education_advice",
+            "count": 15
+          },
+          {
+            "label": "business_brand",
+            "count": 8
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.13126491646778043,
+          "neutral_rate": 0.6276849642004774,
+          "positive_rate": 0.24105011933174225,
+          "like_weighted_negative_rate": 0.16541353383458646,
+          "like_weighted_positive_rate": 0.17561761546723953,
+          "summary_zh": "中性討論為主；負面 13.1%，正面 24.1%，按讚加權負面 16.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.19801980198019803,
+            "like_weighted_negative_rate": 0.15584415584415584,
+            "n_comments": 101,
+            "summary_zh": "controversy_response：負面 19.8%，按讚加權負面 15.6%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.14146341463414633,
+            "like_weighted_negative_rate": 0.10335917312661498,
+            "n_comments": 205,
+            "summary_zh": "personal_team_life：負面 14.1%，按讚加權負面 10.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 27,
+          "pct_active_commenters": 6.683168316831684,
+          "summary_zh": "6.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 218,
+          "avg_comments_per_commenter": 8.074074074074074,
+          "n_videos_touched": 107,
+          "summary_zh": "平均留言 8.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "助您降维打击一切面试",
+            "count": 9
+          },
+          {
+            "label": "我们如何利用好这轮衰退？｜生成式AI神预言",
+            "count": 7
+          },
+          {
+            "label": "没有996？同事竟很nice？回国工作时间和生活成本大揭秘！",
+            "count": 7
+          },
+          {
+            "label": "如何用面试和工作提升人生价值？｜课代表network秘籍大揭秘",
+            "count": 6
+          },
+          {
+            "label": "Crafts：技术的神秘无穷本质",
+            "count": 6
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 27
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 21
+          },
+          {
+            "label": "controversy_response",
+            "count": 12
+          },
+          {
+            "label": "education_advice",
+            "count": 12
+          },
+          {
+            "label": "business_brand",
+            "count": 11
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.04745762711864407,
+          "neutral_rate": 0.6576271186440678,
+          "positive_rate": 0.29491525423728815,
+          "like_weighted_negative_rate": 0.29081177520071366,
+          "like_weighted_positive_rate": 0.2649420160570919,
+          "summary_zh": "中性討論為主；負面 4.7%，正面 29.5%，按讚加權負面 29.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.01639344262295082,
+            "like_weighted_negative_rate": 0.011661807580174927,
+            "n_comments": 122,
+            "summary_zh": "personal_team_life：負面 1.6%，按讚加權負面 1.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 12,
+        "segment_label": "Audience segment 12",
+        "group_size": {
+          "n_commenters": 13,
+          "pct_active_commenters": 3.217821782178218,
+          "summary_zh": "3.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 104,
+          "avg_comments_per_commenter": 8.0,
+          "n_videos_touched": 59,
+          "summary_zh": "平均留言 8.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "婚礼视频！",
+            "count": 7
+          },
+          {
+            "label": "十年创业，阿里收购，辛酸艰苦坦白局｜《ToB的本质》作者尚书",
+            "count": 6
+          },
+          {
+            "label": "26岁财富自由的程序员郭宇：很多人起点虽然高，但生活得一团糟",
+            "count": 5
+          },
+          {
+            "label": "如何积累第一桶金？｜摆脱韭菜思维的最后一次努力｜Leon访谈_上",
+            "count": 4
+          },
+          {
+            "label": "如何超越中产阶级？｜Leon谈财富_下",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 13
+          },
+          {
+            "label": "education_advice",
+            "count": 6
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 5
+          },
+          {
+            "label": "other",
+            "count": 5
+          },
+          {
+            "label": "controversy_response",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學",
+            "建議",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.05970149253731343,
+          "neutral_rate": 0.5447761194029851,
+          "positive_rate": 0.39552238805970147,
+          "like_weighted_negative_rate": 0.021103896103896104,
+          "like_weighted_positive_rate": 0.5576298701298701,
+          "summary_zh": "中性討論為主；負面 6.0%，正面 39.6%，按讚加權負面 2.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.06451612903225806,
+            "like_weighted_negative_rate": 0.01693227091633466,
+            "n_comments": 93,
+            "summary_zh": "personal_team_life：負面 6.5%，按讚加權負面 1.7%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 0.49504950495049505,
+          "summary_zh": "0.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 8,
+          "avg_comments_per_commenter": 4.0,
+          "n_videos_touched": 5,
+          "summary_zh": "平均留言 4.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "为了回国我都经历了什么？｜对内娱的批判？｜体验虚拟制片｜第一次接通告",
+            "count": 2
+          },
+          {
+            "label": "读藤校博士是什么体验？",
+            "count": 2
+          },
+          {
+            "label": "每周两小时就能做UP主？｜被叫网红竟会不开心？｜会被骂哭吗？",
+            "count": 2
+          },
+          {
+            "label": "没有996？同事竟很nice？回国工作时间和生活成本大揭秘！",
+            "count": 1
+          },
+          {
+            "label": "粉饰简历=浪费时间！能找到工作的简历长啥样？",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 2
+          },
+          {
+            "label": "education_advice",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學",
+            "建議"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0,
+          "neutral_rate": 0.8,
+          "positive_rate": 0.2,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.07692307692307693,
+          "summary_zh": "中性討論為主；負面 0.0%，正面 20.0%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 8,
+        "segment_label": "Audience segment 8",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 0.49504950495049505,
+          "summary_zh": "0.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 11,
+          "avg_comments_per_commenter": 5.5,
+          "n_videos_touched": 8,
+          "summary_zh": "平均留言 5.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "用Growth Mindset快乐驱动你的职业和人生",
+            "count": 2
+          },
+          {
+            "label": "选工作最重要的事情是什么？｜Fintech到底是干嘛的？｜不精致利己也能赚钱？",
+            "count": 2
+          },
+          {
+            "label": "头铁up主，中英夹杂还有理了？",
+            "count": 2
+          },
+          {
+            "label": "放弃62万美元年薪，用AI取代老婆工作？",
+            "count": 1
+          },
+          {
+            "label": "华人在硅谷怎么做(不)到VP？",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 2
+          },
+          {
+            "label": "controversy_response",
+            "count": 2
+          },
+          {
+            "label": "workplace_tech_career",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0,
+          "neutral_rate": 0.3333333333333333,
+          "positive_rate": 0.6666666666666666,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.9202453987730062,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.0%，正面 66.7%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 0.49504950495049505,
+          "summary_zh": "0.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 6,
+          "avg_comments_per_commenter": 3.0,
+          "n_videos_touched": 3,
+          "summary_zh": "平均留言 3.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "留美14年，为何在升职前夕决定回国？｜游戏行业有多厉害？",
+            "count": 2
+          },
+          {
+            "label": "华人在硅谷怎么做(不)到VP？",
+            "count": 2
+          },
+          {
+            "label": "没有996？同事竟很nice？回国工作时间和生活成本大揭秘！",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.14285714285714285,
+          "neutral_rate": 0.8571428571428571,
+          "positive_rate": 0,
+          "like_weighted_negative_rate": 0.16129032258064516,
+          "like_weighted_positive_rate": 0,
+          "summary_zh": "中性討論為主；負面 14.3%，正面 0.0%，按讚加權負面 16.1%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 111,
       "n_edges": 250,
@@ -719,6 +2058,1177 @@
         "total_views": 36697,
         "top_theme_labels": "business_brand (2); workplace_tech_career (2); personal_team_life (1)",
         "top_videos": "深度对话00后CEO，重新定义AI时代的成长方式｜AI时代的顶级人才画像｜Kay访谈_上 (35); 死磕一年热门AI赛道，发现并不卷？｜Aha创始人Kay访谈_下 (25)"
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 7,
+        "cluster_label": "Video cluster 7",
+        "size": {
+          "n_videos": 14,
+          "date_min": "2023-08-21 02:00:00+00:00",
+          "date_max": "2025-03-12 22:52:33+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 10
+            },
+            {
+              "label": "personal_team_life",
+              "count": 10
+            },
+            {
+              "label": "education_advice",
+              "count": 5
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 5
+            },
+            {
+              "label": "controversy_response",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "中国经济怎么了？",
+              "count": 343
+            },
+            {
+              "label": "看懂OpenAI的“指数级领先”｜原标题：我为什么没有加入一家AI公司？",
+              "count": 171
+            },
+            {
+              "label": "26岁财富自由的程序员郭宇：很多人起点虽然高，但生活得一团糟",
+              "count": 162
+            },
+            {
+              "label": "十年创业，阿里收购，辛酸艰苦坦白局｜《ToB的本质》作者尚书",
+              "count": 139
+            },
+            {
+              "label": "如何积累第一桶金？｜摆脱韭菜思维的最后一次努力｜Leon访谈_上",
+              "count": 134
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.17035325189831627,
+          "neutral_rate": 0.6490590954110267,
+          "positive_rate": 0.180587652690657,
+          "like_weighted_negative_rate": 0.18266773162939298,
+          "like_weighted_positive_rate": 0.22939297124600638,
+          "summary_zh": "中性討論為主；負面 17.0%，正面 18.1%，按讚加權負面 18.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 993636,
+          "total_observed_comments": 1632,
+          "unique_commenters": 1381,
+          "median_observed_commenters": 91.5,
+          "evidence_zh": "14 支影片；993,636 views；1,632 observed comments；1,381 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (10); personal_team_life (10); education_advice (5); workplace_tech_career (5); controversy_response (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 17.0%，正面 18.1%，按讚加權負面 18.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "14 支影片；993,636 views；1,632 observed comments；1,381 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 21,
+          "date_min": "2020-11-12 07:39:25+00:00",
+          "date_max": "2023-10-15 01:00:05+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 16
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 10
+            },
+            {
+              "label": "education_advice",
+              "count": 6
+            },
+            {
+              "label": "business_brand",
+              "count": 6
+            },
+            {
+              "label": "controversy_response",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "personal_team_life",
+              "lift": 1.3214285714285714,
+              "n_videos": 16
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.2012987012987013,
+              "n_videos": 10
+            },
+            {
+              "theme": "education_advice",
+              "lift": 0.8809523809523808,
+              "n_videos": 6
+            },
+            {
+              "theme": "other",
+              "lift": 0.8809523809523808,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "华人在硅谷怎么做(不)到VP？",
+              "count": 233
+            },
+            {
+              "label": "Influence Without Authority ｜ 人生元能力",
+              "count": 194
+            },
+            {
+              "label": "没有996？同事竟很nice？回国工作时间和生活成本大揭秘！",
+              "count": 141
+            },
+            {
+              "label": "打工人如何获得财富自由？｜什么才是真正的财富和真正的自由？（中文字幕）｜Multiple-Fir",
+              "count": 134
+            },
+            {
+              "label": "留美14年，为何在升职前夕决定回国？｜游戏行业有多厉害？",
+              "count": 131
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08057851239669421,
+          "neutral_rate": 0.5838842975206612,
+          "positive_rate": 0.33553719008264465,
+          "like_weighted_negative_rate": 0.07121185079421738,
+          "like_weighted_positive_rate": 0.4074602891308228,
+          "summary_zh": "中性討論為主；負面 8.1%，正面 33.6%，按讚加權負面 7.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1025713,
+          "total_observed_comments": 1696,
+          "unique_commenters": 1318,
+          "median_observed_commenters": 58,
+          "evidence_zh": "21 支影片；1,025,713 views；1,696 observed comments；1,318 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (16); workplace_tech_career (10); education_advice (6); business_brand (6); controversy_response (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 8.1%，正面 33.6%，按讚加權負面 7.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "21 支影片；1,025,713 views；1,696 observed comments；1,318 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 6,
+        "cluster_label": "Video cluster 6",
+        "size": {
+          "n_videos": 15,
+          "date_min": "2024-03-22 15:06:42+00:00",
+          "date_max": "2026-05-02 20:06:36+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "workplace_tech_career",
+              "count": 11
+            },
+            {
+              "label": "education_advice",
+              "count": 9
+            },
+            {
+              "label": "controversy_response",
+              "count": 6
+            },
+            {
+              "label": "personal_team_life",
+              "count": 5
+            },
+            {
+              "label": "business_brand",
+              "count": 4
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "清华教授：应试教育在AI面前全军覆没，我们应该如何重新学习？",
+              "count": 241
+            },
+            {
+              "label": "为什么年薪百万的你，却觉得工作毫无价值？",
+              "count": 133
+            },
+            {
+              "label": "樊登：讲完几百本书，提升最大的是这三次认知迭代",
+              "count": 104
+            },
+            {
+              "label": "替公司裁过4个下属，分享背后原因和心里话",
+              "count": 81
+            },
+            {
+              "label": "烧完数千亿，Meta放弃元宇宙，伪需求为何如此难识别？",
+              "count": 76
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "職涯",
+            "科技",
+            "矽谷",
+            "知識",
+            "教學",
+            "建議",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09799554565701558,
+          "neutral_rate": 0.6904231625835189,
+          "positive_rate": 0.21158129175946547,
+          "like_weighted_negative_rate": 0.12776176753121998,
+          "like_weighted_positive_rate": 0.2577649695805315,
+          "summary_zh": "中性討論為主；負面 9.8%，正面 21.2%，按讚加權負面 12.8%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 486125,
+          "total_observed_comments": 1224,
+          "unique_commenters": 992,
+          "median_observed_commenters": 61,
+          "evidence_zh": "15 支影片；486,125 views；1,224 observed comments；992 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "workplace_tech_career (11); education_advice (9); controversy_response (6); personal_team_life (5); business_brand (4)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 9.8%，正面 21.2%，按讚加權負面 12.8%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "15 支影片；486,125 views；1,224 observed comments；992 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 20,
+          "date_min": "2021-09-18 01:14:06+00:00",
+          "date_max": "2024-11-19 23:00:16+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 8
+            },
+            {
+              "label": "education_advice",
+              "count": 8
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 7
+            },
+            {
+              "label": "personal_team_life",
+              "count": 7
+            },
+            {
+              "label": "controversy_response",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "guest_relationship",
+              "lift": 5.550000000000001,
+              "n_videos": 1
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.3214285714285714,
+              "n_videos": 5
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.2333333333333334,
+              "n_videos": 8
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.1384615384615384,
+              "n_videos": 8
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "我对防疫的感受和看法",
+              "count": 394
+            },
+            {
+              "label": "我们如何利用好这轮衰退？｜生成式AI神预言",
+              "count": 103
+            },
+            {
+              "label": "ChatGPT的理解、思考、与合理推演",
+              "count": 66
+            },
+            {
+              "label": "十年估值三千亿，创始人首次揭秘，如何识别并抓住机会？｜Databricks Cofounder",
+              "count": 65
+            },
+            {
+              "label": "注意这个隐藏属性，让你识别出身边的大佬",
+              "count": 61
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "知識",
+            "教學",
+            "建議",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.13526834611171962,
+          "neutral_rate": 0.6139101861993428,
+          "positive_rate": 0.2508214676889376,
+          "like_weighted_negative_rate": 0.1596527369040612,
+          "like_weighted_positive_rate": 0.2585344320188346,
+          "summary_zh": "中性討論為主；負面 13.5%，正面 25.1%，按讚加權負面 16.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 416992,
+          "total_observed_comments": 1209,
+          "unique_commenters": 953,
+          "median_observed_commenters": 32.5,
+          "evidence_zh": "20 支影片；416,992 views；1,209 observed comments；953 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (8); education_advice (8); workplace_tech_career (7); personal_team_life (7); controversy_response (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 13.5%，正面 25.1%，按讚加權負面 16.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "20 支影片；416,992 views；1,209 observed comments；953 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 18,
+          "date_min": "2021-10-07 10:48:06+00:00",
+          "date_max": "2025-02-19 22:39:42+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 15
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 4
+            },
+            {
+              "label": "business_brand",
+              "count": 4
+            },
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "controversy_response",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 6.166666666666666,
+              "n_videos": 1
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.4453125,
+              "n_videos": 15
+            },
+            {
+              "theme": "other",
+              "lift": 1.0277777777777777,
+              "n_videos": 1
+            },
+            {
+              "theme": "business_brand",
+              "lift": 0.6324786324786325,
+              "n_videos": 4
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "婚礼视频！",
+              "count": 207
+            },
+            {
+              "label": "和老婆一起采访完Onlyfans博主，我自惭形秽了……",
+              "count": 151
+            },
+            {
+              "label": "「优秀」的陷阱｜用当下驱散臆想，进入自洽和内驱之境界",
+              "count": 68
+            },
+            {
+              "label": "十万粉感恩特辑：分享惊喜与领悟！｜学习的危险，商业化的冲击，养生餐？",
+              "count": 63
+            },
+            {
+              "label": "有钱有颜学习好，怎么反而抑郁了？｜穆潼的留学经历—上",
+              "count": 61
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "職涯",
+            "科技",
+            "矽谷",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.05405405405405406,
+          "neutral_rate": 0.5662162162162162,
+          "positive_rate": 0.37972972972972974,
+          "like_weighted_negative_rate": 0.06791393826005612,
+          "like_weighted_positive_rate": 0.34836295603367634,
+          "summary_zh": "中性討論為主；負面 5.4%，正面 38.0%，按讚加權負面 6.8%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 330496,
+          "total_observed_comments": 1016,
+          "unique_commenters": 818,
+          "median_observed_commenters": 40.5,
+          "evidence_zh": "18 支影片；330,496 views；1,016 observed comments；818 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (15); workplace_tech_career (4); business_brand (4); education_advice (2); controversy_response (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 5.4%，正面 38.0%，按讚加權負面 6.8%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "18 支影片；330,496 views；1,016 observed comments；818 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 17,
+          "date_min": "2022-06-23 05:13:54+00:00",
+          "date_max": "2025-01-17 03:54:22+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 8
+            },
+            {
+              "label": "controversy_response",
+              "count": 5
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 4
+            },
+            {
+              "label": "education_advice",
+              "count": 4
+            },
+            {
+              "label": "business_brand",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "other",
+              "lift": 2.176470588235294,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "回美国了！为什么离开大厂？",
+              "count": 241
+            },
+            {
+              "label": "如何摆脱无意义的工作？｜Multiple-Fire系列",
+              "count": 183
+            },
+            {
+              "label": "如何渡过历史的垃圾时间？",
+              "count": 49
+            },
+            {
+              "label": "想清楚这些，才能成为财富的主人｜Multiple-Fire系列",
+              "count": 35
+            },
+            {
+              "label": "屁股决定脑袋，还是脑袋决定屁股？",
+              "count": 35
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "職涯",
+            "科技"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.0941346850108617,
+          "neutral_rate": 0.6603910209992759,
+          "positive_rate": 0.24547429398986242,
+          "like_weighted_negative_rate": 0.13225715094873974,
+          "like_weighted_positive_rate": 0.23336165392240157,
+          "summary_zh": "中性討論為主；負面 9.4%，正面 24.5%，按讚加權負面 13.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 431302,
+          "total_observed_comments": 849,
+          "unique_commenters": 687,
+          "median_observed_commenters": 27,
+          "evidence_zh": "17 支影片；431,302 views；849 observed comments；687 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (8); controversy_response (5); workplace_tech_career (4); education_advice (4); business_brand (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 9.4%，正面 24.5%，按讚加權負面 13.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "17 支影片；431,302 views；849 observed comments；687 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 4,
+          "date_min": "2024-04-13 02:53:56+00:00",
+          "date_max": "2026-04-13 17:36:32+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 2
+            },
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "前高管解密升职加薪的游戏规则 -- 情绪价值｜Vivian 访谈 1/2",
+              "count": 76
+            },
+            {
+              "label": "三条反直觉公式讲透复利｜Superlinear",
+              "count": 41
+            },
+            {
+              "label": "卖课两月收入60万，知无不言！",
+              "count": 41
+            },
+            {
+              "label": "AI时代，打工人的出路到底是什么？",
+              "count": 36
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "知識",
+            "教學",
+            "建議",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10863509749303621,
+          "neutral_rate": 0.6991643454038997,
+          "positive_rate": 0.19220055710306408,
+          "like_weighted_negative_rate": 0.26097867001254704,
+          "like_weighted_positive_rate": 0.14993726474278546,
+          "summary_zh": "中性討論為主；負面 10.9%，正面 19.2%，按讚加權負面 26.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 102080,
+          "total_observed_comments": 208,
+          "unique_commenters": 176,
+          "median_observed_commenters": 41,
+          "evidence_zh": "4 支影片；102,080 views；208 observed comments；176 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (2); education_advice (2); personal_team_life (2); workplace_tech_career (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.9%，正面 19.2%，按讚加權負面 26.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "4 支影片；102,080 views；208 observed comments；176 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 5,
+        "cluster_label": "Video cluster 5",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2025-11-05 01:04:44+00:00",
+          "date_max": "2025-11-06 16:43:39+00:00",
+          "pct_graph_videos": null
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 2
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "深度对话00后CEO，重新定义AI时代的成长方式｜AI时代的顶级人才画像｜Kay访谈_上",
+              "count": 35
+            },
+            {
+              "label": "死磕一年热门AI赛道，发现并不卷？｜Aha创始人Kay访谈_下",
+              "count": 25
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "職涯",
+            "科技",
+            "矽谷",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.12745098039215685,
+          "neutral_rate": 0.696078431372549,
+          "positive_rate": 0.17647058823529413,
+          "like_weighted_negative_rate": 0.0764872521246459,
+          "like_weighted_positive_rate": 0.32011331444759206,
+          "summary_zh": "中性討論為主；負面 12.7%，正面 17.6%，按讚加權負面 7.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 36697,
+          "total_observed_comments": 62,
+          "unique_commenters": 55,
+          "median_observed_commenters": 30,
+          "evidence_zh": "2 支影片；36,697 views；62 observed comments；55 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": null,
+          "external_edges": null,
+          "conductance": null,
+          "interpretation_zh": "缺少 shared-audience conductance。",
+          "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (2); workplace_tech_career (2); personal_team_life (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 12.7%，正面 17.6%，按讚加權負面 7.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；36,697 views；62 observed comments；55 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=-, external_edges=-, conductance=-"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1177,6 +3687,8 @@
   "baseline": {
     "is_baseline_member": false,
     "membership": {},
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [],
     "all_metrics": [],
     "n_metrics": 0,

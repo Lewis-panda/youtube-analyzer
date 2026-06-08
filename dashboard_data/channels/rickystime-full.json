@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "rickystime-full",
   "title": "營養師Ricky's Time",
   "channel_id": "UCd7BiGIGWKWGzwSSWlYQI2A",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/rickystime-full/tables/actor_communities.csv",
-        "bytes": 3287
+        "bytes": 3287,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/rickystime-full/tables/bridge_actors.csv",
-        "bytes": 5541
+        "bytes": 5541,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/rickystime-full/tables/channel_overview.csv",
-        "bytes": 364
+        "bytes": 364,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/rickystime-full/tables/commenter_activity.csv",
-        "bytes": 442196
+        "bytes": 442196,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/rickystime-full/tables/commenter_tiers.csv",
-        "bytes": 279
+        "bytes": 279,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/rickystime-full/tables/community_profiles.csv",
-        "bytes": 4621
+        "bytes": 4621,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/rickystime-full/tables/community_sentiment_summary.csv",
-        "bytes": 1648
+        "bytes": 1648,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/rickystime-full/tables/community_summary.csv",
-        "bytes": 596
+        "bytes": 596,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/rickystime-full/tables/community_theme_affinity.csv",
-        "bytes": 2660
+        "bytes": 2660,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/rickystime-full/tables/community_theme_sentiment.csv",
-        "bytes": 4672
+        "bytes": 4672,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/rickystime-full/tables/continuity_sensitivity.csv",
-        "bytes": 578
+        "bytes": 578,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/rickystime-full/tables/continuity_summary.csv",
-        "bytes": 626
+        "bytes": 626,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/rickystime-full/tables/diagnostics.csv",
-        "bytes": 1529
+        "bytes": 1529,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/rickystime-full/tables/network_actor_metrics.csv",
-        "bytes": 5541
+        "bytes": 5541,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/rickystime-full/tables/network_summary.csv",
-        "bytes": 601
+        "bytes": 601,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/rickystime-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 1578596
+        "bytes": 1578596,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/rickystime-full/tables/qwen_video_themes.csv",
-        "bytes": 707473
+        "bytes": 707473,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/rickystime-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 1689
+        "bytes": 1689,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/rickystime-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 41478
+        "bytes": 41478,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/rickystime-full/tables/reply_sentiment_summary.csv",
-        "bytes": 745
+        "bytes": 745,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/rickystime-full/tables/reply_thread_metrics.csv",
-        "bytes": 1198954
+        "bytes": 1198954,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/rickystime-full/tables/reply_thread_overview.csv",
-        "bytes": 357
+        "bytes": 357,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/rickystime-full/tables/rolling_retention.csv",
-        "bytes": 302
+        "bytes": 302,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/rickystime-full/tables/sentiment_hotspots.csv",
-        "bytes": 43661
+        "bytes": 43661,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/rickystime-full/tables/sentiment_source_summary.csv",
-        "bytes": 249
+        "bytes": 249,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/rickystime-full/tables/sentiment_summary.csv",
-        "bytes": 616
+        "bytes": 616,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/rickystime-full/tables/sentiment_theme_summary.csv",
-        "bytes": 1485
+        "bytes": 1485,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/rickystime-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/rickystime-full/tables/theme_summary.csv",
-        "bytes": 190
+        "bytes": 190,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/rickystime-full/tables/theme_video_labels.csv",
-        "bytes": 55093
+        "bytes": 55093,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/rickystime-full/tables/theme_video_labels_long.csv",
-        "bytes": 46598
+        "bytes": 46598,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/rickystime-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1631
+        "bytes": 1631,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/rickystime-full/tables/video_cluster_summary.csv",
-        "bytes": 3270
+        "bytes": 3270,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/rickystime-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1176
+        "bytes": 1176,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/rickystime-full/tables/video_clusters.csv",
-        "bytes": 3585
+        "bytes": 3585,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/rickystime-full/tables/video_link_opportunities.csv",
-        "bytes": 1598
+        "bytes": 1598,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/rickystime-full/tables/video_metrics.csv",
-        "bytes": 22567
+        "bytes": 22567,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/rickystime-full/tables/video_network_metrics.csv",
-        "bytes": 3269
+        "bytes": 3269,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/rickystime-full/tables/video_network_summary.csv",
-        "bytes": 582
+        "bytes": 582,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/rickystime-full/figures/channel_activity.png",
-        "bytes": 78105
+        "bytes": 78105,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/rickystime-full/figures/commenter_tiers.png",
-        "bytes": 24596
+        "bytes": 24596,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/rickystime-full/figures/community_sizes.png",
-        "bytes": 20882
+        "bytes": 20882,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/rickystime-full/figures/rolling_retention.png",
-        "bytes": 29095
+        "bytes": 29095,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/rickystime-full/figures/video_cluster_sizes.png",
-        "bytes": 27130
+        "bytes": 27130,
+        "source_dir": null
       }
     ]
   },
@@ -661,6 +705,692 @@
         "max_core_number": 1
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 14,
+          "pct_active_commenters": 40,
+          "summary_zh": "40.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 120,
+          "avg_comments_per_commenter": 8.571428571428571,
+          "n_videos_touched": 62,
+          "summary_zh": "平均留言 8.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "小紅書 減肥真相？95%的人都不知道｜吃飯不喝水能避免囤積脂肪？｜營養師這樣說",
+            "count": 7
+          },
+          {
+            "label": "減肥外食一定要看這集！麥當勞 減肥也能吃？想吃薯條這樣點，不會變胖的方法｜不用再只吃沙拉，這些漢",
+            "count": 7
+          },
+          {
+            "label": "30天挑戰！無糖飲食！連超商三明治都不能吃，沒變瘦反而吃更油...營養師來挑戰",
+            "count": 5
+          },
+          {
+            "label": "沖冷水澡可以養成吃不胖體質？還可以幫助燃燒脂肪？",
+            "count": 5
+          },
+          {
+            "label": "原來這樣就能瘦？你絕對想不到！五個超簡單的減肥技巧，瘦下來超容易｜營養師這樣說",
+            "count": 5
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "education_advice",
+            "count": 13
+          },
+          {
+            "label": "food_culture",
+            "count": 12
+          },
+          {
+            "label": "personal_team_life",
+            "count": 11
+          },
+          {
+            "label": "controversy_response",
+            "count": 5
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "product_review",
+            "lift": 1.8785310734463276,
+            "n_commenters": 7
+          },
+          {
+            "theme": "event_announcement",
+            "lift": 1.1271186440677967,
+            "n_commenters": 1
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.0316001149095089,
+            "n_commenters": 14
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08227848101265822,
+          "neutral_rate": 0.6012658227848101,
+          "positive_rate": 0.31645569620253167,
+          "like_weighted_negative_rate": 0.0967741935483871,
+          "like_weighted_positive_rate": 0.4327956989247312,
+          "summary_zh": "中性討論為主；負面 8.2%，正面 31.6%，按讚加權負面 9.7%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.07547169811320754,
+            "like_weighted_negative_rate": 0.06463878326996197,
+            "n_comments": 53,
+            "summary_zh": "food_culture：負面 7.5%，按讚加權負面 6.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 6,
+          "pct_active_commenters": 17.142857142857142,
+          "summary_zh": "17.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 53,
+          "avg_comments_per_commenter": 8.833333333333334,
+          "n_videos_touched": 34,
+          "summary_zh": "平均留言 8.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "減肥壓力好大？想放棄怎麼辦？【減脂生活五大原則】讓減脂更輕鬆！｜營養師來聊聊",
+            "count": 5
+          },
+          {
+            "label": "小紅書 瘦身神器！躺著也能減肥的法寶｜橡皮筋瘦臉法？枕頭瘦腿法？懶人減肥有用嗎？｜營養師這樣說",
+            "count": 3
+          },
+          {
+            "label": "火鍋！吃到飽！聚餐又想減肥減脂怎麼吃？吃大餐進食順序超重要！社交聚會飲食要瘦這麼輕鬆？｜營養師這",
+            "count": 3
+          },
+          {
+            "label": "五大減肥必知懶人包！高熱量食物都不能吃？復胖就是這樣來的！｜營養師這樣說",
+            "count": 3
+          },
+          {
+            "label": "全家新品「不推」篇！8月全家鮮食開箱！這一款減脂大地雷！內餡跟醬料對減肥超重要！｜營養師帶你買",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 6
+          },
+          {
+            "label": "education_advice",
+            "count": 5
+          },
+          {
+            "label": "food_culture",
+            "count": 4
+          },
+          {
+            "label": "controversy_response",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "event_announcement",
+            "lift": 2.509433962264151,
+            "n_commenters": 1
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 2.1233671988388974,
+            "n_commenters": 6
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.1762971698113207,
+            "n_commenters": 6
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.15517241379310345,
+          "neutral_rate": 0.6896551724137931,
+          "positive_rate": 0.15517241379310345,
+          "like_weighted_negative_rate": 0.07053941908713693,
+          "like_weighted_positive_rate": 0.2572614107883817,
+          "summary_zh": "中性討論為主；負面 15.5%，正面 15.5%，按讚加權負面 7.1%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 6,
+          "pct_active_commenters": 17.142857142857142,
+          "summary_zh": "17.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 40,
+          "avg_comments_per_commenter": 6.666666666666667,
+          "n_videos_touched": 21,
+          "summary_zh": "平均留言 6.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "看這集小心變太瘦！這四點小習慣，竟是胖與瘦的 關鍵 ｜九成的人都不知道的秘密，其實 減肥 根本不",
+            "count": 4
+          },
+          {
+            "label": "不知不覺瘦下來，只要四個早晨習慣？起床做關鍵一件事，幫你瘦更多！｜營養師這樣說",
+            "count": 4
+          },
+          {
+            "label": "【瘦腿必看】腿粗！腿不直！都有救？減肥瘦不到腿？不再只靠基因｜營養師這樣做ft.【美腿專家】Av",
+            "count": 4
+          },
+          {
+            "label": "油炸食品真的是減脂剋星嗎？脂肪、油品大解析！你絕對不能沒有它｜營養師這樣說",
+            "count": 3
+          },
+          {
+            "label": "減肥外食一定要看這集！麥當勞 減肥也能吃？想吃薯條這樣點，不會變胖的方法｜不用再只吃沙拉，這些漢",
+            "count": 3
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 6
+          },
+          {
+            "label": "education_advice",
+            "count": 5
+          },
+          {
+            "label": "food_culture",
+            "count": 5
+          },
+          {
+            "label": "controversy_response",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "food_culture",
+            "lift": 0.9666136724960255,
+            "n_commenters": 5
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 0.9548141891891893,
+            "n_commenters": 6
+          },
+          {
+            "theme": "education_advice",
+            "lift": 0.8529546495648191,
+            "n_commenters": 6
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.009489916963226572,
+          "neutral_rate": 0.8505338078291815,
+          "positive_rate": 0.13997627520759193,
+          "like_weighted_negative_rate": 0.02918186555497655,
+          "like_weighted_positive_rate": 0.17873892652423137,
+          "summary_zh": "中性討論為主；負面 0.9%，正面 14.0%，按讚加權負面 2.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.011627906976744186,
+            "like_weighted_negative_rate": 0.09111111111111111,
+            "n_comments": 86,
+            "summary_zh": "personal_team_life：負面 1.2%，按讚加權負面 9.1%"
+          },
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.027586206896551724,
+            "like_weighted_negative_rate": 0.01991150442477876,
+            "n_comments": 145,
+            "summary_zh": "food_culture：負面 2.8%，按讚加權負面 2.0%"
+          },
+          {
+            "theme": "education_advice",
+            "negative_rate": 0.004991680532445923,
+            "like_weighted_negative_rate": 0.006147540983606557,
+            "n_comments": 601,
+            "summary_zh": "education_advice：負面 0.5%，按讚加權負面 0.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 4,
+          "pct_active_commenters": 11.428571428571429,
+          "summary_zh": "11.4% of active commenters"
+        },
+        "activity": {
+          "n_comments": 28,
+          "avg_comments_per_commenter": 7.0,
+          "n_videos_touched": 18,
+          "summary_zh": "平均留言 7.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "傳統早餐一餐超過2000卡？！營養師教你如何調整，減脂也能吃｜營養師這樣買",
+            "count": 3
+          },
+          {
+            "label": "每天3000大卡也能瘦？高能量通量的秘密！經歷兩年的實踐心得分享｜高能量通量｜邁向更好的自己",
+            "count": 3
+          },
+          {
+            "label": "突破減肥瓶頸！多吃1000大卡不會胖！｜代謝適應要如何調整？減肥你該知道的事！｜邁向更好的自己【",
+            "count": 3
+          },
+          {
+            "label": "想減肥不要再168斷食了！？這樣減脂根本沒有用！？回顧自己3年前的影片！反應影片【Ricky R",
+            "count": 2
+          },
+          {
+            "label": "連營養師都累到差點放棄？｜減肥撐不下去怎麼辦？先做關鍵一件事，終於突破自我！｜邁向更好的自己【體",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 4
+          },
+          {
+            "label": "education_advice",
+            "count": 4
+          },
+          {
+            "label": "food_culture",
+            "count": 3
+          },
+          {
+            "label": "controversy_response",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "personal_team_life",
+            "lift": 1.1875,
+            "n_commenters": 4
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.00635593220339,
+            "n_commenters": 4
+          },
+          {
+            "theme": "food_culture",
+            "lift": 0.9579831932773109,
+            "n_commenters": 4
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.024390243902439025,
+          "neutral_rate": 0.7317073170731707,
+          "positive_rate": 0.24390243902439024,
+          "like_weighted_negative_rate": 0.008928571428571428,
+          "like_weighted_positive_rate": 0.10714285714285714,
+          "summary_zh": "中性討論為主；負面 2.4%，正面 24.4%，按讚加權負面 0.9%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 3,
+          "pct_active_commenters": 8.571428571428571,
+          "summary_zh": "8.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 21,
+          "avg_comments_per_commenter": 7.0,
+          "n_videos_touched": 15,
+          "summary_zh": "平均留言 7.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "沖冷水澡可以養成吃不胖體質？還可以幫助燃燒脂肪？",
+            "count": 3
+          },
+          {
+            "label": "30天挑戰！無糖飲食！連超商三明治都不能吃，沒變瘦反而吃更油...營養師來挑戰",
+            "count": 3
+          },
+          {
+            "label": "泡芙人、情緒進食、局部減脂，如何找到適合自己的減脂計劃？營養師團隊減脂比賽ep1｜營養師這樣說",
+            "count": 2
+          },
+          {
+            "label": "好市多 Costco 減脂好物｜2024最新版｜零食、食物六大類、冷凍餐點｜營養師這樣買",
+            "count": 2
+          },
+          {
+            "label": "吃澱粉就會胖！？紫米飯比較健康！？減肥完全可以吃澱粉！教你認識澱粉｜營養師這樣說",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "education_advice",
+            "count": 3
+          },
+          {
+            "label": "food_culture",
+            "count": 3
+          },
+          {
+            "label": "personal_team_life",
+            "count": 3
+          },
+          {
+            "label": "controversy_response",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1111111111111111,
+          "neutral_rate": 0.7777777777777778,
+          "positive_rate": 0.1111111111111111,
+          "like_weighted_negative_rate": 0.033707865168539325,
+          "like_weighted_positive_rate": 0.07865168539325842,
+          "summary_zh": "中性討論為主；負面 11.1%，正面 11.1%，按讚加權負面 3.4%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 5.714285714285714,
+          "summary_zh": "5.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 12,
+          "avg_comments_per_commenter": 6.0,
+          "n_videos_touched": 6,
+          "summary_zh": "平均留言 6.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "掌握八分飽的技巧！避免無意識過度進食，如何辨認飢餓感和飽足感？",
+            "count": 2
+          },
+          {
+            "label": "【宵夜篇】減脂可以吃消夜！宵夜要怎麼點才對？滷味.豆漿店.便利商店都可以吃！｜外食族飲食指南針｜",
+            "count": 2
+          },
+          {
+            "label": "減肥外食一定要看這集！麥當勞 減肥也能吃？想吃薯條這樣點，不會變胖的方法｜不用再只吃沙拉，這些漢",
+            "count": 2
+          },
+          {
+            "label": "每天3000大卡也能瘦？高能量通量的秘密！經歷兩年的實踐心得分享｜高能量通量｜邁向更好的自己",
+            "count": 1
+          },
+          {
+            "label": "吃越多體態越好！這半年減脂的親身體驗！進入備賽階段！飲食與訓練如何調整？｜邁向更好的自己【體態記",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "education_advice",
+            "count": 2
+          },
+          {
+            "label": "food_culture",
+            "count": 2
+          },
+          {
+            "label": "personal_team_life",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0,
+          "neutral_rate": 0.8974358974358975,
+          "positive_rate": 0.10256410256410256,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.3787878787878788,
+          "summary_zh": "中性討論為主；負面 0.0%，正面 10.3%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 14,
       "n_edges": 8,
@@ -821,6 +1551,823 @@
         "conductance": 0.0,
         "avg_core_number": 1.0,
         "max_core_number": 1
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-02-04 11:00:08+00:00",
+          "date_max": "2023-02-22 11:00:09+00:00",
+          "pct_graph_videos": 14.285714285714285
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "education_advice",
+              "lift": 1.1666666666666667,
+              "n_videos": 2
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 0.875,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "你會這樣做嗎？五個 關鍵 習慣 ！你要開始瘦了！不用少吃也能瘦的方法，掌握核心觀念就能輕鬆瘦｜營",
+              "count": 99
+            },
+            {
+              "label": "看這集小心變太瘦！這四點小習慣，竟是胖與瘦的 關鍵 ｜九成的人都不知道的秘密，其實 減肥 根本不",
+              "count": 85
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.03018867924528302,
+          "neutral_rate": 0.6716981132075471,
+          "positive_rate": 0.2981132075471698,
+          "like_weighted_negative_rate": 0.025688073394495414,
+          "like_weighted_positive_rate": 0.4654434250764526,
+          "summary_zh": "中性討論為主；負面 3.0%，正面 29.8%，按讚加權負面 2.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 466706,
+          "total_observed_comments": 187,
+          "unique_commenters": 178,
+          "median_observed_commenters": 92,
+          "evidence_zh": "2 支影片；466,706 views；187 observed comments；178 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "education_advice (2); personal_team_life (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 3.0%，正面 29.8%，按讚加權負面 2.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；466,706 views；187 observed comments；178 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-05-24 11:00:07+00:00",
+          "date_max": "2023-10-11 11:00:57+00:00",
+          "pct_graph_videos": 14.285714285714285
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 2.8,
+              "n_videos": 2
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.1666666666666667,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "減肥外食一定要看這集！麥當勞 減肥也能吃？想吃薯條這樣點，不會變胖的方法｜不用再只吃沙拉，這些漢",
+              "count": 115
+            },
+            {
+              "label": "【宵夜篇】減脂可以吃消夜！宵夜要怎麼點才對？滷味.豆漿店.便利商店都可以吃！｜外食族飲食指南針｜",
+              "count": 56
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.0743801652892562,
+          "neutral_rate": 0.6983471074380165,
+          "positive_rate": 0.22727272727272727,
+          "like_weighted_negative_rate": 0.03699421965317919,
+          "like_weighted_positive_rate": 0.3895953757225434,
+          "summary_zh": "中性討論為主；負面 7.4%，正面 22.7%，按讚加權負面 3.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 391461,
+          "total_observed_comments": 179,
+          "unique_commenters": 166,
+          "median_observed_commenters": 85.5,
+          "evidence_zh": "2 支影片；391,461 views；179 observed comments；166 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "education_advice (2); food_culture (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 7.4%，正面 22.7%，按讚加權負面 3.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；391,461 views；179 observed comments；166 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-04-29 11:00:07+00:00",
+          "date_max": "2024-03-05 11:00:15+00:00",
+          "pct_graph_videos": 14.285714285714285
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "education_advice",
+              "count": 1
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "food_culture",
+              "lift": 1.4,
+              "n_videos": 1
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 0.875,
+              "n_videos": 1
+            },
+            {
+              "theme": "education_advice",
+              "lift": 0.5833333333333334,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "不知不覺瘦下來，只要四個早晨習慣？起床做關鍵一件事，幫你瘦更多！｜營養師這樣說",
+              "count": 101
+            },
+            {
+              "label": "油炸食品真的是減脂剋星嗎？脂肪、油品大解析！你絕對不能沒有它｜營養師這樣說",
+              "count": 32
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.04017857142857143,
+          "neutral_rate": 0.7232142857142857,
+          "positive_rate": 0.23660714285714285,
+          "like_weighted_negative_rate": 0.0220112214069918,
+          "like_weighted_positive_rate": 0.7289598618903755,
+          "summary_zh": "中性討論為主；負面 4.0%，正面 23.7%，按讚加權負面 2.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 963877,
+          "total_observed_comments": 136,
+          "unique_commenters": 128,
+          "median_observed_commenters": 66.5,
+          "evidence_zh": "2 支影片；963,877 views；136 observed comments；128 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "education_advice (1); food_culture (1); personal_team_life (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 4.0%，正面 23.7%，按讚加權負面 2.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；963,877 views；136 observed comments；128 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 3,
+          "date_min": "2023-05-31 11:00:11+00:00",
+          "date_max": "2024-02-23 11:00:13+00:00",
+          "pct_graph_videos": 21.428571428571427
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 3
+            },
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "personal_team_life",
+              "lift": 1.75,
+              "n_videos": 3
+            },
+            {
+              "theme": "food_culture",
+              "lift": 0.9333333333333332,
+              "n_videos": 1
+            },
+            {
+              "theme": "education_advice",
+              "lift": 0.7777777777777778,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "每天3000大卡也能瘦？高能量通量的秘密！經歷兩年的實踐心得分享｜高能量通量｜邁向更好的自己",
+              "count": 48
+            },
+            {
+              "label": "突破減肥瓶頸！多吃1000大卡不會胖！｜代謝適應要如何調整？減肥你該知道的事！｜邁向更好的自己【",
+              "count": 43
+            },
+            {
+              "label": "傳統早餐一餐超過2000卡？！營養師教你如何調整，減脂也能吃｜營養師這樣買",
+              "count": 41
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學",
+            "建議",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.049723756906077346,
+          "neutral_rate": 0.6850828729281768,
+          "positive_rate": 0.26519337016574585,
+          "like_weighted_negative_rate": 0.0203125,
+          "like_weighted_positive_rate": 0.3109375,
+          "summary_zh": "中性討論為主；負面 5.0%，正面 26.5%，按讚加權負面 2.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 208392,
+          "total_observed_comments": 132,
+          "unique_commenters": 121,
+          "median_observed_commenters": 43,
+          "evidence_zh": "3 支影片；208,392 views；132 observed comments；121 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 2,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=2, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (3); education_advice (2); food_culture (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 5.0%，正面 26.5%，按讚加權負面 2.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "3 支影片；208,392 views；132 observed comments；121 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=2, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 3,
+          "date_min": "2023-09-06 11:30:11+00:00",
+          "date_max": "2023-10-04 11:50:00+00:00",
+          "pct_graph_videos": 21.428571428571427
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "education_advice",
+              "count": 3
+            },
+            {
+              "label": "controversy_response",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "controversy_response",
+              "lift": 4.666666666666667,
+              "n_videos": 2
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.1666666666666667,
+              "n_videos": 3
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.1666666666666667,
+              "n_videos": 2
+            },
+            {
+              "theme": "food_culture",
+              "lift": 0.9333333333333332,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "想減肥不要再168斷食了！？這樣減脂根本沒有用！？回顧自己3年前的影片！反應影片【Ricky R",
+              "count": 65
+            },
+            {
+              "label": "火鍋！吃到飽！聚餐又想減肥減脂怎麼吃？吃大餐進食順序超重要！社交聚會飲食要瘦這麼輕鬆？｜營養師這",
+              "count": 34
+            },
+            {
+              "label": "減肥壓力好大？想放棄怎麼辦？【減脂生活五大原則】讓減脂更輕鬆！｜營養師來聊聊",
+              "count": 32
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.091324200913242,
+          "neutral_rate": 0.634703196347032,
+          "positive_rate": 0.273972602739726,
+          "like_weighted_negative_rate": 0.1789587852494577,
+          "like_weighted_positive_rate": 0.20715835140997832,
+          "summary_zh": "中性討論為主；負面 9.1%，正面 27.4%，按讚加權負面 17.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 163153,
+          "total_observed_comments": 132,
+          "unique_commenters": 120,
+          "median_observed_commenters": 34,
+          "evidence_zh": "3 支影片；163,153 views；132 observed comments；120 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 2,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=2, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "education_advice (3); controversy_response (2); personal_team_life (2); food_culture (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 9.1%，正面 27.4%，按讚加權負面 17.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "3 支影片；163,153 views；132 observed comments；120 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=2, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 5,
+        "cluster_label": "Video cluster 5",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2024-03-19 11:00:25+00:00",
+          "date_max": "2024-05-09 11:00:38+00:00",
+          "pct_graph_videos": 14.285714285714285
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "education_advice",
+              "lift": 1.1666666666666667,
+              "n_videos": 2
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 0.875,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "30天挑戰！無糖飲食！連超商三明治都不能吃，沒變瘦反而吃更油...營養師來挑戰",
+              "count": 80
+            },
+            {
+              "label": "沖冷水澡可以養成吃不胖體質？還可以幫助燃燒脂肪？",
+              "count": 33
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "知識",
+            "教學",
+            "建議",
+            "團隊",
+            "近況",
+            "生日",
+            "挑戰"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1,
+          "neutral_rate": 0.7705882352941177,
+          "positive_rate": 0.12941176470588237,
+          "like_weighted_negative_rate": 0.1008827238335435,
+          "like_weighted_positive_rate": 0.06935687263556116,
+          "summary_zh": "中性討論為主；負面 10.0%，正面 12.9%，按讚加權負面 10.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 97061,
+          "total_observed_comments": 116,
+          "unique_commenters": 107,
+          "median_observed_commenters": 56.5,
+          "evidence_zh": "2 支影片；97,061 views；116 observed comments；107 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "education_advice (2); personal_team_life (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.0%，正面 12.9%，按讚加權負面 10.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；97,061 views；116 observed comments；107 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1362,6 +2909,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

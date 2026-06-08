@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "liketaitai-full",
   "title": "理科太太 Li Ke Tai Tai",
   "channel_id": "UCHfY_EOzB1i57hYLSw_rYMg",
@@ -110,219 +110,262 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/liketaitai-full/tables/actor_communities.csv",
-        "bytes": 8392
+        "bytes": 8392,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/liketaitai-full/tables/bridge_actors.csv",
-        "bytes": 8480
+        "bytes": 8480,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/liketaitai-full/tables/channel_overview.csv",
-        "bytes": 369
+        "bytes": 369,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/liketaitai-full/tables/commenter_activity.csv",
-        "bytes": 748722
+        "bytes": 748722,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/liketaitai-full/tables/commenter_tiers.csv",
-        "bytes": 265
+        "bytes": 265,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/liketaitai-full/tables/community_profiles.csv",
-        "bytes": 2685
+        "bytes": 2685,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/liketaitai-full/tables/community_sentiment_summary.csv",
-        "bytes": 1424
+        "bytes": 1424,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/liketaitai-full/tables/community_summary.csv",
-        "bytes": 604
+        "bytes": 604,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/liketaitai-full/tables/community_theme_affinity.csv",
-        "bytes": 4312
+        "bytes": 4312,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/liketaitai-full/tables/community_theme_sentiment.csv",
-        "bytes": 5112
+        "bytes": 5112,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/liketaitai-full/tables/continuity_sensitivity.csv",
-        "bytes": 588
+        "bytes": 588,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/liketaitai-full/tables/continuity_summary.csv",
-        "bytes": 629
+        "bytes": 629,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/liketaitai-full/tables/diagnostics.csv",
-        "bytes": 1360
+        "bytes": 1360,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/liketaitai-full/tables/network_actor_metrics.csv",
-        "bytes": 14047
+        "bytes": 14047,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/liketaitai-full/tables/network_summary.csv",
-        "bytes": 629
+        "bytes": 629,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/liketaitai-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 2167566
+        "bytes": 2167566,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/liketaitai-full/tables/qwen_video_themes.csv",
-        "bytes": 61517
+        "bytes": 61517,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/liketaitai-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2235
+        "bytes": 2235,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/liketaitai-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 17820
+        "bytes": 17820,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/liketaitai-full/tables/reply_sentiment_summary.csv",
-        "bytes": 732
+        "bytes": 732,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/liketaitai-full/tables/reply_thread_metrics.csv",
-        "bytes": 1985766
+        "bytes": 1985766,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/liketaitai-full/tables/reply_thread_overview.csv",
-        "bytes": 358
+        "bytes": 358,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/liketaitai-full/tables/rolling_retention.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/liketaitai-full/tables/sentiment_hotspots.csv",
-        "bytes": 15872
+        "bytes": 15872,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/liketaitai-full/tables/sentiment_source_summary.csv",
-        "bytes": 249
+        "bytes": 249,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/liketaitai-full/tables/sentiment_summary.csv",
-        "bytes": 634
+        "bytes": 634,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/liketaitai-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2178
+        "bytes": 2178,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/liketaitai-full/tables/theme_source_summary.csv",
-        "bytes": 30
+        "bytes": 30,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/liketaitai-full/tables/theme_summary.csv",
-        "bytes": 263
+        "bytes": 263,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/liketaitai-full/tables/theme_video_labels.csv",
-        "bytes": 18239
+        "bytes": 18239,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/liketaitai-full/tables/theme_video_labels_long.csv",
-        "bytes": 10264
+        "bytes": 10264,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/liketaitai-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1491
+        "bytes": 1491,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/liketaitai-full/tables/video_cluster_summary.csv",
-        "bytes": 2952
+        "bytes": 2952,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/liketaitai-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 2387
+        "bytes": 2387,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/liketaitai-full/tables/video_clusters.csv",
-        "bytes": 6136
+        "bytes": 6136,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/liketaitai-full/tables/video_link_opportunities.csv",
-        "bytes": 60544
+        "bytes": 60544,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/liketaitai-full/tables/video_metrics.csv",
-        "bytes": 6459
+        "bytes": 6459,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/liketaitai-full/tables/video_network_metrics.csv",
-        "bytes": 6858
+        "bytes": 6858,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/liketaitai-full/tables/video_network_summary.csv",
-        "bytes": 630
+        "bytes": 630,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/liketaitai-full/figures/channel_activity.png",
-        "bytes": 77398
+        "bytes": 77398,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/liketaitai-full/figures/commenter_tiers.png",
-        "bytes": 23594
+        "bytes": 23594,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/liketaitai-full/figures/community_sizes.png",
-        "bytes": 23131
+        "bytes": 23131,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/liketaitai-full/figures/video_cluster_sizes.png",
-        "bytes": 24724
+        "bytes": 24724,
+        "source_dir": null
       }
     ]
   },
@@ -673,6 +716,621 @@
         "max_core_number": 1
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 40,
+          "pct_active_commenters": 43.01075268817204,
+          "summary_zh": "43.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 190,
+          "avg_comments_per_commenter": 4.75,
+          "n_videos_touched": 35,
+          "summary_zh": "平均留言 4.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "對生命徬徨 是因為你很努力 獻給所有30-50歲被夾在中間的世代",
+            "count": 22
+          },
+          {
+            "label": "跟父母的關係一言難盡？看看蔡康永如何回應",
+            "count": 19
+          },
+          {
+            "label": "人生五分熟，我要跟關穎開一個Podcast？！",
+            "count": 18
+          },
+          {
+            "label": "25歲的時候以為什麼都知道了，到35歲才覺得我什麼都不懂！",
+            "count": 11
+          },
+          {
+            "label": "吃太多蛋白質會傷腎？破解關於蛋白質的各種迷思",
+            "count": 10
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 40
+          },
+          {
+            "label": "controversy_response",
+            "count": 17
+          },
+          {
+            "label": "food_culture",
+            "count": 12
+          },
+          {
+            "label": "other",
+            "count": 8
+          },
+          {
+            "label": "travel_exploration",
+            "count": 5
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "workplace_tech_career",
+            "lift": 1.5034482758620689,
+            "n_commenters": 6
+          },
+          {
+            "theme": "guest_relationship",
+            "lift": 1.4777483053345122,
+            "n_commenters": 31
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.172043010752688,
+            "n_commenters": 21
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "美食",
+            "文化"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.06666666666666667,
+          "neutral_rate": 0.4238095238095238,
+          "positive_rate": 0.5095238095238095,
+          "like_weighted_negative_rate": 0.03445945945945946,
+          "like_weighted_positive_rate": 0.4885135135135135,
+          "summary_zh": "中性偏正，正向討論較多；負面 6.7%，正面 51.0%，按讚加權負面 3.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.04861111111111111,
+            "like_weighted_negative_rate": 0.02329450915141431,
+            "n_comments": 144,
+            "summary_zh": "personal_team_life：負面 4.9%，按讚加權負面 2.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合餐飲、城市體驗、在地文化與消費導購合作。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 31,
+          "pct_active_commenters": 33.33333333333333,
+          "summary_zh": "33.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 171,
+          "avg_comments_per_commenter": 5.516129032258065,
+          "n_videos_touched": 25,
+          "summary_zh": "平均留言 5.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "開車遇到突發狀況，這些保命動作你做對了嗎？",
+            "count": 19
+          },
+          {
+            "label": "跟父母的關係一言難盡？看看蔡康永如何回應",
+            "count": 14
+          },
+          {
+            "label": "緊繃了一輩子，我終於學會放鬆的生活 #張鈞甯",
+            "count": 14
+          },
+          {
+            "label": "贏回身體主控權，全球爆紅的多巴胺排毒真的科學嗎？",
+            "count": 13
+          },
+          {
+            "label": "幸運的科學：為什麼有些人的運氣特別好，我做得到嗎？#閃亮人生保證班 #好來全亮白酵素",
+            "count": 12
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 30
+          },
+          {
+            "label": "controversy_response",
+            "count": 20
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 19
+          },
+          {
+            "label": "education_advice",
+            "count": 11
+          },
+          {
+            "label": "other",
+            "count": 6
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "automotive_luxury",
+            "lift": 2.091919191919192,
+            "n_commenters": 19
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 1.2922804689228047,
+            "n_commenters": 27
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.1081133919843595,
+            "n_commenters": 18
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "車",
+            "精品"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.02185792349726776,
+          "neutral_rate": 0.4644808743169399,
+          "positive_rate": 0.5136612021857924,
+          "like_weighted_negative_rate": 0.1591503267973856,
+          "like_weighted_positive_rate": 0.3660130718954248,
+          "summary_zh": "中性偏正，正向討論較多；負面 2.2%，正面 51.4%，按讚加權負面 15.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.038834951456310676,
+            "like_weighted_negative_rate": 0.2531185031185031,
+            "n_comments": 103,
+            "summary_zh": "personal_team_life：負面 3.9%，按讚加權負面 25.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 16,
+          "pct_active_commenters": 17.20430107526882,
+          "summary_zh": "17.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 138,
+          "avg_comments_per_commenter": 8.625,
+          "n_videos_touched": 24,
+          "summary_zh": "平均留言 8.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "你也是臭臉人嗎？其實我們被誤會很久了 #楊乃文",
+            "count": 8
+          },
+          {
+            "label": "你很有可能體驗過，但不知道這就是焦慮症發作",
+            "count": 8
+          },
+          {
+            "label": "攸關大人尊嚴的夾娃娃攻略",
+            "count": 6
+          },
+          {
+            "label": "緊繃了一輩子，我終於學會放鬆的生活 #張鈞甯",
+            "count": 4
+          },
+          {
+            "label": "看完直接幫你省下28萬元！ 科學解釋超夯韓國色彩分析",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 15
+          },
+          {
+            "label": "controversy_response",
+            "count": 9
+          },
+          {
+            "label": "other",
+            "count": 6
+          },
+          {
+            "label": "travel_exploration",
+            "count": 6
+          },
+          {
+            "label": "education_advice",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.02097902097902098,
+          "neutral_rate": 0.6503496503496503,
+          "positive_rate": 0.32867132867132864,
+          "like_weighted_negative_rate": 0.014064697609001406,
+          "like_weighted_positive_rate": 0.4472573839662447,
+          "summary_zh": "中性討論為主；負面 2.1%，正面 32.9%，按讚加權負面 1.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.014285714285714285,
+            "like_weighted_negative_rate": 0.005494505494505495,
+            "n_comments": 70,
+            "summary_zh": "personal_team_life：負面 1.4%，按讚加權負面 0.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 2.1505376344086025,
+          "summary_zh": "2.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 7,
+          "avg_comments_per_commenter": 3.5,
+          "n_videos_touched": 4,
+          "summary_zh": "平均留言 3.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "為什麼我有運動，卻還是這瘦不下來！？ #Zone2 #燃脂",
+            "count": 2
+          },
+          {
+            "label": "富二代創業很簡單？從排隊網紅店到差點破產？#楊秀蓉 Janet #理性創業",
+            "count": 2
+          },
+          {
+            "label": "婚前沒講清楚，婚後情話都會變氣話 #劉以豪 #柯佳嬿",
+            "count": 2
+          },
+          {
+            "label": "人生五分熟，我要跟關穎開一個Podcast？！",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0,
+          "neutral_rate": 0.9,
+          "positive_rate": 0.1,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.06060606060606061,
+          "summary_zh": "中性討論為主；負面 0.0%，正面 10.0%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 2.1505376344086025,
+          "summary_zh": "2.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 7,
+          "avg_comments_per_commenter": 3.5,
+          "n_videos_touched": 4,
+          "summary_zh": "平均留言 3.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "斷崖式衰老！這些技術都可以逆轉！",
+            "count": 2
+          },
+          {
+            "label": "對生命徬徨 是因為你很努力 獻給所有30-50歲被夾在中間的世代",
+            "count": 2
+          },
+          {
+            "label": "人生五分熟，我要跟關穎開一個Podcast？！",
+            "count": 2
+          },
+          {
+            "label": "不了解熱量赤字 vs 荷爾蒙 少吃也瘦不下來",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 2
+          },
+          {
+            "label": "controversy_response",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0,
+          "neutral_rate": 0.375,
+          "positive_rate": 0.625,
+          "like_weighted_negative_rate": 0,
+          "like_weighted_positive_rate": 0.7222222222222222,
+          "summary_zh": "中性偏正，正向討論較多；負面 0.0%，正面 62.5%，按讚加權負面 0.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 2.1505376344086025,
+          "summary_zh": "2.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 7,
+          "avg_comments_per_commenter": 3.5,
+          "n_videos_touched": 4,
+          "summary_zh": "平均留言 3.5 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "為什麼我有運動，卻還是這瘦不下來！？ #Zone2 #燃脂",
+            "count": 2
+          },
+          {
+            "label": "跟父母的關係一言難盡？看看蔡康永如何回應",
+            "count": 2
+          },
+          {
+            "label": "35歲開始熱潮紅、腦霧、憂鬱？這可能是更年期前期！",
+            "count": 2
+          },
+          {
+            "label": "成人提升自己腦力最好的方式",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "personal_team_life",
+            "count": 2
+          },
+          {
+            "label": "controversy_response",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.2857142857142857,
+          "neutral_rate": 0,
+          "positive_rate": 0.7142857142857143,
+          "like_weighted_negative_rate": 0.15789473684210525,
+          "like_weighted_positive_rate": 0.8421052631578947,
+          "summary_zh": "正向為主，但仍需看負面來源；負面 28.6%，正面 71.4%，按讚加權負面 15.8%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 34,
       "n_edges": 113,
@@ -810,6 +1468,725 @@
         "conductance": 0.21739130434782608,
         "avg_core_number": 1.6666666666666667,
         "max_core_number": 2
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 11,
+          "date_min": "2023-06-29 04:00:01+00:00",
+          "date_max": "2025-08-21 11:00:55+00:00",
+          "pct_graph_videos": 32.35294117647059
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 7
+            },
+            {
+              "label": "controversy_response",
+              "count": 2
+            },
+            {
+              "label": "business_brand",
+              "count": 2
+            },
+            {
+              "label": "guest_relationship",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "city_lifestyle",
+              "lift": 3.090909090909091,
+              "n_videos": 1
+            },
+            {
+              "theme": "physical_challenge",
+              "lift": 3.090909090909091,
+              "n_videos": 1
+            },
+            {
+              "theme": "travel_exploration",
+              "lift": 3.090909090909091,
+              "n_videos": 1
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.5454545454545454,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "跟父母的關係一言難盡？看看蔡康永如何回應",
+              "count": 1070
+            },
+            {
+              "label": "對生命徬徨 是因為你很努力 獻給所有30-50歲被夾在中間的世代",
+              "count": 481
+            },
+            {
+              "label": "攸關大人尊嚴的夾娃娃攻略",
+              "count": 463
+            },
+            {
+              "label": "人生五分熟，我要跟關穎開一個Podcast？！",
+              "count": 259
+            },
+            {
+              "label": "吃太多蛋白質會傷腎？破解關於蛋白質的各種迷思",
+              "count": 196
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.08136352326449366,
+          "neutral_rate": 0.4501119681512814,
+          "positive_rate": 0.46852450858422495,
+          "like_weighted_negative_rate": 0.05216409097910356,
+          "like_weighted_positive_rate": 0.6608050521127483,
+          "summary_zh": "中性偏正，正向討論較多；負面 8.1%，正面 46.9%，按讚加權負面 5.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 3960008,
+          "total_observed_comments": 3264,
+          "unique_commenters": 2938,
+          "median_observed_commenters": 190,
+          "evidence_zh": "11 支影片；3,960,008 views；3,264 observed comments；2,938 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 23,
+          "external_edges": 28,
+          "conductance": 0.34668721109399075,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=23, external_edges=28, conductance=0.347"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (7); controversy_response (2); business_brand (2); guest_relationship (2); food_culture (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 8.1%，正面 46.9%，按讚加權負面 5.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "11 支影片；3,960,008 views；3,264 observed comments；2,938 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=23, external_edges=28, conductance=0.347"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 13,
+          "date_min": "2023-01-04 04:00:00+00:00",
+          "date_max": "2025-04-24 04:00:53+00:00",
+          "pct_graph_videos": 38.23529411764706
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 6
+            },
+            {
+              "label": "personal_team_life",
+              "count": 6
+            },
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "business_brand",
+              "count": 2
+            },
+            {
+              "label": "automotive_luxury",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "automotive_luxury",
+              "lift": 2.6153846153846154,
+              "n_videos": 1
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.7435897435897436,
+              "n_videos": 6
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.3076923076923077,
+              "n_videos": 2
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.3076923076923077,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "婚前沒講清楚，婚後情話都會變氣話 #劉以豪 #柯佳嬿",
+              "count": 216
+            },
+            {
+              "label": "千錯萬錯都是別人的錯！認識受害者情結",
+              "count": 176
+            },
+            {
+              "label": "開車遇到突發狀況，這些保命動作你做對了嗎？",
+              "count": 175
+            },
+            {
+              "label": "緊繃了一輩子，我終於學會放鬆的生活 #張鈞甯",
+              "count": 119
+            },
+            {
+              "label": "看完直接幫你省下28萬元！ 科學解釋超夯韓國色彩分析",
+              "count": 115
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1050080775444265,
+          "neutral_rate": 0.613354873451804,
+          "positive_rate": 0.2816370490037695,
+          "like_weighted_negative_rate": 0.14328911431915725,
+          "like_weighted_positive_rate": 0.29286968396410457,
+          "summary_zh": "中性討論為主；負面 10.5%，正面 28.2%，按讚加權負面 14.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1980722,
+          "total_observed_comments": 1409,
+          "unique_commenters": 1158,
+          "median_observed_commenters": 80,
+          "evidence_zh": "13 支影片；1,980,722 views；1,409 observed comments；1,158 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 48,
+          "external_edges": 25,
+          "conductance": 0.22769953051643194,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=48, external_edges=25, conductance=0.228"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (6); personal_team_life (6); education_advice (2); business_brand (2); automotive_luxury (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.5%，正面 28.2%，按讚加權負面 14.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "13 支影片；1,980,722 views；1,409 observed comments；1,158 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=48, external_edges=25, conductance=0.228"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 5,
+          "date_min": "2023-08-03 04:00:32+00:00",
+          "date_max": "2023-09-14 04:00:03+00:00",
+          "pct_graph_videos": 14.705882352941178
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "controversy_response",
+              "count": 1
+            },
+            {
+              "label": "education_advice",
+              "count": 1
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            },
+            {
+              "label": "guest_relationship",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "other",
+              "lift": 2.2666666666666666,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "你很有可能體驗過，但不知道這就是焦慮症發作",
+              "count": 331
+            },
+            {
+              "label": "你也是臭臉人嗎？其實我們被誤會很久了 #楊乃文",
+              "count": 118
+            },
+            {
+              "label": "你和成功的距離，只是少了踏出那一步的自信",
+              "count": 78
+            },
+            {
+              "label": "住吵雜馬路旁邊容易少活幾年，你家中了嗎？",
+              "count": 39
+            },
+            {
+              "label": "保養不好的話，你家的鍋子會讓你吃到重金屬!!",
+              "count": 24
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.1617473435655254,
+          "neutral_rate": 0.5608028335301063,
+          "positive_rate": 0.27744982290436837,
+          "like_weighted_negative_rate": 0.40865904990980156,
+          "like_weighted_positive_rate": 0.2841852074564041,
+          "summary_zh": "中性討論為主；負面 16.2%，正面 27.7%，按讚加權負面 40.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 1081607,
+          "total_observed_comments": 616,
+          "unique_commenters": 558,
+          "median_observed_commenters": 78,
+          "evidence_zh": "5 支影片；1,081,607 views；616 observed comments；558 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 6,
+          "external_edges": 11,
+          "conductance": 0.5182481751824818,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=6, external_edges=11, conductance=0.518"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (2); controversy_response (1); education_advice (1); food_culture (1); guest_relationship (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 16.2%，正面 27.7%，按讚加權負面 40.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "5 支影片；1,081,607 views；616 observed comments；558 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=6, external_edges=11, conductance=0.518"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2025-05-08 04:32:47+00:00",
+          "date_max": "2025-05-15 12:24:01+00:00",
+          "pct_graph_videos": 5.88235294117647
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "guest_relationship",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "[ENG SUB/CC] 如果回到出道那一天 藝聲想對自己說… #SUPERJUNIOR #YE",
+              "count": 233
+            },
+            {
+              "label": "[ENG SUB/CC] 如果要跟Red Velvet成員交換一天，我會選...... #Red",
+              "count": 149
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "來賓",
+            "合作",
+            "外國人"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.05476673427991886,
+          "neutral_rate": 0.16024340770791076,
+          "positive_rate": 0.7849898580121704,
+          "like_weighted_negative_rate": 0.02618987660538907,
+          "like_weighted_positive_rate": 0.9070763031981869,
+          "summary_zh": "中性偏正，正向討論較多；負面 5.5%，正面 78.5%，按讚加權負面 2.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 657644,
+          "total_observed_comments": 443,
+          "unique_commenters": 372,
+          "median_observed_commenters": 191,
+          "evidence_zh": "2 支影片；657,644 views；443 observed comments；372 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (2); guest_relationship (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 5.5%，正面 78.5%，按讚加權負面 2.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；657,644 views；443 observed comments；372 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合跨圈層來賓合作、人物故事與互相導流的聯名企劃。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 3,
+          "date_min": "2025-07-10 11:01:21+00:00",
+          "date_max": "2025-09-04 11:01:29+00:00",
+          "pct_graph_videos": 8.823529411764707
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "成人提升自己腦力最好的方式",
+              "count": 72
+            },
+            {
+              "label": "學會這點 讓你無痛完成任何事",
+              "count": 72
+            },
+            {
+              "label": "減肥卡關？先養菌，再減重 想吃垃圾食物？5 分鐘把開關關掉",
+              "count": 64
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "美食",
+            "文化",
+            "夜市"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.06405693950177936,
+          "neutral_rate": 0.43416370106761565,
+          "positive_rate": 0.501779359430605,
+          "like_weighted_negative_rate": 0.03524945770065076,
+          "like_weighted_positive_rate": 0.6306941431670282,
+          "summary_zh": "中性偏正，正向討論較多；負面 6.4%，正面 50.2%，按讚加權負面 3.5%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 242125,
+          "total_observed_comments": 209,
+          "unique_commenters": 188,
+          "median_observed_commenters": 72,
+          "evidence_zh": "3 支影片；242,125 views；209 observed comments；188 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 2,
+          "external_edges": 2,
+          "conductance": 0.21739130434782608,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=2, external_edges=2, conductance=0.217"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "personal_team_life (2); food_culture (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 6.4%，正面 50.2%，按讚加權負面 3.5%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "3 支影片；242,125 views；209 observed comments；188 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=2, external_edges=2, conductance=0.217"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1351,6 +2728,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

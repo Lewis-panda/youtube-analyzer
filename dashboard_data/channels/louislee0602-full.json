@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "louislee0602-full",
   "title": "放火 Louis",
   "channel_id": "UCuLKTkYGCXako3wMktwrbkQ",
@@ -110,219 +110,262 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/louislee0602-full/tables/actor_communities.csv",
-        "bytes": 11861
+        "bytes": 11861,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/louislee0602-full/tables/bridge_actors.csv",
-        "bytes": 10584
+        "bytes": 10584,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/louislee0602-full/tables/channel_overview.csv",
-        "bytes": 356
+        "bytes": 356,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/louislee0602-full/tables/commenter_activity.csv",
-        "bytes": 850266
+        "bytes": 850266,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/louislee0602-full/tables/commenter_tiers.csv",
-        "bytes": 223
+        "bytes": 223,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/louislee0602-full/tables/community_profiles.csv",
-        "bytes": 1991
+        "bytes": 1991,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/louislee0602-full/tables/community_sentiment_summary.csv",
-        "bytes": 1490
+        "bytes": 1490,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/louislee0602-full/tables/community_summary.csv",
-        "bytes": 611
+        "bytes": 611,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/louislee0602-full/tables/community_theme_affinity.csv",
-        "bytes": 4658
+        "bytes": 4658,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/louislee0602-full/tables/community_theme_sentiment.csv",
-        "bytes": 6681
+        "bytes": 6681,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/louislee0602-full/tables/continuity_sensitivity.csv",
-        "bytes": 576
+        "bytes": 576,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/louislee0602-full/tables/continuity_summary.csv",
-        "bytes": 623
+        "bytes": 623,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/louislee0602-full/tables/diagnostics.csv",
-        "bytes": 1276
+        "bytes": 1276,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/louislee0602-full/tables/network_actor_metrics.csv",
-        "bytes": 22112
+        "bytes": 22112,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/louislee0602-full/tables/network_summary.csv",
-        "bytes": 623
+        "bytes": 623,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/louislee0602-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 2338639
+        "bytes": 2338639,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/louislee0602-full/tables/qwen_video_themes.csv",
-        "bytes": 17403
+        "bytes": 17403,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/louislee0602-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2295
+        "bytes": 2295,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/louislee0602-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 7077
+        "bytes": 7077,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/louislee0602-full/tables/reply_sentiment_summary.csv",
-        "bytes": 718
+        "bytes": 718,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/louislee0602-full/tables/reply_thread_metrics.csv",
-        "bytes": 2099140
+        "bytes": 2099140,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/louislee0602-full/tables/reply_thread_overview.csv",
-        "bytes": 357
+        "bytes": 357,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/louislee0602-full/tables/rolling_retention.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/louislee0602-full/tables/sentiment_hotspots.csv",
-        "bytes": 4708
+        "bytes": 4708,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/louislee0602-full/tables/sentiment_source_summary.csv",
-        "bytes": 249
+        "bytes": 249,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/louislee0602-full/tables/sentiment_summary.csv",
-        "bytes": 632
+        "bytes": 632,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/louislee0602-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2031
+        "bytes": 2031,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/louislee0602-full/tables/theme_source_summary.csv",
-        "bytes": 30
+        "bytes": 30,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/louislee0602-full/tables/theme_summary.csv",
-        "bytes": 239
+        "bytes": 239,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/louislee0602-full/tables/theme_video_labels.csv",
-        "bytes": 4698
+        "bytes": 4698,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/louislee0602-full/tables/theme_video_labels_long.csv",
-        "bytes": 2109
+        "bytes": 2109,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/louislee0602-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 799
+        "bytes": 799,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/louislee0602-full/tables/video_cluster_summary.csv",
-        "bytes": 1415
+        "bytes": 1415,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/louislee0602-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1141
+        "bytes": 1141,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/louislee0602-full/tables/video_clusters.csv",
-        "bytes": 2030
+        "bytes": 2030,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/louislee0602-full/tables/video_link_opportunities.csv",
-        "bytes": 3709
+        "bytes": 3709,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/louislee0602-full/tables/video_metrics.csv",
-        "bytes": 1711
+        "bytes": 1711,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/louislee0602-full/tables/video_network_metrics.csv",
-        "bytes": 2917
+        "bytes": 2917,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/louislee0602-full/tables/video_network_summary.csv",
-        "bytes": 616
+        "bytes": 616,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/louislee0602-full/figures/channel_activity.png",
-        "bytes": 77550
+        "bytes": 77550,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/louislee0602-full/figures/commenter_tiers.png",
-        "bytes": 24338
+        "bytes": 24338,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/louislee0602-full/figures/community_sizes.png",
-        "bytes": 21117
+        "bytes": 21117,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/louislee0602-full/figures/video_cluster_sizes.png",
-        "bytes": 23069
+        "bytes": 23069,
+        "source_dir": null
       }
     ]
   },
@@ -644,6 +687,560 @@
         "max_core_number": 11
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 29,
+          "pct_active_commenters": 24.166666666666668,
+          "summary_zh": "24.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 127,
+          "avg_comments_per_commenter": 4.379310344827586,
+          "n_videos_touched": 12,
+          "summary_zh": "平均留言 4.4 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "我把全家人關在不同房間，誰最接近24小時",
+            "count": 21
+          },
+          {
+            "label": "我連續開了1176小時的直播…",
+            "count": 16
+          },
+          {
+            "label": "我把自己關在廢墟72小時",
+            "count": 15
+          },
+          {
+            "label": "這是我2023年最棒的旅程。",
+            "count": 14
+          },
+          {
+            "label": "我體驗了台灣三大高級航空",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "product_review",
+            "count": 21
+          },
+          {
+            "label": "travel_exploration",
+            "count": 20
+          },
+          {
+            "label": "personal_team_life",
+            "count": 16
+          },
+          {
+            "label": "other",
+            "count": 15
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 15
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "product_review",
+            "lift": 1.5802185163887292,
+            "n_commenters": 26
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.4670670670670671,
+            "n_commenters": 16
+          },
+          {
+            "theme": "survival_outdoor",
+            "lift": 1.1902286902286903,
+            "n_commenters": 15
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "product_review",
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.06711409395973154,
+          "neutral_rate": 0.7114093959731543,
+          "positive_rate": 0.2214765100671141,
+          "like_weighted_negative_rate": 0.01834470989761092,
+          "like_weighted_positive_rate": 0.4931740614334471,
+          "summary_zh": "中性討論為主；負面 6.7%，正面 22.1%，按讚加權負面 1.8%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 28,
+          "pct_active_commenters": 23.333333333333332,
+          "summary_zh": "23.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 116,
+          "avg_comments_per_commenter": 4.142857142857143,
+          "n_videos_touched": 11,
+          "summary_zh": "平均留言 4.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "這是我2023年最棒的旅程。",
+            "count": 19
+          },
+          {
+            "label": "台灣Youtube Rewind 2023，但這影片得罪了很多人...",
+            "count": 17
+          },
+          {
+            "label": "我把自己關在廢墟72小時",
+            "count": 14
+          },
+          {
+            "label": "我辦了獎金 $220,000 的放火迷因大賽",
+            "count": 13
+          },
+          {
+            "label": "我在現實還原了遊戲的視角來玩遊戲！",
+            "count": 13
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "travel_exploration",
+            "count": 22
+          },
+          {
+            "label": "controversy_response",
+            "count": 22
+          },
+          {
+            "label": "other",
+            "count": 17
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 14
+          },
+          {
+            "label": "physical_challenge",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "controversy_response",
+            "lift": 1.878845890879256,
+            "n_commenters": 22
+          },
+          {
+            "theme": "event_announcement",
+            "lift": 1.7180052956751986,
+            "n_commenters": 17
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.3456821665815024,
+            "n_commenters": 24
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "爭議",
+            "回應",
+            "澄清",
+            "戶外",
+            "求生"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10687022900763359,
+          "neutral_rate": 0.5877862595419847,
+          "positive_rate": 0.3053435114503817,
+          "like_weighted_negative_rate": 0.5121436114044351,
+          "like_weighted_positive_rate": 0.24111228440689897,
+          "summary_zh": "中性討論為主；負面 10.7%，正面 30.5%，按讚加權負面 51.2%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 24,
+          "pct_active_commenters": 20,
+          "summary_zh": "20.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 123,
+          "avg_comments_per_commenter": 5.125,
+          "n_videos_touched": 13,
+          "summary_zh": "平均留言 5.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "$1 vs $500,000 廣告宣傳！(我破產了)",
+            "count": 16
+          },
+          {
+            "label": "我把全家人關在不同房間，誰最接近24小時",
+            "count": 11
+          },
+          {
+            "label": "台灣Youtube Rewind 2023，但這影片得罪了很多人...",
+            "count": 10
+          },
+          {
+            "label": "我辦了獎金 $220,000 的放火迷因大賽",
+            "count": 10
+          },
+          {
+            "label": "我把自己關在廢墟72小時",
+            "count": 9
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 21
+          },
+          {
+            "label": "controversy_response",
+            "count": 14
+          },
+          {
+            "label": "product_review",
+            "count": 11
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 9
+          },
+          {
+            "label": "travel_exploration",
+            "count": 8
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "product_review",
+            "戶外",
+            "求生",
+            "荒島"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.06993006993006994,
+          "neutral_rate": 0.6433566433566433,
+          "positive_rate": 0.2867132867132867,
+          "like_weighted_negative_rate": 0.019203413940256046,
+          "like_weighted_positive_rate": 0.4685277382645804,
+          "summary_zh": "中性討論為主；負面 7.0%，正面 28.7%，按讚加權負面 1.9%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 21,
+          "pct_active_commenters": 17.5,
+          "summary_zh": "17.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 93,
+          "avg_comments_per_commenter": 4.428571428571429,
+          "n_videos_touched": 13,
+          "summary_zh": "平均留言 4.4 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "$1 vs $500,000 廣告宣傳！(我破產了)",
+            "count": 18
+          },
+          {
+            "label": "我到世界上物價最高的國家旅遊",
+            "count": 17
+          },
+          {
+            "label": "我把自己關在廢墟72小時",
+            "count": 13
+          },
+          {
+            "label": "我連續開了1176小時的直播…",
+            "count": 11
+          },
+          {
+            "label": "我把全家人關在不同房間，誰最接近24小時",
+            "count": 7
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 19
+          },
+          {
+            "label": "travel_exploration",
+            "count": 17
+          },
+          {
+            "label": "survival_outdoor",
+            "count": 13
+          },
+          {
+            "label": "personal_team_life",
+            "count": 11
+          },
+          {
+            "label": "product_review",
+            "count": 7
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "戶外",
+            "求生",
+            "荒島",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08108108108108109,
+          "neutral_rate": 0.6216216216216216,
+          "positive_rate": 0.2972972972972973,
+          "like_weighted_negative_rate": 0.0031963774389025773,
+          "like_weighted_positive_rate": 0.22887394286475327,
+          "summary_zh": "中性討論為主；負面 8.1%，正面 29.7%，按讚加權負面 0.3%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 18,
+          "pct_active_commenters": 15,
+          "summary_zh": "15.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 73,
+          "avg_comments_per_commenter": 4.055555555555555,
+          "n_videos_touched": 10,
+          "summary_zh": "平均留言 4.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "我連續開了1176小時的直播…",
+            "count": 15
+          },
+          {
+            "label": "$1 vs $500,000 廣告宣傳！(我破產了)",
+            "count": 14
+          },
+          {
+            "label": "這是我沒有上片的原因",
+            "count": 8
+          },
+          {
+            "label": "我體驗了台灣三大高級航空",
+            "count": 8
+          },
+          {
+            "label": "這是我2023年最棒的旅程。",
+            "count": 7
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "other",
+            "count": 18
+          },
+          {
+            "label": "personal_team_life",
+            "count": 15
+          },
+          {
+            "label": "travel_exploration",
+            "count": 12
+          },
+          {
+            "label": "controversy_response",
+            "count": 4
+          },
+          {
+            "label": "physical_challenge",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地",
+            "探索",
+            "爭議",
+            "回應"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07142857142857142,
+          "neutral_rate": 0.5476190476190477,
+          "positive_rate": 0.38095238095238093,
+          "like_weighted_negative_rate": 0.0015281757402101242,
+          "like_weighted_positive_rate": 0.8464183381088826,
+          "summary_zh": "中性討論為主；負面 7.1%，正面 38.1%，按讚加權負面 0.2%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 13,
       "n_edges": 73,
@@ -712,6 +1309,355 @@
         "conductance": 0.4868804664723032,
         "avg_core_number": 9.833333333333334,
         "max_core_number": 10
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 7,
+          "date_min": "2024-12-29 10:25:16+00:00",
+          "date_max": "2026-04-16 10:00:18+00:00",
+          "pct_graph_videos": 53.84615384615385
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "other",
+              "count": 3
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 1
+            },
+            {
+              "label": "food_culture",
+              "count": 1
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            },
+            {
+              "label": "physical_challenge",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "city_lifestyle",
+              "lift": 1.857142857142857,
+              "n_videos": 1
+            },
+            {
+              "theme": "food_culture",
+              "lift": 1.857142857142857,
+              "n_videos": 1
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.857142857142857,
+              "n_videos": 1
+            },
+            {
+              "theme": "physical_challenge",
+              "lift": 1.857142857142857,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "我把全家人關在不同房間，誰最接近24小時",
+              "count": 1311
+            },
+            {
+              "label": "我開箱了台灣全部的水族館，這間最爛？",
+              "count": 649
+            },
+            {
+              "label": "$1 vs $500,000 廣告宣傳！(我破產了)",
+              "count": 549
+            },
+            {
+              "label": "我連續開了1176小時的直播…",
+              "count": 459
+            },
+            {
+              "label": "我體驗了台灣三大高級航空",
+              "count": 429
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "城市",
+            "街訪",
+            "生活風格",
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08398744113029827,
+          "neutral_rate": 0.6819073783359497,
+          "positive_rate": 0.23410518053375196,
+          "like_weighted_negative_rate": 0.031016126955053448,
+          "like_weighted_positive_rate": 0.3767511411931371,
+          "summary_zh": "中性討論為主；負面 8.4%，正面 23.4%，按讚加權負面 3.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 3877272,
+          "total_observed_comments": 4057,
+          "unique_commenters": 3639,
+          "median_observed_commenters": 459,
+          "evidence_zh": "7 支影片；3,877,272 views；4,057 observed comments；3,639 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 20,
+          "external_edges": 38,
+          "conductance": 0.4868804664723032,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=20, external_edges=38, conductance=0.487"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "other (3); city_lifestyle (1); food_culture (1); personal_team_life (1); physical_challenge (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 8.4%，正面 23.4%，按讚加權負面 3.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "7 支影片；3,877,272 views；4,057 observed comments；3,639 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=20, external_edges=38, conductance=0.487"
+          }
+        ],
+        "business_read": "適合餐飲、城市體驗、在地文化與消費導購合作。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 6,
+          "date_min": "2023-04-28 10:30:25+00:00",
+          "date_max": "2024-08-12 10:00:41+00:00",
+          "pct_graph_videos": 46.15384615384615
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "travel_exploration",
+              "count": 3
+            },
+            {
+              "label": "controversy_response",
+              "count": 2
+            },
+            {
+              "label": "event_announcement",
+              "count": 1
+            },
+            {
+              "label": "other",
+              "count": 1
+            },
+            {
+              "label": "product_review",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "controversy_response",
+              "lift": 2.1666666666666665,
+              "n_videos": 2
+            },
+            {
+              "theme": "event_announcement",
+              "lift": 2.1666666666666665,
+              "n_videos": 1
+            },
+            {
+              "theme": "survival_outdoor",
+              "lift": 2.1666666666666665,
+              "n_videos": 1
+            },
+            {
+              "theme": "travel_exploration",
+              "lift": 1.625,
+              "n_videos": 3
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "我把自己關在廢墟72小時",
+              "count": 737
+            },
+            {
+              "label": "台灣Youtube Rewind 2023，但這影片得罪了很多人...",
+              "count": 698
+            },
+            {
+              "label": "我到世界上物價最高的國家旅遊",
+              "count": 438
+            },
+            {
+              "label": "這是我2023年最棒的旅程。",
+              "count": 386
+            },
+            {
+              "label": "我在現實還原了遊戲的視角來玩遊戲！",
+              "count": 191
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "旅遊",
+            "目的地",
+            "探索",
+            "爭議",
+            "回應",
+            "澄清",
+            "event_announcement"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07490535424553812,
+          "neutral_rate": 0.7001081665765279,
+          "positive_rate": 0.22498647917793402,
+          "like_weighted_negative_rate": 0.1255691191026064,
+          "like_weighted_positive_rate": 0.2397228637413395,
+          "summary_zh": "中性討論為主；負面 7.5%，正面 22.5%，按讚加權負面 12.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 2417953,
+          "total_observed_comments": 2715,
+          "unique_commenters": 2405,
+          "median_observed_commenters": 412,
+          "evidence_zh": "6 支影片；2,417,953 views；2,715 observed comments；2,405 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 15,
+          "external_edges": 38,
+          "conductance": 0.4868804664723032,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=15, external_edges=38, conductance=0.487"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "travel_exploration (3); controversy_response (2); event_announcement (1); other (1); product_review (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 7.5%，正面 22.5%，按讚加權負面 12.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "6 支影片；2,417,953 views；2,715 observed comments；2,405 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=15, external_edges=38, conductance=0.487"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1253,6 +2199,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

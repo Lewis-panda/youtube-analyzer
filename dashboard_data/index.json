@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "product_mode": "read_only_demo",
   "notes": [
     "Dashboard demo reads completed artifacts only.",
@@ -11,6 +11,13 @@
     "runs_dir": "baseline_runs",
     "baseline_dir": "baseline_runs/benchmark_baseline",
     "output_dir": "dashboard_data"
+  },
+  "demo_target_slug": "dodomen-generic-demo",
+  "demo_focus": {
+    "slug": "dodomen-generic-demo",
+    "scope_zh": "後天 demo 聚焦 DoDoMen 單一 case study；其他頻道目前只作為 broad reference 與 future work 背景。",
+    "comparison_caution_zh": "目前 percentile 是相對整體台灣 benchmark cohort，尚未完成類似主題頻道的 matched cohort；因此只可作為粗略相對位置，不應包裝成同類型頻道排名。",
+    "future_work_zh": "下一階段應先用輕量 metadata 建立台灣 YTR candidate pool，依題材、規模、內容型態與互動強度選出相似候選，再對 Top 20-50 做深度留言與網路分析。"
   },
   "baseline": {
     "baseline_dir": "baseline_runs/benchmark_baseline",
@@ -64,35 +71,35 @@
   },
   "dashboard_statistics": {
     "totals": {
-      "examples": 50,
-      "videos": 13569,
-      "comments": 2272941,
-      "commenters": 1161630
+      "examples": 51,
+      "videos": 13920,
+      "comments": 2520009,
+      "commenters": 1273738
     },
     "subscriber_bands": [
       {
         "label": "全部完成案例",
         "min_subscriber_count": 0,
-        "n_channels": 50,
-        "videos": 13569,
-        "comments": 2272941,
-        "commenters": 1161630
+        "n_channels": 51,
+        "videos": 13920,
+        "comments": 2520009,
+        "commenters": 1273738
       },
       {
         "label": "50萬訂閱以上",
         "min_subscriber_count": 500000,
-        "n_channels": 38,
-        "videos": 9337,
-        "comments": 2026994,
-        "commenters": 1027083
+        "n_channels": 39,
+        "videos": 9688,
+        "comments": 2274062,
+        "commenters": 1139191
       },
       {
         "label": "100萬訂閱以上",
         "min_subscriber_count": 1000000,
-        "n_channels": 24,
-        "videos": 6809,
-        "comments": 1410833,
-        "commenters": 748419
+        "n_channels": 25,
+        "videos": 7160,
+        "comments": 1657901,
+        "commenters": 860527
       }
     ],
     "subscriber_band_distributions": [
@@ -7536,8 +7543,133 @@
       "影片數、留言數、留言者數屬於資料規模指標，主要用於可信度與覆蓋率，不作為頻道品質排名。"
     ]
   },
-  "n_examples": 50,
+  "n_examples": 51,
   "examples": [
+    {
+      "slug": "dodomen-generic-demo",
+      "title": "The DoDo Men - 嘟嘟人",
+      "channel_id": "UCfq75-6J5seC82CmtLSFxXw",
+      "subscriber_count": 1660000,
+      "n_videos_in_scope": 351,
+      "n_comments_in_scope": 247068,
+      "n_commenters_in_scope": 112108,
+      "date_min": "2020-02-02 04:00:06+00:00",
+      "date_max": "2026-05-27 13:00:37+00:00",
+      "json_path": "dashboard_data/channels/dodomen-generic-demo.json",
+      "run_dir": "case_studies/dodomen/dodomen-generic-demo",
+      "negative_rate": 0.07507598086626384,
+      "positive_rate": 0.47376651989600377,
+      "baseline_metrics": 43,
+      "percentile_takeaways": [
+        {
+          "metric": "top_level_comments",
+          "label": "一級留言數",
+          "label_en": "Top-level comments",
+          "group": "scale",
+          "group_label": "資料規模",
+          "value": 245544,
+          "percentile": 97.91666666666666,
+          "percentile_band": "極高",
+          "direction": "high",
+          "risk_opportunity_label": "context",
+          "headline_zh": "相對位置：一級留言數極高",
+          "interpretation_hint_zh": "留言樣本充足，適合做分群、情緒與熱點比較。",
+          "distribution": {
+            "n": 48,
+            "mean": 45536.708333333336,
+            "median": 23159.5,
+            "std": 65292.61262097929,
+            "min": 588,
+            "p10": 4083.5,
+            "p25": 8826.25,
+            "p75": 52038.5,
+            "p90": 104104.6000000002,
+            "max": 391701,
+            "iqr": 43212.25
+          },
+          "caution_zh": "這是資料覆蓋量或樣本規模，不應直接解讀為頻道表現好壞。"
+        },
+        {
+          "metric": "all_comments",
+          "label": "全部留言數",
+          "label_en": "All comments",
+          "group": "scale",
+          "group_label": "資料規模",
+          "value": 303094,
+          "percentile": 97.91666666666666,
+          "percentile_band": "極高",
+          "direction": "high",
+          "risk_opportunity_label": "context",
+          "headline_zh": "相對位置：全部留言數極高",
+          "interpretation_hint_zh": "留言串互動量大，適合進一步看回覆區是否是討論或衝突來源。",
+          "distribution": {
+            "n": 48,
+            "mean": 63470.91666666666,
+            "median": 37166.5,
+            "std": 81626.24998094294,
+            "min": 692,
+            "p10": 6478.900000000001,
+            "p25": 12885.75,
+            "p75": 74899.25,
+            "p90": 165835.10000000006,
+            "max": 419485,
+            "iqr": 62013.5
+          },
+          "caution_zh": "這是資料覆蓋量或樣本規模，不應直接解讀為頻道表現好壞。"
+        },
+        {
+          "metric": "top_level_commenters",
+          "label": "一級留言者數",
+          "label_en": "Top-level commenters",
+          "group": "scale",
+          "group_label": "資料規模",
+          "value": 111537,
+          "percentile": 95.83333333333334,
+          "percentile_band": "極高",
+          "direction": "high",
+          "risk_opportunity_label": "context",
+          "headline_zh": "相對位置：一級留言者數極高",
+          "interpretation_hint_zh": "參與者基數大，代表留言區能吸引較廣泛觀眾表態。",
+          "distribution": {
+            "n": 48,
+            "mean": 23310.375,
+            "median": 15502,
+            "std": 29229.87768935024,
+            "min": 367,
+            "p10": 3306.3,
+            "p25": 5783.25,
+            "p75": 27992.75,
+            "p90": 48016.50000000001,
+            "max": 163806,
+            "iqr": 22209.5
+          },
+          "caution_zh": "這是資料覆蓋量或樣本規模，不應直接解讀為頻道表現好壞。"
+        }
+      ],
+      "archetype": "穩定討論引擎型",
+      "analysis_scores": {
+        "engagement_conversion": 71.52777777777777,
+        "audience_stickiness": 85.81495098039215,
+        "conversation_quality": 64.0625,
+        "risk_pressure": 47.91666666666667,
+        "community_concentration": 86.52482269503544,
+        "content_portfolio_linkage": 50.82742316784871
+      },
+      "risk_flag_count": 3,
+      "opportunity_flag_count": 5,
+      "watch_flag_count": 5,
+      "available_tabs": [
+        "overview",
+        "videos",
+        "themes",
+        "community",
+        "video_network",
+        "reply_conflict",
+        "baseline",
+        "external_events",
+        "cold_report"
+      ]
+    },
     {
       "slug": "xilanceylan-full",
       "title": "錫蘭Ceylan",

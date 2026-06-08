@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "plainlaw-me-full",
   "title": "法律白話文運動 Plain Law Movement",
   "channel_id": "UCXd6dUdTQchAg2P0QRh_42Q",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/plainlaw-me-full/tables/actor_communities.csv",
-        "bytes": 53998
+        "bytes": 53998,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/plainlaw-me-full/tables/bridge_actors.csv",
-        "bytes": 11029
+        "bytes": 11029,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/plainlaw-me-full/tables/channel_overview.csv",
-        "bytes": 385
+        "bytes": 385,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/plainlaw-me-full/tables/commenter_activity.csv",
-        "bytes": 1178252
+        "bytes": 1178252,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/plainlaw-me-full/tables/commenter_tiers.csv",
-        "bytes": 285
+        "bytes": 285,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/plainlaw-me-full/tables/community_profiles.csv",
-        "bytes": 6257
+        "bytes": 6257,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/community_sentiment_summary.csv",
-        "bytes": 2585
+        "bytes": 2585,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/community_summary.csv",
-        "bytes": 1020
+        "bytes": 1020,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/plainlaw-me-full/tables/community_theme_affinity.csv",
-        "bytes": 6366
+        "bytes": 6366,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/plainlaw-me-full/tables/community_theme_sentiment.csv",
-        "bytes": 6152
+        "bytes": 6152,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/plainlaw-me-full/tables/continuity_sensitivity.csv",
-        "bytes": 574
+        "bytes": 574,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/continuity_summary.csv",
-        "bytes": 632
+        "bytes": 632,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/plainlaw-me-full/tables/diagnostics.csv",
-        "bytes": 1561
+        "bytes": 1561,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/plainlaw-me-full/tables/network_actor_metrics.csv",
-        "bytes": 41587
+        "bytes": 41587,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/network_summary.csv",
-        "bytes": 635
+        "bytes": 635,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/plainlaw-me-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 10658555
+        "bytes": 10658555,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/plainlaw-me-full/tables/qwen_video_themes.csv",
-        "bytes": 3444933
+        "bytes": 3444933,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 1554
+        "bytes": 1554,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 170361
+        "bytes": 170361,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/reply_sentiment_summary.csv",
-        "bytes": 726
+        "bytes": 726,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/plainlaw-me-full/tables/reply_thread_metrics.csv",
-        "bytes": 5023481
+        "bytes": 5023481,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/plainlaw-me-full/tables/reply_thread_overview.csv",
-        "bytes": 364
+        "bytes": 364,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/plainlaw-me-full/tables/rolling_retention.csv",
-        "bytes": 6347
+        "bytes": 6347,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/plainlaw-me-full/tables/sentiment_hotspots.csv",
-        "bytes": 169258
+        "bytes": 169258,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/sentiment_source_summary.csv",
-        "bytes": 253
+        "bytes": 253,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/sentiment_summary.csv",
-        "bytes": 609
+        "bytes": 609,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2347
+        "bytes": 2347,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/theme_source_summary.csv",
-        "bytes": 32
+        "bytes": 32,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/theme_summary.csv",
-        "bytes": 370
+        "bytes": 370,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/plainlaw-me-full/tables/theme_video_labels.csv",
-        "bytes": 587000
+        "bytes": 587000,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/plainlaw-me-full/tables/theme_video_labels_long.csv",
-        "bytes": 508497
+        "bytes": 508497,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 2226
+        "bytes": 2226,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/video_cluster_summary.csv",
-        "bytes": 5924
+        "bytes": 5924,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/plainlaw-me-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 2479
+        "bytes": 2479,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/plainlaw-me-full/tables/video_clusters.csv",
-        "bytes": 28138
+        "bytes": 28138,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/plainlaw-me-full/tables/video_link_opportunities.csv",
-        "bytes": 114806
+        "bytes": 114806,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/plainlaw-me-full/tables/video_metrics.csv",
-        "bytes": 199495
+        "bytes": 199495,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/plainlaw-me-full/tables/video_network_metrics.csv",
-        "bytes": 28997
+        "bytes": 28997,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/plainlaw-me-full/tables/video_network_summary.csv",
-        "bytes": 634
+        "bytes": 634,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/plainlaw-me-full/figures/channel_activity.png",
-        "bytes": 73733
+        "bytes": 73733,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/plainlaw-me-full/figures/commenter_tiers.png",
-        "bytes": 28235
+        "bytes": 28235,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/plainlaw-me-full/figures/community_sizes.png",
-        "bytes": 25873
+        "bytes": 25873,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/plainlaw-me-full/figures/rolling_retention.png",
-        "bytes": 60980
+        "bytes": 60980,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/plainlaw-me-full/figures/video_cluster_sizes.png",
-        "bytes": 25901
+        "bytes": 25901,
+        "source_dir": null
       }
     ]
   },
@@ -707,6 +751,973 @@
         "max_core_number": 3
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 150,
+          "pct_active_commenters": 25.55366269165247,
+          "summary_zh": "25.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1514,
+          "avg_comments_per_commenter": 10.093333333333334,
+          "n_videos_touched": 344,
+          "summary_zh": "平均留言 10.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "政治歸政治 #147｜你能不能容忍國民黨的存在？",
+            "count": 33
+          },
+          {
+            "label": "大罷免大失敗，這些心情你也有嗎？我們一起聊聊｜法客電台 Video Podcast EP26",
+            "count": 28
+          },
+          {
+            "label": "政治歸政治 #190｜行政院長不副署",
+            "count": 22
+          },
+          {
+            "label": "#45 政治歸YO智｜中立是假象？藍綠大戰以及留言開噴時間！",
+            "count": 21
+          },
+          {
+            "label": "黃國昌播示範帶，法白直接播真正的不正訊問給你看｜法客電台 Video Podcast EP20",
+            "count": 21
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 150
+          },
+          {
+            "label": "personal_team_life",
+            "count": 24
+          },
+          {
+            "label": "education_advice",
+            "count": 24
+          },
+          {
+            "label": "other",
+            "count": 12
+          },
+          {
+            "label": "event_announcement",
+            "count": 3
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "event_announcement",
+            "lift": 2.162042553191489,
+            "n_commenters": 18
+          },
+          {
+            "theme": "other",
+            "lift": 1.8767730496453898,
+            "n_commenters": 12
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.7289060820975715,
+            "n_commenters": 19
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.29098503306648105,
+          "neutral_rate": 0.615036547163244,
+          "positive_rate": 0.09397841977027498,
+          "like_weighted_negative_rate": 0.3954792938459,
+          "like_weighted_positive_rate": 0.11161524500907441,
+          "summary_zh": "中性討論為主；負面 29.1%，正面 9.4%，按讚加權負面 39.5%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.2918315940985966,
+            "like_weighted_negative_rate": 0.39919082939986517,
+            "n_comments": 2779,
+            "summary_zh": "controversy_response：負面 29.2%，按讚加權負面 39.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 141,
+          "pct_active_commenters": 24.020442930153322,
+          "summary_zh": "24.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 1216,
+          "avg_comments_per_commenter": 8.624113475177305,
+          "n_videos_touched": 223,
+          "summary_zh": "平均留言 8.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "黃國昌播示範帶，法白直接播真正的不正訊問給你看｜法客電台 Video Podcast EP20",
+            "count": 81
+          },
+          {
+            "label": "普發現金、預算法與違憲爭議？｜法客電台 Video Podcast EP23",
+            "count": 54
+          },
+          {
+            "label": "法庭直播，越透明越迷因？｜法客電台 Video Podcast EP15",
+            "count": 46
+          },
+          {
+            "label": "大罷免大失敗，這些心情你也有嗎？我們一起聊聊｜法客電台 Video Podcast EP26",
+            "count": 33
+          },
+          {
+            "label": "【解讀柯文哲起訴書】用 Excel 入罪柯文哲？｜法客電台 Video Podcast EP1",
+            "count": 31
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 141
+          },
+          {
+            "label": "personal_team_life",
+            "count": 13
+          },
+          {
+            "label": "education_advice",
+            "count": 8
+          },
+          {
+            "label": "other",
+            "count": 4
+          },
+          {
+            "label": "business_brand",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "workplace_tech_career",
+            "lift": 2.4592120811552403,
+            "n_commenters": 106
+          },
+          {
+            "theme": "guest_relationship",
+            "lift": 2.2564284762623794,
+            "n_commenters": 12
+          },
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.9658278391679822,
+            "n_commenters": 4
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.3638733705772812,
+          "neutral_rate": 0.5698324022346368,
+          "positive_rate": 0.06629422718808194,
+          "like_weighted_negative_rate": 0.4710645391759943,
+          "like_weighted_positive_rate": 0.10518377391442407,
+          "summary_zh": "中性討論為主；負面 36.4%，正面 6.6%，按讚加權負面 47.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.3633599391866211,
+            "like_weighted_negative_rate": 0.47531859977415714,
+            "n_comments": 2631,
+            "summary_zh": "controversy_response：負面 36.3%，按讚加權負面 47.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 9,
+        "segment_label": "Audience segment 9",
+        "group_size": {
+          "n_commenters": 118,
+          "pct_active_commenters": 20.10221465076661,
+          "summary_zh": "20.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 891,
+          "avg_comments_per_commenter": 7.5508474576271185,
+          "n_videos_touched": 185,
+          "summary_zh": "平均留言 7.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "黃國昌如何變成民粹？台灣的司法有受到民粹影響嗎？該如何面對極化的社會氛圍｜貴智的期末報告（下）｜",
+            "count": 48
+          },
+          {
+            "label": "民粹是什麼？韓國瑜跟黃國昌都是民粹嗎？怎麼看待柯文哲案的民粹化現象｜貴智的期末報告（上）｜法客電",
+            "count": 29
+          },
+          {
+            "label": "憲法法庭復活戰 #2：為什麼那三位大法官堅持不開會？｜法客電台 Video Podcast EP",
+            "count": 27
+          },
+          {
+            "label": "柯文哲到底有沒有收賄？京華城案在講什麼，法律上是否有容積獎勵？被判17年是重判還輕判？｜完全解析",
+            "count": 24
+          },
+          {
+            "label": "大罷免大失敗，這些心情你也有嗎？我們一起聊聊｜法客電台 Video Podcast EP26",
+            "count": 21
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 118
+          },
+          {
+            "label": "personal_team_life",
+            "count": 4
+          },
+          {
+            "label": "other",
+            "count": 3
+          },
+          {
+            "label": "education_advice",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.36414370422043946,
+          "neutral_rate": 0.5605162190442972,
+          "positive_rate": 0.07534007673526334,
+          "like_weighted_negative_rate": 0.37559108308939426,
+          "like_weighted_positive_rate": 0.14850258950686782,
+          "summary_zh": "中性討論為主；負面 36.4%，正面 7.5%，按讚加權負面 37.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.36513504033672395,
+            "like_weighted_negative_rate": 0.37659839311983706,
+            "n_comments": 2851,
+            "summary_zh": "controversy_response：負面 36.5%，按讚加權負面 37.7%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 90,
+          "pct_active_commenters": 15.332197614991482,
+          "summary_zh": "15.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 606,
+          "avg_comments_per_commenter": 6.733333333333333,
+          "n_videos_touched": 79,
+          "summary_zh": "平均留言 6.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "憲法法庭復活戰 #會員QA：缺席的大法官可以被彈劾嗎？五個人的憲法法庭正當性夠不夠？這次事件會有",
+            "count": 46
+          },
+          {
+            "label": "憲法法庭復活戰 #2：為什麼那三位大法官堅持不開會？｜法客電台 Video Podcast EP",
+            "count": 45
+          },
+          {
+            "label": "憲法法庭復活戰 #1：大法官如何突破「關機」封鎖？｜法客電台 Video Podcast EP5",
+            "count": 39
+          },
+          {
+            "label": "行政院不副署分析！真的有辦法政治歸政治，法律歸法律嗎？｜法客電台 Video Podcast E",
+            "count": 37
+          },
+          {
+            "label": "憲法法庭復活戰 #3：那三位大法官其實想開會？關鍵在於立法品質太粗糙？翁曉玲、黃國昌修法文字搞瘋",
+            "count": 33
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 90
+          },
+          {
+            "label": "other",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.400278940027894,
+          "neutral_rate": 0.5578800557880056,
+          "positive_rate": 0.04184100418410042,
+          "like_weighted_negative_rate": 0.43552188552188553,
+          "like_weighted_positive_rate": 0.07693602693602694,
+          "summary_zh": "中性討論為主；負面 40.0%，正面 4.2%，按讚加權負面 43.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.4005582693649686,
+            "like_weighted_negative_rate": 0.4363299038623714,
+            "n_comments": 1433,
+            "summary_zh": "controversy_response：負面 40.1%，按讚加權負面 43.6%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 6,
+        "segment_label": "Audience segment 6",
+        "group_size": {
+          "n_commenters": 45,
+          "pct_active_commenters": 7.666098807495741,
+          "summary_zh": "7.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 356,
+          "avg_comments_per_commenter": 7.911111111111111,
+          "n_videos_touched": 140,
+          "summary_zh": "平均留言 7.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "大罷免大失敗，這些心情你也有嗎？我們一起聊聊｜法客電台 Video Podcast EP26",
+            "count": 19
+          },
+          {
+            "label": "99｜一黨獨大真的不是這樣講的",
+            "count": 10
+          },
+          {
+            "label": "柯文哲到底有沒有收賄？京華城案在講什麼，法律上是否有容積獎勵？被判17年是重判還輕判？｜完全解析",
+            "count": 10
+          },
+          {
+            "label": "普發現金、預算法與違憲爭議？｜法客電台 Video Podcast EP23",
+            "count": 9
+          },
+          {
+            "label": "黃國昌如何變成民粹？台灣的司法有受到民粹影響嗎？該如何面對極化的社會氛圍｜貴智的期末報告（下）｜",
+            "count": 9
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 45
+          },
+          {
+            "label": "education_advice",
+            "count": 6
+          },
+          {
+            "label": "personal_team_life",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2528445006321112,
+          "neutral_rate": 0.6978508217446271,
+          "positive_rate": 0.0493046776232617,
+          "like_weighted_negative_rate": 0.22237017310252996,
+          "like_weighted_positive_rate": 0.0426098535286285,
+          "summary_zh": "中性討論為主；負面 25.3%，正面 4.9%，按讚加權負面 22.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.25227568270481143,
+            "like_weighted_negative_rate": 0.2219586580820061,
+            "n_comments": 769,
+            "summary_zh": "controversy_response：負面 25.2%，按讚加權負面 22.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 8,
+        "segment_label": "Audience segment 8",
+        "group_size": {
+          "n_commenters": 27,
+          "pct_active_commenters": 4.599659284497445,
+          "summary_zh": "4.6% of active commenters"
+        },
+        "activity": {
+          "n_comments": 221,
+          "avg_comments_per_commenter": 8.185185185185185,
+          "n_videos_touched": 96,
+          "summary_zh": "平均留言 8.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【解讀柯文哲起訴書】用 Excel 入罪柯文哲？｜法客電台 Video Podcast EP1",
+            "count": 16
+          },
+          {
+            "label": "孫生沒有強吻抓ㄋㄋ還是性騷擾！（記得開CC字幕）｜法客電台 Video Podcast EP7",
+            "count": 11
+          },
+          {
+            "label": "#85 YO智事務所｜深度分析柯文哲起訴書：京華城案（上） ft. 珞亦",
+            "count": 8
+          },
+          {
+            "label": "#86 YO智事務所｜深度分析柯文哲起訴書（下）：政治獻金案 ft. 珞亦",
+            "count": 8
+          },
+          {
+            "label": "黃國昌說中國國民黨是一個連在野黨都沒有資格的政黨｜法客電台 Video Podcast EP12",
+            "count": 8
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 27
+          },
+          {
+            "label": "personal_team_life",
+            "count": 4
+          },
+          {
+            "label": "education_advice",
+            "count": 1
+          },
+          {
+            "label": "other",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2543640897755611,
+          "neutral_rate": 0.628428927680798,
+          "positive_rate": 0.1172069825436409,
+          "like_weighted_negative_rate": 0.31561181434599156,
+          "like_weighted_positive_rate": 0.1291139240506329,
+          "summary_zh": "中性討論為主；負面 25.4%，正面 11.7%，按讚加權負面 31.6%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.2551546391752577,
+            "like_weighted_negative_rate": 0.3109571242962321,
+            "n_comments": 388,
+            "summary_zh": "controversy_response：負面 25.5%，按讚加權負面 31.1%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 5,
+          "pct_active_commenters": 0.8517887563884157,
+          "summary_zh": "0.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 23,
+          "avg_comments_per_commenter": 4.6,
+          "n_videos_touched": 10,
+          "summary_zh": "平均留言 4.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "【解讀柯文哲起訴書】民眾黨也是被害人？（記得開CC字幕）｜法客電台 Video Podcast",
+            "count": 5
+          },
+          {
+            "label": "高虹安釋憲翻盤夢碎（記得開CC字幕）｜法客電台 Video Podcast EP5",
+            "count": 4
+          },
+          {
+            "label": "【解讀柯文哲起訴書】用 Excel 入罪柯文哲？｜法客電台 Video Podcast EP1",
+            "count": 4
+          },
+          {
+            "label": "【解讀柯文哲起訴書】開演唱會賺錢，犯法？（記得開CC字幕）｜法客電台 Video Podcast",
+            "count": 3
+          },
+          {
+            "label": "相信柯文哲還是相信司法？政治獻金能拿來開演唱會嗎？捐錢給政治人物就可以隨便使用？｜完全解析柯文哲",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 5
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.39285714285714285,
+          "neutral_rate": 0.4642857142857143,
+          "positive_rate": 0.14285714285714285,
+          "like_weighted_negative_rate": 0.20930232558139536,
+          "like_weighted_positive_rate": 0.040697674418604654,
+          "summary_zh": "中性討論為主；負面 39.3%，正面 14.3%，按讚加權負面 20.9%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 4,
+          "pct_active_commenters": 0.6814310051107325,
+          "summary_zh": "0.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 20,
+          "avg_comments_per_commenter": 5.0,
+          "n_videos_touched": 6,
+          "summary_zh": "平均留言 5.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "137｜中國有言論自由嗎？ ft. 李厚辰",
+            "count": 4
+          },
+          {
+            "label": "138｜去新疆玩應該要生氣？ ft. 李厚辰",
+            "count": 4
+          },
+          {
+            "label": "135｜侵台後首要目標，教育大清洗 ft. 李厚辰",
+            "count": 4
+          },
+          {
+            "label": "《世紀血案》被炎上！林宅血案被翻拍成電影要經過授權嗎？未來台灣影視圈還敢拍轉型正義題材的作品嗎？",
+            "count": 1
+          },
+          {
+            "label": "132｜林宅血案真兇是誰？ ft. 徐紹綱",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2564102564102564,
+          "neutral_rate": 0.48717948717948717,
+          "positive_rate": 0.2564102564102564,
+          "like_weighted_negative_rate": 0.3333333333333333,
+          "like_weighted_positive_rate": 0.3712121212121212,
+          "summary_zh": "中性討論為主；負面 25.6%，正面 25.6%，按讚加權負面 33.3%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 7,
+        "segment_label": "Audience segment 7",
+        "group_size": {
+          "n_commenters": 4,
+          "pct_active_commenters": 0.6814310051107325,
+          "summary_zh": "0.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 17,
+          "avg_comments_per_commenter": 4.25,
+          "n_videos_touched": 7,
+          "summary_zh": "平均留言 4.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "高虹安釋憲翻盤夢碎（記得開CC字幕）｜法客電台 Video Podcast EP5",
+            "count": 4
+          },
+          {
+            "label": "【解讀柯文哲起訴書】用 Excel 入罪柯文哲？｜法客電台 Video Podcast EP1",
+            "count": 4
+          },
+          {
+            "label": "憲法法庭復活戰 #2：為什麼那三位大法官堅持不開會？｜法客電台 Video Podcast EP",
+            "count": 3
+          },
+          {
+            "label": "政治歸政治 #149｜Live Podcast：王大陸、凌濤",
+            "count": 2
+          },
+          {
+            "label": "高虹安被判「無罪」？貪污要被判刑很難嗎？到底要拿多少才算貪汙｜法客電台 Video Podcas",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 4
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.20689655172413793,
+          "neutral_rate": 0.7241379310344828,
+          "positive_rate": 0.06896551724137931,
+          "like_weighted_negative_rate": 0.0893760539629005,
+          "like_weighted_positive_rate": 0.03709949409780776,
+          "summary_zh": "中性討論為主；負面 20.7%，正面 6.9%，按讚加權負面 8.9%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 3,
+          "pct_active_commenters": 0.5110732538330494,
+          "summary_zh": "0.5% of active commenters"
+        },
+        "activity": {
+          "n_comments": 15,
+          "avg_comments_per_commenter": 5.0,
+          "n_videos_touched": 5,
+          "summary_zh": "平均留言 5.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "同意大於不同意，核三公投還是沒過，怎麼樣的投票形式最適合公投？｜法客電台 Video Podca",
+            "count": 3
+          },
+          {
+            "label": "大罷免大失敗，這些心情你也有嗎？我們一起聊聊｜法客電台 Video Podcast EP26",
+            "count": 3
+          },
+          {
+            "label": "財劃法公式寫錯也能過關？比記者還快掌握立委行程？一般人也能做到的監督立委方法 ft. 張育萌｜法",
+            "count": 2
+          },
+          {
+            "label": "普發現金、預算法與違憲爭議？｜法客電台 Video Podcast EP23",
+            "count": 2
+          },
+          {
+            "label": "憲法法庭停擺怎麼辦？大法官人數補不齊是制度還是人選的問題？｜法客電台 Video Podcast",
+            "count": 1
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 3
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "negative",
+          "negative_rate": 0.6,
+          "neutral_rate": 0.2,
+          "positive_rate": 0.2,
+          "like_weighted_negative_rate": 0.9247311827956989,
+          "like_weighted_positive_rate": 0.043010752688172046,
+          "summary_zh": "負面討論偏高；負面 60.0%，正面 20.0%，按讚加權負面 92.5%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 129,
       "n_edges": 571,
@@ -913,6 +1924,1156 @@
         "conductance": 0.0,
         "avg_core_number": 1.0,
         "max_core_number": 1
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 43,
+          "date_min": "2025-01-14 10:00:07+00:00",
+          "date_max": "2026-05-06 23:04:04+00:00",
+          "pct_graph_videos": 33.33333333333333
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 42
+            },
+            {
+              "label": "education_advice",
+              "count": 19
+            },
+            {
+              "label": "business_brand",
+              "count": 15
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 3
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "guest_relationship",
+              "lift": 3,
+              "n_videos": 1
+            },
+            {
+              "theme": "travel_exploration",
+              "lift": 3,
+              "n_videos": 1
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 2.25,
+              "n_videos": 3
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.0555555555555556,
+              "n_videos": 19
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "黃國昌播示範帶，法白直接播真正的不正訊問給你看｜法客電台 Video Podcast EP20",
+              "count": 677
+            },
+            {
+              "label": "【解讀柯文哲起訴書】用 Excel 入罪柯文哲？｜法客電台 Video Podcast EP1",
+              "count": 611
+            },
+            {
+              "label": "大罷免大失敗，這些心情你也有嗎？我們一起聊聊｜法客電台 Video Podcast EP26",
+              "count": 421
+            },
+            {
+              "label": "普發現金、預算法與違憲爭議？｜法客電台 Video Podcast EP23",
+              "count": 332
+            },
+            {
+              "label": "早知道不要接賴清德電話？｜法客電台 Video Podcast EP13",
+              "count": 258
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.35142796399971654,
+          "neutral_rate": 0.5861384735312877,
+          "positive_rate": 0.06243356246899582,
+          "like_weighted_negative_rate": 0.3523385790008514,
+          "like_weighted_positive_rate": 0.15191837631484992,
+          "summary_zh": "中性討論為主；負面 35.1%，正面 6.2%，按讚加權負面 35.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 970895,
+          "total_observed_comments": 4997,
+          "unique_commenters": 3479,
+          "median_observed_commenters": 48,
+          "evidence_zh": "43 支影片；970,895 views；4,997 observed comments；3,479 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 137,
+          "external_edges": 173,
+          "conductance": 0.33924380704041723,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=137, external_edges=173, conductance=0.339"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (42); education_advice (19); business_brand (15); workplace_tech_career (3); personal_team_life (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 35.1%，正面 6.2%，按讚加權負面 35.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "43 支影片；970,895 views；4,997 observed comments；3,479 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=137, external_edges=173, conductance=0.339"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 5,
+        "cluster_label": "Video cluster 5",
+        "size": {
+          "n_videos": 15,
+          "date_min": "2025-10-20 11:00:06+00:00",
+          "date_max": "2026-04-30 11:00:06+00:00",
+          "pct_graph_videos": 11.627906976744185
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 15
+            },
+            {
+              "label": "business_brand",
+              "count": 8
+            },
+            {
+              "label": "education_advice",
+              "count": 7
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "business_brand",
+              "lift": 1.3490196078431373,
+              "n_videos": 8
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.1148148148148147,
+              "n_videos": 7
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.0078125,
+              "n_videos": 15
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "憲法法庭停擺，前大法官怎麼看？ft. 前大法官 黃虹霞｜法客電台 Video Podcast E",
+              "count": 367
+            },
+            {
+              "label": "憲法法庭復活戰 #2：為什麼那三位大法官堅持不開會？｜法客電台 Video Podcast EP",
+              "count": 356
+            },
+            {
+              "label": "憲法法庭復活戰 #1：大法官如何突破「關機」封鎖？｜法客電台 Video Podcast EP5",
+              "count": 291
+            },
+            {
+              "label": "憲法法庭復活戰 #會員QA：缺席的大法官可以被彈劾嗎？五個人的憲法法庭正當性夠不夠？這次事件會有",
+              "count": 230
+            },
+            {
+              "label": "憲法法庭復活戰 #3：那三位大法官其實想開會？關鍵在於立法品質太粗糙？翁曉玲、黃國昌修法文字搞瘋",
+              "count": 215
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配",
+            "商業",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.4082352941176471,
+          "neutral_rate": 0.5354248366013072,
+          "positive_rate": 0.05633986928104575,
+          "like_weighted_negative_rate": 0.39595795136799633,
+          "like_weighted_positive_rate": 0.15846104838424238,
+          "summary_zh": "中性討論為主；負面 40.8%，正面 5.6%，按讚加權負面 39.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 492588,
+          "total_observed_comments": 2668,
+          "unique_commenters": 1854,
+          "median_observed_commenters": 117,
+          "evidence_zh": "15 支影片；492,588 views；2,668 observed comments；1,854 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 53,
+          "external_edges": 112,
+          "conductance": 0.37796373779637377,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=53, external_edges=112, conductance=0.378"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (15); business_brand (8); education_advice (7)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 40.8%，正面 5.6%，按讚加權負面 39.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "15 支影片；492,588 views；2,668 observed comments；1,854 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=53, external_edges=112, conductance=0.378"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 29,
+          "date_min": "2025-10-10 11:00:06+00:00",
+          "date_max": "2026-04-16 11:00:06+00:00",
+          "pct_graph_videos": 22.48062015503876
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 29
+            },
+            {
+              "label": "business_brand",
+              "count": 14
+            },
+            {
+              "label": "education_advice",
+              "count": 5
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "business_brand",
+              "lift": 1.2210953346855984,
+              "n_videos": 14
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.0078125,
+              "n_videos": 29
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 0.8087774294670846,
+              "n_videos": 2
+            },
+            {
+              "theme": "education_advice",
+              "lift": 0.4118773946360153,
+              "n_videos": 5
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "《世紀血案》被炎上！林宅血案被翻拍成電影要經過授權嗎？未來台灣影視圈還敢拍轉型正義題材的作品嗎？",
+              "count": 383
+            },
+            {
+              "label": "黃國昌如何變成民粹？台灣的司法有受到民粹影響嗎？該如何面對極化的社會氛圍｜貴智的期末報告（下）｜",
+              "count": 329
+            },
+            {
+              "label": "柯文哲到底有沒有收賄？京華城案在講什麼，法律上是否有容積獎勵？被判17年是重判還輕判？｜完全解析",
+              "count": 238
+            },
+            {
+              "label": "民粹是什麼？韓國瑜跟黃國昌都是民粹嗎？怎麼看待柯文哲案的民粹化現象｜貴智的期末報告（上）｜法客電",
+              "count": 125
+            },
+            {
+              "label": "中配能當中華民國立委嗎？李貞秀有辦法放棄中國國籍嗎？未來其他國家的配偶有辦法參選民代嗎？",
+              "count": 92
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配",
+            "商業",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.35115547654861207,
+          "neutral_rate": 0.6012580336387255,
+          "positive_rate": 0.047586489812662384,
+          "like_weighted_negative_rate": 0.4199033366330868,
+          "like_weighted_positive_rate": 0.128865078902929,
+          "summary_zh": "中性討論為主；負面 35.1%，正面 4.8%，按讚加權負面 42.0%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 697060,
+          "total_observed_comments": 2462,
+          "unique_commenters": 1763,
+          "median_observed_commenters": 50,
+          "evidence_zh": "29 支影片；697,060 views；2,462 observed comments；1,763 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 58,
+          "external_edges": 126,
+          "conductance": 0.5087336244541485,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=58, external_edges=126, conductance=0.509"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (29); business_brand (14); education_advice (5); personal_team_life (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 35.1%，正面 4.8%，按讚加權負面 42.0%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "29 支影片；697,060 views；2,462 observed comments；1,763 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=58, external_edges=126, conductance=0.509"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 4,
+        "cluster_label": "Video cluster 4",
+        "size": {
+          "n_videos": 22,
+          "date_min": "2024-10-29 18:06:38+00:00",
+          "date_max": "2025-10-23 04:19:18+00:00",
+          "pct_graph_videos": 17.05426356589147
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 22
+            },
+            {
+              "label": "education_advice",
+              "count": 14
+            },
+            {
+              "label": "business_brand",
+              "count": 4
+            },
+            {
+              "label": "personal_team_life",
+              "count": 4
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "personal_team_life",
+              "lift": 2.1322314049586777,
+              "n_videos": 4
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.52020202020202,
+              "n_videos": 14
+            },
+            {
+              "theme": "controversy_response",
+              "lift": 1.0078125,
+              "n_videos": 22
+            },
+            {
+              "theme": "business_brand",
+              "lift": 0.4598930481283423,
+              "n_videos": 4
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "#85 YO智事務所｜深度分析柯文哲起訴書：京華城案（上） ft. 珞亦",
+              "count": 100
+            },
+            {
+              "label": "政治歸政治 #147｜你能不能容忍國民黨的存在？",
+              "count": 79
+            },
+            {
+              "label": "#86 YO智事務所｜深度分析柯文哲起訴書（下）：政治獻金案 ft. 珞亦",
+              "count": 61
+            },
+            {
+              "label": "#102 YO智事務所｜台師大女足抽血案、「剴剴條款」三讀通過、民眾黨的「兩年條款」今年會被廢除",
+              "count": 50
+            },
+            {
+              "label": "82｜大罷免可行嗎？我們來好好討論 ft. 謝達文",
+              "count": 48
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.28206465067778935,
+          "neutral_rate": 0.6480709071949948,
+          "positive_rate": 0.06986444212721585,
+          "like_weighted_negative_rate": 0.29814550641940085,
+          "like_weighted_positive_rate": 0.07639879537169124,
+          "summary_zh": "中性討論為主；負面 28.2%，正面 7.0%，按讚加權負面 29.8%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 165869,
+          "total_observed_comments": 855,
+          "unique_commenters": 560,
+          "median_observed_commenters": 29.5,
+          "evidence_zh": "22 支影片；165,869 views；855 observed comments；560 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 40,
+          "external_edges": 56,
+          "conductance": 0.4295612009237875,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=40, external_edges=56, conductance=0.430"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (22); education_advice (14); business_brand (4); personal_team_life (4)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 28.2%，正面 7.0%，按讚加權負面 29.8%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "22 支影片；165,869 views；855 observed comments；560 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=40, external_edges=56, conductance=0.430"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 11,
+          "date_min": "2025-09-05 11:00:06+00:00",
+          "date_max": "2026-03-23 11:00:37+00:00",
+          "pct_graph_videos": 8.527131782945736
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 11
+            },
+            {
+              "label": "business_brand",
+              "count": 7
+            },
+            {
+              "label": "education_advice",
+              "count": 3
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "workplace_tech_career",
+              "lift": 2.931818181818182,
+              "n_videos": 1
+            },
+            {
+              "theme": "business_brand",
+              "lift": 1.6096256684491979,
+              "n_videos": 7
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "賴清德獨裁、普丁不獨裁！鄭麗文的下一步怎麼走，如何看待國民黨的紅統路線｜法客電台 Video P",
+              "count": 204
+            },
+            {
+              "label": "國民黨的超新星！鄭麗文當選黨主席將重振國民黨，還是往中共更靠攏呢？｜法客電台 Video Pod",
+              "count": 102
+            },
+            {
+              "label": "你認為賴清德禁抖音會利大於弊嗎？FB、IG也有造謠影片也要一起禁嗎？｜法客電台 Video Po",
+              "count": 66
+            },
+            {
+              "label": "罪犯就應該關到死嗎？不能假釋對整體社會有什麼影響，這一手是為了法治還是民進黨的選票？｜法客電台",
+              "count": 62
+            },
+            {
+              "label": "軍購案在吵什麼？台灣到底要跟美國買什麼樣的武器才夠用？行政院、國民黨、民眾黨版本各自講什麼？｜法",
+              "count": 50
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "品牌",
+            "業配",
+            "商業",
+            "知識",
+            "教學"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.3218599033816425,
+          "neutral_rate": 0.6080917874396136,
+          "positive_rate": 0.07004830917874397,
+          "like_weighted_negative_rate": 0.3793724665966071,
+          "like_weighted_positive_rate": 0.08317069509082721,
+          "summary_zh": "中性討論為主；負面 32.2%，正面 7.0%，按讚加權負面 37.9%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 184811,
+          "total_observed_comments": 680,
+          "unique_commenters": 539,
+          "median_observed_commenters": 42,
+          "evidence_zh": "11 支影片；184,811 views；680 observed comments；539 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 13,
+          "external_edges": 52,
+          "conductance": 0.6893939393939394,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=13, external_edges=52, conductance=0.689"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (11); business_brand (7); education_advice (3); personal_team_life (1); workplace_tech_career (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 32.2%，正面 7.0%，按讚加權負面 37.9%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "11 支影片；184,811 views；680 observed comments；539 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=13, external_edges=52, conductance=0.689"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 6,
+        "cluster_label": "Video cluster 6",
+        "size": {
+          "n_videos": 5,
+          "date_min": "2026-01-09 20:48:35+00:00",
+          "date_max": "2026-04-23 22:35:17+00:00",
+          "pct_graph_videos": 3.875968992248062
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 5
+            },
+            {
+              "label": "education_advice",
+              "count": 4
+            },
+            {
+              "label": "business_brand",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "138｜去新疆玩應該要生氣？ ft. 李厚辰",
+              "count": 101
+            },
+            {
+              "label": "135｜侵台後首要目標，教育大清洗 ft. 李厚辰",
+              "count": 91
+            },
+            {
+              "label": "137｜中國有言論自由嗎？ ft. 李厚辰",
+              "count": 81
+            },
+            {
+              "label": "132｜林宅血案真兇是誰？ ft. 徐紹綱",
+              "count": 65
+            },
+            {
+              "label": "140｜習下鄭上？鄭習會為什麼如此冷？ ft. 李厚辰",
+              "count": 24
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.35600578871201155,
+          "neutral_rate": 0.5311143270622286,
+          "positive_rate": 0.11287988422575977,
+          "like_weighted_negative_rate": 0.4164506245580957,
+          "like_weighted_positive_rate": 0.21659203393825124,
+          "summary_zh": "中性討論為主；負面 35.6%，正面 11.3%，按讚加權負面 41.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 104204,
+          "total_observed_comments": 395,
+          "unique_commenters": 317,
+          "median_observed_commenters": 81,
+          "evidence_zh": "5 支影片；104,204 views；395 observed comments；317 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 6,
+          "external_edges": 5,
+          "conductance": 0.20967741935483872,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=6, external_edges=5, conductance=0.210"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (5); education_advice (4); business_brand (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 35.6%，正面 11.3%，按讚加權負面 41.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "5 支影片；104,204 views；395 observed comments；317 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=6, external_edges=5, conductance=0.210"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2023-09-27 16:33:35+00:00",
+          "date_max": "2023-09-27 16:50:03+00:00",
+          "pct_graph_videos": 1.550387596899225
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "business_brand",
+              "count": 2
+            },
+            {
+              "label": "controversy_response",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "[#1] 政治歸政治2024大選專訪：柯文哲，民眾黨的DNA是什麼？",
+              "count": 128
+            },
+            {
+              "label": "[#3] 政治歸政治2024大選專訪：賴清德，民進黨為何值得繼續執政？",
+              "count": 14
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "品牌",
+            "業配",
+            "商業",
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.20673076923076922,
+          "neutral_rate": 0.42788461538461536,
+          "positive_rate": 0.36538461538461536,
+          "like_weighted_negative_rate": 0.03671071953010279,
+          "like_weighted_positive_rate": 0.7571218795888399,
+          "summary_zh": "中性討論為主；負面 20.7%，正面 36.5%，按讚加權負面 3.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 11550,
+          "total_observed_comments": 154,
+          "unique_commenters": 134,
+          "median_observed_commenters": 71,
+          "evidence_zh": "2 支影片；11,550 views；154 observed comments；134 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "business_brand (2); controversy_response (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 20.7%，正面 36.5%，按讚加權負面 3.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；11,550 views；154 observed comments；134 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      },
+      {
+        "video_cluster": 7,
+        "cluster_label": "Video cluster 7",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2025-11-13 04:06:34+00:00",
+          "date_max": "2025-11-17 22:19:30+00:00",
+          "pct_graph_videos": 1.550387596899225
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 2
+            },
+            {
+              "label": "education_advice",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "政治歸政治 #182｜性、慾望與倫理：性別議題的男性觀點與反思",
+              "count": 35
+            },
+            {
+              "label": "政治歸政治 #183｜LivePodcast 11月 台北場：YOYO 跟 ROY 的愛恨情仇？",
+              "count": 11
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "團隊",
+            "近況"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.019230769230769232,
+          "neutral_rate": 0.4423076923076923,
+          "positive_rate": 0.5384615384615384,
+          "like_weighted_negative_rate": 0.007042253521126761,
+          "like_weighted_positive_rate": 0.5140845070422535,
+          "summary_zh": "中性偏正，正向討論較多；負面 1.9%，正面 53.8%，按讚加權負面 0.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 6238,
+          "total_observed_comments": 48,
+          "unique_commenters": 41,
+          "median_observed_commenters": 23,
+          "evidence_zh": "2 支影片；6,238 views；48 observed comments；41 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 0,
+          "conductance": 0,
+          "interpretation_zh": "群內共享觀眾相對緊密，適合作為系列內容或同題材延伸。",
+          "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (2); education_advice (2); personal_team_life (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性偏正，正向討論較多；負面 1.9%，正面 53.8%，按讚加權負面 0.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；6,238 views；48 observed comments；41 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=0, conductance=0.000"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。 此 segment 情緒偏正，可優先測試轉換型 CTA。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1454,6 +3615,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

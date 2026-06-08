@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "twreporterorg-full",
   "title": "報導者 The Reporter",
   "channel_id": "UCbWm0FTcQgRyc--ZsAzGcRA",
@@ -110,219 +110,262 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/twreporterorg-full/tables/actor_communities.csv",
-        "bytes": 19756
+        "bytes": 19756,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/twreporterorg-full/tables/bridge_actors.csv",
-        "bytes": 10647
+        "bytes": 10647,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/twreporterorg-full/tables/channel_overview.csv",
-        "bytes": 366
+        "bytes": 366,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/twreporterorg-full/tables/commenter_activity.csv",
-        "bytes": 2111371
+        "bytes": 2111371,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/twreporterorg-full/tables/commenter_tiers.csv",
-        "bytes": 224
+        "bytes": 224,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/twreporterorg-full/tables/community_profiles.csv",
-        "bytes": 4131
+        "bytes": 4131,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/twreporterorg-full/tables/community_sentiment_summary.csv",
-        "bytes": 1852
+        "bytes": 1852,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/twreporterorg-full/tables/community_summary.csv",
-        "bytes": 826
+        "bytes": 826,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/twreporterorg-full/tables/community_theme_affinity.csv",
-        "bytes": 4437
+        "bytes": 4437,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/twreporterorg-full/tables/community_theme_sentiment.csv",
-        "bytes": 2620
+        "bytes": 2620,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/twreporterorg-full/tables/continuity_sensitivity.csv",
-        "bytes": 601
+        "bytes": 601,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/twreporterorg-full/tables/continuity_summary.csv",
-        "bytes": 626
+        "bytes": 626,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/twreporterorg-full/tables/diagnostics.csv",
-        "bytes": 1264
+        "bytes": 1264,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/twreporterorg-full/tables/network_actor_metrics.csv",
-        "bytes": 35146
+        "bytes": 35146,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/twreporterorg-full/tables/network_summary.csv",
-        "bytes": 637
+        "bytes": 637,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/twreporterorg-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 9606795
+        "bytes": 9606795,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/twreporterorg-full/tables/qwen_video_themes.csv",
-        "bytes": 109291
+        "bytes": 109291,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/twreporterorg-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 1100
+        "bytes": 1100,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/twreporterorg-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 14084
+        "bytes": 14084,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/twreporterorg-full/tables/reply_sentiment_summary.csv",
-        "bytes": 755
+        "bytes": 755,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/twreporterorg-full/tables/reply_thread_metrics.csv",
-        "bytes": 5549901
+        "bytes": 5549901,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/twreporterorg-full/tables/reply_thread_overview.csv",
-        "bytes": 365
+        "bytes": 365,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/twreporterorg-full/tables/rolling_retention.csv",
-        "bytes": 0
+        "bytes": 0,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/twreporterorg-full/tables/sentiment_hotspots.csv",
-        "bytes": 12057
+        "bytes": 12057,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/twreporterorg-full/tables/sentiment_source_summary.csv",
-        "bytes": 253
+        "bytes": 253,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/twreporterorg-full/tables/sentiment_summary.csv",
-        "bytes": 595
+        "bytes": 595,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/twreporterorg-full/tables/sentiment_theme_summary.csv",
-        "bytes": 970
+        "bytes": 970,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/twreporterorg-full/tables/theme_source_summary.csv",
-        "bytes": 30
+        "bytes": 30,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/twreporterorg-full/tables/theme_summary.csv",
-        "bytes": 124
+        "bytes": 124,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/twreporterorg-full/tables/theme_video_labels.csv",
-        "bytes": 16079
+        "bytes": 16079,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/twreporterorg-full/tables/theme_video_labels_long.csv",
-        "bytes": 11641
+        "bytes": 11641,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/twreporterorg-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1032
+        "bytes": 1032,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/twreporterorg-full/tables/video_cluster_summary.csv",
-        "bytes": 2412
+        "bytes": 2412,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/twreporterorg-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 1087
+        "bytes": 1087,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/twreporterorg-full/tables/video_clusters.csv",
-        "bytes": 4112
+        "bytes": 4112,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/twreporterorg-full/tables/video_link_opportunities.csv",
-        "bytes": 57233
+        "bytes": 57233,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/twreporterorg-full/tables/video_metrics.csv",
-        "bytes": 5650
+        "bytes": 5650,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/twreporterorg-full/tables/video_network_metrics.csv",
-        "bytes": 4600
+        "bytes": 4600,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/twreporterorg-full/tables/video_network_summary.csv",
-        "bytes": 600
+        "bytes": 600,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/twreporterorg-full/figures/channel_activity.png",
-        "bytes": 61552
+        "bytes": 61552,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/twreporterorg-full/figures/commenter_tiers.png",
-        "bytes": 26355
+        "bytes": 26355,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/twreporterorg-full/figures/community_sizes.png",
-        "bytes": 21079
+        "bytes": 21079,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/twreporterorg-full/figures/video_cluster_sizes.png",
-        "bytes": 23378
+        "bytes": 23378,
+        "source_dir": null
       }
     ]
   },
@@ -648,6 +691,691 @@
         "max_core_number": 1
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 47,
+          "pct_active_commenters": 21.658986175115206,
+          "summary_zh": "21.7% of active commenters"
+        },
+        "activity": {
+          "n_comments": 186,
+          "avg_comments_per_commenter": 3.9574468085106385,
+          "n_videos_touched": 17,
+          "summary_zh": "平均留言 4.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "偷拍、誘拍、集體侵犯⋯⋯破解台灣變態的「獵童產業」｜長大當記者Vol.1｜兒少性剝削",
+            "count": 37
+          },
+          {
+            "label": "「大罷免」這半年，如何衝擊國內政局、改變台灣社會？｜長大當記者Vol.4",
+            "count": 34
+          },
+          {
+            "label": "2024美國大選：中國偏好誰當選？誰讓台灣更安全？｜長大當記者Vol.2",
+            "count": 26
+          },
+          {
+            "label": "小宅住屋時代：10坪鳥籠賣千萬…台灣房價為什麽都跌不下來？｜長大當記者 Vol.3",
+            "count": 25
+          },
+          {
+            "label": "免費的最貴：全台「營養午餐」費用全免，真能造福孩子和家長？｜報導者觀點",
+            "count": 25
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 47
+          },
+          {
+            "label": "personal_team_life",
+            "count": 5
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "business_brand",
+            "lift": 1.226790450928382,
+            "n_commenters": 25
+          },
+          {
+            "theme": "personal_team_life",
+            "lift": 1.0935960591133005,
+            "n_commenters": 8
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 0.9949079864212971,
+            "n_commenters": 47
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.2801418439716312,
+          "neutral_rate": 0.5141843971631206,
+          "positive_rate": 0.20567375886524822,
+          "like_weighted_negative_rate": 0.291886195995785,
+          "like_weighted_positive_rate": 0.4718651211801897,
+          "summary_zh": "中性討論為主；負面 28.0%，正面 20.6%，按讚加權負面 29.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.286231884057971,
+            "like_weighted_negative_rate": 0.29651038321558554,
+            "n_comments": 276,
+            "summary_zh": "controversy_response：負面 28.6%，按讚加權負面 29.7%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 4,
+        "segment_label": "Audience segment 4",
+        "group_size": {
+          "n_commenters": 44,
+          "pct_active_commenters": 20.276497695852534,
+          "summary_zh": "20.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 181,
+          "avg_comments_per_commenter": 4.113636363636363,
+          "n_videos_touched": 22,
+          "summary_zh": "平均留言 4.1 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "「大罷免」這半年，如何衝擊國內政局、改變台灣社會？｜長大當記者Vol.4",
+            "count": 36
+          },
+          {
+            "label": "科技神仙重創媒體流量⋯AI會取代記者&創作者嗎？",
+            "count": 24
+          },
+          {
+            "label": "2024美國大選：中國偏好誰當選？誰讓台灣更安全？｜長大當記者Vol.2",
+            "count": 21
+          },
+          {
+            "label": "偷拍、誘拍、集體侵犯⋯⋯破解台灣變態的「獵童產業」｜長大當記者Vol.1｜兒少性剝削",
+            "count": 18
+          },
+          {
+            "label": "審理第二週大轉折：證人調查、醫師鑑定報告後，劉彩萱當庭認罪｜剴剴案法庭現場Day 3-7",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 44
+          },
+          {
+            "label": "personal_team_life",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "event_announcement",
+            "lift": 2.2603636363636364,
+            "n_commenters": 10
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 2.230622009569378,
+            "n_commenters": 9
+          },
+          {
+            "theme": "workplace_tech_career",
+            "lift": 2.054876033057851,
+            "n_commenters": 24
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.34545454545454546,
+          "neutral_rate": 0.49696969696969695,
+          "positive_rate": 0.15757575757575756,
+          "like_weighted_negative_rate": 0.12102628285356695,
+          "like_weighted_positive_rate": 0.036921151439299124,
+          "summary_zh": "中性討論為主；負面 34.5%，正面 15.8%，按讚加權負面 12.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.34049079754601225,
+            "like_weighted_negative_rate": 0.12038080921959163,
+            "n_comments": 326,
+            "summary_zh": "controversy_response：負面 34.0%，按讚加權負面 12.0%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 43,
+          "pct_active_commenters": 19.81566820276498,
+          "summary_zh": "19.8% of active commenters"
+        },
+        "activity": {
+          "n_comments": 159,
+          "avg_comments_per_commenter": 3.697674418604651,
+          "n_videos_touched": 10,
+          "summary_zh": "平均留言 3.7 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "「大罷免」這半年，如何衝擊國內政局、改變台灣社會？｜長大當記者Vol.4",
+            "count": 41
+          },
+          {
+            "label": "中國的「台灣地位」輿論戰：聯大2758號決議 = 台灣是中國一部分嗎？｜這裡開始",
+            "count": 32
+          },
+          {
+            "label": "小宅住屋時代：10坪鳥籠賣千萬…台灣房價為什麽都跌不下來？｜長大當記者 Vol.3",
+            "count": 29
+          },
+          {
+            "label": "2024美國大選：中國偏好誰當選？誰讓台灣更安全？｜長大當記者Vol.2",
+            "count": 22
+          },
+          {
+            "label": "免費的最貴：全台「營養午餐」費用全免，真能造福孩子和家長？｜報導者觀點",
+            "count": 9
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 43
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "city_lifestyle",
+            "lift": 1.319107832806463,
+            "n_commenters": 29
+          },
+          {
+            "theme": "controversy_response",
+            "lift": 1.0064766839378239,
+            "n_commenters": 43
+          },
+          {
+            "theme": "education_advice",
+            "lift": 0.7660336239103362,
+            "n_commenters": 33
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.34967320261437906,
+          "neutral_rate": 0.5490196078431373,
+          "positive_rate": 0.10130718954248366,
+          "like_weighted_negative_rate": 0.38898836168307965,
+          "like_weighted_positive_rate": 0.07609668755595345,
+          "summary_zh": "中性討論為主；負面 35.0%，正面 10.1%，按讚加權負面 38.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.34967320261437906,
+            "like_weighted_negative_rate": 0.38898836168307965,
+            "n_comments": 306,
+            "summary_zh": "controversy_response：負面 35.0%，按讚加權負面 38.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 6,
+        "segment_label": "Audience segment 6",
+        "group_size": {
+          "n_commenters": 37,
+          "pct_active_commenters": 17.050691244239633,
+          "summary_zh": "17.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 139,
+          "avg_comments_per_commenter": 3.7567567567567566,
+          "n_videos_touched": 16,
+          "summary_zh": "平均留言 3.8 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "小宅住屋時代：10坪鳥籠賣千萬…台灣房價為什麽都跌不下來？｜長大當記者 Vol.3",
+            "count": 26
+          },
+          {
+            "label": "「大罷免」這半年，如何衝擊國內政局、改變台灣社會？｜長大當記者Vol.4",
+            "count": 22
+          },
+          {
+            "label": "偷拍、誘拍、集體侵犯⋯⋯破解台灣變態的「獵童產業」｜長大當記者Vol.1｜兒少性剝削",
+            "count": 20
+          },
+          {
+            "label": "把青春獻給了棒球，然後呢？從數據看台灣待改革的體育班制度｜報導者觀點",
+            "count": 12
+          },
+          {
+            "label": "急診愈來愈塞？醫院關床背後的護理師大撤退｜這裡開始",
+            "count": 10
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 37
+          },
+          {
+            "label": "personal_team_life",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.3,
+          "neutral_rate": 0.5576923076923077,
+          "positive_rate": 0.1423076923076923,
+          "like_weighted_negative_rate": 0.16856016693716672,
+          "like_weighted_positive_rate": 0.12334801762114538,
+          "summary_zh": "中性討論為主；負面 30.0%，正面 14.2%，按讚加權負面 16.9%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.3035019455252918,
+            "like_weighted_negative_rate": 0.16946386946386946,
+            "n_comments": 257,
+            "summary_zh": "controversy_response：負面 30.4%，按讚加權負面 16.9%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 33,
+          "pct_active_commenters": 15.207373271889402,
+          "summary_zh": "15.2% of active commenters"
+        },
+        "activity": {
+          "n_comments": 119,
+          "avg_comments_per_commenter": 3.606060606060606,
+          "n_videos_touched": 12,
+          "summary_zh": "平均留言 3.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "「大罷免」這半年，如何衝擊國內政局、改變台灣社會？｜長大當記者Vol.4",
+            "count": 25
+          },
+          {
+            "label": "小宅住屋時代：10坪鳥籠賣千萬…台灣房價為什麽都跌不下來？｜長大當記者 Vol.3",
+            "count": 16
+          },
+          {
+            "label": "免費的最貴：全台「營養午餐」費用全免，真能造福孩子和家長？｜報導者觀點",
+            "count": 15
+          },
+          {
+            "label": "科技神仙重創媒體流量⋯AI會取代記者&創作者嗎？",
+            "count": 14
+          },
+          {
+            "label": "誰是新版《財劃法》贏家？數據解析修法關鍵結果與隱憂",
+            "count": 11
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 33
+          },
+          {
+            "label": "personal_team_life",
+            "count": 1
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "團隊",
+            "近況",
+            "生日"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.3630952380952381,
+          "neutral_rate": 0.42857142857142855,
+          "positive_rate": 0.20833333333333334,
+          "like_weighted_negative_rate": 0.25264012997562957,
+          "like_weighted_positive_rate": 0.16653127538586515,
+          "summary_zh": "中性討論為主；負面 36.3%，正面 20.8%，按讚加權負面 25.3%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.3652694610778443,
+            "like_weighted_negative_rate": 0.2528455284552846,
+            "n_comments": 167,
+            "summary_zh": "controversy_response：負面 36.5%，按讚加權負面 25.3%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 5,
+        "segment_label": "Audience segment 5",
+        "group_size": {
+          "n_commenters": 11,
+          "pct_active_commenters": 5.0691244239631335,
+          "summary_zh": "5.1% of active commenters"
+        },
+        "activity": {
+          "n_comments": 43,
+          "avg_comments_per_commenter": 3.909090909090909,
+          "n_videos_touched": 10,
+          "summary_zh": "平均留言 3.9 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "免費的最貴：全台「營養午餐」費用全免，真能造福孩子和家長？｜報導者觀點",
+            "count": 10
+          },
+          {
+            "label": "剴剴案社工一審被判2年，「過失致死」檢辯攻防一次看懂｜這裡開始",
+            "count": 9
+          },
+          {
+            "label": "偷拍、誘拍、集體侵犯⋯⋯破解台灣變態的「獵童產業」｜長大當記者Vol.1｜兒少性剝削",
+            "count": 4
+          },
+          {
+            "label": "小宅住屋時代：10坪鳥籠賣千萬…台灣房價為什麽都跌不下來？｜長大當記者 Vol.3",
+            "count": 4
+          },
+          {
+            "label": "審理第二週大轉折：證人調查、醫師鑑定報告後，劉彩萱當庭認罪｜剴剴案法庭現場Day 3-7",
+            "count": 4
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 11
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.32432432432432434,
+          "neutral_rate": 0.5675675675675675,
+          "positive_rate": 0.10810810810810811,
+          "like_weighted_negative_rate": 0.09164086687306501,
+          "like_weighted_positive_rate": 0.2625386996904025,
+          "summary_zh": "中性討論為主；負面 32.4%，正面 10.8%，按讚加權負面 9.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "controversy_response",
+            "negative_rate": 0.32432432432432434,
+            "like_weighted_negative_rate": 0.09164086687306501,
+            "n_comments": 74,
+            "summary_zh": "controversy_response：負面 32.4%，按讚加權負面 9.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 2,
+          "pct_active_commenters": 0.9216589861751152,
+          "summary_zh": "0.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 6,
+          "avg_comments_per_commenter": 3.0,
+          "n_videos_touched": 3,
+          "summary_zh": "平均留言 3.0 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "偷拍、誘拍、集體侵犯⋯⋯破解台灣變態的「獵童產業」｜長大當記者Vol.1｜兒少性剝削",
+            "count": 2
+          },
+          {
+            "label": "小宅住屋時代：10坪鳥籠賣千萬…台灣房價為什麽都跌不下來？｜長大當記者 Vol.3",
+            "count": 2
+          },
+          {
+            "label": "解析台北幼兒園案：被制度漏接的兒童性侵五階段｜這裡開始",
+            "count": 2
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "controversy_response",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "positive",
+          "negative_rate": 0.3333333333333333,
+          "neutral_rate": 0.16666666666666666,
+          "positive_rate": 0.5,
+          "like_weighted_negative_rate": 0.05,
+          "like_weighted_positive_rate": 0.925,
+          "summary_zh": "正向為主，但仍需看負面來源；負面 33.3%，正面 50.0%，按讚加權負面 5.0%"
+        },
+        "negative_sources": [],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。 此 segment 情緒偏正，可優先測試轉換型 CTA。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 18,
       "n_edges": 80,
@@ -739,6 +1467,466 @@
         "conductance": 0.7251908396946565,
         "avg_core_number": 6.0,
         "max_core_number": 7
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 11,
+          "date_min": "2024-07-02 03:04:56+00:00",
+          "date_max": "2025-07-23 09:01:23+00:00",
+          "pct_graph_videos": 61.111111111111114
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 11
+            },
+            {
+              "label": "education_advice",
+              "count": 3
+            },
+            {
+              "label": "city_lifestyle",
+              "count": 2
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "business_brand",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "city_lifestyle",
+              "lift": 1.6363636363636365,
+              "n_videos": 2
+            },
+            {
+              "theme": "event_announcement",
+              "lift": 1.6363636363636365,
+              "n_videos": 1
+            },
+            {
+              "theme": "travel_exploration",
+              "lift": 1.6363636363636365,
+              "n_videos": 1
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.090909090909091,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "「大罷免」這半年，如何衝擊國內政局、改變台灣社會？｜長大當記者Vol.4",
+              "count": 7193
+            },
+            {
+              "label": "2024美國大選：中國偏好誰當選？誰讓台灣更安全？｜長大當記者Vol.2",
+              "count": 2323
+            },
+            {
+              "label": "小宅住屋時代：10坪鳥籠賣千萬…台灣房價為什麽都跌不下來？｜長大當記者 Vol.3",
+              "count": 2185
+            },
+            {
+              "label": "偷拍、誘拍、集體侵犯⋯⋯破解台灣變態的「獵童產業」｜長大當記者Vol.1｜兒少性剝削",
+              "count": 1454
+            },
+            {
+              "label": "中國的「台灣地位」輿論戰：聯大2758號決議 = 台灣是中國一部分嗎？｜這裡開始",
+              "count": 520
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "城市",
+            "街訪"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.4492643808802172,
+          "neutral_rate": 0.4511271074067058,
+          "positive_rate": 0.09960851171307697,
+          "like_weighted_negative_rate": 0.4064586939767009,
+          "like_weighted_positive_rate": 0.1593166035162476,
+          "summary_zh": "中性討論為主；負面 44.9%，正面 10.0%，按讚加權負面 40.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 4147161,
+          "total_observed_comments": 15551,
+          "unique_commenters": 13451,
+          "median_observed_commenters": 167,
+          "evidence_zh": "11 支影片；4,147,161 views；15,551 observed comments；13,451 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 28,
+          "external_edges": 38,
+          "conductance": 0.6890951276102089,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=28, external_edges=38, conductance=0.689"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (11); education_advice (3); city_lifestyle (2); personal_team_life (2); business_brand (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 44.9%，正面 10.0%，按讚加權負面 40.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "11 支影片；4,147,161 views；15,551 observed comments；13,451 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=28, external_edges=38, conductance=0.689"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 5,
+          "date_min": "2025-02-27 08:30:06+00:00",
+          "date_max": "2026-04-20 03:30:01+00:00",
+          "pct_graph_videos": 27.77777777777778
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 5
+            },
+            {
+              "label": "education_advice",
+              "count": 3
+            },
+            {
+              "label": "business_brand",
+              "count": 1
+            },
+            {
+              "label": "personal_team_life",
+              "count": 1
+            },
+            {
+              "label": "workplace_tech_career",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "business_brand",
+              "lift": 1.8000000000000003,
+              "n_videos": 1
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 1.8000000000000003,
+              "n_videos": 1
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.8,
+              "n_videos": 3
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.2000000000000002,
+              "n_videos": 1
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "免費的最貴：全台「營養午餐」費用全免，真能造福孩子和家長？｜報導者觀點",
+              "count": 430
+            },
+            {
+              "label": "剴剴案社工一審被判2年，「過失致死」檢辯攻防一次看懂｜這裡開始",
+              "count": 337
+            },
+            {
+              "label": "把青春獻給了棒球，然後呢？從數據看台灣待改革的體育班制度｜報導者觀點",
+              "count": 238
+            },
+            {
+              "label": "科技神仙重創媒體流量⋯AI會取代記者&創作者嗎？",
+              "count": 219
+            },
+            {
+              "label": "「共諜案」與我們的距離：從國安案件資料分析，台灣該如何看待這場沒有煙硝的戰爭？｜這裡開始",
+              "count": 60
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清",
+            "知識",
+            "教學",
+            "建議",
+            "品牌",
+            "業配"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.3355947535052013,
+          "neutral_rate": 0.49570330167345095,
+          "positive_rate": 0.16870194482134782,
+          "like_weighted_negative_rate": 0.2624676255028379,
+          "like_weighted_positive_rate": 0.30842563509119963,
+          "summary_zh": "中性討論為主；負面 33.6%，正面 16.9%，按讚加權負面 26.2%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 270020,
+          "total_observed_comments": 1318,
+          "unique_commenters": 1207,
+          "median_observed_commenters": 238,
+          "evidence_zh": "5 支影片；270,020 views；1,318 observed comments；1,207 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 9,
+          "external_edges": 34,
+          "conductance": 0.7564979480164159,
+          "interpretation_zh": "群集邊界較鬆散，可能是過渡型內容或與其他題材高度混合。",
+          "evidence_zh": "internal_edges=9, external_edges=34, conductance=0.756"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (5); education_advice (3); business_brand (1); personal_team_life (1); workplace_tech_career (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 33.6%，正面 16.9%，按讚加權負面 26.2%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "5 支影片；270,020 views；1,318 observed comments；1,207 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=9, external_edges=34, conductance=0.756"
+          }
+        ],
+        "business_read": "適合產品教育、比較型內容、職涯/知識型合作與高資訊密度腳本。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 2,
+          "date_min": "2025-04-26 05:40:20+00:00",
+          "date_max": "2025-05-05 06:50:33+00:00",
+          "pct_graph_videos": 11.11111111111111
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "controversy_response",
+              "count": 2
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "controversy_response",
+              "lift": 1,
+              "n_videos": 2
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "審理第二週大轉折：證人調查、醫師鑑定報告後，劉彩萱當庭認罪｜剴剴案法庭現場Day 3-7",
+              "count": 148
+            },
+            {
+              "label": "國民法官開審、檢辯交鋒，從美國返台外籍看護成關鍵證人｜剴剴案法庭現場Day1-2",
+              "count": 130
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "爭議",
+            "回應",
+            "澄清"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "negative",
+          "negative_rate": 0.46487603305785125,
+          "neutral_rate": 0.3925619834710744,
+          "positive_rate": 0.14256198347107438,
+          "like_weighted_negative_rate": 0.3866635249764373,
+          "like_weighted_positive_rate": 0.4429783223374175,
+          "summary_zh": "負面討論偏高；負面 46.5%，正面 14.3%，按讚加權負面 38.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 120017,
+          "total_observed_comments": 299,
+          "unique_commenters": 260,
+          "median_observed_commenters": 139,
+          "evidence_zh": "2 支影片；120,017 views；299 observed comments；260 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1,
+          "external_edges": 12,
+          "conductance": 0.7251908396946565,
+          "interpretation_zh": "群集邊界較鬆散，可能是過渡型內容或與其他題材高度混合。",
+          "evidence_zh": "internal_edges=1, external_edges=12, conductance=0.725"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "controversy_response (2)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "負面討論偏高；負面 46.5%，正面 14.3%，按讚加權負面 38.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "2 支影片；120,017 views；299 observed comments；260 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1, external_edges=12, conductance=0.725"
+          }
+        ],
+        "business_read": "適合把高偏好主題整理成系列內容，並用留言反應檢查可複製性。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1280,6 +2468,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

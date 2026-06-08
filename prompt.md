@@ -47,7 +47,7 @@ conclusion report and detailed report.
 7. Link opportunities：只當 idea generator，不宣稱會成功；解釋 common neighbors/Jaccard/Adamic-Adar/resource allocation 的用途。
 8. Sentiment and hotspots：同時看 raw negative rate、like-weighted negative rate、positive rate、reply share。
 9. Reply conflict：分清楚 negative rate 與 conflict；同時解釋 structural conflict_score、reply-count weighted conflict、like-weighted conflict。
-10. External events：若有，只能說事件視窗關聯，不可寫成因果。
+10. External discussion alignment：若有，只能說時間窗關聯，不可寫成因果；要同時考慮外部討論先行、影片引發外部討論、同步共振、方向不明等可能。
 11. Benchmark context：percentile 只代表相對位置，不代表好壞；先報 cohort size 和 membership scope。
 12. 可執行建議：每項建議都要對應到具體數據或表格。
 13. 限制：模型標註不是人工真值、公開留言不代表所有觀看者、網路社群不是粉絲派系、事件分析不是因果。
@@ -59,6 +59,8 @@ conclusion report and detailed report.
 - 不要把 top-level audience metrics 與 reply-thread metrics 混在同一個母體解釋。
 - 不要把高 percentile 直接寫成「好」，低 percentile 直接寫成「差」。
 - 不要聲稱顯著、因果、成功策略，除非資料中有對應檢定或設計。
+- 若資料只有每支影片的累積觀看數，不能寫成「流量上升/下降」或「外部討論造成流量變化」；只能說影片發布時間、累積觀看表現與外部討論節點在時間上如何對齊。
+- 外部討論不一定是原因。若外部貼文討論的是特定影片或系列，優先用「影片引發外部討論」或「同步共振」解讀，而不是「外部事件影響影片」。
 - 不要輸出 raw comment text 或作者個資。
 - 數字要精確引用；若是推論，明確寫「推論」或「可能」。
 

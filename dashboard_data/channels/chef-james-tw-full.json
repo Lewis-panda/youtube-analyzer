@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:47:16.710320+00:00",
+  "generated_at": "2026-06-08T09:05:08.071376+00:00",
   "slug": "chef-james-tw-full",
   "title": "詹姆士官方專屬頻道",
   "channel_id": "UC4_Ds33FmwzcTDL3G2pbs7g",
@@ -110,224 +110,268 @@
       {
         "name": "actor_communities",
         "path": "baseline_runs/chef-james-tw-full/tables/actor_communities.csv",
-        "bytes": 290071
+        "bytes": 290071,
+        "source_dir": "tables"
       },
       {
         "name": "bridge_actors",
         "path": "baseline_runs/chef-james-tw-full/tables/bridge_actors.csv",
-        "bytes": 11318
+        "bytes": 11318,
+        "source_dir": "tables"
       },
       {
         "name": "channel_overview",
         "path": "baseline_runs/chef-james-tw-full/tables/channel_overview.csv",
-        "bytes": 376
+        "bytes": 376,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_activity",
         "path": "baseline_runs/chef-james-tw-full/tables/commenter_activity.csv",
-        "bytes": 3632987
+        "bytes": 3632987,
+        "source_dir": "tables"
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/chef-james-tw-full/tables/commenter_tiers.csv",
-        "bytes": 288
+        "bytes": 288,
+        "source_dir": "tables"
       },
       {
         "name": "community_profiles",
         "path": "baseline_runs/chef-james-tw-full/tables/community_profiles.csv",
-        "bytes": 2581
+        "bytes": 2581,
+        "source_dir": "tables"
       },
       {
         "name": "community_sentiment_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/community_sentiment_summary.csv",
-        "bytes": 1284
+        "bytes": 1284,
+        "source_dir": "tables"
       },
       {
         "name": "community_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/community_summary.csv",
-        "bytes": 621
+        "bytes": 621,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_affinity",
         "path": "baseline_runs/chef-james-tw-full/tables/community_theme_affinity.csv",
-        "bytes": 4854
+        "bytes": 4854,
+        "source_dir": "tables"
       },
       {
         "name": "community_theme_sentiment",
         "path": "baseline_runs/chef-james-tw-full/tables/community_theme_sentiment.csv",
-        "bytes": 7220
+        "bytes": 7220,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_sensitivity",
         "path": "baseline_runs/chef-james-tw-full/tables/continuity_sensitivity.csv",
-        "bytes": 595
+        "bytes": 595,
+        "source_dir": "tables"
       },
       {
         "name": "continuity_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/continuity_summary.csv",
-        "bytes": 633
+        "bytes": 633,
+        "source_dir": "tables"
       },
       {
         "name": "diagnostics",
         "path": "baseline_runs/chef-james-tw-full/tables/diagnostics.csv",
-        "bytes": 1540
+        "bytes": 1540,
+        "source_dir": "tables"
       },
       {
         "name": "network_actor_metrics",
         "path": "baseline_runs/chef-james-tw-full/tables/network_actor_metrics.csv",
-        "bytes": 43854
+        "bytes": 43854,
+        "source_dir": "tables"
       },
       {
         "name": "network_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/network_summary.csv",
-        "bytes": 640
+        "bytes": 640,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_comment_sentiment",
         "path": "baseline_runs/chef-james-tw-full/tables/qwen_comment_sentiment.csv",
-        "bytes": 17371657
+        "bytes": 17371657,
+        "source_dir": "tables"
       },
       {
         "name": "qwen_video_themes",
         "path": "baseline_runs/chef-james-tw-full/tables/qwen_video_themes.csv",
-        "bytes": 865949
+        "bytes": 865949,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_theme_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/reply_conflict_theme_summary.csv",
-        "bytes": 2310
+        "bytes": 2310,
+        "source_dir": "tables"
       },
       {
         "name": "reply_conflict_video_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/reply_conflict_video_summary.csv",
-        "bytes": 158865
+        "bytes": 158865,
+        "source_dir": "tables"
       },
       {
         "name": "reply_sentiment_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/reply_sentiment_summary.csv",
-        "bytes": 759
+        "bytes": 759,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_metrics",
         "path": "baseline_runs/chef-james-tw-full/tables/reply_thread_metrics.csv",
-        "bytes": 14573711
+        "bytes": 14573711,
+        "source_dir": "tables"
       },
       {
         "name": "reply_thread_overview",
         "path": "baseline_runs/chef-james-tw-full/tables/reply_thread_overview.csv",
-        "bytes": 365
+        "bytes": 365,
+        "source_dir": "tables"
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/chef-james-tw-full/tables/rolling_retention.csv",
-        "bytes": 2048
+        "bytes": 2048,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_hotspots",
         "path": "baseline_runs/chef-james-tw-full/tables/sentiment_hotspots.csv",
-        "bytes": 151547
+        "bytes": 151547,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_source_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/sentiment_source_summary.csv",
-        "bytes": 253
+        "bytes": 253,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/sentiment_summary.csv",
-        "bytes": 626
+        "bytes": 626,
+        "source_dir": "tables"
       },
       {
         "name": "sentiment_theme_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/sentiment_theme_summary.csv",
-        "bytes": 2625
+        "bytes": 2625,
+        "source_dir": "tables"
       },
       {
         "name": "theme_source_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/theme_source_summary.csv",
-        "bytes": 31
+        "bytes": 31,
+        "source_dir": "tables"
       },
       {
         "name": "theme_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/theme_summary.csv",
-        "bytes": 301
+        "bytes": 301,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels",
         "path": "baseline_runs/chef-james-tw-full/tables/theme_video_labels.csv",
-        "bytes": 171195
+        "bytes": 171195,
+        "source_dir": "tables"
       },
       {
         "name": "theme_video_labels_long",
         "path": "baseline_runs/chef-james-tw-full/tables/theme_video_labels_long.csv",
-        "bytes": 133575
+        "bytes": 133575,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_sentiment_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/video_cluster_sentiment_summary.csv",
-        "bytes": 1296
+        "bytes": 1296,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/video_cluster_summary.csv",
-        "bytes": 3487
+        "bytes": 3487,
+        "source_dir": "tables"
       },
       {
         "name": "video_cluster_theme_affinity",
         "path": "baseline_runs/chef-james-tw-full/tables/video_cluster_theme_affinity.csv",
-        "bytes": 2686
+        "bytes": 2686,
+        "source_dir": "tables"
       },
       {
         "name": "video_clusters",
         "path": "baseline_runs/chef-james-tw-full/tables/video_clusters.csv",
-        "bytes": 78898
+        "bytes": 78898,
+        "source_dir": "tables"
       },
       {
         "name": "video_link_opportunities",
         "path": "baseline_runs/chef-james-tw-full/tables/video_link_opportunities.csv",
-        "bytes": 98927
+        "bytes": 98927,
+        "source_dir": "tables"
       },
       {
         "name": "video_metrics",
         "path": "baseline_runs/chef-james-tw-full/tables/video_metrics.csv",
-        "bytes": 69254
+        "bytes": 69254,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_metrics",
         "path": "baseline_runs/chef-james-tw-full/tables/video_network_metrics.csv",
-        "bytes": 99075
+        "bytes": 99075,
+        "source_dir": "tables"
       },
       {
         "name": "video_network_summary",
         "path": "baseline_runs/chef-james-tw-full/tables/video_network_summary.csv",
-        "bytes": 638
+        "bytes": 638,
+        "source_dir": "tables"
       }
     ],
     "figures": [
       {
         "name": "channel_activity",
         "path": "baseline_runs/chef-james-tw-full/figures/channel_activity.png",
-        "bytes": 99450
+        "bytes": 99450,
+        "source_dir": null
       },
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/chef-james-tw-full/figures/commenter_tiers.png",
-        "bytes": 24479
+        "bytes": 24479,
+        "source_dir": null
       },
       {
         "name": "community_sizes",
         "path": "baseline_runs/chef-james-tw-full/figures/community_sizes.png",
-        "bytes": 25639
+        "bytes": 25639,
+        "source_dir": null
       },
       {
         "name": "rolling_retention",
         "path": "baseline_runs/chef-james-tw-full/figures/rolling_retention.png",
-        "bytes": 38306
+        "bytes": 38306,
+        "source_dir": null
       },
       {
         "name": "video_cluster_sizes",
         "path": "baseline_runs/chef-james-tw-full/figures/video_cluster_sizes.png",
-        "bytes": 26991
+        "bytes": 26991,
+        "source_dir": null
       }
     ]
   },
@@ -651,6 +695,533 @@
         "max_core_number": 54
       }
     ],
+    "audience_segment_profiles": [
+      {
+        "community": 3,
+        "segment_label": "Audience segment 3",
+        "group_size": {
+          "n_commenters": 1848,
+          "pct_active_commenters": 58.87225230965275,
+          "summary_zh": "58.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 10307,
+          "avg_comments_per_commenter": 5.5773809523809526,
+          "n_videos_touched": 391,
+          "summary_zh": "平均留言 5.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "美食專題報導｜最雷便當配菜TOP 5！[詹姆士]",
+            "count": 150
+          },
+          {
+            "label": "都市傳說｜早餐流行這樣吃？早餐店的特殊餐點試吃！ [詹姆士]",
+            "count": 105
+          },
+          {
+            "label": "不一樣的洋蔥炒蛋｜簡單來說就是胡椒王的洋蔥炒蛋 [詹姆士]",
+            "count": 102
+          },
+          {
+            "label": "美食深度報導｜台灣都會區宵夜排行榜TOP 10！[詹姆士]",
+            "count": 74
+          },
+          {
+            "label": "姆式滷豆皮｜詹姆士家傳菜，整鍋豆製品光看就開心！[詹姆士]",
+            "count": 74
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 1848
+          },
+          {
+            "label": "personal_team_life",
+            "count": 183
+          },
+          {
+            "label": "travel_exploration",
+            "count": 106
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 65
+          },
+          {
+            "label": "other",
+            "count": 21
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "automotive_luxury",
+            "lift": 1.496064526184539,
+            "n_commenters": 65
+          },
+          {
+            "theme": "business_brand",
+            "lift": 1.4593402058234695,
+            "n_commenters": 178
+          },
+          {
+            "theme": "education_advice",
+            "lift": 1.2887527275561097,
+            "n_commenters": 169
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08222850105049627,
+          "neutral_rate": 0.6187785264073028,
+          "positive_rate": 0.298992972542201,
+          "like_weighted_negative_rate": 0.07078509977028062,
+          "like_weighted_positive_rate": 0.4202175577676681,
+          "summary_zh": "中性討論為主；負面 8.2%，正面 29.9%，按讚加權負面 7.1%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.08309869872916825,
+            "like_weighted_negative_rate": 0.07178220718875455,
+            "n_comments": 13141,
+            "summary_zh": "food_culture：負面 8.3%，按讚加權負面 7.2%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.05782312925170068,
+            "like_weighted_negative_rate": 0.060435132957292505,
+            "n_comments": 294,
+            "summary_zh": "personal_team_life：負面 5.8%，按讚加權負面 6.0%"
+          },
+          {
+            "theme": "automotive_luxury",
+            "negative_rate": 0.11235955056179775,
+            "like_weighted_negative_rate": 0.0549645390070922,
+            "n_comments": 89,
+            "summary_zh": "automotive_luxury：負面 11.2%，按讚加權負面 5.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 2,
+        "segment_label": "Audience segment 2",
+        "group_size": {
+          "n_commenters": 592,
+          "pct_active_commenters": 18.85950939789742,
+          "summary_zh": "18.9% of active commenters"
+        },
+        "activity": {
+          "n_comments": 4289,
+          "avg_comments_per_commenter": 7.2449324324324325,
+          "n_videos_touched": 367,
+          "summary_zh": "平均留言 7.2 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "美食報導｜這個罐頭我家必備啊！台灣人家裡10大常備罐頭  你家也有嗎 ⁉️  [詹姆士]",
+            "count": 99
+          },
+          {
+            "label": "這個我也不敢吃...台灣成年人不敢吃的食材排行榜(下) [詹姆士]",
+            "count": 89
+          },
+          {
+            "label": "美食報導｜你們的上訴我聽到了...台灣人家中必備罐頭遺珠在這‼️ [詹姆士]",
+            "count": 81
+          },
+          {
+            "label": "你敢吃嗎？來看看你的挑食指數有多高！台灣成年人不敢吃的食材排行榜(上) [詹姆士]",
+            "count": 76
+          },
+          {
+            "label": "一口定江山｜超商最強99元便當誰最好吃？粗飽系雞排炒飯、油雞香腸煲仔飯、遇見泰式打拋雞拌麵、海老",
+            "count": 73
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 592
+          },
+          {
+            "label": "personal_team_life",
+            "count": 60
+          },
+          {
+            "label": "travel_exploration",
+            "count": 29
+          },
+          {
+            "label": "city_lifestyle",
+            "count": 7
+          },
+          {
+            "label": "other",
+            "count": 7
+          }
+        ],
+        "over_indexed_themes": [
+          {
+            "theme": "physical_challenge",
+            "lift": 2.083350917915172,
+            "n_commenters": 6
+          },
+          {
+            "theme": "workplace_tech_career",
+            "lift": 2.083350917915172,
+            "n_commenters": 6
+          },
+          {
+            "theme": "travel_exploration",
+            "lift": 1.1566557179507113,
+            "n_commenters": 415
+          }
+        ],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.08144144144144144,
+          "neutral_rate": 0.6086486486486486,
+          "positive_rate": 0.3099099099099099,
+          "like_weighted_negative_rate": 0.0744426875019378,
+          "like_weighted_positive_rate": 0.3424177595882554,
+          "summary_zh": "中性討論為主；負面 8.1%，正面 31.0%，按讚加權負面 7.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.08307006132689092,
+            "like_weighted_negative_rate": 0.07778465145052584,
+            "n_comments": 5381,
+            "summary_zh": "food_culture：負面 8.3%，按讚加權負面 7.8%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.023255813953488372,
+            "like_weighted_negative_rate": 0.002277904328018223,
+            "n_comments": 86,
+            "summary_zh": "personal_team_life：負面 2.3%，按讚加權負面 0.2%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 1,
+        "segment_label": "Audience segment 1",
+        "group_size": {
+          "n_commenters": 354,
+          "pct_active_commenters": 11.277476903472444,
+          "summary_zh": "11.3% of active commenters"
+        },
+        "activity": {
+          "n_comments": 3029,
+          "avg_comments_per_commenter": 8.556497175141242,
+          "n_videos_touched": 340,
+          "summary_zh": "平均留言 8.6 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "美食專題報導｜最雷便當配菜TOP 5！[詹姆士]",
+            "count": 234
+          },
+          {
+            "label": "一口定江山｜2022年網路票選超商必吃微波食品！全家、萊爾富、7-11[詹姆士]",
+            "count": 83
+          },
+          {
+            "label": "美食報導｜最雷便當菜追蹤報導！大家對於便當菜的想法分享 [詹姆士]",
+            "count": 82
+          },
+          {
+            "label": "美食深度報導｜台灣都會區宵夜排行榜TOP 10！[詹姆士]",
+            "count": 68
+          },
+          {
+            "label": "都市傳說｜早餐流行這樣吃？早餐店的特殊餐點試吃！ [詹姆士]",
+            "count": 67
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 354
+          },
+          {
+            "label": "personal_team_life",
+            "count": 39
+          },
+          {
+            "label": "travel_exploration",
+            "count": 22
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 17
+          },
+          {
+            "label": "business_brand",
+            "count": 9
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.12083753784056508,
+          "neutral_rate": 0.6031786074672049,
+          "positive_rate": 0.2759838546922301,
+          "like_weighted_negative_rate": 0.06365669339913634,
+          "like_weighted_positive_rate": 0.4305212831585441,
+          "summary_zh": "中性討論為主；負面 12.1%，正面 27.6%，按讚加權負面 6.4%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.12213541666666666,
+            "like_weighted_negative_rate": 0.06580234833659492,
+            "n_comments": 3840,
+            "summary_zh": "food_culture：負面 12.2%，按讚加權負面 6.6%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.07692307692307693,
+            "like_weighted_negative_rate": 0.00798175598631699,
+            "n_comments": 52,
+            "summary_zh": "personal_team_life：負面 7.7%，按讚加權負面 0.8%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      },
+      {
+        "community": 0,
+        "segment_label": "Audience segment 0",
+        "group_size": {
+          "n_commenters": 345,
+          "pct_active_commenters": 10.990761388977381,
+          "summary_zh": "11.0% of active commenters"
+        },
+        "activity": {
+          "n_comments": 3241,
+          "avg_comments_per_commenter": 9.394202898550725,
+          "n_videos_touched": 361,
+          "summary_zh": "平均留言 9.4 次 / 人"
+        },
+        "preferred_videos": [
+          {
+            "label": "美食報導｜自助餐配菜排行榜！竟然沒有我最愛的那道菜...[詹姆士]",
+            "count": 121
+          },
+          {
+            "label": "美食報導｜平價熱炒店必點排行榜！[詹姆士]",
+            "count": 78
+          },
+          {
+            "label": "美食專題報導｜你吃火鍋都加什麼？火鍋配料排行TOP 10！[詹姆士]",
+            "count": 68
+          },
+          {
+            "label": "美食深度報導｜台灣都會區宵夜排行榜TOP 10！[詹姆士]",
+            "count": 57
+          },
+          {
+            "label": "美食報導｜那些年，我們一起追的美食！還記得那些風靡一時的美食嗎？[詹姆士]",
+            "count": 53
+          }
+        ],
+        "preferred_themes": [
+          {
+            "label": "food_culture",
+            "count": 345
+          },
+          {
+            "label": "personal_team_life",
+            "count": 87
+          },
+          {
+            "label": "travel_exploration",
+            "count": 22
+          },
+          {
+            "label": "automotive_luxury",
+            "count": 3
+          },
+          {
+            "label": "business_brand",
+            "count": 2
+          }
+        ],
+        "over_indexed_themes": [],
+        "common_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "團隊",
+            "近況",
+            "生日",
+            "旅遊",
+            "目的地"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來應新增 comment keyword extraction。"
+        },
+        "main_sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.09178630265944929,
+          "neutral_rate": 0.6312073429042128,
+          "positive_rate": 0.277006354436338,
+          "like_weighted_negative_rate": 0.07218328277016424,
+          "like_weighted_positive_rate": 0.3600097639223071,
+          "summary_zh": "中性討論為主；負面 9.2%，正面 27.7%，按讚加權負面 7.2%"
+        },
+        "negative_sources": [
+          {
+            "theme": "food_culture",
+            "negative_rate": 0.0939877300613497,
+            "like_weighted_negative_rate": 0.07264865637507147,
+            "n_comments": 4075,
+            "summary_zh": "food_culture：負面 9.4%，按讚加權負面 7.3%"
+          },
+          {
+            "theme": "personal_team_life",
+            "negative_rate": 0.03225806451612903,
+            "like_weighted_negative_rate": 0.0651685393258427,
+            "n_comments": 124,
+            "summary_zh": "personal_team_life：負面 3.2%，按讚加權負面 6.5%"
+          }
+        ],
+        "representative_comments": {
+          "values": [],
+          "status": "missing_current_artifact",
+          "limitation_zh": "目前冷資料不輸出留言原文；未來應由 raw comments 取樣代表留言。"
+        },
+        "business_advice": "適合目的地合作、行程設計、體驗型業配與系列企劃。 但需先檢查負面來源主題，避免合作訊息被價格、可信度或敘事爭議稀釋。",
+        "evidence_fields": [
+          "community_profiles",
+          "community_theme_affinity",
+          "community_sentiment_summary",
+          "community_theme_sentiment"
+        ]
+      }
+    ],
+    "audience_segment_profile_contract": [
+      {
+        "aspect": "群體大小",
+        "meaning": "這個 segment 佔 active commenters 的比例，以及有多少留言者。",
+        "source": "community_profiles.n_commenters / pct_nodes"
+      },
+      {
+        "aspect": "活躍程度",
+        "meaning": "平均每人留言次數、觸及影片數，判斷是核心型還是輕度參與型。",
+        "source": "community_profiles.n_comments / n_commenters / n_videos_touched"
+      },
+      {
+        "aspect": "偏好影片",
+        "meaning": "這群觀眾最常出現在哪些影片，可反推內容吸引力。",
+        "source": "community_profiles.top_comment_videos"
+      },
+      {
+        "aspect": "常見關鍵字",
+        "meaning": "理想上應由留言文字抽取；目前 dashboard 只提供 theme/title proxy，不能當成真正留言關鍵字。",
+        "source": "future: comment keyword extraction over raw comments"
+      },
+      {
+        "aspect": "主要情緒",
+        "meaning": "這群觀眾的正/中/負向留言結構。",
+        "source": "community_sentiment_summary"
+      },
+      {
+        "aspect": "負面來源",
+        "meaning": "哪些主題在這群觀眾中較容易產生負面或被按讚放大的負面。",
+        "source": "community_theme_sentiment"
+      },
+      {
+        "aspect": "代表留言",
+        "meaning": "理想上應從 raw comments 選具代表性的中性/正面/負面留言；目前冷資料不輸出留言原文，避免誤植或隱私風險。",
+        "source": "future: representative comment sampler"
+      },
+      {
+        "aspect": "商業建議",
+        "meaning": "由偏好主題、情緒與負面來源推導可嘗試的內容/合作方向。",
+        "source": "derived from profile evidence; not causal proof"
+      }
+    ],
     "video_network_summary": {
       "n_nodes": 377,
       "n_edges": 12179,
@@ -765,6 +1336,630 @@
         "conductance": 0.7390149301312364,
         "avg_core_number": 34.771929824561404,
         "max_core_number": 63
+      }
+    ],
+    "video_cluster_profiles": [
+      {
+        "video_cluster": 2,
+        "cluster_label": "Video cluster 2",
+        "size": {
+          "n_videos": 126,
+          "date_min": "2023-01-03 13:00:07+00:00",
+          "date_max": "2025-05-20 13:00:06+00:00",
+          "pct_graph_videos": 33.42175066312997
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 124
+            },
+            {
+              "label": "product_review",
+              "count": 47
+            },
+            {
+              "label": "travel_exploration",
+              "count": 31
+            },
+            {
+              "label": "personal_team_life",
+              "count": 12
+            },
+            {
+              "label": "business_brand",
+              "count": 7
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "automotive_luxury",
+              "lift": 2.992063492063492,
+              "n_videos": 3
+            },
+            {
+              "theme": "business_brand",
+              "lift": 2.6180555555555554,
+              "n_videos": 7
+            },
+            {
+              "theme": "city_lifestyle",
+              "lift": 2.13718820861678,
+              "n_videos": 5
+            },
+            {
+              "theme": "education_advice",
+              "lift": 1.9947089947089947,
+              "n_videos": 6
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "美食專題報導｜最雷便當配菜TOP 5！[詹姆士]",
+              "count": 1361
+            },
+            {
+              "label": "都市傳說｜早餐流行這樣吃？早餐店的特殊餐點試吃！ [詹姆士]",
+              "count": 626
+            },
+            {
+              "label": "都市傳說｜讓泡麵更好吃的方法？網友推薦ver. [詹姆士]",
+              "count": 550
+            },
+            {
+              "label": "美食地圖｜帶著《黑白大廚》Edward Lee體驗老台北美食文化魅力！@suncolor2008",
+              "count": 509
+            },
+            {
+              "label": "美食深度報導｜台灣都會區宵夜排行榜TOP 10！[詹姆士]",
+              "count": 460
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10822032607039464,
+          "neutral_rate": 0.5863934176443699,
+          "positive_rate": 0.3053862562852354,
+          "like_weighted_negative_rate": 0.07746145782732083,
+          "like_weighted_positive_rate": 0.43738015493569915,
+          "summary_zh": "中性討論為主；負面 10.8%，正面 30.5%，按讚加權負面 7.7%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 41933457,
+          "total_observed_comments": 18605,
+          "unique_commenters": 12794,
+          "median_observed_commenters": 89.5,
+          "evidence_zh": "126 支影片；41,933,457 views；18,605 observed comments；12,794 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1392,
+          "external_edges": 3123,
+          "conductance": 0.5135833814195038,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=1,392, external_edges=3,123, conductance=0.514"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (124); product_review (47); travel_exploration (31); personal_team_life (12); business_brand (7)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.8%，正面 30.5%，按讚加權負面 7.7%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "126 支影片；41,933,457 views；18,605 observed comments；12,794 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1,392, external_edges=3,123, conductance=0.514"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 3,
+        "cluster_label": "Video cluster 3",
+        "size": {
+          "n_videos": 121,
+          "date_min": "2025-02-18 13:00:06+00:00",
+          "date_max": "2026-05-12 13:00:06+00:00",
+          "pct_graph_videos": 32.09549071618037
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 119
+            },
+            {
+              "label": "product_review",
+              "count": 65
+            },
+            {
+              "label": "travel_exploration",
+              "count": 34
+            },
+            {
+              "label": "personal_team_life",
+              "count": 10
+            },
+            {
+              "label": "education_advice",
+              "count": 3
+            }
+          ],
+          "over_indexed_themes": [
+            {
+              "theme": "physical_challenge",
+              "lift": 3.115702479338843,
+              "n_videos": 1
+            },
+            {
+              "theme": "workplace_tech_career",
+              "lift": 3.115702479338843,
+              "n_videos": 1
+            },
+            {
+              "theme": "travel_exploration",
+              "lift": 1.3078257320681563,
+              "n_videos": 34
+            },
+            {
+              "theme": "personal_team_life",
+              "lift": 1.0385674931129478,
+              "n_videos": 10
+            }
+          ],
+          "top_videos": [
+            {
+              "label": "這個我也不敢吃...台灣成年人不敢吃的食材排行榜(下) [詹姆士]",
+              "count": 580
+            },
+            {
+              "label": "美食報導｜這個罐頭我家必備啊！台灣人家裡10大常備罐頭  你家也有嗎 ⁉️  [詹姆士]",
+              "count": 499
+            },
+            {
+              "label": "一口定江山｜超商最強99元便當誰最好吃？粗飽系雞排炒飯、油雞香腸煲仔飯、遇見泰式打拋雞拌麵、海老",
+              "count": 490
+            },
+            {
+              "label": "美食地圖｜老台北人的美食日常 EP.2 吃了20年的油飯、詹爸虱目魚愛店、從小吃到大的圓仔湯、百",
+              "count": 380
+            },
+            {
+              "label": "美食報導｜你們的上訴我聽到了...台灣人家中必備罐頭遺珠在這‼️ [詹姆士]",
+              "count": 375
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10471287549092453,
+          "neutral_rate": 0.6363974100413968,
+          "positive_rate": 0.2588897144676786,
+          "like_weighted_negative_rate": 0.09261629995302872,
+          "like_weighted_positive_rate": 0.2904758834744007,
+          "summary_zh": "中性討論為主；負面 10.5%，正面 25.9%，按讚加權負面 9.3%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 21641025,
+          "total_observed_comments": 13303,
+          "unique_commenters": 8359,
+          "median_observed_commenters": 85,
+          "evidence_zh": "121 支影片；21,641,025 views；13,303 observed comments；8,359 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 2532,
+          "external_edges": 3882,
+          "conductance": 0.4211635067250041,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=2,532, external_edges=3,882, conductance=0.421"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (119); product_review (65); travel_exploration (34); personal_team_life (10); education_advice (3)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.5%，正面 25.9%，按讚加權負面 9.3%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "121 支影片；21,641,025 views；13,303 observed comments；8,359 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=2,532, external_edges=3,882, conductance=0.421"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 1,
+        "cluster_label": "Video cluster 1",
+        "size": {
+          "n_videos": 73,
+          "date_min": "2024-02-03 13:00:07+00:00",
+          "date_max": "2025-08-07 13:00:06+00:00",
+          "pct_graph_videos": 19.363395225464192
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 73
+            },
+            {
+              "label": "product_review",
+              "count": 51
+            },
+            {
+              "label": "travel_exploration",
+              "count": 13
+            },
+            {
+              "label": "personal_team_life",
+              "count": 6
+            },
+            {
+              "label": "controversy_response",
+              "count": 5
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "美食報導｜自助餐配菜排行榜！竟然沒有我最愛的那道菜...[詹姆士]",
+              "count": 505
+            },
+            {
+              "label": "美食報導｜平價熱炒店必點排行榜！[詹姆士]",
+              "count": 375
+            },
+            {
+              "label": "美食報導｜上班族票選夜市必吃排行榜！你愛吃的是哪道？[詹姆士]",
+              "count": 359
+            },
+            {
+              "label": "美食專題報導｜你吃火鍋都加什麼？火鍋配料排行TOP 10！[詹姆士]",
+              "count": 333
+            },
+            {
+              "label": "一口定江山｜吃得懂年輕人吃的泡麵嗎？[詹姆士]",
+              "count": 309
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.10246520207949018,
+          "neutral_rate": 0.6183967801442227,
+          "positive_rate": 0.2791380177762871,
+          "like_weighted_negative_rate": 0.07638943263855176,
+          "like_weighted_positive_rate": 0.39510155503703587,
+          "summary_zh": "中性討論為主；負面 10.2%，正面 27.9%，按讚加權負面 7.6%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 13720729,
+          "total_observed_comments": 9022,
+          "unique_commenters": 5776,
+          "median_observed_commenters": 85,
+          "evidence_zh": "73 支影片；13,720,729 views；9,022 observed comments；5,776 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 1146,
+          "external_edges": 4147,
+          "conductance": 0.6033721071616747,
+          "interpretation_zh": "群內外都有共享觀眾，可檢查跨主題橋接企劃。",
+          "evidence_zh": "internal_edges=1,146, external_edges=4,147, conductance=0.603"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (73); product_review (51); travel_exploration (13); personal_team_life (6); controversy_response (5)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 10.2%，正面 27.9%，按讚加權負面 7.6%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "73 支影片；13,720,729 views；9,022 observed comments；5,776 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=1,146, external_edges=4,147, conductance=0.603"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      },
+      {
+        "video_cluster": 0,
+        "cluster_label": "Video cluster 0",
+        "size": {
+          "n_videos": 57,
+          "date_min": "2023-03-09 13:00:10+00:00",
+          "date_max": "2025-07-17 13:00:06+00:00",
+          "pct_graph_videos": 15.119363395225463
+        },
+        "topic_from_title_description_tags": {
+          "top_themes": [
+            {
+              "label": "food_culture",
+              "count": 57
+            },
+            {
+              "label": "product_review",
+              "count": 48
+            },
+            {
+              "label": "travel_exploration",
+              "count": 3
+            },
+            {
+              "label": "personal_team_life",
+              "count": 2
+            },
+            {
+              "label": "event_announcement",
+              "count": 1
+            }
+          ],
+          "over_indexed_themes": [],
+          "top_videos": [
+            {
+              "label": "姆式滷豆皮｜詹姆士家傳菜，整鍋豆製品光看就開心！[詹姆士]",
+              "count": 359
+            },
+            {
+              "label": "雞腿炒飯便當｜雞腿肉汁流到飯裡，絕配！ft.好菇道 [詹姆士]",
+              "count": 252
+            },
+            {
+              "label": "蔥油鮮蝦湯麵｜把蝦頭蝦殼用的淋漓盡致！湯頭厚實，蝦味十足！[詹姆士]",
+              "count": 189
+            },
+            {
+              "label": "一口定江山｜亞洲區泡麵試吃！[詹姆士]",
+              "count": 181
+            },
+            {
+              "label": "一口定江山｜滿滿的香菜商品試吃！香菜蛋糕、多力多滋香菜口味、摩斯咖哩烤雞堡(附香菜)、香菜風味可",
+              "count": 174
+            }
+          ]
+        },
+        "comment_keywords": {
+          "values": [
+            "美食",
+            "文化",
+            "夜市",
+            "product_review",
+            "旅遊",
+            "目的地",
+            "探索",
+            "團隊"
+          ],
+          "source": "theme/title proxy",
+          "limitation_zh": "目前不是從留言文字直接抽出；未來要補 comment keyword table 才能回答觀眾實際討論什麼。"
+        },
+        "sentiment": {
+          "dominant": "neutral",
+          "negative_rate": 0.07084324610097806,
+          "neutral_rate": 0.6590007930214116,
+          "positive_rate": 0.27015596087761035,
+          "like_weighted_negative_rate": 0.060534591194968554,
+          "like_weighted_positive_rate": 0.32535258242805415,
+          "summary_zh": "中性討論為主；負面 7.1%，正面 27.0%，按讚加權負面 6.1%"
+        },
+        "absa": {
+          "status": "missing_current_pipeline",
+          "limitation_zh": "目前 Qwen comment sentiment 是三元情緒，沒有 aspect-based sentiment；不能宣稱已知道觀眾稱讚/抱怨哪些具體面向。"
+        },
+        "metadata": {
+          "total_views": 15257599,
+          "total_observed_comments": 5305,
+          "unique_commenters": 3949,
+          "median_observed_commenters": 75,
+          "evidence_zh": "57 支影片；15,257,599 views；5,305 observed comments；3,949 unique commenters"
+        },
+        "shared_audience": {
+          "internal_edges": 412,
+          "external_edges": 2242,
+          "conductance": 0.7390149301312364,
+          "interpretation_zh": "群集邊界較鬆散，可能是過渡型內容或與其他題材高度混合。",
+          "evidence_zh": "internal_edges=412, external_edges=2,242, conductance=0.739"
+        },
+        "explanation_sources": [
+          {
+            "source": "title / description / tags",
+            "available": true,
+            "explains": "這群影片的主題。",
+            "evidence_zh": "food_culture (57); product_review (48); travel_exploration (3); personal_team_life (2); event_announcement (1)"
+          },
+          {
+            "source": "comment keywords",
+            "available": false,
+            "explains": "觀眾在這群影片下討論什麼。",
+            "evidence_zh": "目前只有 theme/title proxy。"
+          },
+          {
+            "source": "sentiment",
+            "available": true,
+            "explains": "這群影片的觀眾反應好不好。",
+            "evidence_zh": "中性討論為主；負面 7.1%，正面 27.0%，按讚加權負面 6.1%"
+          },
+          {
+            "source": "ABSA",
+            "available": false,
+            "explains": "觀眾稱讚 / 抱怨哪些面向。",
+            "evidence_zh": "目前 pipeline 尚未輸出。"
+          },
+          {
+            "source": "metadata",
+            "available": true,
+            "explains": "觀看數、留言數、like 數、影片長度與發布時間。",
+            "evidence_zh": "57 支影片；15,257,599 views；5,305 observed comments；3,949 unique commenters"
+          },
+          {
+            "source": "shared audience",
+            "available": true,
+            "explains": "這群影片吸引哪些共同觀眾與跨群連結程度。",
+            "evidence_zh": "internal_edges=412, external_edges=2,242, conductance=0.739"
+          }
+        ],
+        "business_read": "適合目的地合作、行程設計、體驗型業配與系列企劃。"
+      }
+    ],
+    "video_cluster_explanation_contract": [
+      {
+        "source": "title / description / tags",
+        "explains": "這群影片的主題、格式與內容定位。",
+        "current_status": "available via qwen_video_themes / theme labels"
+      },
+      {
+        "source": "comment keywords",
+        "explains": "觀眾在這群影片下實際討論什麼。",
+        "current_status": "partial only; current artifact uses theme/title proxy until raw-comment keyword extraction is added"
+      },
+      {
+        "source": "sentiment",
+        "explains": "這群影片的觀眾反應是否偏正、偏中性或偏負。",
+        "current_status": "available via video_cluster_sentiment_summary"
+      },
+      {
+        "source": "ABSA",
+        "explains": "觀眾稱讚或抱怨的具體面向，例如價格、可信度、節奏、來賓、企劃設計。",
+        "current_status": "missing; ternary sentiment is not enough and must not be presented as ABSA"
+      },
+      {
+        "source": "metadata",
+        "explains": "觀看數、留言數、like 數、影片長度與發布時間等表現輪廓。",
+        "current_status": "partially available; current summary has views/comments/date, duration/likes need cluster aggregation"
+      },
+      {
+        "source": "shared audience",
+        "explains": "這群影片是否吸引同一批觀眾，以及是否和其他影片群有橋接關係。",
+        "current_status": "available via video shared-audience graph metrics"
       }
     ],
     "negative_hotspots": [
@@ -1306,6 +2501,8 @@
       "status": "ready",
       "notes": null
     },
+    "comparison_source": "baseline_member_percentiles",
+    "comparison_caution_zh": "此頻道在 baseline cohort 內，百分位表示相對目前完成 cohort 的位置。",
     "key_metrics": [
       {
         "metric": "n_videos_in_scope",

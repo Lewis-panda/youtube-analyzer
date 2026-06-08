@@ -2177,6 +2177,66 @@ select:focus {
   font-weight: 760;
 }
 
+.theme-table {
+  display: grid;
+  gap: 2px;
+}
+
+.theme-table-head,
+.theme-table-row {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) 0.7fr 1.4fr 0.9fr 0.9fr 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 7px 6px;
+}
+
+.theme-table-head {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-table-row {
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.theme-table-row .theme-name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.theme-table-row .pos {
+  color: var(--green);
+}
+
+.theme-table-row .neg {
+  color: var(--coral);
+}
+
+.theme-vol {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-vol i {
+  height: 7px;
+  border-radius: 999px;
+  background: var(--teal-soft);
+  flex: 0 0 auto;
+  max-width: 60%;
+}
+
+.theme-vol b {
+  font-weight: 600;
+}
+
 .vt-bar {
   fill: var(--teal);
   opacity: 0.85;

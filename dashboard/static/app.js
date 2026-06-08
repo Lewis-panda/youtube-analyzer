@@ -232,11 +232,14 @@ async function renderContent(root) {
   const eventTimes = (extWindows || [])
     .map((row) => Date.parse(row.event_date || row.event_start || ""))
     .filter((t) => Number.isFinite(t));
+  const themeSummary = await fetchTableRows("theme_summary", 20);
+  const sentTheme = await fetchTableRows("sentiment_theme_summary", 20);
+  const conflictTheme = await fetchTableRows("reply_conflict_theme_summary", 20);
   root.innerHTML = `
     ${sectionIntro("內容")}
     <section class="panel">
-      <div class="panel-head"><div><h3>題材留言量 ${infoTip("影片主題由 Qwen 依標題、描述、標籤自動分類（如美食、旅遊、爭議回應等），這裡顯示各主題的影片數與留言量占比。主題是內容分類，不是情緒。")}</h3></div></div>
-      ${themeMix(s.top_themes || [])}
+      <div class="panel-head"><div><h3>題材一覽 ${infoTip("一張表把每個題材的『量、情緒、衝突』一次看完，不用跨頁。題材由 Qwen 依影片標題/描述/標籤分類。算法：留言量＝該題材影片的留言則數；正/負面率＝該題材該情緒則數÷留言則數；衝突分數＝衝突討論串數 × 回覆衝突串比例（回覆結構，與負面率不同）。")}</h3></div></div>
+      ${themeOverview(themeSummary, sentTheme, conflictTheme)}
     </section>
     <section class="panel">
       <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的留言數（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；留言數＝爬取到的該片留言數；負面率＝該片負面留言÷留言數；外部事件取自外部討論分析。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
@@ -918,6 +921,36 @@ function bulletMetric(metric) {
       </div>
     </div>
   `;
+}
+
+function themeOverview(themeRows, sentRows, conflictRows) {
+  const sent = Object.fromEntries((sentRows || []).map((row) => [row.primary_theme, row]));
+  const conf = Object.fromEntries((conflictRows || []).map((row) => [row.primary_theme, row]));
+  const rows = (themeRows || []).filter((row) => row.primary_theme).slice(0, 10);
+  if (!rows.length) return `<div class="empty-state">沒有主題資料</div>`;
+  const maxC = Math.max(...rows.map((row) => Number(row.n_comments) || 0), 1);
+  return `
+    <div class="theme-table">
+      <div class="theme-table-head">
+        <span>題材</span><span>影片</span><span>留言量</span><span>正面率</span><span>負面率</span><span>衝突分數</span>
+      </div>
+      ${rows
+        .map((row) => {
+          const sv = sent[row.primary_theme] || {};
+          const cv = conf[row.primary_theme] || {};
+          const w = Math.max(3, (Number(row.n_comments) / maxC) * 100);
+          return `
+            <div class="theme-table-row">
+              <span class="theme-name" title="${escapeHtml(themeLabel(row.primary_theme))}">${escapeHtml(themeLabel(row.primary_theme))}</span>
+              <span>${fmtCompact(row.n_videos)}</span>
+              <span class="theme-vol"><i style="width:${w.toFixed(0)}%"></i><b>${fmtCompact(row.n_comments)}</b></span>
+              <span class="pos">${formatValue(sv.positive_rate, "rate")}</span>
+              <span class="neg">${formatValue(sv.negative_rate, "rate")}</span>
+              <span>${cv.conflict_score != null ? formatValue(cv.conflict_score, "") : "-"}</span>
+            </div>`;
+        })
+        .join("")}
+    </div>`;
 }
 
 function themeMix(rows) {

@@ -76,5 +76,12 @@ def main():
             vps.to_csv(tables_dir / "video_positive_aspect_summary.csv", index=False)
             print("Generated video_positive_aspect_summary.csv")
 
+            # channel-level positive aspect distribution (what the channel is praised for)
+            cps = pos.groupby("aspect").size().reset_index(name="n_positive_mentions")
+            cps["positive_aspect_share"] = cps["n_positive_mentions"] / cps["n_positive_mentions"].sum()
+            cps = cps.sort_values("n_positive_mentions", ascending=False)
+            cps.to_csv(tables_dir / "channel_positive_aspect_summary.csv", index=False)
+            print("Generated channel_positive_aspect_summary.csv")
+
 if __name__ == "__main__":
     main()

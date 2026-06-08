@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-08T18:49:23.377190+00:00",
+  "generated_at": "2026-06-08T19:11:02.888714+00:00",
   "slug": "dodomen-generic-demo",
   "title": "The DoDo Men - 嘟嘟人",
   "channel_id": "UCfq75-6J5seC82CmtLSFxXw",
@@ -121,6 +121,12 @@
         "name": "channel_overview",
         "path": "case_studies/dodomen/dodomen-generic-demo/tables/channel_overview.csv",
         "bytes": 377,
+        "source_dir": "tables"
+      },
+      {
+        "name": "channel_positive_aspect_summary",
+        "path": "case_studies/dodomen/dodomen-generic-demo/tables/channel_positive_aspect_summary.csv",
+        "bytes": 564,
         "source_dir": "tables"
       },
       {

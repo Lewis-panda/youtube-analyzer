@@ -338,6 +338,7 @@ async function renderSentiment(root) {
   const videoAspects = await fetchTableRows("video_aspect_summary", 3000);
   const videoPosAspects = await fetchTableRows("video_positive_aspect_summary", 3000);
   const videoPosAspectMap = buildVideoAspectMap(videoPosAspects);
+  const channelPosAspect = await fetchTableRows("channel_positive_aspect_summary", 20);
   const aspectLabels = Object.fromEntries(
     (aspectSummary || []).filter((row) => row.aspect).map((row) => [row.aspect, row.aspect_label_zh || row.aspect]),
   );
@@ -354,6 +355,16 @@ async function renderSentiment(root) {
       <article class="panel">
         <div class="panel-head"><div><h3>相對基準 ${infoTip("把本頻道的情緒率放進 48 個 benchmark 頻道的分布。算法：百分位＝本頻道值在 cohort 由小到大的排名位置(0–100)；基準線顯示的是 cohort『平均』(因只有 48 個頻道)。百分位僅代表相對定位，不直接等於好或壞。")}</h3></div></div>
         ${sentimentBaselineBars()}
+      </article>
+    </section>
+    <section class="split-layout">
+      <article class="panel">
+        <div class="panel-head"><div><h3>整體被讚的面向 ${infoTip("ABSA 對全頻道『正面』留言抽取面向後的分佈：觀眾整體是『因為什麼』而正面（主持人、內容品質、剪輯等通用 taxonomy）。算法：各面向正面提及數 ÷ 全部正面提及；已扣除 other／unclear。為模型標註、非人工真值。")}</h3></div></div>
+        ${channelAspectBars(channelPosAspect, "positive_aspect_share", aspectLabels, "pos")}
+      </article>
+      <article class="panel">
+        <div class="panel-head"><div><h3>整體被罵的面向 ${infoTip("ABSA 對全頻道『負面』留言抽取面向後的分佈：觀眾整體是『因為什麼』而負面。算法：各面向負面提及數 ÷ 全部負面提及；已扣除 other／unclear。為模型標註、非人工真值。")}</h3></div></div>
+        ${channelAspectBars(aspectSummary, "negative_aspect_share", aspectLabels, "neg")}
       </article>
     </section>
     <section class="panel sentiment-band sentiment-band-positive">
@@ -1536,6 +1547,28 @@ function withMinSample(rows, min) {
   // filter would leave nothing (small channels), so panels never go empty.
   const ok = (rows || []).filter((row) => Number(row.n_comments ?? row.n_comments_num ?? 0) >= min);
   return ok.length ? ok : rows || [];
+}
+
+function channelAspectBars(rows, shareKey, labels = {}, tone = "") {
+  const usable = (rows || [])
+    .filter((row) => row.aspect && !NON_IMPACT_ASPECTS.has(row.aspect))
+    .map((row) => ({ aspect: row.aspect, share: Number(row[shareKey]) || 0 }))
+    .filter((row) => row.share > 0)
+    .sort((a, b) => b.share - a.share)
+    .slice(0, 6);
+  if (!usable.length) return `<div class="empty-state">沒有面向資料</div>`;
+  const max = Math.max(...usable.map((row) => row.share), 0.01);
+  const pos = tone === "pos";
+  return `<div class="insight-list">${usable
+    .map(
+      (row) => `
+      <div class="insight-row${pos ? " positive" : ""}">
+        <div class="insight-label"><strong>${escapeHtml(labels[row.aspect] || row.aspect)}</strong></div>
+        <div class="${pos ? "positive-track" : "risk-track"}"><i style="width:${Math.max(3, (row.share / max) * 100).toFixed(0)}%"></i></div>
+        <div class="insight-value">${formatValue(row.share, "rate")}</div>
+      </div>`,
+    )
+    .join("")}</div>`;
 }
 
 function positiveThemeBars(rows) {

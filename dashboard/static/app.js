@@ -229,9 +229,14 @@ async function renderContent(root) {
   const hotspots = await fetchTableRows("sentiment_hotspots", 400);
   const negMap = Object.fromEntries((hotspots || []).map((row) => [row.video_id, Number(row.negative_rate)]));
   const extWindows = tabAvailable("external_events") ? await fetchTableRows("external_event_audience_windows", 80) : [];
-  const eventTimes = (extWindows || [])
-    .map((row) => Date.parse(row.event_date || row.event_start || ""))
-    .filter((t) => Number.isFinite(t));
+  const timelineEvents = (extWindows || [])
+    .map((row) => ({
+      t: Date.parse(row.event_date || row.event_start || ""),
+      topic: externalTopicLabel(row.event_topic || "外部討論"),
+      date: compactDate(row.event_date || row.event_start),
+      posts: Number(row.external_posts) || 0,
+    }))
+    .filter((event) => Number.isFinite(event.t));
   const themeSummary = await fetchTableRows("theme_summary", 20);
   const sentTheme = await fetchTableRows("sentiment_theme_summary", 20);
   const conflictTheme = await fetchTableRows("reply_conflict_theme_summary", 20);
@@ -243,7 +248,7 @@ async function renderContent(root) {
     </section>
     <section class="panel">
       <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的留言數（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；留言數＝爬取到的該片留言數；負面率＝該片負面留言÷留言數；外部事件取自外部討論分析。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
-      ${videoTimeline(videos, negMap, eventTimes)}
+      ${videoTimeline(videos, negMap, timelineEvents)}
     </section>
     <section class="panel">
       <div class="panel-head"><div><h3>留言率最高的影片 ${infoTip("以每千次觀看留言數（留言數 ÷ 觀看次數 × 1000）排序，找出最能引發討論的影片。高留言率可能來自高互動或高爭議，需搭配情緒頁判讀。")}</h3></div></div>
@@ -370,7 +375,7 @@ async function renderExternalEvents(root) {
             ${newAudienceSummary(events)}
           </section>
           <section class="panel">
-            <div class="panel-head"><div><h3>各外部事件：前後多指標是否同步變化 ${infoTip("每個事件除了新留言者占比（vs 平常基準），同時看事件後相對基準的：YouTube 留言量倍率、負面率變化（百分點＋顯著性）、回覆衝突倍率。多項一起往同方向動＝該外部討論期間 YouTube 端確實有同步反應；ABSA 負面主體的事件窗變化為後續工作。皆為時間窗關聯、非因果。")}</h3></div></div>
+            <div class="panel-head"><div><h3>各外部事件：前後多指標是否同步變化 ${infoTip("依『反應程度』排序：每個事件統計留言量、負面率、新觀眾占比、回覆衝突、外溢共 5 項是否顯著偏離平常(diagnostic_signal_count)，反應越多項排越前面。與平常無明顯差距(0 項)的事件預設收起、可展開。多項一起往同方向動＝該外部討論期間 YouTube 端確實有同步反應。皆為時間窗關聯、非因果。")}</h3></div></div>
             ${newAudienceEventList(events)}
           </section>
           <p class="external-caveat">時間窗關聯非因果；「新留言者」是首次在本頻道留言者，不等於新觀看者。判讀重點是事件後是否『顯著高於平常基準』，不是絕對新留言者數。注意頻道早期長期基準偏高（當時多數留言者本來就是新的），早期事件即使有外部討論，對比基準也常呈現下降；「對比事件前 28 天」可降低此成熟趨勢的影響。</p>
@@ -402,10 +407,16 @@ function newAudienceRows(rows, diagMap = {}) {
         negDeltaPp: Number(diag.delta_post_vs_baseline_negative_rate_pp),
         negP: Number(diag.post_vs_baseline_negative_rate_p),
         conflictLift: Number(diag.conflict_score_lift_vs_baseline),
+        signalCount: Number(diag.diagnostic_signal_count) || 0,
+        interpretation: diag.diagnostic_interpretation || "",
       };
     })
     .filter((event) => Number.isFinite(event.postShare) && Number.isFinite(event.baselineShare))
-    .sort((a, b) => (Number.isFinite(b.deltaPp) ? b.deltaPp : -Infinity) - (Number.isFinite(a.deltaPp) ? a.deltaPp : -Infinity));
+    .sort(
+      (a, b) =>
+        (b.signalCount || 0) - (a.signalCount || 0) ||
+        (Number.isFinite(b.deltaPp) ? b.deltaPp : -Infinity) - (Number.isFinite(a.deltaPp) ? a.deltaPp : -Infinity),
+    );
 }
 
 function newAudienceSummary(events) {
@@ -434,33 +445,47 @@ function newAudienceSummary(events) {
 }
 
 function newAudienceEventList(events) {
-  return `<div class="na-event-list">${events
-    .slice(0, 12)
-    .map((event) => {
-      const sig = Number.isFinite(event.pValue) && event.pValue < 0.05;
-      const preSig = Number.isFinite(event.prePValue) && event.prePValue < 0.05;
-      const extras = [
-        Number.isFinite(event.preDeltaPp)
-          ? `對比事件前28天 ${formatValue(event.preDeltaPp, "pp")}${preSig ? "（顯著）" : ""}`
-          : "",
-        Number.isFinite(event.commentShare) ? `新留言者貢獻留言 ${formatValue(event.commentShare, "rate")}` : "",
-        Number.isFinite(event.returnRate) ? `新觀眾回訪率 ${formatValue(event.returnRate, "rate")}` : "",
-      ].filter(Boolean);
-      return `
-        <article class="na-event">
-          <div class="na-event-head">
-            <div class="na-event-title">
-              <strong>${escapeHtml(event.topic)}</strong>
-              ${naDeltaBadge(event.deltaPp, sig)}
-            </div>
-            <span>${escapeHtml(event.date)} · ${escapeHtml(event.sources || "-")} · ${fmtCompact(event.posts)} 篇貼文</span>
-          </div>
-          ${naCompareBlock(event.baselineShare, event.postShare)}
-          ${naSyncBlock(event)}
-          ${extras.length ? `<div class="na-extra">${extras.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>` : ""}
-        </article>`;
-    })
-    .join("")}</div>`;
+  const reacted = events.filter((event) => Number(event.signalCount) >= 1);
+  const quiet = events.filter((event) => !(Number(event.signalCount) >= 1));
+  const list = (arr) => `<div class="na-event-list">${arr.map(naEventCard).join("")}</div>`;
+  return `
+    ${
+      reacted.length
+        ? list(reacted)
+        : `<div class="empty-state">這些外部事件後，留言量／負面率／衝突／新觀眾占比都沒有明顯偏離平常。</div>`
+    }
+    ${
+      quiet.length
+        ? `<details class="na-quiet"><summary>展開 ${quiet.length} 個與平常無明顯差距的事件</summary>${list(quiet)}</details>`
+        : ""
+    }
+  `;
+}
+
+function naEventCard(event) {
+  const sig = Number.isFinite(event.pValue) && event.pValue < 0.05;
+  const preSig = Number.isFinite(event.prePValue) && event.prePValue < 0.05;
+  const extras = [
+    Number.isFinite(event.preDeltaPp)
+      ? `對比事件前28天 ${formatValue(event.preDeltaPp, "pp")}${preSig ? "（顯著）" : ""}`
+      : "",
+    Number.isFinite(event.commentShare) ? `新留言者貢獻留言 ${formatValue(event.commentShare, "rate")}` : "",
+    Number.isFinite(event.returnRate) ? `新觀眾回訪率 ${formatValue(event.returnRate, "rate")}` : "",
+  ].filter(Boolean);
+  return `
+    <article class="na-event">
+      <div class="na-event-head">
+        <div class="na-event-title">
+          <strong>${escapeHtml(event.topic)}</strong>
+          ${event.signalCount ? `<span class="na-signal-badge">${event.signalCount} 項指標反應</span>` : ""}
+          ${naDeltaBadge(event.deltaPp, sig)}
+        </div>
+        <span>${escapeHtml(event.date)} · ${escapeHtml(event.sources || "-")} · ${fmtCompact(event.posts)} 篇貼文</span>
+      </div>
+      ${naCompareBlock(event.baselineShare, event.postShare)}
+      ${naSyncBlock(event)}
+      ${extras.length ? `<div class="na-extra">${extras.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>` : ""}
+    </article>`;
 }
 
 function naSyncBlock(event) {
@@ -970,7 +995,7 @@ function themeMix(rows) {
     .join("")}</div>`;
 }
 
-function videoTimeline(rows, negMap = {}, eventTimes = []) {
+function videoTimeline(rows, negMap = {}, events = []) {
   const sample = (rows || [])
     .map((row) => ({
       t: Date.parse(row.published_at || row.published_month || ""),
@@ -1010,12 +1035,13 @@ function videoTimeline(rows, negMap = {}, eventTimes = []) {
       return `<rect class="vt-bar${negTone(row.neg)}" x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${barW.toFixed(1)}" height="${(margin.top + plotH - by).toFixed(1)}" data-chart-tooltip="${tooltipAttr(tip)}"></rect>`;
     })
     .join("");
-  const eventMarks = (eventTimes || [])
-    .filter((t) => Number.isFinite(t) && t >= tMin && t <= tMax)
-    .map(
-      (t) =>
-        `<line class="vt-event" x1="${x(t).toFixed(1)}" x2="${x(t).toFixed(1)}" y1="${margin.top}" y2="${margin.top + plotH}"></line><polygon class="vt-event-mark" points="${x(t).toFixed(1)},${margin.top} ${(x(t) - 4).toFixed(1)},${margin.top - 6} ${(x(t) + 4).toFixed(1)},${margin.top - 6}"></polygon>`,
-    )
+  const eventMarks = (events || [])
+    .filter((event) => Number.isFinite(event.t) && event.t >= tMin && event.t <= tMax)
+    .map((event) => {
+      const cx = x(event.t);
+      const tip = `外部事件 · ${event.date} · ${event.topic}${event.posts ? ` · ${fmtCompact(event.posts)} 篇貼文` : ""}`;
+      return `<line class="vt-event" x1="${cx.toFixed(1)}" x2="${cx.toFixed(1)}" y1="${margin.top}" y2="${margin.top + plotH}"></line><polygon class="vt-event-mark" points="${cx.toFixed(1)},${margin.top} ${(cx - 4).toFixed(1)},${margin.top - 6} ${(cx + 4).toFixed(1)},${margin.top - 6}"></polygon><rect class="vt-event-hit" x="${(cx - 5).toFixed(1)}" y="${margin.top - 8}" width="10" height="${plotH + 8}" data-chart-tooltip="${tooltipAttr(tip)}"></rect>`;
+    })
     .join("");
   const linePts = sample.map((row) => `${x(row.t).toFixed(1)},${yV(row.views).toFixed(1)}`).join(" ");
   const dots = sample

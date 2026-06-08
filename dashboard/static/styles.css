@@ -2167,6 +2167,42 @@ select:focus {
   color: var(--teal);
 }
 
+.na-signal-badge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--coral-soft);
+  color: var(--coral);
+  white-space: nowrap;
+}
+
+.na-quiet {
+  margin-top: 12px;
+}
+
+.na-quiet > summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 0;
+}
+
+.na-quiet > summary::-webkit-details-marker {
+  display: none;
+}
+
+.na-quiet > summary::before {
+  content: "▸ ";
+}
+
+.na-quiet[open] > summary::before {
+  content: "▾ ";
+}
+
 .external-timeline-panel {
   overflow: hidden;
 }
@@ -2277,6 +2313,16 @@ select:focus {
 
 .vt-event-mark {
   fill: var(--coral);
+}
+
+.vt-event-hit {
+  fill: transparent;
+  cursor: help;
+}
+
+.vt-event-hit:hover + .vt-event,
+.vt-event-hit:hover {
+  opacity: 1;
 }
 
 .external-chart-legend .vt-lg-bar,

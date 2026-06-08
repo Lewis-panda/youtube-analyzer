@@ -266,8 +266,6 @@ async function renderContent(root) {
 
 async function renderAudience(root) {
   const s = currentChannel.dashboard_summary || {};
-  const themeSent = await fetchTableRows("sentiment_theme_summary", 20);
-  const channelThemeNeg = Object.fromEntries((themeSent || []).map((row) => [row.primary_theme, Number(row.negative_rate)]));
   const profiles = s.audience_segment_profiles || s.community_profiles || [];
   const communityName = {};
   profiles.forEach((profile, idx) => {
@@ -289,7 +287,7 @@ async function renderAudience(root) {
     <section class="panel">
       <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路（邊＝共同參與影片數），再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。算法：觀眾集中度 HHI＝各社群占比的平方和（越接近 1 越集中於少數群）；分群清晰度 modularity＝社群內部連結相對隨機網路超出的程度（越高分群越清楚）；題材 affinity lift＝該群在某題材的留言占比 ÷ 全頻道該題材占比（>1＝該群對此題材特別投入）；社群情緒由 Qwen 對該群留言三元分類(用『則數』算、純歸屬作者群)。每張卡片＝一個社群。注意：YouTube 只給留言的讚數、不給『誰按的』，所以任何按讚加權指標反映的是廣大觀眾(可能跨群、甚至純看客)的放大，不等於該社群自己的認同。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
       ${audienceStructureCards(s.network_summary || {})}
-      ${communityPersonaCards(s.community_profiles || [], channelThemeNeg)}
+      ${communityPersonaCards(s.community_profiles || [])}
     </section>
     <section class="panel">
       <div class="panel-head"><div><h3>同題材、不同社群：誰對哪類內容特別容易負面 ${infoTip("回答初衷『不同觀眾群在意的點是否不同』，但用『控制題材』的正確做法：不是看各群整體的面向（那會被各群看不同題材決定、是循環），而是『同一個題材內、比較不同社群的負面率』——三群可能都看某題材，但只有某群特別罵它。算法：取三群都有 ≥150 留言的題材，比各群在該題材的負面率（負面則數÷留言則數，純歸屬作者群），只列各群差距 ≥3pp（真的有差）的題材，依差距大小排序。差距小的題材代表大家反應一致、不顯示。")}</h3></div></div>
@@ -2150,22 +2148,10 @@ function communityPersonaCards(rows, channelThemeNeg = {}, communityAspectMap = 
       // Absolute group share (% of active commenters), so the bar length = the
       // actual percentage — a 44.7% group fills ~44.7%, not "full because it is the biggest".
       const barWidth = Math.max(2, Math.min(100, pctOf(row)));
-      const negLift = (row.negative_sources || [])
-        .map((item) => {
-          const channel = Number(channelThemeNeg[item.theme || item.label]) || 0;
-          return { ...item, lift: channel > 0 ? Number(item.negative_rate) / channel : NaN };
-        })
-        .filter((item) => Number.isFinite(item.lift) && item.lift > 1)
-        .sort((a, b) => b.lift - a.lift);
       const details = [
         personaThemeChart("特別活躍題材（lift＞1＝相對全頻道更投入）", row.over_indexed_themes, {
           valueKey: "lift",
           format: (it) => `${(Number(it.lift) || 0).toFixed(2)}×`,
-        }),
-        personaThemeChart("特別負面題材（負面 lift＞1＝比全頻道更負面）", negLift, {
-          valueKey: "lift",
-          tone: "neg",
-          format: (it) => `${it.lift.toFixed(2)}× · ${formatValue(it.negative_rate, "rate")}`,
         }),
         personaVideoList("代表影片", row.preferred_videos),
         personaKeywordChips(row.common_keywords),
@@ -2187,7 +2173,7 @@ function communityPersonaCards(rows, channelThemeNeg = {}, communityAspectMap = 
             <div class="persona-stat-line">${Number.isFinite(Number(nVideosTouched)) ? `觸及 ${fmtCompact(nVideosTouched)} 支影片 · ` : ""}留言 ${fmtCompact(nComments)} · 活躍 ${formatValue(avgComments, "avg_comments_per_commenter")} 次/人</div>
           </div>
           ${personaSentimentBar(row.main_sentiment)}
-          ${personaSensitivityLine(row, negLift)}
+          ${personaSensitivityLine(row)}
           ${personaLine("偏好題材", row.top_preferred_themes || row.preferred_video_themes || labelCountList(row.preferred_themes))}
           ${
             details.trim()
@@ -2199,15 +2185,11 @@ function communityPersonaCards(rows, channelThemeNeg = {}, communityAspectMap = 
     .join("")}</div>`;
 }
 
-function personaSensitivityLine(row, negLift = []) {
+function personaSensitivityLine(row) {
   const top = (row.over_indexed_themes || [])[0];
-  const neg = negLift[0];
   const parts = [];
   if (top && top.theme) {
     parts.push(`<span class="sens-pos">特別投入：${escapeHtml(themeLabel(top.theme))} ${(Number(top.lift) || 0).toFixed(2)}×</span>`);
-  }
-  if (neg && (neg.theme || neg.label)) {
-    parts.push(`<span class="sens-neg">特別負面：${escapeHtml(themeLabel(neg.theme || neg.label))} ${neg.lift.toFixed(2)}×</span>`);
   }
   if (!parts.length) return "";
   return `<div class="persona-sensitivity">${parts.join("")}</div>`;

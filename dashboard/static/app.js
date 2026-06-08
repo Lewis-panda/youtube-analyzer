@@ -250,7 +250,7 @@ async function renderContent(root) {
       ${themeOverview(themeSummary, sentTheme, conflictTheme, themeViews)}
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的留言數（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；留言數＝爬取到的該片留言數；負面率＝該片負面留言÷留言數；外部事件取自外部討論分析。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
+      <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的留言數（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；留言數＝爬取到的該片留言數；負面率＝該片負面留言÷留言數；外部事件取自外部討論分析。長條刻意用『留言數』而非『留言/觀看』：因為觀看是累積的，越新的影片觀看還沒長滿，留言率會虛高、在時間軸上失真；留言/觀看比改放在游標 hover 顯示。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
       ${videoTimeline(videos, negMap, timelineEvents)}
     </section>
     <section class="panel">
@@ -1162,7 +1162,8 @@ function videoTimeline(rows, negMap = {}, events = []) {
       const bx = x(row.t) - barW / 2;
       const by = yC(row.comments);
       const negTxt = Number.isFinite(row.neg) ? ` · 負面率 ${formatValue(row.neg, "rate")}` : "";
-      const tip = `${row.title} · ${compactDate(row.published_at)} · 留言 ${fmtNumber(row.comments)} · 觀看 ${fmtNumber(row.views)}${negTxt}`;
+      const rateTxt = row.views > 0 ? ` · 留言/千觀看 ${((row.comments / row.views) * 1000).toFixed(1)}` : "";
+      const tip = `${row.title} · ${compactDate(row.published_at)} · 留言 ${fmtNumber(row.comments)} · 觀看 ${fmtNumber(row.views)}${rateTxt}${negTxt}`;
       return `<rect class="vt-bar${negTone(row.neg)}" x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${barW.toFixed(1)}" height="${(margin.top + plotH - by).toFixed(1)}" data-chart-tooltip="${tooltipAttr(tip)}"></rect>`;
     })
     .join("");

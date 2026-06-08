@@ -489,7 +489,7 @@ select:focus {
 
 .channel-report-card {
   display: grid;
-  grid-template-columns: minmax(260px, 1.35fr) 150px minmax(360px, 2fr);
+  grid-template-columns: minmax(240px, 1fr) minmax(380px, 2.6fr);
   gap: 12px;
   align-items: stretch;
   border: 1px solid var(--line);

@@ -38,8 +38,9 @@ run out of tokens mid-task — this file lets any session resume cleanly.
 - External page focused on "does external discussion bring new audience" vs baseline.
 
 ## 注意事項
-- **先不要清死碼**(使用者還有改動要做,可能會用到 scatterPlot/leaderboard/safeFetchReport/videoCluster* 等)。
+- **死碼已清(2026-06-09 收尾)**:app.js 移除 41 個未呼叫函式＋selectedMetrics(2949→2336 行);styles.css 移除 82 條純 dead-class 規則(3604→3042 行)。保守保留「dead+live 混在同一條共用選擇器」的規則(無害)。**唯一已知未用產物**:`generate_dashboard_video_absa.py` 仍產 `community_aspect_summary.csv`(per-community aspect 已從前端移除=循環論證),留著無害。
 - 比率排名小樣本門檻:`withMinSample`(題材≥30、影片≥50 留言,有 fallback)。要更嚴謹可改貝氏收縮。
+- 留言口徑:結構/互動/題材量/活躍度=**主留言**(include_replies=false→is_top_level=1);情緒(Qwen)=**含回覆**(247k主+58k回覆=305k);community_theme_sentiment=社群作者子集(163k)。前端各處 info 已標。
 
 ## 創作者視角審查 — 2026-06-09 (主要項目 DONE)
 

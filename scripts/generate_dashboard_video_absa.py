@@ -55,5 +55,26 @@ def main():
     top_comments[keep_cols].to_csv(tables_dir / "video_top_negative_comments.csv", index=False)
     print("Generated video_top_negative_comments.csv")
 
+    # --- Positive ABSA: per-video aspect summary (aspects only, no raw text) ---
+    absa_pos_path = tables_dir / "qwen_comment_absa_positive.csv"
+    if absa_pos_path.exists():
+        pos_absa = pd.read_csv(absa_pos_path)
+        base = pd.read_csv(sentiment_path)
+        if "primary_aspect" in pos_absa.columns and "comment_id" in base.columns:
+            pos_map = (
+                pos_absa[["source_id", "primary_aspect"]]
+                .rename(columns={"source_id": "comment_id", "primary_aspect": "aspect"})
+                .drop_duplicates("comment_id")
+            )
+            pos = base[base["sentiment_label"] == "positive"].merge(pos_map, on="comment_id", how="left")
+            pos["aspect"] = pos["aspect"].fillna("other")
+            pa = pos.groupby(["video_id", "aspect"]).size().reset_index(name="count")
+            pt = pos.groupby("video_id").size().reset_index(name="total_positive")
+            vps = pa.merge(pt, on="video_id")
+            vps["aspect_share"] = vps["count"] / vps["total_positive"]
+            vps = vps.sort_values(["video_id", "count"], ascending=[True, False])
+            vps.to_csv(tables_dir / "video_positive_aspect_summary.csv", index=False)
+            print("Generated video_positive_aspect_summary.csv")
+
 if __name__ == "__main__":
     main()

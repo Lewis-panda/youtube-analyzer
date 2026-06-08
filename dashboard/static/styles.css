@@ -1702,6 +1702,11 @@ select:focus {
   font-weight: 760;
 }
 
+.video-aspect.pos {
+  background: var(--teal-soft);
+  color: var(--teal);
+}
+
 .opportunity-card {
   border-left: 4px solid var(--teal);
 }

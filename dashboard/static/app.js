@@ -309,6 +309,8 @@ async function renderSentiment(root) {
   const videoSentiment = await fetchTableRows("sentiment_hotspots", 400);
   const aspectSummary = await fetchTableRows("comment_aspect_summary", 20);
   const videoAspects = await fetchTableRows("video_aspect_summary", 3000);
+  const videoPosAspects = await fetchTableRows("video_positive_aspect_summary", 3000);
+  const videoPosAspectMap = buildVideoAspectMap(videoPosAspects);
   const aspectLabels = Object.fromEntries(
     (aspectSummary || []).filter((row) => row.aspect).map((row) => [row.aspect, row.aspect_label_zh || row.aspect]),
   );
@@ -329,8 +331,8 @@ async function renderSentiment(root) {
       <div class="panel-head"><div><h3>正面亮點 ${infoTip("以正面留言率排序的影片與題材；影片/題材情緒使用全部留言（含回覆）。")}</h3></div></div>
       <div class="sentiment-band-grid">
         <div class="sentiment-subpanel">
-          <h4>高正面影片 ${infoTip("正面留言率最高的影片（正面留言數 ÷ 該片留言數）。")}</h4>
-          ${positiveVideoCards(videoSentiment)}
+          <h4>高正面影片 ${infoTip("正面留言率最高的影片（正面留言數 ÷ 該片留言數），並列出該片『被稱讚的點』（ABSA 對正面留言抽取面向，占該片正面留言比例，扣除 other／unclear）。為模型標註，非人工真值。")}</h4>
+          ${positiveVideoCards(videoSentiment, videoPosAspectMap, aspectLabels)}
         </div>
         <div class="sentiment-subpanel">
           <h4>高正面題材 ${infoTip("各 Qwen 主題的正面留言率排序。")}</h4>
@@ -1361,7 +1363,24 @@ function themeRiskBars(rows) {
     .join("")}</div>`;
 }
 
-function positiveVideoCards(rows) {
+function videoPositiveReasons(videoId, aspectMap, aspectLabels) {
+  const reasons = (aspectMap[videoId] || []).filter((item) => item.aspect && !NON_IMPACT_ASPECTS.has(item.aspect)).slice(0, 3);
+  if (!reasons.length) return "";
+  return `
+    <div class="video-aspect-block pos">
+      <span class="video-aspect-label">被稱讚的點</span>
+      <div class="video-aspects">
+        ${reasons
+          .map(
+            (item) =>
+              `<span class="video-aspect pos"><b>${escapeHtml(aspectLabels[item.aspect] || item.aspect)}</b> ${formatValue(item.share, "rate")}</span>`,
+          )
+          .join("")}
+      </div>
+    </div>`;
+}
+
+function positiveVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
   const usable = (rows || [])
     .map((row) => ({ ...row, n_comments_num: Number(row.n_comments || 0) }))
     .filter((row) => row.n_comments_num >= 50)
@@ -1381,6 +1400,7 @@ function positiveVideoCards(rows) {
           ${metricPill("負面", row.negative_rate, "rate")}
           ${metricPill("回覆占比", row.reply_share, "rate")}
         </div>
+        ${videoPositiveReasons(row.video_id, aspectMap, aspectLabels)}
       </article>`)
     .join("")}</div>`;
 }

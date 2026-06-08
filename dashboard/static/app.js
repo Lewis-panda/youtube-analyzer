@@ -189,7 +189,7 @@ async function renderOverview(root) {
     ${channelReportCard(ch, overview, s)}
 
     <section class="panel">
-      <div class="panel-head"><div><h3>互動概況 ${infoTip("每千次觀看的留言數、按讚/觀看等互動比率，取分析範圍影片的留言/按讚相對觀看次數彙總。只反映留言與按讚行為，留言者僅是觀看者的一小部分，不能視為全體觀眾。")}</h3></div></div>
+      <div class="panel-head"><div><h3>互動概況 ${infoTip("分析範圍影片的互動比率。算法：每千次觀看留言數＝總留言數 ÷ 總觀看數 ×1000；讚/觀看＝總按讚數 ÷ 總觀看數；每留言獲讚＝總留言讚數 ÷ 留言數。各條都對照 cohort（基準線＝平均、PR＝相對位置）。只反映留言/按讚行為，留言者僅是觀看者的一小部分，不能視為全體觀眾。")}</h3></div></div>
       ${overviewEngagementBars(s)}
     </section>
   `;
@@ -442,12 +442,12 @@ async function renderSentiment(root) {
       </div>
     </section>
     <section class="section-intro compact">
-      <h3>回覆衝突 ${infoTip("和『情緒』不同：情緒看每則留言的語氣（正/負），衝突看『回覆串的對立結構』——有人被圍剿、母串下吵成兩派。負面率低不代表沒衝突，反之亦然。")}</h3>
+      <h3>回覆衝突 ${infoTip("和『情緒』不同：情緒看每則留言語氣（正/負），衝突看『回覆串的對立結構』。一個 thread＝一則主留言＋它的回覆。三種型態（算法）：\n• 衝突串 conflict_thread＝有回覆，且整串或回覆區『正面率與負面率都 ≥15%』(兩派並存、極化)。\n• 圍剿 pile-on＝回覆 ≥3 則，且回覆負面率 ≥60%、正面率 <15%(一面倒圍攻母留言)。\n• 對立母串 parent-opposition＝回覆和母留言『立場相反』(母正回覆≥25%負／母負回覆≥25%正／母中性則正負都≥15%)。\n負面率低不代表沒衝突，反之亦然。情緒為模型標註，非人工判定吵架。")}</h3>
       <p class="section-why">為什麼看這個：① <b>版務</b>——高衝突影片留言區易變戰場，可考慮置頂澄清、限制回覆、加強管理；② <b>品牌風險</b>——圍剿/對立串容易被截圖、釀公關，是早期預警；③ <b>議題極化</b>——看哪些題材會讓你的觀眾分裂成兩派（而非單純不喜歡）。</p>
     </section>
     <section class="split-layout">
       <article class="panel">
-        <div class="panel-head"><div><h3>回覆與衝突基準 ${infoTip("回覆占全部留言的比例、衝突分數等對照 benchmark cohort（顯示 cohort 平均）。衝突來自回覆串結構，與單純負面情緒是不同概念。")}</h3></div></div>
+        <div class="panel-head"><div><h3>回覆與衝突基準 ${infoTip("把『回覆活躍度與衝突程度』對照 benchmark cohort。算法：回覆占比＝回覆數 ÷ 全部留言數；衝突峰值＝全頻道單支影片最高的(按讚加權)衝突分數。基準線顯示 cohort 平均、PR 為相對位置。衝突來自回覆串結構，與單純負面率是不同概念。")}</h3></div></div>
         ${replyBaselineBars(s.reply_overview || {})}
       </article>
       <article class="panel">
@@ -457,7 +457,7 @@ async function renderSentiment(root) {
     </section>
     <section class="split-layout">
       <article class="panel">
-        <div class="panel-head"><div><h3>高衝突影片 ${infoTip("衝突分數＝衝突討論串數 × 回覆中衝突串比例，另看『圍剿』與『對立母串』串數。算法以回覆串結構計，不是單純負面率。")}</h3></div></div>
+        <div class="panel-head"><div><h3>高衝突影片 ${infoTip("找出『不只是負面多，而是真的吵起來』的影片。依按讚加權衝突分數排序（衝突分數＝衝突串數 × 回覆中衝突串比例，再用回覆讚數加權）。每張卡列三種型態的串數：衝突串(兩派並存)、圍剿(3+回覆一面倒負面攻母留言)、對立母串(回覆反對母留言立場)——有數字>0 會標紅。皆為回覆串結構，不是單純負面率；情緒為模型標註。")}</h3></div></div>
         ${conflictVideoCards(s.reply_conflict_hotspots || [])}
       </article>
       <article class="panel">
@@ -1762,9 +1762,10 @@ function conflictVideoCards(rows) {
           <strong title="${escapeHtml(row.title || "")}">${escapeHtml(row.title || "-")}</strong>
           <span>${compactDate(row.published_at)} · ${escapeHtml(themeLabel(row.primary_theme))}</span>
         </div>
-        <div class="dual-metric">
-          <span>回覆加權 ${formatValue(row.reply_count_weighted_conflict_score, "score")}</span>
-          <span>按讚加權 ${formatValue(row.like_weighted_conflict_score, "score")}</span>
+        <div class="dual-metric conflict-breakdown">
+          <span title="整串正負面都很高（極化，兩派並存）">衝突串 ${fmtCompact(row.n_conflict_threads)}</span>
+          <span class="${Number(row.n_pile_on_threads) > 0 ? "hot" : ""}" title="3+ 回覆幾乎全負面（圍剿母留言）">圍剿 ${fmtCompact(row.n_pile_on_threads)}</span>
+          <span class="${Number(row.n_parent_opposition_threads) > 0 ? "hot" : ""}" title="回覆與母留言立場相反（反對原留言者）">對立母串 ${fmtCompact(row.n_parent_opposition_threads)}</span>
         </div>
       </article>`)
     .join("")}</div>`;

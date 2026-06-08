@@ -3015,6 +3015,11 @@ select:focus {
   line-height: 1.5;
 }
 
+.conflict-breakdown span.hot {
+  color: var(--coral);
+  font-weight: 700;
+}
+
 .structure-note {
   margin: 8px 0 0 !important;
   padding: 6px 10px;

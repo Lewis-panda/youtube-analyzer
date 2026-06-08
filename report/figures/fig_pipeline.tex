@@ -1,64 +1,50 @@
-% System architecture / analysis pipeline (TikZ) -- layered bands, clean flow
+% System architecture (TikZ + FontAwesome) -- clean top-down flow, minimal labels
 \begin{figure}[t]
 \centering
+\definecolor{slate}{HTML}{64748B}
 \begin{tikzpicture}[
     font=\small,
-    box/.style={rounded corners=2pt,draw=ink!60,line width=0.5pt,align=center,
-                inner sep=4pt,minimum height=8mm,fill=white},
-    data/.style={box,text width=70mm},
-    prep/.style={box,text width=112mm},
-    label/.style={box,text width=112mm,minimum height=12mm},
-    mod/.style={box,text width=34mm,minimum height=16mm},
-    outbox/.style={box,text width=112mm},
-    layer/.style={rounded corners=4pt,draw=#1!50,fill=#1!8,line width=0.6pt,inner sep=4mm},
-    llab/.style={font=\footnotesize\bfseries,text=#1!80,rotate=90,anchor=south},
-    flow/.style={-{Latex[length=2.6mm,width=2.2mm]},draw=ink!70,line width=1pt},
+    >={Latex[length=2.8mm,width=2.4mm]},
+    stage/.style={rounded corners=4pt,draw=#1!60,fill=#1!8,line width=0.8pt,
+                  minimum width=84mm,minimum height=11mm,inner sep=2mm},
+    mod/.style={rounded corners=4pt,draw=teal!60,fill=white,line width=0.7pt,
+                text width=28mm,minimum height=18mm,align=center,inner sep=1.5mm},
+    arr/.style={->,draw=ink!55,line width=1.1pt},
   ]
 
-  % ---- nodes (centred on x = 0) ----
-  \node[data] (yt) {YouTube 公開資料\\[-2pt]\scriptsize 影片 metadata $+$ 留言（含回覆串結構）};
+  \node[stage=slate] (s1)
+        {\raisebox{-1pt}{\large\color{slate}\faYoutube}\ \ \textbf{YouTube 公開資料}};
 
-  \node[prep,below=12mm of yt] (clean)
-        {資料清理與分析範圍設定\quad\scriptsize 351 影片 / 247k 主留言 / 112k 留言者};
+  \node[stage=slate,below=6mm of s1] (s2)
+        {\raisebox{-1pt}{\large\color{slate}\faFilter}\ \ \textbf{資料清理 ${\cdot}$ 分析範圍設定}};
 
-  \node[label,below=13mm of clean] (lab)
-        {\textbf{雙模型投票標註}（Qwen $+$ OpenAI API）$+$ 人工審核\\[-1pt]
-         \scriptsize 影片主題 $\cdot$ 留言情緒 $\cdot$ ABSA 語意主體\ \,／\,\ 兩模型不一致 $\to$ 人工標註；一致 $\to$ 抽樣人工審核};
+  \node[stage=gold,below=6mm of s2] (s3)
+        {\raisebox{-1pt}{\large\color{gold}\faRobot}\ \ \textbf{雙模型投票標註 ${+}$ 人工審核}};
 
-  \node[mod,below=13mm of lab,xshift=-40mm] (m1)
-        {\textbf{頻道健康}\\[-2pt]\scriptsize 活躍分層 $\cdot$ 回訪\\[-2pt]\scriptsize benchmark 百分位};
-  \node[mod,right=6mm of m1] (m2)
-        {\textbf{觀眾社群}\\[-2pt]\scriptsize co-commenter network\\[-2pt]\scriptsize community $\times$ theme};
-  \node[mod,right=6mm of m2] (m3)
-        {\textbf{情緒／衝突風險}\\[-2pt]\scriptsize sentiment $\cdot$ ABSA\\[-2pt]\scriptsize reply-thread conflict};
-
-  \node[outbox,below=14mm of m2] (strat)
-        {\textbf{策略輸出}\quad 內容策略 $\cdot$ 分眾溝通策略 $\cdot$ 炎上與風險監測};
-
-  % ---- background layer bands ----
+  % ---- analysis stage: three modules grouped in a band ----
+  \node[mod,below=12mm of s3,xshift=-31mm] (a1)
+        {{\large\color{teal}\faHeartbeat}\\[3pt]\textbf{頻道健康}\\[1pt]{\scriptsize\color{ink!60}分層 ${\cdot}$ 回訪 ${\cdot}$ 基準}};
+  \node[mod,right=5mm of a1] (a2)
+        {{\large\color{teal}\faProjectDiagram}\\[3pt]\textbf{觀眾社群}\\[1pt]{\scriptsize\color{ink!60}社群偵測 ${\cdot}$ 敏感度}};
+  \node[mod,right=5mm of a2] (a3)
+        {{\large\color{teal}\faCommentDots}\\[3pt]\textbf{情緒／衝突風險}\\[1pt]{\scriptsize\color{ink!60}情緒 ${\cdot}$ ABSA ${\cdot}$ 衝突}};
   \begin{scope}[on background layer]
-    \node[layer=teal, fit=(yt)]          (L1) {};
-    \node[layer=teal, fit=(clean)]       (L2) {};
-    \node[layer=gold, fit=(lab)]         (L3) {};
-    \node[layer=teal, fit=(m1)(m3)]      (L4) {};
-    \node[layer=coral,fit=(strat)]       (L5) {};
+    \node[rounded corners=5pt,draw=teal!40,fill=teal!6,line width=0.6pt,inner sep=3mm,
+          fit=(a1)(a3)] (A) {};
   \end{scope}
 
-  % ---- layer labels (left side) ----
-  \node[llab=teal]  at ([xshift=-2mm]L1.west) {資料層};
-  \node[llab=gold]  at ([xshift=-2mm]L3.west) {標註層};
-  \node[llab=teal]  at ([xshift=-2mm]L4.west) {分析層};
-  \node[llab=coral] at ([xshift=-2mm]L5.west) {輸出};
+  \node[stage=coral,below=12mm of a2] (s5)
+        {\raisebox{-1pt}{\large\color{coral}\faBullseye}\ \ \textbf{策略輸出}};
 
-  % ---- single, clean layer-to-layer flows ----
-  \draw[flow] (L1.south) -- (L2.north);
-  \draw[flow] (L2.south) -- (L3.north);
-  \draw[flow] (L3.south) -- (L4.north);
-  \draw[flow] (L4.south) -- (L5.north);
+  \draw[arr] (s1) -- (s2);
+  \draw[arr] (s2) -- (s3);
+  \draw[arr] (s3) -- (A.north);
+  \draw[arr] (A.south) -- (s5.north);
 
 \end{tikzpicture}
-\caption{研究分析架構與資料流（由上而下分為五層）。YouTube 公開留言經前處理後，由標註層以
-\textbf{雙模型投票}（Qwen 與 OpenAI API）加人工審核產生影片主題、留言情緒與 ABSA 語意主體標註；
-分析層包含頻道健康、觀眾社群與情緒／衝突風險三個模組，最終於輸出層轉化為內容、分眾溝通與風險監測策略。}
+\caption{研究分析的系統架構（由上而下）。\textbf{資料層}取 YouTube 公開影片 metadata 與留言（351 支影片、
+247{,}068 則主留言、112{,}108 位留言者）；\textbf{標註層}以 Qwen 與 OpenAI API 雙模型投票標註影片主題、
+留言情緒與 ABSA 語意主體——兩模型不一致時改由人工標註，一致時則抽樣人工審核；\textbf{分析層}包含頻道健康、
+觀眾社群與情緒／衝突風險三個模組；最終於\textbf{輸出層}轉化為內容、分眾溝通與炎上監測策略。}
 \label{fig:pipeline}
 \end{figure}

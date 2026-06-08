@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-08T09:05:08.071376+00:00",
+  "generated_at": "2026-06-08T14:52:23.100423+00:00",
   "slug": "louislee0602-full",
   "title": "放火 Louis",
   "channel_id": "UCuLKTkYGCXako3wMktwrbkQ",
@@ -134,7 +134,7 @@
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/louislee0602-full/tables/commenter_tiers.csv",
-        "bytes": 223,
+        "bytes": 262,
         "source_dir": "tables"
       },
       {
@@ -574,22 +574,31 @@
     "like_weighted_negative_rate": 0.0596199335282904,
     "commenter_tiers": [
       {
-        "activity_tier": "mid",
-        "n_commenters": 14,
-        "avg_videos": 6.928571428571429,
-        "median_videos": 6.0,
-        "total_comments": 130,
-        "total_likes_received": 20551,
-        "pct_commenters": 0.24125452352231602
+        "activity_tier": "core",
+        "n_commenters": 124,
+        "avg_videos": 3.7903225806,
+        "median_videos": 3.0,
+        "total_comments": 544,
+        "total_likes_received": 39802,
+        "pct_commenters": 2.1368257798
       },
       {
-        "activity_tier": "low",
-        "n_commenters": 5789,
-        "avg_videos": 1.108999827258594,
+        "activity_tier": "regular",
+        "n_commenters": 368,
+        "avg_videos": 2.0,
+        "median_videos": 2.0,
+        "total_comments": 781,
+        "total_likes_received": 36807,
+        "pct_commenters": 6.3415474754
+      },
+      {
+        "activity_tier": "one_time",
+        "n_commenters": 5311,
+        "avg_videos": 1.0,
         "median_videos": 1.0,
-        "total_comments": 6642,
-        "total_likes_received": 151824,
-        "pct_commenters": 99.75874547647769
+        "total_comments": 5447,
+        "total_likes_received": 95766,
+        "pct_commenters": 91.5216267448
       }
     ],
     "network_summary": {
@@ -2193,7 +2202,7 @@
       "cohort_url": "https://www.youtube.com/@louislee0602",
       "cohort_url_key": "handle:louislee0602",
       "config_path": "configs/louislee0602.full.yaml",
-      "run_dir": "runs/louislee0602-full",
+      "run_dir": "baseline_runs/louislee0602-full",
       "channel_id": "UCuLKTkYGCXako3wMktwrbkQ",
       "run_channel_title": "放火 Louis",
       "status": "ready",
@@ -2469,33 +2478,33 @@
         "group_label": "觀眾回訪",
         "unit": "rate",
         "polarity": "benefit_high",
-        "value": 0.0024125452352231,
-        "percentile": 6.25,
-        "percentile_band": "極低",
+        "value": 0.084783732552,
+        "percentile": 64.58333333333334,
+        "percentile_band": "典型",
         "n_cohort": 48,
         "cohort_n": 48,
         "distribution": {
           "n": 48,
-          "mean": 0.0323391228527067,
-          "median": 0.02596956938608,
-          "std": 0.0291420342509069,
-          "min": 0,
-          "p10": 0.0053003402111053,
-          "p25": 0.0131777975701529,
-          "p75": 0.0383544387820505,
-          "p90": 0.0722002443424276,
-          "max": 0.1287409700722394,
-          "iqr": 0.025176641211897596
+          "mean": 0.0782910564149583,
+          "median": 0.0669146028294999,
+          "std": 0.0634946273152039,
+          "min": 0.001933176531,
+          "p10": 0.013614020449,
+          "p25": 0.02631975986975,
+          "p75": 0.11489758597625,
+          "p90": 0.1705238827191001,
+          "max": 0.230308509436,
+          "iqr": 0.0885778261065
         },
         "comparison": {
-          "percentile_band": "極低",
-          "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.9356698517721529,
-          "value_vs_median": -0.0235570241508569,
-          "summary_zh": "核心觀眾占比位於 benchmark 的極低區間，cohort 中位數為 0.0259696，低於 IQR 下緣，比較樣本 n=48。"
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": 0.2017336675322723,
+          "value_vs_median": 0.0178691297225001,
+          "summary_zh": "核心觀眾占比位於 benchmark 的典型區間，cohort 中位數為 0.0669146，落在 IQR 內，比較樣本 n=48。"
         },
-        "interpretation_hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-        "risk_opportunity_label": "risk",
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
         "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
       },
       {
@@ -2506,33 +2515,33 @@
         "group_label": "觀眾回訪",
         "unit": "rate",
         "polarity": "mixed_high",
-        "value": 0.0191966922622563,
-        "percentile": 6.25,
-        "percentile_band": "極低",
+        "value": 0.1956585942114589,
+        "percentile": 29.166666666666668,
+        "percentile_band": "典型",
         "n_cohort": 48,
         "cohort_n": 48,
         "distribution": {
           "n": 48,
-          "mean": 0.212544172384755,
-          "median": 0.1802942819241291,
-          "std": 0.1490349335045886,
-          "min": 0,
-          "p10": 0.0431111894202277,
-          "p25": 0.1026426611614835,
-          "p75": 0.2895624443254263,
-          "p90": 0.4253823455266,
-          "max": 0.6895271250362635,
-          "iqr": 0.1869197831639428
+          "mean": 0.2913518891009847,
+          "median": 0.2688957584572139,
+          "std": 0.1443411010552516,
+          "min": 0.0416394299908484,
+          "p10": 0.1238206160099448,
+          "p25": 0.1850828573774246,
+          "p75": 0.364537464768729,
+          "p90": 0.4843470440184664,
+          "max": 0.6621409921671019,
+          "iqr": 0.1794546073913044
         },
         "comparison": {
-          "percentile_band": "極低",
-          "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.8618541437134989,
-          "value_vs_median": -0.16109758966187282,
-          "summary_zh": "核心觀眾留言貢獻位於 benchmark 的極低區間，cohort 中位數為 0.180294，低於 IQR 下緣，比較樣本 n=48。"
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": -0.40810969030212696,
+          "value_vs_median": -0.07323716424575502,
+          "summary_zh": "核心觀眾留言貢獻位於 benchmark 的典型區間，cohort 中位數為 0.268896，落在 IQR 內，比較樣本 n=48。"
         },
-        "interpretation_hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-        "risk_opportunity_label": "watch",
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
         "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
       },
       {
@@ -2736,10 +2745,10 @@
         "distribution": {
           "n": 47,
           "mean": 0.2893770676554902,
-          "median": 0.2755542787832359,
+          "median": 0.275554278783236,
           "std": 0.0792455177004428,
           "min": 0.1766566656001545,
-          "p10": 0.2018761565607142,
+          "p10": 0.2018761565607141,
           "p25": 0.2216637503106328,
           "p75": 0.3423849656321267,
           "p90": 0.3904993436659827,
@@ -2749,8 +2758,8 @@
         "comparison": {
           "percentile_band": "偏低",
           "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.5763863159901845,
-          "value_vs_median": -0.06958205656101371,
+          "relative_to_iqr": -0.5763863159901854,
+          "value_vs_median": -0.06958205656101382,
           "summary_zh": "社群集中度 HHI位於 benchmark 的偏低區間，cohort 中位數為 0.275554，低於 IQR 下緣，比較樣本 n=47。"
         },
         "interpretation_hint_zh": "社群較分散，抗單一群體波動較佳，但核心動員力可能較弱。",
@@ -3352,6 +3361,117 @@
         "statistical_caution_zh": "這是資料覆蓋量或樣本規模，不應直接解讀為頻道表現好壞。"
       },
       {
+        "metric": "core_regular_tier_comment_share",
+        "label": "core_regular_tier_comment_share",
+        "label_en": "core_regular_tier_comment_share",
+        "group": "scale",
+        "group_label": "資料規模",
+        "unit": "rate",
+        "polarity": "mixed_high",
+        "value": 0.1956585942114589,
+        "percentile": 29.166666666666668,
+        "percentile_band": "典型",
+        "n_cohort": 48,
+        "cohort_n": 48,
+        "distribution": {
+          "n": 48,
+          "mean": 0.2913518891009847,
+          "median": 0.2688957584572139,
+          "std": 0.1443411010552516,
+          "min": 0.0416394299908484,
+          "p10": 0.1238206160099448,
+          "p25": 0.1850828573774246,
+          "p75": 0.364537464768729,
+          "p90": 0.4843470440184664,
+          "max": 0.6621409921671019,
+          "iqr": 0.1794546073913044
+        },
+        "comparison": {
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": -0.40810969030212696,
+          "value_vs_median": -0.07323716424575502,
+          "summary_zh": "core_regular_tier_comment_share位於 benchmark 的典型區間，cohort 中位數為 0.268896，落在 IQR 內，比較樣本 n=48。"
+        },
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
+        "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+      },
+      {
+        "metric": "core_regular_tier_commenter_share",
+        "label": "core_regular_tier_commenter_share",
+        "label_en": "core_regular_tier_commenter_share",
+        "group": "scale",
+        "group_label": "資料規模",
+        "unit": "rate",
+        "polarity": "mixed_high",
+        "value": 0.084783732552,
+        "percentile": 64.58333333333334,
+        "percentile_band": "典型",
+        "n_cohort": 48,
+        "cohort_n": 48,
+        "distribution": {
+          "n": 48,
+          "mean": 0.0782910564149583,
+          "median": 0.0669146028294999,
+          "std": 0.0634946273152039,
+          "min": 0.001933176531,
+          "p10": 0.013614020449,
+          "p25": 0.02631975986975,
+          "p75": 0.11489758597625,
+          "p90": 0.1705238827191001,
+          "max": 0.230308509436,
+          "iqr": 0.0885778261065
+        },
+        "comparison": {
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": 0.2017336675322723,
+          "value_vs_median": 0.0178691297225001,
+          "summary_zh": "core_regular_tier_commenter_share位於 benchmark 的典型區間，cohort 中位數為 0.0669146，落在 IQR 內，比較樣本 n=48。"
+        },
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
+        "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+      },
+      {
+        "metric": "core_tier_commenter_share",
+        "label": "core_tier_commenter_share",
+        "label_en": "core_tier_commenter_share",
+        "group": "scale",
+        "group_label": "資料規模",
+        "unit": "rate",
+        "polarity": "mixed_high",
+        "value": 0.021368257798,
+        "percentile": 66.66666666666666,
+        "percentile_band": "典型",
+        "n_cohort": 48,
+        "cohort_n": 48,
+        "distribution": {
+          "n": 48,
+          "mean": 0.0230441230244791,
+          "median": 0.011901116062,
+          "std": 0.0264187830493829,
+          "min": 0,
+          "p10": 0.0024992605819,
+          "p25": 0.005288289286,
+          "p75": 0.030697542743,
+          "p90": 0.0574167969385,
+          "max": 0.103719599428,
+          "iqr": 0.025409253457
+        },
+        "comparison": {
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": 0.37258637889622437,
+          "value_vs_median": 0.009467141736,
+          "summary_zh": "core_tier_commenter_share位於 benchmark 的典型區間，cohort 中位數為 0.0119011，落在 IQR 內，比較樣本 n=48。"
+        },
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
+        "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+      },
+      {
         "metric": "high_tier_commenter_share",
         "label": "高頻留言者占比",
         "label_en": "High-tier commenter share",
@@ -3359,33 +3479,33 @@
         "group_label": "資料規模",
         "unit": "rate",
         "polarity": "mixed_high",
-        "value": 0,
-        "percentile": 7.291666666666667,
-        "percentile_band": "極低",
+        "value": 0.021368257798,
+        "percentile": 66.66666666666666,
+        "percentile_band": "典型",
         "n_cohort": 48,
         "cohort_n": 48,
         "distribution": {
           "n": 48,
-          "mean": 0.0063047962717345,
-          "median": 0.0031551620774405,
-          "std": 0.0085722340232753,
+          "mean": 0.0230441230244791,
+          "median": 0.011901116062,
+          "std": 0.0264187830493829,
           "min": 0,
-          "p10": 0,
-          "p25": 0.0010496654478192,
-          "p75": 0.0073878642278349,
-          "p90": 0.0152977040464806,
-          "max": 0.0482456140350877,
-          "iqr": 0.0063381987800157
+          "p10": 0.0024992605819,
+          "p25": 0.005288289286,
+          "p75": 0.030697542743,
+          "p90": 0.0574167969385,
+          "max": 0.103719599428,
+          "iqr": 0.025409253457
         },
         "comparison": {
-          "percentile_band": "極低",
-          "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.4978010609873432,
-          "value_vs_median": -0.0031551620774405,
-          "summary_zh": "高頻留言者占比位於 benchmark 的極低區間，cohort 中位數為 0.00315516，低於 IQR 下緣，比較樣本 n=48。"
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": 0.37258637889622437,
+          "value_vs_median": 0.009467141736,
+          "summary_zh": "高頻留言者占比位於 benchmark 的典型區間，cohort 中位數為 0.0119011，落在 IQR 內，比較樣本 n=48。"
         },
-        "interpretation_hint_zh": "低於多數 benchmark 頻道，需確認這是策略選擇、資料不足，還是社群弱點。",
-        "risk_opportunity_label": "watch",
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
         "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
       },
       {
@@ -3396,33 +3516,33 @@
         "group_label": "資料規模",
         "unit": "rate",
         "polarity": "mixed_high",
-        "value": 0.9975874547647768,
-        "percentile": 95.83333333333334,
-        "percentile_band": "極高",
+        "value": 0.915216267448,
+        "percentile": 37.5,
+        "percentile_band": "典型",
         "n_cohort": 48,
         "cohort_n": 48,
         "distribution": {
           "n": 48,
-          "mean": 0.9676608771472932,
-          "median": 0.97403043061392,
-          "std": 0.0291420342509069,
-          "min": 0.8712590299277606,
-          "p10": 0.9277997556575724,
-          "p25": 0.9616455612179496,
-          "p75": 0.986822202429847,
-          "p90": 0.9946996597888946,
-          "max": 1,
-          "iqr": 0.025176641211897333
+          "mean": 0.9217089435850832,
+          "median": 0.9330853971705,
+          "std": 0.0634946273151164,
+          "min": 0.769691490564,
+          "p10": 0.8294761172812,
+          "p25": 0.88510241402375,
+          "p75": 0.97368024013,
+          "p90": 0.986385979551,
+          "max": 0.998066823469,
+          "iqr": 0.08857782610624998
         },
         "comparison": {
-          "percentile_band": "極高",
-          "iqr_position": "above_iqr",
-          "relative_to_iqr": 0.9356698517721591,
-          "value_vs_median": 0.02355702415085681,
-          "summary_zh": "低頻留言者占比位於 benchmark 的極高區間，cohort 中位數為 0.97403，高於 IQR 上緣，比較樣本 n=48。"
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": -0.20173366753284044,
+          "value_vs_median": -0.017869129722499988,
+          "summary_zh": "低頻留言者占比位於 benchmark 的典型區間，cohort 中位數為 0.933085，落在 IQR 內，比較樣本 n=48。"
         },
-        "interpretation_hint_zh": "高於多數 benchmark 頻道，需結合主題、受眾與情緒脈絡判讀。",
-        "risk_opportunity_label": "watch",
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
         "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
       },
       {
@@ -3433,34 +3553,145 @@
         "group_label": "資料規模",
         "unit": "rate",
         "polarity": "mixed_high",
-        "value": 0.0024125452352231,
-        "percentile": 6.25,
-        "percentile_band": "極低",
+        "value": 0.063415474754,
+        "percentile": 64.58333333333334,
+        "percentile_band": "典型",
         "n_cohort": 48,
         "cohort_n": 48,
         "distribution": {
           "n": 48,
-          "mean": 0.0260343265809721,
-          "median": 0.0213246008793656,
-          "std": 0.0213174651004595,
-          "min": 0,
-          "p10": 0.0051859237351328,
-          "p25": 0.0118137969383308,
-          "p75": 0.0311738205836749,
-          "p90": 0.0600067484470664,
-          "max": 0.0937215650591446,
-          "iqr": 0.0193600236453441
+          "mean": 0.0552469333904791,
+          "median": 0.0555102654494999,
+          "std": 0.0399221414629197,
+          "min": 0.001224345136,
+          "p10": 0.0108694687294,
+          "p25": 0.02081760310825,
+          "p75": 0.0787588014375,
+          "p90": 0.1206304754077,
+          "max": 0.13961694667,
+          "iqr": 0.05794119832925
         },
         "comparison": {
-          "percentile_band": "極低",
-          "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.9768611852233283,
-          "value_vs_median": -0.0189120556441425,
-          "summary_zh": "中頻留言者占比位於 benchmark 的極低區間，cohort 中位數為 0.0213246，低於 IQR 下緣，比較樣本 n=48。"
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": 0.1364350329722017,
+          "value_vs_median": 0.007905209304500102,
+          "summary_zh": "中頻留言者占比位於 benchmark 的典型區間，cohort 中位數為 0.0555103，落在 IQR 內，比較樣本 n=48。"
         },
-        "interpretation_hint_zh": "低於多數 benchmark 頻道，需確認這是策略選擇、資料不足，還是社群弱點。",
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
+        "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+      },
+      {
+        "metric": "one_time_tier_commenter_share",
+        "label": "one_time_tier_commenter_share",
+        "label_en": "one_time_tier_commenter_share",
+        "group": "scale",
+        "group_label": "資料規模",
+        "unit": "rate",
+        "polarity": "mixed_high",
+        "value": 0.915216267448,
+        "percentile": 95.83333333333334,
+        "percentile_band": "極高",
+        "n_cohort": 48,
+        "cohort_n": 48,
+        "distribution": {
+          "n": 48,
+          "mean": 0.7846569069628959,
+          "median": 0.7861737769849999,
+          "std": 0.0919897410902201,
+          "min": 0.558423400431,
+          "p10": 0.6553300624338,
+          "p25": 0.73601686754125,
+          "p75": 0.8499074891375,
+          "p90": 0.8900993527038,
+          "max": 0.956363636364,
+          "iqr": 0.11389062159625007
+        },
+        "comparison": {
+          "percentile_band": "極高",
+          "iqr_position": "above_iqr",
+          "relative_to_iqr": 1.1330387757515663,
+          "value_vs_median": 0.1290424904630001,
+          "summary_zh": "one_time_tier_commenter_share位於 benchmark 的極高區間，cohort 中位數為 0.786174，高於 IQR 上緣，比較樣本 n=48。"
+        },
+        "interpretation_hint_zh": "高於多數 benchmark 頻道，需結合主題、受眾與情緒脈絡判讀。",
         "risk_opportunity_label": "watch",
         "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+      },
+      {
+        "metric": "regular_tier_commenter_share",
+        "label": "regular_tier_commenter_share",
+        "label_en": "regular_tier_commenter_share",
+        "group": "scale",
+        "group_label": "資料規模",
+        "unit": "rate",
+        "polarity": "mixed_high",
+        "value": 0.063415474754,
+        "percentile": 64.58333333333334,
+        "percentile_band": "典型",
+        "n_cohort": 48,
+        "cohort_n": 48,
+        "distribution": {
+          "n": 48,
+          "mean": 0.0552469333904791,
+          "median": 0.0555102654494999,
+          "std": 0.0399221414629197,
+          "min": 0.001224345136,
+          "p10": 0.0108694687294,
+          "p25": 0.02081760310825,
+          "p75": 0.0787588014375,
+          "p90": 0.1206304754077,
+          "max": 0.13961694667,
+          "iqr": 0.05794119832925
+        },
+        "comparison": {
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": 0.1364350329722017,
+          "value_vs_median": 0.007905209304500102,
+          "summary_zh": "regular_tier_commenter_share位於 benchmark 的典型區間，cohort 中位數為 0.0555103，落在 IQR 內，比較樣本 n=48。"
+        },
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
+        "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+      },
+      {
+        "metric": "returning_tier_commenter_share",
+        "label": "returning_tier_commenter_share",
+        "label_en": "returning_tier_commenter_share",
+        "group": "scale",
+        "group_label": "資料規模",
+        "unit": "rate",
+        "polarity": "benefit_high",
+        "value": 0,
+        "percentile": 15.625,
+        "percentile_band": "偏低",
+        "n_cohort": 48,
+        "cohort_n": 48,
+        "distribution": {
+          "n": 48,
+          "mean": 0.1370520366221874,
+          "median": 0.145813916248,
+          "std": 0.1075208659924673,
+          "min": 0,
+          "p10": 0,
+          "p25": 0,
+          "p75": 0.21090776885725,
+          "p90": 0.2838525437658001,
+          "max": 0.355174771731,
+          "iqr": 0.21090776885725
+        },
+        "comparison": {
+          "percentile_band": "偏低",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": -0.691363419365989,
+          "value_vs_median": -0.145813916248,
+          "summary_zh": "returning_tier_commenter_share位於 benchmark 的偏低區間，cohort 中位數為 0.145814，落在 IQR 內，比較樣本 n=48。"
+        },
+        "interpretation_hint_zh": "低於多數 benchmark 頻道，需確認這是策略選擇、資料不足，還是社群弱點。",
+        "risk_opportunity_label": "risk",
+        "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
       },
       {
         "metric": "comments_per_video",
@@ -3581,33 +3812,33 @@
         "group_label": "觀眾回訪",
         "unit": "rate",
         "polarity": "benefit_high",
-        "value": 0.0024125452352231,
-        "percentile": 6.25,
-        "percentile_band": "極低",
+        "value": 0.084783732552,
+        "percentile": 64.58333333333334,
+        "percentile_band": "典型",
         "n_cohort": 48,
         "cohort_n": 48,
         "distribution": {
           "n": 48,
-          "mean": 0.0323391228527067,
-          "median": 0.02596956938608,
-          "std": 0.0291420342509069,
-          "min": 0,
-          "p10": 0.0053003402111053,
-          "p25": 0.0131777975701529,
-          "p75": 0.0383544387820505,
-          "p90": 0.0722002443424276,
-          "max": 0.1287409700722394,
-          "iqr": 0.025176641211897596
+          "mean": 0.0782910564149583,
+          "median": 0.0669146028294999,
+          "std": 0.0634946273152039,
+          "min": 0.001933176531,
+          "p10": 0.013614020449,
+          "p25": 0.02631975986975,
+          "p75": 0.11489758597625,
+          "p90": 0.1705238827191001,
+          "max": 0.230308509436,
+          "iqr": 0.0885778261065
         },
         "comparison": {
-          "percentile_band": "極低",
-          "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.9356698517721529,
-          "value_vs_median": -0.0235570241508569,
-          "summary_zh": "核心觀眾占比位於 benchmark 的極低區間，cohort 中位數為 0.0259696，低於 IQR 下緣，比較樣本 n=48。"
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": 0.2017336675322723,
+          "value_vs_median": 0.0178691297225001,
+          "summary_zh": "核心觀眾占比位於 benchmark 的典型區間，cohort 中位數為 0.0669146，落在 IQR 內，比較樣本 n=48。"
         },
-        "interpretation_hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-        "risk_opportunity_label": "risk",
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
         "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
       },
       {
@@ -3618,33 +3849,33 @@
         "group_label": "觀眾回訪",
         "unit": "rate",
         "polarity": "mixed_high",
-        "value": 0.0191966922622563,
-        "percentile": 6.25,
-        "percentile_band": "極低",
+        "value": 0.1956585942114589,
+        "percentile": 29.166666666666668,
+        "percentile_band": "典型",
         "n_cohort": 48,
         "cohort_n": 48,
         "distribution": {
           "n": 48,
-          "mean": 0.212544172384755,
-          "median": 0.1802942819241291,
-          "std": 0.1490349335045886,
-          "min": 0,
-          "p10": 0.0431111894202277,
-          "p25": 0.1026426611614835,
-          "p75": 0.2895624443254263,
-          "p90": 0.4253823455266,
-          "max": 0.6895271250362635,
-          "iqr": 0.1869197831639428
+          "mean": 0.2913518891009847,
+          "median": 0.2688957584572139,
+          "std": 0.1443411010552516,
+          "min": 0.0416394299908484,
+          "p10": 0.1238206160099448,
+          "p25": 0.1850828573774246,
+          "p75": 0.364537464768729,
+          "p90": 0.4843470440184664,
+          "max": 0.6621409921671019,
+          "iqr": 0.1794546073913044
         },
         "comparison": {
-          "percentile_band": "極低",
-          "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.8618541437134989,
-          "value_vs_median": -0.16109758966187282,
-          "summary_zh": "核心觀眾留言貢獻位於 benchmark 的極低區間，cohort 中位數為 0.180294，低於 IQR 下緣，比較樣本 n=48。"
+          "percentile_band": "典型",
+          "iqr_position": "inside_iqr",
+          "relative_to_iqr": -0.40810969030212696,
+          "value_vs_median": -0.07323716424575502,
+          "summary_zh": "核心觀眾留言貢獻位於 benchmark 的典型區間，cohort 中位數為 0.268896，落在 IQR 內，比較樣本 n=48。"
         },
-        "interpretation_hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-        "risk_opportunity_label": "watch",
+        "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+        "risk_opportunity_label": "context",
         "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
       },
       {
@@ -3885,10 +4116,10 @@
         "distribution": {
           "n": 47,
           "mean": 0.2893770676554902,
-          "median": 0.2755542787832359,
+          "median": 0.275554278783236,
           "std": 0.0792455177004428,
           "min": 0.1766566656001545,
-          "p10": 0.2018761565607142,
+          "p10": 0.2018761565607141,
           "p25": 0.2216637503106328,
           "p75": 0.3423849656321267,
           "p90": 0.3904993436659827,
@@ -3898,8 +4129,8 @@
         "comparison": {
           "percentile_band": "偏低",
           "iqr_position": "below_iqr",
-          "relative_to_iqr": -0.5763863159901845,
-          "value_vs_median": -0.06958205656101371,
+          "relative_to_iqr": -0.5763863159901854,
+          "value_vs_median": -0.06958205656101382,
           "summary_zh": "社群集中度 HHI位於 benchmark 的偏低區間，cohort 中位數為 0.275554，低於 IQR 下緣，比較樣本 n=47。"
         },
         "interpretation_hint_zh": "社群較分散，抗單一群體波動較佳，但核心動員力可能較弱。",
@@ -3914,7 +4145,7 @@
         "group_label": "留言者社群結構",
         "unit": "score",
         "polarity": "benefit_high",
-        "value": 0.7110561406026507,
+        "value": 0.7110561406026508,
         "percentile": 63.82978723404256,
         "percentile_band": "典型",
         "n_cohort": 47,
@@ -3929,14 +4160,14 @@
           "p25": 0.6426147567981162,
           "p75": 0.7290812281683914,
           "p90": 0.7583341091711132,
-          "max": 0.8136497696998726,
+          "max": 0.8136497696998728,
           "iqr": 0.08646647137027519
         },
         "comparison": {
           "percentile_band": "典型",
           "iqr_position": "inside_iqr",
-          "relative_to_iqr": 0.21798453499228693,
-          "value_vs_median": 0.018848353554073327,
+          "relative_to_iqr": 0.2179845349922882,
+          "value_vs_median": 0.018848353554073438,
           "summary_zh": "橋接觀眾參與度位於 benchmark 的典型區間，cohort 中位數為 0.692208，落在 IQR 內，比較樣本 n=47。"
         },
         "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
@@ -4721,7 +4952,7 @@
         "statistical_caution_zh": "高風險指標只代表留言區相對更負面或衝突，不能單獨證明原因。"
       }
     ],
-    "n_metrics": 41,
+    "n_metrics": 47,
     "percentile_takeaways": [
       {
         "metric": "commenters_per_video",
@@ -4750,62 +4981,6 @@
           "iqr": 166.4162729260837
         },
         "caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
-      },
-      {
-        "metric": "high_mid_tier_commenter_share",
-        "label": "核心觀眾占比",
-        "label_en": "Core audience share",
-        "group": "retention",
-        "group_label": "觀眾回訪",
-        "value": 0.0024125452352231,
-        "percentile": 6.25,
-        "percentile_band": "極低",
-        "direction": "low",
-        "risk_opportunity_label": "risk",
-        "headline_zh": "需要注意：核心觀眾占比極低",
-        "interpretation_hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-        "distribution": {
-          "n": 48,
-          "mean": 0.0323391228527067,
-          "median": 0.02596956938608,
-          "std": 0.0291420342509069,
-          "min": 0,
-          "p10": 0.0053003402111053,
-          "p25": 0.0131777975701529,
-          "p75": 0.0383544387820505,
-          "p90": 0.0722002443424276,
-          "max": 0.1287409700722394,
-          "iqr": 0.025176641211897596
-        },
-        "caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
-      },
-      {
-        "metric": "high_mid_tier_comment_share",
-        "label": "核心觀眾留言貢獻",
-        "label_en": "Core audience comment share",
-        "group": "retention",
-        "group_label": "觀眾回訪",
-        "value": 0.0191966922622563,
-        "percentile": 6.25,
-        "percentile_band": "極低",
-        "direction": "low",
-        "risk_opportunity_label": "watch",
-        "headline_zh": "結構異常：核心觀眾留言貢獻極低",
-        "interpretation_hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-        "distribution": {
-          "n": 48,
-          "mean": 0.212544172384755,
-          "median": 0.1802942819241291,
-          "std": 0.1490349335045886,
-          "min": 0,
-          "p10": 0.0431111894202277,
-          "p25": 0.1026426611614835,
-          "p75": 0.2895624443254263,
-          "p90": 0.4253823455266,
-          "max": 0.6895271250362635,
-          "iqr": 0.1869197831639428
-        },
-        "caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
       },
       {
         "metric": "largest_community_share",
@@ -4946,47 +5121,66 @@
           "iqr": 0.0406174946498733
         },
         "caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+      },
+      {
+        "metric": "max_video_reply_count_weighted_conflict_score",
+        "label": "回覆量加權衝突峰值",
+        "label_en": "Max reply-weighted conflict",
+        "group": "reply_conflict",
+        "group_label": "回覆區衝突",
+        "value": 0.4615384615384615,
+        "percentile": 10.416666666666668,
+        "percentile_band": "偏低",
+        "direction": "low",
+        "risk_opportunity_label": "opportunity",
+        "headline_zh": "可放大優勢：回覆量加權衝突峰值偏低",
+        "interpretation_hint_zh": "即使有衝突，也較少擴成大規模回覆串。",
+        "distribution": {
+          "n": 48,
+          "mean": 7.201516583018839,
+          "median": 2.4019607843137254,
+          "std": 19.969353932568605,
+          "min": 0,
+          "p10": 0.4884615384615385,
+          "p25": 0.9952830188679244,
+          "p75": 4.629668356166993,
+          "p90": 11.932751353402985,
+          "max": 131.54489603024575,
+          "iqr": 3.634385337299069
+        },
+        "caution_zh": "高風險指標只代表留言區相對更負面或衝突，不能單獨證明原因。"
+      },
+      {
+        "metric": "max_video_conflict_score",
+        "label": "單支影片最高衝突分數",
+        "label_en": "Max video conflict score",
+        "group": "reply_conflict",
+        "group_label": "回覆區衝突",
+        "value": 0.4736842105263157,
+        "percentile": 14.583333333333334,
+        "percentile_band": "偏低",
+        "direction": "low",
+        "risk_opportunity_label": "opportunity",
+        "headline_zh": "可放大優勢：單支影片最高衝突分數偏低",
+        "interpretation_hint_zh": "沒有明顯高衝突影片。",
+        "distribution": {
+          "n": 48,
+          "mean": 5.674027309672941,
+          "median": 1.820277777777778,
+          "std": 15.13339978866608,
+          "min": 0,
+          "p10": 0.3890909090909091,
+          "p25": 0.6085516410719662,
+          "p75": 2.959090909090909,
+          "p90": 12.448931248265016,
+          "max": 98.79953650057938,
+          "iqr": 2.3505392680189425
+        },
+        "caution_zh": "高風險指標只代表留言區相對更負面或衝突，不能單獨證明原因。"
       }
     ],
     "risk_opportunity_summary": {
       "risk_flags": [
-        {
-          "metric": "high_mid_tier_commenter_share",
-          "label": "核心觀眾占比",
-          "label_en": "Core audience share",
-          "group": "retention",
-          "group_label": "觀眾回訪",
-          "unit": "rate",
-          "polarity": "benefit_high",
-          "value": 0.0024125452352231,
-          "percentile": 6.25,
-          "percentile_band": "極低",
-          "n_cohort": 48,
-          "cohort_n": 48,
-          "distribution": {
-            "n": 48,
-            "mean": 0.0323391228527067,
-            "median": 0.02596956938608,
-            "std": 0.0291420342509069,
-            "min": 0,
-            "p10": 0.0053003402111053,
-            "p25": 0.0131777975701529,
-            "p75": 0.0383544387820505,
-            "p90": 0.0722002443424276,
-            "max": 0.1287409700722394,
-            "iqr": 0.025176641211897596
-          },
-          "comparison": {
-            "percentile_band": "極低",
-            "iqr_position": "below_iqr",
-            "relative_to_iqr": -0.9356698517721529,
-            "value_vs_median": -0.0235570241508569,
-            "summary_zh": "核心觀眾占比位於 benchmark 的極低區間，cohort 中位數為 0.0259696，低於 IQR 下緣，比較樣本 n=48。"
-          },
-          "interpretation_hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-          "risk_opportunity_label": "risk",
-          "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
-        },
         {
           "metric": "continuity_return_rate_w4",
           "label": "四週留存率",
@@ -5214,43 +5408,6 @@
       ],
       "watch_flags": [
         {
-          "metric": "high_mid_tier_comment_share",
-          "label": "核心觀眾留言貢獻",
-          "label_en": "Core audience comment share",
-          "group": "retention",
-          "group_label": "觀眾回訪",
-          "unit": "rate",
-          "polarity": "mixed_high",
-          "value": 0.0191966922622563,
-          "percentile": 6.25,
-          "percentile_band": "極低",
-          "n_cohort": 48,
-          "cohort_n": 48,
-          "distribution": {
-            "n": 48,
-            "mean": 0.212544172384755,
-            "median": 0.1802942819241291,
-            "std": 0.1490349335045886,
-            "min": 0,
-            "p10": 0.0431111894202277,
-            "p25": 0.1026426611614835,
-            "p75": 0.2895624443254263,
-            "p90": 0.4253823455266,
-            "max": 0.6895271250362635,
-            "iqr": 0.1869197831639428
-          },
-          "comparison": {
-            "percentile_band": "極低",
-            "iqr_position": "below_iqr",
-            "relative_to_iqr": -0.8618541437134989,
-            "value_vs_median": -0.16109758966187282,
-            "summary_zh": "核心觀眾留言貢獻位於 benchmark 的極低區間，cohort 中位數為 0.180294，低於 IQR 下緣，比較樣本 n=48。"
-          },
-          "interpretation_hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-          "risk_opportunity_label": "watch",
-          "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
-        },
-        {
           "metric": "largest_community_share",
           "label": "最大社群占比",
           "label_en": "Largest community share",
@@ -5377,10 +5534,10 @@
           "distribution": {
             "n": 47,
             "mean": 0.2893770676554902,
-            "median": 0.2755542787832359,
+            "median": 0.275554278783236,
             "std": 0.0792455177004428,
             "min": 0.1766566656001545,
-            "p10": 0.2018761565607142,
+            "p10": 0.2018761565607141,
             "p25": 0.2216637503106328,
             "p75": 0.3423849656321267,
             "p90": 0.3904993436659827,
@@ -5390,11 +5547,48 @@
           "comparison": {
             "percentile_band": "偏低",
             "iqr_position": "below_iqr",
-            "relative_to_iqr": -0.5763863159901845,
-            "value_vs_median": -0.06958205656101371,
+            "relative_to_iqr": -0.5763863159901854,
+            "value_vs_median": -0.06958205656101382,
             "summary_zh": "社群集中度 HHI位於 benchmark 的偏低區間，cohort 中位數為 0.275554，低於 IQR 下緣，比較樣本 n=47。"
           },
           "interpretation_hint_zh": "社群較分散，抗單一群體波動較佳，但核心動員力可能較弱。",
+          "risk_opportunity_label": "watch",
+          "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
+        },
+        {
+          "metric": "video_network_modularity",
+          "label": "影片共享觀眾分群度",
+          "label_en": "Shared-audience video modularity",
+          "group": "video_network",
+          "group_label": "影片共享觀眾結構",
+          "unit": "score",
+          "polarity": "mixed_high",
+          "value": 0.0510257777777777,
+          "percentile": 20.833333333333336,
+          "percentile_band": "偏低",
+          "n_cohort": 48,
+          "cohort_n": 48,
+          "distribution": {
+            "n": 48,
+            "mean": 0.1742798067023209,
+            "median": 0.1350800234016265,
+            "std": 0.1494311354003755,
+            "min": 0,
+            "p10": 0.029839676183012,
+            "p25": 0.0618889726326032,
+            "p75": 0.2288609871657804,
+            "p90": 0.3584748260965967,
+            "max": 0.8144943212547323,
+            "iqr": 0.1669720145331772
+          },
+          "comparison": {
+            "percentile_band": "偏低",
+            "iqr_position": "below_iqr",
+            "relative_to_iqr": -0.5034031951932119,
+            "value_vs_median": -0.0840542456238488,
+            "summary_zh": "影片共享觀眾分群度位於 benchmark 的偏低區間，cohort 中位數為 0.13508，低於 IQR 下緣，比較樣本 n=48。"
+          },
+          "interpretation_hint_zh": "影片觀眾混合度高，內容線可能較一致。",
           "risk_opportunity_label": "watch",
           "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
         }
@@ -5549,41 +5743,41 @@
           "statistical_caution_zh": "這是資料覆蓋量或樣本規模，不應直接解讀為頻道表現好壞。"
         },
         {
-          "metric": "positive_rate",
-          "label": "正面留言率",
-          "label_en": "Positive comment rate",
-          "group": "sentiment",
-          "group_label": "情緒氣候",
+          "metric": "high_mid_tier_comment_share",
+          "label": "核心觀眾留言貢獻",
+          "label_en": "Core audience comment share",
+          "group": "retention",
+          "group_label": "觀眾回訪",
           "unit": "rate",
-          "polarity": "benefit_high",
-          "value": 0.2302706390720946,
-          "percentile": 33.33333333333333,
+          "polarity": "mixed_high",
+          "value": 0.1956585942114589,
+          "percentile": 29.166666666666668,
           "percentile_band": "典型",
           "n_cohort": 48,
           "cohort_n": 48,
           "distribution": {
             "n": 48,
-            "mean": 0.3569718468470435,
-            "median": 0.3375704564410636,
-            "std": 0.1840580100445165,
-            "min": 0.0718767975736024,
-            "p10": 0.1356525929135519,
-            "p25": 0.1973992638683862,
-            "p75": 0.4966481993506806,
-            "p90": 0.6228961509300678,
-            "max": 0.7687897396880604,
-            "iqr": 0.2992489354822944
+            "mean": 0.2913518891009847,
+            "median": 0.2688957584572139,
+            "std": 0.1443411010552516,
+            "min": 0.0416394299908484,
+            "p10": 0.1238206160099448,
+            "p25": 0.1850828573774246,
+            "p75": 0.364537464768729,
+            "p90": 0.4843470440184664,
+            "max": 0.6621409921671019,
+            "iqr": 0.1794546073913044
           },
           "comparison": {
             "percentile_band": "典型",
             "iqr_position": "inside_iqr",
-            "relative_to_iqr": -0.3585637395703203,
-            "value_vs_median": -0.10729981736896899,
-            "summary_zh": "正面留言率位於 benchmark 的典型區間，cohort 中位數為 0.33757，落在 IQR 內，比較樣本 n=48。"
+            "relative_to_iqr": -0.40810969030212696,
+            "value_vs_median": -0.07323716424575502,
+            "summary_zh": "核心觀眾留言貢獻位於 benchmark 的典型區間，cohort 中位數為 0.268896，落在 IQR 內，比較樣本 n=48。"
           },
           "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
           "risk_opportunity_label": "context",
-          "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
+          "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
         }
       ],
       "principle_zh": "這些標籤只表示相對 benchmark 的統計位置，不能單獨推論因果或頻道品質。"
@@ -5597,7 +5791,7 @@
       "summary_zh": "多數指標落在同儕中段；需要透過影片熱點、主題與時間序列找具體突破口。",
       "scores": {
         "engagement_conversion": 79.16666666666667,
-        "audience_stickiness": 6.944444444444444,
+        "audience_stickiness": 34.02777777777778,
         "conversation_quality": 49.479166666666664,
         "risk_pressure": 31.770833333333332,
         "community_concentration": 9.929078014184396,
@@ -5649,28 +5843,28 @@
         "label": "核心黏著度",
         "short_label": "黏著",
         "question_zh": "留言區是否有穩定回來的核心觀眾，而不是每支影片都重新開始？",
-        "score": 6.944444444444444,
-        "band": "非常低",
+        "score": 34.02777777777778,
+        "band": "偏低",
         "polarity": "benefit_high",
         "interpretation_zh": "留言者偏一次性，應補強系列承接、回訪誘因與留言互動節奏。",
         "components": [
           {
             "metric": "high_mid_tier_commenter_share",
             "label": "核心觀眾占比",
-            "value": 0.0024125452352231,
-            "percentile": 6.25,
-            "contribution": 6.25,
+            "value": 0.084783732552,
+            "percentile": 64.58333333333334,
+            "contribution": 64.58333333333334,
             "direction": "direct",
-            "hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。"
+            "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
           },
           {
             "metric": "high_mid_tier_comment_share",
             "label": "核心觀眾留言貢獻",
-            "value": 0.0191966922622563,
-            "percentile": 6.25,
-            "contribution": 6.25,
+            "value": 0.1956585942114589,
+            "percentile": 29.166666666666668,
+            "contribution": 29.166666666666668,
             "direction": "direct",
-            "hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。"
+            "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
           },
           {
             "metric": "continuity_return_rate_w4",
@@ -5849,7 +6043,7 @@
           {
             "metric": "top_bridge_participation_mean",
             "label": "橋接觀眾參與度",
-            "value": 0.7110561406026507,
+            "value": 0.7110561406026508,
             "percentile": 63.82978723404256,
             "contribution": 63.82978723404256,
             "direction": "direct",
@@ -5908,28 +6102,28 @@
             "label": "核心黏著度",
             "short_label": "黏著",
             "question_zh": "留言區是否有穩定回來的核心觀眾，而不是每支影片都重新開始？",
-            "score": 6.944444444444444,
-            "band": "非常低",
+            "score": 34.02777777777778,
+            "band": "偏低",
             "polarity": "benefit_high",
             "interpretation_zh": "留言者偏一次性，應補強系列承接、回訪誘因與留言互動節奏。",
             "components": [
               {
                 "metric": "high_mid_tier_commenter_share",
                 "label": "核心觀眾占比",
-                "value": 0.0024125452352231,
-                "percentile": 6.25,
-                "contribution": 6.25,
+                "value": 0.084783732552,
+                "percentile": 64.58333333333334,
+                "contribution": 64.58333333333334,
                 "direction": "direct",
-                "hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。"
+                "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
               },
               {
                 "metric": "high_mid_tier_comment_share",
                 "label": "核心觀眾留言貢獻",
-                "value": 0.0191966922622563,
-                "percentile": 6.25,
-                "contribution": 6.25,
+                "value": 0.1956585942114589,
+                "percentile": 29.166666666666668,
+                "contribution": 29.166666666666668,
                 "direction": "direct",
-                "hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。"
+                "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
               },
               {
                 "metric": "continuity_return_rate_w4",
@@ -6159,33 +6353,33 @@
             "group_label": "觀眾回訪",
             "unit": "rate",
             "polarity": "benefit_high",
-            "value": 0.0024125452352231,
-            "percentile": 6.25,
-            "percentile_band": "極低",
+            "value": 0.084783732552,
+            "percentile": 64.58333333333334,
+            "percentile_band": "典型",
             "n_cohort": 48,
             "cohort_n": 48,
             "distribution": {
               "n": 48,
-              "mean": 0.0323391228527067,
-              "median": 0.02596956938608,
-              "std": 0.0291420342509069,
-              "min": 0,
-              "p10": 0.0053003402111053,
-              "p25": 0.0131777975701529,
-              "p75": 0.0383544387820505,
-              "p90": 0.0722002443424276,
-              "max": 0.1287409700722394,
-              "iqr": 0.025176641211897596
+              "mean": 0.0782910564149583,
+              "median": 0.0669146028294999,
+              "std": 0.0634946273152039,
+              "min": 0.001933176531,
+              "p10": 0.013614020449,
+              "p25": 0.02631975986975,
+              "p75": 0.11489758597625,
+              "p90": 0.1705238827191001,
+              "max": 0.230308509436,
+              "iqr": 0.0885778261065
             },
             "comparison": {
-              "percentile_band": "極低",
-              "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.9356698517721529,
-              "value_vs_median": -0.0235570241508569,
-              "summary_zh": "核心觀眾占比位於 benchmark 的極低區間，cohort 中位數為 0.0259696，低於 IQR 下緣，比較樣本 n=48。"
+              "percentile_band": "典型",
+              "iqr_position": "inside_iqr",
+              "relative_to_iqr": 0.2017336675322723,
+              "value_vs_median": 0.0178691297225001,
+              "summary_zh": "核心觀眾占比位於 benchmark 的典型區間，cohort 中位數為 0.0669146，落在 IQR 內，比較樣本 n=48。"
             },
-            "interpretation_hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-            "risk_opportunity_label": "risk",
+            "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+            "risk_opportunity_label": "context",
             "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
           },
           {
@@ -6196,33 +6390,33 @@
             "group_label": "觀眾回訪",
             "unit": "rate",
             "polarity": "mixed_high",
-            "value": 0.0191966922622563,
-            "percentile": 6.25,
-            "percentile_band": "極低",
+            "value": 0.1956585942114589,
+            "percentile": 29.166666666666668,
+            "percentile_band": "典型",
             "n_cohort": 48,
             "cohort_n": 48,
             "distribution": {
               "n": 48,
-              "mean": 0.212544172384755,
-              "median": 0.1802942819241291,
-              "std": 0.1490349335045886,
-              "min": 0,
-              "p10": 0.0431111894202277,
-              "p25": 0.1026426611614835,
-              "p75": 0.2895624443254263,
-              "p90": 0.4253823455266,
-              "max": 0.6895271250362635,
-              "iqr": 0.1869197831639428
+              "mean": 0.2913518891009847,
+              "median": 0.2688957584572139,
+              "std": 0.1443411010552516,
+              "min": 0.0416394299908484,
+              "p10": 0.1238206160099448,
+              "p25": 0.1850828573774246,
+              "p75": 0.364537464768729,
+              "p90": 0.4843470440184664,
+              "max": 0.6621409921671019,
+              "iqr": 0.1794546073913044
             },
             "comparison": {
-              "percentile_band": "極低",
-              "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.8618541437134989,
-              "value_vs_median": -0.16109758966187282,
-              "summary_zh": "核心觀眾留言貢獻位於 benchmark 的極低區間，cohort 中位數為 0.180294，低於 IQR 下緣，比較樣本 n=48。"
+              "percentile_band": "典型",
+              "iqr_position": "inside_iqr",
+              "relative_to_iqr": -0.40810969030212696,
+              "value_vs_median": -0.07323716424575502,
+              "summary_zh": "核心觀眾留言貢獻位於 benchmark 的典型區間，cohort 中位數為 0.268896，落在 IQR 內，比較樣本 n=48。"
             },
-            "interpretation_hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-            "risk_opportunity_label": "watch",
+            "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+            "risk_opportunity_label": "context",
             "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
           },
           {
@@ -6462,28 +6656,28 @@
             "label": "核心黏著度",
             "short_label": "黏著",
             "question_zh": "留言區是否有穩定回來的核心觀眾，而不是每支影片都重新開始？",
-            "score": 6.944444444444444,
-            "band": "非常低",
+            "score": 34.02777777777778,
+            "band": "偏低",
             "polarity": "benefit_high",
             "interpretation_zh": "留言者偏一次性，應補強系列承接、回訪誘因與留言互動節奏。",
             "components": [
               {
                 "metric": "high_mid_tier_commenter_share",
                 "label": "核心觀眾占比",
-                "value": 0.0024125452352231,
-                "percentile": 6.25,
-                "contribution": 6.25,
+                "value": 0.084783732552,
+                "percentile": 64.58333333333334,
+                "contribution": 64.58333333333334,
                 "direction": "direct",
-                "hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。"
+                "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
               },
               {
                 "metric": "high_mid_tier_comment_share",
                 "label": "核心觀眾留言貢獻",
-                "value": 0.0191966922622563,
-                "percentile": 6.25,
-                "contribution": 6.25,
+                "value": 0.1956585942114589,
+                "percentile": 29.166666666666668,
+                "contribution": 29.166666666666668,
                 "direction": "direct",
-                "hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。"
+                "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
               },
               {
                 "metric": "continuity_return_rate_w4",
@@ -6656,33 +6850,33 @@
             "group_label": "觀眾回訪",
             "unit": "rate",
             "polarity": "benefit_high",
-            "value": 0.0024125452352231,
-            "percentile": 6.25,
-            "percentile_band": "極低",
+            "value": 0.084783732552,
+            "percentile": 64.58333333333334,
+            "percentile_band": "典型",
             "n_cohort": 48,
             "cohort_n": 48,
             "distribution": {
               "n": 48,
-              "mean": 0.0323391228527067,
-              "median": 0.02596956938608,
-              "std": 0.0291420342509069,
-              "min": 0,
-              "p10": 0.0053003402111053,
-              "p25": 0.0131777975701529,
-              "p75": 0.0383544387820505,
-              "p90": 0.0722002443424276,
-              "max": 0.1287409700722394,
-              "iqr": 0.025176641211897596
+              "mean": 0.0782910564149583,
+              "median": 0.0669146028294999,
+              "std": 0.0634946273152039,
+              "min": 0.001933176531,
+              "p10": 0.013614020449,
+              "p25": 0.02631975986975,
+              "p75": 0.11489758597625,
+              "p90": 0.1705238827191001,
+              "max": 0.230308509436,
+              "iqr": 0.0885778261065
             },
             "comparison": {
-              "percentile_band": "極低",
-              "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.9356698517721529,
-              "value_vs_median": -0.0235570241508569,
-              "summary_zh": "核心觀眾占比位於 benchmark 的極低區間，cohort 中位數為 0.0259696，低於 IQR 下緣，比較樣本 n=48。"
+              "percentile_band": "典型",
+              "iqr_position": "inside_iqr",
+              "relative_to_iqr": 0.2017336675322723,
+              "value_vs_median": 0.0178691297225001,
+              "summary_zh": "核心觀眾占比位於 benchmark 的典型區間，cohort 中位數為 0.0669146，落在 IQR 內，比較樣本 n=48。"
             },
-            "interpretation_hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-            "risk_opportunity_label": "risk",
+            "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+            "risk_opportunity_label": "context",
             "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
           },
           {
@@ -6693,33 +6887,33 @@
             "group_label": "觀眾回訪",
             "unit": "rate",
             "polarity": "mixed_high",
-            "value": 0.0191966922622563,
-            "percentile": 6.25,
-            "percentile_band": "極低",
+            "value": 0.1956585942114589,
+            "percentile": 29.166666666666668,
+            "percentile_band": "典型",
             "n_cohort": 48,
             "cohort_n": 48,
             "distribution": {
               "n": 48,
-              "mean": 0.212544172384755,
-              "median": 0.1802942819241291,
-              "std": 0.1490349335045886,
-              "min": 0,
-              "p10": 0.0431111894202277,
-              "p25": 0.1026426611614835,
-              "p75": 0.2895624443254263,
-              "p90": 0.4253823455266,
-              "max": 0.6895271250362635,
-              "iqr": 0.1869197831639428
+              "mean": 0.2913518891009847,
+              "median": 0.2688957584572139,
+              "std": 0.1443411010552516,
+              "min": 0.0416394299908484,
+              "p10": 0.1238206160099448,
+              "p25": 0.1850828573774246,
+              "p75": 0.364537464768729,
+              "p90": 0.4843470440184664,
+              "max": 0.6621409921671019,
+              "iqr": 0.1794546073913044
             },
             "comparison": {
-              "percentile_band": "極低",
-              "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.8618541437134989,
-              "value_vs_median": -0.16109758966187282,
-              "summary_zh": "核心觀眾留言貢獻位於 benchmark 的極低區間，cohort 中位數為 0.180294，低於 IQR 下緣，比較樣本 n=48。"
+              "percentile_band": "典型",
+              "iqr_position": "inside_iqr",
+              "relative_to_iqr": -0.40810969030212696,
+              "value_vs_median": -0.07323716424575502,
+              "summary_zh": "核心觀眾留言貢獻位於 benchmark 的典型區間，cohort 中位數為 0.268896，落在 IQR 內，比較樣本 n=48。"
             },
-            "interpretation_hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-            "risk_opportunity_label": "watch",
+            "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+            "risk_opportunity_label": "context",
             "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
           },
           {
@@ -6849,10 +7043,10 @@
             "distribution": {
               "n": 47,
               "mean": 0.2893770676554902,
-              "median": 0.2755542787832359,
+              "median": 0.275554278783236,
               "std": 0.0792455177004428,
               "min": 0.1766566656001545,
-              "p10": 0.2018761565607142,
+              "p10": 0.2018761565607141,
               "p25": 0.2216637503106328,
               "p75": 0.3423849656321267,
               "p90": 0.3904993436659827,
@@ -6862,8 +7056,8 @@
             "comparison": {
               "percentile_band": "偏低",
               "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.5763863159901845,
-              "value_vs_median": -0.06958205656101371,
+              "relative_to_iqr": -0.5763863159901854,
+              "value_vs_median": -0.06958205656101382,
               "summary_zh": "社群集中度 HHI位於 benchmark 的偏低區間，cohort 中位數為 0.275554，低於 IQR 下緣，比較樣本 n=47。"
             },
             "interpretation_hint_zh": "社群較分散，抗單一群體波動較佳，但核心動員力可能較弱。",
@@ -6909,7 +7103,7 @@
               {
                 "metric": "top_bridge_participation_mean",
                 "label": "橋接觀眾參與度",
-                "value": 0.7110561406026507,
+                "value": 0.7110561406026508,
                 "percentile": 63.82978723404256,
                 "contribution": 63.82978723404256,
                 "direction": "direct",
@@ -6961,28 +7155,28 @@
             "label": "核心黏著度",
             "short_label": "黏著",
             "question_zh": "留言區是否有穩定回來的核心觀眾，而不是每支影片都重新開始？",
-            "score": 6.944444444444444,
-            "band": "非常低",
+            "score": 34.02777777777778,
+            "band": "偏低",
             "polarity": "benefit_high",
             "interpretation_zh": "留言者偏一次性，應補強系列承接、回訪誘因與留言互動節奏。",
             "components": [
               {
                 "metric": "high_mid_tier_commenter_share",
                 "label": "核心觀眾占比",
-                "value": 0.0024125452352231,
-                "percentile": 6.25,
-                "contribution": 6.25,
+                "value": 0.084783732552,
+                "percentile": 64.58333333333334,
+                "contribution": 64.58333333333334,
                 "direction": "direct",
-                "hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。"
+                "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
               },
               {
                 "metric": "high_mid_tier_comment_share",
                 "label": "核心觀眾留言貢獻",
-                "value": 0.0191966922622563,
-                "percentile": 6.25,
-                "contribution": 6.25,
+                "value": 0.1956585942114589,
+                "percentile": 29.166666666666668,
+                "contribution": 29.166666666666668,
                 "direction": "direct",
-                "hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。"
+                "hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。"
               },
               {
                 "metric": "continuity_return_rate_w4",
@@ -7079,7 +7273,7 @@
             "group_label": "留言者社群結構",
             "unit": "score",
             "polarity": "benefit_high",
-            "value": 0.7110561406026507,
+            "value": 0.7110561406026508,
             "percentile": 63.82978723404256,
             "percentile_band": "典型",
             "n_cohort": 47,
@@ -7094,14 +7288,14 @@
               "p25": 0.6426147567981162,
               "p75": 0.7290812281683914,
               "p90": 0.7583341091711132,
-              "max": 0.8136497696998726,
+              "max": 0.8136497696998728,
               "iqr": 0.08646647137027519
             },
             "comparison": {
               "percentile_band": "典型",
               "iqr_position": "inside_iqr",
-              "relative_to_iqr": 0.21798453499228693,
-              "value_vs_median": 0.018848353554073327,
+              "relative_to_iqr": 0.2179845349922882,
+              "value_vs_median": 0.018848353554073438,
               "summary_zh": "橋接觀眾參與度位於 benchmark 的典型區間，cohort 中位數為 0.692208，落在 IQR 內，比較樣本 n=47。"
             },
             "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
@@ -7227,33 +7421,33 @@
             "group_label": "觀眾回訪",
             "unit": "rate",
             "polarity": "benefit_high",
-            "value": 0.0024125452352231,
-            "percentile": 6.25,
-            "percentile_band": "極低",
+            "value": 0.084783732552,
+            "percentile": 64.58333333333334,
+            "percentile_band": "典型",
             "n_cohort": 48,
             "cohort_n": 48,
             "distribution": {
               "n": 48,
-              "mean": 0.0323391228527067,
-              "median": 0.02596956938608,
-              "std": 0.0291420342509069,
-              "min": 0,
-              "p10": 0.0053003402111053,
-              "p25": 0.0131777975701529,
-              "p75": 0.0383544387820505,
-              "p90": 0.0722002443424276,
-              "max": 0.1287409700722394,
-              "iqr": 0.025176641211897596
+              "mean": 0.0782910564149583,
+              "median": 0.0669146028294999,
+              "std": 0.0634946273152039,
+              "min": 0.001933176531,
+              "p10": 0.013614020449,
+              "p25": 0.02631975986975,
+              "p75": 0.11489758597625,
+              "p90": 0.1705238827191001,
+              "max": 0.230308509436,
+              "iqr": 0.0885778261065
             },
             "comparison": {
-              "percentile_band": "極低",
-              "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.9356698517721529,
-              "value_vs_median": -0.0235570241508569,
-              "summary_zh": "核心觀眾占比位於 benchmark 的極低區間，cohort 中位數為 0.0259696，低於 IQR 下緣，比較樣本 n=48。"
+              "percentile_band": "典型",
+              "iqr_position": "inside_iqr",
+              "relative_to_iqr": 0.2017336675322723,
+              "value_vs_median": 0.0178691297225001,
+              "summary_zh": "核心觀眾占比位於 benchmark 的典型區間，cohort 中位數為 0.0669146，落在 IQR 內，比較樣本 n=48。"
             },
-            "interpretation_hint_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-            "risk_opportunity_label": "risk",
+            "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+            "risk_opportunity_label": "context",
             "statistical_caution_zh": "高百分位通常是有利訊號，但仍需確認是否由少數爆款或特殊事件造成。"
           },
           {
@@ -7264,33 +7458,33 @@
             "group_label": "觀眾回訪",
             "unit": "rate",
             "polarity": "mixed_high",
-            "value": 0.0191966922622563,
-            "percentile": 6.25,
-            "percentile_band": "極低",
+            "value": 0.1956585942114589,
+            "percentile": 29.166666666666668,
+            "percentile_band": "典型",
             "n_cohort": 48,
             "cohort_n": 48,
             "distribution": {
               "n": 48,
-              "mean": 0.212544172384755,
-              "median": 0.1802942819241291,
-              "std": 0.1490349335045886,
-              "min": 0,
-              "p10": 0.0431111894202277,
-              "p25": 0.1026426611614835,
-              "p75": 0.2895624443254263,
-              "p90": 0.4253823455266,
-              "max": 0.6895271250362635,
-              "iqr": 0.1869197831639428
+              "mean": 0.2913518891009847,
+              "median": 0.2688957584572139,
+              "std": 0.1443411010552516,
+              "min": 0.0416394299908484,
+              "p10": 0.1238206160099448,
+              "p25": 0.1850828573774246,
+              "p75": 0.364537464768729,
+              "p90": 0.4843470440184664,
+              "max": 0.6621409921671019,
+              "iqr": 0.1794546073913044
             },
             "comparison": {
-              "percentile_band": "極低",
-              "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.8618541437134989,
-              "value_vs_median": -0.16109758966187282,
-              "summary_zh": "核心觀眾留言貢獻位於 benchmark 的極低區間，cohort 中位數為 0.180294，低於 IQR 下緣，比較樣本 n=48。"
+              "percentile_band": "典型",
+              "iqr_position": "inside_iqr",
+              "relative_to_iqr": -0.40810969030212696,
+              "value_vs_median": -0.07323716424575502,
+              "summary_zh": "核心觀眾留言貢獻位於 benchmark 的典型區間，cohort 中位數為 0.268896，落在 IQR 內，比較樣本 n=48。"
             },
-            "interpretation_hint_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-            "risk_opportunity_label": "watch",
+            "interpretation_hint_zh": "位於 cohort 中段，單獨看不是突出的異常；建議搭配時間序列、主題與影片熱點判讀。",
+            "risk_opportunity_label": "context",
             "statistical_caution_zh": "此指標高低沒有單一好壞方向，必須搭配內容主題、情緒與時間變化解讀。"
           },
           {
@@ -7787,10 +7981,10 @@
             "distribution": {
               "n": 47,
               "mean": 0.2893770676554902,
-              "median": 0.2755542787832359,
+              "median": 0.275554278783236,
               "std": 0.0792455177004428,
               "min": 0.1766566656001545,
-              "p10": 0.2018761565607142,
+              "p10": 0.2018761565607141,
               "p25": 0.2216637503106328,
               "p75": 0.3423849656321267,
               "p90": 0.3904993436659827,
@@ -7800,8 +7994,8 @@
             "comparison": {
               "percentile_band": "偏低",
               "iqr_position": "below_iqr",
-              "relative_to_iqr": -0.5763863159901845,
-              "value_vs_median": -0.06958205656101371,
+              "relative_to_iqr": -0.5763863159901854,
+              "value_vs_median": -0.06958205656101382,
               "summary_zh": "社群集中度 HHI位於 benchmark 的偏低區間，cohort 中位數為 0.275554，低於 IQR 下緣，比較樣本 n=47。"
             },
             "interpretation_hint_zh": "社群較分散，抗單一群體波動較佳，但核心動員力可能較弱。",
@@ -7813,18 +8007,6 @@
       }
     ],
     "story_cards": [
-      {
-        "id": "metric_high_mid_tier_commenter_share",
-        "kind": "risk",
-        "priority": 113.75,
-        "title_zh": "需要注意：核心觀眾占比極低",
-        "body_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-        "evidence_zh": "核心觀眾占比：0.2%，PR 6.2",
-        "metrics": [
-          "high_mid_tier_commenter_share"
-        ],
-        "next_step_zh": "切到觀眾與回訪視角，確認核心觀眾是否集中在特定主題或系列。"
-      },
       {
         "id": "metric_continuity_return_rate_w4",
         "kind": "risk",
@@ -7850,18 +8032,6 @@
         "next_step_zh": "先看同儕比較，再鑽到影片與主題細表確認來源。"
       },
       {
-        "id": "metric_high_mid_tier_comment_share",
-        "kind": "watch",
-        "priority": 101.75,
-        "title_zh": "結構異常：核心觀眾留言貢獻極低",
-        "body_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-        "evidence_zh": "核心觀眾留言貢獻：1.9%，PR 6.2",
-        "metrics": [
-          "high_mid_tier_comment_share"
-        ],
-        "next_step_zh": "切到觀眾與回訪視角，確認核心觀眾是否集中在特定主題或系列。"
-      },
-      {
         "id": "metric_largest_community_share",
         "kind": "watch",
         "priority": 101.61702127659575,
@@ -7870,6 +8040,30 @@
         "evidence_zh": "最大社群占比：24.2%，PR 6.4",
         "metrics": [
           "largest_community_share"
+        ],
+        "next_step_zh": "切到社群網路頁，檢查最大社群、橋接觀眾與集中度。"
+      },
+      {
+        "id": "metric_top3_community_share",
+        "kind": "watch",
+        "priority": 99.48936170212767,
+        "title_zh": "結構異常：前三大社群占比極低",
+        "body_zh": "社群分布較平均，需看是否因此降低核心凝聚。",
+        "evidence_zh": "前三大社群占比：67.5%，PR 8.5",
+        "metrics": [
+          "top3_community_share"
+        ],
+        "next_step_zh": "切到社群網路頁，檢查最大社群、橋接觀眾與集中度。"
+      },
+      {
+        "id": "metric_commenter_network_density",
+        "kind": "watch",
+        "priority": 99.48936170212764,
+        "title_zh": "結構異常：留言者網路密度極高",
+        "body_zh": "觀眾之間重疊高，社群感可能強，但也可能代表受眾較集中。",
+        "evidence_zh": "留言者網路密度：9.9%，PR 91.5",
+        "metrics": [
+          "commenter_network_density"
         ],
         "next_step_zh": "切到社群網路頁，檢查最大社群、橋接觀眾與集中度。"
       },
@@ -7917,21 +8111,13 @@
       {
         "rank": 1,
         "kind": "risk",
-        "title_zh": "需要注意：核心觀眾占比極低",
-        "why_zh": "留言者多半是一次性參與，應檢查回訪誘因與系列內容承接。",
-        "evidence_zh": "核心觀眾占比：0.2%，PR 6.2",
-        "next_step_zh": "切到觀眾與回訪視角，確認核心觀眾是否集中在特定主題或系列。"
-      },
-      {
-        "rank": 2,
-        "kind": "risk",
         "title_zh": "需要注意：四週留存率極低",
         "why_zh": "回訪較弱，需檢查內容系列性、發布節奏與留言互動回饋。",
         "evidence_zh": "四週留存率：7.0%，PR 8.3",
         "next_step_zh": "切到觀眾與回訪視角，確認核心觀眾是否集中在特定主題或系列。"
       },
       {
-        "rank": 3,
+        "rank": 2,
         "kind": "opportunity",
         "title_zh": "可放大優勢：每支影片留言者數極高",
         "why_zh": "互動不是只靠少數人灌留言，擴散到較多觀眾。",
@@ -7939,19 +8125,27 @@
         "next_step_zh": "先看同儕比較，再鑽到影片與主題細表確認來源。"
       },
       {
-        "rank": 4,
-        "kind": "watch",
-        "title_zh": "結構異常：核心觀眾留言貢獻極低",
-        "why_zh": "留言來源分散，利於多元參與，但核心社群黏著可能較弱。",
-        "evidence_zh": "核心觀眾留言貢獻：1.9%，PR 6.2",
-        "next_step_zh": "切到觀眾與回訪視角，確認核心觀眾是否集中在特定主題或系列。"
-      },
-      {
-        "rank": 5,
+        "rank": 3,
         "kind": "watch",
         "title_zh": "結構異常：最大社群占比極低",
         "why_zh": "沒有單一社群明顯主導，留言區較分散。",
         "evidence_zh": "最大社群占比：24.2%，PR 6.4",
+        "next_step_zh": "切到社群網路頁，檢查最大社群、橋接觀眾與集中度。"
+      },
+      {
+        "rank": 4,
+        "kind": "watch",
+        "title_zh": "結構異常：前三大社群占比極低",
+        "why_zh": "社群分布較平均，需看是否因此降低核心凝聚。",
+        "evidence_zh": "前三大社群占比：67.5%，PR 8.5",
+        "next_step_zh": "切到社群網路頁，檢查最大社群、橋接觀眾與集中度。"
+      },
+      {
+        "rank": 5,
+        "kind": "watch",
+        "title_zh": "結構異常：留言者網路密度極高",
+        "why_zh": "觀眾之間重疊高，社群感可能強，但也可能代表受眾較集中。",
+        "evidence_zh": "留言者網路密度：9.9%，PR 91.5",
         "next_step_zh": "切到社群網路頁，檢查最大社群、橋接觀眾與集中度。"
       }
     ],
@@ -7978,7 +8172,7 @@
         "x_label_zh": "核心黏著度",
         "y_label_zh": "社群集中度",
         "selected": {
-          "x": 6.944444444444444,
+          "x": 34.02777777777778,
           "y": 9.929078014184396
         }
       }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-08T09:05:08.071376+00:00",
+  "generated_at": "2026-06-08T14:52:23.100423+00:00",
   "slug": "kedaibiao-full",
   "title": "课代表立正",
   "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -124,7 +124,7 @@
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/kedaibiao-full/tables/commenter_tiers.csv",
-        "bytes": 283,
+        "bytes": 345,
         "source_dir": "tables"
       },
       {
@@ -557,31 +557,40 @@
     "like_weighted_negative_rate": 0.13158151207270424,
     "commenter_tiers": [
       {
-        "activity_tier": "high",
-        "n_commenters": 31,
-        "avg_videos": 25.741935483870968,
-        "median_videos": 22.0,
-        "total_comments": 873,
-        "total_likes_received": 3812,
-        "pct_commenters": 0.4032782620007805
+        "activity_tier": "core",
+        "n_commenters": 9,
+        "avg_videos": 41.6666666667,
+        "median_videos": 36.0,
+        "total_comments": 415,
+        "total_likes_received": 2637,
+        "pct_commenters": 0.1170807857
       },
       {
-        "activity_tier": "mid",
-        "n_commenters": 267,
-        "avg_videos": 8.243445692883896,
-        "median_videos": 8.0,
-        "total_comments": 2305,
-        "total_likes_received": 8512,
-        "pct_commenters": 3.473396643684142
+        "activity_tier": "regular",
+        "n_commenters": 65,
+        "avg_videos": 14.7846153846,
+        "median_videos": 14.0,
+        "total_comments": 1021,
+        "total_likes_received": 3358,
+        "pct_commenters": 0.8455834526
       },
       {
-        "activity_tier": "low",
-        "n_commenters": 7389,
-        "avg_videos": 1.4238733252131548,
+        "activity_tier": "returning",
+        "n_commenters": 2102,
+        "avg_videos": 3.1745956232,
+        "median_videos": 2.0,
+        "total_comments": 6939,
+        "total_likes_received": 24603,
+        "pct_commenters": 27.3448679589
+      },
+      {
+        "activity_tier": "one_time",
+        "n_commenters": 5511,
+        "avg_videos": 1.0,
         "median_videos": 1.0,
-        "total_comments": 10884,
-        "total_likes_received": 36027,
-        "pct_commenters": 96.12332509431508
+        "total_comments": 5687,
+        "total_likes_received": 17753,
+        "pct_commenters": 71.6924678028
       }
     ],
     "network_summary": {

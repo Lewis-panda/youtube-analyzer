@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-08T09:05:08.071376+00:00",
+  "generated_at": "2026-06-08T14:52:23.100423+00:00",
   "slug": "superpie1111-full",
   "title": "超派人生Superpie",
   "channel_id": "UCR_352pCZIWGrqq8Zt6ap8g",
@@ -130,7 +130,7 @@
       {
         "name": "commenter_tiers",
         "path": "baseline_runs/superpie1111-full/tables/commenter_tiers.csv",
-        "bytes": 291,
+        "bytes": 354,
         "source_dir": "tables"
       },
       {
@@ -636,31 +636,40 @@
     "like_weighted_negative_rate": 0.22028913060865393,
     "commenter_tiers": [
       {
-        "activity_tier": "high",
-        "n_commenters": 346,
-        "avg_videos": 29.251445086705203,
-        "median_videos": 22.0,
-        "total_comments": 10643,
-        "total_likes_received": 48722,
-        "pct_commenters": 0.9873020402339848
+        "activity_tier": "core",
+        "n_commenters": 82,
+        "avg_videos": 55.9634146341,
+        "median_videos": 47.0,
+        "total_comments": 4807,
+        "total_likes_received": 22259,
+        "pct_commenters": 0.2339848766
       },
       {
-        "activity_tier": "mid",
-        "n_commenters": 1497,
-        "avg_videos": 8.462257849031396,
-        "median_videos": 8.0,
-        "total_comments": 13153,
-        "total_likes_received": 55287,
-        "pct_commenters": 4.271650734769581
+        "activity_tier": "regular",
+        "n_commenters": 411,
+        "avg_videos": 18.4403892944,
+        "median_videos": 17.0,
+        "total_comments": 7928,
+        "total_likes_received": 35192,
+        "pct_commenters": 1.172777857
       },
       {
-        "activity_tier": "low",
-        "n_commenters": 33202,
-        "avg_videos": 1.439792783567255,
+        "activity_tier": "returning",
+        "n_commenters": 9988,
+        "avg_videos": 3.3901682018,
+        "median_videos": 3.0,
+        "total_comments": 35105,
+        "total_likes_received": 169782,
+        "pct_commenters": 28.500499358
+      },
+      {
+        "activity_tier": "one_time",
+        "n_commenters": 24564,
+        "avg_videos": 1.0,
         "median_videos": 1.0,
-        "total_comments": 49321,
-        "total_likes_received": 248208,
-        "pct_commenters": 94.74104722499644
+        "total_comments": 25277,
+        "total_likes_received": 124984,
+        "pct_commenters": 70.0927379084
       }
     ],
     "network_summary": {

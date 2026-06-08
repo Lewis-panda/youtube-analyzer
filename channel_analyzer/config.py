@@ -14,8 +14,18 @@ DEFAULT_DB_PATH = ROOT.parent / "SharedData" / "state" / "yt_graph.sqlite3"
 class AnalysisConfig:
     min_actor_videos: int = 2
     min_co_videos: int = 3
+    # Legacy fixed video-count tier cutoffs (deprecated; kept for back-compat parsing).
     high_activity_min_videos: int = 16
     mid_activity_min_videos: int = 6
+    # Coverage-based tiers: a commenter's tier is set by catalog coverage =
+    # distinct videos commented on / total in-scope videos. Cross-channel fair
+    # (size-normalized). Cohort-calibrated: 0.05 ~= pooled p97, 0.02 ~= p90.
+    core_coverage: float = 0.05
+    regular_coverage: float = 0.02
+    # Absolute video floor for the core tier so tiny catalogs don't label a
+    # 2-of-6-videos commenter as "core". Only binds on small channels; large
+    # channels stay coverage-driven (5% of 351 = ~18 >> 3).
+    core_min_videos: int = 3
     continuity_windows: int = 4
     continuity_window_options: str = "3,4,6,8"
     rolling_window_videos: int = 50
@@ -92,6 +102,9 @@ def load_config(path: Path) -> AnalyzerConfig:
             min_co_videos=int(analysis.get("min_co_videos", 3)),
             high_activity_min_videos=int(analysis.get("high_activity_min_videos", 16)),
             mid_activity_min_videos=int(analysis.get("mid_activity_min_videos", 6)),
+            core_coverage=float(analysis.get("core_coverage", 0.05)),
+            regular_coverage=float(analysis.get("regular_coverage", 0.02)),
+            core_min_videos=int(analysis.get("core_min_videos", 3)),
             continuity_windows=int(analysis.get("continuity_windows", 4)),
             continuity_window_options=str(
                 analysis.get("continuity_window_options", "3,4,6,8")

@@ -242,9 +242,9 @@ function renderBenchmark(root) {
       <article class="panel">
         <div class="panel-head">
           <div>
-            <h3>關鍵指標分布 ${infoTip("顯示 cohort 的中位數與常見範圍（多落在中間區間），以及本頻道目前值的相對位置。百分位只代表相對位置，不代表好壞。")}</h3>
+            <h3>關鍵指標分布 ${infoTip("顯示 cohort 的平均與常見範圍（IQR，中間 50% 落點），以及本頻道目前值的相對位置。cohort 僅 48 個頻道，故以平均為基準參考；百分位只代表相對位置，不代表好壞。")}</h3>
           </div>
-          <small>顯示中位數 / 常見範圍 / 目前頻道</small>
+          <small>顯示平均 / 常見範圍 / 目前頻道</small>
         </div>
         <div class="bullet-list">
           ${selectedMetrics.map((metric) => bulletMetric(metricMap[metric])).join("")}
@@ -297,7 +297,7 @@ async function renderAudience(root) {
     ${sectionIntro("觀眾")}
     <section class="split-layout">
       <article class="panel">
-        <div class="panel-head"><div><h3>觀眾活躍度 ${infoTip("依每位留言者的留言次數分成高/中/低頻層級，看核心與一次性觀眾的占比。僅統計有留言者（不含純觀看者），且只用主留言、不含回覆。")}</h3></div></div>
+        <div class="panel-head"><div><h3>觀眾活躍度 ${infoTip("依每位留言者的『涵蓋率』＝留言過的影片數 ÷ 頻道影片數分層（跨頻道可比、對頻道大小正規化）：一次性/路過＝只留言 1 支；回訪＝多支但涵蓋率低；常客＝涵蓋率≥2%；核心＝涵蓋率≥5% 且至少 3 支。門檻用 benchmark cohort 分布校準（≈p90/p97）。僅統計有留言者、只用主留言。")}</h3></div></div>
         ${tierComparisonBars(s.commenter_tiers || [])}
       </article>
       <article class="panel">
@@ -346,6 +346,11 @@ async function renderSentiment(root) {
   const themeSentiment = await fetchTableRows("sentiment_theme_summary", 20);
   const videoSentiment = await fetchTableRows("sentiment_hotspots", 400);
   const aspectSummary = await fetchTableRows("comment_aspect_summary", 20);
+  const videoAspects = await fetchTableRows("video_aspect_summary", 3000);
+  const aspectLabels = Object.fromEntries(
+    (aspectSummary || []).filter((row) => row.aspect).map((row) => [row.aspect, row.aspect_label_zh || row.aspect]),
+  );
+  const videoAspectMap = buildVideoAspectMap(videoAspects);
   root.innerHTML = `
     ${sectionIntro("情緒風險")}
     <section class="split-layout">
@@ -373,14 +378,10 @@ async function renderSentiment(root) {
     </section>
     <section class="panel sentiment-band sentiment-band-negative">
       <div class="panel-head"><div><h3>負面風險 ${infoTip("以負面率與按讚加權負面率的放大程度找出風險點。情緒為模型標註，非人工真值。")}</h3></div></div>
-      <div class="sentiment-band-grid sentiment-band-grid-wide">
+      <div class="sentiment-band-grid">
         <div class="sentiment-subpanel">
-          <h4>高負面影片 ${infoTip("依負面率與按讚加權負面率（負面留言被按讚放大）排序的影片。")}</h4>
-          ${riskVideoCards(s.negative_hotspots || [])}
-        </div>
-        <div class="sentiment-subpanel">
-          <h4>負面原因面向 ${infoTip("ABSA（面向情緒分析）對負面留言抽取面向（如步調剪輯、業配、真實性、主持人風格等通用 taxonomy）並彙整占比，看負面主要來自哪些面向。為模型標註，非人工真值。")}</h4>
-          ${aspectSummaryBars(aspectSummary)}
+          <h4>高負面影片與負面原因 ${infoTip("依負面率與按讚加權負面率（負面留言被按讚放大）排序的影片，並列出『該支影片』的主要負面面向（ABSA 對該片負面留言抽取面向後，占該片負面留言的比例）。讓創作者直接知道每支問題影片被罵的點，而不是全頻道混在一起。為模型標註，非人工真值。")}</h4>
+          ${riskVideoCards(s.negative_hotspots || [], videoAspectMap, aspectLabels)}
         </div>
         <div class="sentiment-subpanel">
           <h4>高負面題材 ${infoTip("各 Qwen 主題的負面留言率排序。")}</h4>
@@ -751,25 +752,56 @@ function overviewEngagementBars(summary) {
   return `<div class="comparison-bars">${rows.map(comparisonMetricBar).join("")}</div>`;
 }
 
+function valuePercentile(dist, x) {
+  // Estimate where x falls (0-100) via piecewise-linear interpolation of the
+  // cohort distribution breakpoints. Used to place the cohort-mean marker on a
+  // percentile-scaled bar so the marker and the displayed mean agree.
+  const xv = Number(x);
+  if (!Number.isFinite(xv)) return null;
+  const pts = [
+    [0, dist.min],
+    [10, dist.p10],
+    [25, dist.p25],
+    [50, dist.median],
+    [75, dist.p75],
+    [90, dist.p90],
+    [100, dist.max],
+  ].filter(([, v]) => Number.isFinite(Number(v)));
+  if (pts.length < 2) return null;
+  if (xv <= Number(pts[0][1])) return pts[0][0];
+  for (let i = 1; i < pts.length; i += 1) {
+    const [p0, v0] = pts[i - 1];
+    const [p1, v1] = pts[i];
+    if (xv <= Number(v1)) {
+      const span = Number(v1) - Number(v0);
+      const frac = span > 0 ? (xv - Number(v0)) / span : 0;
+      return p0 + frac * (p1 - p0);
+    }
+  }
+  return 100;
+}
+
 function comparisonMetricBar(row) {
   const metric = baselineMetric(row.metric);
   const value = row.value ?? metric?.value;
   const dist = metric?.distribution || {};
-  const median = dist.median;
+  const mean = dist.mean;
   const percentile = Number(metric?.percentile);
   const hasPercentile = Number.isFinite(percentile);
-  const max = comparisonScaleMax(value, median, dist.p75, dist.max);
+  const max = comparisonScaleMax(value, mean, dist.p75, dist.max);
   const valuePct = hasPercentile ? Math.max(0, Math.min(100, percentile)) : pos(value, 0, max);
-  const medianPct = hasPercentile ? 50 : pos(median, 0, max);
+  const meanPct = hasPercentile
+    ? Math.max(0, Math.min(100, valuePercentile(dist, mean) ?? 50))
+    : pos(mean, 0, max);
   return `
     <div class="comparison-row ${escapeHtml(row.tone || "neutral")}">
       <div class="comparison-label">
         <strong>${escapeHtml(row.label)}</strong>
-        <span>基準中位數 ${formatValue(median, row.key)}</span>
+        <span>基準平均 ${formatValue(mean, row.key)}</span>
       </div>
       <div class="comparison-track ${hasPercentile ? "percentile-track" : ""}">
         ${hasPercentile ? `<i class="iqr"></i><i class="marker" style="left:${valuePct}%"></i>` : `<i class="value" style="width:${valuePct}%"></i>`}
-        <i class="median" style="left:${medianPct}%"></i>
+        <i class="median" style="left:${meanPct}%"></i>
       </div>
       <div class="comparison-value">
         <strong>${formatValue(value, row.key)}</strong>
@@ -871,7 +903,7 @@ function bulletMetric(metric) {
   const max = Number(dist.max);
   const p25 = pos(dist.p25, min, max);
   const p75 = pos(dist.p75, min, max);
-  const median = pos(dist.median, min, max);
+  const median = pos(dist.mean, min, max);
   const value = pos(metric.value, min, max);
   return `
     <div class="bullet-row">
@@ -1229,33 +1261,6 @@ function themeRiskBars(rows) {
     .join("")}</div>`;
 }
 
-function aspectSummaryBars(rows) {
-  const usable = (rows || [])
-    .filter((row) => row.aspect)
-    .sort(
-      (a, b) =>
-        Number(b.negative_aspect_prevalence_per_full_comment || b.negative_aspect_share || 0) -
-        Number(a.negative_aspect_prevalence_per_full_comment || a.negative_aspect_share || 0),
-    )
-    .slice(0, 8);
-  if (!usable.length) return `<div class="empty-state">面向分析資料尚未匯入儀表板。</div>`;
-  const max = Math.max(...usable.map((row) => Number(row.negative_aspect_prevalence_per_full_comment || row.negative_aspect_share || 0)), 0.01);
-  return `<div class="insight-list">${usable
-    .map((row) => {
-      const prevalence = Number(row.negative_aspect_prevalence_per_full_comment || row.negative_aspect_share || 0);
-      return `
-        <div class="insight-row">
-          <div class="insight-label">
-            <strong>${escapeHtml(row.aspect_label_zh || row.aspect)}</strong>
-            <span>${fmtCompact(row.n_negative_or_mixed || row.n_scored_mentions)} 次負面提及 · 面向占比 ${formatValue(row.negative_aspect_share, "share")}</span>
-          </div>
-          <div class="risk-track"><i style="width:${Math.max(3, (prevalence / max) * 100)}%"></i></div>
-          <div class="insight-value">${formatValue(prevalence, "rate")}</div>
-        </div>`;
-    })
-    .join("")}</div>`;
-}
-
 function positiveVideoCards(rows) {
   const usable = (rows || [])
     .map((row) => ({ ...row, n_comments_num: Number(row.n_comments || 0) }))
@@ -1303,7 +1308,40 @@ function positiveThemeBars(rows) {
     .join("")}</div>`;
 }
 
-function riskVideoCards(rows) {
+function buildVideoAspectMap(rows) {
+  const map = {};
+  (rows || []).forEach((row) => {
+    const videoId = row.video_id;
+    if (!videoId) return;
+    (map[videoId] ||= []).push({
+      aspect: row.aspect,
+      count: Number(row.count) || 0,
+      share: Number(row.aspect_share) || 0,
+    });
+  });
+  Object.values(map).forEach((list) => list.sort((a, b) => b.count - a.count));
+  return map;
+}
+
+function videoAspectReasons(videoId, aspectMap, aspectLabels) {
+  const skip = new Set(["other", "unclear"]);
+  const reasons = (aspectMap[videoId] || []).filter((item) => item.aspect && !skip.has(item.aspect)).slice(0, 3);
+  if (!reasons.length) return "";
+  return `
+    <div class="video-aspect-block">
+      <span class="video-aspect-label">主要負面原因</span>
+      <div class="video-aspects">
+        ${reasons
+          .map(
+            (item) =>
+              `<span class="video-aspect"><b>${escapeHtml(aspectLabels[item.aspect] || item.aspect)}</b> ${formatValue(item.share, "rate")}</span>`,
+          )
+          .join("")}
+      </div>
+    </div>`;
+}
+
+function riskVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
   const usable = (rows || [])
     .slice()
     .sort((a, b) => Number(b.like_weighted_negative_rate || b.negative_rate || 0) - Number(a.like_weighted_negative_rate || a.negative_rate || 0))
@@ -1320,6 +1358,7 @@ function riskVideoCards(rows) {
           ${metricPill("負面", row.negative_rate, "rate")}
           ${metricPill("按讚加權", row.like_weighted_negative_rate, "rate")}
         </div>
+        ${videoAspectReasons(row.video_id, aspectMap, aspectLabels)}
       </article>`)
     .join("")}</div>`;
 }
@@ -1558,9 +1597,12 @@ function tierComparisonBars(rows) {
     .map((row) => {
       const tier = row.activity_tier;
       const metric = baselineMetric(`${tier}_tier_commenter_share`);
-      const value = normalizeShare(row.pct_commenters);
-      const median = metric?.distribution?.median;
-      const max = comparisonScaleMax(value, median, metric?.distribution?.p75, metric?.distribution?.max);
+      // pct_commenters is always a percent (0-100); convert to fraction directly
+      // so sub-1% tiers (e.g. a 0.88% core) are not misread as the fraction 0.88.
+      const pct = Number(row.pct_commenters);
+      const value = Number.isFinite(pct) ? pct / 100 : null;
+      const mean = metric?.distribution?.mean;
+      const max = comparisonScaleMax(value, mean, metric?.distribution?.p75, metric?.distribution?.max);
       return `
         <div class="tier-comparison-row">
           <div class="tier-comparison-label">
@@ -1569,21 +1611,15 @@ function tierComparisonBars(rows) {
           </div>
           <div class="comparison-track">
             <i class="value" style="width:${pos(value, 0, max)}%"></i>
-            <i class="median" style="left:${pos(median, 0, max)}%"></i>
+            <i class="median" style="left:${pos(mean, 0, max)}%"></i>
           </div>
           <div class="comparison-value">
             <strong>${formatValue(value, "share")}</strong>
-            <span>基準 ${formatValue(median, "share")}</span>
+            <span>基準平均 ${formatValue(mean, "share")}</span>
           </div>
         </div>`;
     })
     .join("")}</div>`;
-}
-
-function normalizeShare(value) {
-  const n = Number(value);
-  if (!Number.isFinite(n)) return null;
-  return Math.abs(n) > 1 ? n / 100 : n;
 }
 
 function audienceRepeatSummary(network, communities) {
@@ -2367,7 +2403,15 @@ function themeMap() {
 }
 
 function tierLabel(value) {
-  return { high: "高頻核心", mid: "中頻觀眾", low: "低頻/一次性" }[value] || value;
+  return {
+    core: "核心觀眾",
+    regular: "常客",
+    returning: "回訪",
+    one_time: "一次性/路過",
+    high: "高頻核心",
+    mid: "中頻觀眾",
+    low: "低頻/一次性",
+  }[value] || value;
 }
 
 function sentimentLabel(value) {

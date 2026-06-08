@@ -68,7 +68,9 @@ def run_analysis(
     video_metrics = build_video_metrics(videos, comments)
     sentiment_video_metrics = build_video_metrics(videos, sentiment_comments)
     commenter_activity = build_commenter_activity(comments)
-    commenter_tiers = assign_commenter_tiers(commenter_activity, config)
+    commenter_tiers = assign_commenter_tiers(
+        commenter_activity, config, n_videos_total=int(videos["video_id"].nunique())
+    )
     continuity = build_continuity_summary(videos, comments, config)
     continuity_sensitivity = build_continuity_sensitivity(videos, comments, config)
     rolling_retention = build_rolling_retention(videos, comments, config)
@@ -321,14 +323,30 @@ def _first_non_null(values: pd.Series) -> object:
 def assign_commenter_tiers(
     activity: pd.DataFrame,
     config: AnalyzerConfig,
+    n_videos_total: int | None = None,
 ) -> pd.DataFrame:
+    """Coverage-based 4-tier audience activity segmentation.
+
+    A commenter's tier is set by catalog coverage = distinct videos commented on
+    / total in-scope videos, which is size-normalized so tiers mean the same
+    thing across channels of different sizes (cross-channel comparable). The
+    one-time tier (commented on exactly one video) is split out because it is the
+    dominant, qualitatively distinct group (cohort median ~79% of commenters).
+    """
     out = activity.copy()
-    high = config.analysis.high_activity_min_videos
-    mid = config.analysis.mid_activity_min_videos
+    total = int(n_videos_total or 0)
+    coverage = out["n_videos"] / total if total > 0 else pd.Series(0.0, index=out.index)
+    core = config.analysis.core_coverage
+    regular = config.analysis.regular_coverage
+    core_min = config.analysis.core_min_videos
     out["activity_tier"] = np.select(
-        [out["n_videos"] >= high, out["n_videos"] >= mid],
-        ["high", "mid"],
-        default="low",
+        [
+            out["n_videos"] <= 1,
+            (coverage >= core) & (out["n_videos"] >= core_min),
+            coverage >= regular,
+        ],
+        ["one_time", "core", "regular"],
+        default="returning",
     )
     summary = (
         out.groupby("activity_tier")
@@ -341,9 +359,13 @@ def assign_commenter_tiers(
         )
         .reset_index()
     )
-    total = summary["n_commenters"].sum()
-    summary["pct_commenters"] = summary["n_commenters"] / total * 100 if total else 0
-    order = pd.Categorical(summary["activity_tier"], ["high", "mid", "low"], ordered=True)
+    total_commenters = summary["n_commenters"].sum()
+    summary["pct_commenters"] = (
+        summary["n_commenters"] / total_commenters * 100 if total_commenters else 0
+    )
+    order = pd.Categorical(
+        summary["activity_tier"], ["core", "regular", "returning", "one_time"], ordered=True
+    )
     return summary.assign(_order=order).sort_values("_order").drop(columns="_order")
 
 

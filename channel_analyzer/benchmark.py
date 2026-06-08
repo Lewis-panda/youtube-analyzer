@@ -19,6 +19,12 @@ DEFAULT_METRICS = [
     "comments_per_video",
     "commenters_per_video",
     "comments_per_1k_views",
+    "core_tier_commenter_share",
+    "regular_tier_commenter_share",
+    "returning_tier_commenter_share",
+    "one_time_tier_commenter_share",
+    "core_regular_tier_commenter_share",
+    "core_regular_tier_comment_share",
     "high_tier_commenter_share",
     "mid_tier_commenter_share",
     "low_tier_commenter_share",
@@ -253,14 +259,25 @@ def extract_metrics(report: dict) -> dict:
     total_views = to_float(overview.get("total_views_in_scope"))
     all_comments = to_float(sentiment_source.get("n_scope_comments"))
 
-    high_share = nan_to_zero(tier_value(tiers, "high", "pct_commenters")) / 100
-    mid_share = nan_to_zero(tier_value(tiers, "mid", "pct_commenters")) / 100
-    low_share = nan_to_zero(tier_value(tiers, "low", "pct_commenters")) / 100
+    def tier_share(name: str) -> float:
+        return nan_to_zero(tier_value(tiers, name, "pct_commenters")) / 100
+
+    core_share = tier_share("core")
+    regular_share = tier_share("regular")
+    returning_share = tier_share("returning")
+    one_time_share = tier_share("one_time")
+    if core_share + regular_share + returning_share + one_time_share == 0:
+        # Legacy 3-tier report (high/mid/low) not yet re-tiered: map across.
+        core_share = tier_share("high")
+        regular_share = tier_share("mid")
+        returning_share = tier_share("low")
+        one_time_share = 0.0
+    engaged_share = core_share + regular_share
     total_tier_comments = sum(to_float(item.get("total_comments")) for item in tiers)
-    high_mid_comments = sum(
+    engaged_comments = sum(
         to_float(item.get("total_comments"))
         for item in tiers
-        if str(item.get("activity_tier")) in {"high", "mid"}
+        if str(item.get("activity_tier")) in {"core", "regular", "high", "mid"}
     )
 
     community_shares = sorted(
@@ -280,11 +297,17 @@ def extract_metrics(report: dict) -> dict:
         "comments_per_video": divide(top_comments, n_videos),
         "commenters_per_video": divide(top_commenters, n_videos),
         "comments_per_1k_views": divide(top_comments * 1000, total_views),
-        "high_tier_commenter_share": high_share,
-        "mid_tier_commenter_share": mid_share,
-        "low_tier_commenter_share": low_share,
-        "high_mid_tier_commenter_share": high_share + mid_share,
-        "high_mid_tier_comment_share": divide(high_mid_comments, total_tier_comments),
+        "core_tier_commenter_share": core_share,
+        "regular_tier_commenter_share": regular_share,
+        "returning_tier_commenter_share": returning_share,
+        "one_time_tier_commenter_share": one_time_share,
+        "core_regular_tier_commenter_share": engaged_share,
+        "core_regular_tier_comment_share": divide(engaged_comments, total_tier_comments),
+        "high_tier_commenter_share": core_share,
+        "mid_tier_commenter_share": regular_share,
+        "low_tier_commenter_share": returning_share + one_time_share,
+        "high_mid_tier_commenter_share": engaged_share,
+        "high_mid_tier_comment_share": divide(engaged_comments, total_tier_comments),
         "continuity_return_rate_w4": to_float(continuity.get("weighted_return_rate")),
         "rolling_return_rate_mean": mean([to_float(item.get("return_rate")) for item in rolling]),
         "rolling_return_rate_latest": to_float(rolling[-1].get("return_rate")) if rolling else math.nan,

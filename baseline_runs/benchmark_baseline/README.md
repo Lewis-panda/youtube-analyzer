@@ -6,7 +6,7 @@
 - Cohort members: 48
 - Ready reports: 48
 - Channel metric rows: 48
-- Distribution metrics: 43
+- Distribution metrics: 49
 
 ## Files
 

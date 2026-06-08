@@ -37,9 +37,14 @@ run out of tokens mid-task — this file lets any session resume cleanly.
   `load_optional_strategy_brief` merges it into `analysis.strategy_brief`).
 - External page focused on "does external discussion bring new audience" vs baseline.
 
-## TODO QUEUE 2 — 2026-06-09 (in progress)
+## TODO QUEUE 2 — 2026-06-09 (ALL 4 DONE)
 
 1. **[DONE]** 總覽 KPI 重複：訂閱/總觀看/總影片/分析留言 與 `channelReportCard` 重複 → 移除 KPI strip。
+2. **[DONE]** 外部頁事件前後多指標同步變化（留言量倍率／負面率Δ＋顯著性／回覆衝突倍率／新留言者）— `naSyncBlock`，合併 `external_event_impact_diagnostics`。ABSA 負面主體事件窗變化仍為 future。
+3. **[DONE]** 分群 content sensitivity（RQ3）：persona 卡加 觸及影片數／留言量／代表影片／特別投入(over-index lift)／特別負面(negative source)。
+4. **[DONE]** 正面 ABSA：`generate_dashboard_video_absa.py` 產 `video_positive_aspect_summary.csv`；高正面影片卡顯示「被稱讚的點」。
+
+<details><summary>原始需求（保留）</summary>
 
 2. **外部頁：事件前後『同步變化』跨指標**（= 原 paused 事件 detail）。每個外部事件呈現
    事件前後是否同步變化：YouTube 留言量(`comment_volume_lift_vs_baseline`)、負面率
@@ -59,6 +64,8 @@ run out of tokens mid-task — this file lets any session resume cleanly.
    144,503 列、0 parse error）。擴充 `scripts/generate_dashboard_video_absa.py` 也產
    `video_positive_aspect_summary.csv`（per-video 正面面向，讀 positive csv），rebuild dashboard，
    前端「正面亮點」加 per-video 正面原因（analog 現有負面的 `videoAspectReasons`）。
+
+</details>
 
 ## TODO QUEUE — ALL 6 DONE 2026-06-08 (frontend only, no rebuild needed; kept for reference)
 

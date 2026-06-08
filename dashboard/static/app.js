@@ -250,7 +250,7 @@ async function renderContent(root) {
       ${themeOverview(themeSummary, sentTheme, conflictTheme, themeViews)}
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的留言數（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；留言數＝爬取到的該片留言數；負面率＝該片負面留言÷留言數；外部事件取自外部討論分析。長條刻意用『留言數』而非『留言/觀看』：因為觀看是累積的，越新的影片觀看還沒長滿，留言率會虛高、在時間軸上失真；留言/觀看比改放在游標 hover 顯示。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
+      <div class="panel-head"><div><h3>近期影片時間軸 ${infoTip("一條時間軸同時看四件事：每支影片的『主留言數』（左軸長條，長條顏色＝該片負面率，越紅越負面）、累積觀看數（右軸折線·對數）、外部討論事件（垂直線）。算法：X 軸為影片發布日；主留言數＝爬取到的該片『主留言(top-level，不含回覆)』數——本分析 include_replies=false，載入時就只取 is_top_level=1，所以這會少於 YouTube 顯示的留言總數（差額＝回覆＋已刪/審核中抓不到的）；負面率＝該片主留言負面數÷主留言數；外部事件取自外部討論分析。長條刻意用『留言數』而非『留言/觀看』：因為觀看是累積的，越新的影片觀看還沒長滿，留言率會虛高、在時間軸上失真；留言/觀看比改放在游標 hover 顯示。累積觀看為累積值，不能解讀成流量上升或下降。")}</h3></div></div>
       ${videoTimeline(videos, negMap, timelineEvents)}
     </section>
     <section class="panel">
@@ -1163,7 +1163,7 @@ function videoTimeline(rows, negMap = {}, events = []) {
       const by = yC(row.comments);
       const negTxt = Number.isFinite(row.neg) ? ` · 負面率 ${formatValue(row.neg, "rate")}` : "";
       const rateTxt = row.views > 0 ? ` · 留言/千觀看 ${((row.comments / row.views) * 1000).toFixed(1)}` : "";
-      const tip = `${row.title} · ${compactDate(row.published_at)} · 留言 ${fmtNumber(row.comments)} · 觀看 ${fmtNumber(row.views)}${rateTxt}${negTxt}`;
+      const tip = `${row.title} · ${compactDate(row.published_at)} · 主留言 ${fmtNumber(row.comments)} · 觀看 ${fmtNumber(row.views)}${rateTxt}${negTxt}`;
       return `<rect class="vt-bar${negTone(row.neg)}" x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${barW.toFixed(1)}" height="${(margin.top + plotH - by).toFixed(1)}" data-chart-tooltip="${tooltipAttr(tip)}"></rect>`;
     })
     .join("");
@@ -1209,7 +1209,7 @@ function videoTimeline(rows, negMap = {}, events = []) {
               `<g class="chart-x-tick"><line x1="${x(t).toFixed(1)}" x2="${x(t).toFixed(1)}" y1="${margin.top + plotH}" y2="${margin.top + plotH + 6}"></line><text x="${x(t).toFixed(1)}" y="${margin.top + plotH + 24}" text-anchor="middle">${escapeHtml(formatYearMonth(t))}</text></g>`,
           )
           .join("")}
-        <text class="chart-axis-label" x="16" y="${margin.top + 10}" transform="rotate(-90 16 ${margin.top + 10})">留言數（左軸）</text>
+        <text class="chart-axis-label" x="16" y="${margin.top + 10}" transform="rotate(-90 16 ${margin.top + 10})">主留言數（左軸）</text>
         <text class="chart-axis-label" x="${width - 12}" y="${margin.top + 10}" transform="rotate(-90 ${width - 12} ${margin.top + 10})" text-anchor="end">觀看數（右軸·對數）</text>
         <text class="chart-axis-label" x="${margin.left + plotW / 2}" y="${height - 10}" text-anchor="middle">影片發布時間</text>
         ${bars}
@@ -1217,7 +1217,7 @@ function videoTimeline(rows, negMap = {}, events = []) {
         ${dots}
       </svg>
       <div class="external-chart-legend">
-        <span><i class="vt-lg-bar"></i>留言數（左軸）</span>
+        <span><i class="vt-lg-bar"></i>主留言數（左軸）</span>
         <span><i class="vt-lg-negmid"></i>負面率 8–15%</span>
         <span><i class="vt-lg-neghigh"></i>負面率 ≥15%</span>
         <span><i class="event watch"></i>觀看數（右軸·對數）</span>

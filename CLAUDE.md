@@ -37,7 +37,11 @@ run out of tokens mid-task — this file lets any session resume cleanly.
   `load_optional_strategy_brief` merges it into `analysis.strategy_brief`).
 - External page focused on "does external discussion bring new audience" vs baseline.
 
-## TODO QUEUE (user-requested, do in order; each self-contained)
+## TODO QUEUE — ALL 6 DONE 2026-06-08 (frontend only, no rebuild needed; kept for reference)
+
+Minor remaining cleanup (harmless): after removing the 共享觀眾 tab, these helpers
+are now dead and can be deleted: `videoClusterCards`, `videoPortfolioSummary`,
+`affinityBars`, `opportunityCards` (and any sub-helpers only they used).
 
 1. **總覽 KPI 去重**: `renderOverview()` 的 `metric-strip` 目前 8 個 tile，**只保留 4**：
    訂閱數、頻道總觀看次數、頻道總影片數、分析留言數（主留言數）。移除其餘重複的

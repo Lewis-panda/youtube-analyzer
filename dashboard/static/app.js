@@ -7,7 +7,6 @@ const pages = [
   { id: "overview", label: "總覽" },
   { id: "content", label: "內容" },
   { id: "audience", label: "觀眾" },
-  { id: "video_network", label: "共享觀眾" },
   { id: "sentiment", label: "情緒" },
   { id: "reply_conflict", label: "回覆討論" },
   { id: "external_events", label: "外部討論" },
@@ -19,7 +18,7 @@ const selectedMetrics = [
   "comments_per_1k_views",
   "high_mid_tier_commenter_share",
   "continuity_return_rate_w4",
-  "community_hhi",
+  "one_time_tier_commenter_share",
   "negative_rate",
   "like_weighted_negative_rate",
   "reply_share_all_comments",
@@ -178,7 +177,6 @@ async function renderPage() {
   if (currentPage === "overview") await renderOverview(root);
   else if (currentPage === "content") await renderContent(root);
   else if (currentPage === "audience") await renderAudience(root);
-  else if (currentPage === "video_network") await renderVideoNetwork(root);
   else if (currentPage === "sentiment") await renderSentiment(root);
   else if (currentPage === "reply_conflict") await renderReplyConflict(root);
   else if (currentPage === "external_events") await renderExternalEvents(root);
@@ -196,13 +194,9 @@ async function renderOverview(root) {
 
     <section class="metric-strip overview-kpis">
       ${metricTile("訂閱數", ch.subscriber_count ?? overview.subscriber_count, "n")}
-      ${metricTile("頻道總觀看次數", ch.view_count_api ?? overview.channel_view_count_api, "n")}
-      ${metricTile("頻道總影片數", ch.video_count_api ?? overview.channel_video_count_api, "n")}
-      ${metricTile("分析範圍影片數", ch.n_videos_in_scope ?? overview.n_videos_in_scope, "n")}
-      ${metricTile("分析範圍觀看次數", ch.total_views_in_scope ?? overview.total_views_in_scope, "n")}
-      ${metricTile("主留言數（不含回覆）", ch.n_comments_in_scope ?? overview.n_comments_in_scope, "n")}
-      ${metricTile("主留言者數（不重複）", ch.n_commenters_in_scope ?? overview.n_commenters_in_scope, "n")}
-      ${metricTile("YouTube 顯示留言數", overview.total_video_comment_count_api, "n")}
+      ${metricTile("總觀看次數", ch.view_count_api ?? overview.channel_view_count_api, "n")}
+      ${metricTile("總影片數", ch.video_count_api ?? overview.channel_video_count_api, "n")}
+      ${metricTile("分析留言數", ch.n_comments_in_scope ?? overview.n_comments_in_scope, "n")}
     </section>
 
     <section class="panel">
@@ -229,11 +223,10 @@ function renderBenchmark(root) {
       <article class="panel">
         <div class="panel-head">
           <div>
-            <h3>同儕位置圖 ${infoTip("以兩兩指標把本頻道放進 cohort 散布的象限位置（互動 vs 風險、黏著 vs 集中）。參考分布來自完成案例，尚非同題材 matched cohort。")}</h3>
+            <h3>同儕位置圖 ${infoTip("以互動 vs 情緒風險把本頻道放進 cohort 散布的象限位置。參考分布來自完成案例，尚非同題材 matched cohort。社群集中度/分群清晰度等社群網路指標已移到『觀眾』分頁的分群結果。")}</h3>
           </div>
         </div>
         ${scatterPlot("engagement_vs_risk")}
-        ${scatterPlot("stickiness_vs_concentration")}
         <div class="compact-note">
           <span>象限判讀</span>
           ${infoTip(Object.values(maps.engagement_vs_risk?.quadrant_hints_zh || {}).join("\n"))}
@@ -259,7 +252,11 @@ function renderBenchmark(root) {
         </div>
       </div>
       <div class="leaderboard-grid">
-        ${(indexData.dashboard_statistics?.leaderboards || []).slice(0, 8).map(leaderboard).join("")}
+        ${(indexData.dashboard_statistics?.leaderboards || [])
+          .filter((lb) => !/community|modular|network/i.test(String(lb.metric || "")))
+          .slice(0, 8)
+          .map(leaderboard)
+          .join("")}
       </div>
     </section>
   `;
@@ -301,42 +298,14 @@ async function renderAudience(root) {
         ${tierComparisonBars(s.commenter_tiers || [])}
       </article>
       <article class="panel">
-        <div class="panel-head"><div><h3>回訪與核心觀眾 ${infoTip("回訪率（如 4 週內再次留言的比例）與核心觀眾占比，並對照比較基準 cohort 的分布。百分位只代表相對位置，不代表好壞。")}</h3></div></div>
+        <div class="panel-head"><div><h3>回訪與核心觀眾 ${infoTip("跨影片回訪率＝在連續 4 支影片的窗格內再次留言的比例（是影片窗、不是 4 週）；近期回訪率為最近一段窗格的回訪。與核心觀眾占比一起對照 benchmark cohort（顯示 cohort 平均）。百分位只代表相對位置，不代表好壞。")}</h3></div></div>
         ${audienceBaselineBars()}
       </article>
     </section>
     <section class="panel">
-      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路，再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。每張卡片顯示該社群的規模、社群情緒（正/中/負，Qwen 三元分類）、偏好題材與經營建議。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
+      <div class="panel-head"><div><h3>觀眾類型與策略用途 ${infoTip("由「在同一支影片共同留言」建立留言者-留言者網路，再用社群偵測（Louvain/Leiden）自動分群，群數由圖結構推得而非預設。上方為整體分群結構判讀（集中度／清晰度），下方每張卡片是一個社群：規模、社群情緒（正/中/負，Qwen 三元分類）、偏好題材與經營建議。社群是共同參與結構，不是粉絲派系。")}</h3></div></div>
+      ${audienceStructureCards(s.network_summary || {})}
       ${communityPersonaCards(s.community_profiles || [])}
-    </section>
-  `;
-}
-
-async function renderVideoNetwork(root) {
-  const s = currentChannel.dashboard_summary || {};
-  const affinity = await fetchTableRows("video_cluster_theme_affinity", 20);
-  const opportunities = await fetchTableRows("video_link_opportunities", 12);
-  root.innerHTML = `
-    ${sectionIntro("共享觀眾")}
-    <section class="split-layout">
-      <article class="panel">
-        <div class="panel-head"><div><h3>內容系列 ${infoTip("由「共享觀眾」建立影片-影片網路：兩支影片若有大量相同留言者就相連，再分群成內容系列。邊代表觀眾重疊，不是內容主題相似度。")}</h3></div></div>
-        ${videoClusterCards(s.video_cluster_profiles || s.video_clusters || [])}
-      </article>
-      <article class="panel">
-        <div class="panel-head"><div><h3>內容系列概況 ${infoTip("各內容系列的規模、影片數與觀眾重疊結構摘要，幫助掌握整體影片版圖如何被觀眾連結。")}</h3></div></div>
-        ${videoPortfolioSummary(s.video_network_summary || {}, s.video_clusters || [])}
-      </article>
-    </section>
-    <section class="split-layout">
-      <article class="panel">
-        <div class="panel-head"><div><h3>系列題材集中度 ${infoTip("每個內容系列內各 Qwen 主題的占比，看該系列主要由哪些題材組成、是否聚焦單一題材。")}</h3></div></div>
-        ${affinityBars(affinity)}
-      </article>
-      <article class="panel">
-        <div class="panel-head"><div><h3>跨題材企劃機會 ${infoTip("以連結預測（common neighbors / Jaccard / Adamic-Adar / resource allocation）找「結構上接近但尚未強連結」的影片或題材配對，作為企劃靈感。只是 idea generator，不保證成效。")}</h3></div></div>
-        ${opportunityCards(opportunities)}
-      </article>
     </section>
   `;
 }
@@ -380,7 +349,7 @@ async function renderSentiment(root) {
       <div class="panel-head"><div><h3>負面風險 ${infoTip("以負面率與按讚加權負面率的放大程度找出風險點。情緒為模型標註，非人工真值。")}</h3></div></div>
       <div class="sentiment-band-grid">
         <div class="sentiment-subpanel">
-          <h4>高負面影片與負面原因 ${infoTip("依負面率與按讚加權負面率（負面留言被按讚放大）排序的影片，並列出『該支影片』的主要負面面向（ABSA 對該片負面留言抽取面向後，占該片負面留言的比例）。讓創作者直接知道每支問題影片被罵的點，而不是全頻道混在一起。為模型標註，非人工真值。")}</h4>
+          <h4>高負面影片與負面原因 ${infoTip("排序依『實質負面』＝按讚加權負面率 × 實質負面占比（ABSA 面向中扣除 other／unclear 這類雖負面但對頻道無實質影響的部分），所以排前面的是真的被罵到痛點、不是雜訊。每片並列出主要負面面向（占該片負面留言比例）。為模型標註，非人工真值。")}</h4>
           ${riskVideoCards(s.negative_hotspots || [], videoAspectMap, aspectLabels)}
         </div>
         <div class="sentiment-subpanel">
@@ -942,16 +911,121 @@ function themeMix(rows) {
 }
 
 function videoTimeline(rows) {
-  if (!rows.length) return `<div class="empty-state">沒有影片資料</div>`;
-  const sample = rows.slice().sort((a, b) => String(a.published_at).localeCompare(String(b.published_at))).slice(-90);
-  const max = Math.max(...sample.map((row) => Number(row.observed_comments || row.comment_count || 0)), 1);
-  return `<div class="timeline">${sample
+  const sample = (rows || [])
+    .map((row) => ({
+      t: Date.parse(row.published_at || row.published_month || ""),
+      comments: Number(row.observed_comments || row.comment_count || 0),
+      views: Number(row.view_count || 0),
+      title: row.title || "未命名影片",
+      published_at: row.published_at,
+    }))
+    .filter((row) => Number.isFinite(row.t))
+    .sort((a, b) => a.t - b.t)
+    .slice(-60);
+  if (!sample.length) return `<div class="empty-state">沒有影片資料</div>`;
+  const width = 1120;
+  const height = 360;
+  const margin = { left: 64, right: 74, top: 34, bottom: 50 };
+  const plotW = width - margin.left - margin.right;
+  const plotH = height - margin.top - margin.bottom;
+  const tMin = sample[0].t;
+  const tMax = Math.max(sample[sample.length - 1].t, tMin + 1);
+  const x = (t) => margin.left + ((t - tMin) / (tMax - tMin)) * plotW;
+  const maxC = Math.max(...sample.map((row) => row.comments), 1);
+  const yC = (c) => margin.top + plotH - (Math.max(0, c) / maxC) * plotH;
+  const logs = sample.map((row) => Math.log10(Math.max(1, row.views)));
+  const maxLogV = Math.max(...logs, 1);
+  const minLogV = Math.min(Math.min(...logs), maxLogV - 0.5);
+  const yV = (v) =>
+    margin.top + plotH - ((Math.log10(Math.max(1, v)) - minLogV) / Math.max(0.001, maxLogV - minLogV)) * plotH;
+  const barW = Math.max(2, Math.min(18, (plotW / sample.length) * 0.62));
+  const bars = sample
     .map((row) => {
-      const h = Math.max(8, (Number(row.observed_comments || row.comment_count || 0) / max) * 100);
-      const tip = `${row.title || "未命名影片"} · ${compactDate(row.published_at)} · ${fmtNumber(row.observed_comments || row.comment_count)} 留言`;
-      return `<span class="timeline-bar" style="height:${h}%" data-tooltip="${escapeHtml(tip)}" title="${escapeHtml(tip)}"></span>`;
+      const bx = x(row.t) - barW / 2;
+      const by = yC(row.comments);
+      const tip = `${row.title} · ${compactDate(row.published_at)} · 留言 ${fmtNumber(row.comments)} · 觀看 ${fmtNumber(row.views)}`;
+      return `<rect class="vt-bar" x="${bx.toFixed(1)}" y="${by.toFixed(1)}" width="${barW.toFixed(1)}" height="${(margin.top + plotH - by).toFixed(1)}" data-chart-tooltip="${tooltipAttr(tip)}"></rect>`;
     })
-    .join("")}</div>`;
+    .join("");
+  const linePts = sample.map((row) => `${x(row.t).toFixed(1)},${yV(row.views).toFixed(1)}`).join(" ");
+  const dots = sample
+    .map(
+      (row) =>
+        `<circle class="vt-view-dot" cx="${x(row.t).toFixed(1)}" cy="${yV(row.views).toFixed(1)}" r="2.4" data-chart-tooltip="${tooltipAttr(`${row.title} · 觀看 ${fmtNumber(row.views)}`)}"></circle>`,
+    )
+    .join("");
+  const cTicks = linearAxisTicks(maxC, 4);
+  const vTicks = logAxisTicks(minLogV, maxLogV);
+  const xTicks = timeAxisTicks(tMin, tMax, 5);
+  return `
+    <div class="external-chart-wrap">
+      <svg class="external-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="近期影片留言量與觀看數">
+        <text class="chart-title" x="${margin.left}" y="18">近期影片：留言量（長條）與觀看數（折線）</text>
+        <rect class="chart-bg" x="${margin.left}" y="${margin.top}" width="${plotW}" height="${plotH}"></rect>
+        ${cTicks
+          .map(
+            (c) =>
+              `<g class="chart-grid"><line x1="${margin.left}" x2="${margin.left + plotW}" y1="${yC(c).toFixed(1)}" y2="${yC(c).toFixed(1)}"></line><text x="${margin.left - 8}" y="${(yC(c) + 4).toFixed(1)}" text-anchor="end">${escapeHtml(fmtCompact(c))}</text></g>`,
+          )
+          .join("")}
+        ${vTicks
+          .map((lg) => {
+            const yy = margin.top + plotH - ((lg - minLogV) / Math.max(0.001, maxLogV - minLogV)) * plotH;
+            return `<text class="vt-right-tick" x="${margin.left + plotW + 8}" y="${(yy + 4).toFixed(1)}">${escapeHtml(fmtCompact(Math.pow(10, lg)))}</text>`;
+          })
+          .join("")}
+        ${xTicks
+          .map(
+            (t) =>
+              `<g class="chart-x-tick"><line x1="${x(t).toFixed(1)}" x2="${x(t).toFixed(1)}" y1="${margin.top + plotH}" y2="${margin.top + plotH + 6}"></line><text x="${x(t).toFixed(1)}" y="${margin.top + plotH + 24}" text-anchor="middle">${escapeHtml(formatYearMonth(t))}</text></g>`,
+          )
+          .join("")}
+        <text class="chart-axis-label" x="16" y="${margin.top + 10}" transform="rotate(-90 16 ${margin.top + 10})">留言數（左軸）</text>
+        <text class="chart-axis-label" x="${width - 12}" y="${margin.top + 10}" transform="rotate(-90 ${width - 12} ${margin.top + 10})" text-anchor="end">觀看數（右軸·對數）</text>
+        <text class="chart-axis-label" x="${margin.left + plotW / 2}" y="${height - 10}" text-anchor="middle">影片發布時間</text>
+        ${bars}
+        <polyline class="vt-view-line" points="${linePts}" fill="none"></polyline>
+        ${dots}
+      </svg>
+      <div class="external-chart-legend">
+        <span><i class="video"></i>留言數（左軸·線性）</span>
+        <span><i class="event watch"></i>觀看數（右軸·對數）</span>
+      </div>
+    </div>`;
+}
+
+function linearAxisTicks(max, count) {
+  const step = niceStep(max / Math.max(1, count));
+  const ticks = [];
+  for (let v = 0; v <= max + 1e-9; v += step) ticks.push(v);
+  return ticks;
+}
+
+function niceStep(raw) {
+  const power = Math.pow(10, Math.floor(Math.log10(Math.max(raw, 1e-9))));
+  const n = raw / power;
+  const nice = n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10;
+  return nice * power;
+}
+
+function logAxisTicks(minLog, maxLog) {
+  const ticks = [];
+  for (let p = Math.ceil(minLog); p <= Math.floor(maxLog); p += 1) ticks.push(p);
+  if (!ticks.length) ticks.push(Math.round((minLog + maxLog) / 2));
+  return ticks.slice(-5);
+}
+
+function timeAxisTicks(tMin, tMax, count) {
+  const ticks = [];
+  const n = Math.max(2, count);
+  for (let i = 0; i < n; i += 1) ticks.push(tMin + ((tMax - tMin) * i) / (n - 1));
+  return ticks;
+}
+
+function formatYearMonth(time) {
+  const d = new Date(time);
+  if (!Number.isFinite(d.getTime())) return "-";
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
 }
 
 function videoEngagementTable(rows) {
@@ -1199,7 +1273,7 @@ function audienceBaselineBars() {
   const rows = [
     { label: "核心觀眾占比", metric: "high_mid_tier_commenter_share", key: "share", tone: "good" },
     { label: "核心觀眾留言貢獻", metric: "high_mid_tier_comment_share", key: "share", tone: "watch" },
-    { label: "四週回訪率", metric: "continuity_return_rate_w4", key: "rate", tone: "good" },
+    { label: "跨影片回訪率", metric: "continuity_return_rate_w4", key: "rate", tone: "good" },
     { label: "近期回訪率", metric: "rolling_return_rate_latest", key: "rate", tone: "good" },
   ];
   return `<div class="comparison-bars">${rows.map(comparisonMetricBar).join("")}</div>`;
@@ -1323,9 +1397,21 @@ function buildVideoAspectMap(rows) {
   return map;
 }
 
+// Aspects that are negative but not actionable / no real channel impact.
+const NON_IMPACT_ASPECTS = new Set(["other", "unclear"]);
+
+function videoImpactfulNegativeShare(videoId, aspectMap) {
+  const list = aspectMap[videoId] || [];
+  const total = list.reduce((acc, item) => acc + (Number(item.count) || 0), 0);
+  if (!total) return null;
+  const impactful = list
+    .filter((item) => item.aspect && !NON_IMPACT_ASPECTS.has(item.aspect))
+    .reduce((acc, item) => acc + (Number(item.count) || 0), 0);
+  return impactful / total;
+}
+
 function videoAspectReasons(videoId, aspectMap, aspectLabels) {
-  const skip = new Set(["other", "unclear"]);
-  const reasons = (aspectMap[videoId] || []).filter((item) => item.aspect && !skip.has(item.aspect)).slice(0, 3);
+  const reasons = (aspectMap[videoId] || []).filter((item) => item.aspect && !NON_IMPACT_ASPECTS.has(item.aspect)).slice(0, 3);
   if (!reasons.length) return "";
   return `
     <div class="video-aspect-block">
@@ -1343,8 +1429,15 @@ function videoAspectReasons(videoId, aspectMap, aspectLabels) {
 
 function riskVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
   const usable = (rows || [])
-    .slice()
-    .sort((a, b) => Number(b.like_weighted_negative_rate || b.negative_rate || 0) - Number(a.like_weighted_negative_rate || a.negative_rate || 0))
+    .map((row) => {
+      const rawNeg = Number(row.like_weighted_negative_rate || row.negative_rate || 0);
+      const impactShare = videoImpactfulNegativeShare(row.video_id, aspectMap);
+      // When ABSA aspects exist, weight negativity by the share that is actionable
+      // (drop other/unclear that are negative but don't really hurt the channel),
+      // so the ranking reflects real impact, not noise.
+      return { ...row, _score: impactShare === null ? rawNeg : rawNeg * impactShare, _impactShare: impactShare };
+    })
+    .sort((a, b) => b._score - a._score)
     .slice(0, 6);
   if (!usable.length) return `<div class="empty-state">沒有高負面影片資料</div>`;
   return `<div class="compact-card-list">${usable
@@ -1357,6 +1450,7 @@ function riskVideoCards(rows, aspectMap = {}, aspectLabels = {}) {
         <div class="dual-metric sentiment-card-metrics">
           ${metricPill("負面", row.negative_rate, "rate")}
           ${metricPill("按讚加權", row.like_weighted_negative_rate, "rate")}
+          ${row._impactShare === null ? "" : metricPill("實質負面占比", row._impactShare, "rate")}
         </div>
         ${videoAspectReasons(row.video_id, aspectMap, aspectLabels)}
       </article>`)
@@ -1657,6 +1751,53 @@ function videoPortfolioSummary(network, clusters) {
       ${metricTile("前三系列留言占比", top3CommentShare, "pct")}
     </div>
   `;
+}
+
+function audienceStructureCards(network) {
+  const cards = [];
+  const hhi = Number(network.community_concentration_hhi);
+  if (Number.isFinite(hhi)) {
+    const pr = Number(baselineMetric("community_hhi")?.percentile);
+    const band = prBand(pr, ["偏低", "中等", "偏高"]);
+    const text = {
+      偏高: "你的活躍留言者主要集中在少數幾個共同留言群。建議優先理解主力觀眾群偏好的內容與敏感主題。",
+      中等: "活躍留言者分布在數個共同留言群，集中度中等；可同時經營主力群與次要群。",
+      偏低: "活躍留言者分散在較多群、沒有明顯主導群，社群相對分散。",
+    }[band];
+    cards.push(structureCard("觀眾集中度", band, `HHI ${hhi.toFixed(2)}`, pr, text, band === "偏高" ? "warn" : ""));
+  }
+  const mod = Number(network.modularity);
+  if (Number.isFinite(mod)) {
+    const pr = Number(baselineMetric("commenter_network_modularity")?.percentile);
+    const band = prBand(pr, ["低", "中", "高"]);
+    const text = {
+      高: "你的留言者可以被清楚分成幾個內容參與群，代表不同觀眾群可能有不同內容偏好。",
+      中: "留言者的分群結構中等清楚，群與群之間仍有部分交集。",
+      低: "留言者之間交集多、分群界線不明顯，較難切出清楚的觀眾群。",
+    }[band];
+    cards.push(structureCard("分群清晰度", band, `modularity ${mod.toFixed(2)} · ${fmtNumber(network.n_communities)} 群`, pr, text));
+  }
+  if (!cards.length) return "";
+  return `<div class="structure-card-grid">${cards.join("")}</div>`;
+}
+
+function prBand(pr, labels) {
+  if (!Number.isFinite(pr)) return labels[1];
+  if (pr >= 66.7) return labels[2];
+  if (pr >= 33.3) return labels[1];
+  return labels[0];
+}
+
+function structureCard(title, band, valueText, pr, text, tone = "") {
+  return `
+    <article class="structure-card ${tone}">
+      <div class="structure-card-head">
+        <strong>${escapeHtml(title)}</strong>
+        <span class="structure-band">${escapeHtml(band)}</span>
+      </div>
+      <div class="structure-card-meta">${escapeHtml(valueText)}${Number.isFinite(pr) ? ` · PR ${Math.round(pr)}` : ""}</div>
+      <p>${escapeHtml(text)}</p>
+    </article>`;
 }
 
 function communityPersonaCards(rows) {

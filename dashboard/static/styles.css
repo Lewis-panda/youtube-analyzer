@@ -273,7 +273,7 @@ select:focus {
 .case-table-head,
 .case-row {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) 72px 120px 110px 120px 100px;
+  grid-template-columns: minmax(260px, 1fr) 120px 110px 120px 100px;
   gap: 14px;
   align-items: center;
 }
@@ -316,18 +316,6 @@ select:focus {
   font-size: 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.case-grade {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface-2);
-  color: var(--ink);
-  font-weight: 840;
 }
 
 .stage-header {
@@ -536,7 +524,6 @@ select:focus {
 }
 
 .report-kicker,
-.grade-block span,
 .report-stat span {
   color: var(--muted);
   font-size: 12px;
@@ -554,27 +541,6 @@ select:focus {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.45;
-}
-
-.grade-block {
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface-2);
-  padding: 10px;
-  text-align: center;
-}
-
-.grade-block strong {
-  font-size: 36px;
-  line-height: 1;
-}
-
-.grade-block em {
-  color: var(--ink-soft);
-  font-size: 12px;
-  font-style: normal;
 }
 
 .report-stat-grid {

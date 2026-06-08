@@ -74,7 +74,6 @@ function renderChannelList() {
   $("examples").innerHTML = `
     <div class="case-table-head">
       <span>頻道</span>
-      <span>等級</span>
       <span>訂閱</span>
       <span>分析影片</span>
       <span>主留言</span>
@@ -88,16 +87,11 @@ function renderChannelList() {
 }
 
 function caseRow(item) {
-  const grade = channelCommunityGrade({
-    negative_rate: item.negative_rate,
-    reply_overview: { max_video_like_weighted_conflict_score: item.baseline_metrics?.max_video_like_weighted_conflict_score },
-  });
   return `
     <button class="case-row" data-slug="${escapeHtml(item.slug)}">
       <span class="case-channel">
         <strong>${escapeHtml(item.title || item.slug)}</strong>
       </span>
-      <span class="case-grade">${escapeHtml(grade.grade)}</span>
       <span>${fmtCompact(item.subscriber_count)}</span>
       <span>${fmtNumber(item.n_videos_in_scope)}</span>
       <span>${fmtCompact(item.n_comments_in_scope)}</span>
@@ -700,7 +694,6 @@ function metricTile(label, value, key) {
 }
 
 function channelReportCard(channel, overview, summary) {
-  const grade = channelCommunityGrade(summary);
   return `
     <section class="channel-report-card">
       <div class="profile-block">
@@ -709,11 +702,6 @@ function channelReportCard(channel, overview, summary) {
           <span class="report-kicker">YouTube 頻道</span>
           <h3>${escapeHtml(currentChannel?.title || currentChannel?.slug || "-")}</h3>
         </div>
-      </div>
-      <div class="grade-block">
-        <span>社群等級 ${infoTip("由『留言區風險壓力』粗估的 A–D 等級。算法：扣分＝負面留言率×100 ＋ min(30, 單片最高按讚加權衝突分數)；<9＝A 低風險/穩定、<16＝B 可控/需觀察、<25＝C 壓力偏高、≥25＝D 高風險。只反映負面與衝突壓力，不代表頻道整體好壞或內容品質。")}</span>
-        <strong>${escapeHtml(grade.grade)}</strong>
-        <em>${escapeHtml(grade.label)}</em>
       </div>
       <div class="report-stat-grid">
         ${reportStat("訂閱", channel.subscriber_count ?? overview.subscriber_count, "n", "YouTube API 提供的頻道訂閱數（全頻道現況，非分析範圍）。")}
@@ -732,18 +720,6 @@ function reportStat(label, value, key, tip = "") {
       <strong>${formatValue(value, key)}</strong>
     </div>
   `;
-}
-
-function channelCommunityGrade(summary) {
-  const negative = Number(summary.negative_rate);
-  const conflict = Number(summary.reply_overview?.max_video_like_weighted_conflict_score);
-  let penalty = 0;
-  if (Number.isFinite(negative)) penalty += negative * 100;
-  if (Number.isFinite(conflict)) penalty += Math.min(30, conflict);
-  if (penalty < 9) return { grade: "A", label: "低風險 / 穩定" };
-  if (penalty < 16) return { grade: "B", label: "可控 / 需觀察" };
-  if (penalty < 25) return { grade: "C", label: "壓力偏高" };
-  return { grade: "D", label: "高風險" };
 }
 
 function initials(value) {

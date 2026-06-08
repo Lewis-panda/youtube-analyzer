@@ -431,7 +431,7 @@ async function renderExternalEvents(root) {
             ${newAudienceSummary(events)}
           </section>
           <section class="panel">
-            <div class="panel-head"><div><h3>各外部事件：前後多指標是否同步變化 ${infoTip("依『反應程度』排序：每個事件統計留言量、負面率、新觀眾占比、回覆衝突、外溢共 5 項是否顯著偏離平常(diagnostic_signal_count)，反應越多項排越前面。與平常無明顯差距(0 項)的事件預設收起、可展開。多項一起往同方向動＝該外部討論期間 YouTube 端確實有同步反應。皆為時間窗關聯、非因果。")}</h3></div></div>
+            <div class="panel-head"><div><h3>各外部事件：前後多指標是否同步變化 ${infoTip("只要事件後『有顯著偏離平常』就預設顯示：新留言者占比顯著(p<0.05，不論升降)，或留言量/負面率/衝突/外溢等 ≥1 項影響訊號。完全無顯著差距的事件才收起、可展開。排序：反應指標數多者在前，其次依新留言者占比差距。多項一起往同方向動＝該外部討論期間 YouTube 端確實有同步反應。皆為時間窗關聯、非因果。")}</h3></div></div>
             ${newAudienceEventList(events)}
           </section>
           <p class="external-caveat">時間窗關聯非因果；「新留言者」是首次在本頻道留言者，不等於新觀看者。判讀重點是事件後是否『顯著高於平常基準』，不是絕對新留言者數。注意頻道早期長期基準偏高（當時多數留言者本來就是新的），早期事件即使有外部討論，對比基準也常呈現下降；「對比事件前 28 天」可降低此成熟趨勢的影響。</p>
@@ -501,8 +501,13 @@ function newAudienceSummary(events) {
 }
 
 function newAudienceEventList(events) {
-  const reacted = events.filter((event) => Number(event.signalCount) >= 1);
-  const quiet = events.filter((event) => !(Number(event.signalCount) >= 1));
+  // Show by default any event with a *significant* difference from baseline: either
+  // the new-commenter share is significant (p<0.05, any direction) or >=1 impact
+  // signal fired. Only events with no significant difference at all are collapsed.
+  const isSignificant = (event) =>
+    Number(event.signalCount) >= 1 || (Number.isFinite(event.pValue) && event.pValue < 0.05);
+  const reacted = events.filter(isSignificant);
+  const quiet = events.filter((event) => !isSignificant(event));
   const list = (arr) => `<div class="na-event-list">${arr.map(naEventCard).join("")}</div>`;
   return `
     ${
